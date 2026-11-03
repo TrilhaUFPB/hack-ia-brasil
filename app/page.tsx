@@ -78,14 +78,14 @@ export default function Home() {
             <h2>O vencedor pula fila na fellowship.</h2>
             <p className="lead">A <a href="https://iabrasil.com/" target="_blank" rel="noopener noreferrer" className="ulink">Lazarte Franceschi Fellowship</a> é um programa de um ano para jovens com talento técnico excepcional. Não precisa ter ideia nem empresa pronta. O time vencedor do LF Hack vai direto para a entrevista.</p>
           </Reveal>
-          <div className="perks">
+          <Reveal className="perks reveal">
             {perks.map(([n, t, d]) => (
-              <Reveal className="perk reveal" key={n}>
+              <div className="perk" key={n}>
                 <span className="n">{n}</span>
                 <div><span className="t">{t}</span><span className="d">{d}</span></div>
-              </Reveal>
+              </div>
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 

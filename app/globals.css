@@ -133,3 +133,6 @@ footer a:hover{color:var(--lime)}
 }
 
 .copy{font-family:Arial,Helvetica,sans-serif;font-size:1.25em;line-height:1;vertical-align:-.1em;margin-right:.15em}
+
+@media(max-width:600px){.perk{min-height:0;gap:32px}.perk .t,.perk .d{min-height:0}}
+.perks{will-change:opacity,transform}
