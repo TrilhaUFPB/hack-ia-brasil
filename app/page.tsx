@@ -8,9 +8,9 @@ const facts = [
   ["PARCERIA", "Lazarte Franceschi Fellowship e Trilha"],
 ];
 const perks = [
-  ["01", "R$ 100 mil em prêmio", "Para se dedicar ao problema mais difícil que você quer resolver."],
+  ["01", "R$ 100 mil em prêmios", "Para se dedicar ao problema mais difícil que você quer resolver."],
   ["02", "Uma semana em São Francisco", "Com os outros fellows, conhecendo grandes founders."],
-  ["03", "Mentoria de Pedro e Victor", "Fundadores da Brex e da Diffusion."],
+  ["03", "Mentoria de Pedro e Victor", "Fundadores da Wildlife e da Diffusion."],
   ["04", "Apoio no visto americano", "Suporte ao processo de visto americano."],
 ];
 const hours = ["08","09","10","11","12","13","14","15","16","17","18"];
