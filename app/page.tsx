@@ -10,7 +10,7 @@ const facts = [
 const perks = [
   ["01", "R$ 100 mil em prêmios", "Para se dedicar ao problema mais difícil que você quer resolver."],
   ["02", "Uma semana em São Francisco", "Com os outros fellows, conhecendo grandes founders."],
-  ["03", "Mentoria de Pedro e Victor", "Fundadores da Wildlife e da Diffusion."],
+  ["03", "Mentoria de Pedro e Victor", "Fundadores da Brex e da Wildlife."],
   ["04", "Apoio no visto americano", "Suporte ao processo de visto americano."],
 ];
 const hours = ["08","09","10","11","12","13","14","15","16","17","18"];
@@ -29,9 +29,47 @@ const founders = [
 ];
 const h1 = ["Um hackathon", "em João Pessoa", "pode ser o seu", "caminho para o", "Vale do Silício."];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "LF Hack",
+  description:
+    "Hackathon gratuito de um dia para brasileiros de 12 a 25 anos. O time vencedor vai direto para a entrevista da Lazarte Franceschi Fellowship.",
+  startDate: "2026-11-21T08:00:00-03:00",
+  endDate: "2026-11-21T18:00:00-03:00",
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  inLanguage: "pt-BR",
+  isAccessibleForFree: true,
+  typicalAgeRange: "12-25",
+  location: {
+    "@type": "Place",
+    name: "João Pessoa",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "R. Manoel Gualberto, 255",
+      addressLocality: "João Pessoa",
+      addressRegion: "PB",
+      addressCountry: "BR",
+    },
+  },
+  organizer: [
+    { "@type": "Organization", name: "Lazarte Franceschi Fellowship", url: "https://iabrasil.com/" },
+    { "@type": "Organization", name: "Trilha" },
+  ],
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "BRL",
+    availability: "https://schema.org/PreOrder",
+    url: "/",
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <nav className="nav">
         <div className="brand"><i /><span>LF Hack</span></div>
         <div className="nav-links">
@@ -121,7 +159,7 @@ export default function Home() {
           {founders.map(([n, r, b], i) => (
             <Reveal className="founder reveal" key={n}>
               <a className="photo-link" href={i === 0 ? "https://www.linkedin.com/in/pfranceschi/" : "https://www.linkedin.com/in/victorlazarte/"} target="_blank" rel="noopener noreferrer" aria-label={`${n} no LinkedIn`}>
-                <img className="photo" src={i === 0 ? "/pedro.png" : "/victor.png"} alt={n} />
+                <img className="photo" src={i === 0 ? "/pedro.png" : "/victor.png"} alt={`${n}, ${r.toLowerCase()}`} width={112} height={112} loading="lazy" />
                 <span className="photo-cta">LINKEDIN ↗</span>
               </a>
               <div className="info"><span className="name">{n}</span><span className="role">{r}</span><span className="bio">{b}</span></div>
