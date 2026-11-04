@@ -8,7 +8,7 @@ const mono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"], variable: 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lf-hack.vercel.app";
 const TITLE = "LF Hack | Hackathon em João Pessoa e caminho para o Vale do Silício";
 const DESCRIPTION =
-  "Hackathon gratuito de um dia em João Pessoa (PB), em 21 de novembro, para brasileiros de 12 a 25 anos. O time vencedor vai direto para a entrevista da Lazarte Franceschi Fellowship: R$ 100 mil em prêmios, uma semana em São Francisco e mentoria de Pedro Franceschi e Victor Lazarte.";
+  "Hackathon gratuito de um dia em João Pessoa (PB), em 21 de novembro, para brasileiros de 12 a 25 anos. O time vencedor vai direto para a entrevista da IA Brasil Fellowship: R$ 100 mil em prêmios, uma semana em São Francisco e mentoria de Pedro Franceschi e Victor Lazarte.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   applicationName: "LF Hack",
   keywords: [
-    "hackathon", "João Pessoa", "Paraíba", "Lazarte Franceschi Fellowship", "Pedro Franceschi",
+    "hackathon", "João Pessoa", "Paraíba", "IA Brasil Fellowship", "Pedro Franceschi",
     "Victor Lazarte", "Vale do Silício", "Trilha", "programação", "jovens", "fellowship", "LF Hack",
   ],
-  authors: [{ name: "Lazarte Franceschi Fellowship" }, { name: "Trilha" }],
+  authors: [{ name: "IA Brasil Fellowship" }, { name: "Trilha" }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",

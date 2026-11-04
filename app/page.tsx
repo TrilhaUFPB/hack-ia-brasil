@@ -5,7 +5,7 @@ const facts = [
   ["ONDE", "R. Manoel Gualberto, 255, Miramar, João Pessoa"],
   ["QUEM", "Brasileiros de 12 a 25 anos, de qualquer lugar"],
   ["CUSTO", "Gratuito"],
-  ["PARCERIA", "Lazarte Franceschi Fellowship e Trilha"],
+  ["PARCERIA", "IA Brasil Fellowship e Trilha"],
 ];
 const perks = [
   ["01", "R$ 100 mil em prêmios", "Para se dedicar ao problema mais difícil que você quer resolver."],
@@ -34,7 +34,7 @@ const jsonLd = {
   "@type": "Event",
   name: "LF Hack",
   description:
-    "Hackathon gratuito de um dia para brasileiros de 12 a 25 anos. O time vencedor vai direto para a entrevista da Lazarte Franceschi Fellowship.",
+    "Hackathon gratuito de um dia para brasileiros de 12 a 25 anos. O time vencedor vai direto para a entrevista da IA Brasil Fellowship.",
   startDate: "2026-11-21T08:00:00-03:00",
   endDate: "2026-11-21T18:00:00-03:00",
   eventStatus: "https://schema.org/EventScheduled",
@@ -54,7 +54,7 @@ const jsonLd = {
     },
   },
   organizer: [
-    { "@type": "Organization", name: "Lazarte Franceschi Fellowship", url: "https://iabrasil.com/" },
+    { "@type": "Organization", name: "IA Brasil Fellowship", url: "https://iabrasil.com/" },
     { "@type": "Organization", name: "Trilha" },
   ],
   offers: {
@@ -75,7 +75,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#evento">O EVENTO</a><a href="#premio">PRÊMIO</a><a href="#programa">PROGRAMA</a><a href="#quem">QUEM</a>
         </div>
-        <a href="#inscricao" className="btn-lime">INSCREVA-SE →</a>
+        <a href="#inscricao" className="btn-lime">INSCREVA-SE</a>
       </nav>
 
       <section className="hero">
@@ -90,7 +90,7 @@ export default function Home() {
             ))}
           </h1>
           <div className="hero-bottom">
-            <a href="#inscricao" className="btn-paper">Quero participar <span className="mono">→</span></a>
+            <a href="#inscricao" className="btn-paper">Quero participar</a>
           </div>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function Home() {
           <Reveal className="col reveal" >
             <span className="eyebrow">O QUE ESTÁ EM JOGO</span>
             <h2>O vencedor pula fila na fellowship.</h2>
-            <p className="lead">A <a href="https://iabrasil.com/" target="_blank" rel="noopener noreferrer" className="ulink">Lazarte Franceschi Fellowship</a> é um programa de um ano para jovens com talento técnico excepcional. Não precisa ter ideia nem empresa pronta. O time vencedor do LF Hack vai direto para a entrevista.</p>
+            <p className="lead">A <a href="https://iabrasil.com/" target="_blank" rel="noopener noreferrer" className="ulink">IA Brasil Fellowship</a> é um programa de um ano para jovens com talento técnico excepcional. Não precisa ter ideia nem empresa pronta. O time vencedor do LF Hack vai direto para a entrevista.</p>
           </Reveal>
           <Reveal className="perks reveal">
             {perks.map(([n, t, d]) => (
