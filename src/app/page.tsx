@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* PRIZE */}
-      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pl-[40%]">
+      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
         <Label>o que está em jogo</Label>
         <Reveal>
           <h2 className="mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* DAY */}
-      <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pb-36 md:px-20 lg:px-32 min-[901px]:!pr-[40%]">
+      <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pb-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>o dia</Label>
         <Reveal>
           <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
@@ -194,7 +194,7 @@ export default function Home() {
 
       {/* WHO */}
       <section data-scene="3" data-side="right" className="border-y border-white/[0.06]">
-        <div className="mx-auto grid max-w-6xl gap-14 px-8 py-32 md:px-20 lg:px-32 min-[901px]:!pl-[40%]">
+        <div className="mx-auto grid max-w-6xl gap-14 px-8 py-32 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
           <Reveal>
             <Label>quem pode</Label>
             <h2 className="mt-6 text-2xl font-extralight leading-tight md:text-3xl">
@@ -220,7 +220,7 @@ export default function Home() {
       </section>
 
       {/* PEOPLE */}
-      <section data-scene="4" data-side="left" id="quem" className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[40%]">
+      <section data-scene="4" data-side="left" id="quem" className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>mentores</Label>
         <div className="mt-14 grid gap-16">
           {PEOPLE.map((p, i) => (
@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section data-scene="5" data-side="right" className="mx-auto max-w-6xl px-8 pb-36 md:px-20 lg:px-32 min-[901px]:!pl-[40%]">
+      <section data-scene="5" data-side="right" className="mx-auto max-w-6xl px-8 pb-36 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
         <Label>perguntas</Label>
         <div className="mt-10 border-t border-white/[0.06]">
           <Accordion
@@ -258,7 +258,7 @@ export default function Home() {
 
       {/* SIGNUP */}
       <section data-scene="6" data-side="left" id="inscricao" className="border-t border-white/[0.06]">
-        <div className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[40%]">
+        <div className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
           <Label>inscrições</Label>
           <h2 className="mt-6 text-2xl font-extralight md:text-4xl">Seu passaporte começa aqui.</h2>
           <div className="mt-14">

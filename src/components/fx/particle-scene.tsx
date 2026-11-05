@@ -403,7 +403,10 @@ export function ParticleScene() {
       aCT = A(3),
       aAS = A(4),
       aMisc = A(3),
-      aDir = A(3); // where each particle flies when a shape breaks apart
+      aDir = A(3), // where each particle flies when a shape breaks apart
+      // where the shape sits on the page: x as a fraction of the viewport width, y in page px
+      aAncF = new Float32Array(N * 2),
+      aAncT = new Float32Array(N * 2);
     for (let i = 0; i < N; i++) {
       const a = rnd() * Math.PI * 2,
         r = 7 + rnd() * 8;
@@ -431,6 +434,8 @@ export function ParticleScene() {
     geo.setAttribute("aAS", new THREE.BufferAttribute(aAS, 4));
     geo.setAttribute("aMisc", new THREE.BufferAttribute(aMisc, 3));
     geo.setAttribute("aDir", new THREE.BufferAttribute(aDir, 3));
+    geo.setAttribute("aAncF", new THREE.BufferAttribute(aAncF, 2));
+    geo.setAttribute("aAncT", new THREE.BufferAttribute(aAncT, 2));
     geo.boundingSphere = new THREE.Sphere(new THREE.Vector3(), 40);
 
     const mat = new THREE.ShaderMaterial({
@@ -442,18 +447,20 @@ export function ParticleScene() {
         uDur: { value: 2.8 },
         uTime: { value: 0 },
         uScale: { value: 1 },
-        uKickO: { value: new THREE.Vector3() },
+        uKick: { value: new THREE.Vector2() },
         uKickAge: { value: 99 },
         uMenta: { value: new THREE.Vector3(...MENTA) },
-        uPivot: { value: new THREE.Vector3() },
         uRot: { value: new THREE.Matrix3() },
-        uScroll: { value: 0 },
+        uView: { value: new THREE.Vector2(1, 1) },
+        uScrollY: { value: 0 },
+        uAdj: { value: 0 },
       },
       vertexShader: /* glsl */ `
         attribute vec3 aFrom; attribute vec3 aCF; attribute vec3 aCT; attribute vec4 aAS; attribute vec3 aMisc; attribute vec3 aDir;
-        uniform vec3 uPivot; uniform mat3 uRot; uniform float uScroll;
+        attribute vec2 aAncF; attribute vec2 aAncT;
+        uniform mat3 uRot; uniform vec2 uView; uniform float uScrollY; uniform float uAdj;
         uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale;
-        uniform vec3 uKickO; uniform float uKickAge; uniform vec3 uMenta;
+        uniform vec2 uKick; uniform float uKickAge; uniform vec3 uMenta;
         varying vec3 vC; varying float vA;
         float ease(float p) { return p < 0.5 ? 4.0 * p * p * p : 1.0 - pow(-2.0 * p + 2.0, 3.0) / 2.0; }
         void main() {
@@ -464,20 +471,28 @@ export function ParticleScene() {
           float sc = sin(3.14159 * p);
           vec3 pos = mix(aFrom, position, e) + aDir * sc;
           pos += vec3(sin(uTime * 0.6 + aMisc.x * 30.0), cos(uTime * 0.5 + aMisc.x * 20.0), sin(uTime * 0.4 + aMisc.x * 12.0)) * 0.008;
-          pos = uRot * (pos - uPivot) + uPivot; // lean around the shape's own centre
-          pos.y += uScroll; // shapes live on the page, so they scroll with their section
-          vec4 wp = vec4(pos, 1.0);
-          // click pulse: a ring travelling outward from where you clicked
+          pos = uRot * pos; // lean around the shape's own centre
+          vec4 mv = viewMatrix * vec4(pos, 1.0);
+          gl_Position = projectionMatrix * mv;
+
+          // pin the shape to the page in screen pixels, so it scrolls exactly like the DOM
+          vec2 anc = mix(aAncF, aAncT, e);
+          anc.y += uAdj * e; // follows its section if the layout shifts after it formed
+          vec2 offPx = vec2(anc.x * uView.x - uView.x * 0.5, anc.y - uScrollY - uView.y * 0.5);
+          gl_Position.xy += vec2(offPx.x, -offPx.y) / uView * 2.0 * gl_Position.w;
+
+          // click pulse: a ring travelling outward on screen from where you clicked
           float k = 0.0;
           if (uKickAge < 1.8) {
-            vec3 dv = wp.xyz - uKickO;
+            vec2 px = (gl_Position.xy / gl_Position.w * 0.5 + 0.5) * uView;
+            px.y = uView.y - px.y;
+            vec2 dv = px - uKick;
             float dist = length(dv);
-            float front = uKickAge * 3.2;
-            k = exp(-pow(dist - front, 2.0) * 5.0) * (1.0 - uKickAge / 1.8);
-            wp.xyz += normalize(dv + 1e-4) * k * 0.28;
+            float front = uKickAge * 650.0;
+            k = exp(-pow((dist - front) / 45.0, 2.0)) * (1.0 - uKickAge / 1.8);
+            vec2 push = normalize(dv + 1e-4) * k * 22.0;
+            gl_Position.xy += vec2(push.x, -push.y) / uView * 2.0 * gl_Position.w;
           }
-          vec4 mv = viewMatrix * wp;
-          gl_Position = projectionMatrix * mv;
           float size = mix(aAS.z, aAS.w, e) * (1.0 + k * 0.6);
           gl_PointSize = min(size * uScale * (14.0 / -mv.z), uScale * 2.4);
           float tw = 0.8 + 0.2 * sin(uTime * (1.0 + aMisc.x * 1.5) + aMisc.x * 40.0);
@@ -507,9 +522,11 @@ export function ParticleScene() {
       // the observer may not have reported yet on first load: fall back to the first section of this scene
       if (!anchorEl || Number(anchorEl.dataset.scene) !== n)
         anchorEl = document.querySelector<HTMLElement>(`[data-scene="${n}"]`);
-      const ox = sideX();
-      const oy = anchorY();
-      pivotTarget.set(ox, oy);
+      const ax = narrow() ? 0.5 : cTarget;
+      const ay = anchorY();
+      bakedY = ay;
+      const adjAtBegin = mat.uniforms.uAdj.value;
+      mat.uniforms.uAdj.value = 0;
       const elapsed = (performance.now() - startAt) / 1000,
         dur = mat.uniforms.uDur.value;
       for (let i = 0; i < N; i++) {
@@ -525,11 +542,21 @@ export function ParticleScene() {
             (aTo[i * 3 + k] - aFrom[i * 3 + k]) * e + aDir[i * 3 + k] * sc;
         for (let k = 0; k < 3; k++)
           aCF[i * 3 + k] += (aCT[i * 3 + k] - aCF[i * 3 + k]) * e;
+        if (chapter < 0) {
+          aAncF[i * 2] = ax;
+          aAncF[i * 2 + 1] = ay;
+        } else {
+          aAncF[i * 2] += (aAncT[i * 2] - aAncF[i * 2]) * e;
+          aAncF[i * 2 + 1] +=
+            (aAncT[i * 2 + 1] + adjAtBegin - aAncF[i * 2 + 1]) * e;
+        }
+        aAncT[i * 2] = ax;
+        aAncT[i * 2 + 1] = ay;
         aAS[i * 4] += (aAS[i * 4 + 1] - aAS[i * 4]) * e;
         aAS[i * 4 + 2] += ((aAS[i * 4 + 3] || 1) - aAS[i * 4 + 2]) * e;
         const o = i * 8;
-        aTo[i * 3] = T[o] + ox;
-        aTo[i * 3 + 1] = T[o + 1] + oy;
+        aTo[i * 3] = T[o];
+        aTo[i * 3 + 1] = T[o + 1];
         aTo[i * 3 + 2] = T[o + 2];
         aCT[i * 3] = T[o + 3];
         aCT[i * 3 + 1] = T[o + 4];
@@ -546,6 +573,8 @@ export function ParticleScene() {
         "aAS",
         "aMisc",
         "aDir",
+        "aAncF",
+        "aAncT",
       ])
         geo.attributes[k].needsUpdate = true;
       chapter = n;
@@ -556,32 +585,20 @@ export function ParticleScene() {
     /* ---------- framing: on desktop the shape sits on the side the text leaves empty ----------
        sections say where their text is (data-side="left" | "right"); the shape glides across */
     let baseD = 14;
-    let cNow = 0.72,
-      cTarget = 0.72; // shape centre as a fraction of the viewport width
+    let cNow = 0.76,
+      cTarget = 0.76; // shape centre as a fraction of the viewport width
     let maskC = -1;
-    const pivotNow = new THREE.Vector2(),
-      pivotTarget = new THREE.Vector2();
     let anchorEl: HTMLElement | null = null;
-    // world units per CSS pixel on the z = 0 plane
-    const unitsPerPx = () =>
-      (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * baseD) /
-      (el.clientHeight || 1);
-    // where the shape sits, in page space (world y = -pageY * k): the section's middle on
-    // desktop, its upper part on phones (the text sits low there)
+    let bakedY = 0;
+    // where the shape sits on the page (px): the section's middle on desktop,
+    // its upper part on phones (the text sits low there)
     const anchorY = () => {
       if (!anchorEl) return 0;
       const r = anchorEl.getBoundingClientRect();
       const top = r.top + scrollY;
-      const y = narrow()
+      return narrow()
         ? top + Math.min(r.height, innerHeight) * 0.24
         : top + r.height / 2;
-      return -y * unitsPerPx();
-    };
-    // world-space x of the shape centre for the current side (0 on phones)
-    const sideX = () => {
-      if (narrow()) return 0;
-      const half = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
-      return (cTarget - 0.5) * 2 * half * baseD * camera.aspect;
     };
     const frameSide = () => {
       if (narrow()) {
@@ -592,9 +609,9 @@ export function ParticleScene() {
         return;
       }
       if (Math.abs(maskC - cNow) > 0.002) {
-        // keep the dots off the text: fade them out ~23% either side of the shape centre
+        // keep the dots off the text: fully visible 13% either side of the shape centre, gone by 20%
         const pct = (v: number) => `${(v * 100).toFixed(1)}%`;
-        const m = `linear-gradient(to right, transparent ${pct(cNow - 0.36)}, #000 ${pct(cNow - 0.22)}, #000 ${pct(cNow + 0.22)}, transparent ${pct(cNow + 0.36)})`;
+        const m = `linear-gradient(to right, transparent ${pct(cNow - 0.2)}, #000 ${pct(cNow - 0.13)}, #000 ${pct(cNow + 0.13)}, transparent ${pct(cNow + 0.2)})`;
         el.style.maskImage = el.style.webkitMaskImage = m;
         maskC = cNow;
       }
@@ -609,7 +626,7 @@ export function ParticleScene() {
       if (!narrow()) {
         camera.clearViewOffset();
         baseD = Math.max(
-          7.2 / (0.5 * camera.aspect * 2 * half),
+          8.4 / (0.5 * camera.aspect * 2 * half),
           5.6 / (2 * half),
         );
       } else {
@@ -617,7 +634,8 @@ export function ParticleScene() {
         camera.clearViewOffset();
         baseD = Math.max(6.6 / (camera.aspect * 2 * half), 5.4 / (2 * half));
       }
-      camera.position.set(0, 0.35, baseD);
+      mat.uniforms.uView.value.set(w, h);
+      camera.position.set(0, 0, baseD);
       camera.lookAt(0, 0, 0);
       camera.updateProjectionMatrix();
       maskC = -1;
@@ -640,7 +658,7 @@ export function ParticleScene() {
             want = Number(sec.dataset.scene);
             if (want !== chapter) anchorEl = sec;
             if (sec.dataset.side)
-              cTarget = sec.dataset.side === "right" ? 0.27 : 0.73;
+              cTarget = sec.dataset.side === "right" ? 0.24 : 0.76;
             if (SCENES.length && want !== chapter) begin(want);
           }
       },
@@ -651,21 +669,11 @@ export function ParticleScene() {
       .forEach((s) => io.observe(s));
 
     /* ---------- click pulse ---------- */
-    const ray = new THREE.Raycaster();
-    const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
-    const hit = new THREE.Vector3();
     let kickAt = -1e9;
     const kick = (x: number, y: number) => {
       const r = el.getBoundingClientRect();
-      const ndc = new THREE.Vector2(
-        ((x - r.left) / r.width) * 2 - 1,
-        -((y - r.top) / r.height) * 2 + 1,
-      );
-      ray.setFromCamera(ndc, camera);
-      if (ray.ray.intersectPlane(plane, hit)) {
-        mat.uniforms.uKickO.value.copy(hit);
-        kickAt = performance.now();
-      }
+      mat.uniforms.uKick.value.set(x - r.left, y - r.top);
+      kickAt = performance.now();
     };
 
     /* ---------- the shape leans slightly toward the mouse; a click sends the pulse ---------- */
@@ -708,11 +716,8 @@ export function ParticleScene() {
       lean.y += (pointer.y - lean.y) * Math.min(1, dt * 3);
       euler.set(lean.y * 0.15, rotY + lean.x * 0.35, 0);
       mat.uniforms.uRot.value.setFromMatrix4(m4.makeRotationFromEuler(euler));
-      pivotNow.lerp(pivotTarget, reduced ? 1 : Math.min(1, dt * 1.2));
-      mat.uniforms.uPivot.value.set(pivotNow.x, pivotNow.y, 0);
-      // page y → world: everything above shifts up as you scroll down
-      mat.uniforms.uScroll.value =
-        (scrollY + el.clientHeight / 2) * unitsPerPx();
+      mat.uniforms.uScrollY.value = scrollY;
+      if (chapter >= 0) mat.uniforms.uAdj.value = anchorY() - bakedY;
       if (!narrow() && Math.abs(cTarget - cNow) > 0.0005) {
         cNow += (cTarget - cNow) * (reduced ? 1 : Math.min(1, dt * 1.4));
         frameSide();
