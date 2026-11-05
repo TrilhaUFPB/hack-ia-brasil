@@ -15,6 +15,7 @@ export const EVENT = {
   coords: { lat: "7°09′S", lon: "34°47′W" },
   signupUrl: "#inscricao",
   fellowshipUrl: "https://iabrasil.com/",
+  trilhaUrl: "https://www.otrilha.com",
 };
 
 export const PRIZES = [

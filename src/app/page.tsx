@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import { EVENT, FAQ, FIELDS, PEOPLE, PRIZES, SCHEDULE } from "@/content";
 import { ParticleScene } from "@/components/fx/particle-scene";
+import { ClickDots } from "@/components/fx/click-dots";
 import { Scramble } from "@/components/fx/scramble";
 import { RollingDigits } from "@/components/fx/rolling-digits";
 import { pad, useCountdown } from "@/components/fx/use-countdown";
@@ -55,6 +56,7 @@ export default function Home() {
   return (
     <main className="bg-black font-light text-white selection:bg-[#00D468] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
       <ParticleScene />
+      <ClickDots />
       {/* HERO */}
       <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
         <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
@@ -94,15 +96,22 @@ export default function Home() {
           >
             Dez horas. Um problema difícil. O time vencedor vai direto para a entrevista da IA Brasil Fellowship.
           </motion.p>
-          <motion.a
-            href="#inscricao"
-            className="pointer-events-auto mt-12 w-fit border-b border-white/30 pb-1 font-mono text-[11px] uppercase tracking-[0.35em] text-white/90 transition-colors hover:border-white hover:text-white"
+          <motion.div
+            className="pointer-events-auto mt-12 flex flex-wrap items-baseline gap-x-8 gap-y-4 font-mono text-[11px] uppercase tracking-[0.35em]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
           >
-            inscrições →
-          </motion.a>
+            <a href="#inscricao" className="border-b border-white/30 pb-1 text-white/90 transition-colors hover:border-white hover:text-white">
+              inscrições →
+            </a>
+            <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="text-white/55 transition-colors hover:text-white">
+              IA Brasil ↗
+            </a>
+            <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="text-white/55 transition-colors hover:text-[#A0B5FF]">
+              Trilha ↗
+            </a>
+          </motion.div>
           <motion.div
             className="mt-16 flex flex-col gap-2"
             initial={{ opacity: 0 }}
@@ -141,7 +150,19 @@ export default function Home() {
             >
               <dt className="font-mono text-[9px] uppercase tracking-[0.4em] text-white/55">{k}</dt>
               <dd className="mt-2 text-sm text-white/90">
-                <Scramble text={v} trigger="hover" />
+                {k === "parceria" ? (
+                  <>
+                    <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
+                      IA Brasil
+                    </a>{" "}
+                    ×{" "}
+                    <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:text-[#A0B5FF] hover:decoration-[#A0B5FF]">
+                      Trilha
+                    </a>
+                  </>
+                ) : (
+                  <Scramble text={v} trigger="hover" />
+                )}
               </dd>
             </div>
           ))}
@@ -282,19 +303,21 @@ export default function Home() {
               }
             />
           </div>
-          <a
-            href={EVENT.fellowshipUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-16 inline-block text-[12px] tracking-[0.15em] text-white/55 transition-colors hover:text-white"
-          >
-            conheça a IA Brasil Fellowship ↗
-          </a>
+          <div className="mt-16 flex flex-wrap gap-x-8 gap-y-3 text-[12px] tracking-[0.15em] text-white/55">
+            <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
+              conheça a IA Brasil Fellowship ↗
+            </a>
+            <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-[#A0B5FF]">
+              conheça a Trilha ↗
+            </a>
+          </div>
         </div>
         <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 border-t border-white/[0.06] px-8 py-8 font-mono text-[9px] uppercase tracking-[0.35em] text-white/55 md:px-20 lg:px-32">
           <span>© 2026 IA Hack</span>
           <span>O sol nasce primeiro aqui</span>
-          <span>IA Brasil Fellowship</span>
+          <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
+            iabrasil.com ↗
+          </a>
         </footer>
         {/* Trilha lockup — "fio e rótulo" device from the Trilha brand */}
         <div className="mx-auto max-w-6xl px-8 pb-12 md:px-20 lg:px-32">

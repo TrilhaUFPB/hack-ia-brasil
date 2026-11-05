@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { dotRipple } from "./click-dots";
 
 /**
  * One cloud of particles, fixed behind the page, that re-forms into a new
@@ -448,8 +449,6 @@ export function ParticleScene() {
         uTime: { value: 0 },
         uScale: { value: 1 },
         uKick: { value: new THREE.Vector2() },
-        uKickMode: { value: 0 }, // 0 = puff of air (on the shape), 1 = ripple (anywhere else)
-        uMenta: { value: new THREE.Vector3(...MENTA) },
         uKickAge: { value: 99 },
         uRot: { value: new THREE.Matrix3() },
         uView: { value: new THREE.Vector2(1, 1) },
@@ -461,7 +460,7 @@ export function ParticleScene() {
         attribute vec2 aAncF; attribute vec2 aAncT;
         uniform mat3 uRot; uniform vec2 uView; uniform float uScrollY; uniform float uAdj;
         uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale;
-        uniform vec2 uKick; uniform float uKickAge; uniform float uKickMode; uniform vec3 uMenta;
+        uniform vec2 uKick; uniform float uKickAge;
         varying vec3 vC; varying float vA;
         float ease(float p) { return p < 0.5 ? 4.0 * p * p * p : 1.0 - pow(-2.0 * p + 2.0, 3.0) / 2.0; }
         void main() {
@@ -482,36 +481,28 @@ export function ParticleScene() {
           vec2 offPx = vec2(anc.x * uView.x - uView.x * 0.5, anc.y - uScrollY - uView.y * 0.5);
           gl_Position.xy += vec2(offPx.x, -offPx.y) / uView * 2.0 * gl_Position.w;
 
-          float k = 0.0, glow = 0.0;
+          // click on the shape: a puff of air. Nearby points are blown away from the
+          // cursor, each a little differently, peak fast and then drift back
+          float k = 0.0;
           if (uKickAge < 2.0) {
             vec2 px = (gl_Position.xy / gl_Position.w * 0.5 + 0.5) * uView;
             px.y = uView.y - px.y;
             vec2 dv = px - uKick;
             vec2 d = normalize(dv + 1e-4);
-            vec2 push;
-            if (uKickMode < 0.5) {
-              // on the shape: a puff of air. Nearby points are blown away from the cursor,
-              // each a little differently, peak fast and then drift back
-              float fall = exp(-pow(length(dv) / 110.0, 2.0));
-              float t = uKickAge / 0.15;
-              float env = t * exp(1.0 - t);
-              float ang = aMisc.z * 0.55 + sin(aMisc.x * 50.0) * 0.35;
-              d = vec2(d.x * cos(ang) - d.y * sin(ang), d.x * sin(ang) + d.y * cos(ang));
-              k = fall * env;
-              push = d * k * (16.0 + 28.0 * aMisc.x);
-            } else {
-              // anywhere else: a ripple rolls outward and lights the dots green as it passes
-              float front = uKickAge * 650.0;
-              glow = exp(-pow((length(dv) - front) / 45.0, 2.0)) * max(0.0, 1.0 - uKickAge / 1.8);
-              push = d * glow * 22.0;
-            }
+            float fall = exp(-pow(length(dv) / 110.0, 2.0));
+            float t = uKickAge / 0.15;
+            float env = t * exp(1.0 - t);
+            float ang = aMisc.z * 0.55 + sin(aMisc.x * 50.0) * 0.35;
+            d = vec2(d.x * cos(ang) - d.y * sin(ang), d.x * sin(ang) + d.y * cos(ang));
+            k = fall * env;
+            vec2 push = d * k * (16.0 + 28.0 * aMisc.x);
             gl_Position.xy += vec2(push.x, -push.y) / uView * 2.0 * gl_Position.w;
           }
-          float size = mix(aAS.z, aAS.w, e) * (1.0 + glow * 0.6);
+          float size = mix(aAS.z, aAS.w, e);
           gl_PointSize = min(size * uScale * (14.0 / -mv.z), uScale * 2.4);
           float tw = 0.8 + 0.2 * sin(uTime * (1.0 + aMisc.x * 1.5) + aMisc.x * 40.0);
-          vC = mix(mix(aCF, aCT, e), uMenta, clamp(glow * 1.4, 0.0, 1.0));
-          vA = (mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) * (1.0 - 0.25 * k) + glow * 0.6) * tw;
+          vC = mix(aCF, aCT, e);
+          vA = mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) * (1.0 - 0.25 * k) * tw;
         }`,
       fragmentShader: /* glsl */ `
         varying vec3 vC; varying float vA;
@@ -692,7 +683,7 @@ export function ParticleScene() {
         r.height /
         (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * baseD);
       const onShape = Math.hypot(x - r.left - cx, y - r.top - cy) < 2.4 * unit;
-      mat.uniforms.uKickMode.value = onShape ? 0 : 1;
+      if (!onShape) return dotRipple(x, y); // elsewhere: little dots appear around the click
       mat.uniforms.uKick.value.set(x - r.left, y - r.top);
       kickAt = performance.now();
     };
