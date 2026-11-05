@@ -269,7 +269,8 @@ export default function Home() {
                   "w-full border-0 border-b border-white/15 bg-transparent px-0 py-2 text-[15px] font-light text-white outline-none transition-colors focus:border-[#A0B5FF]",
                 track: "border border-white/15 text-white/85",
                 knob: "bg-white text-black",
-                fill: "bg-gradient-to-r from-[#1C4AE5]/25 via-[#A0B5FF]/15 to-[#00D468]/25",
+                fill: "bg-[#00D468]",
+                doneText: "text-[#000928]",
               }}
               success={
                 <div className="py-6">

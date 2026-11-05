@@ -444,12 +444,13 @@ export function ParticleScene() {
       blending: THREE.AdditiveBlending,
       uniforms: {
         uT: { value: 0 },
-        uDur: { value: 2.8 },
+        uDur: { value: 1.4 },
         uTime: { value: 0 },
         uScale: { value: 1 },
         uKick: { value: new THREE.Vector2() },
-        uKickAge: { value: 99 },
+        uKickMode: { value: 0 }, // 0 = puff of air (on the shape), 1 = ripple (anywhere else)
         uMenta: { value: new THREE.Vector3(...MENTA) },
+        uKickAge: { value: 99 },
         uRot: { value: new THREE.Matrix3() },
         uView: { value: new THREE.Vector2(1, 1) },
         uScrollY: { value: 0 },
@@ -460,14 +461,14 @@ export function ParticleScene() {
         attribute vec2 aAncF; attribute vec2 aAncT;
         uniform mat3 uRot; uniform vec2 uView; uniform float uScrollY; uniform float uAdj;
         uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale;
-        uniform vec2 uKick; uniform float uKickAge; uniform vec3 uMenta;
+        uniform vec2 uKick; uniform float uKickAge; uniform float uKickMode; uniform vec3 uMenta;
         varying vec3 vC; varying float vA;
         float ease(float p) { return p < 0.5 ? 4.0 * p * p * p : 1.0 - pow(-2.0 * p + 2.0, 3.0) / 2.0; }
         void main() {
           // a shape never travels as a whole: it breaks apart where it is, the dust
           // drifts to the new spot, then condenses into the next shape
           float p = clamp((uT - aMisc.y) / uDur, 0.0, 1.0);
-          float e = ease(clamp((p - 0.3) / 0.7, 0.0, 1.0));
+          float e = ease(clamp((p - 0.12) / 0.88, 0.0, 1.0));
           float sc = sin(3.14159 * p);
           vec3 pos = mix(aFrom, position, e) + aDir * sc;
           pos += vec3(sin(uTime * 0.6 + aMisc.x * 30.0), cos(uTime * 0.5 + aMisc.x * 20.0), sin(uTime * 0.4 + aMisc.x * 12.0)) * 0.008;
@@ -481,23 +482,36 @@ export function ParticleScene() {
           vec2 offPx = vec2(anc.x * uView.x - uView.x * 0.5, anc.y - uScrollY - uView.y * 0.5);
           gl_Position.xy += vec2(offPx.x, -offPx.y) / uView * 2.0 * gl_Position.w;
 
-          // click pulse: a ring travelling outward on screen from where you clicked
-          float k = 0.0;
-          if (uKickAge < 1.8) {
+          float k = 0.0, glow = 0.0;
+          if (uKickAge < 2.0) {
             vec2 px = (gl_Position.xy / gl_Position.w * 0.5 + 0.5) * uView;
             px.y = uView.y - px.y;
             vec2 dv = px - uKick;
-            float dist = length(dv);
-            float front = uKickAge * 650.0;
-            k = exp(-pow((dist - front) / 45.0, 2.0)) * (1.0 - uKickAge / 1.8);
-            vec2 push = normalize(dv + 1e-4) * k * 22.0;
+            vec2 d = normalize(dv + 1e-4);
+            vec2 push;
+            if (uKickMode < 0.5) {
+              // on the shape: a puff of air. Nearby points are blown away from the cursor,
+              // each a little differently, peak fast and then drift back
+              float fall = exp(-pow(length(dv) / 110.0, 2.0));
+              float t = uKickAge / 0.15;
+              float env = t * exp(1.0 - t);
+              float ang = aMisc.z * 0.55 + sin(aMisc.x * 50.0) * 0.35;
+              d = vec2(d.x * cos(ang) - d.y * sin(ang), d.x * sin(ang) + d.y * cos(ang));
+              k = fall * env;
+              push = d * k * (16.0 + 28.0 * aMisc.x);
+            } else {
+              // anywhere else: a ripple rolls outward and lights the dots green as it passes
+              float front = uKickAge * 650.0;
+              glow = exp(-pow((length(dv) - front) / 45.0, 2.0)) * max(0.0, 1.0 - uKickAge / 1.8);
+              push = d * glow * 22.0;
+            }
             gl_Position.xy += vec2(push.x, -push.y) / uView * 2.0 * gl_Position.w;
           }
-          float size = mix(aAS.z, aAS.w, e) * (1.0 + k * 0.6);
+          float size = mix(aAS.z, aAS.w, e) * (1.0 + glow * 0.6);
           gl_PointSize = min(size * uScale * (14.0 / -mv.z), uScale * 2.4);
           float tw = 0.8 + 0.2 * sin(uTime * (1.0 + aMisc.x * 1.5) + aMisc.x * 40.0);
-          vC = mix(mix(aCF, aCT, e), uMenta, clamp(k * 1.4, 0.0, 1.0));
-          vA = (mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) + k * 0.6) * tw;
+          vC = mix(mix(aCF, aCT, e), uMenta, clamp(glow * 1.4, 0.0, 1.0));
+          vA = (mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) * (1.0 - 0.25 * k) + glow * 0.6) * tw;
         }`,
       fragmentShader: /* glsl */ `
         varying vec3 vC; varying float vA;
@@ -519,9 +533,9 @@ export function ParticleScene() {
     function begin(n: number) {
       const T = SCENES[n];
       if (!T) return;
-      // the observer may not have reported yet on first load: fall back to the first section of this scene
-      if (!anchorEl || Number(anchorEl.dataset.scene) !== n)
-        anchorEl = document.querySelector<HTMLElement>(`[data-scene="${n}"]`);
+      // a scene can span several sections (the hero and the facts strip under it): the shape
+      // always belongs to the first one, whichever section triggered it
+      anchorEl = document.querySelector<HTMLElement>(`[data-scene="${n}"]`);
       const ax = narrow() ? 0.5 : cTarget;
       const ay = anchorY();
       bakedY = ay;
@@ -535,7 +549,7 @@ export function ParticleScene() {
             chapter < 0
               ? 0
               : Math.min(1, Math.max(0, (elapsed - aMisc[i * 3 + 1]) / dur)),
-          e = ease(Math.min(1, Math.max(0, (p - 0.3) / 0.7))),
+          e = ease(Math.min(1, Math.max(0, (p - 0.12) / 0.88))),
           sc = Math.sin(Math.PI * p);
         for (let k = 0; k < 3; k++)
           aFrom[i * 3 + k] +=
@@ -563,7 +577,7 @@ export function ParticleScene() {
         aCT[i * 3 + 2] = T[o + 5];
         aAS[i * 4 + 1] = T[o + 6];
         aAS[i * 4 + 3] = T[o + 7];
-        aMisc[i * 3 + 1] = aMisc[i * 3] * (chapter < 0 ? 0.6 : 0.5);
+        aMisc[i * 3 + 1] = aMisc[i * 3] * (chapter < 0 ? 0.6 : 0.3);
       }
       for (const k of [
         "position",
@@ -656,13 +670,12 @@ export function ParticleScene() {
           if (e.isIntersecting) {
             const sec = e.target as HTMLElement;
             want = Number(sec.dataset.scene);
-            if (want !== chapter) anchorEl = sec;
             if (sec.dataset.side)
               cTarget = sec.dataset.side === "right" ? 0.24 : 0.76;
             if (SCENES.length && want !== chapter) begin(want);
           }
       },
-      { rootMargin: "-45% 0px -45% 0px" },
+      { rootMargin: "-64% 0px -35% 0px" },
     );
     document
       .querySelectorAll<HTMLElement>("[data-scene]")
@@ -672,6 +685,14 @@ export function ParticleScene() {
     let kickAt = -1e9;
     const kick = (x: number, y: number) => {
       const r = el.getBoundingClientRect();
+      const cx = (narrow() ? 0.5 : cTarget) * r.width;
+      const cy = bakedY + mat.uniforms.uAdj.value - scrollY;
+      // roughly the shape's radius on screen: 4.2 world units across at the current zoom
+      const unit =
+        r.height /
+        (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * baseD);
+      const onShape = Math.hypot(x - r.left - cx, y - r.top - cy) < 2.4 * unit;
+      mat.uniforms.uKickMode.value = onShape ? 0 : 1;
       mat.uniforms.uKick.value.set(x - r.left, y - r.top);
       kickAt = performance.now();
     };

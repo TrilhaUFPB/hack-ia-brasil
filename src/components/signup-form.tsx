@@ -10,6 +10,7 @@ export type SignupTheme = {
   track: string;
   knob: string;
   fill: string;
+  doneText?: string;
 };
 
 /**
@@ -72,6 +73,7 @@ export function SignupForm({ theme, success }: { theme: SignupTheme; success: Re
             className={`mt-2 ${theme.track}`}
             knobClass={theme.knob}
             fillClass={theme.fill}
+            doneTextClass={theme.doneText}
             label="Deslize para se inscrever"
             doneLabel="Enviado"
             onConfirm={() => {

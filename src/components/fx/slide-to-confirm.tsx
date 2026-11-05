@@ -16,6 +16,7 @@ export function SlideToConfirm({
   className = "",
   knobClass = "",
   fillClass = "",
+  doneTextClass = "",
 }: {
   label: string;
   doneLabel: string;
@@ -24,6 +25,8 @@ export function SlideToConfirm({
   className?: string;
   knobClass?: string;
   fillClass?: string;
+  /** label colour once confirmed, when the fill covers the track */
+  doneTextClass?: string;
 }) {
   const track = useRef<HTMLDivElement>(null);
   const [maxX, setMaxX] = useState(0);
@@ -63,7 +66,7 @@ export function SlideToConfirm({
         className="pointer-events-none absolute inset-0 grid place-items-center text-[12px] tracking-[0.15em]"
         style={{ opacity: done ? 1 : labelOpacity }}
       >
-        <span className={done ? "" : "shimmer-text"}>{done ? doneLabel : label}</span>
+        <span className={done ? doneTextClass : "shimmer-text"}>{done ? doneLabel : label}</span>
       </motion.span>
       <motion.button
         type="button"
