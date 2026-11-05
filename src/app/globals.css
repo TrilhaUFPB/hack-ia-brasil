@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-oxanium);
+  --font-mono: var(--font-geist-mono);
+  --font-ox: var(--font-oxanium);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-oxanium), system-ui, sans-serif;
+}
+
+/* Shimmering label (slide-to-confirm) */
+.shimmer-text {
+  background: linear-gradient(
+    100deg,
+    currentColor 0%,
+    currentColor 40%,
+    color-mix(in oklab, currentColor 25%, transparent) 50%,
+    currentColor 60%,
+    currentColor 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2.4s linear infinite;
+}
+@keyframes shimmer {
+  from {
+    background-position: 125% 0;
+  }
+  to {
+    background-position: -125% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-text {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: #000;
+}
