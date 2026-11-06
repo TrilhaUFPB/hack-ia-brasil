@@ -624,7 +624,7 @@ export function ParticleScene() {
         uView: { value: new THREE.Vector2(1, 1) },
         uScrollY: { value: 0 },
         uAdj: { value: 0 },
-        // experiment: ?trilha in the URL draws each particle as a tiny Trilha mountain
+        // particles are drawn as tiny Trilha mountains (see below)
         uLogo: { value: null as THREE.Texture | null },
         uLogoOn: { value: 0 },
       },
@@ -672,12 +672,10 @@ export function ParticleScene() {
             gl_Position.xy += vec2(push.x, -push.y) / uView * 2.0 * gl_Position.w;
           }
           float size = mix(aAS.z, aAS.w, e);
-          gl_PointSize = min(size * uScale * (14.0 / -mv.z), uScale * 2.4) * mix(1.0, 6.5, uLogoOn);
-          // logos need room to be read: in logo mode only about a quarter of the particles are drawn
-          if (uLogoOn > 0.5 && aMisc.x > 0.25) gl_PointSize = 0.0;
+          gl_PointSize = min(size * uScale * (14.0 / -mv.z), uScale * 2.4) * mix(1.0, 1.6, uLogoOn);
           float tw = 0.8 + 0.2 * sin(uTime * (1.0 + aMisc.x * 1.5) + aMisc.x * 40.0);
           vC = mix(aCF, aCT, e);
-          vA = mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) * (1.0 - 0.25 * k) * tw * mix(1.0, 0.8, uLogoOn);
+          vA = mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) * (1.0 - 0.25 * k) * tw * mix(1.0, 1.25, uLogoOn);
         }`,
       fragmentShader: /* glsl */ `
         uniform sampler2D uLogo; uniform float uLogoOn;
@@ -696,7 +694,9 @@ export function ParticleScene() {
     });
     group.add(new THREE.Points(geo, mat));
 
-    if (new URLSearchParams(location.search).has("trilha")) {
+    // every particle is a tiny Trilha mountain, about the size of a dot: you only notice
+    // when you zoom in. ?pontos falls back to round dots.
+    if (!new URLSearchParams(location.search).has("pontos")) {
       const img = new Image();
       img.onload = () => {
         const c = document.createElement("canvas");
