@@ -624,12 +624,15 @@ export function ParticleScene() {
         uView: { value: new THREE.Vector2(1, 1) },
         uScrollY: { value: 0 },
         uAdj: { value: 0 },
+        // experiment: ?trilha in the URL draws each particle as a tiny Trilha mountain
+        uLogo: { value: null as THREE.Texture | null },
+        uLogoOn: { value: 0 },
       },
       vertexShader: /* glsl */ `
         attribute vec3 aFrom; attribute vec3 aCF; attribute vec3 aCT; attribute vec4 aAS; attribute vec3 aMisc; attribute vec3 aDir;
         attribute vec2 aAncF; attribute vec2 aAncT;
         uniform mat3 uRot; uniform vec2 uView; uniform float uScrollY; uniform float uAdj;
-        uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale;
+        uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale; uniform float uLogoOn;
         uniform vec2 uKick; uniform float uKickAge;
         varying vec3 vC; varying float vA;
         float ease(float p) { return p < 0.5 ? 4.0 * p * p * p : 1.0 - pow(-2.0 * p + 2.0, 3.0) / 2.0; }
@@ -669,20 +672,47 @@ export function ParticleScene() {
             gl_Position.xy += vec2(push.x, -push.y) / uView * 2.0 * gl_Position.w;
           }
           float size = mix(aAS.z, aAS.w, e);
-          gl_PointSize = min(size * uScale * (14.0 / -mv.z), uScale * 2.4);
+          gl_PointSize = min(size * uScale * (14.0 / -mv.z), uScale * 2.4) * mix(1.0, 6.5, uLogoOn);
+          // logos need room to be read: in logo mode only about a quarter of the particles are drawn
+          if (uLogoOn > 0.5 && aMisc.x > 0.25) gl_PointSize = 0.0;
           float tw = 0.8 + 0.2 * sin(uTime * (1.0 + aMisc.x * 1.5) + aMisc.x * 40.0);
           vC = mix(aCF, aCT, e);
-          vA = mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) * (1.0 - 0.25 * k) * tw;
+          vA = mix(aAS.x, aAS.y, e) * (1.0 - 0.4 * sc) * (1.0 - 0.25 * k) * tw * mix(1.0, 0.8, uLogoOn);
         }`,
       fragmentShader: /* glsl */ `
+        uniform sampler2D uLogo; uniform float uLogoOn;
         varying vec3 vC; varying float vA;
         void main() {
+          if (uLogoOn > 0.5) {
+            float a = texture2D(uLogo, vec2(gl_PointCoord.x, 1.0 - gl_PointCoord.y)).a;
+            if (a < 0.05) discard;
+            gl_FragColor = vec4(vC * a * vA, 1.0);
+            return;
+          }
           float d = length(gl_PointCoord - 0.5);
           if (d > 0.5) discard;
           gl_FragColor = vec4(vC * smoothstep(0.5, 0.1, d) * vA, 1.0);
         }`,
     });
     group.add(new THREE.Points(geo, mat));
+
+    if (new URLSearchParams(location.search).has("trilha")) {
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement("canvas");
+        c.width = c.height = 64;
+        const g = c.getContext("2d")!;
+        const ar = img.naturalWidth / img.naturalHeight || 1.43;
+        const w = 60,
+          h = w / ar;
+        g.drawImage(img, 2, (64 - h) / 2, w, h);
+        const tex = new THREE.CanvasTexture(c);
+        tex.minFilter = THREE.LinearMipmapLinearFilter;
+        mat.uniforms.uLogo.value = tex;
+        mat.uniforms.uLogoOn.value = 1;
+      };
+      img.src = "/montanha.svg";
+    }
 
     let SCENES: Float32Array[] = [];
     let chapter = -1;
