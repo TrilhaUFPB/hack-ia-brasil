@@ -66,11 +66,7 @@ export default function Home() {
             <a href="#dia" className="transition-colors hover:text-white">Dia</a>
             <a href="#quem" className="transition-colors hover:text-white">Quem</a>
           </nav>
-          <a href="#inscricao" className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.35em] text-white/90 transition-colors hover:text-white">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00D468] opacity-70" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#00D468]" />
-            </span>
+          <a href="#inscricao" className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/90 transition-colors hover:text-white">
             inscrições →
           </a>
         </header>
@@ -108,7 +104,7 @@ export default function Home() {
           >
             <a
               href="#inscricao"
-              className="group inline-flex items-center gap-4 bg-[#00D468] px-6 py-4 font-medium text-[#000928] transition-[filter,transform] duration-300 hover:brightness-110 active:scale-[0.98]"
+              className="group inline-flex items-center gap-3 bg-[#00D468] px-2 py-1 text-[#000928] transition-[filter] duration-300 hover:brightness-110"
             >
               inscrições
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -288,14 +284,7 @@ export default function Home() {
       {/* SIGNUP */}
       <section data-scene="6" data-side="left" id="inscricao" className="border-t border-white/[0.06]">
         <div className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-          <p className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.4em] text-white/55">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00D468] opacity-60" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#00D468]" />
-            </span>
-            inscrições abertas
-          </p>
-          <h2 className="mt-6 text-3xl font-extralight leading-tight md:text-5xl">
+          <h2 className="text-3xl font-extralight leading-tight md:text-5xl">
             Seu passaporte começa <span className="text-[#00D468]">aqui.</span>
           </h2>
           <p className="mt-6 font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-white/55">
