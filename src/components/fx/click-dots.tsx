@@ -41,23 +41,40 @@ export function ClickDots({ gap = 13 }: { gap?: number }) {
       makeSprite(dpr);
     };
 
-    // one soft point, same falloff as the particle shader: smoothstep(0.5, 0.1, d)
+    // one point, drawn like the shape particles: a tiny Trilha mountain (round soft dot
+    // with ?pontos, or until the logo has loaded)
     let sprite: HTMLCanvasElement | null = null;
-    const SP = 5; // CSS px across, glow included
+    const SP = 5; // CSS px across
+    let logo: HTMLImageElement | null = null;
     const makeSprite = (dpr: number) => {
       const c = document.createElement("canvas");
       c.width = c.height = Math.ceil(SP * dpr);
       const g = c.getContext("2d")!;
-      const r = c.width / 2;
-      const grad = g.createRadialGradient(r, r, 0, r, r, r);
-      grad.addColorStop(0, "rgba(255,255,255,1)");
-      grad.addColorStop(0.2, "rgba(255,255,255,0.95)");
-      grad.addColorStop(0.55, "rgba(255,255,255,0.35)");
-      grad.addColorStop(1, "rgba(255,255,255,0)");
-      g.fillStyle = grad;
-      g.fillRect(0, 0, c.width, c.height);
+      if (logo) {
+        const ar = logo.naturalWidth / logo.naturalHeight || 1.43;
+        const w = c.width,
+          h = w / ar;
+        g.drawImage(logo, 0, (c.height - h) / 2, w, h);
+      } else {
+        const r = c.width / 2;
+        const grad = g.createRadialGradient(r, r, 0, r, r, r);
+        grad.addColorStop(0, "rgba(255,255,255,1)");
+        grad.addColorStop(0.2, "rgba(255,255,255,0.95)");
+        grad.addColorStop(0.55, "rgba(255,255,255,0.35)");
+        grad.addColorStop(1, "rgba(255,255,255,0)");
+        g.fillStyle = grad;
+        g.fillRect(0, 0, c.width, c.height);
+      }
       sprite = c;
     };
+    if (!new URLSearchParams(location.search).has("pontos")) {
+      const img = new Image();
+      img.onload = () => {
+        logo = img;
+        makeSprite(Math.min(devicePixelRatio || 1, 2));
+      };
+      img.src = "/montanha.svg";
+    }
 
     const draw = (now: number) => {
       ctx.clearRect(0, 0, w, h);

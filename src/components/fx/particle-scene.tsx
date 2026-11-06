@@ -681,18 +681,41 @@ export function ParticleScene() {
         uniform sampler2D uLogo; uniform float uLogoOn;
         varying vec3 vC; varying float vA;
         void main() {
+          // green and white points are drawn in separate passes (see below)
+          bool green = vC.g - vC.r > 0.35;
+          float va = vA;
+          #ifdef MENTA_PASS
+            if (!green) discard;
+            va = clamp(vA * 1.35, 0.0, 1.0); // no accumulation in this pass: lift it to full Menta
+          #else
+            if (green) discard;
+          #endif
           if (uLogoOn > 0.5) {
             float a = texture2D(uLogo, vec2(gl_PointCoord.x, 1.0 - gl_PointCoord.y)).a;
             if (a < 0.05) discard;
-            gl_FragColor = vec4(vC * a * vA, 1.0);
+            gl_FragColor = vec4(vC * a * va, 1.0);
             return;
           }
           float d = length(gl_PointCoord - 0.5);
           if (d > 0.5) discard;
-          gl_FragColor = vec4(vC * smoothstep(0.5, 0.1, d) * vA, 1.0);
+          gl_FragColor = vec4(vC * smoothstep(0.5, 0.1, d) * va, 1.0);
         }`,
     });
     group.add(new THREE.Points(geo, mat));
+    // Additive blending makes overlapping green points drift to cyan (green caps at 1 while
+    // blue keeps adding up). Green points get their own pass with max blending, so the
+    // route and accents stay exactly Verde Menta; white points keep the additive glow.
+    const matMenta = new THREE.ShaderMaterial({
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.CustomBlending,
+      blendEquation: THREE.MaxEquation,
+      uniforms: mat.uniforms,
+      vertexShader: mat.vertexShader,
+      fragmentShader: mat.fragmentShader,
+      defines: { MENTA_PASS: 1 },
+    });
+    group.add(new THREE.Points(geo, matMenta));
 
     // every particle is a tiny Trilha mountain, about the size of a dot: you only notice
     // when you zoom in. ?pontos falls back to round dots.
@@ -982,6 +1005,7 @@ export function ParticleScene() {
       removeEventListener("pointermove", onMove);
       geo.dispose();
       mat.dispose();
+      matMenta.dispose();
       renderer.dispose();
       renderer.domElement.remove();
     };
