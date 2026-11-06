@@ -349,6 +349,176 @@ export function ParticleScene() {
       return out;
     }
 
+    // the two founders as point holograms: each portrait photo, cut out with a
+    // person mask, becomes a cloud where brighter parts of the photo get more and
+    // brighter points; a soft bulge gives the face depth, shoulders dissolve
+    // chamfer distance from each inside pixel to the outline, 0..1. Used as depth so each
+    // person is "inflated": round in the middle, flat at the silhouette, thin at the neck
+    function inflate(mask: Uint8ClampedArray, n: number) {
+      const INF = 1e9,
+        d = new Float32Array(n * n);
+      for (let i = 0; i < n * n; i++) d[i] = mask[i * 4] > 127 ? INF : 0;
+      const at = (x: number, y: number) =>
+        x < 0 || y < 0 || x >= n || y >= n ? 0 : d[y * n + x];
+      for (let y = 0; y < n; y++)
+        for (let x = 0; x < n; x++) {
+          const i = y * n + x;
+          if (d[i])
+            d[i] = Math.min(
+              d[i],
+              at(x - 1, y) + 1,
+              at(x, y - 1) + 1,
+              at(x - 1, y - 1) + 1.414,
+              at(x + 1, y - 1) + 1.414,
+            );
+        }
+      for (let y = n - 1; y >= 0; y--)
+        for (let x = n - 1; x >= 0; x--) {
+          const i = y * n + x;
+          if (d[i])
+            d[i] = Math.min(
+              d[i],
+              at(x + 1, y) + 1,
+              at(x, y + 1) + 1,
+              at(x + 1, y + 1) + 1.414,
+              at(x - 1, y + 1) + 1.414,
+            );
+        }
+      let max = 0;
+      for (const v of d) max = Math.max(max, v);
+      for (let i = 0; i < n * n; i++) d[i] /= max || 1;
+      return d;
+    }
+
+    async function founders(): Promise<P[]> {
+      const read = (src: string) =>
+        new Promise<HTMLImageElement>((ok, no) => {
+          const i = new Image();
+          i.onload = () => ok(i);
+          i.onerror = no;
+          i.src = src;
+        });
+      const G = narrow() ? 110 : 150; // sampling grid per portrait
+      const sample = async (name: string) => {
+        const [photo, mask] = await Promise.all([
+          read(`/mentors/${name}.jpg`),
+          read(`/mentors/${name}-mask.png`),
+        ]);
+        const c = document.createElement("canvas");
+        c.width = c.height = G;
+        const g = c.getContext("2d", { willReadFrequently: true })!;
+        g.drawImage(photo, 0, 0, G, G);
+        const pd = g.getImageData(0, 0, G, G).data;
+        g.clearRect(0, 0, G, G);
+        g.drawImage(mask, 0, 0, G, G);
+        const md = g.getImageData(0, 0, G, G).data;
+        const lum = new Float32Array(G * G);
+        const inside: number[] = [];
+        for (let i = 0; i < G * G; i++) {
+          lum[i] =
+            (0.299 * pd[i * 4] +
+              0.587 * pd[i * 4 + 1] +
+              0.114 * pd[i * 4 + 2]) /
+            255;
+          if (md[i * 4] > 127) inside.push(lum[i]);
+        }
+        inside.sort((a, b) => a - b);
+        const lo = inside[Math.floor(inside.length * 0.04)] ?? 0,
+          hi = inside[Math.floor(inside.length * 0.97)] ?? 1;
+        // head metrics from the cut-out: top row, and the widest span in the top ~18%
+        let top = 0;
+        while (
+          top < G &&
+          ![...Array(G).keys()].some((x) => md[(top * G + x) * 4] > 127)
+        )
+          top++;
+        let headW = 1;
+        for (let y = top; y < Math.min(G, top + Math.round(G * 0.18)); y++) {
+          let a = -1,
+            b = -1;
+          for (let x = 0; x < G; x++)
+            if (md[(y * G + x) * 4] > 127) {
+              if (a < 0) a = x;
+              b = x;
+            }
+          if (a >= 0) headW = Math.max(headW, b - a);
+        }
+        return { lum, md, lo, hi, depth: inflate(md, G), top, headW };
+      };
+      const out: P[] = [];
+      seed = 41;
+      // both people at the same scale: equal head width, tops of the heads aligned,
+      // shoulders cut at the same height
+      const HEAD = 1.3,
+        TOP = 1.05;
+      const metrics = (d: { headW: number; top: number }) => {
+        const size = HEAD / (d.headW / G);
+        return { size, oy: TOP - ((G / 2 - d.top) / G) * size };
+      };
+      // cut both busts where the shorter photo ends, so they match
+      let CUT = -Infinity;
+      const place = (
+        d: Awaited<ReturnType<typeof sample>>,
+        ox: number,
+        ry: number,
+      ) => {
+        const { size, oy } = metrics(d);
+        const cs = Math.cos(ry),
+          sn = Math.sin(ry);
+        for (let y = 0; y < G; y++)
+          for (let x = 0; x < G; x++) {
+            const i = y * G + x;
+            if (d.md[i * 4] < 128) continue;
+            const v = Math.min(
+              1,
+              Math.max(0, (d.lum[i] - d.lo) / (d.hi - d.lo)),
+            );
+            if (rnd() > 0.25 + v * 0.95) continue;
+            const u = (x + rnd() - G / 2) / G,
+              t = (G / 2 - y - rnd()) / G;
+            const z = (Math.sqrt(d.depth[i]) * 0.32 + (v - 0.5) * 0.04) * size;
+            const wy = oy + t * size;
+            if (wy < CUT) continue;
+            const fade = Math.min(1, (wy - CUT) / 0.4);
+            const lx = u * size;
+            out.push([
+              ox + lx * cs + z * sn,
+              wy,
+              -lx * sn + z * cs,
+              ...WHITE,
+              (0.18 + 0.82 * Math.pow(v, 1.2)) * fade,
+              1,
+            ]);
+          }
+      };
+      const [pedro, victor] = await Promise.all([
+        sample("pedro"),
+        sample("victor"),
+      ]);
+      for (const d of [pedro, victor]) {
+        const { size, oy } = metrics(d);
+        CUT = Math.max(CUT, oy - 0.5 * size + 0.05);
+      }
+      place(pedro, -1.4, 0);
+      place(victor, 1.4, 0);
+      // the conversation between them
+      for (let i = 0; i < 600; i++) {
+        const u = rnd() * 2 - 1,
+          th = rnd() * Math.PI * 2,
+          s = Math.sqrt(1 - u * u),
+          r = 0.06 + Math.pow(rnd(), 1.8) * 0.45;
+        out.push([
+          s * Math.cos(th) * r,
+          0.12 + u * r,
+          s * Math.sin(th) * r,
+          ...MENTA,
+          0.55 * (1 - r / 0.51),
+          0.95,
+        ]);
+      }
+      return out;
+    }
+
     async function mountain(): Promise<P[]> {
       const img = new Image();
       img.src = "/montanha.svg";
@@ -721,7 +891,13 @@ export function ParticleScene() {
       if (!reduced) {
         // the globe and the crowd turn a little more than flat shapes
         const amp =
-          chapter === 0 ? 0.35 : chapter === 3 || chapter === 4 ? 0.3 : 0.18;
+          chapter === 0
+            ? 0.35
+            : chapter === 3
+              ? 0.3
+              : chapter === 4
+                ? 0.22
+                : 0.18;
         rotY += (Math.sin(t * 0.3) * amp - rotY) * Math.min(1, dt * 2);
       }
       lean.x += (pointer.x - lean.x) * Math.min(1, dt * 3);
@@ -746,9 +922,14 @@ export function ParticleScene() {
         text("100K", 5.6, 2.2),
         dial(),
         crowd(),
-        mentors(),
+        mentors(), // replaced by the founders hologram below when the photos load
         text("?", 3, 3.6, 200),
       ];
+      try {
+        shapes[4] = await founders();
+      } catch {
+        /* keep the generic figures */
+      }
       let mtn: P[] = [];
       try {
         mtn = await mountain();

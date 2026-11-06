@@ -11,6 +11,8 @@ export type SignupTheme = {
   knob: string;
   fill: string;
   doneText?: string;
+  /** show each label as the field's placeholder (label stays for screen readers) */
+  placeholders?: boolean;
 };
 
 /**
@@ -46,8 +48,9 @@ export function SignupForm({ theme, success }: { theme: SignupTheme; success: Re
             <Field theme={theme} label="E-mail" name="email" type="email" autoComplete="email" />
             <Field theme={theme} label="Cidade / UF" name="city" autoComplete="address-level2" />
             <label className="grid gap-1.5">
-              <span className={theme.label}>Idade</span>
+              <span className={theme.placeholders ? "sr-only" : theme.label}>Idade</span>
               <input
+                placeholder={theme.placeholders ? "Idade" : undefined}
                 required
                 name="age"
                 type="number"
@@ -94,8 +97,8 @@ function Field({
 }: { theme: SignupTheme; label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <label className="grid gap-1.5">
-      <span className={theme.label}>{label}</span>
-      <input required className={theme.field} {...props} />
+      <span className={theme.placeholders ? "sr-only" : theme.label}>{label}</span>
+      <input required className={theme.field} placeholder={theme.placeholders ? label : undefined} {...props} />
     </label>
   );
 }

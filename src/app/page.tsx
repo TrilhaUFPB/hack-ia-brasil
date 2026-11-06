@@ -66,7 +66,11 @@ export default function Home() {
             <a href="#dia" className="transition-colors hover:text-white">Dia</a>
             <a href="#quem" className="transition-colors hover:text-white">Quem</a>
           </nav>
-          <a href="#inscricao" className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/90 transition-colors hover:text-white">
+          <a href="#inscricao" className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.35em] text-white/90 transition-colors hover:text-white">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00D468] opacity-70" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#00D468]" />
+            </span>
             inscrições →
           </a>
         </header>
@@ -97,13 +101,17 @@ export default function Home() {
             Dez horas. Um problema difícil. O time vencedor vai direto para a entrevista da IA Brasil Fellowship.
           </motion.p>
           <motion.div
-            className="pointer-events-auto mt-12 flex flex-wrap items-baseline gap-x-8 gap-y-4 font-mono text-[11px] uppercase tracking-[0.35em]"
+            className="pointer-events-auto mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 font-mono text-[11px] uppercase tracking-[0.35em]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
           >
-            <a href="#inscricao" className="border-b border-white/30 pb-1 text-white/90 transition-colors hover:border-white hover:text-white">
-              inscrições →
+            <a
+              href="#inscricao"
+              className="group inline-flex items-center gap-4 bg-[#00D468] px-6 py-4 font-medium text-[#000928] transition-[filter,transform] duration-300 hover:brightness-110 active:scale-[0.98]"
+            >
+              inscrições
+              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
             <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="text-white/55 transition-colors hover:text-white">
               IA Brasil ↗
@@ -280,28 +288,42 @@ export default function Home() {
       {/* SIGNUP */}
       <section data-scene="6" data-side="left" id="inscricao" className="border-t border-white/[0.06]">
         <div className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-          <Label>inscrições</Label>
-          <h2 className="mt-6 text-2xl font-extralight md:text-4xl">Seu passaporte começa aqui.</h2>
+          <p className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.4em] text-white/55">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00D468] opacity-60" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#00D468]" />
+            </span>
+            inscrições abertas
+          </p>
+          <h2 className="mt-6 text-3xl font-extralight leading-tight md:text-5xl">
+            Seu passaporte começa <span className="text-[#00D468]">aqui.</span>
+          </h2>
+          <p className="mt-6 font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-white/55">
+            21.11 · 8h–18h · ONDER, João Pessoa · gratuito · 12 a 25 anos
+            <span className="text-[#00D468]"> · faltam {cd ? cd.d : "–"} dias</span>
+          </p>
           <div className="mt-14">
             <SignupForm
               theme={{
-                label: "font-mono text-[9px] uppercase tracking-[0.3em] text-white/55",
+                placeholders: true,
+                label: "",
                 field:
-                  "w-full border-0 border-b border-white/15 bg-transparent px-0 py-2 text-[15px] font-light text-white outline-none transition-colors focus:border-[#A0B5FF]",
+                  "w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-base font-light text-white outline-none transition-colors placeholder:text-white/40 focus:border-[#00D468]",
                 track: "border border-white/15 text-white/85",
-                knob: "bg-white text-black",
+                knob: "bg-[#00D468] text-[#000928]",
                 fill: "bg-[#00D468]",
                 doneText: "text-[#000928]",
               }}
               success={
                 <div className="py-6">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/55">recebido</p>
-                  <p className="mt-4 text-xl font-extralight">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#00D468]">recebido</p>
+                  <p className="mt-4 text-2xl font-extralight">
                     <Scramble text="Até dia 21, em João Pessoa." duration={900} />
                   </p>
                 </div>
               }
             />
+            <p className="mt-5 text-xs font-light text-white/45">Menores de 18 precisam da confirmação de um responsável.</p>
           </div>
           <div className="mt-16 flex flex-wrap gap-x-8 gap-y-3 text-[12px] tracking-[0.15em] text-white/55">
             <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
