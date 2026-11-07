@@ -70,7 +70,7 @@ export default function Home() {
           </a>
         </header>
 
-        <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-8 pb-24 pt-32 md:justify-center md:px-20 md:pb-32 lg:px-32">
+        <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-8 pb-24 pt-32 max-[900px]:items-center max-[900px]:text-center md:justify-center md:px-20 md:pb-32 lg:px-32">
           <motion.h1
             className="max-w-[15em] text-balance text-[clamp(1.7rem,3.2vw,2.6rem)] font-extralight leading-[1.1] tracking-[-0.01em]"
             initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
@@ -91,7 +91,7 @@ export default function Home() {
             Dez horas. Um problema difícil. O foco é achar pessoas, não só projetos.
           </motion.p>
           <motion.div
-            className="pointer-events-auto mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 font-mono text-[11px] uppercase tracking-[0.28em]"
+            className="pointer-events-auto mt-12 flex flex-wrap items-center max-[900px]:justify-center gap-x-8 gap-y-4 font-mono text-[11px] uppercase tracking-[0.28em]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
@@ -104,7 +104,7 @@ export default function Home() {
             </a>
           </motion.div>
           <motion.div
-            className="mt-16 flex flex-col gap-2"
+            className="mt-16 flex flex-col gap-2 max-[900px]:items-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 1 }}
@@ -125,7 +125,7 @@ export default function Home() {
 
       {/* FACTS */}
       <section data-scene="0" data-side="left" className="border-y border-white/[0.06]">
-        <dl className="mx-auto grid max-w-6xl grid-cols-2 px-8 md:grid-cols-[1fr_1.7fr_0.9fr_0.9fr_1.1fr] md:px-20 lg:px-32">
+        <dl className="mx-auto grid max-w-6xl grid-cols-2 max-[900px]:text-center px-8 md:grid-cols-[1fr_1.7fr_0.9fr_0.9fr_1.1fr] md:px-20 lg:px-32">
           {[
             ["quando", "21 nov · 8h–18h"],
             ["onde", "R. Manoel Gualberto, 255, Miramar"],
@@ -161,14 +161,14 @@ export default function Home() {
       </section>
 
       {/* PRIZE */}
-      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
         <Label>o que está em jogo</Label>
         <Reveal>
-          <h2 className="mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
+          <h2 className="mx-auto mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
             O vencedor{" "}
             <mark className="bg-[#00D468] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
           </h2>
-          <p className="mt-5 max-w-md text-sm leading-relaxed text-white/80">
+          <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
             A{" "}
             <a
               href={EVENT.fellowshipUrl}
@@ -202,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* DAY */}
-      <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pt-24 pb-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
+      <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pt-24 pb-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>cronograma</Label>
         <Reveal>
           <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
@@ -214,13 +214,13 @@ export default function Home() {
 
       {/* WHO */}
       <section data-scene="3" data-side="right" className="border-y border-white/[0.06]">
-        <div className="mx-auto flex min-h-[100svh] max-w-6xl items-center px-8 py-32 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+        <div className="mx-auto flex min-h-[100svh] max-w-6xl items-center px-8 py-32 max-[900px]:items-end max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
           <Reveal>
             <Label>quem pode</Label>
             <h2 className="mt-6 text-2xl font-extralight leading-tight md:text-3xl">
               Brasileiros de 12 a 25 anos que constroem coisas.
             </h2>
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-white/80">
+            <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
               Software, IA, hardware, robótica, matemática, física, química ou biotecnologia. Ensino médio, IF,
               olimpíada ou universidade: o que conta é o que você já fez. Menores de 18 precisam da confirmação de um
               responsável.
@@ -230,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* PEOPLE */}
-      <section data-scene="4" data-side="left" id="quem" className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
+      <section data-scene="4" data-side="left" id="quem" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>quem está por trás</Label>
         <div className="mt-14 grid gap-16">
           {PEOPLE.map((p, i) => (
@@ -255,8 +255,8 @@ export default function Home() {
 
       {/* FAQ */}
       <section data-scene="5" data-side="right" className="border-t border-white/[0.06]">
-        <div className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
-          <Label>perguntas</Label>
+        <div className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-8 py-36 max-[900px]:justify-end max-[900px]:pt-[44svh] md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+          <div className="max-[900px]:text-center"><Label>perguntas</Label></div>
           <div className="mt-10 border-t border-white/[0.06]">
             <Accordion
               items={FAQ}
@@ -270,7 +270,7 @@ export default function Home() {
 
       {/* SIGNUP */}
       <section id="inscricao" className="border-t border-white/[0.06]">
-        <div data-scene="6" data-side="left" className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
+        <div data-scene="6" data-side="left" className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:justify-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
           <Label>inscrições</Label>
           <h2 className="mt-6 text-3xl font-extralight leading-tight md:text-5xl">
             Inscrições abrem <span className="text-[#00D468]">em breve.</span>
@@ -279,7 +279,7 @@ export default function Home() {
             21.11 · 8h–18h · Miramar, João Pessoa
             <span className="text-[#00D468]"> · faltam {cd ? cd.d : "–"} dias</span>
           </p>
-          <div className="mt-16 flex flex-wrap gap-x-8 gap-y-3 text-[12px] tracking-[0.15em] text-white/75">
+          <div className="mt-16 flex flex-wrap max-[900px]:justify-center gap-x-8 gap-y-3 text-[12px] tracking-[0.15em] text-white/75">
             <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               conheça a IA Brasil Fellowship ↗
             </a>
@@ -288,7 +288,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 border-t border-white/[0.06] px-8 py-8 font-mono text-[11px] uppercase tracking-[0.28em] text-white/75 md:px-20 lg:px-32">
+        <footer className="mx-auto flex max-w-6xl flex-wrap justify-between max-[900px]:justify-center max-[900px]:text-center gap-4 border-t border-white/[0.06] px-8 py-8 font-mono text-[11px] uppercase tracking-[0.28em] text-white/75 md:px-20 lg:px-32">
           <span>© 2026 Hack IA Brasil</span>
           <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
             iabrasil.com ↗
