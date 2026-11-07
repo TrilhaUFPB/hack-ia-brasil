@@ -1,7 +1,7 @@
 // Single source of truth for event copy — every variant reads from here.
 
 export const EVENT = {
-  name: "IA Hack",
+  name: "Hack IA Brasil",
   // Saturday, 21 Nov 2026, 08:00 in João Pessoa (UTC-3)
   start: "2026-11-21T08:00:00-03:00",
   end: "2026-11-21T18:00:00-03:00",
@@ -23,19 +23,19 @@ export const PRIZES = [
     n: "01",
     title: "R$ 100 mil",
     sub: "em prêmios",
-    body: "Para se dedicar ao problema mais difícil que você quer resolver.",
+    body: "Para se dedicar ao problema mais difícil que você quer.",
   },
   {
     n: "02",
     title: "1 semana",
     sub: "em São Francisco",
-    body: "Com os outros fellows, conhecendo grandes founders.",
+    body: "Com os outros fellows e grandes founders.",
   },
   {
     n: "03",
     title: "Mentoria",
     sub: "de Pedro e Victor",
-    body: "Fundadores da Brex, Pagar.me, Wildlife e Diffusion.",
+    body: "Fundadores da Brex, Pagar.me e Wildlife.",
   },
   {
     n: "04",
@@ -71,7 +71,7 @@ export const PEOPLE = [
     name: "Pedro Franceschi",
     role: "Founder e CEO da Brex",
     initials: "PF",
-    bio: "Começou a programar aos 9, fez o primeiro jailbreak do iPhone 3G do mundo aos 12 e fundou o Pagar.me aos 15. A Brex foi adquirida pela Capital One: a maior aquisição de uma empresa fundada por brasileiros.",
+    bio: "Programa desde os 9, fez o primeiro jailbreak do iPhone 3G aos 12 e fundou o Pagar.me aos 15. A Brex foi adquirida pela Capital One, a maior aquisição de uma startup fundada por brasileiros.",
     facts: [
       ["9", "anos, primeira linha de código"],
       ["12", "anos, jailbreak do iPhone 3G"],
@@ -108,7 +108,7 @@ export const FAQ = [
   },
   {
     q: "O que é a IA Brasil Fellowship?",
-    a: "Um programa de um ano, fundado por Pedro Franceschi e Victor Lazarte, para jovens com talento técnico excepcional. O time vencedor do IA Hack vai direto para a entrevista.",
+    a: "Um programa de um ano, fundado por Pedro Franceschi e Victor Lazarte, para jovens com talento técnico excepcional. O time vencedor do Hack IA Brasil vai direto para a entrevista.",
   },
   {
     q: "Moro fora de João Pessoa. Posso ir?",

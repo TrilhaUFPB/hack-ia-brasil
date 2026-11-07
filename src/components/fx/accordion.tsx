@@ -17,7 +17,7 @@ export function Accordion({
   aClass?: string;
   icon?: string;
 }) {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
   return (
     <div>
       {items.map((it, i) => {
