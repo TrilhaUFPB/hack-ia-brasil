@@ -17,18 +17,18 @@ const host =
 
 export const metadata: Metadata = {
   metadataBase: new URL(host ? `https://${host}` : "http://localhost:3123"),
-  title: "IA Hack — João Pessoa, 21 de novembro",
+  title: "Hack IA Brasil",
   description,
   openGraph: {
-    title: "IA Hack — seu caminho para o Vale do Silício começa em João Pessoa",
+    title: "Hack IA Brasil",
     description,
-    siteName: "IA Hack",
+    siteName: "Hack IA Brasil",
     locale: "pt_BR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "IA Hack — João Pessoa, 21 de novembro",
+    title: "Hack IA Brasil",
     description,
   },
 };

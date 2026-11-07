@@ -15,7 +15,7 @@ import { dotRipple } from "./click-dots";
  *  3 a crowd (12–25, anyone who builds)
  *  4 two mentors facing each other
  *  5 "?"
- *  6 the Trilha mountain
+ *  6 a megaphone with sound rays (inscrições em breve)
  */
 
 type P = [number, number, number, number, number, number, number, number]; // x y z r g b alpha size
@@ -519,20 +519,94 @@ export function ParticleScene() {
       return out;
     }
 
-    async function mountain(): Promise<P[]> {
-      const img = new Image();
-      img.src = "/montanha.svg";
-      await img.decode();
+    // a wireframe megaphone, built like the globe (rings + lines, back side dimmed),
+    // with sound waves opening in front of the mouth: "inscrições em breve"
+    function megaphone(): P[] {
+      const out: P[] = [];
       seed = 51;
-      const ar = img.naturalWidth / img.naturalHeight || 1.43;
-      const Wu = 4.6,
-        Hu = Wu / ar;
-      return sampleCanvas(
-        (g, W, H) => g.drawImage(img, 0, 0, W, H),
-        Wu,
-        Hu,
-        narrow() ? 0.04 : 0.022,
-      );
+      const yaw = -0.65, // mouth turns towards the viewer (and, mirrored, towards the text)
+        tilt = 0.32; // and lifts up and to the right
+      const cy = Math.cos(yaw),
+        sy = Math.sin(yaw),
+        ct = Math.cos(tilt),
+        st = Math.sin(tilt);
+      const push = (x: number, y: number, z: number, a: number, size = 1) => {
+        const x1 = x * cy + z * sy,
+          z1 = -x * sy + z * cy;
+        const X = -(x1 * ct - y * st), // mirrored: the mouth points left, at the text
+          Y = x1 * st + y * ct;
+        out.push([X, Y, z1, ...WHITE, z1 < 0 ? a * 0.3 : a, size]);
+      };
+      // radius along the axis: a short mouthpiece, then a bell that flares out
+      const xa = -1.9,
+        xb = -1.45,
+        xc = 0.9;
+      const rAt = (x: number) => {
+        if (x < xb) return 0.3 - ((x - xa) / (xb - xa)) * 0.06;
+        const u = (x - xb) / (xc - xb);
+        return 0.24 + Math.pow(u, 1.7) * 0.86;
+      };
+      const X = (u: number) => xa + u * (xc - xa);
+      // lines along the body
+      for (let m = 0; m < 16; m++) {
+        const th = (m / 16) * Math.PI * 2;
+        for (let i = 0; i < 150; i++) {
+          const x = X(rnd());
+          const r = rAt(x);
+          push(x, Math.cos(th) * r, Math.sin(th) * r, 0.55);
+        }
+      }
+      // rings around the body
+      for (let k = 0; k <= 14; k++) {
+        const x = X(k / 14),
+          r = rAt(x);
+        for (let i = 0; i < Math.round(60 + r * 140); i++) {
+          const th = rnd() * Math.PI * 2;
+          push(x, Math.cos(th) * r, Math.sin(th) * r, 0.5);
+        }
+      }
+      // a brighter rim at the mouth and at the mouthpiece
+      for (const x of [xc, xa]) {
+        const r = rAt(x);
+        for (let i = 0; i < 420; i++) {
+          const th = rnd() * Math.PI * 2;
+          push(x, Math.cos(th) * r, Math.sin(th) * r, 0.95, 1.05);
+        }
+      }
+      // sparse shell
+      for (let i = 0; i < 900; i++) {
+        const x = X(rnd()),
+          th = rnd() * Math.PI * 2;
+        push(x, Math.cos(th) * rAt(x), Math.sin(th) * rAt(x), 0.16, 0.85);
+      }
+      // the handle: a small wire cylinder under the bell
+      const hx = -0.55,
+        hr = 0.12;
+      for (let m = 0; m < 6; m++) {
+        const th = (m / 6) * Math.PI * 2;
+        for (let i = 0; i < 50; i++) {
+          const y = -rAt(hx) + 0.05 - rnd() * 0.75;
+          push(hx + Math.cos(th) * hr, y, Math.sin(th) * hr, 0.55);
+        }
+      }
+      for (let k = 0; k <= 4; k++) {
+        const y = -rAt(hx) + 0.05 - (k / 4) * 0.75;
+        for (let i = 0; i < 50; i++) {
+          const th = rnd() * Math.PI * 2;
+          push(hx + Math.cos(th) * hr, y, Math.sin(th) * hr, 0.5);
+        }
+      }
+      // sound waves: a few clean rings opening in front of the mouth, fading out
+      for (let k = 1; k <= 3; k++) {
+        const x = xc + 0.4 + k * 0.5,
+          r = rAt(xc) * (0.55 + k * 0.17),
+          a = 0.9 - k * 0.22;
+        for (let i = 0; i < 300; i++) {
+          const th = rnd() * Math.PI * 2;
+          push(x, Math.cos(th) * r, Math.sin(th) * r, a, 1.05);
+        }
+      }
+      return out;
     }
 
     function fit(pts: P[]) {
@@ -983,14 +1057,9 @@ export function ParticleScene() {
       } catch {
         /* keep the generic figures */
       }
-      let mtn: P[] = [];
-      try {
-        mtn = await mountain();
-      } catch {
-        mtn = text("trilha", 5, 1.6);
-      }
+      const dawn = megaphone();
       if (!alive) return;
-      SCENES = [...shapes, mtn].map(fit);
+      SCENES = [...shapes, dawn].map(fit);
       begin(want);
       el.style.opacity = "1";
       raf = requestAnimationFrame(frame);
