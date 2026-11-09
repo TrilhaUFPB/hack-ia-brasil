@@ -41,16 +41,18 @@ export const FORM = {
       note: (team ? "Respondam juntos, pelo time. " : "") + "Não precisa ser longo: respostas específicas valem mais que bonitas.",
     }),
     challenge: "Escolha um problema real da sua escola, faculdade, cidade ou família que tecnologia poderia ajudar a resolver.",
-    challengeHint:
-      "Isto não é o projeto do hackathon: o tema só é revelado na abertura, e ninguém vai precisar defender esta ideia no dia. Queremos entender como vocês pensam um problema com senso crítico. Para quem é? Por que importa? Como vocês saberiam que a solução funcionou?",
+    challengeHint: (team: boolean) =>
+      `Isto não é o projeto do hackathon: o tema só é revelado na abertura, e ninguém vai precisar defender esta ideia no dia. Queremos entender como ${team ? "vocês pensam" : "você pensa"} um problema com senso crítico. Para quem é? Por que importa? Como ${team ? "vocês saberiam" : "você saberia"} que a solução funcionou?`,
     role: "Que papel você quer ter num time e o que você traz?",
     fellowship: (team: boolean) =>
       `Se ${team ? "o time ganhasse" : "você ganhasse"} e entrasse na IA Brasil Fellowship, o que ${team ? "fariam" : "faria"} nos 12 meses seguintes?`,
     send: { title: "Quase lá", note: "Confira e deslize para enviar." },
     available: (team: boolean) =>
       `Confirmo que ${team ? "todo o time está disponível" : "estou disponível"} no sábado, 21/11, das 8h às 18h, em João Pessoa.`,
-    consent: (team: boolean) =>
-      `Autorizo o uso destes dados para a seleção e da imagem ${team ? "do time" : "minha"} na divulgação do evento. ${team ? "Todos os membros sabem" : "Eu sei"} desta inscrição, e os responsáveis de quem tem menos de 18 anos estão cientes.`,
+    consent: (team: boolean, minors: boolean) =>
+      `Autorizo o uso destes dados para a seleção e ${team ? "da imagem do time" : "da minha imagem"} na divulgação do evento.` +
+      (team ? " Todos os membros sabem desta inscrição." : "") +
+      (minors ? (team ? " Os responsáveis de quem tem menos de 18 anos estão cientes." : " Tenho menos de 18 anos e meu responsável está ciente.") : ""),
     source: "Como ficou sabendo do hackathon?",
     error: "Não conseguimos enviar. Suas respostas estão salvas neste navegador; tente de novo em instantes.",
     slide: "Deslize para enviar",
@@ -103,7 +105,7 @@ export const FORM = {
       note: (team ? "Answer together, as a team. " : "") + "Keep it short: specific answers beat polished ones.",
     }),
     challenge: "Pick a real problem at your school, university, city or family that technology could help solve.",
-    challengeHint:
+    challengeHint: () =>
       "This is not the hackathon project: the theme is only revealed at the opening, and no one will have to defend this idea on the day. We want to see how you think critically about a problem. Who is it for? Why does it matter? How would you know the solution worked?",
     role: "What role do you want on a team, and what do you bring?",
     fellowship: (team: boolean) =>
@@ -111,8 +113,10 @@ export const FORM = {
     send: { title: "Almost there", note: "Check everything and slide to send." },
     available: (team: boolean) =>
       `I confirm that ${team ? "the whole team is" : "I am"} available on Saturday, Nov 21, from 8am to 6pm, in João Pessoa.`,
-    consent: (team: boolean) =>
-      `I authorize the use of this data for selection and of ${team ? "the team's" : "my"} image to promote the event. ${team ? "All members know" : "I know"} about this application, and the guardians of anyone under 18 are aware.`,
+    consent: (team: boolean, minors: boolean) =>
+      `I authorize the use of this data for selection and of ${team ? "the team's" : "my"} image to promote the event.` +
+      (team ? " All members know about this application." : "") +
+      (minors ? (team ? " The guardians of anyone under 18 are aware." : " I'm under 18 and my guardian knows.") : ""),
     source: "How did you hear about the hackathon?",
     error: "We couldn't send it. Your answers are saved in this browser; try again in a moment.",
     slide: "Slide to send",

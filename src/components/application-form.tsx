@@ -72,6 +72,7 @@ export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
   const steps: (keyof Copy["steps"])[] = ["you", ...(a.mode === "time" ? (["team"] as const) : []), "answers", "send"];
   const current = steps[Math.min(step, steps.length - 1)];
   const isTeam = a.mode === "time";
+  const hasMinor = [a.me, ...(isTeam ? a.team.members : [])].some((p) => isMinor(p.age));
 
   const set = (patch: Partial<Application>) => setA((s) => ({ ...s, ...patch }));
   const setMe = (patch: Partial<Application["me"]>) => setA((s) => ({ ...s, me: { ...s.me, ...patch } }));
@@ -242,7 +243,7 @@ export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
               <Heading {...t.answers(isTeam)} />
               <Area
                 label={t.challenge}
-                hint={t.challengeHint}
+                hint={t.challengeHint(isTeam)}
                 value={a.challenge}
                 onChange={(v) => set({ challenge: v })}
               />
@@ -273,7 +274,7 @@ export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
               <Check
                 checked={a.consent}
                 onChange={(v) => set({ consent: v })}
-                label={t.consent(isTeam)}
+                label={t.consent(isTeam, hasMinor)}
               />
               <Choice label={t.source} name="source" options={SOURCES} value={a.source} onChange={(v) => set({ source: v })} required={false} />
               <Summary a={a} />
