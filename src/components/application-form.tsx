@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { SlideToConfirm } from "./fx/slide-to-confirm";
+import { useHtmlLang } from "./fx/use-html-lang";
 import {
   LIMIT,
   MAX_OTHERS,
@@ -14,8 +15,14 @@ import {
   emptyPerson,
   isMinor,
   type Application,
+  type Option,
   type Person,
 } from "@/lib/application";
+import { FORM } from "@/lib/form-copy";
+import type { Lang } from "@/content";
+
+type Copy = (typeof FORM)["pt"];
+const CopyCtx = createContext<{ t: Copy; lang: Lang }>({ t: FORM.pt, lang: "pt" });
 
 const DRAFT_KEY = "hackia-inscricao-v1";
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -24,7 +31,9 @@ const field =
   "w-full border border-white/15 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-white/35 outline-none transition-colors focus:border-white/70";
 const labelCls = "font-mono text-[11px] uppercase tracking-[0.22em] text-white/75";
 
-export function ApplicationForm() {
+export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
+  const t: Copy = FORM[lang] as Copy;
+  useHtmlLang(lang);
   const [a, setA] = useState<Application>(emptyApplication);
   const [step, setStep] = useState(0);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -60,7 +69,7 @@ export function ApplicationForm() {
     } catch {}
   }, [a, loaded, status]);
 
-  const steps = ["Você", ...(a.mode === "time" ? ["Time"] : []), "Respostas", "Enviar"];
+  const steps: (keyof Copy["steps"])[] = ["you", ...(a.mode === "time" ? (["team"] as const) : []), "answers", "send"];
   const current = steps[Math.min(step, steps.length - 1)];
   const isTeam = a.mode === "time";
 
@@ -82,7 +91,7 @@ export function ApplicationForm() {
     fetch("/api/inscricao", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(a),
+      body: JSON.stringify({ ...a, lang }),
     })
       .then(async (r) => {
         if (!r.ok) throw new Error((await r.json().catch(() => null))?.error ?? "Erro ao enviar");
@@ -105,16 +114,15 @@ export function ApplicationForm() {
         transition={{ type: "spring", stiffness: 300, damping: 25 }}
         className="border border-white/15 px-8 py-12 text-center"
       >
-        <p className={labelCls}>inscrição recebida</p>
-        <h2 className="mt-6 text-2xl font-extralight md:text-3xl">Até o dia 21, {a.me.name.split(" ")[0]}.</h2>
-        <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
-          O resultado sai por e-mail. {isTeam && "Avise o seu time que a inscrição foi feita por você."}
-        </p>
+        <p className={labelCls}>{t.sent.label}</p>
+        <h2 className="mt-6 text-2xl font-extralight md:text-3xl">{t.sent.title(a.me.name.split(" ")[0])}</h2>
+        <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">{t.sent.body(isTeam)}</p>
       </motion.div>
     );
   }
 
   return (
+    <CopyCtx.Provider value={{ t, lang }}>
     <form ref={formRef} onSubmit={(e) => e.preventDefault()} className="grid gap-10" noValidate={false}>
       {/* honeypot: hidden from people, bots fill it */}
       <input
@@ -131,7 +139,7 @@ export function ApplicationForm() {
       <ol className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-[0.25em]">
         {steps.map((s, i) => (
           <li key={s} className={i === step ? "text-white" : i < step ? "text-white/60" : "text-white/30"}>
-            {String(i + 1).padStart(2, "0")} {s}
+            {String(i + 1).padStart(2, "0")} {t.steps[s]}
           </li>
         ))}
       </ol>
@@ -145,67 +153,67 @@ export function ApplicationForm() {
           transition={{ duration: 0.35, ease: EASE }}
           className="grid gap-8"
         >
-          {current === "Você" && (
+          {current === "you" && (
             <>
-              <Heading title="Sobre você" note="Se você vai em time, é você quem inscreve o time inteiro." />
+              <Heading title={t.you.title} note={t.you.note} />
               <div className="grid gap-5 sm:grid-cols-2">
-                <Input label="Nome completo" value={a.me.name} onChange={(v) => setMe({ name: v })} autoComplete="name" />
-                <Input label="E-mail" type="email" value={a.me.email} onChange={(v) => setMe({ email: v })} autoComplete="email" />
+                <Input label={t.name} value={a.me.name} onChange={(v) => setMe({ name: v })} autoComplete="name" />
+                <Input label={t.email} type="email" value={a.me.email} onChange={(v) => setMe({ email: v })} autoComplete="email" />
                 <Input
-                  label="WhatsApp com DDD"
+                  label={t.whatsapp}
                   type="tel"
                   value={a.me.whatsapp}
                   onChange={(v) => setMe({ whatsapp: v })}
                   autoComplete="tel"
                   pattern="[0-9\s\(\)\+\-]{10,}"
-                  title="Número com DDD, ex.: (83) 99999-9999"
+                  title={t.whatsappTitle}
                 />
-                <Input label="Cidade / UF" value={a.me.city} onChange={(v) => setMe({ city: v })} autoComplete="address-level2" />
+                <Input label={t.city} value={a.me.city} onChange={(v) => setMe({ city: v })} autoComplete="address-level2" />
               </div>
               <PersonCore id="me" p={a.me} onChange={setMe} />
               <Area
-                label="Um projeto de que você tem orgulho"
-                hint="Não precisa ser de tecnologia: vale um app, um robô, uma olimpíada, um negócio, um evento, o grêmio, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a sua parte e mande o link, se tiver."
+                label={t.myProject}
+                hint={t.myProjectHint}
                 value={a.me.project}
                 onChange={(v) => setMe({ project: v })}
                 max={500}
               />
               <Choice
-                label="Como você vai participar?"
+                label={t.mode}
                 name="mode"
-                options={MODES.map((m) => m.label)}
-                value={MODES.find((m) => m.v === a.mode)?.label ?? ""}
-                onChange={(v) => set({ mode: MODES.find((m) => m.label === v)?.v ?? "" })}
+                options={MODES}
+                value={a.mode}
+                onChange={(v) => set({ mode: v })}
                 stacked
               />
             </>
           )}
 
-          {current === "Time" && (
+          {current === "team" && (
             <>
-              <Heading title="O seu time" note="Times de 3 ou 4 pessoas, contando com você. Cada membro tem o seu espaço." />
+              <Heading title={t.teamStep.title} note={t.teamStep.note} />
               {a.team.members.map((m, i) => (
                 <fieldset key={i} className="grid gap-5 border-t border-white/10 pt-8">
                   <div className="flex items-baseline justify-between">
-                    <legend className={labelCls}>Membro {i + 2}</legend>
+                    <legend className={labelCls}>{t.member} {i + 2}</legend>
                     {i >= MIN_OTHERS && (
                       <button
                         type="button"
                         onClick={() => setTeam({ members: a.team.members.filter((_, j) => j !== i) })}
                         className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/50 transition-colors hover:text-white"
                       >
-                        remover
+                        {t.remove}
                       </button>
                     )}
                   </div>
                   <div className="grid gap-5 sm:grid-cols-2">
-                    <Input label="Nome completo" value={m.name} onChange={(v) => setMember(i, { name: v })} />
-                    <Input label="E-mail" type="email" value={m.email} onChange={(v) => setMember(i, { email: v })} />
+                    <Input label={t.name} value={m.name} onChange={(v) => setMember(i, { name: v })} />
+                    <Input label={t.email} type="email" value={m.email} onChange={(v) => setMember(i, { email: v })} />
                   </div>
                   <PersonCore id={`m${i}`} p={m} onChange={(patch) => setMember(i, patch)} />
                   <Area
-                    label="Um projeto que essa pessoa construiu ou de que participou"
-                    hint="Não precisa ser de tecnologia: vale um negócio, um evento, o grêmio, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a parte dela e mande o link, se tiver."
+                    label={t.memberProject}
+                    hint={t.memberProjectHint}
                     value={m.project}
                     onChange={(v) => setMember(i, { project: v })}
                     max={500}
@@ -218,67 +226,60 @@ export function ApplicationForm() {
                   onClick={() => setTeam({ members: [...a.team.members, emptyPerson()] })}
                   className="justify-self-start border border-dashed border-white/25 px-5 py-3 font-mono text-[11px] uppercase tracking-[0.22em] text-white/75 transition-colors hover:border-white/70 hover:text-white"
                 >
-                  + adicionar 4º membro
+                  {t.addMember}
                 </button>
               )}
               <Area
-                label="Por que vocês formaram esse time e como vão dividir o trabalho no dia?"
+                label={t.plan}
                 value={a.team.plan}
                 onChange={(v) => setTeam({ plan: v })}
               />
             </>
           )}
 
-          {current === "Respostas" && (
+          {current === "answers" && (
             <>
-              <Heading
-                title={isTeam ? "Respostas do time" : "Suas respostas"}
-                note={
-                  isTeam
-                    ? "Respondam juntos, pelo time. Não precisa ser longo: respostas específicas valem mais que bonitas."
-                    : "Não precisa ser longo: respostas específicas valem mais que bonitas."
-                }
-              />
+              <Heading {...t.answers(isTeam)} />
               <Area
-                label="Escolha um problema real da sua escola, faculdade, cidade ou família que tecnologia poderia ajudar a resolver."
-                hint="Isto não é o projeto do hackathon: o tema só é revelado na abertura, e ninguém vai precisar defender esta ideia no dia. Queremos entender como vocês pensam um problema com senso crítico. Para quem é? Por que importa? Como vocês saberiam que a solução funcionou?"
+                label={t.challenge}
+                hint={t.challengeHint}
                 value={a.challenge}
                 onChange={(v) => set({ challenge: v })}
               />
               {!isTeam && (
                 <Area
-                  label="Que papel você quer ter num time e o que você traz?"
+                  label={t.role}
                   value={a.role}
                   onChange={(v) => set({ role: v })}
                   max={500}
                 />
               )}
               <Area
-                label={`Se ${isTeam ? "o time ganhasse" : "você ganhasse"} e entrasse na IA Brasil Fellowship, o que ${isTeam ? "fariam" : "faria"} nos 12 meses seguintes?`}
+                label={t.fellowship(isTeam)}
                 value={a.fellowship}
                 onChange={(v) => set({ fellowship: v })}
               />
             </>
           )}
 
-          {current === "Enviar" && (
+          {current === "send" && (
             <>
-              <Heading title="Quase lá" note="Confira e deslize para enviar." />
+              <Heading title={t.send.title} note={t.send.note} />
               <Check
                 checked={a.available}
                 onChange={(v) => set({ available: v })}
-                label={`Confirmo que ${isTeam ? "todo o time está disponível" : "estou disponível"} no sábado, 21/11, das 8h às 18h, em João Pessoa.`}
+                label={t.available(isTeam)}
               />
               <Check
                 checked={a.consent}
                 onChange={(v) => set({ consent: v })}
-                label={`Autorizo o uso destes dados para a seleção e da imagem ${isTeam ? "do time" : "minha"} na divulgação do evento. ${isTeam ? "Todos os membros" : "Eu"} ${isTeam ? "sabem" : "sei"} desta inscrição, e os responsáveis de quem tem menos de 18 anos estão cientes.`}
+                label={t.consent(isTeam)}
               />
-              <Choice label="Como ficou sabendo do hackathon?" name="source" options={SOURCES} value={a.source} onChange={(v) => set({ source: v })} required={false} />
+              <Choice label={t.source} name="source" options={SOURCES} value={a.source} onChange={(v) => set({ source: v })} required={false} />
               <Summary a={a} />
               {status === "error" && (
                 <p role="alert" className="text-sm text-white">
-                  Não conseguimos enviar. Suas respostas estão salvas neste navegador; tente de novo em instantes.
+                  {t.error}
                 </p>
               )}
               <SlideToConfirm
@@ -286,8 +287,8 @@ export function ApplicationForm() {
                 className="border border-white/15 bg-white/[0.03] text-white"
                 knobClass="bg-white text-[#000928]"
                 fillClass="bg-white/15"
-                label={status === "sending" ? "Enviando…" : "Deslize para enviar"}
-                doneLabel="Enviando…"
+                label={status === "sending" ? t.sending : t.slide}
+                doneLabel={t.sending}
                 onConfirm={submit}
               />
             </>
@@ -302,22 +303,23 @@ export function ApplicationForm() {
             onClick={() => go(-1)}
             className="font-mono text-[11px] uppercase tracking-[0.25em] text-white/60 transition-colors hover:text-white"
           >
-            ← voltar
+            {t.back}
           </button>
         ) : (
-          <span className="text-xs text-white/50">Suas respostas ficam salvas neste navegador.</span>
+          <span className="text-xs text-white/50">{t.draftNote}</span>
         )}
-        {current !== "Enviar" && (
+        {current !== "send" && (
           <button
             type="button"
             onClick={() => go(1)}
             className="bg-white px-7 py-3.5 font-mono text-xs font-semibold uppercase tracking-[0.3em] text-[#000928] transition-[filter] hover:brightness-110"
           >
-            Continuar
+            {t.next}
           </button>
         )}
       </div>
     </form>
+    </CopyCtx.Provider>
   );
 }
 
@@ -340,46 +342,44 @@ function PersonCore({
   p: Person;
   onChange: (patch: Partial<Person>) => void;
 }) {
+  const { t } = useContext(CopyCtx);
   return (
     <div className="grid gap-5">
       <div className="grid gap-5 sm:grid-cols-[8rem_1fr]">
         <Input
-          label="Idade"
+          label={t.age}
           type="number"
           inputMode="numeric"
           min={12}
           max={25}
           value={p.age}
           onChange={(v) => onChange({ age: v })}
-          title="O hackathon é para pessoas de 12 a 25 anos"
+          title={t.ageTitle}
         />
         <Input
-          label="Escola ou universidade"
-          placeholder="Se não estuda, escreva “não se aplica”"
+          label={t.school}
+          placeholder={t.schoolPlaceholder}
           value={p.school}
           onChange={(v) => onChange({ school: v })}
         />
       </div>
       {isMinor(p.age) && (
         <div className="grid gap-5 border-l border-white/20 pl-5 sm:grid-cols-2">
-          <p className="text-sm leading-relaxed text-white/75 sm:col-span-2">
-            Menores de 18 precisam da autorização de um responsável. Se o time for aprovado, enviamos o termo para este
-            e-mail.
-          </p>
-          <Input label="Nome do responsável" value={p.guardianName} onChange={(v) => onChange({ guardianName: v })} />
+          <p className="text-sm leading-relaxed text-white/75 sm:col-span-2">{t.guardianNote}</p>
+          <Input label={t.guardianName} value={p.guardianName} onChange={(v) => onChange({ guardianName: v })} />
           <Input
-            label="E-mail do responsável"
+            label={t.guardianEmail}
             type="email"
             value={p.guardianEmail}
             onChange={(v) => onChange({ guardianEmail: v })}
           />
         </div>
       )}
-      <Choice label="Momento atual" name={`stage-${id}`} options={STAGES} value={p.stage} onChange={(v) => onChange({ stage: v })} />
+      <Choice label={t.stage} name={`stage-${id}`} options={STAGES} value={p.stage} onChange={(v) => onChange({ stage: v })} />
       <Input
-        label="LinkedIn, GitHub, site ou portfólio"
+        label={t.links}
         required={false}
-        placeholder="Cole um ou mais links, separados por vírgula"
+        placeholder={t.linksPlaceholder}
         value={p.links}
         onChange={(v) => onChange({ links: v })}
       />
@@ -393,11 +393,12 @@ type InputProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange" |
   onChange: (v: string) => void;
 };
 function Input({ label, value, onChange, required = true, ...props }: InputProps) {
+  const { t } = useContext(CopyCtx);
   return (
     <label className="grid content-start gap-2">
       <span className={labelCls}>
         {label}
-        {!required && <span className="text-white/40"> · opcional</span>}
+        {!required && <span className="text-white/40"> · {t.optional}</span>}
       </span>
       <input {...props} required={required} value={value} onChange={(e) => onChange(e.target.value)} className={field} />
     </label>
@@ -451,30 +452,31 @@ function Choice({
 }: {
   label: string;
   name: string;
-  options: string[];
+  options: Option[];
   value: string;
   onChange: (v: string) => void;
   stacked?: boolean;
   required?: boolean;
 }) {
+  const { t, lang } = useContext(CopyCtx);
   return (
     <fieldset className="grid gap-3">
       <legend className={`${labelCls} mb-3`}>
         {label}
-        {!required && <span className="text-white/40"> · opcional</span>}
+        {!required && <span className="text-white/40"> · {t.optional}</span>}
       </legend>
       <div className={stacked ? "grid gap-2" : "flex flex-wrap gap-2"}>
         {options.map((o) => (
-          <label key={o} className={pill}>
+          <label key={o.v} className={pill}>
             <input
               type="radio"
               name={name}
               required={required}
-              checked={value === o}
-              onChange={() => onChange(o)}
+              checked={value === o.v}
+              onChange={() => onChange(o.v)}
               className="sr-only"
             />
-            {o}
+            {o[lang]}
           </label>
         ))}
       </div>
@@ -499,14 +501,16 @@ function Check({ checked, onChange, label }: { checked: boolean; onChange: (v: b
 }
 
 function Summary({ a }: { a: Application }) {
+  const { t, lang } = useContext(CopyCtx);
+  const label = (opts: Option[], v: string) => opts.find((o) => o.v === v)?.[lang] ?? "—";
   const people = [a.me, ...(a.mode === "time" ? a.team.members : [])];
   return (
     <div className="border border-white/10 p-5 text-sm text-white/80">
-      <p className={labelCls}>{a.mode === "time" ? `time de ${1 + a.team.members.length} pessoas` : MODES.find((m) => m.v === a.mode)?.label}</p>
+      <p className={labelCls}>{a.mode === "time" ? t.teamOf(1 + a.team.members.length) : label(MODES, a.mode)}</p>
       <ul className="mt-4 grid gap-1.5">
         {people.map((p, i) => (
           <li key={i}>
-            {p.name || "—"} · {p.age || "?"} anos · {p.stage || "—"}
+            {p.name || "—"} · {p.age || "?"} {t.years} · {label(STAGES, p.stage)}
           </li>
         ))}
       </ul>

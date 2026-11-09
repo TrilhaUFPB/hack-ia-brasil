@@ -68,6 +68,7 @@ export async function POST(req: Request) {
     papel_no_time: isTeam ? "" : a.role,
     fellowship: a.fellowship,
     como_soube: a.source,
+    idioma: a.lang === "en" ? "en" : "pt",
   };
   for (let i = 0; i < MAX_OTHERS; i++) {
     Object.assign(row, personCols(members[i] ?? ({} as Person), `m${i + 2}_`));
