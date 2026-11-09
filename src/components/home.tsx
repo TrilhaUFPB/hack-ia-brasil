@@ -131,23 +131,23 @@ export function Home({ lang }: { lang: Lang }) {
       <ClickDots />
       {/* HERO */}
       <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
-        <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
+        <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:grid md:grid-cols-[1fr_auto_1fr] md:px-20 lg:px-32">
           <span className="font-mono text-xs uppercase tracking-[0.28em] text-white/90">Hack IA Brasil</span>
           <nav className="hidden gap-10 font-mono text-xs uppercase tracking-[0.28em] text-white/75 md:flex">
             <a href="#premio" className="transition-colors hover:text-white">{t.nav[0]}</a>
             <a href="#dia" className="transition-colors hover:text-white">{t.nav[1]}</a>
             <a href="#quem" className="transition-colors hover:text-white">{t.nav[2]}</a>
           </nav>
-          <div className="flex items-center gap-6 font-mono text-xs uppercase tracking-[0.28em]">
+          <div className="flex items-center justify-end gap-6 font-mono text-xs uppercase tracking-[0.28em]">
+            <a href={signup} className="text-white/90 transition-colors hover:text-white">
+              {t.apply}
+            </a>
             <a
               href={localePath(lang === "en" ? "pt" : "en", "/")}
               hrefLang={lang === "en" ? "pt-BR" : "en"}
-              className="text-white/60 transition-colors hover:text-white"
+              className="w-6 text-right text-white/60 transition-colors hover:text-white"
             >
               {t.switchLabel}
-            </a>
-            <a href={signup} className="text-white/90 transition-colors hover:text-white">
-              {t.apply}
             </a>
           </div>
         </header>
