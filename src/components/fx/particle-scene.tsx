@@ -15,7 +15,7 @@ import { dotRipple } from "./click-dots";
  *  3 a crowd (12–25, anyone who builds)
  *  4 two mentors facing each other
  *  5 "?"
- *  6 the Trilha mountain
+ *  6 a passport (sign-up)
  */
 
 type P = [number, number, number, number, number, number, number, number]; // x y z r g b alpha size
@@ -519,20 +519,78 @@ export function ParticleScene() {
       return out;
     }
 
-    async function mountain(): Promise<P[]> {
-      const img = new Image();
-      img.src = "/montanha.svg";
-      await img.decode();
-      seed = 51;
-      const ar = img.naturalWidth / img.naturalHeight || 1.43;
-      const Wu = 4.6,
-        Hu = Wu / ar;
-      return sampleCanvas(
-        (g, W, H) => g.drawImage(img, 0, 0, W, H),
-        Wu,
-        Hu,
-        narrow() ? 0.04 : 0.022,
-      );
+    /** Sign-up: a closed passport in 3D ("Seu passaporte começa aqui"): cover with a
+     *  Menta globe emblem and lettering, stacked page edges on the side. */
+    function passport(): P[] {
+      seed = 61;
+      const out: P[] = [];
+      const W = 2.5, H = 3.5, T = 0.32, hw = W / 2, hh = H / 2, zf = T / 2;
+      const dense = narrow() ? 0.6 : 1;
+      // cover: a faint fill and a crisp border, front and back
+      for (const z of [zf, -zf]) {
+        const front = z > 0;
+        for (let i = 0; i < 1700 * dense * (front ? 1 : 0.35); i++)
+          out.push([(rnd() - 0.5) * W, (rnd() - 0.5) * H, z, ...WHITE, front ? 0.22 : 0.12, 0.9]);
+        for (let i = 0; i < 900 * dense; i++) {
+          const t = rnd() * 2 * (W + H);
+          let x, y;
+          if (t < W) [x, y] = [t - hw, hh];
+          else if (t < W + H) [x, y] = [hw, hh - (t - W)];
+          else if (t < 2 * W + H) [x, y] = [hw - (t - W - H), -hh];
+          else [x, y] = [-hw, -hh + (t - 2 * W - H)];
+          out.push([x, y, z, ...WHITE, front ? 0.95 : 0.4, 1.05]);
+        }
+      }
+      // spine on the left, page block on the other three sides: thin stacked lines
+      for (let i = 0; i < 700 * dense; i++) {
+        const y = (rnd() - 0.5) * H, z = (rnd() - 0.5) * T;
+        out.push([-hw - 0.03 * Math.cos((z / T) * Math.PI), y, z, ...WHITE, 0.8, 1]);
+      }
+      const PAGES = 7;
+      for (let k = 1; k < PAGES; k++) {
+        const z = -zf + (k / PAGES) * T, inset = 0.04;
+        for (let i = 0; i < 260 * dense; i++) {
+          const y = (rnd() - 0.5) * (H - 2 * inset);
+          out.push([hw - inset, y, z, ...WHITE, 0.5, 0.85]);
+          if (i % 2) out.push([(rnd() - 0.5) * (W - inset) - inset / 2, (rnd() < 0.5 ? 1 : -1) * (hh - inset), z, ...WHITE, 0.45, 0.85]);
+        }
+      }
+      // emblem: a small globe in Menta, embossed on the cover
+      const R = 0.62, cy = 0.15, ze = zf + 0.02;
+      for (let i = 0; i < 520 * dense; i++) {
+        const t = rnd() * Math.PI * 2;
+        out.push([Math.cos(t) * R, cy + Math.sin(t) * R, ze, ...MENTA, 1, 1.1]);
+      }
+      for (const m of [0.35, 0.75]) // meridians
+        for (let i = 0; i < 200 * dense; i++) {
+          const t = (rnd() - 0.5) * Math.PI;
+          for (const sgn of [1, -1]) out.push([sgn * Math.sin(m) * Math.cos(t) * R, cy + Math.sin(t) * R, ze, ...MENTA, 0.85, 1]);
+        }
+      for (const yy of [-0.45, 0, 0.45]) // parallels
+        for (let i = 0; i < 160 * dense; i++) {
+          const x = (rnd() * 2 - 1) * Math.sqrt(1 - yy * yy) * R;
+          out.push([x, cy + yy * R, ze, ...MENTA, 0.85, 1]);
+        }
+      for (let i = 0; i < 120 * dense; i++) out.push([0, cy + (rnd() * 2 - 1) * R, ze, ...MENTA, 0.85, 1]);
+      // lettering
+      const letter = (str: string, w: number, h: number, y: number, weight: number) => {
+        for (const p of text(str, w, h, weight)) {
+          p[1] = p[1] + y;
+          p[2] = zf + 0.02;
+          p[6] = 0.95;
+          out.push(p);
+        }
+      };
+      letter("IA HACK", 1.5, 0.34, hh - 0.62, 500);
+      letter("PASSAPORTE", 1.9, 0.3, -hh + 0.75, 400);
+      // turn it so the thickness reads
+      const ry = -0.5, rx = 0.12, cyR = Math.cos(ry), syR = Math.sin(ry), cxR = Math.cos(rx), sxR = Math.sin(rx);
+      for (const p of out) {
+        const x = p[0] * cyR + p[2] * syR, z0 = -p[0] * syR + p[2] * cyR;
+        const y = p[1] * cxR - z0 * sxR, z = p[1] * sxR + z0 * cxR;
+        p[0] = x; p[1] = y; p[2] = z;
+      }
+      return out;
     }
 
     function fit(pts: P[]) {
@@ -992,14 +1050,8 @@ export function ParticleScene() {
       } catch {
         /* keep the generic figures */
       }
-      let mtn: P[] = [];
-      try {
-        mtn = await mountain();
-      } catch {
-        mtn = text("trilha", 5, 1.6);
-      }
       if (!alive) return;
-      SCENES = [...shapes, mtn].map(fit);
+      SCENES = [...shapes, passport()].map(fit);
       begin(want);
       el.style.opacity = "1";
       raf = requestAnimationFrame(frame);

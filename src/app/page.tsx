@@ -11,7 +11,6 @@ import { pad, useCountdown } from "@/components/fx/use-countdown";
 import { Reveal } from "@/components/fx/reveal";
 import { Accordion } from "@/components/fx/accordion";
 import { SignupForm } from "@/components/signup-form";
-import { Sticker } from "@/components/fx/sticker";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -146,13 +145,6 @@ export default function Home() {
             <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/55">dias · horas · min · seg</span>
           </motion.div>
         </div>
-        <Sticker
-          src="/stickers/selo-ready-for-what-comes-next.png"
-          alt="Ready for what comes next"
-          width={128}
-          rotate={12}
-          className="bottom-[9%] left-[40%] hidden md:block"
-        />
       </section>
 
       {/* FACTS */}
@@ -194,13 +186,6 @@ export default function Home() {
 
       {/* PRIZE */}
       <section data-scene="1" data-side="right" id="premio" className="relative mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
-        <Sticker
-          src="/stickers/flamula-take-a-trilha.png"
-          alt="Take a Trilha"
-          width={150}
-          rotate={-9}
-          className="right-2 top-10 hidden md:block lg:right-8"
-        />
         <Label>o que está em jogo</Label>
         <Reveal>
           <h2 className="mt-6 max-w-2xl text-2xl font-medium tracking-[-0.01em] leading-tight md:text-4xl">
@@ -246,13 +231,6 @@ export default function Home() {
       {/* WHO */}
       <section data-scene="3" data-side="right" className="border-y border-white/[0.06]">
         <div className="relative mx-auto grid max-w-6xl gap-14 px-8 py-32 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
-          <Sticker
-            src="/stickers/cartao-assinatura.png"
-            alt="De estudantes para estudantes."
-            width={150}
-            rotate={7}
-            className="right-6 top-16 hidden md:block lg:right-14"
-          />
           <Reveal>
             <Label>quem pode</Label>
             <h2 className="mt-6 text-2xl font-medium tracking-[-0.01em] leading-tight md:text-3xl">
@@ -353,13 +331,6 @@ export default function Home() {
             />
             <p className="mt-5 text-xs font-light text-white/45">Menores de 18 precisam da confirmação de um responsável.</p>
           </div>
-          <Sticker
-            src="/stickers/tomada-seek-your-path.png"
-            alt="Seek your path. Build your trail."
-            width={170}
-            rotate={-7}
-            className="bottom-20 right-[6%] hidden md:block"
-          />
           <div className="mt-16 flex flex-wrap gap-x-8 gap-y-3 text-[12px] tracking-[0.15em] text-white/55">
             <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               conheça a IA Brasil Fellowship ↗
