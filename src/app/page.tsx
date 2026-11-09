@@ -147,7 +147,7 @@ export default function Home() {
                       IA Brasil
                     </a>{" "}
                     ×{" "}
-                    <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:text-[#A0B5FF] hover:decoration-[#A0B5FF]">
+                    <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
                       Trilha
                     </a>
                   </>
@@ -282,7 +282,7 @@ export default function Home() {
             <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               conheça a IA Brasil Fellowship ↗
             </a>
-            <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-[#A0B5FF]">
+            <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               conheça o Trilha ↗
             </a>
           </div>
@@ -305,7 +305,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
             aria-label="Trilha"
-            className="mx-auto mt-6 block w-fit text-white/80 transition-colors duration-500 hover:text-[#A0B5FF]"
+            className="mx-auto mt-6 block w-fit text-white/80 transition-colors duration-500 hover:text-white"
           >
             <span
               aria-hidden
