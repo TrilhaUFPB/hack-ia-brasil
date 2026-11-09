@@ -52,7 +52,7 @@ export async function POST(req: Request) {
   ];
   if (!MODES.some((m) => m.v === a.mode)) errors.push("modalidade");
   if (isTeam && (members.length < MIN_OTHERS || members.length > MAX_OTHERS)) errors.push("tamanho do time");
-  if (!a.challenge?.trim() || !a.fellowship?.trim() || !a.me.project?.trim()) errors.push("respostas");
+  if (!a.challenge?.trim() || !a.me.project?.trim()) errors.push("respostas");
   if (!a.available || !a.consent) errors.push("confirmações");
   if (errors.length) return Response.json({ error: `Campos inválidos: ${errors.join(", ")}` }, { status: 400 });
 
@@ -66,7 +66,6 @@ export async function POST(req: Request) {
     desafio: a.challenge,
     time_plano: isTeam ? a.team.plan : "",
     papel_no_time: isTeam ? "" : a.role,
-    fellowship: a.fellowship,
     como_soube: a.source,
     idioma: a.lang === "en" ? "en" : "pt",
   };

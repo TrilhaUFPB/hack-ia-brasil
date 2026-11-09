@@ -255,11 +255,6 @@ export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
                   max={500}
                 />
               )}
-              <Area
-                label={t.fellowship(isTeam)}
-                value={a.fellowship}
-                onChange={(v) => set({ fellowship: v })}
-              />
             </>
           )}
 

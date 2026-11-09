@@ -46,7 +46,6 @@ export type Application = {
   team: { plan: string; members: Person[] };
   challenge: string;
   role: string;
-  fellowship: string;
   available: boolean;
   consent: boolean;
   source: string;
@@ -72,7 +71,6 @@ export const emptyApplication = (): Application => ({
   team: { plan: "", members: [emptyPerson(), emptyPerson()] },
   challenge: "",
   role: "",
-  fellowship: "",
   available: false,
   consent: false,
   source: "",
