@@ -20,7 +20,7 @@ import { dotRipple } from "./click-dots";
 
 type P = [number, number, number, number, number, number, number, number]; // x y z r g b alpha size
 const WHITE: [number, number, number] = [1, 1, 1];
-const MENTA: [number, number, number] = [0, 0.83, 0.41];
+const MENTA: [number, number, number] = [1, 1, 1]; // white accent
 
 export function ParticleScene() {
   const host = useRef<HTMLDivElement>(null);
@@ -756,7 +756,7 @@ export function ParticleScene() {
         varying vec3 vC; varying float vA;
         void main() {
           // green and white points are drawn in separate passes (see below)
-          bool green = vC.g - vC.r > 0.35;
+          bool green = false; // accent is white now: no separate pass needed
           float va = vA;
           #ifdef MENTA_PASS
             if (!green) discard;
@@ -1057,7 +1057,7 @@ export function ParticleScene() {
       } catch {
         /* keep the generic figures */
       }
-      const dawn = megaphone();
+      const dawn: P[] = []; // signup: no shape, just the dust
       if (!alive) return;
       SCENES = [...shapes, dawn].map(fit);
       begin(want);
