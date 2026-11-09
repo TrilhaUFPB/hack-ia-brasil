@@ -31,7 +31,7 @@ const field =
   "w-full border border-white/15 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-white/35 outline-none transition-colors focus:border-white/70";
 const labelCls = "font-mono text-[11px] uppercase tracking-[0.22em] text-white/75";
 
-export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
+export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?: ReactNode }) {
   const t: Copy = FORM[lang] as Copy;
   useHtmlLang(lang);
   const [a, setA] = useState<Application>(emptyApplication);
@@ -113,7 +113,7 @@ export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
         initial={{ opacity: 0, scale: 0.97 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ type: "spring", stiffness: 300, damping: 25 }}
-        className="border border-white/15 px-8 py-12 text-center"
+        className="mt-8 border border-white/15 px-8 py-12 text-center"
       >
         <p className={labelCls}>{t.sent.label}</p>
         <h2 className="mt-6 text-2xl font-extralight md:text-3xl">{t.sent.title(a.me.name.split(" ")[0])}</h2>
@@ -124,6 +124,7 @@ export function ApplicationForm({ lang = "pt" }: { lang?: Lang }) {
 
   return (
     <CopyCtx.Provider value={{ t, lang }}>
+    {header}
     <form ref={formRef} onSubmit={(e) => e.preventDefault()} className="grid gap-10" noValidate={false}>
       {/* honeypot: hidden from people, bots fill it */}
       <input
@@ -357,6 +358,7 @@ function PersonCore({
           placeholder={t.schoolPlaceholder}
           value={p.school}
           onChange={(v) => onChange({ school: v })}
+          required={false}
         />
       </div>
       {isMinor(p.age) && (

@@ -16,7 +16,7 @@ export const FORM = {
     age: "Idade",
     ageTitle: "O hackathon é para pessoas de 12 a 25 anos",
     school: "Escola ou universidade",
-    schoolPlaceholder: "Se não estuda, escreva “não se aplica”",
+    schoolPlaceholder: "Se estuda, onde?",
     guardianNote:
       "Menores de 18 precisam da autorização de um responsável. Se o time for aprovado, enviamos o termo para este e-mail.",
     guardianName: "Nome do responsável",
@@ -26,7 +26,7 @@ export const FORM = {
     linksPlaceholder: "Cole um ou mais links, separados por vírgula",
     myProject: "Um projeto de que você tem orgulho",
     myProjectHint:
-      "Não precisa ser de tecnologia: vale um app, um robô, uma olimpíada, um negócio, um evento, o grêmio, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a sua parte e mande o link, se tiver.",
+      "Não precisa ser de tecnologia: vale um app, um robô, uma olimpíada, um negócio, um evento, um clube ou liga estudantil, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a sua parte e mande o link, se tiver.",
     mode: "Como você vai participar?",
     teamStep: { title: "O seu time", note: "Times de 3 ou 4 pessoas, contando com você. Cada membro tem o seu espaço." },
     member: "Membro",
@@ -34,7 +34,7 @@ export const FORM = {
     addMember: "+ adicionar 4º membro",
     memberProject: "Um projeto que essa pessoa construiu ou de que participou",
     memberProjectHint:
-      "Não precisa ser de tecnologia: vale um negócio, um evento, o grêmio, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a parte dela e mande o link, se tiver.",
+      "Não precisa ser de tecnologia: vale um negócio, um evento, um clube ou liga estudantil, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a parte dela e mande o link, se tiver.",
     plan: "Por que vocês formaram esse time e como vão dividir o trabalho no dia?",
     answers: (team: boolean) => ({
       title: team ? "Respostas do time" : "Suas respostas",
@@ -78,7 +78,7 @@ export const FORM = {
     age: "Age",
     ageTitle: "The hackathon is for people aged 12 to 25",
     school: "School or university",
-    schoolPlaceholder: "If you're not studying, write “not applicable”",
+    schoolPlaceholder: "If you study, where?",
     guardianNote:
       "Under-18s need a guardian's consent. If the team is accepted, we'll send the consent form to this e-mail.",
     guardianName: "Guardian's name",
@@ -88,7 +88,7 @@ export const FORM = {
     linksPlaceholder: "Paste one or more links, separated by commas",
     myProject: "A project you're proud of",
     myProjectHint:
-      "It doesn't have to be tech: an app, a robot, an olympiad, a business, an event, the student council, research or volunteer work all count. Tell us what it was, what your part was, and add a link if you have one.",
+      "It doesn't have to be tech: an app, a robot, an olympiad, a business, an event, a student club or league, research or volunteer work all count. Tell us what it was, what your part was, and add a link if you have one.",
     mode: "How will you take part?",
     teamStep: { title: "Your team", note: "Teams of 3 or 4 people, including you. Each member gets their own space." },
     member: "Member",
@@ -96,7 +96,7 @@ export const FORM = {
     addMember: "+ add a 4th member",
     memberProject: "A project this person built or took part in",
     memberProjectHint:
-      "It doesn't have to be tech: a business, an event, the student council, research or volunteer work all count. Tell us what it was, what their part was, and add a link if there is one.",
+      "It doesn't have to be tech: a business, an event, a student club or league, research or volunteer work all count. Tell us what it was, what their part was, and add a link if there is one.",
     plan: "Why did you form this team, and how will you split the work on the day?",
     answers: (team: boolean) => ({
       title: team ? "Team answers" : "Your answers",
