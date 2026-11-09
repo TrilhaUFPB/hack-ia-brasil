@@ -20,7 +20,7 @@ import { dotRipple } from "./click-dots";
 
 type P = [number, number, number, number, number, number, number, number]; // x y z r g b alpha size
 const WHITE: [number, number, number] = [1, 1, 1];
-const MENTA: [number, number, number] = [1, 1, 1]; // white accent
+const MENTA: [number, number, number] = [0.627, 0.71, 1]; // Trilha Azul Céu accent (#A0B5FF)
 
 export function ParticleScene() {
   const host = useRef<HTMLDivElement>(null);
@@ -756,7 +756,7 @@ export function ParticleScene() {
         varying vec3 vC; varying float vA;
         void main() {
           // green and white points are drawn in separate passes (see below)
-          bool green = false; // accent is white now: no separate pass needed
+          bool green = vC.b - vC.r > 0.3; // the Azul Céu accent gets its own max-blend pass
           float va = vA;
           #ifdef MENTA_PASS
             if (!green) discard;
