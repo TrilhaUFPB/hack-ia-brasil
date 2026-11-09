@@ -49,5 +49,10 @@ body {
 }
 
 body {
-  background: #000;
+  background-color: #000;
+  /* faint white grid behind everything */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
 }

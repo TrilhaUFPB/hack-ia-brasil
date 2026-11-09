@@ -53,7 +53,7 @@ export default function Home() {
   const cd = useCountdown(EVENT.start);
 
   return (
-    <main className="bg-black font-light text-white selection:bg-[#FFFFFF] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
+    <main className="font-light text-white selection:bg-[#A0B5FF] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
       <ParticleScene />
       <ClickDots />
       {/* HERO */}
@@ -98,7 +98,7 @@ export default function Home() {
           >
             <a
               href="#inscricao"
-              className="inline-flex items-center bg-[#FFFFFF] px-7 py-3.5 text-xs font-semibold tracking-[0.3em] text-[#000928] transition-[filter] duration-300 hover:brightness-110"
+              className="inline-flex items-center bg-[#A0B5FF] px-7 py-3.5 text-xs font-semibold tracking-[0.3em] text-[#000928] transition-[filter] duration-300 hover:brightness-110"
             >
               Quero participar
             </a>
@@ -166,7 +166,7 @@ export default function Home() {
         <Reveal>
           <h2 className="mx-auto mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
             O vencedor{" "}
-            <mark className="bg-[#FFFFFF] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
+            <mark className="bg-[#A0B5FF] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
           </h2>
           <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
             A{" "}
@@ -273,7 +273,7 @@ export default function Home() {
         <div data-scene="6" className="mx-auto flex min-h-[100svh] max-w-6xl flex-col items-center justify-center px-8 py-36 text-center md:px-20 lg:px-32">
           <Label>inscrições</Label>
           <h2 className="mt-6 text-3xl font-extralight leading-tight md:text-5xl">
-            Inscrições abrem <span className="text-[#FFFFFF]">em breve.</span>
+            Inscrições abrem <span className="text-[#A0B5FF]">em breve.</span>
           </h2>
           <p className="mt-6 font-mono text-xs uppercase leading-relaxed tracking-[0.3em] text-white/75">
             21.11 · 8h–18h · Miramar, João Pessoa
