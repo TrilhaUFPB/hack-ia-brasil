@@ -65,7 +65,7 @@ export default function Home() {
             <a href="#dia" className="transition-colors hover:text-white">Dia</a>
             <a href="#quem" className="transition-colors hover:text-white">Quem</a>
           </nav>
-          <a href="#inscricao" className="font-mono text-xs uppercase tracking-[0.28em] text-white/90 transition-colors hover:text-white">
+          <a href="/inscricao" className="font-mono text-xs uppercase tracking-[0.28em] text-white/90 transition-colors hover:text-white">
             Inscreva-se
           </a>
         </header>
@@ -97,7 +97,7 @@ export default function Home() {
             transition={{ delay: 1.2, duration: 1 }}
           >
             <a
-              href="#inscricao"
+              href="/inscricao"
               className="inline-flex items-center bg-[#FFFFFF] px-7 py-3.5 text-xs font-semibold tracking-[0.3em] text-[#000928] transition-[filter] duration-300 hover:brightness-110"
             >
               Quero participar
@@ -273,11 +273,17 @@ export default function Home() {
         <div data-scene="6" className="mx-auto flex min-h-[100svh] max-w-6xl flex-col items-center justify-center px-8 py-36 text-center md:px-20 lg:px-32">
           <Label>inscrições</Label>
           <h2 className="mt-6 text-3xl font-extralight leading-tight md:text-5xl">
-            Inscrições abrem <span className="text-[#FFFFFF]">em breve.</span>
+            Inscrições <span className="text-[#FFFFFF]">abertas.</span>
           </h2>
           <p className="mt-6 font-mono text-xs uppercase leading-relaxed tracking-[0.3em] text-white/75">
             21.11 · 8h–18h · Miramar, João Pessoa
           </p>
+          <a
+            href={EVENT.signupUrl}
+            className="mt-12 inline-flex items-center bg-[#FFFFFF] px-7 py-3.5 font-mono text-xs font-semibold uppercase tracking-[0.3em] text-[#000928] transition-[filter] duration-300 hover:brightness-110"
+          >
+            Inscrever-se
+          </a>
           <div className="mt-16 flex flex-wrap justify-center gap-x-8 gap-y-3 text-[12px] tracking-[0.15em] text-white/75">
             <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               conheça a IA Brasil Fellowship ↗

@@ -13,7 +13,7 @@ export const EVENT = {
   cost: "Gratuito",
   partners: ["IA Brasil Fellowship", "Trilha"],
   coords: { lat: "7°09′S", lon: "34°47′W" },
-  signupUrl: "#inscricao",
+  signupUrl: "/inscricao",
   fellowshipUrl: "https://iabrasil.com/",
   trilhaUrl: "https://www.otrilha.com",
 };
