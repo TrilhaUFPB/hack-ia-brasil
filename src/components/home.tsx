@@ -54,7 +54,7 @@ const T = {
     switchLabel: "PT",
     h1: ["A hackathon in", "João Pessoa", "could be your path to", "Silicon Valley."],
     sub: "Ten hours. One hard problem. We're looking for people, not just projects.",
-    cta: "I want in",
+    cta: "Count me in",
     countdown: "days · hours · min · sec",
     facts: [
       ["when", "Nov 21 · 8am–6pm"],
