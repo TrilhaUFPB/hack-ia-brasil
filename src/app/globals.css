@@ -57,13 +57,9 @@ body {
   background: #000928;
 }
 
-/* Trilha "papel com grade": a faint grid and grain over Azul Meia Noite */
+/* Trilha paper: grain over Azul Meia Noite */
 .paper {
   background-color: #000928;
-  background-image:
-    linear-gradient(rgba(253, 244, 229, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(253, 244, 229, 0.035) 1px, transparent 1px);
-  background-size: 48px 48px;
 }
 .paper::after {
   content: "";
