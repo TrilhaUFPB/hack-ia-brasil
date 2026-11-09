@@ -163,6 +163,13 @@ export function ApplicationForm() {
                 <Input label="Cidade / UF" value={a.me.city} onChange={(v) => setMe({ city: v })} autoComplete="address-level2" />
               </div>
               <PersonCore id="me" p={a.me} onChange={setMe} />
+              <Area
+                label="Um projeto de que você tem orgulho"
+                hint="Não precisa ser de tecnologia: vale um app, um robô, uma olimpíada, um negócio, um evento, o grêmio, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a sua parte e mande o link, se tiver."
+                value={a.me.project}
+                onChange={(v) => setMe({ project: v })}
+                max={500}
+              />
               <Choice
                 label="Como você vai participar?"
                 name="mode"
@@ -233,14 +240,8 @@ export function ApplicationForm() {
                 }
               />
               <Area
-                label="Um projeto de que você tem orgulho"
-                hint="Não precisa ser de tecnologia: vale um app, um robô, uma olimpíada, um negócio, um evento, o grêmio, uma pesquisa, um trabalho voluntário. Conte o que era, qual foi a sua parte e mande o link, se tiver."
-                value={a.me.project}
-                onChange={(v) => setMe({ project: v })}
-              />
-              <Area
                 label="Escolha um problema real da sua escola, faculdade, cidade ou família que tecnologia poderia ajudar a resolver."
-                hint="Para quem é? Por que importa? Como vocês saberiam que a solução funcionou?"
+                hint="Isto não é o projeto do hackathon: o tema só é revelado na abertura, e ninguém vai precisar defender esta ideia no dia. Queremos entender como vocês pensam um problema com senso crítico. Para quem é? Por que importa? Como vocês saberiam que a solução funcionou?"
                 value={a.challenge}
                 onChange={(v) => set({ challenge: v })}
               />
