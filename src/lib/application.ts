@@ -23,11 +23,14 @@ export type Person = {
   age: string;
   stage: string;
   school: string;
+  links: string;
   project: string;
+  guardianName: string; // only for under-18s
+  guardianEmail: string;
 };
 
 export type Application = {
-  me: Person & { whatsapp: string; city: string; guardianName: string; guardianPhone: string };
+  me: Person & { whatsapp: string; city: string };
   mode: string;
   team: { plan: string; members: Person[] };
   challenge: string;
@@ -45,11 +48,14 @@ export const emptyPerson = (): Person => ({
   age: "",
   stage: "",
   school: "",
+  links: "",
   project: "",
+  guardianName: "",
+  guardianEmail: "",
 });
 
 export const emptyApplication = (): Application => ({
-  me: { ...emptyPerson(), whatsapp: "", city: "", guardianName: "", guardianPhone: "" },
+  me: { ...emptyPerson(), whatsapp: "", city: "" },
   mode: "",
   team: { plan: "", members: [emptyPerson(), emptyPerson()] },
   challenge: "",

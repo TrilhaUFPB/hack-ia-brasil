@@ -38,7 +38,17 @@ export function ApplicationForm() {
   useEffect(() => {
     try {
       const saved = localStorage.getItem(DRAFT_KEY);
-      if (saved) setA({ ...emptyApplication(), ...JSON.parse(saved) });
+      if (saved) {
+        // merge per person too, so drafts saved before a field existed don't leave it undefined
+        const d = JSON.parse(saved);
+        const base = emptyApplication();
+        setA({
+          ...base,
+          ...d,
+          me: { ...base.me, ...d.me },
+          team: { ...base.team, ...d.team, members: (d.team?.members ?? base.team.members).map((m: Person) => ({ ...emptyPerson(), ...m })) },
+        });
+      }
     } catch {}
     setLoaded(true);
   }, []);
@@ -147,19 +157,12 @@ export function ApplicationForm() {
                   value={a.me.whatsapp}
                   onChange={(v) => setMe({ whatsapp: v })}
                   autoComplete="tel"
-                  pattern="[0-9 ()+-]{10,}"
+                  pattern="[0-9\s\(\)\+\-]{10,}"
                   title="Número com DDD, ex.: (83) 99999-9999"
                 />
                 <Input label="Cidade / UF" value={a.me.city} onChange={(v) => setMe({ city: v })} autoComplete="address-level2" />
               </div>
               <PersonCore id="me" p={a.me} onChange={setMe} />
-              {isMinor(a.me.age) && (
-                <div className="grid gap-5 border-l border-white/20 pl-5 sm:grid-cols-2">
-                  <p className="text-sm text-white/75 sm:col-span-2">Menores de 18 precisam da confirmação de um responsável.</p>
-                  <Input label="Nome do responsável" value={a.me.guardianName} onChange={(v) => setMe({ guardianName: v })} />
-                  <Input label="WhatsApp do responsável" type="tel" value={a.me.guardianPhone} onChange={(v) => setMe({ guardianPhone: v })} />
-                </div>
-              )}
               <Choice
                 label="Como você vai participar?"
                 name="mode"
@@ -356,7 +359,29 @@ function PersonCore({
           onChange={(v) => onChange({ school: v })}
         />
       </div>
+      {isMinor(p.age) && (
+        <div className="grid gap-5 border-l border-white/20 pl-5 sm:grid-cols-2">
+          <p className="text-sm leading-relaxed text-white/75 sm:col-span-2">
+            Menores de 18 precisam da autorização de um responsável. Se o time for aprovado, enviamos o termo para este
+            e-mail.
+          </p>
+          <Input label="Nome do responsável" value={p.guardianName} onChange={(v) => onChange({ guardianName: v })} />
+          <Input
+            label="E-mail do responsável"
+            type="email"
+            value={p.guardianEmail}
+            onChange={(v) => onChange({ guardianEmail: v })}
+          />
+        </div>
+      )}
       <Choice label="Momento atual" name={`stage-${id}`} options={STAGES} value={p.stage} onChange={(v) => onChange({ stage: v })} />
+      <Input
+        label="LinkedIn, GitHub, site ou portfólio"
+        required={false}
+        placeholder="Cole um ou mais links, separados por vírgula"
+        value={p.links}
+        onChange={(v) => onChange({ links: v })}
+      />
     </div>
   );
 }
@@ -410,8 +435,9 @@ function Area({
   );
 }
 
+// relative: keeps the sr-only radio inside the pill, otherwise focusing it scrolls the page away
 const pill =
-  "cursor-pointer border border-white/15 px-4 py-2.5 text-sm text-white/80 transition-colors hover:border-white/50 has-[:checked]:border-white has-[:checked]:bg-white has-[:checked]:text-[#000928] has-[:focus-visible]:outline has-[:focus-visible]:outline-white";
+  "relative cursor-pointer border border-white/15 px-4 py-2.5 text-sm text-white/80 transition-colors hover:border-white/50 has-[:checked]:border-white has-[:checked]:bg-white has-[:checked]:text-[#000928] has-[:focus-visible]:outline has-[:focus-visible]:outline-white";
 
 function Choice({
   label,

@@ -19,6 +19,7 @@ function personErrors(p: Person, who: string): string[] {
   const age = Number(p.age);
   if (!(age >= 12 && age <= 25)) e.push(`${who}: idade`);
   if (!p.stage) e.push(`${who}: momento atual`);
+  if (isMinor(p.age) && (!p.guardianName?.trim() || !EMAIL.test(p.guardianEmail ?? ""))) e.push(`${who}: responsável`);
   return e;
 }
 
@@ -28,7 +29,10 @@ const personCols = (p: Person, prefix: string) => ({
   [`${prefix}idade`]: p.age,
   [`${prefix}momento`]: p.stage,
   [`${prefix}instituicao`]: p.school,
+  [`${prefix}links`]: p.links,
   [`${prefix}projeto`]: p.project,
+  [`${prefix}responsavel_nome`]: p.guardianName,
+  [`${prefix}responsavel_email`]: p.guardianEmail,
 });
 
 export async function POST(req: Request) {
@@ -48,7 +52,6 @@ export async function POST(req: Request) {
   ];
   if (!MODES.some((m) => m.v === a.mode)) errors.push("modalidade");
   if (isTeam && (members.length < MIN_OTHERS || members.length > MAX_OTHERS)) errors.push("tamanho do time");
-  if (isMinor(a.me.age) && !a.me.guardianPhone?.trim()) errors.push("responsável");
   if (!a.challenge?.trim() || !a.fellowship?.trim() || !a.me.project?.trim()) errors.push("respostas");
   if (!a.available || !a.consent) errors.push("confirmações");
   if (errors.length) return Response.json({ error: `Campos inválidos: ${errors.join(", ")}` }, { status: 400 });
@@ -60,8 +63,6 @@ export async function POST(req: Request) {
     ...personCols(a.me, ""),
     whatsapp: a.me.whatsapp,
     cidade: a.me.city,
-    responsavel_nome: a.me.guardianName,
-    responsavel_whatsapp: a.me.guardianPhone,
     desafio: a.challenge,
     time_plano: isTeam ? a.team.plan : "",
     papel_no_time: isTeam ? "" : a.role,
