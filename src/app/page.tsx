@@ -11,15 +11,19 @@ import { pad, useCountdown } from "@/components/fx/use-countdown";
 import { Reveal } from "@/components/fx/reveal";
 import { Accordion } from "@/components/fx/accordion";
 import { SignupForm } from "@/components/signup-form";
+import { Sticker } from "@/components/fx/sticker";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 
 function Label({ children }: { children: string }) {
   return (
-    <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/55">
-      <Scramble text={children} />
-    </p>
+    <div className="flex items-center gap-4">
+      <span className="bg-[#1C4AE5] px-2 py-[3px] font-mono text-[11px] font-medium uppercase tracking-[0.16em] text-white">
+        <Scramble text={children} />
+      </span>
+      <span className="h-px flex-1 bg-white/10" />
+    </div>
   );
 }
 
@@ -54,26 +58,33 @@ export default function Home() {
   const cd = useCountdown(EVENT.start);
 
   return (
-    <main className="bg-black font-light text-white selection:bg-[#00D468] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
+    <main className="paper font-light text-white selection:bg-[#00D468] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
       <ParticleScene />
       <ClickDots />
       {/* HERO */}
       <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
         <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
-          <span className="font-mono text-[10px] uppercase tracking-[0.45em] text-white/90">IA Hack</span>
-          <nav className="hidden gap-10 font-mono text-[10px] uppercase tracking-[0.35em] text-white/55 md:flex">
+          <span className="flex items-center gap-2.5 text-[15px] font-semibold tracking-[-0.01em] text-white">
+            <span
+              aria-hidden
+              className="block h-[14px] w-[20px] bg-[#00D468]"
+              style={{ WebkitMask: "url(/montanha.svg) center/contain no-repeat", mask: "url(/montanha.svg) center/contain no-repeat" }}
+            />
+            IA Hack
+          </span>
+          <nav className="hidden gap-10 font-mono text-[10px] uppercase tracking-[0.2em] text-white/55 md:flex">
             <a href="#premio" className="transition-colors hover:text-white">Prêmio</a>
             <a href="#dia" className="transition-colors hover:text-white">Dia</a>
             <a href="#quem" className="transition-colors hover:text-white">Quem</a>
           </nav>
-          <a href="#inscricao" className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/90 transition-colors hover:text-white">
+          <a href="#inscricao" className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/90 transition-colors hover:text-white">
             inscrições →
           </a>
         </header>
 
         <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-8 pb-24 pt-32 md:justify-center md:px-20 md:pb-0 lg:px-32">
           <motion.p
-            className="font-mono text-[10px] uppercase tracking-[0.45em] text-white/65"
+            className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/65"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 1 }}
@@ -81,12 +92,13 @@ export default function Home() {
             <Scramble text="Hackathon · João Pessoa · 21.11" duration={1200} />
           </motion.p>
           <motion.h1
-            className="mt-8 max-w-[15em] text-balance text-[clamp(1.7rem,3.2vw,2.6rem)] font-extralight leading-[1.1] tracking-[-0.01em]"
+            className="mt-8 max-w-[15em] text-balance text-[clamp(2rem,3.9vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.025em]"
             initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ delay: 0.5, duration: 1.2, ease: EASE }}
           >
-            Seu caminho para o Vale do Silício <span className="text-white/65">começa em João Pessoa.</span>
+            Seu caminho para o Vale do Silício começa em{" "}
+            <mark className="whitespace-nowrap bg-[#00D468] px-[0.12em] text-[#000928]">João Pessoa.</mark>
           </motion.h1>
           <motion.p
             className="mt-8 max-w-sm text-sm leading-relaxed text-white/65"
@@ -97,7 +109,7 @@ export default function Home() {
             Dez horas. Um problema difícil. O time vencedor vai direto para a entrevista da IA Brasil Fellowship.
           </motion.p>
           <motion.div
-            className="pointer-events-auto mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 font-mono text-[11px] uppercase tracking-[0.35em]"
+            className="pointer-events-auto mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 font-mono text-[11px] uppercase tracking-[0.2em]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
@@ -122,7 +134,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 1 }}
           >
-            <div className="flex items-baseline gap-1.5 text-lg font-extralight tabular-nums text-white/85 md:text-xl">
+            <div className="flex items-baseline gap-1.5 font-mono text-xl font-medium tabular-nums text-white/85 md:text-xl">
               <RollingDigits value={pad(cd?.d)} />
               <span className="text-white/55">:</span>
               <RollingDigits value={pad(cd?.h)} />
@@ -131,9 +143,16 @@ export default function Home() {
               <span className="text-white/55">:</span>
               <RollingDigits value={pad(cd?.s)} />
             </div>
-            <span className="font-mono text-[9px] uppercase tracking-[0.4em] text-white/55">dias · horas · min · seg</span>
+            <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/55">dias · horas · min · seg</span>
           </motion.div>
         </div>
+        <Sticker
+          src="/stickers/selo-ready-for-what-comes-next.png"
+          alt="Ready for what comes next"
+          width={128}
+          rotate={12}
+          className="bottom-[9%] left-[40%] hidden md:block"
+        />
       </section>
 
       {/* FACTS */}
@@ -152,7 +171,7 @@ export default function Home() {
                 i > 1 ? "border-t md:border-t-0" : ""
               }`}
             >
-              <dt className="font-mono text-[9px] uppercase tracking-[0.4em] text-white/55">{k}</dt>
+              <dt className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/55">{k}</dt>
               <dd className="mt-2 text-sm text-white/90">
                 {k === "parceria" ? (
                   <>
@@ -174,10 +193,17 @@ export default function Home() {
       </section>
 
       {/* PRIZE */}
-      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+      <section data-scene="1" data-side="right" id="premio" className="relative mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+        <Sticker
+          src="/stickers/flamula-take-a-trilha.png"
+          alt="Take a Trilha"
+          width={150}
+          rotate={-9}
+          className="right-6 top-24 hidden md:block lg:right-16"
+        />
         <Label>o que está em jogo</Label>
         <Reveal>
-          <h2 className="mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
+          <h2 className="mt-6 max-w-2xl text-2xl font-semibold tracking-[-0.02em] leading-tight md:text-4xl">
             O vencedor{" "}
             <mark className="bg-[#00D468] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
           </h2>
@@ -193,7 +219,7 @@ export default function Home() {
                 className={`group h-full border-b border-white/[0.06] py-8 ${i % 2 ? "sm:border-l sm:pl-8" : "sm:pr-8"}`}
               >
                 <span className="font-mono text-[10px] text-white/55">{p.n}</span>
-                <h3 className="mt-6 text-2xl font-extralight md:text-3xl">
+                <h3 className="mt-6 text-2xl font-semibold tracking-[-0.02em] md:text-3xl">
                   <Scramble text={p.title} trigger="hover" />
                 </h3>
                 <p className="mt-1 text-sm text-white/65">{p.sub}</p>
@@ -210,7 +236,7 @@ export default function Home() {
       <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pb-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>o dia</Label>
         <Reveal>
-          <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
+          <h2 className="mt-6 text-2xl font-semibold tracking-[-0.02em] md:text-4xl">08:00 — 18:00</h2>
         </Reveal>
         <div className="mt-14">
           <Timeline />
@@ -219,11 +245,19 @@ export default function Home() {
 
       {/* WHO */}
       <section data-scene="3" data-side="right" className="border-y border-white/[0.06]">
-        <div className="mx-auto grid max-w-6xl gap-14 px-8 py-32 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+        <div className="relative mx-auto grid max-w-6xl gap-14 px-8 py-32 md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+          <Sticker
+            src="/stickers/cartao-assinatura.png"
+            alt="De estudantes para estudantes."
+            width={150}
+            rotate={7}
+            className="right-6 top-16 hidden md:block lg:right-14"
+          />
           <Reveal>
             <Label>quem pode</Label>
-            <h2 className="mt-6 text-2xl font-extralight leading-tight md:text-3xl">
-              Brasileiros de 12 a 25 anos que constroem coisas.
+            <h2 className="mt-6 text-2xl font-semibold tracking-[-0.02em] leading-tight md:text-3xl">
+              Brasileiros de 12 a 25 anos que{" "}
+              <mark className="bg-[#1C4AE5] px-[0.1em] text-white">constroem coisas.</mark>
             </h2>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
               Ensino médio, IF, olimpíada ou universidade: o que conta é o que você já fez. Menores de 18 precisam
@@ -250,8 +284,13 @@ export default function Home() {
         <div className="mt-14 grid gap-16">
           {PEOPLE.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.1}>
-              <p className="font-mono text-[9px] uppercase tracking-[0.4em] text-white/55">{p.role}</p>
-              <h3 className="mt-3 text-2xl font-extralight md:text-3xl">
+              <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/55">{p.role}</p>
+              <h3 className="mt-3 flex items-center gap-4 text-2xl font-semibold tracking-[-0.02em] md:text-3xl">
+                <img
+                  src={`/mentors/${p.name.split(" ")[0].toLowerCase()}.jpg`}
+                  alt=""
+                  className="size-12 rounded-full object-cover grayscale ring-2 ring-[#1C4AE5] ring-offset-2 ring-offset-[#000928]"
+                />
                 <Scramble text={p.name} trigger="hover" />
               </h3>
               <p className="mt-5 text-sm leading-relaxed text-white/65">{p.bio}</p>
@@ -282,12 +321,12 @@ export default function Home() {
       </section>
 
       {/* SIGNUP */}
-      <section data-scene="6" data-side="left" id="inscricao" className="border-t border-white/[0.06]">
-        <div className="mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-          <h2 className="text-3xl font-extralight leading-tight md:text-5xl">
-            Seu passaporte começa <span className="text-[#00D468]">aqui.</span>
+      <section data-scene="6" data-side="left" id="inscricao" className="relative border-t border-white/[0.06]">
+        <div className="relative mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
+          <h2 className="text-3xl font-semibold tracking-[-0.02em] leading-tight md:text-5xl">
+            Seu passaporte começa <mark className="bg-[#00D468] px-[0.1em] text-[#000928]">aqui.</mark>
           </h2>
-          <p className="mt-6 font-mono text-[10px] uppercase leading-relaxed tracking-[0.3em] text-white/55">
+          <p className="mt-6 font-mono text-[10px] uppercase leading-relaxed tracking-[0.16em] text-white/55">
             21.11 · 8h–18h · ONDER, João Pessoa · gratuito · 12 a 25 anos
             <span className="text-[#00D468]"> · faltam {cd ? cd.d : "–"} dias</span>
           </p>
@@ -305,8 +344,8 @@ export default function Home() {
               }}
               success={
                 <div className="py-6">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#00D468]">recebido</p>
-                  <p className="mt-4 text-2xl font-extralight">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#00D468]">recebido</p>
+                  <p className="mt-4 text-2xl font-semibold tracking-[-0.02em]">
                     <Scramble text="Até dia 21, em João Pessoa." duration={900} />
                   </p>
                 </div>
@@ -314,6 +353,13 @@ export default function Home() {
             />
             <p className="mt-5 text-xs font-light text-white/45">Menores de 18 precisam da confirmação de um responsável.</p>
           </div>
+          <Sticker
+            src="/stickers/tomada-seek-your-path.png"
+            alt="Seek your path. Build your trail."
+            width={170}
+            rotate={-7}
+            className="bottom-20 right-[6%] hidden md:block"
+          />
           <div className="mt-16 flex flex-wrap gap-x-8 gap-y-3 text-[12px] tracking-[0.15em] text-white/55">
             <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               conheça a IA Brasil Fellowship ↗
@@ -323,7 +369,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 border-t border-white/[0.06] px-8 py-8 font-mono text-[9px] uppercase tracking-[0.35em] text-white/55 md:px-20 lg:px-32">
+        <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 border-t border-white/[0.06] px-8 py-8 font-mono text-[9px] uppercase tracking-[0.2em] text-white/55 md:px-20 lg:px-32">
           <span>© 2026 IA Hack</span>
           <span>O sol nasce primeiro aqui</span>
           <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
@@ -332,7 +378,7 @@ export default function Home() {
         </footer>
         {/* Trilha lockup — "fio e rótulo" device from the Trilha brand */}
         <div className="mx-auto max-w-6xl px-8 pb-12 md:px-20 lg:px-32">
-          <div className="flex items-center gap-4 font-mono text-[9px] lowercase tracking-[0.3em] text-white/55">
+          <div className="flex items-center gap-4 font-mono text-[9px] lowercase tracking-[0.16em] text-white/55">
             <span className="h-px flex-1 bg-white/[0.06]" />
             co-organizado por
             <span className="h-px flex-1 bg-white/[0.06]" />
@@ -346,13 +392,16 @@ export default function Home() {
           >
             <span
               aria-hidden
-              className="block h-[22px] w-[32px] bg-current"
+              className="block h-[34px] w-[50px] bg-current"
               style={{
                 WebkitMask: "url(/montanha.svg) center/contain no-repeat",
                 mask: "url(/montanha.svg) center/contain no-repeat",
               }}
             />
           </a>
+          <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-white/45">
+            de estudantes para estudantes
+          </p>
         </div>
       </section>
     </main>

@@ -58,10 +58,10 @@ export function ClickDots({ gap = 13 }: { gap?: number }) {
       } else {
         const r = c.width / 2;
         const grad = g.createRadialGradient(r, r, 0, r, r, r);
-        grad.addColorStop(0, "rgba(255,255,255,1)");
-        grad.addColorStop(0.2, "rgba(255,255,255,0.95)");
-        grad.addColorStop(0.55, "rgba(255,255,255,0.35)");
-        grad.addColorStop(1, "rgba(255,255,255,0)");
+        grad.addColorStop(0, "rgba(253,244,229,1)");
+        grad.addColorStop(0.2, "rgba(253,244,229,0.95)");
+        grad.addColorStop(0.55, "rgba(253,244,229,0.35)");
+        grad.addColorStop(1, "rgba(253,244,229,0)");
         g.fillStyle = grad;
         g.fillRect(0, 0, c.width, c.height);
       }

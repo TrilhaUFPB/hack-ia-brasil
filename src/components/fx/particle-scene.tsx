@@ -19,7 +19,7 @@ import { dotRipple } from "./click-dots";
  */
 
 type P = [number, number, number, number, number, number, number, number]; // x y z r g b alpha size
-const WHITE: [number, number, number] = [1, 1, 1];
+const WHITE: [number, number, number] = [0.99, 0.957, 0.898]; // Branco Creme
 const MENTA: [number, number, number] = [0, 0.83, 0.41];
 
 export function ParticleScene() {
@@ -612,7 +612,12 @@ export function ParticleScene() {
     const mat = new THREE.ShaderMaterial({
       transparent: true,
       depthWrite: false,
-      blending: THREE.AdditiveBlending,
+      // pure additive in colour and in alpha (the canvas is composited premultiplied)
+      blending: THREE.CustomBlending,
+      blendSrc: THREE.OneFactor,
+      blendDst: THREE.OneFactor,
+      blendSrcAlpha: THREE.OneFactor,
+      blendDstAlpha: THREE.OneFactor,
       uniforms: {
         uT: { value: 0 },
         uDur: { value: 1.4 },
@@ -693,12 +698,16 @@ export function ParticleScene() {
           if (uLogoOn > 0.5) {
             float a = texture2D(uLogo, vec2(gl_PointCoord.x, 1.0 - gl_PointCoord.y)).a;
             if (a < 0.05) discard;
-            gl_FragColor = vec4(vC * a * va, 1.0);
+            vec3 c = vC * a * va;
+            gl_FragColor = vec4(c, max(c.r, max(c.g, c.b)));
             return;
           }
           float d = length(gl_PointCoord - 0.5);
           if (d > 0.5) discard;
-          gl_FragColor = vec4(vC * smoothstep(0.5, 0.1, d) * va, 1.0);
+          vec3 c = vC * smoothstep(0.5, 0.1, d) * va;
+          // premultiplied: alpha = how much light the point adds, so a dim point stays
+          // see-through over the navy page instead of leaving a black speck
+          gl_FragColor = vec4(c, max(c.r, max(c.g, c.b)));
         }`,
     });
     group.add(new THREE.Points(geo, mat));
