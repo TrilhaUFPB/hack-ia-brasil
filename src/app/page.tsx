@@ -64,7 +64,7 @@ export default function Home() {
       {/* HERO */}
       <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
         <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
-          <span className="flex items-center gap-2.5 text-[15px] font-semibold tracking-[-0.01em] text-white">
+          <span className="flex items-center gap-2.5 text-[14px] font-medium text-white">
             <span
               aria-hidden
               className="block h-[14px] w-[20px] bg-[#00D468]"
@@ -92,7 +92,7 @@ export default function Home() {
             <Scramble text="Hackathon · João Pessoa · 21.11" duration={1200} />
           </motion.p>
           <motion.h1
-            className="mt-8 max-w-[15em] text-balance text-[clamp(2rem,3.9vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.025em]"
+            className="mt-8 max-w-[15em] text-balance text-[clamp(1.8rem,3.4vw,2.9rem)] font-medium leading-[1.12] tracking-[-0.01em]"
             initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ delay: 0.5, duration: 1.2, ease: EASE }}
@@ -199,11 +199,11 @@ export default function Home() {
           alt="Take a Trilha"
           width={150}
           rotate={-9}
-          className="right-6 top-24 hidden md:block lg:right-16"
+          className="right-2 top-10 hidden md:block lg:right-8"
         />
         <Label>o que está em jogo</Label>
         <Reveal>
-          <h2 className="mt-6 max-w-2xl text-2xl font-semibold tracking-[-0.02em] leading-tight md:text-4xl">
+          <h2 className="mt-6 max-w-2xl text-2xl font-medium tracking-[-0.01em] leading-tight md:text-4xl">
             O vencedor{" "}
             <mark className="bg-[#00D468] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
           </h2>
@@ -219,7 +219,7 @@ export default function Home() {
                 className={`group h-full border-b border-white/[0.06] py-8 ${i % 2 ? "sm:border-l sm:pl-8" : "sm:pr-8"}`}
               >
                 <span className="font-mono text-[10px] text-white/55">{p.n}</span>
-                <h3 className="mt-6 text-2xl font-semibold tracking-[-0.02em] md:text-3xl">
+                <h3 className="mt-6 text-2xl font-medium tracking-[-0.01em] md:text-3xl">
                   <Scramble text={p.title} trigger="hover" />
                 </h3>
                 <p className="mt-1 text-sm text-white/65">{p.sub}</p>
@@ -236,7 +236,7 @@ export default function Home() {
       <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pb-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>o dia</Label>
         <Reveal>
-          <h2 className="mt-6 text-2xl font-semibold tracking-[-0.02em] md:text-4xl">08:00 — 18:00</h2>
+          <h2 className="mt-6 text-2xl font-medium tracking-[-0.01em] md:text-4xl">08:00 — 18:00</h2>
         </Reveal>
         <div className="mt-14">
           <Timeline />
@@ -255,7 +255,7 @@ export default function Home() {
           />
           <Reveal>
             <Label>quem pode</Label>
-            <h2 className="mt-6 text-2xl font-semibold tracking-[-0.02em] leading-tight md:text-3xl">
+            <h2 className="mt-6 text-2xl font-medium tracking-[-0.01em] leading-tight md:text-3xl">
               Brasileiros de 12 a 25 anos que{" "}
               <mark className="bg-[#1C4AE5] px-[0.1em] text-white">constroem coisas.</mark>
             </h2>
@@ -285,7 +285,7 @@ export default function Home() {
           {PEOPLE.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.1}>
               <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/55">{p.role}</p>
-              <h3 className="mt-3 flex items-center gap-4 text-2xl font-semibold tracking-[-0.02em] md:text-3xl">
+              <h3 className="mt-3 flex items-center gap-4 text-2xl font-medium tracking-[-0.01em] md:text-3xl">
                 <img
                   src={`/mentors/${p.name.split(" ")[0].toLowerCase()}.jpg`}
                   alt=""
@@ -323,7 +323,7 @@ export default function Home() {
       {/* SIGNUP */}
       <section data-scene="6" data-side="left" id="inscricao" className="relative border-t border-white/[0.06]">
         <div className="relative mx-auto max-w-6xl px-8 py-36 md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-          <h2 className="text-3xl font-semibold tracking-[-0.02em] leading-tight md:text-5xl">
+          <h2 className="text-3xl font-medium tracking-[-0.01em] leading-tight md:text-5xl">
             Seu passaporte começa <mark className="bg-[#00D468] px-[0.1em] text-[#000928]">aqui.</mark>
           </h2>
           <p className="mt-6 font-mono text-[10px] uppercase leading-relaxed tracking-[0.16em] text-white/55">
@@ -345,7 +345,7 @@ export default function Home() {
               success={
                 <div className="py-6">
                   <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#00D468]">recebido</p>
-                  <p className="mt-4 text-2xl font-semibold tracking-[-0.02em]">
+                  <p className="mt-4 text-2xl font-medium tracking-[-0.01em]">
                     <Scramble text="Até dia 21, em João Pessoa." duration={900} />
                   </p>
                 </div>

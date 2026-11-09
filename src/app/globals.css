@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-poppins);
-  --font-mono: var(--font-grotesk);
+  --font-sans: var(--font-jetbrains);
+  --font-mono: var(--font-jetbrains);
   /* Trilha palette: "white" is Branco Creme, the page is Azul Meia Noite */
   --color-white: #fdf4e5;
   --color-noite: #000928;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: var(--font-poppins), system-ui, sans-serif;
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
 }
 
 /* Shimmering label (slide-to-confirm) */
