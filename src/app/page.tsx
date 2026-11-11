@@ -28,8 +28,8 @@ const SLOT_HOURS = SCHEDULE.map((s) => {
   return h + m / 60;
 });
 
-// how far the page has scrolled through a pinned (sticky) section: 0 when it pins,
-// 1 when it lets go. Calls back once per frame while scrolling.
+// how far the page has scrolled through a pinned (sticky) section: 0 at its first
+// stop, 1 at its last. Calls back once per frame while scrolling.
 function useScrub(ref: React.RefObject<HTMLElement | null>, onProgress: (p: number) => void) {
   const cb = useRef(onProgress);
   useEffect(() => {
@@ -127,10 +127,8 @@ function Schedule() {
 }
 
 const CROWD_STOPS = 4;
-// how much scrolling each view of a pinned section takes, in screen heights (×100)
-const PIN_SVH = 110;
 
-// "quem pode" pins while you scroll through it: the camera turns around the crowd, and the
+// "quem pode" pins itself too: each stop turns the camera around the crowd, and the
 // last one closes in on one person
 function Crowd() {
   const ref = useRef<HTMLElement>(null);
@@ -138,8 +136,9 @@ function Crowd() {
   return (
     <section
       ref={ref}
+      data-steps={CROWD_STOPS}
       className="border-y border-white/[0.06]"
-      style={{ height: `${100 + (CROWD_STOPS - 1) * PIN_SVH}svh` }}
+      style={{ height: `${100 + (CROWD_STOPS - 1) * 60}svh` }}
     >
       <div
         data-scene="3"
@@ -162,7 +161,7 @@ function Crowd() {
   );
 }
 
-// the founders pin too, one stretch of scroll each: the hologram leans toward whoever is up,
+// the founders pin too, one stop each: the hologram leans toward whoever is up,
 // and their bio comes forward
 function People() {
   const ref = useRef<HTMLElement>(null);
@@ -175,7 +174,8 @@ function People() {
     <section
       ref={ref}
       id="quem"
-      style={{ height: `${100 + (PEOPLE.length - 1) * PIN_SVH}svh` }}
+      data-steps={PEOPLE.length}
+      style={{ height: `${100 + (PEOPLE.length - 1) * 60}svh` }}
     >
       <div
         data-scene="4"
