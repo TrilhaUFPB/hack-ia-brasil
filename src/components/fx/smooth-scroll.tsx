@@ -21,7 +21,8 @@ let busy = false;
 let queued: 0 | 1 | -1 = 0;
 let glideAt = 0;
 
-const easeInOut = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+// moves the moment you swipe and lands softly (an ease-in start felt laggy)
+const easeOut = (t: number) => 1 - Math.pow(1 - t, 4);
 
 function stops() {
   const vh = innerHeight;
@@ -59,7 +60,7 @@ function stops() {
 }
 
 // inside a pinned section a step only changes the shape in place: a quick, short glide
-const SLOW_STEP = 0.6;
+const SLOW_STEP = 0.5;
 
 function inSteppedSection(a: number, b: number) {
   for (const s of document.querySelectorAll<HTMLElement>("main > section[data-steps]")) {
@@ -75,7 +76,7 @@ export function scrollToY(y: number) {
   const dist = Math.abs(y - scrollY);
   const duration = inSteppedSection(scrollY, y)
     ? SLOW_STEP
-    : Math.min(0.85, Math.max(0.5, dist / 1600));
+    : Math.min(0.7, Math.max(0.45, dist / 1800));
   busy = true;
   glideAt = performance.now();
   const done = () => {
@@ -88,7 +89,7 @@ export function scrollToY(y: number) {
   };
   lenis.scrollTo(y, {
     duration,
-    easing: easeInOut,
+    easing: easeOut,
     lock: true,
     force: true,
     onComplete: done,
@@ -99,7 +100,7 @@ export function scrollToY(y: number) {
 function step(dir: 1 | -1) {
   if (busy) {
     // the swipe that started this glide is still ramping up for a moment: not a new one
-    if (performance.now() - glideAt > 250) queued = dir;
+    if (performance.now() - glideAt > 200) queued = dir;
     return;
   }
   const y = scrollY;
