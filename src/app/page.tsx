@@ -89,8 +89,7 @@ function Schedule() {
   };
 
   return (
-    <section ref={ref} id="dia">
-      <div data-scene="2" data-side="left" className="flex min-h-[100svh] items-center max-[900px]:items-end min-[901px]:sticky min-[901px]:top-0">
+    <section ref={ref} id="dia" data-scene="2" data-side="left" className="flex min-h-[100svh] items-center max-[900px]:items-end">
       <div className="mx-auto w-full max-w-6xl px-8 py-24 max-[900px]:pb-10 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>cronograma</Label>
         <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
@@ -123,8 +122,6 @@ function Schedule() {
           ))}
         </ul>
       </div>
-      </div>
-      <div aria-hidden className="hidden h-[50svh] min-[901px]:block" />
     </section>
   );
 }
@@ -224,8 +221,7 @@ export default function Home() {
       <ParticleScene />
       <ClickDots />
       {/* HERO */}
-      <section>
-      <div data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden min-[901px]:sticky min-[901px]:top-0">
+      <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
         <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
           <span className="font-mono text-xs uppercase tracking-[0.28em] text-white/90">Hack IA Brasil</span>
           <nav className="hidden gap-10 font-mono text-xs uppercase tracking-[0.28em] text-white/75 md:flex">
@@ -289,8 +285,6 @@ export default function Home() {
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">dias · horas · min · seg</span>
           </motion.div>
         </div>
-      </div>
-        <div aria-hidden className="hidden h-[50svh] min-[901px]:block" />
       </section>
 
       {/* FACTS */}
@@ -331,8 +325,7 @@ export default function Home() {
       </section>
 
       {/* PRIZE */}
-      <section id="premio">
-      <div data-scene="1" data-side="right" className="min-[901px]:sticky min-[901px]:top-0 mx-auto max-w-6xl px-8 py-36 min-[901px]:py-24 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
         <Label>o que está em jogo</Label>
         <Reveal>
           <h2 className="mx-auto mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
@@ -370,8 +363,6 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
-      </div>
-        <div aria-hidden className="hidden h-[50svh] min-[901px]:block" />
       </section>
 
       {/* DAY */}
@@ -384,8 +375,8 @@ export default function Home() {
       <People />
 
       {/* FAQ */}
-      <section className="border-t border-white/[0.06]">
-        <div data-scene="5" data-side="right" className="min-[901px]:sticky min-[901px]:top-0 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-8 py-36 max-[900px]:justify-end max-[900px]:pt-[44svh] md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+      <section data-scene="5" data-side="right" className="border-t border-white/[0.06]">
+        <div className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-8 py-36 max-[900px]:justify-end max-[900px]:pt-[44svh] md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
           <div className="max-[900px]:text-center"><Label>perguntas</Label></div>
           <div className="mt-10 border-t border-white/[0.06]">
             <Accordion
@@ -396,7 +387,6 @@ export default function Home() {
             />
           </div>
         </div>
-        <div aria-hidden className="hidden h-[50svh] min-[901px]:block" />
       </section>
 
       {/* SIGNUP */}
