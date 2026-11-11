@@ -1,0 +1,19 @@
+src/components/fx/particle-scene.tsx
+  s_817091a3f34e82::t_24e3de6777399e 733,1053-1055
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4c83eb62b40ba63fa0cfe33c150997b7a4953ee9",
+  "prompts": {},
+  "sessions": {
+    "s_817091a3f34e82": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "150c5d66-e31d-49a1-b231-e9dcdc509d34",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "gabriel <ggoc.carvalho@gmail.com>"
+    }
+  }
+}
