@@ -42,6 +42,12 @@ const CROWD_VIEWS = [
   { tilt: 0, yaw: 0, zoom: 1 },
 ];
 const CROWD = 3;
+
+// the founders: -1 Pedro up, 1 Victor up
+let peopleTarget = -1;
+export function setPeopleFocus(v: number) {
+  peopleTarget = v;
+}
 const WHITE: [number, number, number] = [1, 1, 1];
 const MENTA: [number, number, number] = [1, 1, 1]; // white accent
 const BLUE: [number, number, number] = [0.12, 0.38, 1]; // the route; dim enough to stay blue when dots pile up
@@ -528,8 +534,12 @@ export function ParticleScene() {
         const { size, oy } = metrics(d);
         CUT = Math.max(CUT, oy - 0.5 * size + 0.05);
       }
+      // flags 6 and 7: Pedro's dots and Victor's, so one can step back while the other talks
+      const p0 = out.length;
       place(pedro, -1.4, 0);
+      const p1 = out.length;
       place(victor, 1.4, 0);
+      for (let i = p0; i < out.length; i++) out[i] = [...out[i].slice(0, 8), i < p1 ? 6 : 7] as P;
       // the conversation between them
       for (let i = 0; i < 600; i++) {
         const u = rnd() * 2 - 1,
@@ -733,6 +743,7 @@ export function ParticleScene() {
         uHandsFrom: { value: new THREE.Vector2() }, // where the hands' dots are flying from
         uHandT: { value: 1 }, // 0 → 1 over a move
         uRoute: { value: 1 }, // how much of the globe's route is drawn
+        uPeople: { value: 0 }, // -1 Pedro in focus, 1 Victor
         uAdj: { value: 0 },
         // particles are drawn as tiny Trilha mountains (see below)
         uLogo: { value: null as THREE.Texture | null },
@@ -740,7 +751,7 @@ export function ParticleScene() {
       },
       vertexShader: /* glsl */ `
         attribute vec3 aFrom; attribute vec3 aCF; attribute vec3 aCT; attribute vec4 aAS; attribute vec3 aMisc; attribute vec3 aDir;
-        attribute vec2 aAncF; attribute vec2 aAncT; attribute float aHand; uniform vec2 uHands; uniform float uFocus; uniform vec2 uHandsFrom; uniform float uHandT; uniform float uRoute;
+        attribute vec2 aAncF; attribute vec2 aAncT; attribute float aHand; uniform vec2 uHands; uniform float uFocus; uniform vec2 uHandsFrom; uniform float uHandT; uniform float uRoute; uniform float uPeople;
         uniform mat3 uRot; uniform vec2 uView; uniform float uScrollY; uniform float uAdj;
         uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale; uniform float uLogoOn;
         uniform vec2 uKick; uniform float uKickAge;
@@ -800,7 +811,10 @@ export function ParticleScene() {
           vC = mix(aCF, aCT, e);
           // zoomed on one person (flag 3): everyone else fades back
           float focus = aHand > 2.5 ? 1.0 : 1.0 - 0.85 * uFocus;
-          if (aHand > 3.5) {
+          if (aHand > 5.5) {
+            float away = aHand < 6.5 ? max(0.0, uPeople) : max(0.0, -uPeople);
+            focus *= 1.0 - 0.75 * away;
+          } else if (aHand > 3.5) {
             // the route: a dot shows once the line has reached it, the leading edge glows
             float ahead = uRoute - (aHand - 4.0);
             focus *= clamp(ahead / 0.025 + 1.0, 0.0, 1.0);
@@ -1110,6 +1124,8 @@ export function ParticleScene() {
       }
       u.uHandT.value = Math.min(1, (now - moveAt) / 1000 / HAND_MOVE);
     };
+    let peopleShown = peopleTarget,
+      peopleWeight = 0;
     let crowdShown = crowdTarget,
       crowdWeight = 0,
       zoomShown = 0;
@@ -1156,6 +1172,12 @@ export function ParticleScene() {
       // close in on the one person: the camera slides over and in, 3.6 units from them
       you.set(0.5, -0.45, 1).applyMatrix4(m4);
       camera.position.set(you.x * zoomShown, you.y * zoomShown, baseD + (you.z + 3.6 - baseD) * zoomShown);
+      // the founders: the camera drifts toward whoever is in focus
+      peopleShown += (peopleTarget - peopleShown) * (reduced ? 1 : Math.min(1, dt * 8));
+      peopleWeight += ((chapter === 4 ? 1 : 0) - peopleWeight) * (reduced ? 1 : Math.min(1, dt * 3));
+      mat.uniforms.uPeople.value = peopleShown * peopleWeight;
+      camera.position.x += peopleShown * peopleWeight * 0.7;
+      camera.position.z -= peopleWeight * 1.2;
       mat.uniforms.uScrollY.value = scrollY;
       if (chapter >= 0) mat.uniforms.uAdj.value = anchorY() - bakedY;
       if (!narrow() && Math.abs(cTarget - cNow) > 0.0005) {

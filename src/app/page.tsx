@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { EVENT, FAQ, PEOPLE, PRIZES, SCHEDULE } from "@/content";
-import { ParticleScene, setCrowdView, setDialTime } from "@/components/fx/particle-scene";
+import { ParticleScene, setCrowdView, setDialTime, setPeopleFocus } from "@/components/fx/particle-scene";
 import { SmoothScroll, scrollToY } from "@/components/fx/smooth-scroll";
 import { ClickDots } from "@/components/fx/click-dots";
 import { Scramble } from "@/components/fx/scramble";
@@ -143,6 +143,57 @@ function Crowd() {
             responsável.
           </p>
         </Reveal>
+      </div>
+    </section>
+  );
+}
+
+// the founders pin too, one stop each: the hologram leans toward whoever is up,
+// and their bio comes forward
+function People() {
+  const ref = useRef<HTMLElement>(null);
+  const [active, setActive] = useState(0);
+  useScrub(ref, (p) => {
+    setPeopleFocus(p * 2 - 1);
+    setActive(Math.round(p * (PEOPLE.length - 1)));
+  });
+  return (
+    <section
+      ref={ref}
+      id="quem"
+      data-steps={PEOPLE.length}
+      style={{ height: `${100 + (PEOPLE.length - 1) * 60}svh` }}
+    >
+      <div
+        data-scene="4"
+        data-side="left"
+        className="sticky top-0 mx-auto flex h-[100svh] max-w-6xl flex-col justify-center px-8 max-[900px]:justify-end max-[900px]:pb-12 max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]"
+      >
+        <Label>quem está por trás</Label>
+        <div className="mt-12 grid gap-12 max-[900px]:mt-8">
+          {PEOPLE.map((p, i) => (
+            <div
+              key={p.name}
+              className={`transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-30 max-[900px]:hidden"}`}
+            >
+              <Reveal delay={i * 0.1}>
+                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{p.role}</p>
+                <h3 className="mt-3 text-2xl font-extralight md:text-3xl">
+                  <Scramble text={p.name} trigger="hover" />
+                </h3>
+                <p className="mt-5 text-sm leading-relaxed text-white/80">{p.bio}</p>
+                <a
+                  href={p.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-block border-b border-white/20 pb-0.5 text-[12px] tracking-[0.15em] text-white/75 transition-colors hover:border-white hover:text-white"
+                >
+                  linkedin ↗
+                </a>
+              </Reveal>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -308,28 +359,7 @@ export default function Home() {
       <Crowd />
 
       {/* PEOPLE */}
-      <section data-scene="4" data-side="left" id="quem" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-        <Label>quem está por trás</Label>
-        <div className="mt-14 grid gap-16">
-          {PEOPLE.map((p, i) => (
-            <Reveal key={p.name} delay={i * 0.1}>
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{p.role}</p>
-              <h3 className="mt-3 text-2xl font-extralight md:text-3xl">
-                <Scramble text={p.name} trigger="hover" />
-              </h3>
-              <p className="mt-5 text-sm leading-relaxed text-white/80">{p.bio}</p>
-              <a
-                href={p.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-block border-b border-white/20 pb-0.5 text-[12px] tracking-[0.15em] text-white/75 transition-colors hover:border-white hover:text-white"
-              >
-                linkedin ↗
-              </a>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <People />
 
       {/* FAQ */}
       <section data-scene="5" data-side="right" className="border-t border-white/[0.06]">
