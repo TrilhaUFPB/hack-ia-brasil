@@ -29,7 +29,7 @@ export function setDialTime(hours: number) {
   dialTarget = hours;
 }
 
-// the crowd's camera, one view per stop of its section: face on, from the side,
+// the crowd's camera, views spread over its section's scroll: face on, from the side,
 // from above, then close on one person.
 let crowdTarget = 0;
 export function setCrowdView(p: number) {
