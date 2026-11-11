@@ -20,6 +20,7 @@ let lenis: Lenis | null = null;
 let busy = false;
 let queued: 0 | 1 | -1 = 0;
 let glideAt = 0;
+let glideEnd = 0;
 
 // moves the moment you swipe and lands softly (an ease-in start felt laggy)
 const easeOut = (t: number) => 1 - Math.pow(1 - t, 4);
@@ -83,6 +84,7 @@ export function scrollToY(y: number) {
   const done = () => {
     if (!busy) return;
     busy = false;
+    glideEnd = performance.now();
     // a swipe made during the glide is not lost: it goes on to the next stop
     const dir = queued;
     queued = 0;
@@ -91,7 +93,6 @@ export function scrollToY(y: number) {
   lenis.scrollTo(y, {
     duration,
     easing: easeOut,
-    lock: true,
     force: true,
     onComplete: done,
   });
@@ -126,9 +127,12 @@ export function SmoothScroll() {
         const now = performance.now(),
           abs = Math.abs(deltaY);
         const fresh = now - lastAt > 100 || abs > lastAbs * 1.5 + 4;
+        // a hard swipe still pushing after its glide ends carries on to the next stop,
+        // so a strong flick can travel more than one screen; a soft tail does not
+        const pushing = !busy && abs >= 40 && now - glideEnd > 60;
         lastAt = now;
         lastAbs = abs;
-        if (fresh && abs >= 4) step(deltaY > 0 ? 1 : -1);
+        if ((fresh && abs >= 4) || pushing) step(deltaY > 0 ? 1 : -1);
         return false;
       },
     });

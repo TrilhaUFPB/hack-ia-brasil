@@ -350,7 +350,7 @@ export function ParticleScene() {
     // red ones, a faint field behind bright stars for the canton, waving a little
     function usFlag(): P[] {
       const out: P[] = [];
-      const Wf = 4.4,
+      const Wf = 3.8,
         Hf = (Wf * 10) / 19,
         stripe = Hf / 13,
         cw = Wf * 0.4,
@@ -846,7 +846,8 @@ export function ParticleScene() {
         uHandT: { value: 1 }, // 0 → 1 over a move
         uRoute: { value: 1 }, // how much of the globe's route is drawn
         uPeople: { value: 0 }, // -1 Pedro in focus, 1 Victor
-        uCalm: { value: 0 }, // 1 between prize shapes: dots that stay put don't burst
+        uCalm: { value: 0 }, // 1 between prize shapes: the shape follows its pinned section
+        uBurst: { value: 0.3 }, // how far dots puff out mid-change (was 1: too showy)
         uAdj: { value: 0 },
         // particles are drawn as tiny Trilha mountains (see below)
         uLogo: { value: null as THREE.Texture | null },
@@ -854,7 +855,7 @@ export function ParticleScene() {
       },
       vertexShader: /* glsl */ `
         attribute vec3 aFrom; attribute vec3 aCF; attribute vec3 aCT; attribute vec4 aAS; attribute vec3 aMisc; attribute vec3 aDir;
-        attribute vec2 aAncF; attribute vec2 aAncT; attribute float aHand; uniform vec2 uHands; uniform float uFocus; uniform vec2 uHandsFrom; uniform float uHandT; uniform float uRoute; uniform float uPeople; uniform float uCalm;
+        attribute vec2 aAncF; attribute vec2 aAncT; attribute float aHand; uniform vec2 uHands; uniform float uFocus; uniform vec2 uHandsFrom; uniform float uHandT; uniform float uRoute; uniform float uPeople; uniform float uCalm; uniform float uBurst;
         uniform mat3 uRot; uniform vec2 uView; uniform float uScrollY; uniform float uAdj;
         uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale; uniform float uLogoOn;
         uniform vec2 uKick; uniform float uKickAge;
@@ -865,7 +866,7 @@ export function ParticleScene() {
           // drifts to the new spot, then condenses into the next shape
           float p = clamp((uT - aMisc.y) / uDur, 0.0, 1.0);
           float e = ease(clamp((p - 0.12) / 0.88, 0.0, 1.0));
-          float sc = sin(3.14159 * p) * mix(1.0, clamp(length(position - aFrom) / 1.2, 0.0, 1.0), uCalm);
+          float sc = sin(3.14159 * p) * uBurst;
           vec3 tgt = position;
           float fly = 0.0;
           if (aHand > 0.5 && aHand < 2.5) {
@@ -1011,7 +1012,7 @@ export function ParticleScene() {
       mat.uniforms.uAdj.value = 0;
       const elapsed = (performance.now() - startAt) / 1000,
         dur = mat.uniforms.uDur.value,
-        calmNow = mat.uniforms.uCalm.value;
+        burstNow = mat.uniforms.uBurst.value;
       // between two prize shapes the move is short and quick, and dots that keep
       // their spot (the "1") stay still
       const calm = PRIZE_SCENES.includes(n) && PRIZE_SCENES.includes(chapter) ? 1 : 0;
@@ -1022,12 +1023,7 @@ export function ParticleScene() {
               ? 0
               : Math.min(1, Math.max(0, (elapsed - aMisc[i * 3 + 1]) / dur)),
           e = ease(Math.min(1, Math.max(0, (p - 0.12) / 0.88))),
-          moved = Math.hypot(
-            aTo[i * 3] - aFrom[i * 3],
-            aTo[i * 3 + 1] - aFrom[i * 3 + 1],
-            aTo[i * 3 + 2] - aFrom[i * 3 + 2],
-          ),
-          sc = Math.sin(Math.PI * p) * (1 + (Math.min(1, moved / 1.2) - 1) * calmNow);
+          sc = Math.sin(Math.PI * p) * burstNow;
         // a hand sits where it was turned to, not where it was built
         let tx = aTo[i * 3],
           ty = aTo[i * 3 + 1];
@@ -1081,6 +1077,8 @@ export function ParticleScene() {
       ])
         geo.attributes[k].needsUpdate = true;
       mat.uniforms.uCalm.value = calm;
+      // shapes glide into each other: a small puff between sections, none inside one
+      mat.uniforms.uBurst.value = calm ? 0 : 0.3;
       mat.uniforms.uDur.value = calm ? 0.8 : 1.1;
       if (n === 0 && chapter !== 0) routeAt = performance.now();
       chapter = n;
@@ -1305,7 +1303,7 @@ export function ParticleScene() {
       mat.uniforms.uScrollY.value = scrollY;
       if (chapter >= 0) mat.uniforms.uAdj.value = anchorY() - bakedY;
       if (!narrow() && Math.abs(cTarget - cNow) > 0.0005) {
-        cNow += (cTarget - cNow) * (reduced ? 1 : Math.min(1, dt * 1.4));
+        cNow += (cTarget - cNow) * (reduced ? 1 : Math.min(1, dt * 3));
         frameSide();
       }
       renderer.render(scene, camera);
