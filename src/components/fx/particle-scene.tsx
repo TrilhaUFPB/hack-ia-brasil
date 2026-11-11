@@ -406,14 +406,14 @@ export function ParticleScene() {
       while (g0.measureText("100K").width > W * 0.96) g0.font = `300 ${(size *= 0.95)}px ${font}`;
       const x0 = (W - g0.measureText("100K").width) / 2,
         w1 = g0.measureText("1").width;
-      const draw = (str: string, x: number, px: number, weight = 300) =>
+      const draw = (str: string, x: number, px: number, weight = 300, y = H / 2) =>
         sampleCanvas(
           (g) => {
             g.fillStyle = "#fff";
             g.textAlign = "left";
             g.textBaseline = "middle";
             g.font = `${weight} ${px}px ${font}`;
-            g.fillText(str, x, H / 2);
+            g.fillText(str, x, y);
           },
           Wu,
           Hu,
@@ -423,16 +423,33 @@ export function ParticleScene() {
       const one = draw("1", x0, size).sort(byY);
       const hundredK = [...one, ...draw("00K", x0 + w1, size)];
       const week = [...one, ...draw("SEMANA", x0 + w1 + size * 0.12, size * 0.34, 400)];
-      // "MENTORIA" in one size; the 1's dots become the M's left leg
+      // "MENTORIA" in one size along the top; the 1's dots become the M's left leg.
+      // Under it, two little people talking: a mentor and a younger builder.
       let ms = size;
       g0.font = `300 ${ms}px ${font}`;
-      while (g0.measureText("MENTORIA").width > W * 0.96) g0.font = `300 ${(ms *= 0.95)}px ${font}`;
+      while (g0.measureText("MENTORIA").width > W * 0.7) g0.font = `300 ${(ms *= 0.95)}px ${font}`;
       const mx = (W - g0.measureText("MENTORIA").width) / 2,
         mW = g0.measureText("M").width;
-      const word = draw("MENTORIA", mx, ms);
+      const word = draw("MENTORIA", mx, ms, 300, H * 0.12);
       const legEnd = (mx + mW * 0.3) / PX - Wu / 2;
       const leg = word.filter((p) => p[0] < legEnd).sort(byY);
-      const mentoria = [...leg, ...word.filter((p) => p[0] >= legEnd)];
+      const pair: P[] = [];
+      const person = (x: number, scale: number, facing: number, flag: number) => {
+        const from = pair.length;
+        figure(pair, x, 0, scale, facing, 0.95);
+        // stand them under the word; flags 8 and 9 make each one bob on its own beat
+        for (let i = from; i < pair.length; i++)
+          pair[i] = [pair[i][0], pair[i][1] - 1.75, ...(pair[i].slice(2, 8) as [number, number, number, number, number, number]), flag];
+      };
+      person(-1.0, 1.1, Math.PI / 2 - 0.4, 8);
+      person(1.0, 0.85, Math.PI / 2 + 0.4, 9);
+      // what passes between them
+      for (let i = 0; i < 260; i++) {
+        const t = rnd(),
+          r = Math.sqrt(rnd()) * 0.14;
+        pair.push([-0.55 + t * 1.1, -0.72 + Math.sin(t * Math.PI) * 0.16 + (rnd() - 0.5) * r, 0, ...WHITE, 0.35 + rnd() * 0.4, 0.9]);
+      }
+      const mentoria = [...leg, ...word.filter((p) => p[0] >= legEnd), ...pair];
       return { shapes: [hundredK, week, mentoria, usFlag()], keep: [one.length, one.length, leg.length, 0] };
     }
 
@@ -881,6 +898,8 @@ export function ParticleScene() {
             fly = sin(3.14159 * h);
           }
           vec3 pos = mix(aFrom, tgt, e) + aDir * (sc + fly * 0.12);
+          // the two people in "mentoria" nod along, each on its own beat
+          if (aHand > 7.5 && aHand < 9.5) pos.y += sin(uTime * 2.4 + (aHand - 8.0) * 2.6) * 0.035 * e;
           pos += vec3(sin(uTime * 0.6 + aMisc.x * 30.0), cos(uTime * 0.5 + aMisc.x * 20.0), sin(uTime * 0.4 + aMisc.x * 12.0)) * 0.008;
           pos = uRot * pos; // lean around the shape's own centre
           vec4 mv = viewMatrix * vec4(pos, 1.0);
@@ -917,10 +936,10 @@ export function ParticleScene() {
           vC = mix(aCF, aCT, e);
           // zoomed on one person (flag 3): everyone else fades back
           float focus = aHand > 2.5 ? 1.0 : 1.0 - 0.85 * uFocus;
-          if (aHand > 5.5) {
+          if (aHand > 5.5 && aHand < 7.5) {
             float away = aHand < 6.5 ? max(0.0, uPeople) : max(0.0, -uPeople);
             focus *= 1.0 - 0.75 * away;
-          } else if (aHand > 3.5) {
+          } else if (aHand > 3.5 && aHand < 5.5) {
             // the route: a dot shows once the line has reached it, the leading edge glows
             float ahead = uRoute - (aHand - 4.0);
             focus *= clamp(ahead / 0.025 + 1.0, 0.0, 1.0);
