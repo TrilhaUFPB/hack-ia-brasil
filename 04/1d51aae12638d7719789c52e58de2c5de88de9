@@ -1,0 +1,25 @@
+src/components/fx/smooth-scroll.tsx
+  s_817091a3f34e82::t_e9f21f97bdbefc 7-8,11,14-15,17
+src/components/fx/particle-scene.tsx
+  s_817091a3f34e82::t_37c6ca80834db9 32
+src/app/page.tsx
+  s_817091a3f34e82::t_c06ee8715c7222 130-131,142,178
+  s_817091a3f34e82::t_37c6ca80834db9 133,165
+  s_817091a3f34e82::t_41532a283ed01e 31-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "041d51aae12638d7719789c52e58de2c5de88de9",
+  "prompts": {},
+  "sessions": {
+    "s_817091a3f34e82": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "150c5d66-e31d-49a1-b231-e9dcdc509d34",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "gabriel <ggoc.carvalho@gmail.com>"
+    }
+  }
+}
