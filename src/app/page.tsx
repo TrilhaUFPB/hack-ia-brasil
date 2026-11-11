@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { EVENT, FAQ, PEOPLE, PRIZES, SCHEDULE } from "@/content";
-import { ParticleScene } from "@/components/fx/particle-scene";
+import { ParticleScene, setCrowdView, setDialTime } from "@/components/fx/particle-scene";
+import { SmoothScroll, scrollToY } from "@/components/fx/smooth-scroll";
 import { ClickDots } from "@/components/fx/click-dots";
 import { Scramble } from "@/components/fx/scramble";
 import { RollingDigits } from "@/components/fx/rolling-digits";
@@ -22,30 +23,128 @@ function Label({ children }: { children: string }) {
   );
 }
 
-function Timeline() {
-  const [active, setActive] = useState(2);
+const SLOT_HOURS = SCHEDULE.map((s) => {
+  const [h, m] = s.t.split(":").map(Number);
+  return h + m / 60;
+});
+const LAST = SCHEDULE.length - 1;
+
+// how far the page has scrolled through a pinned (sticky) section: 0 at its first
+// stop, 1 at its last. Calls back once per frame while scrolling.
+function useScrub(ref: React.RefObject<HTMLElement | null>, onProgress: (p: number) => void) {
+  const cb = useRef(onProgress);
+  useEffect(() => {
+    cb.current = onProgress;
+  });
+  useEffect(() => {
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const el = ref.current;
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      const span = r.height - innerHeight;
+      cb.current(span > 0 ? Math.min(1, Math.max(0, -r.top / span)) : 0);
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    update();
+    addEventListener("scroll", onScroll, { passive: true });
+    addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      removeEventListener("scroll", onScroll);
+      removeEventListener("resize", onScroll);
+    };
+  }, [ref]);
+}
+
+// The schedule pins itself to the screen while the page scrolls through it: each
+// stop is one slot, and reaching it turns the clock to dust that re-forms at that hour.
+function Schedule() {
+  const ref = useRef<HTMLElement>(null);
+  const [active, setActive] = useState(0);
+
+  useScrub(ref, (p) => {
+    const i = Math.round(p * LAST);
+    setDialTime(SLOT_HOURS[i]);
+    setActive(i);
+  });
+
+  const go = (i: number) => {
+    const el = ref.current;
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + scrollY;
+    scrollToY(top + ((el.offsetHeight - innerHeight) * i) / LAST);
+  };
+
   return (
-    <div>
-      <ul>
-        {SCHEDULE.map((s, i) => (
-          <li key={s.t}>
-            <button
-              type="button"
-              onPointerEnter={() => setActive(i)}
-              onFocus={() => setActive(i)}
-              onClick={() => setActive(i)}
-              className={`grid w-full grid-cols-[3.5rem_1fr_auto] items-baseline gap-4 border-l py-3 pl-5 text-left transition-colors duration-300 ${
-                i === active ? "border-white text-white" : "border-white/10 text-white/75 hover:text-white/85"
-              }`}
-            >
-              <span className="font-mono text-xs">{s.t}</span>
-              <span className="text-sm font-light leading-snug">{s.what}</span>
-              <span className="font-mono text-[11px] uppercase tracking-[0.2em] opacity-60">{s.where}</span>
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <section
+      ref={ref}
+      id="dia"
+      data-steps={SCHEDULE.length}
+      style={{ height: `${100 + LAST * 60}svh` }}
+    >
+      <div data-scene="2" data-side="left" className="sticky top-0 flex h-[100svh] items-center max-[900px]:items-end">
+        <div className="mx-auto w-full max-w-6xl px-8 max-[900px]:pb-10 max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
+          <Label>cronograma</Label>
+          <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
+          <ul className="mt-14 max-[900px]:mt-8">
+            {SCHEDULE.map((s, i) => (
+              <li key={s.t}>
+                <button
+                  type="button"
+                  onClick={() => go(i)}
+                  className={`grid w-full grid-cols-[3.5rem_1fr_auto] items-baseline gap-4 border-l py-3 pl-5 pr-4 text-left transition-colors duration-300 max-[900px]:py-2 ${
+                    i === active ? "border-white bg-white text-black" : "border-white/10 text-white/75"
+                  }`}
+                >
+                  <span className="font-mono text-xs">{s.t}</span>
+                  <span className="text-sm font-light leading-snug">{s.what}</span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.2em] opacity-70">{s.where}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const CROWD_STOPS = 4;
+
+// "quem pode" pins itself too: each stop turns the camera around the crowd, and the
+// last one closes in on one person
+function Crowd() {
+  const ref = useRef<HTMLElement>(null);
+  useScrub(ref, setCrowdView);
+  return (
+    <section
+      ref={ref}
+      data-steps={CROWD_STOPS}
+      className="border-y border-white/[0.06]"
+      style={{ height: `${100 + (CROWD_STOPS - 1) * 60}svh` }}
+    >
+      <div
+        data-scene="3"
+        data-side="right"
+        className="sticky top-0 mx-auto flex h-[100svh] max-w-6xl items-center px-8 max-[900px]:items-end max-[900px]:pb-16 max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]"
+      >
+        <Reveal>
+          <Label>quem pode</Label>
+          <h2 className="mt-6 text-2xl font-extralight leading-tight md:text-3xl">
+            Brasileiros de 12 a 25 anos que constroem coisas.
+          </h2>
+          <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
+            Software, IA, hardware, robótica, matemática, física, química ou biotecnologia. Ensino médio, IF,
+            olimpíada ou universidade: o que conta é o que você já fez. Menores de 18 precisam da confirmação de um
+            responsável.
+          </p>
+        </Reveal>
+      </div>
+    </section>
   );
 }
 
@@ -54,6 +153,7 @@ export default function Home() {
 
   return (
     <main className="bg-black font-light text-white selection:bg-[#FFFFFF] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
+      <SmoothScroll />
       <ParticleScene />
       <ClickDots />
       {/* HERO */}
@@ -202,32 +302,10 @@ export default function Home() {
       </section>
 
       {/* DAY */}
-      <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pt-24 pb-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-        <Label>cronograma</Label>
-        <Reveal>
-          <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
-        </Reveal>
-        <div className="mt-14">
-          <Timeline />
-        </div>
-      </section>
+      <Schedule />
 
       {/* WHO */}
-      <section data-scene="3" data-side="right" className="border-y border-white/[0.06]">
-        <div className="mx-auto flex min-h-[100svh] max-w-6xl items-center px-8 py-32 max-[900px]:items-end max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
-          <Reveal>
-            <Label>quem pode</Label>
-            <h2 className="mt-6 text-2xl font-extralight leading-tight md:text-3xl">
-              Brasileiros de 12 a 25 anos que constroem coisas.
-            </h2>
-            <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
-              Software, IA, hardware, robótica, matemática, física, química ou biotecnologia. Ensino médio, IF,
-              olimpíada ou universidade: o que conta é o que você já fez. Menores de 18 precisam da confirmação de um
-              responsável.
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <Crowd />
 
       {/* PEOPLE */}
       <section data-scene="4" data-side="left" id="quem" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
