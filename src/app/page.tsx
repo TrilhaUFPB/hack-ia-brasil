@@ -53,11 +53,12 @@ export default function Home() {
   const cd = useCountdown(EVENT.start);
 
   return (
-    <main className="bg-black font-light text-white selection:bg-[#FFFFFF] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
+    <main className="font-light text-white selection:bg-[#A0B5FF] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
       <ParticleScene />
       <ClickDots />
       {/* HERO */}
       <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
+        <div aria-hidden className="grad-sunrise pointer-events-none absolute inset-0" />
         <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
           <span className="font-mono text-xs uppercase tracking-[0.28em] text-white/90">Hack IA Brasil</span>
           <nav className="hidden gap-10 font-mono text-xs uppercase tracking-[0.28em] text-white/75 md:flex">
@@ -98,7 +99,7 @@ export default function Home() {
           >
             <a
               href="#inscricao"
-              className="inline-flex items-center bg-[#FFFFFF] px-7 py-3.5 text-xs font-semibold tracking-[0.3em] text-[#000928] transition-[filter] duration-300 hover:brightness-110"
+              className="inline-flex items-center grad-fill px-7 py-3.5 text-xs font-semibold tracking-[0.3em] text-[#000928] transition-[filter] duration-300 hover:brightness-110"
             >
               Quero participar
             </a>
@@ -124,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* FACTS */}
-      <section data-scene="0" data-side="left" className="border-y border-white/[0.06]">
+      <section data-scene="0" data-side="left" className="grad-rules">
         <dl className="mx-auto grid max-w-6xl grid-cols-2 max-[900px]:text-center px-8 md:grid-cols-[1fr_1.7fr_0.9fr_0.9fr_1.1fr] md:px-20 lg:px-32">
           {[
             ["quando", "21 nov · 8h–18h"],
@@ -166,7 +167,7 @@ export default function Home() {
         <Reveal>
           <h2 className="mx-auto mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
             O vencedor{" "}
-            <mark className="bg-[#FFFFFF] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
+            <mark className="grad-fill px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
           </h2>
           <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
             A{" "}
@@ -213,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* WHO */}
-      <section data-scene="3" data-side="right" className="border-y border-white/[0.06]">
+      <section data-scene="3" data-side="right" className="grad-rules">
         <div className="mx-auto flex min-h-[100svh] max-w-6xl items-center px-8 py-32 max-[900px]:items-end max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
           <Reveal>
             <Label>quem pode</Label>
@@ -269,11 +270,13 @@ export default function Home() {
       </section>
 
       {/* SIGNUP */}
-      <section id="inscricao" className="border-t border-white/[0.06]">
+      <section id="inscricao" className="relative overflow-hidden">
+        <div aria-hidden className="grad-rule absolute inset-x-0 top-0 h-px" />
+        <div aria-hidden className="grad-horizon pointer-events-none absolute inset-x-0 bottom-0 h-[70%]" />
         <div data-scene="6" className="mx-auto flex min-h-[100svh] max-w-6xl flex-col items-center justify-center px-8 py-36 text-center md:px-20 lg:px-32">
           <Label>inscrições</Label>
           <h2 className="mt-6 text-3xl font-extralight leading-tight md:text-5xl">
-            Inscrições abrem <span className="text-[#FFFFFF]">em breve.</span>
+            Inscrições abrem <span className="grad-text">em breve.</span>
           </h2>
           <p className="mt-6 font-mono text-xs uppercase leading-relaxed tracking-[0.3em] text-white/75">
             21.11 · 8h–18h · Miramar, João Pessoa
