@@ -283,11 +283,9 @@ export default function Home() {
   return (
     <main className="bg-black font-light text-white selection:bg-[#FFFFFF] selection:text-[#000928] [&>section]:relative [&>section]:z-10">
       <SmoothScroll />
-      <ParticleScene />
-      <ClickDots />
-      {/* HERO */}
-      <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
-        <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
+      {/* always on top: a black fade behind it keeps it readable over any section */}
+      <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-black via-black/80 to-transparent">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:px-20 lg:px-32">
           <span className="font-mono text-xs uppercase tracking-[0.28em] text-white/90">Hack IA Brasil</span>
           <nav className="hidden gap-10 font-mono text-xs uppercase tracking-[0.28em] text-white/75 md:flex">
             <a href="#premio" className="transition-colors hover:text-white">Prêmio</a>
@@ -297,8 +295,12 @@ export default function Home() {
           <a href="#inscricao" className="font-mono text-xs uppercase tracking-[0.28em] text-white/90 transition-colors hover:text-white">
             Inscreva-se
           </a>
-        </header>
-
+        </div>
+      </header>
+      <ParticleScene />
+      <ClickDots />
+      {/* HERO */}
+      <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
         <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-8 pb-24 pt-32 max-[900px]:items-center max-[900px]:text-center md:justify-center md:px-20 md:pb-32 lg:px-32">
           <motion.h1
             className="max-w-[15em] text-balance text-[clamp(1.7rem,3.2vw,2.6rem)] font-extralight leading-[1.1] tracking-[-0.01em]"
