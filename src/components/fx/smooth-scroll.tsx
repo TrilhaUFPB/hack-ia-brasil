@@ -10,7 +10,7 @@ import { useEffect } from "react";
  *
  * Stops: the top of each section. A section taller than the screen gets extra stops
  * a screen apart. A section with `data-steps="n"` gets n stops spread over its height
- * (the schedule pins itself and turns those into hours). A strip shorter than half a
+ * (pinned sections turn those into views of their shape). A strip shorter than half a
  * screen rides along with the section under it.
  *
  * Touch keeps native scrolling.
@@ -61,7 +61,7 @@ function stops() {
 }
 
 // inside a pinned section a step only changes the shape in place: a quick, short glide
-const SLOW_STEP = 0.42;
+const SLOW_STEP = 0.32;
 
 function inSteppedSection(a: number, b: number) {
   for (const s of document.querySelectorAll<HTMLElement>("main > section[data-steps]")) {
@@ -77,7 +77,7 @@ export function scrollToY(y: number) {
   const dist = Math.abs(y - scrollY);
   const duration = inSteppedSection(scrollY, y)
     ? SLOW_STEP
-    : Math.min(0.6, Math.max(0.4, dist / 2000));
+    : Math.min(0.5, Math.max(0.32, dist / 2400));
   busy = true;
   glideAt = performance.now();
   const done = () => {

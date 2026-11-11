@@ -43,6 +43,16 @@ const CROWD_VIEWS = [
 ];
 const CROWD = 3;
 
+// the prize section, one shape per prize as you scroll: "100K", then its "1" stays put
+// for "1 semana", then becomes the left leg of the "M" of mentoria, then "VISTO"
+let prizeTarget = 0;
+export function setPrizeView(p: number) {
+  prizeTarget = p;
+}
+const PRIZE_SCENES = [1, 7, 8, 9]; // 7-9 come after the signup's empty dawn (6)
+const prizeScene = () => PRIZE_SCENES[Math.round(prizeTarget * (PRIZE_SCENES.length - 1))];
+const sceneSection = (n: number) => (PRIZE_SCENES.includes(n) ? 1 : n);
+
 // the founders: -1 Pedro up, 1 Victor up
 let peopleTarget = -1;
 export function setPeopleFocus(v: number) {
@@ -334,6 +344,96 @@ export function ParticleScene() {
       hand(R * 0.75, 320, 0.022, 0.9, 2);
       sphere(out, 0, 0, 0.02, 0.07, 160, MENTA, 1, 1.1, true);
       return out;
+    }
+
+    // the US flag for the visa, in white like everything else: solid stripes for the
+    // red ones, a faint field behind bright stars for the canton, waving a little
+    function usFlag(): P[] {
+      const out: P[] = [];
+      const Wf = 4.4,
+        Hf = (Wf * 10) / 19,
+        stripe = Hf / 13,
+        cw = Wf * 0.4,
+        ch = stripe * 7;
+      const wave = (x: number, y: number): [number, number, number] => [
+        x,
+        y + Math.sin(x * 1.3) * 0.06,
+        Math.sin(x * 1.6 + 0.6) * 0.14,
+      ];
+      const dot = (x: number, y: number, col: [number, number, number], a: number, size = 1) =>
+        out.push([...wave(x - Wf / 2, Hf / 2 - y), ...col, a, size]);
+      const step = narrow() ? 0.045 : 0.028;
+      for (let y = 0; y < Hf; y += step)
+        for (let x = 0; x < Wf; x += step) {
+          const jx = x + rnd() * step,
+            jy = y + rnd() * step;
+          if (jx < cw && jy < ch) {
+            if (rnd() < 0.55) dot(jx, jy, WHITE, 0.28);
+            continue;
+          }
+          const red = Math.floor(jy / stripe) % 2 === 0;
+          if (red) dot(jx, jy, WHITE, 0.9);
+          else if (rnd() < 0.12) dot(jx, jy, WHITE, 0.25);
+        }
+      // 50 stars: 9 rows alternating 6 and 5
+      for (let r = 0; r < 9; r++) {
+        const n = r % 2 ? 5 : 6;
+        for (let c = 0; c < n; c++) {
+          const sx = (cw / 12) * (2 * c + 1 + (r % 2)),
+            sy = (ch / 10) * (r + 1);
+          for (let i = 0; i < 14; i++) {
+            const a = rnd() * Math.PI * 2,
+              rr = Math.sqrt(rnd()) * 0.045;
+            dot(sx + Math.cos(a) * rr, sy + Math.sin(a) * rr, WHITE, 1, 1.2);
+          }
+        }
+      }
+      return out;
+    }
+
+    // the four prize shapes, drawn on one canvas size so their parts line up
+    function prizeShapes(): { shapes: P[][]; keep: number[] } {
+      seed = 71;
+      const Wu = 5.6,
+        Hu = 2.2,
+        step = narrow() ? 0.04 : 0.024;
+      const PX = 120,
+        W = Wu * PX,
+        H = Hu * PX;
+      const g0 = document.createElement("canvas").getContext("2d")!;
+      let size = H * 0.9;
+      g0.font = `300 ${size}px ${font}`;
+      while (g0.measureText("100K").width > W * 0.96) g0.font = `300 ${(size *= 0.95)}px ${font}`;
+      const x0 = (W - g0.measureText("100K").width) / 2,
+        w1 = g0.measureText("1").width;
+      const draw = (str: string, x: number, px: number, weight = 300) =>
+        sampleCanvas(
+          (g) => {
+            g.fillStyle = "#fff";
+            g.textAlign = "left";
+            g.textBaseline = "middle";
+            g.font = `${weight} ${px}px ${font}`;
+            g.fillText(str, x, H / 2);
+          },
+          Wu,
+          Hu,
+          step,
+        );
+      const byY = (a: P, b: P) => a[1] - b[1];
+      const one = draw("1", x0, size).sort(byY);
+      const hundredK = [...one, ...draw("00K", x0 + w1, size)];
+      const week = [...one, ...draw("SEMANA", x0 + w1 + size * 0.12, size * 0.34, 400)];
+      // "MENTORIA" in one size; the 1's dots become the M's left leg
+      let ms = size;
+      g0.font = `300 ${ms}px ${font}`;
+      while (g0.measureText("MENTORIA").width > W * 0.96) g0.font = `300 ${(ms *= 0.95)}px ${font}`;
+      const mx = (W - g0.measureText("MENTORIA").width) / 2,
+        mW = g0.measureText("M").width;
+      const word = draw("MENTORIA", mx, ms);
+      const legEnd = (mx + mW * 0.3) / PX - Wu / 2;
+      const leg = word.filter((p) => p[0] < legEnd).sort(byY);
+      const mentoria = [...leg, ...word.filter((p) => p[0] >= legEnd)];
+      return { shapes: [hundredK, week, mentoria, usFlag()], keep: [one.length, one.length, leg.length, 0] };
     }
 
     function crowd(): P[] {
@@ -648,9 +748,11 @@ export function ParticleScene() {
       return out;
     }
 
-    function fit(pts: P[]) {
-      for (let i = pts.length - 1; i > 0; i--) {
-        const j = (rnd() * (i + 1)) | 0;
+    // keep: the first `keep` points stay in order, so a shape can hand its dots to the
+    // same spots in the next one (they don't move); the rest are shuffled
+    function fit(pts: P[], keep = 0) {
+      for (let i = pts.length - 1; i > keep; i--) {
+        const j = keep + ((rnd() * (i + 1 - keep)) | 0);
         [pts[i], pts[j]] = [pts[j], pts[i]];
       }
       const out = new Float32Array(N * S);
@@ -744,6 +846,7 @@ export function ParticleScene() {
         uHandT: { value: 1 }, // 0 → 1 over a move
         uRoute: { value: 1 }, // how much of the globe's route is drawn
         uPeople: { value: 0 }, // -1 Pedro in focus, 1 Victor
+        uCalm: { value: 0 }, // 1 between prize shapes: dots that stay put don't burst
         uAdj: { value: 0 },
         // particles are drawn as tiny Trilha mountains (see below)
         uLogo: { value: null as THREE.Texture | null },
@@ -751,7 +854,7 @@ export function ParticleScene() {
       },
       vertexShader: /* glsl */ `
         attribute vec3 aFrom; attribute vec3 aCF; attribute vec3 aCT; attribute vec4 aAS; attribute vec3 aMisc; attribute vec3 aDir;
-        attribute vec2 aAncF; attribute vec2 aAncT; attribute float aHand; uniform vec2 uHands; uniform float uFocus; uniform vec2 uHandsFrom; uniform float uHandT; uniform float uRoute; uniform float uPeople;
+        attribute vec2 aAncF; attribute vec2 aAncT; attribute float aHand; uniform vec2 uHands; uniform float uFocus; uniform vec2 uHandsFrom; uniform float uHandT; uniform float uRoute; uniform float uPeople; uniform float uCalm;
         uniform mat3 uRot; uniform vec2 uView; uniform float uScrollY; uniform float uAdj;
         uniform float uT; uniform float uDur; uniform float uTime; uniform float uScale; uniform float uLogoOn;
         uniform vec2 uKick; uniform float uKickAge;
@@ -762,7 +865,7 @@ export function ParticleScene() {
           // drifts to the new spot, then condenses into the next shape
           float p = clamp((uT - aMisc.y) / uDur, 0.0, 1.0);
           float e = ease(clamp((p - 0.12) / 0.88, 0.0, 1.0));
-          float sc = sin(3.14159 * p);
+          float sc = sin(3.14159 * p) * mix(1.0, clamp(length(position - aFrom) / 1.2, 0.0, 1.0), uCalm);
           vec3 tgt = position;
           float fly = 0.0;
           if (aHand > 0.5 && aHand < 2.5) {
@@ -784,7 +887,9 @@ export function ParticleScene() {
 
           // pin the shape to the page in screen pixels, so it scrolls exactly like the DOM
           vec2 anc = mix(aAncF, aAncT, e);
-          anc.y += uAdj * e; // follows its section if the layout shifts after it formed
+          // follows its section as it moves (a pinned one moves with the scroll); between
+          // two shapes of one pinned section both ends follow it, so nothing drifts
+          anc.y += uAdj * mix(e, 1.0, uCalm);
           vec2 offPx = vec2(anc.x * uView.x - uView.x * 0.5, anc.y - uScrollY - uView.y * 0.5);
           gl_Position.xy += vec2(offPx.x, -offPx.y) / uView * 2.0 * gl_Position.w;
 
@@ -898,14 +1003,18 @@ export function ParticleScene() {
       if (!T) return;
       // a scene can span several sections (the hero and the facts strip under it): the shape
       // always belongs to the first one, whichever section triggered it
-      anchorEl = document.querySelector<HTMLElement>(`[data-scene="${n}"]`);
+      anchorEl = document.querySelector<HTMLElement>(`[data-scene="${sceneSection(n)}"]`);
       const ax = narrow() ? 0.5 : cTarget;
       const ay = anchorY();
       bakedY = ay;
       const adjAtBegin = mat.uniforms.uAdj.value;
       mat.uniforms.uAdj.value = 0;
       const elapsed = (performance.now() - startAt) / 1000,
-        dur = mat.uniforms.uDur.value;
+        dur = mat.uniforms.uDur.value,
+        calmNow = mat.uniforms.uCalm.value;
+      // between two prize shapes the move is short and quick, and dots that keep
+      // their spot (the "1") stay still
+      const calm = PRIZE_SCENES.includes(n) && PRIZE_SCENES.includes(chapter) ? 1 : 0;
       for (let i = 0; i < N; i++) {
         // freeze where each particle is right now, then aim it at the new shape
         const p =
@@ -913,7 +1022,12 @@ export function ParticleScene() {
               ? 0
               : Math.min(1, Math.max(0, (elapsed - aMisc[i * 3 + 1]) / dur)),
           e = ease(Math.min(1, Math.max(0, (p - 0.12) / 0.88))),
-          sc = Math.sin(Math.PI * p);
+          moved = Math.hypot(
+            aTo[i * 3] - aFrom[i * 3],
+            aTo[i * 3 + 1] - aFrom[i * 3 + 1],
+            aTo[i * 3 + 2] - aFrom[i * 3 + 2],
+          ),
+          sc = Math.sin(Math.PI * p) * (1 + (Math.min(1, moved / 1.2) - 1) * calmNow);
         // a hand sits where it was turned to, not where it was built
         let tx = aTo[i * 3],
           ty = aTo[i * 3 + 1];
@@ -928,7 +1042,8 @@ export function ParticleScene() {
             (to[k] - aFrom[i * 3 + k]) * e + aDir[i * 3 + k] * sc;
         for (let k = 0; k < 3; k++)
           aCF[i * 3 + k] += (aCT[i * 3 + k] - aCF[i * 3 + k]) * e;
-        if (chapter < 0) {
+        if (chapter < 0 || calm) {
+          // first shape, or the same pinned section: start right where it ends up
           aAncF[i * 2] = ax;
           aAncF[i * 2 + 1] = ay;
         } else {
@@ -950,7 +1065,7 @@ export function ParticleScene() {
         aCT[i * 3 + 2] = T[o + 5];
         aAS[i * 4 + 1] = T[o + 6];
         aAS[i * 4 + 3] = T[o + 7];
-        aMisc[i * 3 + 1] = aMisc[i * 3] * (chapter < 0 ? 0.6 : 0.3);
+        aMisc[i * 3 + 1] = aMisc[i * 3] * (chapter < 0 ? 0.6 : calm ? 0.12 : 0.3);
       }
       for (const k of [
         "position",
@@ -965,6 +1080,8 @@ export function ParticleScene() {
         "aAncT",
       ])
         geo.attributes[k].needsUpdate = true;
+      mat.uniforms.uCalm.value = calm;
+      mat.uniforms.uDur.value = calm ? 0.8 : 1.1;
       if (n === 0 && chapter !== 0) routeAt = performance.now();
       chapter = n;
       startAt = performance.now();
@@ -983,6 +1100,12 @@ export function ParticleScene() {
     // its upper part on phones (the text sits low there)
     const anchorY = () => {
       if (!anchorEl) return 0;
+      // a section can name the part its shape should line up with (data-shape-anchor)
+      const target = narrow() ? null : anchorEl.querySelector<HTMLElement>("[data-shape-anchor]");
+      if (target) {
+        const t = target.getBoundingClientRect();
+        return t.top + scrollY + t.height / 2;
+      }
       const r = anchorEl.getBoundingClientRect();
       const top = r.top + scrollY;
       return narrow()
@@ -1047,6 +1170,7 @@ export function ParticleScene() {
             want = Number(sec.dataset.scene);
             if (sec.dataset.side)
               cTarget = sec.dataset.side === "right" ? 0.24 : 0.76;
+            if (want === 1) want = prizeScene();
             if (SCENES.length && want !== chapter) begin(want);
           }
       },
@@ -1097,34 +1221,31 @@ export function ParticleScene() {
     let raf = 0,
       rotY = 0,
       last = performance.now();
-    // the clock never sweeps: on a new slot the hands' dots fly straight from where
-    // they point to where they should, like every other shape change. The face stays put.
-    const HAND_MOVE = 0.55; // seconds
+    // on a new slot the hands sweep there quickly, like a clock fast-forwarding: the
+    // minute hand spins once per hour passed. Going back in the day winds them back.
+    const HAND_SWEEP = 0.8; // seconds
     let dialSlot = -1,
-      moveAt = -1e9;
+      sweepFrom = 0,
+      sweepAt = -1e9;
     const angles = (h: number): [number, number] => [
       -((h % 12) / 12) * Math.PI * 2,
       -(h % 1) * Math.PI * 2,
     ];
+    let shownH = dialTarget;
     const tickClock = (now: number) => {
       const u = mat.uniforms;
       if (dialTarget !== dialSlot) {
-        const [hA, mA] = angles(dialTarget);
-        if (dialSlot < 0 || chapter !== 2 || reduced) {
-          u.uHandsFrom.value.set(hA, mA);
-          u.uHandT.value = 1;
-        } else {
-          // start from wherever the dots are right now (a move may still be under way)
-          const k = ease(Math.min(1, u.uHandT.value)),
-            f = u.uHandsFrom.value,
-            t = u.uHands.value;
-          f.set(f.x + (t.x - f.x) * k, f.y + (t.y - f.y) * k);
-          moveAt = now;
-        }
-        u.uHands.value.set(hA, mA);
+        if (dialSlot < 0 || reduced) shownH = dialTarget;
+        sweepFrom = shownH;
+        sweepAt = now;
         dialSlot = dialTarget;
       }
-      u.uHandT.value = Math.min(1, (now - moveAt) / 1000 / HAND_MOVE);
+      const t = Math.min(1, (now - sweepAt) / 1000 / HAND_SWEEP);
+      shownH = sweepFrom + (dialTarget - sweepFrom) * ease(t);
+      const [hA, mA] = angles(shownH);
+      u.uHands.value.set(hA, mA);
+      u.uHandsFrom.value.set(hA, mA);
+      u.uHandT.value = 1;
     };
     let peopleShown = peopleTarget,
       peopleWeight = 0;
@@ -1157,6 +1278,7 @@ export function ParticleScene() {
       }
       lean.x += (pointer.x - lean.x) * Math.min(1, dt * 3);
       lean.y += (pointer.y - lean.y) * Math.min(1, dt * 3);
+      if (SCENES.length && PRIZE_SCENES.includes(chapter) && prizeScene() !== chapter) begin(prizeScene());
       crowdShown += (crowdTarget - crowdShown) * (reduced ? 1 : Math.min(1, dt * 10));
       // the crowd turns only while it is the shape on screen; leaving, it settles back face on
       crowdWeight += ((chapter === CROWD ? 1 : 0) - crowdWeight) * (reduced ? 1 : Math.min(1, dt * 3));
@@ -1208,7 +1330,12 @@ export function ParticleScene() {
       }
       const dawn: P[] = []; // signup: no shape, just the dust
       if (!alive) return;
-      SCENES = [...shapes, dawn].map(fit);
+      const prize = prizeShapes();
+      shapes[1] = prize.shapes[0];
+      SCENES = [
+        ...[...shapes, dawn].map((pts, i) => fit(pts, i === 1 ? prize.keep[0] : 0)),
+        ...prize.shapes.slice(1).map((pts, i) => fit(pts, prize.keep[i + 1])),
+      ];
       begin(want);
       el.style.opacity = "1";
       raf = requestAnimationFrame(frame);

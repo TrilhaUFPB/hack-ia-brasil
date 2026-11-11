@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { EVENT, FAQ, PEOPLE, PRIZES, SCHEDULE } from "@/content";
-import { ParticleScene, setCrowdView, setDialTime, setPeopleFocus } from "@/components/fx/particle-scene";
+import { ParticleScene, setCrowdView, setDialTime, setPeopleFocus, setPrizeView } from "@/components/fx/particle-scene";
 import { SmoothScroll } from "@/components/fx/smooth-scroll";
 import { ClickDots } from "@/components/fx/click-dots";
 import { Scramble } from "@/components/fx/scramble";
@@ -121,6 +121,71 @@ function Schedule() {
             </li>
           ))}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+// the prize pins with one stop per prize: the shape goes 100K → 1 semana → M → VISTO,
+// and the matching card comes forward
+function Prize() {
+  const ref = useRef<HTMLElement>(null);
+  const [active, setActive] = useState(0);
+  useScrub(ref, (p) => {
+    setPrizeView(p);
+    setActive(Math.round(p * (PRIZES.length - 1)));
+  });
+  return (
+    <section
+      ref={ref}
+      id="premio"
+      data-steps={PRIZES.length}
+      style={{ height: `${100 + (PRIZES.length - 1) * 60}svh` }}
+    >
+      <div
+        data-scene="1"
+        data-side="right"
+        className="sticky top-0 mx-auto flex h-[100svh] max-w-6xl flex-col justify-center px-8 max-[900px]:justify-end max-[900px]:pb-10 max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]"
+      >
+        <Label>o que está em jogo</Label>
+        <Reveal>
+          <h2 className="mx-auto mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
+            O vencedor{" "}
+            <mark className="bg-[#FFFFFF] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
+          </h2>
+          <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80 [@media(max-height:820px)]:hidden">
+            A{" "}
+            <a
+              href={EVENT.fellowshipUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="text-white underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white"
+            >
+              IA Brasil Fellowship
+            </a>{" "}
+            é um programa de um ano para jovens de 12 a 25 anos com talento técnico excepcional.
+          </p>
+        </Reveal>
+        <div
+          data-shape-anchor
+          className="mt-10 grid border-t border-white/[0.06] max-[900px]:mt-6 sm:grid-cols-2 [@media(max-height:820px)]:mt-5"
+        >
+          {PRIZES.map((p, i) => (
+            <article
+              key={p.n}
+              className={`h-full border-b border-white/[0.06] py-8 transition-opacity duration-300 max-[900px]:py-5 [@media(max-height:820px)]:py-4 ${
+                i % 2 ? "sm:border-l sm:pl-8" : "sm:pr-4"
+              } ${i === active ? "opacity-100" : "opacity-30 max-[900px]:hidden"}`}
+            >
+              <span className="font-mono text-xs text-white/75">{p.n}</span>
+              <h3 className="mt-6 text-2xl font-extralight md:text-3xl max-[900px]:mt-3 [@media(max-height:820px)]:mt-2">
+                <Scramble text={p.title} trigger="hover" />
+              </h3>
+              <p className="mt-1 text-sm text-white/80">{p.sub}</p>
+              <p className="mt-4 text-sm leading-relaxed text-white/75">{p.body}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -325,45 +390,7 @@ export default function Home() {
       </section>
 
       {/* PRIZE */}
-      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
-        <Label>o que está em jogo</Label>
-        <Reveal>
-          <h2 className="mx-auto mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
-            O vencedor{" "}
-            <mark className="bg-[#FFFFFF] px-[0.08em] text-[#000928]">pula a fila</mark> da fellowship.
-          </h2>
-          <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">
-            A{" "}
-            <a
-              href={EVENT.fellowshipUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="text-white underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white"
-            >
-              IA Brasil Fellowship
-            </a>{" "}
-            é um programa de um ano para jovens de 12 a 25 anos com talento técnico excepcional.
-          </p>
-        </Reveal>
-        <div className="mt-10 grid border-t border-white/[0.06] sm:grid-cols-2">
-          {PRIZES.map((p, i) => (
-            <Reveal key={p.n} delay={i * 0.08} y={12}>
-              <article
-                className={`group h-full border-b border-white/[0.06] py-8 ${i % 2 ? "sm:border-l sm:pl-8" : "sm:pr-4"}`}
-              >
-                <span className="font-mono text-xs text-white/75">{p.n}</span>
-                <h3 className="mt-6 text-2xl font-extralight md:text-3xl">
-                  <Scramble text={p.title} trigger="hover" />
-                </h3>
-                <p className="mt-1 text-sm text-white/80">{p.sub}</p>
-                <p className="mt-4 text-sm leading-relaxed text-white/75 transition-colors duration-500 group-hover:text-white/90">
-                  {p.body}
-                </p>
-              </article>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <Prize />
 
       {/* DAY */}
       <Schedule />
