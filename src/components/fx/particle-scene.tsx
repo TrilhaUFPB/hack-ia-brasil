@@ -730,7 +730,7 @@ export function ParticleScene() {
       blending: THREE.AdditiveBlending,
       uniforms: {
         uT: { value: 0 },
-        uDur: { value: 1.4 },
+        uDur: { value: 1.1 }, // how long the dust takes to re-form a shape
         uTime: { value: 0 },
         uScale: { value: 1 },
         uKick: { value: new THREE.Vector2() },
@@ -1050,7 +1050,9 @@ export function ParticleScene() {
             if (SCENES.length && want !== chapter) begin(want);
           }
       },
-      { rootMargin: "-64% 0px -35% 0px" },
+      // a section takes over once its top is 80% down the screen, so its shape is
+      // already forming as it scrolls in
+      { rootMargin: "-80% 0px -19% 0px" },
     );
     document
       .querySelectorAll<HTMLElement>("[data-scene]")
