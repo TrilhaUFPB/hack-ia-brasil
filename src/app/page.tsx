@@ -126,7 +126,7 @@ function Schedule() {
   );
 }
 
-// the prize pins with one stop per prize: the shape goes 100K → 1 semana → M → VISTO,
+// the prize pins with one stop per prize: the shape goes 100K → 1 semana → two people → US flag,
 // and the matching card comes forward
 function Prize() {
   const ref = useRef<HTMLElement>(null);

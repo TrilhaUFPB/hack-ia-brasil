@@ -44,7 +44,7 @@ const CROWD_VIEWS = [
 const CROWD = 3;
 
 // the prize section, one shape per prize as you scroll: "100K", then its "1" stays put
-// for "1 semana", then becomes the left leg of the "M" of mentoria, then "VISTO"
+// for "1 semana", then becomes a mentor beside a younger builder, then the US flag
 let prizeTarget = 0;
 export function setPrizeView(p: number) {
   prizeTarget = p;
@@ -423,33 +423,22 @@ export function ParticleScene() {
       const one = draw("1", x0, size).sort(byY);
       const hundredK = [...one, ...draw("00K", x0 + w1, size)];
       const week = [...one, ...draw("SEMANA", x0 + w1 + size * 0.12, size * 0.34, 400)];
-      // "MENTORIA" in one size along the top; the 1's dots become the M's left leg.
-      // Under it, two little people talking: a mentor and a younger builder.
-      let ms = size;
-      g0.font = `300 ${ms}px ${font}`;
-      while (g0.measureText("MENTORIA").width > W * 0.7) g0.font = `300 ${(ms *= 0.95)}px ${font}`;
-      const mx = (W - g0.measureText("MENTORIA").width) / 2,
-        mW = g0.measureText("M").width;
-      const word = draw("MENTORIA", mx, ms, 300, H * 0.12);
-      const legEnd = (mx + mW * 0.3) / PX - Wu / 2;
-      const leg = word.filter((p) => p[0] < legEnd).sort(byY);
+      // mentoria: just two people, a mentor and a younger builder. The 1's dots
+      // become the mentor.
       const pair: P[] = [];
       const person = (x: number, scale: number, facing: number, flag: number) => {
         const from = pair.length;
         figure(pair, x, 0, scale, facing, 0.95);
-        // stand them under the word; flags 8 and 9 make each one bob on its own beat
+        // centred on the shape; flags 8 and 9 make each one nod on its own beat
         for (let i = from; i < pair.length; i++)
-          pair[i] = [pair[i][0], pair[i][1] - 1.75, ...(pair[i].slice(2, 8) as [number, number, number, number, number, number]), flag];
+          pair[i] = [pair[i][0], pair[i][1] - 0.85, ...(pair[i].slice(2, 8) as [number, number, number, number, number, number]), flag];
       };
-      person(-1.0, 1.1, Math.PI / 2 - 0.4, 8);
-      person(1.0, 0.85, Math.PI / 2 + 0.4, 9);
-      // what passes between them
-      for (let i = 0; i < 260; i++) {
-        const t = rnd(),
-          r = Math.sqrt(rnd()) * 0.14;
-        pair.push([-0.55 + t * 1.1, -0.72 + Math.sin(t * Math.PI) * 0.16 + (rnd() - 0.5) * r, 0, ...WHITE, 0.35 + rnd() * 0.4, 0.9]);
-      }
-      const mentoria = [...leg, ...word.filter((p) => p[0] >= legEnd), ...pair];
+      person(-1.25, 1.4, Math.PI / 2 - 0.4, 8);
+      const mentor = pair.slice().sort(byY);
+      pair.length = 0;
+      person(1.25, 1.1, Math.PI / 2 + 0.4, 9);
+      const mentoria = [...mentor, ...pair];
+      const leg = mentor;
       return { shapes: [hundredK, week, mentoria, usFlag()], keep: [one.length, one.length, leg.length, 0] };
     }
 
