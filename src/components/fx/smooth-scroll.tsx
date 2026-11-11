@@ -26,8 +26,9 @@ let dwell = 0;
 const DWELL = 350,
   DWELL_PINNED = 600;
 
-// moves the moment you swipe and lands softly (an ease-in start felt laggy)
-const easeOut = (t: number) => 1 - Math.pow(1 - t, 4);
+// moves the moment you swipe and settles gently (an ease-in start felt laggy, a
+// sharper ease-out felt abrupt)
+const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
 
 function stops() {
   const vh = innerHeight;
@@ -66,7 +67,7 @@ function stops() {
 }
 
 // inside a pinned section a step only changes the shape in place: a quick, short glide
-const SLOW_STEP = 0.32;
+const SLOW_STEP = 0.4;
 
 function inSteppedSection(a: number, b: number) {
   for (const s of document.querySelectorAll<HTMLElement>("main > section[data-steps]")) {
@@ -84,7 +85,7 @@ export function scrollToY(y: number) {
   dwell = pinned ? DWELL_PINNED : DWELL;
   const duration = pinned
     ? SLOW_STEP
-    : Math.min(0.5, Math.max(0.32, dist / 2400));
+    : Math.min(0.6, Math.max(0.42, dist / 2000));
   busy = true;
   const done = () => {
     if (!busy) return;
@@ -110,8 +111,10 @@ function step(dir: 1 | -1) {
 
 export function SmoothScroll() {
   useEffect(() => {
-    // a swipe on a trackpad keeps sending wheel events for a second or so: only a new
-    // gesture (a pause, or a sudden harder push) counts as another step
+    // a swipe on a trackpad keeps sending wheel events for a second or so, and a fast
+    // spin of a mouse wheel is a stream too: only a new gesture counts as another step,
+    // i.e. after the wheel has gone quiet, or a clearly harder push than the stream
+    // (trackpad momentum never jumps like that), so one big flick moves one stop
     let lastAt = 0,
       lastAbs = 0;
     lenis = new Lenis({
@@ -123,7 +126,7 @@ export function SmoothScroll() {
         event.preventDefault();
         const now = performance.now(),
           abs = Math.abs(deltaY);
-        const fresh = now - lastAt > 100 || abs > lastAbs * 1.5 + 4;
+        const fresh = now - lastAt > 160 || (abs >= 10 && abs > lastAbs * 2.5);
         lastAt = now;
         lastAbs = abs;
         if (fresh && abs >= 4) step(deltaY > 0 ? 1 : -1);
