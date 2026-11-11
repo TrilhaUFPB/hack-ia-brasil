@@ -277,6 +277,45 @@ function People() {
   );
 }
 
+// when, where, who, cost, partners
+function Facts() {
+  return (
+    <dl className="mx-auto grid max-w-6xl grid-cols-2 max-[900px]:text-center px-8 md:grid-cols-[1fr_1.7fr_0.9fr_0.9fr_1.1fr] md:px-20 lg:px-32">
+      {[
+        ["quando", "21 nov · 8h–18h"],
+        ["onde", "R. Manoel Gualberto, 255, Miramar"],
+        ["quem", "12 a 25 anos"],
+        ["custo", "Gratuito"],
+        ["parceria", "IA Brasil × Trilha"],
+      ].map(([k, v], i) => (
+        <div
+          key={k}
+          className={`border-white/[0.06] py-7 ${i % 2 ? "pl-6" : ""} ${i ? "md:border-l md:pl-6" : ""} ${i % 2 ? "border-l" : ""} ${
+            i > 1 ? "border-t md:border-t-0" : ""
+          }`}
+        >
+          <dt className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{k}</dt>
+          <dd className="mt-2 text-sm text-white/90">
+            {k === "parceria" ? (
+              <>
+                <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
+                  IA Brasil
+                </a>{" "}
+                ×{" "}
+                <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
+                  Trilha
+                </a>
+              </>
+            ) : (
+              <Scramble text={v} trigger="hover" />
+            )}
+          </dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
 export default function Home() {
   const cd = useCountdown(EVENT.start);
 
@@ -301,7 +340,7 @@ export default function Home() {
       <ClickDots />
       {/* HERO */}
       <section data-scene="0" data-side="left" className="relative h-[100svh] min-h-[620px] overflow-hidden">
-        <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-8 pb-24 pt-32 max-[900px]:items-center max-[900px]:text-center md:justify-center md:px-20 md:pb-32 lg:px-32">
+        <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-8 pb-24 pt-32 max-[900px]:items-center max-[900px]:text-center md:justify-center md:px-20 md:pb-32 min-[901px]:pb-40 lg:px-32">
           <motion.h1
             className="max-w-[15em] text-balance text-[clamp(1.7rem,3.2vw,2.6rem)] font-extralight leading-[1.1] tracking-[-0.01em]"
             initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
@@ -352,43 +391,16 @@ export default function Home() {
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">dias · horas · min · seg</span>
           </motion.div>
         </div>
+        {/* on desktop the facts sit along the bottom of the hero: the page moves in
+            stops, and a strip of its own never got a stop, so it was never seen */}
+        <div className="absolute inset-x-0 bottom-0 z-10 border-t border-white/[0.06] max-[900px]:hidden">
+          <Facts />
+        </div>
       </section>
 
       {/* FACTS */}
-      <section data-scene="0" data-side="left" className="border-y border-white/[0.06]">
-        <dl className="mx-auto grid max-w-6xl grid-cols-2 max-[900px]:text-center px-8 md:grid-cols-[1fr_1.7fr_0.9fr_0.9fr_1.1fr] md:px-20 lg:px-32">
-          {[
-            ["quando", "21 nov · 8h–18h"],
-            ["onde", "R. Manoel Gualberto, 255, Miramar"],
-            ["quem", "12 a 25 anos"],
-            ["custo", "Gratuito"],
-            ["parceria", "IA Brasil × Trilha"],
-          ].map(([k, v], i) => (
-            <div
-              key={k}
-              className={`border-white/[0.06] py-7 ${i % 2 ? "pl-6" : ""} ${i ? "md:border-l md:pl-6" : ""} ${i % 2 ? "border-l" : ""} ${
-                i > 1 ? "border-t md:border-t-0" : ""
-              }`}
-            >
-              <dt className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{k}</dt>
-              <dd className="mt-2 text-sm text-white/90">
-                {k === "parceria" ? (
-                  <>
-                    <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
-                      IA Brasil
-                    </a>{" "}
-                    ×{" "}
-                    <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
-                      Trilha
-                    </a>
-                  </>
-                ) : (
-                  <Scramble text={v} trigger="hover" />
-                )}
-              </dd>
-            </div>
-          ))}
-        </dl>
+      <section data-scene="0" data-side="left" className="border-y border-white/[0.06] min-[901px]:hidden">
+        <Facts />
       </section>
 
       {/* PRIZE */}
