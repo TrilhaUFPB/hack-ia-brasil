@@ -6,10 +6,6 @@
   --font-ox: var(--font-oxanium);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--font-oxanium), system-ui, sans-serif;
 }
@@ -42,9 +38,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .shimmer-text {
     animation: none;
-  }
-  html {
-    scroll-behavior: auto;
   }
 }
 
