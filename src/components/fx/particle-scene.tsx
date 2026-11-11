@@ -1094,6 +1094,9 @@ export function ParticleScene() {
       if (n === 0 && chapter !== 0) routeAt = performance.now();
       chapter = n;
       startAt = performance.now();
+      // begin() can run mid-frame, after uT was set from the old start: without this the
+      // new shape is drawn fully formed for one frame, a visible flash
+      mat.uniforms.uT.value = 0;
       el.dataset.chapter = String(n);
     }
 
@@ -1107,19 +1110,23 @@ export function ParticleScene() {
     let bakedY = 0;
     // where the shape sits on the page (px): the section's middle on desktop,
     // its upper part on phones (the text sits low there)
+    // On desktop the page moves in stops, so the shape is pinned to the screen, not
+    // the page: it holds still while the page glides and only changes form (pinned to
+    // the page it rose with the old section and rose again with the new one). Its
+    // height is where it sits once the section has landed: mid-screen, or level with
+    // the part the section names (data-shape-anchor). Phones scroll freely, so there it
+    // rides with its section, in the upper part (the text sits low).
+    const screenPinned = () => !narrow();
     const anchorY = () => {
       if (!anchorEl) return 0;
-      // a section can name the part its shape should line up with (data-shape-anchor)
-      const target = narrow() ? null : anchorEl.querySelector<HTMLElement>("[data-shape-anchor]");
-      if (target) {
-        const t = target.getBoundingClientRect();
-        return t.top + scrollY + t.height / 2;
-      }
       const r = anchorEl.getBoundingClientRect();
-      const top = r.top + scrollY;
-      return narrow()
-        ? top + Math.min(r.height, innerHeight) * 0.24
-        : top + r.height / 2;
+      if (screenPinned()) {
+        const target = anchorEl.querySelector<HTMLElement>("[data-shape-anchor]");
+        if (!target) return innerHeight / 2;
+        const t = target.getBoundingClientRect();
+        return Math.min(innerHeight * 0.85, Math.max(innerHeight * 0.15, t.top - r.top + t.height / 2));
+      }
+      return r.top + scrollY + Math.min(r.height, innerHeight) * 0.24;
     };
     const frameSide = () => {
       if (narrow()) {
@@ -1196,7 +1203,7 @@ export function ParticleScene() {
     const kick = (x: number, y: number) => {
       const r = el.getBoundingClientRect();
       const cx = (narrow() ? 0.5 : cTarget) * r.width;
-      const cy = bakedY + mat.uniforms.uAdj.value - scrollY;
+      const cy = bakedY + mat.uniforms.uAdj.value - (screenPinned() ? 0 : scrollY);
       // roughly the shape's radius on screen: 4.2 world units across at the current zoom
       const unit =
         r.height /
@@ -1311,7 +1318,7 @@ export function ParticleScene() {
       mat.uniforms.uPeople.value = peopleShown * peopleWeight;
       camera.position.x += peopleShown * peopleWeight * 0.7;
       camera.position.z -= peopleWeight * 1.2;
-      mat.uniforms.uScrollY.value = scrollY;
+      mat.uniforms.uScrollY.value = screenPinned() ? 0 : scrollY;
       if (chapter >= 0) mat.uniforms.uAdj.value = anchorY() - bakedY;
       if (!narrow() && Math.abs(cTarget - cNow) > 0.0005) {
         cNow += (cTarget - cNow) * (reduced ? 1 : Math.min(1, dt * 3));
