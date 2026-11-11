@@ -18,9 +18,13 @@ import { useEffect } from "react";
 
 let lenis: Lenis | null = null;
 let busy = false;
-let queued: 0 | 1 | -1 = 0;
-let glideAt = 0;
 let glideEnd = 0;
+let dwell = 0;
+// after each glide the page rests a moment before another swipe counts, so a fast
+// scroller still lands on every stop; inside a pinned section a bit longer, so its
+// shape has time to form
+const DWELL = 350,
+  DWELL_PINNED = 600;
 
 // moves the moment you swipe and lands softly (an ease-in start felt laggy)
 const easeOut = (t: number) => 1 - Math.pow(1 - t, 4);
@@ -76,19 +80,16 @@ function inSteppedSection(a: number, b: number) {
 export function scrollToY(y: number) {
   if (!lenis) return scrollTo(0, y);
   const dist = Math.abs(y - scrollY);
-  const duration = inSteppedSection(scrollY, y)
+  const pinned = inSteppedSection(scrollY, y);
+  dwell = pinned ? DWELL_PINNED : DWELL;
+  const duration = pinned
     ? SLOW_STEP
     : Math.min(0.5, Math.max(0.32, dist / 2400));
   busy = true;
-  glideAt = performance.now();
   const done = () => {
     if (!busy) return;
     busy = false;
     glideEnd = performance.now();
-    // a swipe made during the glide is not lost: it goes on to the next stop
-    const dir = queued;
-    queued = 0;
-    if (dir) step(dir);
   };
   lenis.scrollTo(y, {
     duration,
@@ -100,11 +101,7 @@ export function scrollToY(y: number) {
 }
 
 function step(dir: 1 | -1) {
-  if (busy) {
-    // the swipe that started this glide is still ramping up for a moment: not a new one
-    if (performance.now() - glideAt > 160) queued = dir;
-    return;
-  }
+  if (busy || performance.now() - glideEnd < dwell) return;
   const y = scrollY;
   const all = stops();
   const next = dir > 0 ? all.find((s) => s > y + 8) : all.findLast((s) => s < y - 8);
@@ -127,12 +124,9 @@ export function SmoothScroll() {
         const now = performance.now(),
           abs = Math.abs(deltaY);
         const fresh = now - lastAt > 100 || abs > lastAbs * 1.5 + 4;
-        // a hard swipe still pushing after its glide ends carries on to the next stop,
-        // so a strong flick can travel more than one screen; a soft tail does not
-        const pushing = !busy && abs >= 40 && now - glideEnd > 60;
         lastAt = now;
         lastAbs = abs;
-        if ((fresh && abs >= 4) || pushing) step(deltaY > 0 ? 1 : -1);
+        if (fresh && abs >= 4) step(deltaY > 0 ? 1 : -1);
         return false;
       },
     });
