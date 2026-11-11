@@ -20,11 +20,14 @@ let lenis: Lenis | null = null;
 let busy = false;
 let glideEnd = 0;
 let dwell = 0;
+let waiting: ReturnType<typeof setTimeout> | undefined;
+let pendingDir: 0 | 1 | -1 = 0;
+let glideAt = 0;
 // after each glide the page rests a moment before another swipe counts, so a fast
 // scroller still lands on every stop; inside a pinned section a bit longer, so its
 // shape has time to form
 const DWELL = 350,
-  DWELL_PINNED = 600;
+  DWELL_PINNED = 380;
 
 // moves the moment you swipe and settles gently (an ease-in start felt laggy, a
 // sharper ease-out felt abrupt)
@@ -67,7 +70,7 @@ function stops() {
 }
 
 // inside a pinned section a step only changes the shape in place: a quick, short glide
-const SLOW_STEP = 0.4;
+const SLOW_STEP = 0.32;
 
 function inSteppedSection(a: number, b: number) {
   for (const s of document.querySelectorAll<HTMLElement>("main > section[data-steps]")) {
@@ -87,10 +90,14 @@ export function scrollToY(y: number) {
     ? SLOW_STEP
     : Math.min(0.6, Math.max(0.42, dist / 2000));
   busy = true;
+  glideAt = performance.now();
   const done = () => {
     if (!busy) return;
     busy = false;
     glideEnd = performance.now();
+    const dir = pendingDir;
+    pendingDir = 0;
+    if (dir) waiting = setTimeout(() => step(dir), dwell);
   };
   lenis.scrollTo(y, {
     duration,
@@ -102,7 +109,16 @@ export function scrollToY(y: number) {
 }
 
 function step(dir: 1 | -1) {
-  if (busy || performance.now() - glideEnd < dwell) return;
+  // a swipe during a glide or its rest isn't dropped: it waits and goes once the
+  // rest is over, so the page never ignores you but still lands on every stop
+  const wait = busy ? -1 : dwell - (performance.now() - glideEnd);
+  if (busy || wait > 0) {
+    clearTimeout(waiting);
+    if (!busy) waiting = setTimeout(() => step(dir), wait);
+    // the swipe that started this glide is still ramping up for a moment: not a new one
+    else if (performance.now() - glideAt > 220) pendingDir = dir;
+    return;
+  }
   const y = scrollY;
   const all = stops();
   const next = dir > 0 ? all.find((s) => s > y + 8) : all.findLast((s) => s < y - 8);

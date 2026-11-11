@@ -1090,7 +1090,7 @@ export function ParticleScene() {
       mat.uniforms.uCalm.value = calm;
       // shapes glide into each other: a small puff between sections, none inside one
       mat.uniforms.uBurst.value = calm ? 0 : 0.3;
-      mat.uniforms.uDur.value = calm ? 0.8 : 1.1;
+      mat.uniforms.uDur.value = calm ? 0.6 : 1.1;
       if (n === 0 && chapter !== 0) routeAt = performance.now();
       chapter = n;
       startAt = performance.now();
