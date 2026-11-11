@@ -730,7 +730,7 @@ export function ParticleScene() {
       blending: THREE.AdditiveBlending,
       uniforms: {
         uT: { value: 0 },
-        uDur: { value: 1.4 },
+        uDur: { value: 0.85 }, // how long the dust takes to re-form a shape
         uTime: { value: 0 },
         uScale: { value: 1 },
         uKick: { value: new THREE.Vector2() },
@@ -888,7 +888,7 @@ export function ParticleScene() {
     let startAt = performance.now();
     let routeAt = performance.now();
     // the route waits for the globe to form, then crawls from João Pessoa to San Francisco
-    const ROUTE_DELAY = 1.3,
+    const ROUTE_DELAY = 0.9,
       ROUTE_DUR = 3.6;
     const ease = (p: number) =>
       p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
@@ -950,7 +950,7 @@ export function ParticleScene() {
         aCT[i * 3 + 2] = T[o + 5];
         aAS[i * 4 + 1] = T[o + 6];
         aAS[i * 4 + 3] = T[o + 7];
-        aMisc[i * 3 + 1] = aMisc[i * 3] * (chapter < 0 ? 0.6 : 0.3);
+        aMisc[i * 3 + 1] = aMisc[i * 3] * (chapter < 0 ? 0.4 : 0.18);
       }
       for (const k of [
         "position",

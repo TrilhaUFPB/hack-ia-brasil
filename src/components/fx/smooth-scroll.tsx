@@ -26,6 +26,7 @@ const easeOut = (t: number) => 1 - Math.pow(1 - t, 4);
 
 function stops() {
   const vh = innerHeight;
+  if (vh < 50) return []; // a window with no height (hidden or collapsed) has no stops
   const max = document.documentElement.scrollHeight - vh;
   const out: number[] = [];
   let carried: number | null = null;
