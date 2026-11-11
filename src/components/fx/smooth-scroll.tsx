@@ -60,7 +60,7 @@ function stops() {
 }
 
 // inside a pinned section a step only changes the shape in place: a quick, short glide
-const SLOW_STEP = 0.5;
+const SLOW_STEP = 0.42;
 
 function inSteppedSection(a: number, b: number) {
   for (const s of document.querySelectorAll<HTMLElement>("main > section[data-steps]")) {
@@ -76,7 +76,7 @@ export function scrollToY(y: number) {
   const dist = Math.abs(y - scrollY);
   const duration = inSteppedSection(scrollY, y)
     ? SLOW_STEP
-    : Math.min(0.7, Math.max(0.45, dist / 1800));
+    : Math.min(0.6, Math.max(0.4, dist / 2000));
   busy = true;
   glideAt = performance.now();
   const done = () => {
@@ -100,7 +100,7 @@ export function scrollToY(y: number) {
 function step(dir: 1 | -1) {
   if (busy) {
     // the swipe that started this glide is still ramping up for a moment: not a new one
-    if (performance.now() - glideAt > 200) queued = dir;
+    if (performance.now() - glideAt > 160) queued = dir;
     return;
   }
   const y = scrollY;
@@ -124,7 +124,7 @@ export function SmoothScroll() {
         event.preventDefault();
         const now = performance.now(),
           abs = Math.abs(deltaY);
-        const fresh = now - lastAt > 120 || abs > lastAbs * 1.5 + 4;
+        const fresh = now - lastAt > 100 || abs > lastAbs * 1.5 + 4;
         lastAt = now;
         lastAbs = abs;
         if (fresh && abs >= 4) step(deltaY > 0 ? 1 : -1);
