@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { EVENT, FAQ, PEOPLE, PRIZES, SCHEDULE } from "@/content";
 import { ParticleScene, setCrowdView, setDialTime, setPeopleFocus } from "@/components/fx/particle-scene";
-import { SmoothScroll, scrollToY } from "@/components/fx/smooth-scroll";
+import { SmoothScroll } from "@/components/fx/smooth-scroll";
 import { ClickDots } from "@/components/fx/click-dots";
 import { Scramble } from "@/components/fx/scramble";
 import { RollingDigits } from "@/components/fx/rolling-digits";
@@ -27,7 +27,6 @@ const SLOT_HOURS = SCHEDULE.map((s) => {
   const [h, m] = s.t.split(":").map(Number);
   return h + m / 60;
 });
-const LAST = SCHEDULE.length - 1;
 
 // how far the page has scrolled through a pinned (sticky) section: 0 at its first
 // stop, 1 at its last. Calls back once per frame while scrolling.
@@ -60,54 +59,68 @@ function useScrub(ref: React.RefObject<HTMLElement | null>, onProgress: (p: numb
   }, [ref]);
 }
 
-// The schedule pins itself to the screen while the page scrolls through it: each
-// stop is one slot, and reaching it turns the clock to dust that re-forms at that hour.
+const SLOT_MS = 7_000; // each slot of the schedule stays up for seven seconds
+
+// The schedule scrolls like any section. While it is on screen the slots take turns
+// by themselves, and the clock's hands fly to each one's time; a click jumps ahead.
 function Schedule() {
   const ref = useRef<HTMLElement>(null);
   const [active, setActive] = useState(0);
+  const [inView, setInView] = useState(false);
+  const [round, setRound] = useState(0); // bumped by a click, so that slot gets its full turn
 
-  useScrub(ref, (p) => {
-    const i = Math.round(p * LAST);
-    setDialTime(SLOT_HOURS[i]);
+  useEffect(() => {
+    const io = new IntersectionObserver(([e]) => setInView(e.isIntersecting), { threshold: 0.5 });
+    if (ref.current) io.observe(ref.current);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!inView) return;
+    const id = setTimeout(() => setActive((i) => (i + 1) % SCHEDULE.length), SLOT_MS);
+    return () => clearTimeout(id);
+  }, [inView, active, round]);
+
+  useEffect(() => setDialTime(SLOT_HOURS[active]), [active]);
+
+  const pick = (i: number) => {
     setActive(i);
-  });
-
-  const go = (i: number) => {
-    const el = ref.current;
-    if (!el) return;
-    const top = el.getBoundingClientRect().top + scrollY;
-    scrollToY(top + ((el.offsetHeight - innerHeight) * i) / LAST);
+    setRound((r) => r + 1);
   };
 
   return (
-    <section
-      ref={ref}
-      id="dia"
-      data-steps={SCHEDULE.length}
-      style={{ height: `${100 + LAST * 60}svh` }}
-    >
-      <div data-scene="2" data-side="left" className="sticky top-0 flex h-[100svh] items-center max-[900px]:items-end">
-        <div className="mx-auto w-full max-w-6xl px-8 max-[900px]:pb-10 max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-          <Label>cronograma</Label>
-          <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
-          <ul className="mt-14 max-[900px]:mt-8">
-            {SCHEDULE.map((s, i) => (
-              <li key={s.t}>
-                <button
-                  type="button"
-                  onClick={() => go(i)}
-                  className={`grid w-full grid-cols-[3.5rem_1fr_auto] items-baseline gap-4 border-l py-3 pl-5 pr-4 text-left transition-colors duration-300 max-[900px]:py-2 ${
-                    i === active ? "border-white bg-white text-black" : "border-white/10 text-white/75"
-                  }`}
-                >
-                  <span className="font-mono text-xs">{s.t}</span>
-                  <span className="text-sm font-light leading-snug">{s.what}</span>
-                  <span className="font-mono text-[11px] uppercase tracking-[0.2em] opacity-70">{s.where}</span>
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
+    <section ref={ref} id="dia" data-scene="2" data-side="left" className="flex min-h-[100svh] items-center max-[900px]:items-end">
+      <div className="mx-auto w-full max-w-6xl px-8 py-24 max-[900px]:pb-10 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
+        <Label>cronograma</Label>
+        <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
+        <ul className="mt-14 max-[900px]:mt-8">
+          {SCHEDULE.map((s, i) => (
+            <li key={s.t}>
+              <button
+                type="button"
+                onClick={() => pick(i)}
+                className={`relative grid w-full grid-cols-[3.5rem_1fr_auto] items-baseline gap-4 overflow-hidden border-l py-3 pl-5 pr-4 text-left transition-colors duration-300 max-[900px]:py-2 ${
+                  i === active ? "border-white bg-white text-black" : "border-white/10 text-white/75"
+                }`}
+              >
+                {i === active && (
+                  // a thin line along the bottom fills while this slot has its turn
+                  <motion.span
+                    key={`${active}-${round}-${inView}`}
+                    aria-hidden
+                    className="absolute inset-x-0 bottom-0 h-[2px] origin-left bg-black/25"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: inView ? 1 : 0 }}
+                    transition={{ duration: inView ? SLOT_MS / 1000 : 0, ease: "linear" }}
+                  />
+                )}
+                <span className="font-mono text-xs">{s.t}</span>
+                <span className="text-sm font-light leading-snug">{s.what}</span>
+                <span className="font-mono text-[11px] uppercase tracking-[0.2em] opacity-70">{s.where}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
