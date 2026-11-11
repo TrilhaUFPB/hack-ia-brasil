@@ -1020,7 +1020,8 @@ export function ParticleScene() {
       mat.uniforms.uAdj.value = 0;
       const elapsed = (performance.now() - startAt) / 1000,
         dur = mat.uniforms.uDur.value,
-        burstNow = mat.uniforms.uBurst.value;
+        burstNow = mat.uniforms.uBurst.value,
+        calmNow = mat.uniforms.uCalm.value;
       // between two prize shapes the move is short and quick, and dots that keep
       // their spot (the "1") stay still
       const calm = PRIZE_SCENES.includes(n) && PRIZE_SCENES.includes(chapter) ? 1 : 0;
@@ -1046,14 +1047,16 @@ export function ParticleScene() {
             (to[k] - aFrom[i * 3 + k]) * e + aDir[i * 3 + k] * sc;
         for (let k = 0; k < 3; k++)
           aCF[i * 3 + k] += (aCT[i * 3 + k] - aCF[i * 3 + k]) * e;
-        if (chapter < 0 || calm) {
-          // first shape, or the same pinned section: start right where it ends up
+        if (chapter < 0) {
           aAncF[i * 2] = ax;
           aAncF[i * 2 + 1] = ay;
         } else {
+          // start from exactly where the dot is drawn right now (the shader adds the
+          // section's movement in full while inside one pinned section), so a change
+          // that interrupts another never snaps
           aAncF[i * 2] += (aAncT[i * 2] - aAncF[i * 2]) * e;
           aAncF[i * 2 + 1] +=
-            (aAncT[i * 2 + 1] + adjAtBegin - aAncF[i * 2 + 1]) * e;
+            (aAncT[i * 2 + 1] - aAncF[i * 2 + 1]) * e + adjAtBegin * (e + (1 - e) * calmNow);
         }
         aAncT[i * 2] = ax;
         aAncT[i * 2 + 1] = ay;
