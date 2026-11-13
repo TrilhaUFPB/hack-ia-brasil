@@ -225,9 +225,9 @@ export function Home({ lang }: { lang: Lang }) {
           </div>
           <div className="flex flex-col gap-3 border-l border-white/15 pl-10 max-[900px]:items-center max-[900px]:border-l-0 max-[900px]:pl-0">
             <div className="flex items-center gap-5 text-sm">
-              <PartnerLogo href={EVENT.trilhaUrl} logo="/montanha.svg" name="Trilha" w={20} />
               <PartnerLogo href={EVENT.cognitionUrl} logo="/cognition.svg" name="Cognition" w={15} />
               <PartnerLogo href={EVENT.devinUrl} logo="/devin.svg" name="Devin" w={15} />
+              <PartnerLogo href={EVENT.trilhaUrl} logo="/montanha.svg" name="Trilha" w={20} />
             </div>
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{t.backedBy}</span>
           </div>
