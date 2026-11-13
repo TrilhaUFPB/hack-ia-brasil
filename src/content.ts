@@ -13,18 +13,20 @@ export const EVENT = {
   address: "R. Manoel Gualberto, 255, Miramar, João Pessoa",
   who: "Brasileiros de 12 a 25 anos, de qualquer lugar",
   cost: "Gratuito",
-  partners: ["IA Brasil Fellowship", "Trilha"],
+  partners: ["IA Brasil Fellowship", "Trilha", "Cognition"],
   coords: { lat: "7°09′S", lon: "34°47′W" },
   signupUrl: "/inscricao",
   fellowshipUrl: "https://iabrasil.com/",
   trilhaUrl: "https://www.otrilha.com",
+  cognitionUrl: "https://cognition.ai",
+  devinUrl: "https://devin.ai",
 };
 
 export const PRIZES = [
   {
     n: "01",
     title: "R$ 100 mil",
-    sub: "em prêmios",
+    sub: "para os fellows",
     body: "Para se dedicar ao problema mais difícil que você quer.",
   },
   {
@@ -36,8 +38,8 @@ export const PRIZES = [
   {
     n: "03",
     title: "Mentoria",
-    sub: "de Pedro e Victor",
-    body: "Fundadores da Brex, Pagar.me e Wildlife.",
+    sub: "de Pedro Franceschi e Victor Lazarte",
+    body: "Founders da Brex, da Wildlife Studios e da Diffusion.",
   },
   {
     n: "04",
@@ -123,9 +125,9 @@ export const FAQ = [
 export type Lang = "pt" | "en";
 
 export const PRIZES_EN = [
-  { n: "01", title: "R$ 100k", sub: "in prizes", body: "To go after the hardest problem you want." },
+  { n: "01", title: "R$ 100k", sub: "for fellows", body: "To go after the hardest problem you want." },
   { n: "02", title: "1 week", sub: "in San Francisco", body: "With the other fellows and top founders." },
-  { n: "03", title: "Mentorship", sub: "from Pedro and Victor", body: "Founders of Brex, Pagar.me and Wildlife." },
+  { n: "03", title: "Mentorship", sub: "from Pedro Franceschi and Victor Lazarte", body: "Founders of Brex, Wildlife Studios and Diffusion." },
   { n: "04", title: "US visa", sub: "support", body: "Help through the whole US visa process." },
 ];
 

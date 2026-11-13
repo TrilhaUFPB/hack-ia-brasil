@@ -17,13 +17,14 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 // Inline page copy. Event data (prizes, schedule, people, FAQ) lives in content.ts.
 const T = {
   pt: {
-    nav: ["Prêmio", "Dia", "Quem"],
+    nav: ["Dia", "Prêmio", "Quem"],
     apply: "Inscreva-se",
     switchLabel: "EN",
     h1: ["Um hackathon em", "João Pessoa", "pode ser o seu caminho para o", "Vale do Silício."],
     sub: "Dez horas. Um problema difícil. O foco é achar pessoas, não só projetos.",
     cta: "Quero participar",
     countdown: "dias · horas · min · seg",
+    backedBy: "parceria",
     facts: [
       ["quando", "28 nov · 8h–18h"],
       ["onde", "R. Manoel Gualberto, 255, Miramar"],
@@ -34,6 +35,7 @@ const T = {
     prizeLabel: "o que está em jogo",
     prizeH2: ["O vencedor", "pula a fila", "da fellowship."],
     prizeP: ["A", "é um programa de um ano para jovens de 12 a 25 anos com talento técnico excepcional."],
+    perksLabel: "o que os fellows recebem",
     dayLabel: "cronograma",
     whoLabel: "quem pode",
     whoH2: "Brasileiros de 12 a 25 anos que constroem coisas.",
@@ -46,16 +48,18 @@ const T = {
     signupBtn: "Inscrever-se",
     aboutFellowship: "conheça a IA Brasil Fellowship ↗",
     aboutTrilha: "conheça o Trilha ↗",
+    aboutDevin: "conheça o Devin, da Cognition ↗",
     coOrganized: "co-organizado por",
   },
   en: {
-    nav: ["Prize", "Day", "People"],
+    nav: ["Day", "Prize", "People"],
     apply: "Apply",
     switchLabel: "PT",
     h1: ["A hackathon in", "João Pessoa", "could be your path to", "Silicon Valley."],
     sub: "Ten hours. One hard problem. We're looking for people, not just projects.",
     cta: "Count me in",
     countdown: "days · hours · min · sec",
+    backedBy: "partners",
     facts: [
       ["when", "Nov 28 · 8am–6pm"],
       ["where", "R. Manoel Gualberto, 255, Miramar"],
@@ -66,6 +70,7 @@ const T = {
     prizeLabel: "what's at stake",
     prizeH2: ["The winner", "skips the line", "for the fellowship."],
     prizeP: ["The", "is a one-year program for people aged 12 to 25 with exceptional technical talent."],
+    perksLabel: "what fellows get",
     dayLabel: "schedule",
     whoLabel: "who can apply",
     whoH2: "Brazilians aged 12 to 25 who build things.",
@@ -78,6 +83,7 @@ const T = {
     signupBtn: "Apply",
     aboutFellowship: "about the IA Brasil Fellowship ↗",
     aboutTrilha: "about Trilha ↗",
+    aboutDevin: "about Devin, by Cognition ↗",
     coOrganized: "co-organized by",
   },
 };
@@ -88,6 +94,20 @@ function Label({ children }: { children: string }) {
     <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/75">
       <Scramble text={children} />
     </p>
+  );
+}
+
+/** Partner mark + name, tinted with the text color via a CSS mask. */
+function PartnerLogo({ href, logo, name, w }: { href: string; logo: string; name: string; w: number }) {
+  return (
+    <a href={href} target="_blank" rel="noreferrer" className="group inline-flex items-center gap-1.5 text-white/90 transition-colors hover:text-white">
+      <span
+        aria-hidden
+        className="block h-[15px] shrink-0 bg-current"
+        style={{ width: w, WebkitMask: `url(${logo}) center/contain no-repeat`, mask: `url(${logo}) center/contain no-repeat` }}
+      />
+      <span className="underline decoration-white/25 underline-offset-4 transition-colors group-hover:decoration-white">{name}</span>
+    </a>
   );
 }
 
@@ -134,8 +154,8 @@ export function Home({ lang }: { lang: Lang }) {
         <header className="absolute inset-x-0 top-0 z-10 mx-auto flex max-w-6xl items-center justify-between px-8 py-7 md:grid md:grid-cols-[1fr_auto_1fr] md:px-20 lg:px-32">
           <span className="font-mono text-xs uppercase tracking-[0.28em] text-white/90">Hack IA Brasil</span>
           <nav className="hidden gap-10 font-mono text-xs uppercase tracking-[0.28em] text-white/75 md:flex">
-            <a href="#premio" className="transition-colors hover:text-white">{t.nav[0]}</a>
-            <a href="#dia" className="transition-colors hover:text-white">{t.nav[1]}</a>
+            <a href="#dia" className="transition-colors hover:text-white">{t.nav[0]}</a>
+            <a href="#premio" className="transition-colors hover:text-white">{t.nav[1]}</a>
             <a href="#quem" className="transition-colors hover:text-white">{t.nav[2]}</a>
           </nav>
           <div className="flex items-center justify-end gap-6 font-mono text-xs uppercase tracking-[0.28em]">
@@ -186,11 +206,12 @@ export function Home({ lang }: { lang: Lang }) {
             </a>
           </motion.div>
           <motion.div
-            className="mt-16 flex flex-col gap-2 max-[900px]:items-center"
+            className="pointer-events-auto mt-16 flex flex-wrap items-end gap-x-10 gap-y-8 max-[900px]:justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 1 }}
           >
+          <div className="flex flex-col gap-2 max-[900px]:items-center">
             <div className="flex items-baseline gap-1.5 text-lg font-extralight tabular-nums text-white/85 md:text-xl">
               <RollingDigits value={pad(cd?.d)} />
               <span className="text-white/75">:</span>
@@ -201,6 +222,15 @@ export function Home({ lang }: { lang: Lang }) {
               <RollingDigits value={pad(cd?.s)} />
             </div>
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{t.countdown}</span>
+          </div>
+          <div className="flex flex-col gap-3 border-l border-white/15 pl-10 max-[900px]:items-center max-[900px]:border-l-0 max-[900px]:pl-0">
+            <div className="flex items-center gap-5 text-sm">
+              <PartnerLogo href={EVENT.cognitionUrl} logo="/cognition.svg" name="Cognition" w={15} />
+              <PartnerLogo href={EVENT.devinUrl} logo="/devin.svg" name="Devin" w={15} />
+              <PartnerLogo href={EVENT.trilhaUrl} logo="/montanha.svg" name="Trilha" w={20} />
+            </div>
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{t.backedBy}</span>
+          </div>
           </motion.div>
         </div>
       </section>
@@ -218,15 +248,15 @@ export function Home({ lang }: { lang: Lang }) {
               <dt className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{k}</dt>
               <dd className="mt-2 text-sm text-white/90">
                 {i === t.facts.length - 1 ? (
-                  <>
+                  <span className="inline-flex flex-wrap items-center gap-x-2.5 gap-y-1.5 max-[900px]:justify-center">
                     <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
                       IA Brasil
-                    </a>{" "}
-                    ×{" "}
-                    <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
-                      Trilha
                     </a>
-                  </>
+                    <span className="text-white/50">×</span>
+                    <PartnerLogo href={EVENT.trilhaUrl} logo="/montanha.svg" name="Trilha" w={20} />
+                    <span className="text-white/50">×</span>
+                    <PartnerLogo href={EVENT.cognitionUrl} logo="/cognition.svg" name="Cognition" w={15} />
+                  </span>
                 ) : (
                   <Scramble text={v} trigger="hover" />
                 )}
@@ -236,8 +266,19 @@ export function Home({ lang }: { lang: Lang }) {
         </dl>
       </section>
 
+      {/* DAY */}
+      <section data-scene="2" data-side="right" id="dia" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+        <Label>{t.dayLabel}</Label>
+        <Reveal>
+          <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
+        </Reveal>
+        <div className="mt-14">
+          <Timeline schedule={SCHEDULE} />
+        </div>
+      </section>
+
       {/* PRIZE */}
-      <section data-scene="1" data-side="right" id="premio" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pl-[34%]">
+      <section data-scene="1" data-side="left" id="premio" className="mx-auto max-w-6xl px-8 py-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
         <Label>{t.prizeLabel}</Label>
         <Reveal>
           <h2 className="mx-auto mt-6 max-w-2xl text-2xl font-extralight leading-tight md:text-4xl">
@@ -257,7 +298,8 @@ export function Home({ lang }: { lang: Lang }) {
             {t.prizeP[1]}
           </p>
         </Reveal>
-        <div className="mt-10 grid border-t border-white/[0.06] sm:grid-cols-2">
+        <p className="mt-14 font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{t.perksLabel}</p>
+        <div className="mt-6 grid border-t border-white/[0.06] sm:grid-cols-2">
           {PRIZES.map((p, i) => (
             <Reveal key={p.n} delay={i * 0.08} y={12}>
               <article
@@ -274,17 +316,6 @@ export function Home({ lang }: { lang: Lang }) {
               </article>
             </Reveal>
           ))}
-        </div>
-      </section>
-
-      {/* DAY */}
-      <section data-scene="2" data-side="left" id="dia" className="mx-auto max-w-6xl px-8 pt-24 pb-36 max-[900px]:pt-[44svh] max-[900px]:text-center md:px-20 lg:px-32 min-[901px]:!pr-[34%]">
-        <Label>{t.dayLabel}</Label>
-        <Reveal>
-          <h2 className="mt-6 text-2xl font-extralight md:text-4xl">08:00 — 18:00</h2>
-        </Reveal>
-        <div className="mt-14">
-          <Timeline schedule={SCHEDULE} />
         </div>
       </section>
 
@@ -364,6 +395,9 @@ export function Home({ lang }: { lang: Lang }) {
             </a>
             <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               {t.aboutTrilha}
+            </a>
+            <a href={EVENT.devinUrl} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
+              {t.aboutDevin}
             </a>
           </div>
         </div>
