@@ -95,6 +95,20 @@ function Label({ children }: { children: string }) {
   );
 }
 
+/** Partner mark + name, tinted with the text color via a CSS mask. */
+function PartnerLogo({ href, logo, name, w }: { href: string; logo: string; name: string; w: number }) {
+  return (
+    <a href={href} target="_blank" rel="noreferrer" className="group inline-flex items-center gap-1.5 text-white/90 transition-colors hover:text-white">
+      <span
+        aria-hidden
+        className="block h-[15px] shrink-0 bg-current"
+        style={{ width: w, WebkitMask: `url(${logo}) center/contain no-repeat`, mask: `url(${logo}) center/contain no-repeat` }}
+      />
+      <span className="underline decoration-white/25 underline-offset-4 transition-colors group-hover:decoration-white">{name}</span>
+    </a>
+  );
+}
+
 function Timeline({ schedule }: { schedule: { t: string; what: string; where: string }[] }) {
   const [active, setActive] = useState(2);
   return (
@@ -222,20 +236,15 @@ export function Home({ lang }: { lang: Lang }) {
               <dt className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{k}</dt>
               <dd className="mt-2 text-sm text-white/90">
                 {i === t.facts.length - 1 ? (
-                  <>
+                  <span className="inline-flex flex-wrap items-center gap-x-2.5 gap-y-1.5 max-[900px]:justify-center">
                     <a href={EVENT.fellowshipUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
                       IA Brasil
-                    </a>{" "}
-                    ×{" "}
-                    <a href={EVENT.trilhaUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
-                      Trilha
                     </a>
-                    {" "}
-                    ×{" "}
-                    <a href={EVENT.cognitionUrl} target="_blank" rel="noreferrer" className="underline decoration-white/25 underline-offset-4 transition-colors hover:decoration-white">
-                      Cognition
-                    </a>
-                  </>
+                    <span className="text-white/50">×</span>
+                    <PartnerLogo href={EVENT.trilhaUrl} logo="/montanha.svg" name="Trilha" w={20} />
+                    <span className="text-white/50">×</span>
+                    <PartnerLogo href={EVENT.cognitionUrl} logo="/cognition.svg" name="Cognition" w={15} />
+                  </span>
                 ) : (
                   <Scramble text={v} trigger="hover" />
                 )}
