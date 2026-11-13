@@ -2,10 +2,12 @@
 
 export const EVENT = {
   name: "Hack IA Brasil",
-  // Saturday, 21 Nov 2026, 08:00 in João Pessoa (UTC-3)
-  start: "2026-11-21T08:00:00-03:00",
-  end: "2026-11-21T18:00:00-03:00",
-  dateLabel: "Sábado, 21 de novembro",
+  // Saturday, 28 Nov 2026, 08:00 in João Pessoa (UTC-3)
+  start: "2026-11-28T08:00:00-03:00",
+  end: "2026-11-28T18:00:00-03:00",
+  // applications close at the end of Saturday 21 Nov; the form and /api/inscricao both check it
+  signupDeadline: "2026-11-21T23:59:59-03:00",
+  dateLabel: "Sábado, 28 de novembro",
   hoursLabel: "8h às 18h",
   venue: "ONDER",
   address: "R. Manoel Gualberto, 255, Miramar, João Pessoa",
@@ -112,7 +114,7 @@ export const FAQ = [
   },
   {
     q: "Moro fora de João Pessoa. Posso ir?",
-    a: "Pode. O evento é aberto a brasileiros de qualquer lugar — só precisa estar no ONDER no dia 21.",
+    a: "Pode. O evento é aberto a brasileiros de qualquer lugar — só precisa estar no ONDER no dia 28.",
   },
 ];
 
@@ -166,7 +168,7 @@ export const FAQ_EN = [
   },
   {
     q: "I don't live in João Pessoa. Can I come?",
-    a: "Yes. The event is open to Brazilians from anywhere; you just need to be at ONDER on the 21st.",
+    a: "Yes. The event is open to Brazilians from anywhere; you just need to be at ONDER on the 28th.",
   },
 ];
 
