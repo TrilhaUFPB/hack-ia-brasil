@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hack IA Brasil · Identidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Oxanium:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #000;
+  --fg: #fff;
+  --ceu: #a0b5ff;
+  --ink: #000928;
+  --line: rgba(255, 255, 255, 0.06);
+  --grid: rgba(255, 255, 255, 0.05);
+  --t90: rgba(255, 255, 255, 0.9);
+  --t80: rgba(255, 255, 255, 0.8);
+  --t75: rgba(255, 255, 255, 0.75);
+  --t55: rgba(255, 255, 255, 0.55);
+  --t40: rgba(255, 255, 255, 0.4);
+  --sans: "Oxanium", system-ui, sans-serif;
+  --mono: "Geist Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  color: var(--fg);
+  font: 300 15px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--ceu); color: var(--ink); }
+a { color: inherit; }
+.wrap { max-width: 1152px; margin: 0 auto; padding: 0 clamp(16px, 8vw, 128px); }
+.mono { font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.3em; font-size: 11px; color: var(--t75); }
+.mono.s { font-size: 10px; letter-spacing: 0.35em; color: var(--t55); }
+mark { background: var(--ceu); color: var(--ink); padding: 0 0.08em; }
+b, strong { font-weight: 400; color: #fff; }
+.dim { color: var(--t80); }
+
+/* nav */
+.top { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(8px); background: rgba(0,0,0,.72); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; gap: 24px; }
+.top nav { display: flex; gap: 18px; overflow-x: auto; scrollbar-width: none; }
+.top nav a { text-decoration: none; color: var(--t55); transition: color .3s; white-space: nowrap; }
+.top nav a:hover { color: #fff; }
+@media (max-width: 1240px) { .top nav { display: none; } }
+.top .wm { white-space: nowrap; }
+
+/* cover */
+.cover { position: relative; min-height: calc(100svh - 60px); display: grid; align-items: center; overflow: hidden; }
+.cover .wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; width: 100%; }
+.cover h1 { font-weight: 200; font-size: clamp(2rem, 4.4vw, 3.6rem); line-height: 1.06; letter-spacing: -0.01em; margin-top: 28px; }
+.cover p.lede { margin-top: 28px; max-width: 30em; color: var(--t80); font-size: 15px; }
+.cover canvas { width: 100%; aspect-ratio: 1; }
+.cover .meta { margin-top: 56px; display: flex; gap: 32px; flex-wrap: wrap; }
+@media (max-width: 860px) { .cover .wrap { grid-template-columns: 1fr; } .cover canvas { max-width: 420px; margin: 0 auto; order: -1; } }
+
+/* sections */
+section.s { padding: 128px 0; border-top: 1px solid var(--line); }
+.head { display: grid; grid-template-columns: 64px 1fr; gap: 0 16px; margin-bottom: 64px; }
+.head .n { font-family: var(--mono); font-size: 11px; color: var(--ceu); padding-top: 4px; }
+.head h2 { font-weight: 200; font-size: clamp(1.6rem, 3vw, 2.5rem); line-height: 1.12; letter-spacing: -0.01em; margin-top: 18px; max-width: 18em; }
+.head p { margin-top: 20px; max-width: 36em; color: var(--t80); font-size: 14px; }
+@media (max-width: 600px) { .head { grid-template-columns: 1fr; } }
+
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 860px) { .grid3, .grid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .grid2, .grid3, .grid4 { grid-template-columns: 1fr; } }
+.cell { border-top: 1px solid var(--line); padding: 28px 28px 32px 0; }
+.cells > .cell + .cell { border-left: 1px solid var(--line); padding-left: 28px; }
+@media (max-width: 860px) { .cells > .cell + .cell { border-left: 0; padding-left: 0; } }
+.cell h3 { font-weight: 300; font-size: 22px; margin-top: 18px; line-height: 1.2; }
+.cell p { margin-top: 10px; color: var(--t75); font-size: 13.5px; }
+
+/* wordmark */
+.wm { font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.28em; }
+.marks { display: grid; grid-template-columns: 1.4fr 1fr; border: 1px solid var(--line); }
+.marks > div { min-height: 260px; display: grid; place-items: center; padding: 32px; position: relative; }
+.marks > div + div { border-left: 1px solid var(--line); }
+.marks .tag { position: absolute; left: 20px; top: 18px; }
+.marks .light { background: #fff; color: #000; }
+.marks .light .tag { color: rgba(0,0,0,.5); }
+@media (max-width: 700px) { .marks { grid-template-columns: 1fr; } .marks > div + div { border-left: 0; border-top: 1px solid var(--line); } }
+.lockup { display: flex; align-items: center; gap: 18px; font-size: 12px; flex-wrap: wrap; justify-content: center; }
+.lockup i { width: 1px; height: 22px; background: currentColor; opacity: .3; }
+
+/* colour */
+.sw { border: 1px solid var(--line); display: flex; flex-direction: column; }
+.sw .chip { height: 180px; display: flex; align-items: flex-end; padding: 16px; font-family: var(--mono); font-size: 10px; letter-spacing: .25em; text-transform: uppercase; }
+.sw .info { padding: 16px; font-size: 13px; color: var(--t75); }
+.sw .info b { display: block; font-size: 16px; margin-bottom: 4px; }
+.ratio { display: flex; height: 44px; margin-top: 28px; border: 1px solid var(--line); }
+.ratio div { display: grid; place-items: center; font-family: var(--mono); font-size: 10px; letter-spacing: .2em; }
+.ladder { margin-top: 48px; display: grid; gap: 0; }
+.ladder div { display: grid; grid-template-columns: 90px 1fr auto; gap: 20px; align-items: baseline; padding: 14px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.ladder div span:first-child { font-family: var(--mono); font-size: 11px; color: var(--t55); }
+.ladder div span:last-child { font-family: var(--mono); font-size: 10px; letter-spacing: .2em; color: var(--t55); text-transform: uppercase; }
+
+/* type */
+.specimen { font-weight: 200; font-size: clamp(3rem, 9vw, 7.5rem); line-height: .95; letter-spacing: -0.02em; }
+.specimen b { font-weight: 400; }
+.scale > div { display: grid; grid-template-columns: 150px 1fr; gap: 24px; align-items: baseline; padding: 22px 0; border-top: 1px solid var(--line); }
+@media (max-width: 600px) { .scale > div { grid-template-columns: 1fr; gap: 8px; } }
+
+/* layout diagram */
+.layout { border: 1px solid var(--line); aspect-ratio: 16 / 7; display: grid; grid-template-columns: 1fr 1fr; position: relative; }
+.layout > div { padding: 28px; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.layout .bar { height: 8px; background: rgba(255,255,255,.18); }
+.layout .bar.h { height: 18px; background: rgba(255,255,255,.4); }
+.layout .bar.a { background: var(--ceu); width: 30%; }
+.layout .shape { border-left: 1px dashed rgba(255,255,255,.14); display: grid; place-items: center; }
+.layout canvas { width: 70%; aspect-ratio: 1; }
+@media (max-width: 600px) { .layout { aspect-ratio: auto; grid-template-columns: 1fr; } }
+
+/* shapes */
+.shapes { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.shapes figure { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 24px; }
+.shapes canvas { width: 100%; aspect-ratio: 1; display: block; cursor: crosshair; }
+.shapes figcaption { margin-top: 14px; }
+.shapes figcaption p { color: var(--t75); font-size: 13px; margin-top: 6px; }
+@media (max-width: 860px) { .shapes { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 560px) { .shapes { grid-template-columns: 1fr; } }
+
+/* components */
+.comp { display: grid; grid-template-columns: 200px 1fr; gap: 24px; padding: 32px 0; border-top: 1px solid var(--line); align-items: center; }
+@media (max-width: 700px) { .comp { grid-template-columns: 1fr; } }
+.btn { display: inline-flex; align-items: center; background: var(--ceu); color: var(--ink); padding: 14px 28px; font: 600 12px var(--mono); letter-spacing: .3em; text-transform: uppercase; text-decoration: none; transition: filter .3s; }
+.btn:hover { filter: brightness(1.1); }
+.link { font-family: var(--mono); font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: var(--t90); text-decoration: none; }
+.link:hover { color: var(--ceu); }
+.facts { display: grid; grid-template-columns: repeat(4, auto); border-block: 1px solid var(--line); }
+.facts div { padding: 22px 22px 22px 0; }
+.facts div + div { border-left: 1px solid var(--line); padding-left: 22px; }
+.facts dd { margin-top: 6px; font-size: 14px; color: var(--t90); }
+@media (max-width: 700px) { .facts { grid-template-columns: repeat(2, auto); } .facts div:nth-child(3) { border-left: 0; padding-left: 0; } .facts div:nth-child(n+3) { border-top: 1px solid var(--line); } }
+.count { font-weight: 200; font-size: 22px; font-variant-numeric: tabular-nums; color: rgba(255,255,255,.85); }
+.count span { color: var(--t75); }
+.tl li { list-style: none; display: grid; grid-template-columns: 56px 1fr auto; gap: 16px; padding: 12px 0 12px 20px; border-left: 1px solid rgba(255,255,255,.1); color: var(--t55); font-size: 14px; transition: color .3s, border-color .3s; cursor: default; }
+.tl li span:first-child, .tl li span:last-child { font-family: var(--mono); font-size: 10px; }
+.tl li span:last-child { letter-spacing: .2em; text-transform: uppercase; opacity: .6; }
+.tl li:hover, .tl li.on { color: #fff; border-color: #fff; }
+.acc details { border-bottom: 1px solid var(--line); }
+.acc summary { list-style: none; cursor: pointer; padding: 18px 0; display: flex; justify-content: space-between; color: var(--t90); }
+.acc summary::-webkit-details-marker { display: none; }
+.acc summary::after { content: "+"; font-family: var(--mono); color: var(--t55); transition: transform .3s; }
+.acc details[open] summary::after { transform: rotate(45deg); }
+.acc details p { padding: 0 40px 20px 0; color: var(--t75); font-size: 14px; }
+
+/* motion */
+.blurin { font-weight: 200; font-size: 28px; line-height: 1.15; }
+.blurin.play { animation: blurin 1.2s cubic-bezier(.22,1,.36,1) both; }
+@keyframes blurin { from { opacity: 0; transform: translateY(12px); filter: blur(8px); } }
+.replay { background: none; border: 1px solid var(--line); color: var(--t75); font: 10px var(--mono); letter-spacing: .25em; text-transform: uppercase; padding: 8px 12px; cursor: pointer; margin-top: 18px; }
+.replay:hover { color: #fff; border-color: rgba(255,255,255,.3); }
+.scr { font-size: 22px; font-weight: 300; cursor: default; }
+.clickpad { height: 200px; border: 1px dashed rgba(255,255,255,.14); display: grid; place-items: center; position: relative; cursor: crosshair; }
+
+/* voice */
+.voice div { padding: 22px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.voice .no { color: var(--t40); text-decoration: line-through; text-decoration-color: rgba(255,255,255,.25); }
+@media (max-width: 700px) { .voice div { grid-template-columns: 1fr; gap: 8px; } }
+
+/* applications */
+.apps { display: grid; grid-template-columns: 1.6fr 1fr; gap: 32px; align-items: end; }
+.apps .wide { grid-column: 1 / -1; }
+@media (max-width: 560px) { .apps { grid-template-columns: 1fr; } }
+.art { position: relative; overflow: hidden; background-color: #000; background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 6% 6%; border: 1px solid rgba(255,255,255,.12); container-type: inline-size; }
+.art canvas { position: absolute; }
+.art .t { position: absolute; }
+.post { aspect-ratio: 4 / 5; }
+.story { aspect-ratio: 9 / 16; }
+.og { aspect-ratio: 1200 / 630; }
+.art .wm { font-size: 3cqw; letter-spacing: .28em; color: var(--t90); }
+.apps figcaption { margin-top: 12px; }
+
+/* don'ts */
+.dont { border: 1px solid var(--line); aspect-ratio: 4 / 3; position: relative; display: grid; place-items: center; overflow: hidden; }
+.dont + p { margin-top: 12px; font-size: 13px; color: var(--t75); }
+.dont::after { content: ""; position: absolute; right: 12px; top: 12px; width: 18px; height: 18px; background: linear-gradient(45deg, transparent 45%, #ff5d5d 45% 55%, transparent 55%), linear-gradient(-45deg, transparent 45%, #ff5d5d 45% 55%, transparent 55%); }
+
+
+/* galleries */
+.sub{margin:56px 0 16px;color:var(--t90)}
+.sub:first-of-type{margin-top:0}
+.cols2,.cols3,.cols4,.cols5,.cols6{display:grid;gap:16px;margin-bottom:16px}
+.cols2{grid-template-columns:repeat(2,minmax(0,1fr))}.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols4{grid-template-columns:repeat(4,minmax(0,1fr))}.cols5{grid-template-columns:repeat(5,minmax(0,1fr))}.cols6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.colhead{margin:0 0 8px}.colhead span{padding-left:2px}
+figure.g{margin:0}figure.g img{width:100%;display:block;border:1px solid var(--line);cursor:zoom-in;background:#111}
+figure.g figcaption{margin-top:8px}
+.arts img{background:#fff}
+@media (max-width:860px){.cols4,.cols5,.cols6{grid-template-columns:repeat(2,minmax(0,1fr))}.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}.colhead{display:none}}
+@media (max-width:560px){.cols2,.cols3{grid-template-columns:1fr}}
+dialog.zoom{border:0;padding:0;background:none;max-width:94vw;max-height:94vh}dialog.zoom::backdrop{background:rgba(0,0,0,.92)}dialog.zoom img{max-width:94vw;max-height:94vh;display:block}
+footer { padding: 64px 0; border-top: 1px solid var(--line); }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+#dust { position: fixed; inset: 0; pointer-events: none; z-index: 50; }
+@media (prefers-reduced-motion: reduce) { .blurin.play { animation: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<canvas id="dust"></canvas>
+
+<div class="top">
+  <div class="wrap">
+    <span class="wm" style="font-size:12px;color:var(--t90)">Hack IA Brasil</span>
+    <nav class="mono">
+      <a href="#principios">Princípios</a>
+      <a href="#marca">Marca</a>
+      <a href="#pontos">Pontos</a>
+      <a href="#camisas">Camisas</a>
+      <a href="#crachas">Crachás</a>
+      <a href="#pins">Pins</a>
+      <a href="#posts">Posts</a>
+      <a href="#stories">Stories</a>
+    </nav>
+  </div>
+</div>
+
+<!-- COVER -->
+<header class="cover">
+  <div class="wrap">
+    <div>
+      <p class="mono">Identidade visual · v1 · nov 2026</p>
+      <h1><span class="dim">Um céu escuro,</span> <b>pontos de luz</b> <span class="dim">e um só</span> <b>acento.</b></h1>
+      <p class="lede">O sistema visual do Hack IA Brasil, tirado do site. Fundo preto com grade, tipografia fina, formas feitas de pontos e o Azul Céu só nos detalhes. Clique em qualquer lugar.</p>
+      <div class="meta">
+        <div><p class="mono s">evento</p><p style="margin-top:6px">21 nov · João Pessoa</p></div>
+        <div><p class="mono s">co-organização</p><p style="margin-top:6px">IA Brasil × Trilha</p></div>
+        <div><p class="mono s">base</p><p style="margin-top:6px"><a href="https://lf-hack-git-grid-branco-luigischmitts-projects.vercel.app" target="_blank" rel="noreferrer">o site ↗</a></p></div>
+      </div>
+    </div>
+    <canvas data-shape="globe" data-lean="1"></canvas>
+  </div>
+</header>
+
+<!-- 01 PRINCÍPIOS -->
+<section class="s" id="principios">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">01</span>
+      <div>
+        <p class="mono">Princípios</p>
+        <h2><span class="dim">Quatro regras que</span> <b>seguram tudo.</b></h2>
+      </div>
+    </div>
+    <div class="grid4 cells">
+      <div class="cell"><span class="mono s">a</span><h3>Escuro e quieto</h3><p>Preto puro, uma grade quase invisível e muito espaço vazio. O silêncio é o que faz o resto aparecer.</p></div>
+      <div class="cell"><span class="mono s">b</span><h3>Feito de pontos</h3><p>Toda imagem é uma nuvem de pontos que forma uma coisa: um globo, um número, um relógio. Nunca foto chapada, nunca ícone.</p></div>
+      <div class="cell"><span class="mono s">c</span><h3>Um acento, pequeno</h3><p>Azul Céu só onde a atenção precisa ir: um botão, uma palavra, a linha no globo. Menos de 2% da área.</p></div>
+      <div class="cell"><span class="mono s">d</span><h3>Peso é ênfase</h3><p>O texto é fino. A palavra que importa sobe de peso e de brilho, e só ela.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 MARCA -->
+<section class="s" id="marca">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">02</span>
+      <div>
+        <p class="mono">Marca</p>
+        <h2><span class="dim">A marca é</span> <b>tipográfica.</b></h2>
+        <p>Sem símbolo. O nome em Geist Mono, caixa alta, espaçamento de 0,28em. Ao lado das marcas parceiras, separado por um fio.</p>
+      </div>
+    </div>
+    <div class="marks">
+      <div>
+        <span class="tag mono s">principal</span>
+        <span class="wm" style="font-size:clamp(18px,3vw,30px)">Hack IA Brasil</span>
+      </div>
+      <div class="light">
+        <span class="tag mono s">invertida, só quando o fundo for claro</span>
+        <span class="wm" style="font-size:clamp(14px,2vw,20px)">Hack IA Brasil</span>
+      </div>
+    </div>
+    <div class="marks" style="border-top:0">
+      <div>
+        <span class="tag mono s">assinatura com parceiros</span>
+        <div class="lockup wm"><span>Hack IA Brasil</span><i></i><span style="color:var(--t55)">IA Brasil Fellowship × Trilha</span></div>
+      </div>
+      <div>
+        <span class="tag mono s">área de respiro</span>
+        <span class="wm" style="font-size:14px;outline:1px dashed rgba(160,181,255,.5);outline-offset:24px">Hack IA Brasil</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 COR -->
+<section class="s" id="cor">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">03</span>
+      <div>
+        <p class="mono">Cor</p>
+        <h2><span class="dim">Preto, branco e</span> <mark>um pouco</mark> <span class="dim">de céu.</span></h2>
+        <p>O Azul Céu vem da Trilha. Ele ocupa o lugar que o verde ocupava no começo: pequenas marcas, nunca fundo de seção.</p>
+      </div>
+    </div>
+    <div class="grid4" style="gap:16px">
+      <div class="sw"><div class="chip" style="background:#000;color:var(--t55);border-bottom:1px solid var(--line)">fundo</div><div class="info"><b>Preto</b>#000000<br>fundo de tudo</div></div>
+      <div class="sw"><div class="chip" style="background:#fff;color:#000">texto</div><div class="info"><b>Branco</b>#FFFFFF<br>texto e pontos, em opacidades</div></div>
+      <div class="sw"><div class="chip" style="background:var(--ceu);color:var(--ink)">acento</div><div class="info"><b>Azul Céu</b>#A0B5FF<br>botão, marca-texto, linha</div></div>
+      <div class="sw"><div class="chip" style="background:var(--ink);color:var(--ceu)">sobre o acento</div><div class="info"><b>Meia Noite</b>#000928<br>só como texto sobre o Céu</div></div>
+    </div>
+    <div class="ratio">
+      <div style="flex:90;background:#000;color:var(--t55)">preto ~90%</div>
+      <div style="flex:8;background:rgba(255,255,255,.85);color:#000">branco</div>
+      <div style="flex:2;background:var(--ceu)"></div>
+    </div>
+    <p class="mono s" style="margin-top:10px;text-align:right">céu &lt; 2%</p>
+    <div class="ladder">
+      <div><span>100%</span><span>Palavra em destaque no título</span><span>ênfase</span></div>
+      <div><span>90%</span><span style="color:var(--t90)">Marca, navegação ativa, valores</span><span>forte</span></div>
+      <div><span>80%</span><span style="color:var(--t80)">Título fino, parágrafos</span><span>texto</span></div>
+      <div><span>75%</span><span style="color:var(--t75)">Rótulos mono, legendas</span><span>apoio</span></div>
+      <div><span>55%</span><span style="color:var(--t55)">Números de item, metadados</span><span>discreto</span></div>
+      <div><span>6%</span><span style="display:flex;align-items:center"><span style="flex:1;height:1px;background:var(--line)"></span></span><span>fios</span></div>
+      <div><span>5%</span><span style="height:24px;background-image:linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:48px 100%"></span><span>grade</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 TIPO -->
+<section class="s" id="tipo">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">04</span>
+      <div>
+        <p class="mono">Tipografia</p>
+        <h2><span class="dim">Duas famílias.</span> <b>Uma fala, a outra rotula.</b></h2>
+      </div>
+    </div>
+    <div class="grid2 cells" style="margin-bottom:56px">
+      <div class="cell">
+        <p class="mono s">Oxanium · 200 / 300 / 400</p>
+        <p class="specimen" style="margin-top:22px">Aa <b>Bb</b></p>
+        <p style="margin-top:18px;color:var(--t75);font-size:13.5px">Títulos e texto. Geométrica, levemente técnica. Sempre fina: ExtraLight nos títulos, Light no corpo, Regular só para a ênfase.</p>
+      </div>
+      <div class="cell">
+        <p class="mono s">Geist Mono · 400 / 600</p>
+        <p class="specimen" style="margin-top:22px;font-family:var(--mono);font-weight:400;font-size:clamp(2.4rem,7vw,6rem)">AA 08</p>
+        <p style="margin-top:18px;color:var(--t75);font-size:13.5px">Rótulos, marca, navegação, horários. Caixa alta, aberta (0,28 a 0,4em), pequena (10 a 12px).</p>
+      </div>
+    </div>
+    <div class="scale">
+      <div><span class="mono s">título · 200 · 42/1.1</span><span style="font-weight:200;font-size:clamp(1.6rem,3.2vw,2.6rem);line-height:1.1"><span class="dim">Um hackathon em</span> <b>João Pessoa</b> <span class="dim">pode ser o seu caminho para o</span> <b>Vale do Silício.</b></span></div>
+      <div><span class="mono s">seção · 200 · 36</span><span style="font-weight:200;font-size:clamp(1.4rem,2.6vw,2.25rem)">O vencedor <mark>pula a fila</mark> da fellowship.</span></div>
+      <div><span class="mono s">item · 200 · 30</span><span style="font-weight:200;font-size:clamp(1.3rem,2.2vw,1.9rem)">R$ 100 mil</span></div>
+      <div><span class="mono s">corpo · 300 · 14/1.6</span><span style="font-size:14px;color:var(--t80);max-width:34em">A IA Brasil Fellowship é um programa de um ano para jovens de 12 a 25 anos com talento técnico excepcional.</span></div>
+      <div><span class="mono s">rótulo · mono · 11</span><span class="mono">o que está em jogo</span></div>
+      <div><span class="mono s">metadado · mono · 10</span><span class="mono s">21.11 · 8h–18h · João Pessoa</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 GRADE E LAYOUT -->
+<section class="s" id="grade">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">05</span>
+      <div>
+        <p class="mono">Grade e layout</p>
+        <h2><span class="dim">Texto de um lado,</span> <b>forma do outro.</b></h2>
+        <p>Grade de 48px a 5% de branco atrás de tudo. Cada seção divide a tela: o texto num lado, a forma de pontos no espaço vazio. Os lados alternam a cada seção.</p>
+      </div>
+    </div>
+    <div class="layout">
+      <div><div class="bar" style="width:28%"></div><div class="bar h" style="width:84%"></div><div class="bar h" style="width:60%"></div><div class="bar" style="width:70%;margin-top:8px"></div><div class="bar a" style="margin-top:14px;height:16px"></div></div>
+      <div class="shape"><canvas data-shape="dial"></canvas></div>
+    </div>
+    <div class="layout" style="border-top:0">
+      <div class="shape" style="border-left:0;border-right:1px dashed rgba(255,255,255,.14)"><canvas data-shape="crowd"></canvas></div>
+      <div><div class="bar" style="width:22%"></div><div class="bar h" style="width:78%"></div><div class="bar" style="width:66%;margin-top:8px"></div><div class="bar" style="width:50%"></div></div>
+    </div>
+    <div class="grid3 cells" style="margin-top:48px">
+      <div class="cell"><span class="mono s">largura</span><h3>1152px</h3><p>Conteúdo centrado, com 128px de respiro lateral no desktop e 32px no celular.</p></div>
+      <div class="cell"><span class="mono s">ritmo</span><h3>144px entre seções</h3><p>Seções separadas por espaço, e às vezes por um fio de 6%. Nunca por caixas.</p></div>
+      <div class="cell"><span class="mono s">celular</span><h3>Centralizado</h3><p>No celular o texto centraliza e a forma fica atrás, mais apagada.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 PONTOS -->
+<section class="s" id="pontos">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">06</span>
+      <div>
+        <p class="mono">Pontos</p>
+        <h2><span class="dim">A imagem do evento é</span> <b>poeira que vira forma.</b></h2>
+        <p>Milhares de pontos brancos em 3D, inclinando de leve na direção do mouse. Cada seção tem a sua forma; entre uma e outra, a forma se desfaz e se refaz no novo lugar. Clique numa forma para soprar os pontos.</p>
+      </div>
+    </div>
+    <div class="shapes">
+      <figure><canvas data-shape="globe" data-lean="1"></canvas><figcaption><span class="mono">Globo</span><p>João Pessoa até o Vale. A linha de céu é o caminho.</p></figcaption></figure>
+      <figure><canvas data-shape="text" data-text="100K" data-lean="1"></canvas><figcaption><span class="mono">Número</span><p>O prêmio escrito em pontos.</p></figcaption></figure>
+      <figure><canvas data-shape="dial" data-lean="1"></canvas><figcaption><span class="mono">Relógio</span><p>O dia, das 8h às 18h, marcado em céu.</p></figcaption></figure>
+      <figure><canvas data-shape="crowd" data-lean="1"></canvas><figcaption><span class="mono">Multidão</span><p>Quem pode ir. Uma pessoa em destaque: você.</p></figcaption></figure>
+      <figure><canvas data-shape="text" data-text="?" data-lean="1"></canvas><figcaption><span class="mono">Pergunta</span><p>A seção de perguntas.</p></figcaption></figure>
+      <figure><canvas data-shape="passport" data-lean="1"></canvas><figcaption><span class="mono">Passaporte</span><p>Para a inscrição, quando abrir.</p></figcaption></figure>
+    </div>
+    <div class="grid3 cells" style="margin-top:48px">
+      <div class="cell"><span class="mono s">ponto</span><h3>1 a 2px, branco</h3><p>Opacidade varia com a profundidade; os de trás quase somem.</p></div>
+      <div class="cell"><span class="mono s">acento</span><h3>Céu só no essencial</h3><p>Só a parte que conta a história: o caminho, as horas, você.</p></div>
+      <div class="cell"><span class="mono s">poeira</span><h3>Nunca vazio</h3><p>Sobras flutuam como poeira fraca ao redor, dando profundidade ao preto.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 COMPONENTES -->
+<section class="s" id="componentes">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">07</span>
+      <div>
+        <p class="mono">Componentes</p>
+        <h2><span class="dim">Sem caixas.</span> <b>Fios, espaço e um botão.</b></h2>
+      </div>
+    </div>
+    <div class="comp"><span class="mono s">botão principal</span><div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap"><a class="btn" href="#">Quero participar</a><a class="link" href="#">IA Brasil ↗</a><a class="link" href="#">Trilha ↗</a></div></div>
+    <div class="comp"><span class="mono s">marca-texto</span><p style="font-weight:200;font-size:26px">O vencedor <mark>pula a fila</mark> da fellowship.</p></div>
+    <div class="comp"><span class="mono s">contagem</span><div><p class="count" id="count">12 <span>:</span> 00 <span>:</span> 00 <span>:</span> 00</p><p class="mono s" style="margin-top:6px">dias · horas · min · seg</p></div></div>
+    <div class="comp"><span class="mono s">faixa de fatos</span>
+      <dl class="facts">
+        <div><dt class="mono s">quando</dt><dd>21 nov · 8h–18h</dd></div>
+        <div><dt class="mono s">onde</dt><dd>Miramar, João Pessoa</dd></div>
+        <div><dt class="mono s">quem</dt><dd>12 a 25 anos</dd></div>
+        <div><dt class="mono s">custo</dt><dd>Gratuito</dd></div>
+      </dl>
+    </div>
+    <div class="comp"><span class="mono s">linha do tempo</span>
+      <ul class="tl">
+        <li><span>08:00</span><span>Credenciamento e café</span><span>entrada</span></li>
+        <li class="on"><span>09:30</span><span>Hacking</span><span>pátio e salas</span></li>
+        <li><span>16:30</span><span>Pitches</span><span>auditório</span></li>
+      </ul>
+    </div>
+    <div class="comp"><span class="mono s">perguntas</span>
+      <div class="acc" style="border-top:1px solid var(--line)">
+        <details open><summary>Preciso ter uma ideia ou time pronto?</summary><p>Não. O problema é revelado na abertura e os times podem se formar no dia.</p></details>
+        <details><summary>Quanto custa?</summary><p>Nada. O evento é gratuito.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 MOVIMENTO -->
+<section class="s" id="movimento">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">08</span>
+      <div>
+        <p class="mono">Movimento</p>
+        <h2><span class="dim">Lento ao chegar,</span> <b>rápido ao responder.</b></h2>
+        <p>Uma curva só (0.22, 1, 0.36, 1). Coisas entram desfocadas e assentam. O mouse ganha resposta imediata, mas pequena.</p>
+      </div>
+    </div>
+    <div class="grid3 cells">
+      <div class="cell"><span class="mono s">entrada · 1,2s</span>
+        <p class="blurin play" id="blur" style="margin-top:22px"><span class="dim">Seu caminho</span> <b>começa aqui.</b></p>
+        <button class="replay" id="replay">repetir</button>
+      </div>
+      <div class="cell"><span class="mono s">embaralhar · passe o mouse</span>
+        <p class="scr" data-scramble style="margin-top:22px">João Pessoa</p>
+        <p class="scr" data-scramble>R$ 100 mil</p>
+        <p class="scr" data-scramble>12 a 25 anos</p>
+      </div>
+      <div class="cell"><span class="mono s">clique · pontos</span>
+        <div class="clickpad" style="margin-top:22px"><span class="mono s">clique aqui</span></div>
+        <p>Fora das formas, um clique deixa um anel de pontos que se dissipa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 VOZ -->
+<section class="s" id="voz">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">09</span>
+      <div>
+        <p class="mono">Voz</p>
+        <h2><span class="dim">Frases curtas.</span> <b>Fatos, não adjetivos.</b></h2>
+        <p>Fala direto com quem constrói coisas. Números concretos, nada de "incrível" ou "revolucionário". Português, com termos técnicos onde eles são normais.</p>
+      </div>
+    </div>
+    <div class="voice">
+      <div><p>Dez horas. Um problema difícil.</p><p class="no">Uma experiência imersiva e transformadora de inovação!</p></div>
+      <div><p>O vencedor pula a fila da fellowship.</p><p class="no">Concorra a prêmios incríveis e oportunidades únicas!!</p></div>
+      <div><p>O que conta é o que você já fez.</p><p class="no">Venha mostrar todo o seu potencial e paixão por tecnologia.</p></div>
+      <div><p>Gratuito. 12 a 25 anos.</p><p class="no">Evento 100% gratuito e aberto a todos os jovens talentos do Brasil!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 APLICAÇÕES -->
+<section class="s" id="aplicacoes">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">10</span>
+      <div>
+        <p class="mono">Aplicações</p>
+        <h2><span class="dim">O mesmo sistema</span> <b>fora do site.</b></h2>
+      </div>
+    </div>
+    <div class="apps">
+      <figure>
+        <div class="art post">
+          <canvas data-shape="text" data-text="100K" style="left:8%;top:14%;width:84%;height:52%"></canvas>
+          <span class="t wm" style="left:7%;top:6%">Hack IA Brasil</span>
+          <div class="t" style="left:7%;right:7%;bottom:7%">
+            <p style="font-weight:200;font-size:7.4cqw;line-height:1.1">O vencedor <mark>pula a fila</mark> da fellowship.</p>
+            <p class="mono" style="font-size:2.6cqw;margin-top:4cqw;letter-spacing:.3em">21.11 · João Pessoa · gratuito</p>
+          </div>
+        </div>
+        <figcaption class="mono s">feed · 4:5</figcaption>
+      </figure>
+      <figure>
+        <div class="art story">
+          <canvas data-shape="dial" style="left:6%;top:18%;width:88%;height:50%"></canvas>
+          <span class="t wm" style="left:9%;top:6%;font-size:5cqw">Hack IA Brasil</span>
+          <div class="t" style="left:9%;right:9%;bottom:7%">
+            <p style="font-weight:200;font-size:10cqw;line-height:1.08"><span class="dim">Das 8h às 18h.</span> <b>Sábado, 21.</b></p>
+            <span class="btn" style="margin-top:7cqw;font-size:4cqw;padding:4cqw 6cqw">Quero participar</span>
+          </div>
+        </div>
+        <figcaption class="mono s">story · 9:16</figcaption>
+      </figure>
+      <figure class="wide">
+        <div class="art og">
+          <canvas data-shape="globe" style="left:56%;top:4%;width:42%;height:92%"></canvas>
+          <span class="t wm" style="left:6%;top:9%;font-size:1.6cqw">Hack IA Brasil</span>
+          <div class="t" style="left:6%;width:52%;bottom:12%">
+            <p style="font-weight:200;font-size:4.2cqw;line-height:1.1"><span class="dim">Um hackathon em</span> <b>João Pessoa</b> <span class="dim">pode ser o seu caminho para o</span> <b>Vale do Silício.</b></p>
+            <p class="mono" style="font-size:1.3cqw;margin-top:2.4cqw">21 nov · IA Brasil × Trilha</p>
+          </div>
+        </div>
+        <figcaption class="mono s">prévia de link · 1200×630</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="camisas"><div class="wrap"><div class="head"><span class="n">11</span><div><p class="mono">Camisas</p><h2><span class="dim">Quase nada na frente,</span> <b>os parceiros nas costas.</b></h2><p>Seis frentes, cada uma em três cores. A costa é sempre a mesma: Trilha e Cognition pequenos, lado a lado, e as coordenadas de João Pessoa embaixo.</p></div></div><p class="mono sub">Nome mono · peito esquerdo</p><div class="cols3 mono s colhead"><span>branca</span><span>preta</span><span>azul céu</span></div><div class="cols3"><figure class="g "><img src="/identidade/img/out7-nome-v4.jpg" alt="nome-v4 · branca" loading="lazy"><figcaption class="mono s">nome-v4 · branca</figcaption></figure><figure class="g "><img src="/identidade/img/out12-nome-v4-escura.jpg" alt="nome-v4 · preta" loading="lazy"><figcaption class="mono s">nome-v4 · preta</figcaption></figure><figure class="g "><img src="/identidade/img/out13-nome-v4-ceu.jpg" alt="nome-v4 · céu" loading="lazy"><figcaption class="mono s">nome-v4 · céu</figcaption></figure></div><p class="mono sub">Nome mono · centro</p><div class="cols3"><figure class="g "><img src="/identidade/img/out7-nome-v1.jpg" alt="nome-v1 · branca" loading="lazy"><figcaption class="mono s">nome-v1 · branca</figcaption></figure><figure class="g "><img src="/identidade/img/out12-nome-v1-escura.jpg" alt="nome-v1 · preta" loading="lazy"><figcaption class="mono s">nome-v1 · preta</figcaption></figure><figure class="g "><img src="/identidade/img/out13-nome-v1-ceu.jpg" alt="nome-v1 · céu" loading="lazy"><figcaption class="mono s">nome-v1 · céu</figcaption></figure></div><p class="mono sub">Nome Oxanium · peito</p><div class="cols3"><figure class="g "><img src="/identidade/img/out7-nome-v2.jpg" alt="nome-v2 · branca" loading="lazy"><figcaption class="mono s">nome-v2 · branca</figcaption></figure><figure class="g "><img src="/identidade/img/out12-nome-v2-escura.jpg" alt="nome-v2 · preta" loading="lazy"><figcaption class="mono s">nome-v2 · preta</figcaption></figure><figure class="g "><img src="/identidade/img/out13-nome-v2-ceu.jpg" alt="nome-v2 · céu" loading="lazy"><figcaption class="mono s">nome-v2 · céu</figcaption></figure></div><p class="mono sub">Sol · coração</p><div class="cols3"><figure class="g "><img src="/identidade/img/out6-marca-a2.jpg" alt="marca-a2 · branca" loading="lazy"><figcaption class="mono s">marca-a2 · branca</figcaption></figure><figure class="g "><img src="/identidade/img/out12-marca-a2-escura.jpg" alt="marca-a2 · preta" loading="lazy"><figcaption class="mono s">marca-a2 · preta</figcaption></figure><figure class="g "><img src="/identidade/img/out13-marca-a2-ceu.jpg" alt="marca-a2 · céu" loading="lazy"><figcaption class="mono s">marca-a2 · céu</figcaption></figure></div><p class="mono sub">Sol · abaixo da gola</p><div class="cols3"><figure class="g "><img src="/identidade/img/out6-marca-b2.jpg" alt="marca-b2 · branca" loading="lazy"><figcaption class="mono s">marca-b2 · branca</figcaption></figure><figure class="g "><img src="/identidade/img/out12-marca-b2-escura.jpg" alt="marca-b2 · preta" loading="lazy"><figcaption class="mono s">marca-b2 · preta</figcaption></figure><figure class="g "><img src="/identidade/img/out13-marca-b2-ceu.jpg" alt="marca-b2 · céu" loading="lazy"><figcaption class="mono s">marca-b2 · céu</figcaption></figure></div><p class="mono sub">Rota SF → JPA</p><div class="cols3"><figure class="g "><img src="/identidade/img/out6-costa-c.jpg" alt="costa-c · branca" loading="lazy"><figcaption class="mono s">costa-c · branca</figcaption></figure><figure class="g "><img src="/identidade/img/out12-costa-c-escura.jpg" alt="costa-c · preta" loading="lazy"><figcaption class="mono s">costa-c · preta</figcaption></figure><figure class="g "><img src="/identidade/img/out13-costa-c-ceu.jpg" alt="costa-c · céu" loading="lazy"><figcaption class="mono s">costa-c · céu</figcaption></figure></div><p class="mono sub">Artes de impressão</p><div class="cols4 arts"><figure class="g "><img src="/identidade/img/refs-arte-costas.jpg" alt="costas · padrão" loading="lazy"><figcaption class="mono s">costas · padrão</figcaption></figure><figure class="g "><img src="/identidade/img/refs-arte-mapa.jpg" alt="frente · rota" loading="lazy"><figcaption class="mono s">frente · rota</figcaption></figure><figure class="g "><img src="/identidade/img/refs-arte-frente-v1.jpg" alt="frente · mono" loading="lazy"><figcaption class="mono s">frente · mono</figcaption></figure><figure class="g "><img src="/identidade/img/refs-arte-frente-v2.jpg" alt="frente · Oxanium" loading="lazy"><figcaption class="mono s">frente · Oxanium</figcaption></figure></div></div></section>
+<section class="s" id="crachas"><div class="wrap"><div class="head"><span class="n">12</span><div><p class="mono">Crachás e papelaria</p><h2><span class="dim">O nome manda.</span> <b>A cor diz quem é.</b></h2><p>Participante branco, mentor preto, organização azul, júri preto. O cordão acompanha o cartão.</p></div></div><p class="mono sub">Crachás</p><div class="cols2"><figure class="g "><img src="/identidade/img/out14-cracha-foto-sol.jpg" alt="sol" loading="lazy"><figcaption class="mono s">sol</figcaption></figure><figure class="g "><img src="/identidade/img/out14-cracha-foto-empilhado.jpg" alt="empilhado" loading="lazy"><figcaption class="mono s">empilhado</figcaption></figure><figure class="g "><img src="/identidade/img/out14-cracha-foto-rota.jpg" alt="rota" loading="lazy"><figcaption class="mono s">rota</figcaption></figure><figure class="g "><img src="/identidade/img/out11-cracha-minimo-extremo.jpg" alt="mínimo" loading="lazy"><figcaption class="mono s">mínimo</figcaption></figure></div><p class="mono sub">Papéis dobráveis</p><div class="cols3"><figure class="g "><img src="/identidade/img/out3-cracha-dobravel.jpg" alt="dobrável · 08" loading="lazy"><figcaption class="mono s">dobrável · 08</figcaption></figure><figure class="g "><img src="/identidade/img/out4-b-dobravel-sol.jpg" alt="dobrável · sol" loading="lazy"><figcaption class="mono s">dobrável · sol</figcaption></figure><figure class="g "><img src="/identidade/img/out4-b-dobravel-21.jpg" alt="dobrável · 21" loading="lazy"><figcaption class="mono s">dobrável · 21</figcaption></figure></div><p class="mono sub">Pulseiras</p><div class="cols2"><figure class="g "><img src="/identidade/img/out3-cracha-pulseira.jpg" alt="pulseira · nome" loading="lazy"><figcaption class="mono s">pulseira · nome</figcaption></figure><figure class="g "><img src="/identidade/img/out4-b-pulseira-horas.jpg" alt="pulseira · dez horas" loading="lazy"><figcaption class="mono s">pulseira · dez horas</figcaption></figure></div></div></section>
+<section class="s" id="pins"><div class="wrap"><div class="head"><span class="n">13</span><div><p class="mono">Pins e adesivos</p><h2><span class="dim">Um estilo,</span> <b>três cores.</b></h2><p>Branco, preto e céu. Na versão céu, o sol vira branco.</p></div></div><p class="mono sub">Pins</p><div class="cols2"><figure class="g "><img src="/identidade/img/out8-pin-empilhado-oxanium.jpg" alt="empilhado" loading="lazy"><figcaption class="mono s">empilhado</figcaption></figure><figure class="g "><img src="/identidade/img/out8-pin-sol-nome.jpg" alt="sol + nome" loading="lazy"><figcaption class="mono s">sol + nome</figcaption></figure><figure class="g "><img src="/identidade/img/out8-pin-mono-cog.jpg" alt="mono + Cognition" loading="lazy"><figcaption class="mono s">mono + Cognition</figcaption></figure><figure class="g "><img src="/identidade/img/out8-pin-thin-cog.jpg" alt="Oxanium + Cognition" loading="lazy"><figcaption class="mono s">Oxanium + Cognition</figcaption></figure></div><p class="mono sub">Adesivos</p><div class="cols2"><figure class="g "><img src="/identidade/img/out9-adesivo-nome-empilhado.jpg" alt="empilhado · notebook" loading="lazy"><figcaption class="mono s">empilhado · notebook</figcaption></figure><figure class="g "><img src="/identidade/img/out9-adesivo-mono-cognition.jpg" alt="mono + Cognition" loading="lazy"><figcaption class="mono s">mono + Cognition</figcaption></figure><figure class="g "><img src="/identidade/img/out9-adesivo-coordenadas.jpg" alt="coordenadas" loading="lazy"><figcaption class="mono s">coordenadas</figcaption></figure><figure class="g "><img src="/identidade/img/out9-adesivo-etiqueta.jpg" alt="olá, eu sou" loading="lazy"><figcaption class="mono s">olá, eu sou</figcaption></figure></div></div></section>
+<section class="s" id="posts"><div class="wrap"><div class="head"><span class="n">14</span><div><p class="mono">Posts</p><h2><span class="dim">Do site</span> <b>para o feed da Trilha.</b></h2><p>Duas linhas. A do site, em preto com pontos; e a da Trilha, em creme com marca-texto. No meio, o caminho: uma mudança por vez.</p></div></div><p class="mono sub">Linha do site</p><div class="cols4 posts"><figure class="g "><img src="/identidade/img/out-post-premio.jpg" alt="premio" loading="lazy"><figcaption class="mono s">premio</figcaption></figure><figure class="g "><img src="/identidade/img/out-post-quem.jpg" alt="quem" loading="lazy"><figcaption class="mono s">quem</figcaption></figure><figure class="g "><img src="/identidade/img/out-post-dia.jpg" alt="dia" loading="lazy"><figcaption class="mono s">dia</figcaption></figure><figure class="g "><img src="/identidade/img/out-post-faq.jpg" alt="faq" loading="lazy"><figcaption class="mono s">faq</figcaption></figure><figure class="g "><img src="/identidade/img/out2-post-mentoria.jpg" alt="mentoria" loading="lazy"><figcaption class="mono s">mentoria</figcaption></figure><figure class="g "><img src="/identidade/img/out2-post-visto.jpg" alt="visto" loading="lazy"><figcaption class="mono s">visto</figcaption></figure></div><p class="mono sub">Aproximando da Trilha · uma mudança por vez</p><div class="cols5 mono s colhead"><span>original</span><span>+ grade</span><span>+ Poppins</span><span>sem pontos</span><span>tudo junto</span></div><div class="cols5 posts"><figure class="g "><img src="/identidade/img/out-post-premio.jpg" alt="premio" loading="lazy"><figcaption class="mono s">premio</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-premio-grade.jpg" alt="grade" loading="lazy"><figcaption class="mono s">grade</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-premio-poppins.jpg" alt="poppins" loading="lazy"><figcaption class="mono s">poppins</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-premio-sem-pontos.jpg" alt="sem-pontos" loading="lazy"><figcaption class="mono s">sem-pontos</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-premio-tudo.jpg" alt="tudo" loading="lazy"><figcaption class="mono s">tudo</figcaption></figure></div><div class="cols5 posts"><figure class="g "><img src="/identidade/img/out-post-quem.jpg" alt="quem" loading="lazy"><figcaption class="mono s">quem</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-quem-grade.jpg" alt="grade" loading="lazy"><figcaption class="mono s">grade</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-quem-poppins.jpg" alt="poppins" loading="lazy"><figcaption class="mono s">poppins</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-quem-sem-pontos.jpg" alt="sem-pontos" loading="lazy"><figcaption class="mono s">sem-pontos</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-quem-tudo.jpg" alt="tudo" loading="lazy"><figcaption class="mono s">tudo</figcaption></figure></div><div class="cols5 posts"><figure class="g "><img src="/identidade/img/out-post-dia.jpg" alt="dia" loading="lazy"><figcaption class="mono s">dia</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-dia-grade.jpg" alt="grade" loading="lazy"><figcaption class="mono s">grade</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-dia-poppins.jpg" alt="poppins" loading="lazy"><figcaption class="mono s">poppins</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-dia-sem-pontos.jpg" alt="sem-pontos" loading="lazy"><figcaption class="mono s">sem-pontos</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-dia-tudo.jpg" alt="tudo" loading="lazy"><figcaption class="mono s">tudo</figcaption></figure></div><div class="cols5 posts"><figure class="g "><img src="/identidade/img/out-post-faq.jpg" alt="faq" loading="lazy"><figcaption class="mono s">faq</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-faq-grade.jpg" alt="grade" loading="lazy"><figcaption class="mono s">grade</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-faq-poppins.jpg" alt="poppins" loading="lazy"><figcaption class="mono s">poppins</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-faq-sem-pontos.jpg" alt="sem-pontos" loading="lazy"><figcaption class="mono s">sem-pontos</figcaption></figure><figure class="g "><img src="/identidade/img/out16-post-faq-tudo.jpg" alt="tudo" loading="lazy"><figcaption class="mono s">tudo</figcaption></figure></div><p class="mono sub">Linha Trilha</p><div class="cols4 posts"><figure class="g "><img src="/identidade/img/out15-trilha-lancamento.jpg" alt="lancamento" loading="lazy"><figcaption class="mono s">lancamento</figcaption></figure><figure class="g "><img src="/identidade/img/out15-trilha-premio.jpg" alt="premio" loading="lazy"><figcaption class="mono s">premio</figcaption></figure><figure class="g "><img src="/identidade/img/out15-trilha-quem-pode.jpg" alt="quem-pode" loading="lazy"><figcaption class="mono s">quem-pode</figcaption></figure><figure class="g "><img src="/identidade/img/out15-trilha-o-dia.jpg" alt="o-dia" loading="lazy"><figcaption class="mono s">o-dia</figcaption></figure><figure class="g "><img src="/identidade/img/out15-trilha-mentores.jpg" alt="mentores" loading="lazy"><figcaption class="mono s">mentores</figcaption></figure><figure class="g "><img src="/identidade/img/out15-trilha-faq.jpg" alt="faq" loading="lazy"><figcaption class="mono s">faq</figcaption></figure><figure class="g "><img src="/identidade/img/out15-trilha-contagem.jpg" alt="contagem" loading="lazy"><figcaption class="mono s">contagem</figcaption></figure><figure class="g "><img src="/identidade/img/out15-trilha-inscricoes.jpg" alt="inscricoes" loading="lazy"><figcaption class="mono s">inscricoes</figcaption></figure></div><p class="mono sub">Carrossel</p><div><figure class="g "><img src="/identidade/img/out-post-carrossel.jpg" alt="carrossel · três telas" loading="lazy"><figcaption class="mono s">carrossel · três telas</figcaption></figure></div></div></section>
+<section class="s" id="stories"><div class="wrap"><div class="head"><span class="n">15</span><div><p class="mono">Stories</p><h2><span class="dim">Em pé,</span> <b>e com algo para fazer.</b></h2></div></div><div class="cols6"><figure class="g "><img src="/identidade/img/out-story-contagem.jpg" alt="contagem" loading="lazy"><figcaption class="mono s">contagem</figcaption></figure><figure class="g "><img src="/identidade/img/out-story-enquete.jpg" alt="enquete" loading="lazy"><figcaption class="mono s">enquete</figcaption></figure><figure class="g "><img src="/identidade/img/out2-story-pergunta.jpg" alt="pergunta" loading="lazy"><figcaption class="mono s">pergunta</figcaption></figure><figure class="g "><img src="/identidade/img/out2-story-semana.jpg" alt="semana" loading="lazy"><figcaption class="mono s">semana</figcaption></figure><figure class="g "><img src="/identidade/img/out-story-local.jpg" alt="local" loading="lazy"><figcaption class="mono s">local</figcaption></figure><figure class="g "><img src="/identidade/img/out-story-bastidores.jpg" alt="bastidores" loading="lazy"><figcaption class="mono s">bastidores</figcaption></figure></div></div></section>
+<!-- 11 NÃO -->
+<section class="s" id="nao">
+  <div class="wrap">
+    <div class="head">
+      <span class="n">16</span>
+      <div>
+        <p class="mono">Evite</p>
+        <h2><span class="dim">O que</span> <b>quebra o sistema.</b></h2>
+      </div>
+    </div>
+    <div class="grid4" style="gap:24px">
+      <div><div class="dont" style="background:var(--ceu)"><span style="color:var(--ink);font-weight:300;font-size:20px">Hack IA Brasil</span></div><p>Céu como fundo. Ele é acento, não superfície.</p></div>
+      <div><div class="dont"><span style="font-weight:600;font-size:22px;background:linear-gradient(90deg,#a0b5ff,#00d468);-webkit-background-clip:text;color:transparent">PREMIAÇÃO!!</span></div><p>Gradiente, negrito pesado, exclamação.</p></div>
+      <div><div class="dont"><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;width:70%"><div style="height:46px;border:1px solid rgba(255,255,255,.35);border-radius:10px;background:rgba(255,255,255,.06)"></div><div style="height:46px;border:1px solid rgba(255,255,255,.35);border-radius:10px;background:rgba(255,255,255,.06)"></div><div style="height:46px;border:1px solid rgba(255,255,255,.35);border-radius:10px;background:rgba(255,255,255,.06)"></div><div style="height:46px;border:1px solid rgba(255,255,255,.35);border-radius:10px;background:rgba(255,255,255,.06)"></div></div></div><p>Cartões com borda e cantos redondos. Use fios e espaço.</p></div>
+      <div><div class="dont"><span style="font-size:20px;font-weight:300"><mark>Tudo</mark> <mark>em</mark> <mark>destaque</mark></span></div><p>Mais de um marca-texto por bloco. Um destaque por vez.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap mono s">
+    <span>© 2026 Hack IA Brasil</span>
+    <span>IA Brasil Fellowship × Trilha</span>
+    <span>tirado do site · nov 2026</span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const CEU = "160,181,255";
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const { PI, sin, cos, sqrt, random } = Math;
+  const rngOf = (s) => () => ((s = (s * 16807) % 2147483647) - 1) / 2147483646;
+  const norm = (v) => { const l = Math.hypot(...v); return v.map((x) => x / l); };
+
+  /* ---------- shapes: arrays of [x, y, z, accent] in about -2..2 ---------- */
+  const SHAPES = {
+    globe(r) {
+      const p = [], R = 1.55;
+      for (let lat = -75; lat <= 75; lat += 15) {
+        const la = (lat * PI) / 180;
+        for (let i = 0; i < 230 * cos(la) + 40; i++) { const lo = r() * 2 * PI; p.push([R * cos(la) * cos(lo), R * sin(la), R * cos(la) * sin(lo), 0]); }
+      }
+      for (let lo = 0; lo < 180; lo += 20) {
+        const L = (lo * PI) / 180;
+        for (let i = 0; i < 230; i++) { const t = r() * 2 * PI; p.push([R * cos(t) * cos(L), R * sin(t), R * cos(t) * sin(L), 0]); }
+      }
+      for (let i = 0; i < 700; i++) { const v = norm([r() * 2 - 1, r() * 2 - 1, r() * 2 - 1]); p.push([v[0] * R, v[1] * R, v[2] * R, 0, 0.35]); }
+      const A = norm([-0.75, 0.42, 0.52]), B = norm([0.62, -0.38, 0.68]);
+      const om = Math.acos(A[0] * B[0] + A[1] * B[1] + A[2] * B[2]);
+      for (let i = 0; i < 520; i++) {
+        const t = r(), a = sin((1 - t) * om) / sin(om), b = sin(t * om) / sin(om), h = R * (1 + 0.16 * sin(PI * t));
+        p.push([(A[0] * a + B[0] * b) * h, (A[1] * a + B[1] * b) * h, (A[2] * a + B[2] * b) * h, 1]);
+      }
+      for (const [E, acc] of [[A, 0], [B, 1]]) for (let i = 0; i < 160; i++) { const v = norm([r() - 0.5, r() - 0.5, r() - 0.5]); const k = 0.07 * Math.cbrt(r()); p.push([E[0] * R + v[0] * k, E[1] * R + v[1] * k, E[2] * R + v[2] * k, acc]); }
+      return p;
+    },
+    text(r, str) {
+      const W = 600, H = 320, c = document.createElement("canvas"); c.width = W; c.height = H;
+      const g = c.getContext("2d", { willReadFrequently: true });
+      let size = 280; g.fillStyle = "#fff"; g.textAlign = "center"; g.textBaseline = "middle";
+      g.font = `200 ${size}px Oxanium`;
+      while (g.measureText(str).width > W * 0.94) g.font = `200 ${(size *= 0.95)}px Oxanium`;
+      g.fillText(str, W / 2, H / 2 + size * 0.04);
+      const d = g.getImageData(0, 0, W, H).data, p = [], s = str.length > 2 ? 2.5 : 2;
+      for (let y = 0; y < H; y += s) for (let x = 0; x < W; x += s) {
+        const jx = x + r() * s, jy = y + r() * s;
+        if (d[((jy | 0) * W + (jx | 0)) * 4 + 3] > 128) p.push([((jx - W / 2) / W) * 4, (-(jy - H / 2) / W) * 4, (r() - 0.5) * 0.25, 0]);
+      }
+      return p;
+    },
+    dial(r) {
+      const p = [], R = 1.55;
+      for (let i = 0; i < 1300; i++) { const t = r() * 2 * PI; const k = R + (r() - 0.5) * 0.05; p.push([cos(t) * k, sin(t) * k, (r() - 0.5) * 0.08, 0]); }
+      for (let m = 0; m < 60; m++) {
+        const t = (m / 60) * 2 * PI, L = m % 5 ? 0.08 : 0.22;
+        for (let i = 0; i < (m % 5 ? 10 : 34); i++) { const k = R - 0.06 - r() * L; p.push([sin(t) * k, cos(t) * k, 0, 0]); }
+      }
+      // the day: 8h to 18h (6 o'clock), clockwise, in céu
+      const a0 = (8 / 12) * 2 * PI, a1 = a0 + (10 / 12) * 2 * PI;
+      for (let i = 0; i < 900; i++) { const t = a0 + r() * (a1 - a0), k = 1.18 + (r() - 0.5) * 0.09; p.push([sin(t) * k, cos(t) * k, (r() - 0.5) * 0.06, 1]); }
+      for (const [ang, len] of [[a0, 0.75], [0, 1.1]]) for (let i = 0; i < 220; i++) { const k = r() * len; p.push([sin(ang) * k, cos(ang) * k, 0.02, 0]); }
+      for (let i = 0; i < 90; i++) { const v = norm([r() - 0.5, r() - 0.5, r() - 0.5]); const k = 0.06 * r(); p.push([v[0] * k, v[1] * k, v[2] * k, 0]); }
+      return p;
+    },
+    crowd(r) {
+      const p = [], rows = [[-1.2, 5], [-0.4, 6], [0.4, 7], [1.2, 6]];
+      rows.forEach(([z, n], ri) => {
+        for (let k = 0; k < n; k++) {
+          const x = (k - (n - 1) / 2) * 0.62 + (ri % 2 ? 0.15 : 0), y0 = -1.1 + ri * 0.12, acc = ri === 1 && k === 3 ? 1 : 0, s = 0.82;
+          for (let i = 0; i < 70; i++) { const v = norm([r() - 0.5, r() - 0.5, r() - 0.5]); p.push([x + v[0] * 0.13 * s, y0 + 0.95 * s + v[1] * 0.13 * s, z + v[2] * 0.13 * s, acc]); }
+          for (let i = 0; i < 130; i++) { const u = r(), th = r() * 2 * PI, q = sqrt(1 - u * u); p.push([x + q * cos(th) * 0.27 * s, y0 + 0.25 * s + u * 0.5 * s, z + q * sin(th) * 0.16 * s, acc]); }
+        }
+      });
+      return p.map(([x, y, z, a]) => [x, y + 0.2, -z * 0.9, a]);
+    },
+    passport(r) {
+      const p = [], W = 2.1, H = 2.9, T = 0.28, hw = W / 2, hh = H / 2;
+      for (const z of [T / 2, -T / 2]) {
+        for (let i = 0; i < (z > 0 ? 900 : 300); i++) p.push([(r() - 0.5) * W, (r() - 0.5) * H, z, 0, z > 0 ? 0.3 : 0.15]);
+        for (let i = 0; i < 700; i++) {
+          const t = r() * 2 * (W + H); let x, y;
+          if (t < W) [x, y] = [t - hw, hh]; else if (t < W + H) [x, y] = [hw, hh - (t - W)]; else if (t < 2 * W + H) [x, y] = [hw - (t - W - H), -hh]; else [x, y] = [-hw, -hh + (t - 2 * W - H)];
+          p.push([x, y, z, 0, z > 0 ? 1 : 0.4]);
+        }
+      }
+      for (let k = 1; k < 6; k++) for (let i = 0; i < 160; i++) p.push([hw - 0.04, (r() - 0.5) * (H - 0.08), -T / 2 + (k / 6) * T, 0, 0.5]);
+      const R = 0.52, cy = 0.12, ze = T / 2 + 0.02;
+      for (let i = 0; i < 420; i++) { const t = r() * 2 * PI; p.push([cos(t) * R, cy + sin(t) * R, ze, 1]); }
+      for (const m of [0.4, 0.85]) for (let i = 0; i < 140; i++) { const t = (r() - 0.5) * PI; for (const sg of [1, -1]) p.push([sg * sin(m) * cos(t) * R, cy + sin(t) * R, ze, 1]); }
+      for (const yy of [-0.45, 0, 0.45]) for (let i = 0; i < 120; i++) p.push([(r() * 2 - 1) * sqrt(1 - yy * yy) * R, cy + yy * R, ze, 1]);
+      for (const [str, y, h] of [["HACK IA", hh - 0.45, 0.9], ["PASSAPORTE", -hh + 0.55, 1.2]]) for (const q of SHAPES.text(r, str)) p.push([q[0] * (h / 4) * 1.5, q[1] * (h / 4) * 1.5 + y, ze, 0, 0.95]);
+      const ry = -0.45, cy2 = cos(ry), sy2 = sin(ry);
+      return p.map(([x, y, z, a, al]) => [x * cy2 + z * sy2, y, -x * sy2 + z * cy2, a, al]);
+    },
+  };
+
+  /* ---------- renderer ---------- */
+  const views = [];
+  function mount(cv) {
+    const r = rngOf(7 + views.length * 13);
+    const kind = cv.dataset.shape;
+    const pts = kind === "text" ? SHAPES.text(r, cv.dataset.text) : SHAPES[kind](r);
+    for (let i = 0; i < 260; i++) { const t = r() * 2 * PI, k = 2.1 + r() * 1.4; pts.push([cos(t) * k, (r() - 0.5) * 3.2, sin(t) * k, 0, 0.12 + r() * 0.12]); }
+    const P = pts.map((q) => ({ x: q[0], y: q[1], z: q[2], a: q[3], al: q[4] ?? 0.65 + r() * 0.35, ph: r() * 10, ox: 0, oy: 0, vx: 0, vy: 0 }));
+    const v = { cv, g: cv.getContext("2d"), P, lean: !!cv.dataset.lean, mx: 0, my: 0, tx: 0, ty: 0, on: false, spin: kind === "globe" ? 0.12 : 0 };
+    cv.addEventListener("pointermove", (e) => { const b = cv.getBoundingClientRect(); v.tx = ((e.clientX - b.left) / b.width - 0.5) * 2; v.ty = ((e.clientY - b.top) / b.height - 0.5) * 2; });
+    cv.addEventListener("pointerleave", () => { v.tx = v.ty = 0; });
+    cv.addEventListener("pointerdown", (e) => {
+      e.stopPropagation();
+      const b = cv.getBoundingClientRect(), px = e.clientX - b.left, py = e.clientY - b.top;
+      for (const p of v.P) {
+        const dx = p.sx - px, dy = p.sy - py, d = Math.hypot(dx, dy), f = Math.exp(-((d / (b.width * 0.18)) ** 2));
+        if (f < 0.02) continue;
+        const ang = Math.atan2(dy, dx) + (p.ph % 1 - 0.5) * 0.9;
+        p.vx += cos(ang) * f * (3 + (p.ph % 1) * 5); p.vy += sin(ang) * f * (3 + (p.ph % 1) * 5);
+      }
+    });
+    new IntersectionObserver(([en]) => { v.on = en.isIntersecting; }).observe(cv);
+    views.push(v);
+  }
+
+  function draw(v, t) {
+    const { cv, g } = v, dpr = Math.min(devicePixelRatio || 1, 2);
+    const W = cv.clientWidth, H = cv.clientHeight;
+    if (!W || !H) return;
+    if (cv.width !== Math.round(W * dpr)) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
+    g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    g.clearRect(0, 0, W, H);
+    v.mx += (v.tx - v.mx) * 0.06; v.my += (v.ty - v.my) * 0.06;
+    const ry = (v.lean ? v.mx * 0.35 : 0) + t * v.spin + (v.spin ? 0 : sin(t * 0.3) * 0.12);
+    const rx = (v.lean ? v.my * 0.22 : 0) + 0.12;
+    const cy = cos(ry), sy = sin(ry), cx = cos(rx), sx = sin(rx);
+    const S = Math.min(W, H) / 4.6, cam = 7;
+    for (const p of v.P) {
+      const x1 = p.x * cy + p.z * sy, z1 = -p.x * sy + p.z * cy;
+      const y1 = p.y * cx - z1 * sx, z2 = p.y * sx + z1 * cx;
+      const k = cam / (cam - z2);
+      p.vx *= 0.9; p.vy *= 0.9; p.ox = (p.ox + p.vx) * 0.94; p.oy = (p.oy + p.vy) * 0.94;
+      const wob = reduced ? 0 : 0.6;
+      p.sx = W / 2 + x1 * S * k + p.ox + sin(t * 0.6 + p.ph * 3) * wob;
+      p.sy = H / 2 - y1 * S * k + p.oy + cos(t * 0.5 + p.ph * 2) * wob;
+      const depth = Math.max(0.15, Math.min(1, 0.55 + z2 * 0.28));
+      const tw = 0.8 + 0.2 * sin(t * (1 + (p.ph % 1)) + p.ph * 4);
+      const al = p.al * depth * tw;
+      const sz = (p.a ? 1.7 : 1.3) * k;
+      g.fillStyle = p.a ? `rgba(${CEU},${Math.min(1, al * 1.25)})` : `rgba(255,255,255,${al})`;
+      g.fillRect(p.sx - sz / 2, p.sy - sz / 2, sz, sz);
+    }
+  }
+
+  /* ---------- click dust anywhere else ---------- */
+  const dust = document.getElementById("dust"), dg = dust.getContext("2d"), rings = [];
+  addEventListener("pointerdown", (e) => {
+    const n = 26, pts = [];
+    for (let i = 0; i < n; i++) { const a = (i / n) * 2 * PI + random() * 0.2; pts.push({ a, s: 0.6 + random() * 0.8 }); }
+    rings.push({ x: e.clientX, y: e.clientY, t0: performance.now(), pts });
+  });
+  function drawDust(now) {
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    if (dust.width !== innerWidth * dpr) { dust.width = innerWidth * dpr; dust.height = innerHeight * dpr; }
+    dg.setTransform(dpr, 0, 0, dpr, 0, 0);
+    dg.clearRect(0, 0, innerWidth, innerHeight);
+    for (let i = rings.length - 1; i >= 0; i--) {
+      const R = rings[i], age = (now - R.t0) / 900;
+      if (age > 1) { rings.splice(i, 1); continue; }
+      const e = 1 - (1 - age) ** 3;
+      for (const p of R.pts) {
+        const d = 6 + e * 46 * p.s;
+        dg.fillStyle = `rgba(255,255,255,${(1 - age) * 0.9})`;
+        dg.fillRect(R.x + cos(p.a) * d - 1, R.y + sin(p.a) * d - 1, 1.8, 1.8);
+      }
+    }
+  }
+
+  function frame(now) {
+    const t = now / 1000;
+    for (const v of views) if (v.on) draw(v, reduced ? 0 : t);
+    drawDust(now);
+    requestAnimationFrame(frame);
+  }
+
+  document.fonts.ready.then(() => {
+    document.querySelectorAll("canvas[data-shape]").forEach(mount);
+    requestAnimationFrame(frame);
+  });
+
+  /* ---------- small demos ---------- */
+  document.getElementById("replay").addEventListener("click", () => {
+    const b = document.getElementById("blur"); b.classList.remove("play"); void b.offsetWidth; b.classList.add("play");
+  });
+  const GL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&*+=<>";
+  document.querySelectorAll("[data-scramble]").forEach((el) => {
+    const txt = el.textContent; let raf;
+    el.addEventListener("pointerenter", () => {
+      cancelAnimationFrame(raf); const t0 = performance.now();
+      const step = (now) => {
+        const p = Math.min(1, (now - t0) / 600);
+        el.textContent = [...txt].map((c, i) => (c === " " || i < p * txt.length ? c : GL[(random() * GL.length) | 0])).join("");
+        if (p < 1) raf = requestAnimationFrame(step);
+      };
+      raf = requestAnimationFrame(step);
+    });
+  });
+  const start = new Date("2026-11-21T08:00:00-03:00").getTime(), pad = (n) => String(Math.max(0, n)).padStart(2, "0");
+  const tick = () => {
+    const s = Math.max(0, Math.floor((start - Date.now()) / 1000));
+    document.getElementById("count").innerHTML = [pad(Math.floor(s / 86400)), pad(Math.floor(s / 3600) % 24), pad(Math.floor(s / 60) % 60), pad(s % 60)].join(" <span>:</span> ");
+  };
+  tick(); setInterval(tick, 1000);
+})();
+</script>
+<dialog class="zoom" id="zoom"><img alt=""></dialog>
+<script>(()=>{const z=document.getElementById('zoom');document.querySelectorAll('figure.g img').forEach(i=>i.addEventListener('click',e=>{e.stopPropagation();z.querySelector('img').src=i.src;z.showModal()}));z.addEventListener('click',()=>z.close())})();</script>
+</body>
+</html>
