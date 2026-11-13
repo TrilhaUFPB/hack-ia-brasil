@@ -24,6 +24,7 @@ const T = {
     sub: "Dez horas. Um problema difícil. O foco é achar pessoas, não só projetos.",
     cta: "Quero participar",
     countdown: "dias · horas · min · seg",
+    backedBy: "parceria",
     facts: [
       ["quando", "28 nov · 8h–18h"],
       ["onde", "R. Manoel Gualberto, 255, Miramar"],
@@ -58,6 +59,7 @@ const T = {
     sub: "Ten hours. One hard problem. We're looking for people, not just projects.",
     cta: "Count me in",
     countdown: "days · hours · min · sec",
+    backedBy: "partners",
     facts: [
       ["when", "Nov 28 · 8am–6pm"],
       ["where", "R. Manoel Gualberto, 255, Miramar"],
@@ -204,11 +206,12 @@ export function Home({ lang }: { lang: Lang }) {
             </a>
           </motion.div>
           <motion.div
-            className="mt-16 flex flex-col gap-2 max-[900px]:items-center"
+            className="pointer-events-auto mt-16 flex flex-wrap items-end gap-x-10 gap-y-8 max-[900px]:justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 1 }}
           >
+          <div className="flex flex-col gap-2 max-[900px]:items-center">
             <div className="flex items-baseline gap-1.5 text-lg font-extralight tabular-nums text-white/85 md:text-xl">
               <RollingDigits value={pad(cd?.d)} />
               <span className="text-white/75">:</span>
@@ -219,6 +222,15 @@ export function Home({ lang }: { lang: Lang }) {
               <RollingDigits value={pad(cd?.s)} />
             </div>
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{t.countdown}</span>
+          </div>
+          <div className="flex flex-col gap-3 border-l border-white/15 pl-10 max-[900px]:items-center max-[900px]:border-l-0 max-[900px]:pl-0">
+            <div className="flex items-center gap-5 text-sm">
+              <PartnerLogo href={EVENT.trilhaUrl} logo="/montanha.svg" name="Trilha" w={20} />
+              <PartnerLogo href={EVENT.cognitionUrl} logo="/cognition.svg" name="Cognition" w={15} />
+              <PartnerLogo href={EVENT.devinUrl} logo="/devin.svg" name="Devin" w={15} />
+            </div>
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75">{t.backedBy}</span>
+          </div>
           </motion.div>
         </div>
       </section>
