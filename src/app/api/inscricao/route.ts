@@ -1,3 +1,4 @@
+import { EVENT } from "@/content";
 import { MAX_OTHERS, MIN_OTHERS, MODES, isMinor, type Application, type Person } from "@/lib/application";
 
 // Forwards a validated application to the Google Sheets web app (scripts/google-sheets.gs).
@@ -43,6 +44,9 @@ export async function POST(req: Request) {
     return Response.json({ error: "JSON inválido" }, { status: 400 });
   }
   if (a.website) return Response.json({ ok: true }); // bot: pretend it worked
+  if (Date.now() > Date.parse(EVENT.signupDeadline)) {
+    return Response.json({ error: "Inscrições encerradas" }, { status: 410 });
+  }
 
   const isTeam = a.mode === "time";
   const members = isTeam ? (a.team?.members ?? []) : [];

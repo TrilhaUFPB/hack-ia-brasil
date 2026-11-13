@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useRef, useState, type ReactNode 
 import { AnimatePresence, motion } from "motion/react";
 import { SlideToConfirm } from "./fx/slide-to-confirm";
 import { useHtmlLang } from "./fx/use-html-lang";
+import { EVENT } from "@/content";
 import {
   LIMIT,
   MAX_OTHERS,
@@ -38,6 +39,7 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
   const [step, setStep] = useState(0);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [attempt, setAttempt] = useState(0); // remounts the slider after a failed send
+  const [closed, setClosed] = useState(false); // checked after hydration, so the static page can still render the form
   const [loaded, setLoaded] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -59,6 +61,7 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
         });
       }
     } catch {}
+    setClosed(Date.now() > Date.parse(EVENT.signupDeadline));
     setLoaded(true);
   }, []);
   /* eslint-enable react-hooks/set-state-in-effect */
@@ -106,6 +109,16 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
         setAttempt((n) => n + 1);
       });
   };
+
+  if (closed && status !== "sent") {
+    return (
+      <div className="border border-white/15 px-8 py-12 text-center">
+        <p className={labelCls}>{t.closed.label}</p>
+        <h2 className="mt-6 text-2xl font-extralight md:text-3xl">{t.closed.title}</h2>
+        <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/80">{t.closed.body}</p>
+      </div>
+    );
+  }
 
   if (status === "sent") {
     return (

@@ -46,7 +46,7 @@ export const FORM = {
     role: "Que papel você quer ter num time e o que você traz?",
     send: { title: "Quase lá", note: "Confira e deslize para enviar." },
     available: (team: boolean) =>
-      `Confirmo que ${team ? "todo o time está disponível" : "estou disponível"} no sábado, 21/11, das 8h às 18h, em João Pessoa.`,
+      `Confirmo que ${team ? "todo o time está disponível" : "estou disponível"} no sábado, 28/11, das 8h às 18h, em João Pessoa.`,
     consent: (team: boolean, minors: boolean) =>
       `Autorizo o uso destes dados para a seleção e ${team ? "da imagem do time" : "da minha imagem"} na divulgação do evento.` +
       (team ? " Todos os membros sabem desta inscrição." : "") +
@@ -57,9 +57,14 @@ export const FORM = {
     sending: "Enviando…",
     teamOf: (n: number) => `time de ${n} pessoas`,
     years: "anos",
+    closed: {
+      label: "inscrições encerradas",
+      title: "As inscrições fecharam.",
+      body: "Recebemos inscrições até sábado, 21/11, às 23h59. Se você se inscreveu, o resultado chega por e-mail.",
+    },
     sent: {
       label: "inscrição recebida",
-      title: (first: string) => `Até o dia 21, ${first}.`,
+      title: (first: string) => `Até o dia 28, ${first}.`,
       body: (team: boolean) => `O resultado sai por e-mail.${team ? " Avise o seu time que a inscrição foi feita por você." : ""}`,
     },
   },
@@ -108,7 +113,7 @@ export const FORM = {
     role: "What role do you want on a team, and what do you bring?",
     send: { title: "Almost there", note: "Check everything and slide to send." },
     available: (team: boolean) =>
-      `I confirm that ${team ? "the whole team is" : "I am"} available on Saturday, Nov 21, from 8am to 6pm, in João Pessoa.`,
+      `I confirm that ${team ? "the whole team is" : "I am"} available on Saturday, Nov 28, from 8am to 6pm, in João Pessoa.`,
     consent: (team: boolean, minors: boolean) =>
       `I authorize the use of this data for selection and of ${team ? "the team's" : "my"} image to promote the event.` +
       (team ? " All members know about this application." : "") +
@@ -119,9 +124,14 @@ export const FORM = {
     sending: "Sending…",
     teamOf: (n: number) => `team of ${n}`,
     years: "years old",
+    closed: {
+      label: "applications closed",
+      title: "Applications are closed.",
+      body: "We took applications until Saturday, Nov 21, at 11:59pm (Brasília time). If you applied, the result will arrive by e-mail.",
+    },
     sent: {
       label: "application received",
-      title: (first: string) => `See you on the 21st, ${first}.`,
+      title: (first: string) => `See you on the 28th, ${first}.`,
       body: (team: boolean) => `We'll e-mail you the result.${team ? " Let your team know you registered them." : ""}`,
     },
   },

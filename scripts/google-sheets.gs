@@ -66,7 +66,7 @@ function termoEmail(g, termoUrl) {
     subject: "Hack IA Brasil: autorização para " + g.minor,
     body:
       "Olá, " + g.guardian + ".\n\n" +
-      g.minor + " foi selecionado(a) para o Hack IA Brasil, um hackathon gratuito no sábado, 21 de novembro, " +
+      g.minor + " foi selecionado(a) para o Hack IA Brasil, um hackathon gratuito no sábado, 28 de novembro, " +
       "das 8h às 18h, na R. Manoel Gualberto, 255, Miramar, João Pessoa.\n\n" +
       "Como " + g.minor + " tem menos de 18 anos, precisamos da sua autorização para a participação e o uso de imagem. " +
       "O termo está aqui:\n" + termoUrl + "\n\n" +
