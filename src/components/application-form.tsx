@@ -6,12 +6,16 @@ import { SlideToConfirm } from "./fx/slide-to-confirm";
 import { useHtmlLang } from "./fx/use-html-lang";
 import { EVENT } from "@/content";
 import {
+  BIRTH_MAX,
+  BIRTH_MIN,
   LIMIT,
   MAX_OTHERS,
   MIN_OTHERS,
   MODES,
   SOURCES,
   STAGES,
+  UFS,
+  ageOf,
   emptyApplication,
   emptyPerson,
   isMinor,
@@ -29,8 +33,10 @@ const DRAFT_KEY = "hackia-inscricao-v1";
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const field =
-  "w-full border border-white/15 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-white/35 outline-none transition-colors focus:border-white/70";
+  "w-full [color-scheme:dark] border border-white/15 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-white/35 outline-none transition-colors focus:border-white/70";
 const labelCls = "font-mono text-[11px] uppercase tracking-[0.22em] text-white/75";
+// visual only: the input's `required` already tells screen readers
+const Star = () => <span aria-hidden className="text-white"> *</span>;
 
 export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?: ReactNode }) {
   const t: Copy = FORM[lang] as Copy;
@@ -75,7 +81,7 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
   const steps: (keyof Copy["steps"])[] = ["you", ...(a.mode === "time" ? (["team"] as const) : []), "answers", "send"];
   const current = steps[Math.min(step, steps.length - 1)];
   const isTeam = a.mode === "time";
-  const hasMinor = [a.me, ...(isTeam ? a.team.members : [])].some((p) => isMinor(p.age));
+  const hasMinor = [a.me, ...(isTeam ? a.team.members : [])].some((p) => isMinor(p.birth));
 
   const set = (patch: Partial<Application>) => setA((s) => ({ ...s, ...patch }));
   const setMe = (patch: Partial<Application["me"]>) => setA((s) => ({ ...s, me: { ...s.me, ...patch } }));
@@ -158,6 +164,7 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
           </li>
         ))}
       </ol>
+      <p className="-mt-6 text-xs text-white/60">{t.requiredNote}</p>
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -174,16 +181,74 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
               <div className="grid gap-5 sm:grid-cols-2">
                 <Input label={t.name} value={a.me.name} onChange={(v) => setMe({ name: v })} autoComplete="name" />
                 <Input label={t.email} type="email" value={a.me.email} onChange={(v) => setMe({ email: v })} autoComplete="email" />
-                <Input
-                  label={t.whatsapp}
-                  type="tel"
-                  value={a.me.whatsapp}
-                  onChange={(v) => setMe({ whatsapp: v })}
-                  autoComplete="tel"
-                  pattern="[0-9\s\(\)\+\-]{10,}"
-                  title={t.whatsappTitle}
-                />
-                <Input label={t.city} value={a.me.city} onChange={(v) => setMe({ city: v })} autoComplete="address-level2" />
+                <div className="grid grid-cols-[4.5rem_4.5rem_1fr] gap-3">
+                  <label className="grid content-start gap-2">
+                    <span className={labelCls}>
+                      {t.country}
+                      <Star />
+                    </span>
+                    <span className="relative">
+                      <span aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-white/50">+</span>
+                      <input
+                        required
+                        inputMode="numeric"
+                        maxLength={3}
+                        pattern="[1-9][0-9]{0,2}"
+                        value={a.me.country}
+                        onChange={(e) => setMe({ country: e.target.value.replace(/\D/g, "") })}
+                        autoComplete="tel-country-code"
+                        title={t.countryTitle}
+                        className={`${field} pl-6`}
+                      />
+                    </span>
+                  </label>
+                  <Input
+                    label={t.ddd}
+                    inputMode="numeric"
+                    maxLength={2}
+                    // ponytail: strict DDD/number rules only for Brazil; other countries just need digits
+                    pattern={a.me.country === "55" ? "[1-9][0-9]" : "[0-9]{1,2}"}
+                    required={a.me.country === "55"}
+                    placeholder="83"
+                    value={a.me.ddd}
+                    onChange={(v) => setMe({ ddd: v.replace(/\D/g, "") })}
+                    autoComplete="tel-area-code"
+                    title={t.dddTitle}
+                  />
+                  <Input
+                    label={t.whatsapp}
+                    type="tel"
+                    pattern={a.me.country === "55" ? "9?[0-9]{4}[\\s\\-]?[0-9]{4}" : "[0-9\\s\\-]{4,14}"}
+                    placeholder="99999-9999"
+                    value={a.me.whatsapp}
+                    onChange={(v) => setMe({ whatsapp: v })}
+                    autoComplete="tel-local"
+                    title={t.whatsappTitle}
+                  />
+                </div>
+                <div className="grid grid-cols-[1fr_5.5rem] gap-3">
+                  <Input label={t.city} value={a.me.city} onChange={(v) => setMe({ city: v })} autoComplete="address-level2" />
+                  <label className="grid content-start gap-2">
+                    <span className={labelCls}>
+                      {t.uf}
+                      <Star />
+                    </span>
+                    <select
+                      required
+                      value={a.me.uf}
+                      onChange={(e) => setMe({ uf: e.target.value })}
+                      autoComplete="address-level1"
+                      className={`${field} h-[46px]`}
+                    >
+                      <option value="" disabled>
+                        —
+                      </option>
+                      {UFS.map((uf) => (
+                        <option key={uf}>{uf}</option>
+                      ))}
+                    </select>
+                  </label>
+                </div>
               </div>
               <PersonCore id="me" p={a.me} onChange={setMe} />
               <Area
@@ -355,16 +420,15 @@ function PersonCore({
   const { t } = useContext(CopyCtx);
   return (
     <div className="grid gap-5">
-      <div className="grid gap-5 sm:grid-cols-[8rem_1fr]">
+      <div className="grid gap-5 sm:grid-cols-[14rem_1fr]">
         <Input
-          label={t.age}
-          type="number"
-          inputMode="numeric"
-          min={12}
-          max={25}
-          value={p.age}
-          onChange={(v) => onChange({ age: v })}
-          title={t.ageTitle}
+          label={t.birth}
+          type="date"
+          min={BIRTH_MIN}
+          max={BIRTH_MAX}
+          value={p.birth}
+          onChange={(v) => onChange({ birth: v })}
+          title={t.birthTitle}
         />
         <Input
           label={t.school}
@@ -374,7 +438,7 @@ function PersonCore({
           required={false}
         />
       </div>
-      {isMinor(p.age) && (
+      {isMinor(p.birth) && (
         <div className="grid gap-5 border-l border-white/20 pl-5 sm:grid-cols-2">
           <p className="text-sm leading-relaxed text-white/75 sm:col-span-2">{t.guardianNote}</p>
           <Input label={t.guardianName} value={p.guardianName} onChange={(v) => onChange({ guardianName: v })} />
@@ -409,7 +473,7 @@ function Input({ label, value, onChange, required = true, ...props }: InputProps
     <label className="grid content-start gap-2">
       <span className={labelCls}>
         {label}
-        {!required && <span className="text-white/40"> · {t.optional}</span>}
+        {required ? <Star /> : <span className="text-white/40"> · {t.optional}</span>}
       </span>
       <input {...props} required={required} value={value} onChange={(e) => onChange(e.target.value)} className={field} />
     </label>
@@ -431,7 +495,10 @@ function Area({
 }) {
   return (
     <label className="grid gap-2">
-      <span className="text-[15px] leading-snug text-white/90">{label}</span>
+      <span className="text-[15px] leading-snug text-white/90">
+        {label}
+        <Star />
+      </span>
       {hint && <span className="text-sm text-white/60">{hint}</span>}
       <textarea
         required
@@ -474,7 +541,7 @@ function Choice({
     <fieldset className="grid gap-3">
       <legend className={`${labelCls} mb-3`}>
         {label}
-        {!required && <span className="text-white/40"> · {t.optional}</span>}
+        {required ? <Star /> : <span className="text-white/40"> · {t.optional}</span>}
       </legend>
       <div className={stacked ? "grid gap-2" : "flex flex-wrap gap-2"}>
         {options.map((o) => (
@@ -506,7 +573,10 @@ function Check({ checked, onChange, label }: { checked: boolean; onChange: (v: b
         onChange={(e) => onChange(e.target.checked)}
         className="mt-1 h-4 w-4 shrink-0 accent-white"
       />
-      {label}
+      <span>
+        {label}
+        <Star />
+      </span>
     </label>
   );
 }
@@ -521,7 +591,7 @@ function Summary({ a }: { a: Application }) {
       <ul className="mt-4 grid gap-1.5">
         {people.map((p, i) => (
           <li key={i}>
-            {p.name || "—"} · {p.age || "?"} {t.years} · {label(STAGES, p.stage)}
+            {p.name || "—"} · {Number.isNaN(ageOf(p.birth)) ? "?" : ageOf(p.birth)} {t.years} · {label(STAGES, p.stage)}
           </li>
         ))}
       </ul>

@@ -9,7 +9,7 @@ const T = {
     label: "inscrições",
     h1: "Mostre o que você já construiu.",
     intro:
-      "Leva 10 minutos se você vai sozinho(a), ou 20 se vai inscrever um time. Em time, tenha em mãos o e-mail, a idade e um link de contato (LinkedIn, GitHub ou site) de cada pessoa. As inscrições vão até sábado, 21/11, às 23h59.",
+      "Leva 10 minutos se você vai sozinho(a), ou 20 se vai inscrever um time. Em time, tenha em mãos o e-mail, a data de nascimento e um link de contato (LinkedIn, GitHub ou site) de cada pessoa. As inscrições vão até sábado, 21/11, às 23h59.",
   },
   en: {
     back: "← Hack IA Brasil",
@@ -17,7 +17,7 @@ const T = {
     label: "applications",
     h1: "Show us what you've built.",
     intro:
-      "Takes 10 minutes if you're applying solo, or 20 if you're registering a team. For a team, have each person's e-mail, age and a contact link (LinkedIn, GitHub or website) at hand. Applications close Saturday, Nov 21, at 11:59pm (Brasília time).",
+      "Takes 10 minutes if you're applying solo, or 20 if you're registering a team. For a team, have each person's e-mail, date of birth and a contact link (LinkedIn, GitHub or website) at hand. Applications close Saturday, Nov 21, at 11:59pm (Brasília time).",
   },
 };
 

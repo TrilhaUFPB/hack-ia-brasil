@@ -31,7 +31,7 @@ export const MAX_OTHERS = 3;
 export type Person = {
   name: string;
   email: string;
-  age: string;
+  birth: string; // YYYY-MM-DD, age is computed from it
   stage: string;
   school: string;
   links: string;
@@ -41,7 +41,7 @@ export type Person = {
 };
 
 export type Application = {
-  me: Person & { whatsapp: string; city: string };
+  me: Person & { country: string; ddd: string; whatsapp: string; city: string; uf: string };
   mode: string;
   team: { plan: string; members: Person[] };
   challenge: string;
@@ -56,7 +56,7 @@ export type Application = {
 export const emptyPerson = (): Person => ({
   name: "",
   email: "",
-  age: "",
+  birth: "",
   stage: "",
   school: "",
   links: "",
@@ -66,7 +66,7 @@ export const emptyPerson = (): Person => ({
 });
 
 export const emptyApplication = (): Application => ({
-  me: { ...emptyPerson(), whatsapp: "", city: "" },
+  me: { ...emptyPerson(), country: "55", ddd: "", whatsapp: "", city: "", uf: "" },
   mode: "",
   team: { plan: "", members: [emptyPerson(), emptyPerson()] },
   challenge: "",
@@ -78,4 +78,19 @@ export const emptyApplication = (): Application => ({
   lang: "pt",
 });
 
-export const isMinor = (age: string) => Number(age) > 0 && Number(age) < 18;
+export const UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
+
+// Age on the event day (Nov 28): that's what decides 12–25 and who needs a guardian.
+const EVENT_DAY = "2026-11-28";
+export const MIN_AGE = 12;
+export const MAX_AGE = 25;
+export function ageOf(birth: string): number {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(birth ?? "")) return NaN;
+  const [y, m, d] = birth.split("-").map(Number);
+  const [ey, em, ed] = EVENT_DAY.split("-").map(Number);
+  return ey - y - (em < m || (em === m && ed < d) ? 1 : 0);
+}
+// input[type=date] bounds: born between these days means 12–25 on the event day
+export const BIRTH_MIN = `${2026 - MAX_AGE - 1}-11-29`;
+export const BIRTH_MAX = `${2026 - MIN_AGE}-11-28`;
+export const isMinor = (birth: string) => ageOf(birth) < 18;
