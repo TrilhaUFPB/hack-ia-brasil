@@ -55,7 +55,11 @@ export async function POST(req: Request) {
     ...personErrors(a.me, "você"),
     ...members.flatMap((m, i) => personErrors(m, `membro ${i + 2}`)),
   ];
-  if (!/^[1-9][0-9]$/.test(a.me.ddd ?? "") || !/^9?[0-9]{8}$/.test((a.me.whatsapp ?? "").replace(/\D/g, ""))) errors.push("whatsapp");
+  const br = a.me.country === "55";
+  const phoneOk = /^[1-9][0-9]{0,2}$/.test(a.me.country ?? "") &&
+    (br ? /^[1-9][0-9]$/.test(a.me.ddd ?? "") && /^9?[0-9]{8}$/.test((a.me.whatsapp ?? "").replace(/\D/g, ""))
+        : /^[0-9]{6,14}$/.test(`${a.me.ddd ?? ""}${a.me.whatsapp ?? ""}`.replace(/\D/g, "")));
+  if (!phoneOk) errors.push("whatsapp");
   if (!a.me.city?.trim() || !UFS.includes(a.me.uf)) errors.push("cidade/UF");
   if (!MODES.some((m) => m.v === a.mode)) errors.push("modalidade");
   if (isTeam && (members.length < MIN_OTHERS || members.length > MAX_OTHERS)) errors.push("tamanho do time");
@@ -68,7 +72,7 @@ export async function POST(req: Request) {
     modalidade: a.mode,
     tamanho: 1 + members.length,
     ...personCols(a.me, ""),
-    whatsapp: `(${a.me.ddd}) ${a.me.whatsapp.replace(/\D/g, "")}`,
+    whatsapp: `+${a.me.country} ${a.me.ddd ? `(${a.me.ddd}) ` : ""}${a.me.whatsapp.replace(/\D/g, "")}`,
     cidade: a.me.city,
     uf: a.me.uf,
     desafio: a.challenge,

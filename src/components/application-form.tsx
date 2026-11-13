@@ -181,12 +181,34 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
               <div className="grid gap-5 sm:grid-cols-2">
                 <Input label={t.name} value={a.me.name} onChange={(v) => setMe({ name: v })} autoComplete="name" />
                 <Input label={t.email} type="email" value={a.me.email} onChange={(v) => setMe({ email: v })} autoComplete="email" />
-                <div className="grid grid-cols-[5.5rem_1fr] gap-3">
+                <div className="grid grid-cols-[4.5rem_4.5rem_1fr] gap-3">
+                  <label className="grid content-start gap-2">
+                    <span className={labelCls}>
+                      {t.country}
+                      <Star />
+                    </span>
+                    <span className="relative">
+                      <span aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-white/50">+</span>
+                      <input
+                        required
+                        inputMode="numeric"
+                        maxLength={3}
+                        pattern="[1-9][0-9]{0,2}"
+                        value={a.me.country}
+                        onChange={(e) => setMe({ country: e.target.value.replace(/\D/g, "") })}
+                        autoComplete="tel-country-code"
+                        title={t.countryTitle}
+                        className={`${field} pl-6`}
+                      />
+                    </span>
+                  </label>
                   <Input
                     label={t.ddd}
                     inputMode="numeric"
                     maxLength={2}
-                    pattern="[1-9][0-9]"
+                    // ponytail: strict DDD/number rules only for Brazil; other countries just need digits
+                    pattern={a.me.country === "55" ? "[1-9][0-9]" : "[0-9]{1,2}"}
+                    required={a.me.country === "55"}
                     placeholder="83"
                     value={a.me.ddd}
                     onChange={(v) => setMe({ ddd: v.replace(/\D/g, "") })}
@@ -196,7 +218,7 @@ export function ApplicationForm({ lang = "pt", header }: { lang?: Lang; header?:
                   <Input
                     label={t.whatsapp}
                     type="tel"
-                    pattern="9?[0-9]{4}[\s\-]?[0-9]{4}"
+                    pattern={a.me.country === "55" ? "9?[0-9]{4}[\\s\\-]?[0-9]{4}" : "[0-9\\s\\-]{4,14}"}
                     placeholder="99999-9999"
                     value={a.me.whatsapp}
                     onChange={(v) => setMe({ whatsapp: v })}

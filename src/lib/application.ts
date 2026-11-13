@@ -41,7 +41,7 @@ export type Person = {
 };
 
 export type Application = {
-  me: Person & { ddd: string; whatsapp: string; city: string; uf: string };
+  me: Person & { country: string; ddd: string; whatsapp: string; city: string; uf: string };
   mode: string;
   team: { plan: string; members: Person[] };
   challenge: string;
@@ -66,7 +66,7 @@ export const emptyPerson = (): Person => ({
 });
 
 export const emptyApplication = (): Application => ({
-  me: { ...emptyPerson(), ddd: "", whatsapp: "", city: "", uf: "" },
+  me: { ...emptyPerson(), country: "55", ddd: "", whatsapp: "", city: "", uf: "" },
   mode: "",
   team: { plan: "", members: [emptyPerson(), emptyPerson()] },
   challenge: "",
