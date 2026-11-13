@@ -1,0 +1,40 @@
+Olá, {primeiro_nome}.
+
+Sua inscrição no Hack IA Brasil foi aprovada.
+Gostamos do que você já construiu e de como pensou o problema que descreveu.
+
+PRÓXIMO PASSO
+Confirme a presença até {data_limite}.
+É só responder a este e-mail com "Confirmo". Sem confirmação até essa data, a vaga passa para outra pessoa.
+
+O DIA
+Data: sábado, 28 de novembro de 2026
+Horário: 8h às 18h (credenciamento às 8h; abertura e tema às 9h)
+Local: ONDER · R. Manoel Gualberto, 255, Miramar, João Pessoa (PB)
+Mapa: https://www.google.com/maps/search/?api=1&query=R.+Manoel+Gualberto%2C+255%2C+Miramar%2C+Jo%C3%A3o+Pessoa+-+PB
+Café e almoço incluídos.
+
+O QUE TRAZER
+- Notebook e carregador
+- Documento com foto
+
+SOBRE O SEU TIME
+Você vai formar um time no próprio dia com outras pessoas aprovadas que também vieram sozinhas. Montamos os grupos a partir do papel que cada um disse que quer ter.
+
+MENORES DE 18 ANOS
+Se você tem menos de 18 anos, seu responsável recebe o termo de autorização em outro e-mail. Sem o termo assinado, não conseguimos liberar a entrada.
+
+O TEMA
+O tema só é revelado na abertura, às 9h. Você não precisa preparar nada antes.
+
+DÚVIDAS
+Responda a este e-mail ou fale com a gente no dia:
+Carolina Bartunek: +55 11 98161-5588
+Maria Clara Dantas: +55 83 99637-4372
+
+Até o dia 28,
+Equipe Hack IA Brasil
+
+--
+Hack IA Brasil · Organização Trilha, em parceria com a IA Brasil Fellowship
+https://hack-ia-brasil.vercel.app · hackathon@otrilha.com

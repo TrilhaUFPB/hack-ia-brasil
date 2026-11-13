@@ -1,0 +1,17 @@
+Olá, {primeiro_nome}.
+
+Obrigado por se inscrever e pelo tempo dedicado às respostas.
+Desta vez, a sua inscrição não foi selecionada.
+
+O espaço tem vagas limitadas e recebemos muito mais inscrições do que cabem no dia. A decisão não é um julgamento sobre o seu potencial. Pelo volume, não conseguimos dar retorno individual.
+
+CONTINUE POR PERTO
+IA Brasil Fellowship: https://iabrasil.com/
+Trilha: https://www.otrilha.com
+
+Continue construindo. Esperamos ver você numa próxima.
+Equipe Hack IA Brasil
+
+--
+Hack IA Brasil · Organização Trilha, em parceria com a IA Brasil Fellowship
+https://hack-ia-brasil.vercel.app · hackathon@otrilha.com
