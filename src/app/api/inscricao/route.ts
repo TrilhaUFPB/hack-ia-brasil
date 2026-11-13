@@ -1,5 +1,5 @@
 import { EVENT } from "@/content";
-import { MAX_OTHERS, MIN_OTHERS, MODES, isMinor, type Application, type Person } from "@/lib/application";
+import { MAX_AGE, MAX_OTHERS, MIN_AGE, MIN_OTHERS, MODES, UFS, ageOf, isMinor, type Application, type Person } from "@/lib/application";
 
 // Forwards a validated application to the Google Sheets web app (scripts/google-sheets.gs).
 // The sheet URL and secret stay server-side, so the public page can't write to the sheet directly.
@@ -17,17 +17,18 @@ function personErrors(p: Person, who: string): string[] {
   const e: string[] = [];
   if (!p.name?.trim()) e.push(`${who}: nome`);
   if (!EMAIL.test(p.email ?? "")) e.push(`${who}: e-mail`);
-  const age = Number(p.age);
-  if (!(age >= 12 && age <= 25)) e.push(`${who}: idade`);
+  const age = ageOf(p.birth);
+  if (!(age >= MIN_AGE && age <= MAX_AGE)) e.push(`${who}: data de nascimento`);
   if (!p.stage) e.push(`${who}: momento atual`);
-  if (isMinor(p.age) && (!p.guardianName?.trim() || !EMAIL.test(p.guardianEmail ?? ""))) e.push(`${who}: responsável`);
+  if (isMinor(p.birth) && (!p.guardianName?.trim() || !EMAIL.test(p.guardianEmail ?? ""))) e.push(`${who}: responsável`);
   return e;
 }
 
 const personCols = (p: Person, prefix: string) => ({
   [`${prefix}nome`]: p.name,
   [`${prefix}email`]: p.email,
-  [`${prefix}idade`]: p.age,
+  [`${prefix}nascimento`]: p.birth,
+  [`${prefix}idade`]: Number.isNaN(ageOf(p.birth)) ? "" : ageOf(p.birth),
   [`${prefix}momento`]: p.stage,
   [`${prefix}instituicao`]: p.school,
   [`${prefix}links`]: p.links,
@@ -54,6 +55,8 @@ export async function POST(req: Request) {
     ...personErrors(a.me, "você"),
     ...members.flatMap((m, i) => personErrors(m, `membro ${i + 2}`)),
   ];
+  if (!/^[1-9][0-9]$/.test(a.me.ddd ?? "") || !/^9?[0-9]{8}$/.test((a.me.whatsapp ?? "").replace(/\D/g, ""))) errors.push("whatsapp");
+  if (!a.me.city?.trim() || !UFS.includes(a.me.uf)) errors.push("cidade/UF");
   if (!MODES.some((m) => m.v === a.mode)) errors.push("modalidade");
   if (isTeam && (members.length < MIN_OTHERS || members.length > MAX_OTHERS)) errors.push("tamanho do time");
   if (!a.challenge?.trim() || !a.me.project?.trim()) errors.push("respostas");
@@ -65,8 +68,9 @@ export async function POST(req: Request) {
     modalidade: a.mode,
     tamanho: 1 + members.length,
     ...personCols(a.me, ""),
-    whatsapp: a.me.whatsapp,
+    whatsapp: `(${a.me.ddd}) ${a.me.whatsapp.replace(/\D/g, "")}`,
     cidade: a.me.city,
+    uf: a.me.uf,
     desafio: a.challenge,
     time_plano: isTeam ? a.team.plan : "",
     papel_no_time: isTeam ? "" : a.role,
