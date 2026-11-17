@@ -56,7 +56,7 @@ export async function POST(req: Request) {
   if (a.website) return Response.json({ ok: true }); // bot: pretend it worked
   const rawMembers = (a as { team?: { members?: unknown } }).team?.members;
   const shapeOk =
-    !badTypes(a.me, [...PERSON_KEYS, "country", "ddd", "whatsapp", "city", "uf"]) &&
+    !badTypes(a.me, [...PERSON_KEYS, "country", "whatsapp", "city", "uf"]) &&
     !badTypes(a as unknown as Record<string, unknown>, ["mode", "challenge", "role", "source", "lang"]) &&
     (rawMembers == null || (Array.isArray(rawMembers) && rawMembers.length <= 10 && rawMembers.every((m) => isObj(m) && !badTypes(m, PERSON_KEYS)))) &&
     (!isObj(a.team) || !badTypes(a.team as unknown as Record<string, unknown>, ["plan"]));
@@ -72,9 +72,9 @@ export async function POST(req: Request) {
     ...members.flatMap((m, i) => personErrors(m, `membro ${i + 2}`)),
   ];
   const br = a.me.country === "55";
+  const phone = (a.me.whatsapp ?? "").replace(/\D/g, "");
   const phoneOk = /^[1-9][0-9]{0,2}$/.test(a.me.country ?? "") &&
-    (br ? /^[1-9][0-9]$/.test(a.me.ddd ?? "") && /^9?[0-9]{8}$/.test((a.me.whatsapp ?? "").replace(/\D/g, ""))
-        : /^[0-9]{6,14}$/.test(`${a.me.ddd ?? ""}${a.me.whatsapp ?? ""}`.replace(/\D/g, "")));
+    (br ? /^[1-9][0-9]9?[0-9]{8}$/.test(phone) : /^[0-9]{6,14}$/.test(phone));
   if (!phoneOk) errors.push("whatsapp");
   if (!a.me.city?.trim() || !UFS.includes(a.me.uf)) errors.push("cidade/UF");
   if (!MODES.some((m) => m.v === a.mode)) errors.push("modalidade");
@@ -94,7 +94,7 @@ export async function POST(req: Request) {
     tamanho: 1 + members.length,
     ...personCols(a.me, ""),
     // no leading "+": it would trip the formula guard and leave a stray apostrophe in the sheet
-    whatsapp: `${a.me.country} ${a.me.ddd ? `(${a.me.ddd}) ` : ""}${a.me.whatsapp.replace(/\D/g, "")}`,
+    whatsapp: `${a.me.country} ${br ? `(${phone.slice(0, 2)}) ${phone.slice(2)}` : phone}`,
     cidade: a.me.city,
     uf: a.me.uf,
     desafio: a.challenge,
