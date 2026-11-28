@@ -73,6 +73,12 @@ export default function JuryPage() {
     >
       <GuideBlock title="Cronograma da banca">
         <StepList steps={steps} />
+        <a
+          href="/jurados/projetos"
+          className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-[#000928] hover:bg-white/85 focus-visible:outline-2 focus-visible:outline-offset-4"
+        >
+          Abrir painel de projetos <span aria-hidden>→</span>
+        </a>
       </GuideBlock>
       <GuideBlock title="Relatório técnico">
         <p className="mb-5 text-base leading-relaxed text-white/75">
