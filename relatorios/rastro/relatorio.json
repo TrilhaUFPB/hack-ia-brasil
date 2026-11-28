@@ -11,7 +11,7 @@
     "resumo": "Ferramenta de investigação de redes de fraudes."
   },
   "geracao": {
-    "horario": "2026-11-28T19:38:26.480Z",
+    "horario": "2026-11-28T19:52:26.974Z",
     "modo": "final",
     "janela": {
       "inicio": "2026-11-28T09:20:00-03:00",
@@ -27,7 +27,7 @@
         "relogio": {
           "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 20305
+          "execucao_ms": 0
         },
         "parou_em": null,
         "erro": null
@@ -61,9 +61,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 3,
+          "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 3912
+          "execucao_ms": 3591
         },
         "parou_em": null,
         "erro": null
@@ -73,9 +73,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 3193,
+          "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 2921
+          "execucao_ms": 12930
         },
         "parou_em": null,
         "erro": null
@@ -97,9 +97,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 3195,
+          "espera_ms": 1,
           "preparo_ms": 0,
-          "execucao_ms": 3531
+          "execucao_ms": 2800
         },
         "parou_em": null,
         "erro": null
@@ -129,9 +129,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 2813,
+          "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 236
+          "execucao_ms": 133
         },
         "parou_em": null,
         "erro": null
@@ -213,9 +213,9 @@
         "coluna": "conferidor",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 0,
+          "espera_ms": 1,
           "preparo_ms": 0,
-          "execucao_ms": 1
+          "execucao_ms": 5
         },
         "parou_em": null,
         "erro": null
@@ -224,26 +224,181 @@
   },
   "resumo": {
     "deploy": {
-      "estado": "falhou",
-      "erro": "mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/"
+      "estado": "verificado"
     },
     "build": {
-      "estado": "falhou",
-      "erro": "parou em instalar: ERROR: No matching distribution found for networkx==3.7"
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
     },
     "fluxo": {
-      "estado": "nao_testavel",
-      "motivo": "o deploy informado não respondeu; o projeto não subiu em container"
+      "estado": "falhou",
+      "erro": "\"Cofre recusou: no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)\""
     },
     "ia": {
       "estado": "verificado"
     }
   },
-  "roteiro": [],
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra https://rastro-hackia.streamlit.app/ na página Investigação.",
+      "esperado": "Aparecem o guia \"Passo 1 de 6\" com o botão \"Rodar o Rastro no lote de hoje\" e um grafo com 91 BOs e 16 redes.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em \"Rodar o Rastro no lote de hoje\" e aguarde.",
+      "esperado": "O guia passa a \"Passo 2 de 6\" com \"A Ana não está sozinha: 4 vítimas e R$ 3.290,00\"; a tela informa 14 BOs lidos, 4 na rede e 10 fora. A auditoria registra essa leitura como \"(cache)\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Clique em \"Por que estes casos estão juntos\".",
+      "esperado": "Aparecem 3 ligações com motivo e trechos de cada BO e, em \"O que o Rastro viu e não juntou\", itens barrados por chave vizinha e por homônimo com CPF diferente.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-21.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-21.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Clique em \"Seguir com a rede da Ana\" e depois em \"Pedir o RIF ao COAF pelo SEI-C\".",
+      "esperado": "A tela informa RIF recebido com 2 comunicações e \"Pista nova: SER-0015-0130100-1\", e monta o rascunho do pedido ao juiz para essa conta.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Clique em \"Enviar ao juiz\".",
+      "esperado": "A tela mostra \"PED-001 enviado: 1 contas.\" e o botão \"Assinatura do juiz (simulada)\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em \"Assinatura do juiz (simulada)\".",
+      "esperado": "A tela mostra \"PED-001 assinado (simulado)\" e os botões \"Abrir o cofre\" e \"Tentar abrir com o pedido alterado\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Abra \"Auditoria\" na barra lateral e clique em \"Verificar a cadeia\".",
+      "esperado": "A tabela lista 7 registros, entre eles pedido_rif, resposta_rif, pedido_assinado e duas recusas do cofre. A verificação responde \"Cadeia íntegra: 7 registros conferidos.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
   "declaracoes": [
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -294,7 +449,9 @@
     },
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -345,7 +502,10 @@
     },
     {
       "estado": "parcial",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "Com o pedido PED-001 assinado, o cofre recusou: \"no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)\"; o extrato não saiu."
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -447,7 +607,9 @@
     },
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -489,7 +651,9 @@
     },
     {
       "estado": "parcial",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -600,7 +764,9 @@
     },
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -684,7 +850,10 @@
     },
     {
       "estado": "parcial",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "O cofre não liberou a conta autorizada, e o caminho do dinheiro até a conta central não foi desenhado."
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -735,7 +904,10 @@
     },
     {
       "estado": "parcial",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "\"Tentar abrir com o pedido alterado\" resulta em recusa com a mesma mensagem de \"modo real\" que aparece para o pedido sem alteração, então não dá para verificar a recusa por alteração."
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -828,7 +1000,9 @@
     },
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -870,7 +1044,10 @@
     },
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "Dois relatos diferentes, um com a chave Pix e outro com o e-mail da rede da Ana, terminaram em \"BO-N001: não deu para ler (Replay sem cache...)\", com mensagens iguais exceto pelo nome do arquivo de cache. O segundo foi tentado com \"IA ao vivo\" ligado na leitura do lote; junto ao botão dos BOs novos não apareceu essa chave."
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -1065,7 +1242,10 @@
     },
     {
       "estado": "parcial",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "A página \"Como medimos\" diz \"Quatro sistemas\" e mostra três (Busca exata, Só a polícia, Polícia + RIF); não apareceu a comparação com um prompt único."
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -1149,52 +1329,10 @@
   "uso": [
     {
       "tipo": "item",
-      "id": "build:instalacao",
-      "rotulo": "Instalação",
-      "estado": {
-        "estado": "falhou",
-        "erro": "ERROR: No matching distribution found for networkx==3.7"
-      },
-      "valor": "7 s",
-      "evidencias": [],
-      "obs": null
-    },
-    {
-      "tipo": "item",
-      "id": "build:subida",
-      "rotulo": "Subida local",
-      "estado": {
-        "estado": "nao_testavel",
-        "motivo": "o build parou em instalar, antes desta fase"
-      },
-      "evidencias": [],
-      "obs": null
-    },
-    {
-      "tipo": "item",
-      "id": "build:chaves-falsas",
-      "rotulo": "Variáveis preenchidas com valor falso",
-      "estado": {
-        "estado": "nao_testavel",
-        "motivo": "o teste local roda sem as chaves reais da equipe"
-      },
-      "valor": {
-        "lista": [
-          "ANTHROPIC_API_KEY",
-          "RASTRO_MODO",
-          "NEO4J_USER",
-          "NEO4J_PASSWORD"
-        ]
-      },
-      "evidencias": []
-    },
-    {
-      "tipo": "item",
       "id": "deploy:responde",
       "rotulo": "Deploy responde",
       "estado": {
-        "estado": "falhou",
-        "erro": "mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/"
+        "estado": "verificado"
       },
       "evidencias": [
         {
@@ -1205,8 +1343,272 @@
           "trecho": null,
           "link": "https://rastro-hackia.streamlit.app/",
           "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 9955 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra https://rastro-hackia.streamlit.app/ na página Investigação.",
+      "observado": "Aparecem o guia \"Passo 1 de 6\" com o botão \"Rodar o Rastro no lote de hoje\" e um grafo com 91 BOs e 16 redes.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
         }
       ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em \"Rodar o Rastro no lote de hoje\" e aguarde.",
+      "observado": "O guia passa a \"Passo 2 de 6\" com \"A Ana não está sozinha: 4 vítimas e R$ 3.290,00\"; a tela informa 14 BOs lidos, 4 na rede e 10 fora. A auditoria registra essa leitura como \"(cache)\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Clique em \"Por que estes casos estão juntos\".",
+      "observado": "Aparecem 3 ligações com motivo e trechos de cada BO e, em \"O que o Rastro viu e não juntou\", itens barrados por chave vizinha e por homônimo com CPF diferente.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-21.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-21.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em \"Seguir com a rede da Ana\" e depois em \"Pedir o RIF ao COAF pelo SEI-C\".",
+      "observado": "A tela informa RIF recebido com 2 comunicações e \"Pista nova: SER-0015-0130100-1\", e monta o rascunho do pedido ao juiz para essa conta.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Clique em \"Enviar ao juiz\".",
+      "observado": "A tela mostra \"PED-001 enviado: 1 contas.\" e o botão \"Assinatura do juiz (simulada)\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em \"Assinatura do juiz (simulada)\".",
+      "observado": "A tela mostra \"PED-001 assinado (simulado)\" e os botões \"Abrir o cofre\" e \"Tentar abrir com o pedido alterado\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em \"Abrir o cofre\".",
+      "observado": "O cofre recusou o pedido assinado, na página Investigação e de novo em \"Pedidos e cofre\"; o extrato e o caminho do dinheiro no grafo não apareceram. A barra lateral, em \"O que está ligado\", mostra \"Dados: modo real\" e \"Cofre: exemplo da tela\".",
+      "estado": {
+        "estado": "falhou",
+        "erro": "\"Cofre recusou: no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)\""
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-12.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-12.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-13.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-13.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Abra \"Auditoria\" na barra lateral e clique em \"Verificar a cadeia\".",
+      "observado": "A tabela lista 7 registros, entre eles pedido_rif, resposta_rif, pedido_assinado e duas recusas do cofre. A verificação responde \"Cadeia íntegra: 7 registros conferidos.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Em \"Testar com um BO seu\", clicar em \"Registrar o BO\" com o relato vazio.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"Escreva o relato com pelo menos uma frase.\""
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Relato de 51.000 caracteres (uma frase repetida) enviado em \"Registrar o BO\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O texto foi aceito como BO-N002 sem aviso de tamanho, e a tela passou a oferecer \"Rodar o Rastro nos 2 BOs novos\" sem quebrar. A leitura desse BO não foi acionada."
     }
   ],
   "ia": [
@@ -2067,13 +2469,8 @@
   ],
   "nao_verificado": [
     {
-      "rotulo": "Subida local",
-      "motivo": "o build parou em instalar, antes desta fase",
-      "causa": "bloqueio_externo"
-    },
-    {
-      "rotulo": "Variáveis preenchidas com valor falso",
-      "motivo": "o teste local roda sem as chaves reais da equipe",
+      "rotulo": "Se o pedido for alterado depois da assinatura, o cofre recusa.",
+      "motivo": "\"Tentar abrir com o pedido alterado\" resulta em recusa com a mesma mensagem de \"modo real\" que aparece para o pedido sem alteração, então não dá para verificar a recusa por alteração.",
       "causa": "bloqueio_externo"
     }
   ],

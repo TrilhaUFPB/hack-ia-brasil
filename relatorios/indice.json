@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-28T19:38:26.492Z",
+  "gerado_em": "2026-11-28T19:52:26.975Z",
   "modo": "final",
   "equipes": [
     {
@@ -107,7 +107,7 @@
       "nome": "Fatto",
       "track": "Educação",
       "modo": "final",
-      "horario": "2026-11-28T19:38:26.482Z",
+      "horario": "2026-11-28T19:52:26.974Z",
       "resumo": {
         "deploy": {
           "estado": "verificado"
@@ -117,8 +117,8 @@
           "motivo": "não executado nesta rodada: o deploy da equipe responde"
         },
         "fluxo": {
-          "estado": "nao_testavel",
-          "motivo": "a etapa Teste de uso: conferência não terminou"
+          "estado": "falhou",
+          "erro": "Não foi encontrada opção para criar turma nas telas abertas."
         },
         "ia": {
           "estado": "verificado"
@@ -279,7 +279,7 @@
       "nome": "noid",
       "track": "Segurança",
       "modo": "final",
-      "horario": "2026-11-28T19:38:26.489Z",
+      "horario": "2026-11-28T19:52:26.975Z",
       "resumo": {
         "deploy": {
           "estado": "falhou",
@@ -291,8 +291,8 @@
         "fluxo": {
           "estado": "verificado",
           "alcance": {
-            "ate": 6,
-            "de": 8
+            "ate": 9,
+            "de": 11
           }
         },
         "ia": {
@@ -334,19 +334,18 @@
       "nome": "Rastro",
       "track": "Segurança",
       "modo": "final",
-      "horario": "2026-11-28T19:38:26.480Z",
+      "horario": "2026-11-28T19:52:26.974Z",
       "resumo": {
         "deploy": {
-          "estado": "falhou",
-          "erro": "mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/"
+          "estado": "verificado"
         },
         "build": {
-          "estado": "falhou",
-          "erro": "parou em instalar: ERROR: No matching distribution found for networkx==3.7"
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
         },
         "fluxo": {
-          "estado": "nao_testavel",
-          "motivo": "o deploy informado não respondeu; o projeto não subiu em container"
+          "estado": "falhou",
+          "erro": "\"Cofre recusou: no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)\""
         },
         "ia": {
           "estado": "verificado"

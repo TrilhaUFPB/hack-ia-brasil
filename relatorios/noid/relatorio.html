@@ -139,18 +139,18 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 <h1>noid</h1>
 <p class="resumo-linha">O Noid é o segurança que investiga o alerta, acha o aparelho suspeito e isola ele da rede assim que você autoriza.</p>
 <p class="ligacoes"><a class="" href="https://github.com/miguelmochizuki/noid" target="_blank" rel="noopener noreferrer">Repositório</a><span>Demo: sem link (a equipe escreveu “withnoid.com”)</span><a class="" href="https://youtu.be/CMlXpSbL7bg" target="_blank" rel="noopener noreferrer">Vídeo do pitch</a></p>
-<p class="geracao">final · gerado em 28/11, 16:38 (Brasília) · <a class="" href="https://github.com/miguelmochizuki/noid/commit/8bd1a36a9d84f32482f3cf900ea617a44c18e50a" target="_blank" rel="noopener noreferrer">commit 8bd1a36a9d</a> · enviado em 28/11, 15:55</p>
+<p class="geracao">final · gerado em 28/11, 16:52 (Brasília) · <a class="" href="https://github.com/miguelmochizuki/noid/commit/8bd1a36a9d84f32482f3cf900ea617a44c18e50a" target="_blank" rel="noopener noreferrer">commit 8bd1a36a9d</a> · enviado em 28/11, 15:55</p>
 </header>
-<section class="quadros" aria-label="Resumo"><div class="quadro"><h3>Deploy</h3><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span><span class="detalhe">unable to get local issuer certificate</span></div><div class="quadro"><h3>Build</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></div><div class="quadro"><h3>Fluxo principal</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span><span class="detalhe">até o passo 6 de 8</span></div><div class="quadro"><h3>IA no código</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></div></section>
+<section class="quadros" aria-label="Resumo"><div class="quadro"><h3>Deploy</h3><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span><span class="detalhe">unable to get local issuer certificate</span></div><div class="quadro"><h3>Build</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></div><div class="quadro"><h3>Fluxo principal</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span><span class="detalhe">até o passo 9 de 11</span></div><div class="quadro"><h3>IA no código</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></div></section>
 <section class="achados" aria-label="Resumo do que foi encontrado">
 <h2>Resumo</h2>
-<p class="texto">O link de deploy informado pela equipe não respondeu (unable to get local issuer certificate); o projeto foi instalado em container a partir do repositório e não abre página web. No teste de uso, feito pelo terminal, 6 de 8 passos do fluxo principal funcionaram e 2 ficaram sem teste por bloqueio externo (Demo hospedada em https://withnoid.com/app; Parecer por modelo de IA, Jev e Devin). Das 20 declarações que a equipe faz sobre o projeto, o código confirma 12, confirma em parte 7 e não permite verificar 1. O código chama modelos de Featherless (Simple Jev) (featherless-ai/gemma-4-26B-A4B-classifier), API compatível com OpenAI (configurável; ex.: Featherless ou Ollama), Devin (Cognition), API v3 e Devin CLI, entre outros. Há 3 pontos em que o código devolve resposta fixa.</p><p class="texto">Há commits antes do início da janela (1 de 200 commits, o mais antigo em 28/11 08:38). A pesquisa na web encontrou 5 projetos parecidos: ORDR IQ (Ordr), autonomous_llm_multiagent_iot_ids_ips_repository, Forescout VistaroAI, Darktrace Autonomous Response e Vigil (Vigil-SOC).</p>
+<p class="texto">O link de deploy informado pela equipe não respondeu (unable to get local issuer certificate); o projeto foi instalado em container a partir do repositório e não abre página web. No teste de uso, feito pelo terminal, 9 de 11 passos do fluxo principal funcionaram e 2 ficaram sem teste por bloqueio externo (Demo pública em https://withnoid.com/app; Modelos de IA (Devin, LLM, modelo local de triagem)). Das 20 declarações que a equipe faz sobre o projeto, o código confirma 12, confirma em parte 7 e não permite verificar 1. O código chama modelos de Featherless (Simple Jev) (featherless-ai/gemma-4-26B-A4B-classifier), API compatível com OpenAI (configurável; ex.: Featherless ou Ollama), Devin (Cognition), API v3 e Devin CLI, entre outros. Há 3 pontos em que o código devolve resposta fixa.</p><p class="texto">Há commits antes do início da janela (1 de 200 commits, o mais antigo em 28/11 08:38). A pesquisa na web encontrou 5 projetos parecidos: ORDR IQ (Ordr), autonomous_llm_multiagent_iot_ids_ips_repository, Forescout VistaroAI, Darktrace Autonomous Response e Vigil (Vigil-SOC).</p>
 <h2 class="segundo">Pontos de atenção</h2>
 <dl><div class="linha a-conferir"><dt>Deploy</dt><dd>falhou: unable to get local issuer certificate</dd></div><div class="linha a-conferir"><dt>Resposta fixa no código</dt><dd>A &quot;Recomendação do agente&quot; exibida na interface vem de regras determinísticas em investigate.py, com justificativas em frases predefinidas. · e mais 2</dd></div><div class="linha a-conferir"><dt>Commits antes do início da janela</dt><dd>1 de 200 commits, o mais antigo em 28/11 08:38</dd></div></dl>
 </section>
 <p class="apagado detalhes-titulo">Detalhes e evidências · abra a parte que quiser conferir</p>
 <section class="parte" id="parte-roteiro">
-<details><summary><h2>Roteiro de 2 minutos</h2><span class="contagem">7 registros</span></summary>
+<details><summary><h2>Roteiro de 2 minutos</h2><span class="contagem">10 registros</span></summary>
 <div class="conteudo"><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">00</span>
 <div>
@@ -162,50 +162,74 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">02</span>
 <div>
-<h3>Rode &#96;noid replay --triage&#96; para ingerir os alertas sintéticos de &#96;fixtures/&#96;</h3>
+<h3>Rode &#96;noid demo --speed 0&#96; e deixe o processo aberto.</h3>
 
-<dl class="campos"><div><dt>Esperado</dt><dd>Foram ingeridas 9 observações e abertos 8 incidentes; a triagem saiu como rules_only. Os comandos rodaram com &#96;env -i PATH=&quot;$PATH&quot; HOME=/tmp&#96;, porque o ambiente de teste definia as variáveis NOID_* com valores falsos.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-12.txt:9</span><details class="trecho"><summary>trecho</summary><pre>eve: 9 observacoes · 1 duplicadas · 1 ignoradas</pre></details></li><li><span class="mono">log · capturas/uso/comando-12.txt:19</span><details class="trecho"><summary>trecho</summary><pre>triagem incidente #1: rules_only</pre></details></li></ul>
+<dl class="campos"><div><dt>Esperado</dt><dd>A demo local subiu com 55 dispositivos e conector simulado e processou 21142 fluxos. As variáveis NOID_*, DEVIN_* e SIMPLE_JEV_* com valores de teste do ambiente foram removidas antes dos comandos, salvo indicação.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-09.txt:11</span><details class="trecho"><summary>trecho</summary><pre>Noid · demo pronta (55 dispositivos, conector simulado, sem login)</pre></details></li><li><span class="mono">log · capturas/uso/comando-10.txt:11</span><details class="trecho"><summary>trecho</summary><pre>Replay concluído: 21142 fluxos. O agente termina os incidentes em segundos.</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">03</span>
 <div>
-<h3>Rode &#96;noid investigate 1&#96; e confira o dispositivo identificado</h3>
+<h3>Consulte &#96;GET http://127.0.0.1:8080/api/incidents/9/agent&#96; para ler a decisão e o BO do agente.</h3>
 
-<dl class="campos"><div><dt>Esperado</dt><dd>O incidente 1 (10.20.30.41) aparece com o ativo cam-01, tipo camera. No replay, o IP 10.20.30.42 resolveu para ativos diferentes (5 e 2) em incidentes distintos.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:27</span><details class="trecho"><summary>trecho</summary><pre>&quot;name&quot;: &quot;cam-01&quot;,</pre></details></li><li><span class="mono">log · capturas/uso/comando-12.txt:11</span><details class="trecho"><summary>trecho</summary><pre>incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon</pre></details></li></ul>
+<dl class="campos"><div><dt>Esperado</dt><dd>O incidente 9 (câmera BAN-009) consta como contido sem aprovação prévia, no modo &#96;regras&#96;, com o BO BO-NOID-00009 e o campo &#96;parecer_jev&#96; vazio.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-12.txt:13</span><details class="trecho"><summary>trecho</summary><pre>BO {&quot;numero&quot;: &quot;BO-NOID-00009&quot;</pre></details></li><li><span class="mono">log · capturas/uso/comando-11.txt:14</span><details class="trecho"><summary>trecho</summary><pre>&quot;status&quot;: &quot;done&quot;, &quot;mode&quot;: &quot;regras&quot;, &quot;decision&quot;: &quot;contido&quot;, &quot;action_id&quot;: 3</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">04</span>
+<div>
+<h3>Rode &#96;export NOID_DATABASE_URL=sqlite:////tmp/uso.db&#96; e depois &#96;noid replay --dir fixtures --triage&#96; para receber os alertas sintéticos.</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>Foram ingeridas 9 observações em 8 incidentes; a triagem dos incidentes 1 a 6 saiu como &#96;rules_only&#96;.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-16.txt:9</span><details class="trecho"><summary>trecho</summary><pre>eve: 9 observacoes · 1 duplicadas · 1 ignoradas</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">05</span>
 <div>
-<h3>Rode &#96;noid approve 1 --operator ana&#96;</h3>
+<h3>Confira na saída do &#96;noid replay --dir fixtures --triage&#96; a identificação do dispositivo de cada incidente.</h3>
 
-<dl class="campos"><div><dt>Esperado</dt><dd>A ação 1 terminou com status verified no conector simulado.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-15.txt:2</span><details class="trecho"><summary>trecho</summary><pre>acao 1: verified</pre></details></li></ul>
+<dl class="campos"><div><dt>Esperado</dt><dd>O incidente 1 (10.20.30.41) foi ligado ao ativo 1, mostrado depois como cam-01. O incidente 7 ficou em revisão por identidade ambígua entre cam-03 e tablet-01.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-16.txt:11</span><details class="trecho"><summary>trecho</summary><pre>incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon</pre></details></li><li><span class="mono">log · capturas/uso/comando-16.txt:17</span><details class="trecho"><summary>trecho</summary><pre>REVISAO(identidade ambigua: cam-03, tablet-01)</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">06</span>
 <div>
-<h3>Rode &#96;noid simctl state&#96; e confira que só o IP 10.20.30.41 tem regra de contenção</h3>
+<h3>Rode &#96;noid investigate 1&#96; e &#96;noid investigate 6&#96; para ler a recomendação e os achados.</h3>
 
-<dl class="campos"><div><dt>Esperado</dt><dd>O estado simulado lista uma única regra, para 10.20.30.41. A saída não traz uma verificação própria da câmera vizinha, e não há tráfego real.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-15.txt:3</span><details class="trecho"><summary>trecho</summary><pre>&quot;segment&quot;: &quot;iot-cam&quot;, &quot;ip&quot;: &quot;10.20.30.41&quot;, &quot;action&quot;: &quot;contain&quot;</pre></details></li></ul>
-</div>
-</article><article class="bloco passo">
-<span class="mono numero" aria-hidden="true">07</span>
-<div>
-<h3>Rode &#96;noid revert 1 --operator ana&#96; e depois &#96;noid simctl state&#96;</h3>
-
-<dl class="campos"><div><dt>Esperado</dt><dd>A reversão terminou como reverted e o estado simulado ficou vazio.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-18.txt:2</span><details class="trecho"><summary>trecho</summary><pre>reversao 2: reverted</pre></details></li><li><span class="mono">log · capturas/uso/comando-18.txt:3</span><details class="trecho"><summary>trecho</summary><pre>estado simulado vazio</pre></details></li></ul>
+<dl class="campos"><div><dt>Esperado</dt><dd>As duas saídas diferem: &#96;contain&#96; para cam-01 e &#96;investigate&#96; para plc-01, ativo protegido. Não havia modelo de IA acessível, e a triagem anterior saiu como &#96;rules_only&#96;.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-17.txt:4</span><details class="trecho"><summary>trecho</summary><pre>**Recomendacao:** &#96;contain&#96; — prioridade alta com 2 evidencias e identidade estavel; ativo nao protegido</pre></details></li><li><span class="mono">log · capturas/uso/comando-17.txt:39</span><details class="trecho"><summary>trecho</summary><pre>**Recomendacao:** &#96;investigate&#96; — politica bloqueia contencao automatica</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">08</span>
 <div>
-<h3>Rode &#96;noid serve --port 8080 &amp;&#96; e depois &#96;python -c &quot;import urllib.request as u; print(u.urlopen(&#39;http://127.0.0.1:8080/api/incidents/1/timeline&#39;).read().decode())&quot;&#96;</h3>
+<h3>Rode &#96;noid approve 1 --operator ana&#96; para aprovar a contenção.</h3>
 
-<dl class="campos"><div><dt>Esperado</dt><dd>A linha do tempo traz abertura do incidente, evidência, triagem, aprovação por ana, aplicação, verificação, reversão e reabertura, com horários.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-19.txt:12</span><details class="trecho"><summary>trecho</summary><pre>&quot;actor&quot;: &quot;ana&quot;, &quot;event&quot;: &quot;approved&quot;</pre></details></li><li><span class="mono">log · capturas/uso/comando-19.txt:29</span><details class="trecho"><summary>trecho</summary><pre>&quot;event&quot;: &quot;incident_reopened&quot;, &quot;entity&quot;: &quot;incident&quot;, &quot;entity_id&quot;: &quot;1&quot;, &quot;detail&quot;: &quot;contencao revertida&quot;</pre></details></li></ul>
+<dl class="campos"><div><dt>Esperado</dt><dd>A ação 1 foi executada no conector simulado com status &#96;verified&#96;.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-18.txt:12</span><details class="trecho"><summary>trecho</summary><pre>acao 1: verified</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">09</span>
+<div>
+<h3>Rode &#96;noid simctl state&#96; para conferir que a câmera foi contida e que a vizinha não tem regra.</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>O estado simulado lista uma única regra, para 10.20.30.41; não há regra para outra câmera. A saída não traz uma checagem própria da câmera vizinha nem medição de tráfego.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-18.txt:14</span><details class="trecho"><summary>trecho</summary><pre>&quot;ip&quot;: &quot;10.20.30.41&quot;, &quot;action&quot;: &quot;contain&quot;</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">10</span>
+<div>
+<h3>Rode &#96;noid revert 1 --operator ana&#96; e depois &#96;noid simctl state&#96;.</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>A reversão terminou como &#96;reverted&#96; e o estado simulado ficou vazio.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-21.txt:6</span><details class="trecho"><summary>trecho</summary><pre>reversao 2: reverted</pre></details></li><li><span class="mono">log · capturas/uso/comando-21.txt:8</span><details class="trecho"><summary>trecho</summary><pre>estado simulado vazio</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">11</span>
+<div>
+<h3>Com o mesmo &#96;NOID_DATABASE_URL&#96;, rode &#96;noid serve --port 8091&#96; e consulte &#96;GET http://127.0.0.1:8091/api/incidents/1/timeline&#96;.</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>A linha do tempo traz abertura do incidente, evidências, aprovação por ana, aplicação, verificação e reversão, com horário.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-20.txt:7</span><details class="trecho"><summary>trecho</summary><pre>&quot;actor&quot;: &quot;ana&quot;, &quot;event&quot;: &quot;approved&quot;</pre></details></li><li><span class="mono">log · capturas/uso/comando-21.txt:14</span><details class="trecho"><summary>trecho</summary><pre>2026-11-28T19:45:36 ana revert_requested acao 1</pre></details></li></ul>
 </div>
 </article></div>
 </details>
@@ -215,7 +239,7 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 <blockquote>“Quando um alerta chega, o Noid investiga sozinho: consulta os fluxos e o histórico do dispositivo e pede a classificação do Jev.”</blockquote>
 <p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/README.md#L3" target="_blank" rel="noopener noreferrer">README.md:3</a></p>
 <p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
-<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">O agente processou os incidentes no modo por regras; a classificação do Jev não foi exercitada por falta de credencial real.</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">O agente registrou consultas ao incidente e aos fluxos, mas a classificação do Jev não pôde ser obtida no ambiente; &#96;parecer_jev&#96; saiu vazio.</span></p>
 <p class="obs">A thread do agente processa incidentes abertos e o roteiro por regras chama fluxos, Jev e investigação. A thread depende de NOID_AGENT=1 e o Jev de NOID_AGENT_JEV=1 (ambos 0 no .env.example).</p>
 <dl class="campos"></dl>
 <ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/api.py#L246" target="_blank" rel="noopener noreferrer">src/noid/api.py:246</a><details class="trecho"><summary>trecho</summary><pre>agent_thread = Thread(target=run_agent, daemon=True,</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L909" target="_blank" rel="noopener noreferrer">src/noid/agent.py:909</a><details class="trecho"><summary>trecho</summary><pre>fluxos = run.call(&quot;consultar_fluxos&quot;, {&quot;limite&quot;: 10})</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L916" target="_blank" rel="noopener noreferrer">src/noid/agent.py:916</a><details class="trecho"><summary>trecho</summary><pre>run.call(&quot;classificar_com_jev&quot;, {&quot;fluxo_id&quot;: sample[&quot;id&quot;]})</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L917" target="_blank" rel="noopener noreferrer">src/noid/agent.py:917</a><details class="trecho"><summary>trecho</summary><pre>run.call(&quot;investigar&quot;, {})</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/.env.example#L35" target="_blank" rel="noopener noreferrer">.env.example:35</a><details class="trecho"><summary>trecho</summary><pre>NOID_AGENT=0</pre></details></li></ul>
@@ -279,7 +303,7 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 <blockquote>“um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC), lê o estado de volta para confirmar o efeito”</blockquote>
 <p class="fonte"><span class="apagado">Fonte</span> <span class="mono">formulário · descricao.md:9</span></p>
 <p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
-<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há firewall, switch, Wi-Fi ou NAC no ambiente; só o conector simulado foi exercitado.</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há firewall, switch, Wi-Fi ou NAC no ambiente; a aplicação e a leitura de estado foram vistas só no conector simulado.</span></p>
 
 <dl class="campos"><div><dt>Existe</dt><dd>Há um conector simulado e um conector nftables local (uma porta TCP de um serviço de laboratório), com leitura do estado após aplicar.</dd></div><div><dt>Falta</dt><dd>Não foram encontrados conectores para switch, Wi-Fi, NAC ou firewall externo.</dd></div></dl>
 <ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/nft_connector.py#L1" target="_blank" rel="noopener noreferrer">src/noid/nft_connector.py:1</a><details class="trecho"><summary>trecho</summary><pre>&quot;&quot;&quot;Local IPv4 nftables adapter for a dedicated inbound lab service.&quot;&quot;&quot;</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/nft_connector.py#L129" target="_blank" rel="noopener noreferrer">src/noid/nft_connector.py:129</a><details class="trecho"><summary>trecho</summary><pre>self._run(&quot;create&quot;, &quot;element&quot;, &quot;inet&quot;, TABLE, SET, &quot;{&quot;, target, &quot;timeout&quot;,</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L282" target="_blank" rel="noopener noreferrer">src/noid/actions.py:282</a><details class="trecho"><summary>trecho</summary><pre>rules = connector.query(approval.target_ip, approval.scope_segment)</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/connector.py#L131" target="_blank" rel="noopener noreferrer">src/noid/connector.py:131</a><details class="trecho"><summary>trecho</summary><pre>mode = getenv(&quot;NOID_CONNECTOR&quot;, &quot;sim&quot;)</pre></details></li></ul>
@@ -295,7 +319,7 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 <blockquote>“parecer da IA com evidências clicáveis”</blockquote>
 <p class="fonte"><span class="apagado">Fonte</span> <span class="mono">formulário · descricao.md:15</span></p>
 <p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
-<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Sem modelo local para o parecer e sem navegador para clicar nas evidências.</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Sem modelo de IA acessível e sem navegador para clicar nas evidências.</span></p>
 
 <dl class="campos"><div><dt>Existe</dt><dd>A interface mostra recomendação, triagem e lista de evidências; o dossiê HTML tem links âncora para os registros de evidência.</dd></div><div><dt>Falta</dt><dd>Na tela do incidente em /app, a lista de evidências é texto sem link, e o parecer não referencia evidências clicáveis.</dd></div></dl>
 <ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/app/incident.js#L111" target="_blank" rel="noopener noreferrer">src/noid/app/incident.js:111</a><details class="trecho"><summary>trecho</summary><pre>const rows = evidence.map((item) =&gt; &#96;&lt;li&gt;</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/app/incident.js#L72" target="_blank" rel="noopener noreferrer">src/noid/app/incident.js:72</a><details class="trecho"><summary>trecho</summary><pre>&lt;h3&gt;Triagem do modelo &lt;span class=&quot;tag tag-neutral&quot;&gt;</pre></details></li><li><a class="mono" href="https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/dossier.py#L48" target="_blank" rel="noopener noreferrer">src/noid/dossier.py:48</a><details class="trecho"><summary>trecho</summary><pre>f&#39;&lt;a href=&quot;#{prefix}-{row[&quot;id&quot;]}&quot;&gt;{prefix.upper()}-{row[&quot;id&quot;]}&lt;/a&gt;&#39;</pre></details></li></ul>
@@ -378,7 +402,7 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 <div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
 </details>
 </section><section class="parte" id="parte-uso">
-<details><summary><h2>Teste de uso</h2><span class="contagem">20 registros</span></summary>
+<details><summary><h2>Teste de uso</h2><span class="contagem">23 registros</span></summary>
 <div class="conteudo"><article class="bloco">
 <header><h3>Instalação</h3></header>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
@@ -406,112 +430,136 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">01</span>
 <div>
-<h3>Abra https://withnoid.com/app</h3>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há navegador no container, e a requisição HTTPS feita a partir dele terminou em falha de handshake TLS. O fluxo abaixo foi executado na instalação local.</span></p>
+<h3>Abra a demo em https://withnoid.com/app.</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há navegador no ambiente, e a requisição HTTPS feita do container terminou em falha de handshake SSL.</span></p>
 <dl class="campos"></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-11.txt:16</span><details class="trecho"><summary>trecho</summary><pre>urllib.error.URLError: &lt;urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)&gt;</pre></details></li></ul>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-08.txt:9</span><details class="trecho"><summary>trecho</summary><pre>ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">02</span>
 <div>
-<h3>Rode &#96;noid replay --triage&#96; para ingerir os alertas sintéticos de &#96;fixtures/&#96;</h3>
+<h3>Rode &#96;noid demo --speed 0&#96; e deixe o processo aberto.</h3>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
-<dl class="campos"><div><dt>Observado</dt><dd>Foram ingeridas 9 observações e abertos 8 incidentes; a triagem saiu como rules_only. Os comandos rodaram com &#96;env -i PATH=&quot;$PATH&quot; HOME=/tmp&#96;, porque o ambiente de teste definia as variáveis NOID_* com valores falsos.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-12.txt:9</span><details class="trecho"><summary>trecho</summary><pre>eve: 9 observacoes · 1 duplicadas · 1 ignoradas</pre></details></li><li><span class="mono">log · capturas/uso/comando-12.txt:19</span><details class="trecho"><summary>trecho</summary><pre>triagem incidente #1: rules_only</pre></details></li></ul>
+<dl class="campos"><div><dt>Observado</dt><dd>A demo local subiu com 55 dispositivos e conector simulado e processou 21142 fluxos. As variáveis NOID_*, DEVIN_* e SIMPLE_JEV_* com valores de teste do ambiente foram removidas antes dos comandos, salvo indicação.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-09.txt:11</span><details class="trecho"><summary>trecho</summary><pre>Noid · demo pronta (55 dispositivos, conector simulado, sem login)</pre></details></li><li><span class="mono">log · capturas/uso/comando-10.txt:11</span><details class="trecho"><summary>trecho</summary><pre>Replay concluído: 21142 fluxos. O agente termina os incidentes em segundos.</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">03</span>
 <div>
-<h3>Rode &#96;noid investigate 1&#96; e confira o dispositivo identificado</h3>
+<h3>Consulte &#96;GET http://127.0.0.1:8080/api/incidents/9/agent&#96; para ler a decisão e o BO do agente.</h3>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
-<dl class="campos"><div><dt>Observado</dt><dd>O incidente 1 (10.20.30.41) aparece com o ativo cam-01, tipo camera. No replay, o IP 10.20.30.42 resolveu para ativos diferentes (5 e 2) em incidentes distintos.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:27</span><details class="trecho"><summary>trecho</summary><pre>&quot;name&quot;: &quot;cam-01&quot;,</pre></details></li><li><span class="mono">log · capturas/uso/comando-12.txt:11</span><details class="trecho"><summary>trecho</summary><pre>incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon</pre></details></li></ul>
+<dl class="campos"><div><dt>Observado</dt><dd>O incidente 9 (câmera BAN-009) consta como contido sem aprovação prévia, no modo &#96;regras&#96;, com o BO BO-NOID-00009 e o campo &#96;parecer_jev&#96; vazio.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-12.txt:13</span><details class="trecho"><summary>trecho</summary><pre>BO {&quot;numero&quot;: &quot;BO-NOID-00009&quot;</pre></details></li><li><span class="mono">log · capturas/uso/comando-11.txt:14</span><details class="trecho"><summary>trecho</summary><pre>&quot;status&quot;: &quot;done&quot;, &quot;mode&quot;: &quot;regras&quot;, &quot;decision&quot;: &quot;contido&quot;, &quot;action_id&quot;: 3</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">04</span>
 <div>
-<h3>Leia o parecer da IA e clique nas evidências</h3>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há modelo local disponível nem navegador; a triagem respondeu rules_only. &#96;noid investigate 1&#96; e &#96;noid investigate 5&#96; deram saídas diferentes (contain e investigate).</span></p>
-<dl class="campos"></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-12.txt:19</span><details class="trecho"><summary>trecho</summary><pre>triagem incidente #1: rules_only</pre></details></li><li><span class="mono">log · capturas/uso/comando-14.txt:4</span><details class="trecho"><summary>trecho</summary><pre>**Recomendacao:** &#96;investigate&#96; — identidade ambigua na janela — nao agir</pre></details></li></ul>
+<h3>Rode &#96;export NOID_DATABASE_URL=sqlite:////tmp/uso.db&#96; e depois &#96;noid replay --dir fixtures --triage&#96; para receber os alertas sintéticos.</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>Foram ingeridas 9 observações em 8 incidentes; a triagem dos incidentes 1 a 6 saiu como &#96;rules_only&#96;.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-16.txt:9</span><details class="trecho"><summary>trecho</summary><pre>eve: 9 observacoes · 1 duplicadas · 1 ignoradas</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">05</span>
 <div>
-<h3>Rode &#96;noid approve 1 --operator ana&#96;</h3>
+<h3>Confira na saída do &#96;noid replay --dir fixtures --triage&#96; a identificação do dispositivo de cada incidente.</h3>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
-<dl class="campos"><div><dt>Observado</dt><dd>A ação 1 terminou com status verified no conector simulado.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-15.txt:2</span><details class="trecho"><summary>trecho</summary><pre>acao 1: verified</pre></details></li></ul>
+<dl class="campos"><div><dt>Observado</dt><dd>O incidente 1 (10.20.30.41) foi ligado ao ativo 1, mostrado depois como cam-01. O incidente 7 ficou em revisão por identidade ambígua entre cam-03 e tablet-01.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-16.txt:11</span><details class="trecho"><summary>trecho</summary><pre>incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon</pre></details></li><li><span class="mono">log · capturas/uso/comando-16.txt:17</span><details class="trecho"><summary>trecho</summary><pre>REVISAO(identidade ambigua: cam-03, tablet-01)</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">06</span>
 <div>
-<h3>Rode &#96;noid simctl state&#96; e confira que só o IP 10.20.30.41 tem regra de contenção</h3>
+<h3>Rode &#96;noid investigate 1&#96; e &#96;noid investigate 6&#96; para ler a recomendação e os achados.</h3>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
-<dl class="campos"><div><dt>Observado</dt><dd>O estado simulado lista uma única regra, para 10.20.30.41. A saída não traz uma verificação própria da câmera vizinha, e não há tráfego real.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-15.txt:3</span><details class="trecho"><summary>trecho</summary><pre>&quot;segment&quot;: &quot;iot-cam&quot;, &quot;ip&quot;: &quot;10.20.30.41&quot;, &quot;action&quot;: &quot;contain&quot;</pre></details></li></ul>
+<dl class="campos"><div><dt>Observado</dt><dd>As duas saídas diferem: &#96;contain&#96; para cam-01 e &#96;investigate&#96; para plc-01, ativo protegido. Não havia modelo de IA acessível, e a triagem anterior saiu como &#96;rules_only&#96;.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-17.txt:4</span><details class="trecho"><summary>trecho</summary><pre>**Recomendacao:** &#96;contain&#96; — prioridade alta com 2 evidencias e identidade estavel; ativo nao protegido</pre></details></li><li><span class="mono">log · capturas/uso/comando-17.txt:39</span><details class="trecho"><summary>trecho</summary><pre>**Recomendacao:** &#96;investigate&#96; — politica bloqueia contencao automatica</pre></details></li></ul>
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">07</span>
 <div>
-<h3>Rode &#96;noid revert 1 --operator ana&#96; e depois &#96;noid simctl state&#96;</h3>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
-<dl class="campos"><div><dt>Observado</dt><dd>A reversão terminou como reverted e o estado simulado ficou vazio.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-18.txt:2</span><details class="trecho"><summary>trecho</summary><pre>reversao 2: reverted</pre></details></li><li><span class="mono">log · capturas/uso/comando-18.txt:3</span><details class="trecho"><summary>trecho</summary><pre>estado simulado vazio</pre></details></li></ul>
+<h3>Leia o parecer da IA e clique nas evidências.</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há modelo de IA acessível com as credenciais do ambiente nem navegador para clicar nas evidências.</span></p>
+<dl class="campos"></dl>
+
 </div>
 </article><article class="bloco passo">
 <span class="mono numero" aria-hidden="true">08</span>
 <div>
-<h3>Rode &#96;noid serve --port 8080 &amp;&#96; e depois &#96;python -c &quot;import urllib.request as u; print(u.urlopen(&#39;http://127.0.0.1:8080/api/incidents/1/timeline&#39;).read().decode())&quot;&#96;</h3>
+<h3>Rode &#96;noid approve 1 --operator ana&#96; para aprovar a contenção.</h3>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
-<dl class="campos"><div><dt>Observado</dt><dd>A linha do tempo traz abertura do incidente, evidência, triagem, aprovação por ana, aplicação, verificação, reversão e reabertura, com horários.</dd></div></dl>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-19.txt:12</span><details class="trecho"><summary>trecho</summary><pre>&quot;actor&quot;: &quot;ana&quot;, &quot;event&quot;: &quot;approved&quot;</pre></details></li><li><span class="mono">log · capturas/uso/comando-19.txt:29</span><details class="trecho"><summary>trecho</summary><pre>&quot;event&quot;: &quot;incident_reopened&quot;, &quot;entity&quot;: &quot;incident&quot;, &quot;entity_id&quot;: &quot;1&quot;, &quot;detail&quot;: &quot;contencao revertida&quot;</pre></details></li></ul>
+<dl class="campos"><div><dt>Observado</dt><dd>A ação 1 foi executada no conector simulado com status &#96;verified&#96;.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-18.txt:12</span><details class="trecho"><summary>trecho</summary><pre>acao 1: verified</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">09</span>
+<div>
+<h3>Rode &#96;noid simctl state&#96; para conferir que a câmera foi contida e que a vizinha não tem regra.</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>O estado simulado lista uma única regra, para 10.20.30.41; não há regra para outra câmera. A saída não traz uma checagem própria da câmera vizinha nem medição de tráfego.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-18.txt:14</span><details class="trecho"><summary>trecho</summary><pre>&quot;ip&quot;: &quot;10.20.30.41&quot;, &quot;action&quot;: &quot;contain&quot;</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">10</span>
+<div>
+<h3>Rode &#96;noid revert 1 --operator ana&#96; e depois &#96;noid simctl state&#96;.</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>A reversão terminou como &#96;reverted&#96; e o estado simulado ficou vazio.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-21.txt:6</span><details class="trecho"><summary>trecho</summary><pre>reversao 2: reverted</pre></details></li><li><span class="mono">log · capturas/uso/comando-21.txt:8</span><details class="trecho"><summary>trecho</summary><pre>estado simulado vazio</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">11</span>
+<div>
+<h3>Com o mesmo &#96;NOID_DATABASE_URL&#96;, rode &#96;noid serve --port 8091&#96; e consulte &#96;GET http://127.0.0.1:8091/api/incidents/1/timeline&#96;.</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>A linha do tempo traz abertura do incidente, evidências, aprovação por ana, aplicação, verificação e reversão, com horário.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-20.txt:7</span><details class="trecho"><summary>trecho</summary><pre>&quot;actor&quot;: &quot;ana&quot;, &quot;event&quot;: &quot;approved&quot;</pre></details></li><li><span class="mono">log · capturas/uso/comando-21.txt:14</span><details class="trecho"><summary>trecho</summary><pre>2026-11-28T19:45:36 ana revert_requested acao 1</pre></details></li></ul>
 </div>
 </article><article class="bloco">
 <header><h3>Entrada inesperada: &#96;noid&#96; sem argumento</h3></header>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
 
-<p class="obs">Mostra a mensagem de uso e informa que o argumento cmd é obrigatório, com código 2.</p>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-26.txt:5</span><details class="trecho"><summary>trecho</summary><pre>noid: error: the following arguments are required: cmd</pre></details></li></ul>
+<p class="obs">Mostra a linha de uso e informa que o argumento &#96;cmd&#96; é obrigatório, com código 2.</p>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-25.txt:5</span><details class="trecho"><summary>trecho</summary><pre>noid: error: the following arguments are required: cmd</pre></details></li></ul>
 </article><article class="bloco">
-<header><h3>Entrada inesperada: &#96;noid replay --dir /tmp/nao-existe&#96; (diretório inexistente)</h3></header>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span> <span class="detalhe">Termina com rastro de pilha do Python e FileNotFoundError.</span></p>
+<header><h3>Entrada inesperada: &#96;noid replay --dir /nao/existe&#96; (pasta inexistente)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span> <span class="detalhe">O programa termina com rastro de pilha do Python e &#96;FileNotFoundError&#96;.</span></p>
 
-<p class="obs">Termina com rastro de pilha do Python e FileNotFoundError.</p>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-27.txt:9</span><details class="trecho"><summary>trecho</summary><pre>FileNotFoundError: [Errno 2] No such file or directory: &#39;/tmp/nao-existe/inventory.json&#39;</pre></details></li></ul>
+<p class="obs">O programa termina com rastro de pilha do Python e &#96;FileNotFoundError&#96;.</p>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-26.txt:7</span><details class="trecho"><summary>trecho</summary><pre>FileNotFoundError: [Errno 2] No such file or directory: &#39;/nao/existe/inventory.json&#39;</pre></details></li></ul>
 </article><article class="bloco">
-<header><h3>Entrada inesperada: &#96;noid approve 999 --operator ana&#96; (incidente inexistente)</h3></header>
+<header><h3>Entrada inesperada: &#96;noid approve 999999 --operator ana&#96; (incidente inexistente)</h3></header>
 <p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
 
-<p class="obs">Recusa com a mensagem de incidente inexistente.</p>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-28.txt:2</span><details class="trecho"><summary>trecho</summary><pre>aprovacao recusada: incidente 999 inexistente</pre></details></li></ul>
+<p class="obs">A aprovação é recusada com mensagem que informa que o incidente não existe.</p>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-27.txt:2</span><details class="trecho"><summary>trecho</summary><pre>aprovacao recusada: incidente 999999 inexistente</pre></details></li></ul>
 </article><article class="bloco">
-<header><h3>Entrada inesperada: Variável NOID_MODEL_TIMEOUT_S com valor não numérico (valor falso definido pelo ambiente de teste) ao rodar &#96;noid --help&#96;</h3></header>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span> <span class="detalhe">A CLI termina com rastro de pilha e ValueError antes de mostrar a ajuda; sem a variável, a ajuda é exibida.</span></p>
+<header><h3>Demo pública em https://withnoid.com/app</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Sem navegador, e a conexão HTTPS a partir do container falhou no handshake SSL.</span></p>
 
-<p class="obs">A CLI termina com rastro de pilha e ValueError antes de mostrar a ajuda; sem a variável, a ajuda é exibida.</p>
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-04.txt:13</span><details class="trecho"><summary>trecho</summary><pre>ValueError: could not convert string to float: &#39;chave-falsa-rt&#39;</pre></details></li></ul>
+
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-08.txt:9</span><details class="trecho"><summary>trecho</summary><pre>ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)</pre></details></li></ul>
 </article><article class="bloco">
-<header><h3>Demo hospedada em https://withnoid.com/app</h3></header>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Falha de handshake TLS a partir do container, e não há navegador.</span></p>
+<header><h3>Modelos de IA (Devin, LLM, modelo local de triagem)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">As chaves do ambiente são falsas e não há modelo local em execução; as decisões observadas saíram do modo por regras.</span></p>
 
 
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-11.txt:16</span><details class="trecho"><summary>trecho</summary><pre>ssl/tls alert handshake failure</pre></details></li></ul>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-23.txt:18</span><details class="trecho"><summary>trecho</summary><pre>&#39;devin indisponível, roteiro por regras: ConnectError: [Errno 111] Connection refused&#39;</pre></details></li></ul>
 </article><article class="bloco">
-<header><h3>Parecer por modelo de IA, Jev e Devin</h3></header>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há modelo local no container e as chaves de serviços externos do ambiente são falsas.</span></p>
+<header><h3>Classificador Jev (Featherless)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Serviço externo com chave falsa no ambiente; no teste, o endereço foi apontado para um local sem serviço e &#96;parecer_jev&#96; saiu vazio.</span></p>
 
 
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-06.txt:5</span><details class="trecho"><summary>trecho</summary><pre>FEATHERLESS_API_KEY=chave-falsa-rt</pre></details></li></ul>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-23.txt:17</span><details class="trecho"><summary>trecho</summary><pre>&quot;parecer_jev&quot;: []</pre></details></li></ul>
 </article><article class="bloco">
 <header><h3>Envio de mensagem ao Slack</h3></header>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Exige canal e token reais.</span></p>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Exige workspace, canal e token reais.</span></p>
 
 
-<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-06.txt:41</span><details class="trecho"><summary>trecho</summary><pre>NOID_SLACK_BOT_TOKEN=chave-falsa-rt</pre></details></li></ul>
+
 </article><article class="bloco">
-<header><h3>Contenção em controle de rede real (firewall, switch, Wi-Fi ou NAC)</h3></header>
-<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Exige equipamento ou laboratório de rede que o container não tem.</span></p>
+<header><h3>Controle de rede real (firewall, switch, Wi-Fi, NAC)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Não há esse equipamento no container; os testes usaram o conector simulado.</span></p>
 
 
 
@@ -813,8 +861,8 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 </details>
 </section>
 <section class="parte" id="parte-nao_verificado">
-<details><summary><h2>Não foi possível verificar</h2><span class="contagem">12 registros</span></summary>
-<div class="conteudo"><ul class="nao-verificado"><li><strong>Quando um alerta chega, o Noid investiga sozinho: consulta os fluxos e o histórico do dispositivo e pede a classificação do Jev.</strong><p>O agente processou os incidentes no modo por regras; a classificação do Jev não foi exercitada por falta de credencial real.</p></li><li><strong>um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC), lê o estado de volta para confirmar o efeito</strong><p>Não há firewall, switch, Wi-Fi ou NAC no ambiente; só o conector simulado foi exercitado.</p></li><li><strong>parecer da IA com evidências clicáveis</strong><p>Sem modelo local para o parecer e sem navegador para clicar nas evidências.</p></li><li><strong>o Noid envia a mensagem ao canal assim que o BO é gravado</strong><p>Exige canal e token reais do Slack.</p></li><li><strong>Subida local</strong><p>o projeto não abre página web</p></li><li><strong>Variáveis preenchidas com valor falso</strong><p>o teste local roda sem as chaves reais da equipe</p></li><li><strong>Abra https://withnoid.com/app</strong><p>Não há navegador no container, e a requisição HTTPS feita a partir dele terminou em falha de handshake TLS. O fluxo abaixo foi executado na instalação local.</p></li><li><strong>Leia o parecer da IA e clique nas evidências</strong><p>Não há modelo local disponível nem navegador; a triagem respondeu rules_only. &#96;noid investigate 1&#96; e &#96;noid investigate 5&#96; deram saídas diferentes (contain e investigate).</p></li><li><strong>Demo hospedada em https://withnoid.com/app</strong><p>Falha de handshake TLS a partir do container, e não há navegador.</p></li><li><strong>Parecer por modelo de IA, Jev e Devin</strong><p>Não há modelo local no container e as chaves de serviços externos do ambiente são falsas.</p></li><li><strong>Envio de mensagem ao Slack</strong><p>Exige canal e token reais.</p></li><li><strong>Contenção em controle de rede real (firewall, switch, Wi-Fi ou NAC)</strong><p>Exige equipamento ou laboratório de rede que o container não tem.</p></li></ul></div>
+<details><summary><h2>Não foi possível verificar</h2><span class="contagem">13 registros</span></summary>
+<div class="conteudo"><ul class="nao-verificado"><li><strong>Quando um alerta chega, o Noid investiga sozinho: consulta os fluxos e o histórico do dispositivo e pede a classificação do Jev.</strong><p>O agente registrou consultas ao incidente e aos fluxos, mas a classificação do Jev não pôde ser obtida no ambiente; &#96;parecer_jev&#96; saiu vazio.</p></li><li><strong>um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC), lê o estado de volta para confirmar o efeito</strong><p>Não há firewall, switch, Wi-Fi ou NAC no ambiente; a aplicação e a leitura de estado foram vistas só no conector simulado.</p></li><li><strong>parecer da IA com evidências clicáveis</strong><p>Sem modelo de IA acessível e sem navegador para clicar nas evidências.</p></li><li><strong>o Noid envia a mensagem ao canal assim que o BO é gravado</strong><p>Exige canal e token reais do Slack.</p></li><li><strong>Subida local</strong><p>o projeto não abre página web</p></li><li><strong>Variáveis preenchidas com valor falso</strong><p>o teste local roda sem as chaves reais da equipe</p></li><li><strong>Abra a demo em https://withnoid.com/app.</strong><p>Não há navegador no ambiente, e a requisição HTTPS feita do container terminou em falha de handshake SSL.</p></li><li><strong>Leia o parecer da IA e clique nas evidências.</strong><p>Não há modelo de IA acessível com as credenciais do ambiente nem navegador para clicar nas evidências.</p></li><li><strong>Demo pública em https://withnoid.com/app</strong><p>Sem navegador, e a conexão HTTPS a partir do container falhou no handshake SSL.</p></li><li><strong>Modelos de IA (Devin, LLM, modelo local de triagem)</strong><p>As chaves do ambiente são falsas e não há modelo local em execução; as decisões observadas saíram do modo por regras.</p></li><li><strong>Classificador Jev (Featherless)</strong><p>Serviço externo com chave falsa no ambiente; no teste, o endereço foi apontado para um local sem serviço e &#96;parecer_jev&#96; saiu vazio.</p></li><li><strong>Envio de mensagem ao Slack</strong><p>Exige workspace, canal e token reais.</p></li><li><strong>Controle de rede real (firewall, switch, Wi-Fi, NAC)</strong><p>Não há esse equipamento no container; os testes usaram o conector simulado.</p></li></ul></div>
 </details>
 </section>
 <footer class="parte rodape" id="como-foi-gerado">
@@ -822,7 +870,7 @@ td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
 <div class="conteudo">
 <div class="rolagem"><table>
 <thead><tr><th scope="col">Etapa</th><th scope="col">Situação</th><th scope="col">Duração</th><th scope="col">Onde parou</th></tr></thead>
-<tbody><tr><th scope="row">Build</th><td>concluída</td><td class="mono">44 s</td><td></td></tr><tr><th scope="row">Composição do repositório</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Cópia entre equipes</th><td>concluída</td><td class="mono">7 s</td><td></td></tr><tr><th scope="row">Commit de corte</th><td>concluída</td><td class="mono">4 s</td><td></td></tr><tr><th scope="row">Deploy</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Sinais de fachada no código</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Registro do GitHub</th><td>concluída</td><td class="mono">3 s</td><td></td></tr><tr><th scope="row">Leitura do código</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Leitura do código: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Linha do tempo</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Promessas da equipe</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Promessas da equipe: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Segredos versionados</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Projetos parecidos</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Projetos parecidos: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Requisitos de submissão</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Teste de uso</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Teste de uso: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr></tbody>
+<tbody><tr><th scope="row">Build</th><td>concluída</td><td class="mono">44 s</td><td></td></tr><tr><th scope="row">Composição do repositório</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Cópia entre equipes</th><td>concluída</td><td class="mono">7 s</td><td></td></tr><tr><th scope="row">Commit de corte</th><td>concluída</td><td class="mono">4 s</td><td></td></tr><tr><th scope="row">Deploy</th><td>concluída</td><td class="mono">3 s</td><td></td></tr><tr><th scope="row">Sinais de fachada no código</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Registro do GitHub</th><td>concluída</td><td class="mono">3 s</td><td></td></tr><tr><th scope="row">Leitura do código</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Leitura do código: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Linha do tempo</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Promessas da equipe</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Promessas da equipe: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Segredos versionados</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Projetos parecidos</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Projetos parecidos: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Requisitos de submissão</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Teste de uso</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Teste de uso: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr></tbody>
 </table></div>
 <p><span class="mono">0</span> afirmações descartadas por falta de prova.</p>
 </div>

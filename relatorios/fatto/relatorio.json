@@ -11,7 +11,7 @@
     "resumo": "Fatto é um agente para professores de matemática que lê a resolução de cada aluno na prova, encontra a habilidade-raiz por trás de cada erro e transforma isso em aulas planejadas para a turma real."
   },
   "geracao": {
-    "horario": "2026-11-28T19:38:26.482Z",
+    "horario": "2026-11-28T19:52:26.974Z",
     "modo": "final",
     "janela": {
       "inicio": "2026-11-28T09:20:00-03:00",
@@ -61,9 +61,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 4,
+          "espera_ms": 1,
           "preparo_ms": 0,
-          "execucao_ms": 3230
+          "execucao_ms": 3002
         },
         "parou_em": null,
         "erro": null
@@ -73,9 +73,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 3535,
+          "espera_ms": 1,
           "preparo_ms": 0,
-          "execucao_ms": 16315
+          "execucao_ms": 4019
         },
         "parou_em": null,
         "erro": null
@@ -97,9 +97,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 3551,
+          "espera_ms": 1,
           "preparo_ms": 0,
-          "execucao_ms": 2883
+          "execucao_ms": 2224
         },
         "parou_em": null,
         "erro": null
@@ -129,9 +129,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 2968,
+          "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 152
+          "execucao_ms": 71
         },
         "parou_em": null,
         "erro": null
@@ -203,7 +203,7 @@
       "uso": {
         "titulo": "Teste de uso",
         "coluna": "uso",
-        "situacao": "tempo_esgotado",
+        "situacao": "pronto",
         "relogio": null,
         "parou_em": null,
         "erro": null
@@ -211,14 +211,14 @@
       "uso.conferido": {
         "titulo": "Teste de uso: conferência",
         "coluna": "conferidor",
-        "situacao": "falhou",
+        "situacao": "pronto",
         "relogio": {
           "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 0
+          "execucao_ms": 2
         },
         "parou_em": null,
-        "erro": "dependência uso: tempo esgotado"
+        "erro": null
       }
     }
   },
@@ -231,14 +231,213 @@
       "motivo": "não executado nesta rodada: o deploy da equipe responde"
     },
     "fluxo": {
-      "estado": "nao_testavel",
-      "motivo": "a etapa Teste de uso: conferência não terminou"
+      "estado": "falhou",
+      "erro": "Não foi encontrada opção para criar turma nas telas abertas."
     },
     "ia": {
       "estado": "verificado"
     }
   },
-  "roteiro": [],
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra https://hack-ai-ivory.vercel.app/",
+      "esperado": "A raiz leva à tela de login, com os campos E-mail e Senha, o botão Entrar e a opção Criar conta.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em Criar conta, preencha E-mail e Senha com dados fictícios e clique no botão Criar conta",
+      "esperado": "Após alguns segundos abre a tela inicial, já com a turma 2º B (5 alunos) e a Prova 3 em andamento.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "No diálogo de Nova avaliação, clique em Ir para as provas da 2º B",
+      "esperado": "Abre a página da turma com a Prova 3 — Equações e funções e cinco alunos com o link Enviar prova.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Clique em Henrique Alves — Enviar prova",
+      "esperado": "Abre a tela de fotos com os botões Usar prova de exemplo e Enviar do computador.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em Usar prova de exemplo",
+      "esperado": "A foto de exemplo entra na pilha (1/5 recebidas) com o aviso \"O agente já está corrigindo. Pode levar uns 5 minutos; siga fotografando.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Para cada um dos outros quatro alunos, clique em Não, próxima prova e depois em Usar prova de exemplo",
+      "esperado": "O contador chega a 5/5 recebidas, com cinco provas na pilha.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Clique em Ir para correção",
+      "esperado": "A fila mostra uma prova pronta e as demais como \"Corrigindo ao vivo\", com anotações sobre a foto e o texto por questão.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Aguarde até a fila mostrar 5 de 5 prontas e leia a correção do aluno selecionado",
+      "esperado": "As cinco ficaram prontas em menos de 2 minutos. A correção de Sofia Andrade mostra 1 de 5 certas, a linha do erro em cada questão e a habilidade-raiz Multiplicação de inteiros (EF07MA04, 7º ano).",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-10",
+      "n": 10,
+      "acao": "Clique em 3 Resultado",
+      "esperado": "O relatório mostra causa principal, erros por questão e grupos de recomposição. Ele exibe \"9 de 16 alunos\" e \"12/16\", enquanto a página da turma indica 5 alunos.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-13",
+      "n": 13,
+      "acao": "Envie de novo as cinco provas de exemplo, aguarde 5 de 5 prontas e clique em Plano de aulas no menu",
+      "esperado": "Abre o plano \"Retome frações e multiplicação de inteiros dentro do conteúdo atual, em 4 aulas\", com a ordem das aulas.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-16.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-16.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-14",
+      "n": 14,
+      "acao": "Clique em Ver roteiro da aula",
+      "esperado": "Abre o roteiro de 50 minutos da Aula 4, com objetivo, etapas, alunos que precisam da retomada, erros esperados e perguntas para o quadro.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-17.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-17.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
   "declaracoes": [
     {
       "estado": "confirmada",
@@ -515,7 +714,9 @@
     },
     {
       "estado": "parcial",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -566,7 +767,10 @@
     },
     {
       "estado": "parcial",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "A tela Diagnóstico exibe \"Application error\" após a correção; o relatório da prova mostra erros por questão e grupos."
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -626,7 +830,9 @@
     },
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -686,7 +892,9 @@
     },
     {
       "estado": "confirmada",
-      "no_uso": null,
+      "no_uso": {
+        "estado": "verificado"
+      },
       "evidencias": [
         {
           "tipo": "arquivo",
@@ -1299,7 +1507,386 @@
           "conferida": "script"
         }
       ],
-      "valor": "HTTP 200 em 464 ms"
+      "valor": "HTTP 200 em 537 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra https://hack-ai-ivory.vercel.app/",
+      "observado": "A raiz leva à tela de login, com os campos E-mail e Senha, o botão Entrar e a opção Criar conta.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em Criar conta, preencha E-mail e Senha com dados fictícios e clique no botão Criar conta",
+      "observado": "Após alguns segundos abre a tela inicial, já com a turma 2º B (5 alunos) e a Prova 3 em andamento.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Para criar uma turma, procure a opção na tela inicial, no seletor de turma do menu e em Nova avaliação",
+      "observado": "Os três lugares listam a turma 2º B; o diálogo de Nova avaliação pede para escolher uma turma existente.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Não foi encontrada opção para criar turma nas telas abertas."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "No diálogo de Nova avaliação, clique em Ir para as provas da 2º B",
+      "observado": "Abre a página da turma com a Prova 3 — Equações e funções e cinco alunos com o link Enviar prova.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Clique em Henrique Alves — Enviar prova",
+      "observado": "Abre a tela de fotos com os botões Usar prova de exemplo e Enviar do computador.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em Usar prova de exemplo",
+      "observado": "A foto de exemplo entra na pilha (1/5 recebidas) com o aviso \"O agente já está corrigindo. Pode levar uns 5 minutos; siga fotografando.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Para cada um dos outros quatro alunos, clique em Não, próxima prova e depois em Usar prova de exemplo",
+      "observado": "O contador chega a 5/5 recebidas, com cinco provas na pilha.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Clique em Ir para correção",
+      "observado": "A fila mostra uma prova pronta e as demais como \"Corrigindo ao vivo\", com anotações sobre a foto e o texto por questão.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Aguarde até a fila mostrar 5 de 5 prontas e leia a correção do aluno selecionado",
+      "observado": "As cinco ficaram prontas em menos de 2 minutos. A correção de Sofia Andrade mostra 1 de 5 certas, a linha do erro em cada questão e a habilidade-raiz Multiplicação de inteiros (EF07MA04, 7º ano).",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Clique em 3 Resultado",
+      "observado": "O relatório mostra causa principal, erros por questão e grupos de recomposição. Ele exibe \"9 de 16 alunos\" e \"12/16\", enquanto a página da turma indica 5 alunos.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "Clique em Diagnóstico no menu da turma para abrir o mapa da turma",
+      "observado": "A página inteira é substituída por uma mensagem de erro.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "\"Application error: a client-side exception has occurred\"; no console, TypeError: Cannot read properties of undefined (reading 'x')."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-12",
+      "n": 12,
+      "acao": "Recarregue a página de Diagnóstico",
+      "observado": "O mapa abre sem dados de alunos, com \"Corrija as provas para o mapa esquentar.\" e \"Nada ainda.\"; a lista de provas volta a indicar 0 de 5 enviadas.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "As correções feitas antes não aparecem depois de recarregar."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-12.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-12.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-13",
+      "n": 13,
+      "acao": "Envie de novo as cinco provas de exemplo, aguarde 5 de 5 prontas e clique em Plano de aulas no menu",
+      "observado": "Abre o plano \"Retome frações e multiplicação de inteiros dentro do conteúdo atual, em 4 aulas\", com a ordem das aulas.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-16.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-16.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-14",
+      "n": 14,
+      "acao": "Clique em Ver roteiro da aula",
+      "observado": "Abre o roteiro de 50 minutos da Aula 4, com objetivo, etapas, alunos que precisam da retomada, erros esperados e perguntas para o quadro.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-17.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-17.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-15",
+      "n": 15,
+      "acao": "Feche o roteiro e clique de novo em Diagnóstico no menu",
+      "observado": "Com as cinco provas corrigidas outra vez, a tela de erro se repete.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "\"Application error: a client-side exception has occurred while loading hack-ai-ivory.vercel.app\""
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-18.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-18.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Arquivo de texto renomeado como .jpg em Enviar do computador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"O envio falhou\" e \"Não consegui abrir esta imagem: Input buffer contains unsupported image format\", com o botão Tentar de novo."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Arquivo .jpg vazio (0 bytes)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"O envio falhou\" e \"Não consegui abrir esta imagem: Input Buffer is empty\", com o botão Tentar de novo."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Arquivo .jpg de 6 MB",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"O envio falhou (erro 413).\" com o botão Tentar de novo."
     }
   ],
   "ia": [
@@ -2434,13 +3021,7 @@
       "evidencias": []
     }
   ],
-  "nao_verificado": [
-    {
-      "rotulo": "Teste de uso",
-      "motivo": "tempo esgotado",
-      "causa": "tempo_esgotado"
-    }
-  ],
+  "nao_verificado": [],
   "descartados": {
     "total": 0,
     "motivos": {}

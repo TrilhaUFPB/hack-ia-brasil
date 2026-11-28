@@ -11,7 +11,7 @@
     "resumo": "O Noid é o segurança que investiga o alerta, acha o aparelho suspeito e isola ele da rede assim que você autoriza."
   },
   "geracao": {
-    "horario": "2026-11-28T19:38:26.489Z",
+    "horario": "2026-11-28T19:52:26.975Z",
     "modo": "final",
     "janela": {
       "inicio": "2026-11-28T09:20:00-03:00",
@@ -61,9 +61,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 5,
+          "espera_ms": 2,
           "preparo_ms": 0,
-          "execucao_ms": 3710
+          "execucao_ms": 3579
         },
         "parou_em": null,
         "erro": null
@@ -73,9 +73,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 6346,
+          "espera_ms": 1,
           "preparo_ms": 0,
-          "execucao_ms": 374
+          "execucao_ms": 3035
         },
         "parou_em": null,
         "erro": null
@@ -97,9 +97,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 6459,
+          "espera_ms": 2,
           "preparo_ms": 0,
-          "execucao_ms": 3175
+          "execucao_ms": 3093
         },
         "parou_em": null,
         "erro": null
@@ -129,9 +129,9 @@
         "coluna": "fatos",
         "situacao": "pronto",
         "relogio": {
-          "espera_ms": 713,
+          "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 182
+          "execucao_ms": 77
         },
         "parou_em": null,
         "erro": null
@@ -215,7 +215,7 @@
         "relogio": {
           "espera_ms": 0,
           "preparo_ms": 0,
-          "execucao_ms": 20
+          "execucao_ms": 22
         },
         "parou_em": null,
         "erro": null
@@ -233,8 +233,8 @@
     "fluxo": {
       "estado": "verificado",
       "alcance": {
-        "ate": 6,
-        "de": 8
+        "ate": 9,
+        "de": 11
       }
     },
     "ia": {
@@ -254,25 +254,25 @@
       "tipo": "passo",
       "id": "uso:roteiro-2",
       "n": 2,
-      "acao": "Rode `noid replay --triage` para ingerir os alertas sintéticos de `fixtures/`",
-      "esperado": "Foram ingeridas 9 observações e abertos 8 incidentes; a triagem saiu como rules_only. Os comandos rodaram com `env -i PATH=\"$PATH\" HOME=/tmp`, porque o ambiente de teste definia as variáveis NOID_* com valores falsos.",
+      "acao": "Rode `noid demo --speed 0` e deixe o processo aberto.",
+      "esperado": "A demo local subiu com 55 dispositivos e conector simulado e processou 21142 fluxos. As variáveis NOID_*, DEVIN_* e SIMPLE_JEV_* com valores de teste do ambiente foram removidas antes dos comandos, salvo indicação.",
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-12.txt",
-          "linha": 9,
+          "caminho": "capturas/uso/comando-09.txt",
+          "linha": 11,
           "linha_fim": null,
-          "trecho": "eve: 9 observacoes · 1 duplicadas · 1 ignoradas",
-          "link": "capturas/uso/comando-12.txt",
+          "trecho": "Noid · demo pronta (55 dispositivos, conector simulado, sem login)",
+          "link": "capturas/uso/comando-09.txt",
           "conferida": "conferidor"
         },
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-12.txt",
-          "linha": 19,
+          "caminho": "capturas/uso/comando-10.txt",
+          "linha": 11,
           "linha_fim": null,
-          "trecho": "triagem incidente #1: rules_only",
-          "link": "capturas/uso/comando-12.txt",
+          "trecho": "Replay concluído: 21142 fluxos. O agente termina os incidentes em segundos.",
+          "link": "capturas/uso/comando-10.txt",
           "conferida": "conferidor"
         }
       ]
@@ -281,25 +281,43 @@
       "tipo": "passo",
       "id": "uso:roteiro-3",
       "n": 3,
-      "acao": "Rode `noid investigate 1` e confira o dispositivo identificado",
-      "esperado": "O incidente 1 (10.20.30.41) aparece com o ativo cam-01, tipo camera. No replay, o IP 10.20.30.42 resolveu para ativos diferentes (5 e 2) em incidentes distintos.",
+      "acao": "Consulte `GET http://127.0.0.1:8080/api/incidents/9/agent` para ler a decisão e o BO do agente.",
+      "esperado": "O incidente 9 (câmera BAN-009) consta como contido sem aprovação prévia, no modo `regras`, com o BO BO-NOID-00009 e o campo `parecer_jev` vazio.",
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-13.txt",
-          "linha": 27,
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 13,
           "linha_fim": null,
-          "trecho": "\"name\": \"cam-01\",",
-          "link": "capturas/uso/comando-13.txt",
+          "trecho": "BO {\"numero\": \"BO-NOID-00009\"",
+          "link": "capturas/uso/comando-12.txt",
           "conferida": "conferidor"
         },
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-12.txt",
-          "linha": 11,
+          "caminho": "capturas/uso/comando-11.txt",
+          "linha": 14,
           "linha_fim": null,
-          "trecho": "incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon",
-          "link": "capturas/uso/comando-12.txt",
+          "trecho": "\"status\": \"done\", \"mode\": \"regras\", \"decision\": \"contido\", \"action_id\": 3",
+          "link": "capturas/uso/comando-11.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Rode `export NOID_DATABASE_URL=sqlite:////tmp/uso.db` e depois `noid replay --dir fixtures --triage` para receber os alertas sintéticos.",
+      "esperado": "Foram ingeridas 9 observações em 8 incidentes; a triagem dos incidentes 1 a 6 saiu como `rules_only`.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "eve: 9 observacoes · 1 duplicadas · 1 ignoradas",
+          "link": "capturas/uso/comando-16.txt",
           "conferida": "conferidor"
         }
       ]
@@ -308,16 +326,25 @@
       "tipo": "passo",
       "id": "uso:roteiro-5",
       "n": 5,
-      "acao": "Rode `noid approve 1 --operator ana`",
-      "esperado": "A ação 1 terminou com status verified no conector simulado.",
+      "acao": "Confira na saída do `noid replay --dir fixtures --triage` a identificação do dispositivo de cada incidente.",
+      "esperado": "O incidente 1 (10.20.30.41) foi ligado ao ativo 1, mostrado depois como cam-01. O incidente 7 ficou em revisão por identidade ambígua entre cam-03 e tablet-01.",
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-15.txt",
-          "linha": 2,
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 11,
           "linha_fim": null,
-          "trecho": "acao 1: verified",
-          "link": "capturas/uso/comando-15.txt",
+          "trecho": "incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon",
+          "link": "capturas/uso/comando-16.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "REVISAO(identidade ambigua: cam-03, tablet-01)",
+          "link": "capturas/uso/comando-16.txt",
           "conferida": "conferidor"
         }
       ]
@@ -326,43 +353,25 @@
       "tipo": "passo",
       "id": "uso:roteiro-6",
       "n": 6,
-      "acao": "Rode `noid simctl state` e confira que só o IP 10.20.30.41 tem regra de contenção",
-      "esperado": "O estado simulado lista uma única regra, para 10.20.30.41. A saída não traz uma verificação própria da câmera vizinha, e não há tráfego real.",
+      "acao": "Rode `noid investigate 1` e `noid investigate 6` para ler a recomendação e os achados.",
+      "esperado": "As duas saídas diferem: `contain` para cam-01 e `investigate` para plc-01, ativo protegido. Não havia modelo de IA acessível, e a triagem anterior saiu como `rules_only`.",
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-15.txt",
-          "linha": 3,
+          "caminho": "capturas/uso/comando-17.txt",
+          "linha": 4,
           "linha_fim": null,
-          "trecho": "\"segment\": \"iot-cam\", \"ip\": \"10.20.30.41\", \"action\": \"contain\"",
-          "link": "capturas/uso/comando-15.txt",
-          "conferida": "conferidor"
-        }
-      ]
-    },
-    {
-      "tipo": "passo",
-      "id": "uso:roteiro-7",
-      "n": 7,
-      "acao": "Rode `noid revert 1 --operator ana` e depois `noid simctl state`",
-      "esperado": "A reversão terminou como reverted e o estado simulado ficou vazio.",
-      "evidencias": [
-        {
-          "tipo": "log",
-          "caminho": "capturas/uso/comando-18.txt",
-          "linha": 2,
-          "linha_fim": null,
-          "trecho": "reversao 2: reverted",
-          "link": "capturas/uso/comando-18.txt",
+          "trecho": "**Recomendacao:** `contain` — prioridade alta com 2 evidencias e identidade estavel; ativo nao protegido",
+          "link": "capturas/uso/comando-17.txt",
           "conferida": "conferidor"
         },
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-18.txt",
-          "linha": 3,
+          "caminho": "capturas/uso/comando-17.txt",
+          "linha": 39,
           "linha_fim": null,
-          "trecho": "estado simulado vazio",
-          "link": "capturas/uso/comando-18.txt",
+          "trecho": "**Recomendacao:** `investigate` — politica bloqueia contencao automatica",
+          "link": "capturas/uso/comando-17.txt",
           "conferida": "conferidor"
         }
       ]
@@ -371,25 +380,88 @@
       "tipo": "passo",
       "id": "uso:roteiro-8",
       "n": 8,
-      "acao": "Rode `noid serve --port 8080 &` e depois `python -c \"import urllib.request as u; print(u.urlopen('http://127.0.0.1:8080/api/incidents/1/timeline').read().decode())\"`",
-      "esperado": "A linha do tempo traz abertura do incidente, evidência, triagem, aprovação por ana, aplicação, verificação, reversão e reabertura, com horários.",
+      "acao": "Rode `noid approve 1 --operator ana` para aprovar a contenção.",
+      "esperado": "A ação 1 foi executada no conector simulado com status `verified`.",
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-19.txt",
+          "caminho": "capturas/uso/comando-18.txt",
           "linha": 12,
           "linha_fim": null,
-          "trecho": "\"actor\": \"ana\", \"event\": \"approved\"",
-          "link": "capturas/uso/comando-19.txt",
+          "trecho": "acao 1: verified",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Rode `noid simctl state` para conferir que a câmera foi contida e que a vizinha não tem regra.",
+      "esperado": "O estado simulado lista uma única regra, para 10.20.30.41; não há regra para outra câmera. A saída não traz uma checagem própria da câmera vizinha nem medição de tráfego.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "\"ip\": \"10.20.30.41\", \"action\": \"contain\"",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-10",
+      "n": 10,
+      "acao": "Rode `noid revert 1 --operator ana` e depois `noid simctl state`.",
+      "esperado": "A reversão terminou como `reverted` e o estado simulado ficou vazio.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-21.txt",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "reversao 2: reverted",
+          "link": "capturas/uso/comando-21.txt",
           "conferida": "conferidor"
         },
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-19.txt",
-          "linha": 29,
+          "caminho": "capturas/uso/comando-21.txt",
+          "linha": 8,
           "linha_fim": null,
-          "trecho": "\"event\": \"incident_reopened\", \"entity\": \"incident\", \"entity_id\": \"1\", \"detail\": \"contencao revertida\"",
-          "link": "capturas/uso/comando-19.txt",
+          "trecho": "estado simulado vazio",
+          "link": "capturas/uso/comando-21.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-11",
+      "n": 11,
+      "acao": "Com o mesmo `NOID_DATABASE_URL`, rode `noid serve --port 8091` e consulte `GET http://127.0.0.1:8091/api/incidents/1/timeline`.",
+      "esperado": "A linha do tempo traz abertura do incidente, evidências, aprovação por ana, aplicação, verificação e reversão, com horário.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-20.txt",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "\"actor\": \"ana\", \"event\": \"approved\"",
+          "link": "capturas/uso/comando-20.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-21.txt",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "2026-11-28T19:45:36 ana revert_requested acao 1",
+          "link": "capturas/uso/comando-21.txt",
           "conferida": "conferidor"
         }
       ]
@@ -400,7 +472,7 @@
       "estado": "confirmada",
       "no_uso": {
         "estado": "nao_testavel",
-        "motivo": "O agente processou os incidentes no modo por regras; a classificação do Jev não foi exercitada por falta de credencial real."
+        "motivo": "O agente registrou consultas ao incidente e aos fluxos, mas a classificação do Jev não pôde ser obtida no ambiente; `parecer_jev` saiu vazio."
       },
       "evidencias": [
         {
@@ -877,7 +949,7 @@
       "estado": "parcial",
       "no_uso": {
         "estado": "nao_testavel",
-        "motivo": "Não há firewall, switch, Wi-Fi ou NAC no ambiente; só o conector simulado foi exercitado."
+        "motivo": "Não há firewall, switch, Wi-Fi ou NAC no ambiente; a aplicação e a leitura de estado foram vistas só no conector simulado."
       },
       "evidencias": [
         {
@@ -1000,7 +1072,7 @@
       "estado": "parcial",
       "no_uso": {
         "estado": "nao_testavel",
-        "motivo": "Sem modelo local para o parecer e sem navegador para clicar nas evidências."
+        "motivo": "Sem modelo de IA acessível e sem navegador para clicar nas evidências."
       },
       "evidencias": [
         {
@@ -1624,20 +1696,20 @@
       "tipo": "passo",
       "id": "uso:passo-1",
       "n": 1,
-      "acao": "Abra https://withnoid.com/app",
+      "acao": "Abra a demo em https://withnoid.com/app.",
       "observado": null,
       "estado": {
         "estado": "nao_testavel",
-        "motivo": "Não há navegador no container, e a requisição HTTPS feita a partir dele terminou em falha de handshake TLS. O fluxo abaixo foi executado na instalação local."
+        "motivo": "Não há navegador no ambiente, e a requisição HTTPS feita do container terminou em falha de handshake SSL."
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-11.txt",
-          "linha": 16,
+          "caminho": "capturas/uso/comando-08.txt",
+          "linha": 9,
           "linha_fim": null,
-          "trecho": "urllib.error.URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)>",
-          "link": "capturas/uso/comando-11.txt",
+          "trecho": "ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)",
+          "link": "capturas/uso/comando-08.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1646,28 +1718,28 @@
       "tipo": "passo",
       "id": "uso:passo-2",
       "n": 2,
-      "acao": "Rode `noid replay --triage` para ingerir os alertas sintéticos de `fixtures/`",
-      "observado": "Foram ingeridas 9 observações e abertos 8 incidentes; a triagem saiu como rules_only. Os comandos rodaram com `env -i PATH=\"$PATH\" HOME=/tmp`, porque o ambiente de teste definia as variáveis NOID_* com valores falsos.",
+      "acao": "Rode `noid demo --speed 0` e deixe o processo aberto.",
+      "observado": "A demo local subiu com 55 dispositivos e conector simulado e processou 21142 fluxos. As variáveis NOID_*, DEVIN_* e SIMPLE_JEV_* com valores de teste do ambiente foram removidas antes dos comandos, salvo indicação.",
       "estado": {
         "estado": "verificado"
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-12.txt",
-          "linha": 9,
+          "caminho": "capturas/uso/comando-09.txt",
+          "linha": 11,
           "linha_fim": null,
-          "trecho": "eve: 9 observacoes · 1 duplicadas · 1 ignoradas",
-          "link": "capturas/uso/comando-12.txt",
+          "trecho": "Noid · demo pronta (55 dispositivos, conector simulado, sem login)",
+          "link": "capturas/uso/comando-09.txt",
           "conferida": "conferidor"
         },
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-12.txt",
-          "linha": 19,
+          "caminho": "capturas/uso/comando-10.txt",
+          "linha": 11,
           "linha_fim": null,
-          "trecho": "triagem incidente #1: rules_only",
-          "link": "capturas/uso/comando-12.txt",
+          "trecho": "Replay concluído: 21142 fluxos. O agente termina os incidentes em segundos.",
+          "link": "capturas/uso/comando-10.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1676,28 +1748,28 @@
       "tipo": "passo",
       "id": "uso:passo-3",
       "n": 3,
-      "acao": "Rode `noid investigate 1` e confira o dispositivo identificado",
-      "observado": "O incidente 1 (10.20.30.41) aparece com o ativo cam-01, tipo camera. No replay, o IP 10.20.30.42 resolveu para ativos diferentes (5 e 2) em incidentes distintos.",
+      "acao": "Consulte `GET http://127.0.0.1:8080/api/incidents/9/agent` para ler a decisão e o BO do agente.",
+      "observado": "O incidente 9 (câmera BAN-009) consta como contido sem aprovação prévia, no modo `regras`, com o BO BO-NOID-00009 e o campo `parecer_jev` vazio.",
       "estado": {
         "estado": "verificado"
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-13.txt",
-          "linha": 27,
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 13,
           "linha_fim": null,
-          "trecho": "\"name\": \"cam-01\",",
-          "link": "capturas/uso/comando-13.txt",
+          "trecho": "BO {\"numero\": \"BO-NOID-00009\"",
+          "link": "capturas/uso/comando-12.txt",
           "conferida": "conferidor"
         },
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-12.txt",
-          "linha": 11,
+          "caminho": "capturas/uso/comando-11.txt",
+          "linha": 14,
           "linha_fim": null,
-          "trecho": "incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon",
-          "link": "capturas/uso/comando-12.txt",
+          "trecho": "\"status\": \"done\", \"mode\": \"regras\", \"decision\": \"contido\", \"action_id\": 3",
+          "link": "capturas/uso/comando-11.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1706,29 +1778,19 @@
       "tipo": "passo",
       "id": "uso:passo-4",
       "n": 4,
-      "acao": "Leia o parecer da IA e clique nas evidências",
-      "observado": null,
+      "acao": "Rode `export NOID_DATABASE_URL=sqlite:////tmp/uso.db` e depois `noid replay --dir fixtures --triage` para receber os alertas sintéticos.",
+      "observado": "Foram ingeridas 9 observações em 8 incidentes; a triagem dos incidentes 1 a 6 saiu como `rules_only`.",
       "estado": {
-        "estado": "nao_testavel",
-        "motivo": "Não há modelo local disponível nem navegador; a triagem respondeu rules_only. `noid investigate 1` e `noid investigate 5` deram saídas diferentes (contain e investigate)."
+        "estado": "verificado"
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-12.txt",
-          "linha": 19,
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 9,
           "linha_fim": null,
-          "trecho": "triagem incidente #1: rules_only",
-          "link": "capturas/uso/comando-12.txt",
-          "conferida": "conferidor"
-        },
-        {
-          "tipo": "log",
-          "caminho": "capturas/uso/comando-14.txt",
-          "linha": 4,
-          "linha_fim": null,
-          "trecho": "**Recomendacao:** `investigate` — identidade ambigua na janela — nao agir",
-          "link": "capturas/uso/comando-14.txt",
+          "trecho": "eve: 9 observacoes · 1 duplicadas · 1 ignoradas",
+          "link": "capturas/uso/comando-16.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1737,19 +1799,28 @@
       "tipo": "passo",
       "id": "uso:passo-5",
       "n": 5,
-      "acao": "Rode `noid approve 1 --operator ana`",
-      "observado": "A ação 1 terminou com status verified no conector simulado.",
+      "acao": "Confira na saída do `noid replay --dir fixtures --triage` a identificação do dispositivo de cada incidente.",
+      "observado": "O incidente 1 (10.20.30.41) foi ligado ao ativo 1, mostrado depois como cam-01. O incidente 7 ficou em revisão por identidade ambígua entre cam-03 e tablet-01.",
       "estado": {
         "estado": "verificado"
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-15.txt",
-          "linha": 2,
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 11,
           "linha_fim": null,
-          "trecho": "acao 1: verified",
-          "link": "capturas/uso/comando-15.txt",
+          "trecho": "incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon",
+          "link": "capturas/uso/comando-16.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "REVISAO(identidade ambigua: cam-03, tablet-01)",
+          "link": "capturas/uso/comando-16.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1758,19 +1829,28 @@
       "tipo": "passo",
       "id": "uso:passo-6",
       "n": 6,
-      "acao": "Rode `noid simctl state` e confira que só o IP 10.20.30.41 tem regra de contenção",
-      "observado": "O estado simulado lista uma única regra, para 10.20.30.41. A saída não traz uma verificação própria da câmera vizinha, e não há tráfego real.",
+      "acao": "Rode `noid investigate 1` e `noid investigate 6` para ler a recomendação e os achados.",
+      "observado": "As duas saídas diferem: `contain` para cam-01 e `investigate` para plc-01, ativo protegido. Não havia modelo de IA acessível, e a triagem anterior saiu como `rules_only`.",
       "estado": {
         "estado": "verificado"
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-15.txt",
-          "linha": 3,
+          "caminho": "capturas/uso/comando-17.txt",
+          "linha": 4,
           "linha_fim": null,
-          "trecho": "\"segment\": \"iot-cam\", \"ip\": \"10.20.30.41\", \"action\": \"contain\"",
-          "link": "capturas/uso/comando-15.txt",
+          "trecho": "**Recomendacao:** `contain` — prioridade alta com 2 evidencias e identidade estavel; ativo nao protegido",
+          "link": "capturas/uso/comando-17.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-17.txt",
+          "linha": 39,
+          "linha_fim": null,
+          "trecho": "**Recomendacao:** `investigate` — politica bloqueia contencao automatica",
+          "link": "capturas/uso/comando-17.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1779,8 +1859,20 @@
       "tipo": "passo",
       "id": "uso:passo-7",
       "n": 7,
-      "acao": "Rode `noid revert 1 --operator ana` e depois `noid simctl state`",
-      "observado": "A reversão terminou como reverted e o estado simulado ficou vazio.",
+      "acao": "Leia o parecer da IA e clique nas evidências.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Não há modelo de IA acessível com as credenciais do ambiente nem navegador para clicar nas evidências."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Rode `noid approve 1 --operator ana` para aprovar a contenção.",
+      "observado": "A ação 1 foi executada no conector simulado com status `verified`.",
       "estado": {
         "estado": "verificado"
       },
@@ -1788,18 +1880,9 @@
         {
           "tipo": "log",
           "caminho": "capturas/uso/comando-18.txt",
-          "linha": 2,
+          "linha": 12,
           "linha_fim": null,
-          "trecho": "reversao 2: reverted",
-          "link": "capturas/uso/comando-18.txt",
-          "conferida": "conferidor"
-        },
-        {
-          "tipo": "log",
-          "caminho": "capturas/uso/comando-18.txt",
-          "linha": 3,
-          "linha_fim": null,
-          "trecho": "estado simulado vazio",
+          "trecho": "acao 1: verified",
           "link": "capturas/uso/comando-18.txt",
           "conferida": "conferidor"
         }
@@ -1807,30 +1890,81 @@
     },
     {
       "tipo": "passo",
-      "id": "uso:passo-8",
-      "n": 8,
-      "acao": "Rode `noid serve --port 8080 &` e depois `python -c \"import urllib.request as u; print(u.urlopen('http://127.0.0.1:8080/api/incidents/1/timeline').read().decode())\"`",
-      "observado": "A linha do tempo traz abertura do incidente, evidência, triagem, aprovação por ana, aplicação, verificação, reversão e reabertura, com horários.",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Rode `noid simctl state` para conferir que a câmera foi contida e que a vizinha não tem regra.",
+      "observado": "O estado simulado lista uma única regra, para 10.20.30.41; não há regra para outra câmera. A saída não traz uma checagem própria da câmera vizinha nem medição de tráfego.",
       "estado": {
         "estado": "verificado"
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-19.txt",
-          "linha": 12,
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 14,
           "linha_fim": null,
-          "trecho": "\"actor\": \"ana\", \"event\": \"approved\"",
-          "link": "capturas/uso/comando-19.txt",
+          "trecho": "\"ip\": \"10.20.30.41\", \"action\": \"contain\"",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Rode `noid revert 1 --operator ana` e depois `noid simctl state`.",
+      "observado": "A reversão terminou como `reverted` e o estado simulado ficou vazio.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-21.txt",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "reversao 2: reverted",
+          "link": "capturas/uso/comando-21.txt",
           "conferida": "conferidor"
         },
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-19.txt",
-          "linha": 29,
+          "caminho": "capturas/uso/comando-21.txt",
+          "linha": 8,
           "linha_fim": null,
-          "trecho": "\"event\": \"incident_reopened\", \"entity\": \"incident\", \"entity_id\": \"1\", \"detail\": \"contencao revertida\"",
-          "link": "capturas/uso/comando-19.txt",
+          "trecho": "estado simulado vazio",
+          "link": "capturas/uso/comando-21.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "Com o mesmo `NOID_DATABASE_URL`, rode `noid serve --port 8091` e consulte `GET http://127.0.0.1:8091/api/incidents/1/timeline`.",
+      "observado": "A linha do tempo traz abertura do incidente, evidências, aprovação por ana, aplicação, verificação e reversão, com horário.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-20.txt",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "\"actor\": \"ana\", \"event\": \"approved\"",
+          "link": "capturas/uso/comando-20.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-21.txt",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "2026-11-28T19:45:36 ana revert_requested acao 1",
+          "link": "capturas/uso/comando-21.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1845,94 +1979,73 @@
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-26.txt",
+          "caminho": "capturas/uso/comando-25.txt",
           "linha": 5,
           "linha_fim": null,
           "trecho": "noid: error: the following arguments are required: cmd",
-          "link": "capturas/uso/comando-26.txt",
+          "link": "capturas/uso/comando-25.txt",
           "conferida": "conferidor"
         }
       ],
-      "obs": "Mostra a mensagem de uso e informa que o argumento cmd é obrigatório, com código 2."
+      "obs": "Mostra a linha de uso e informa que o argumento `cmd` é obrigatório, com código 2."
     },
     {
       "tipo": "item",
       "id": "uso:entrada_inesperada-2",
-      "rotulo": "Entrada inesperada: `noid replay --dir /tmp/nao-existe` (diretório inexistente)",
+      "rotulo": "Entrada inesperada: `noid replay --dir /nao/existe` (pasta inexistente)",
       "estado": {
         "estado": "falhou",
-        "erro": "Termina com rastro de pilha do Python e FileNotFoundError."
+        "erro": "O programa termina com rastro de pilha do Python e `FileNotFoundError`."
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-27.txt",
-          "linha": 9,
+          "caminho": "capturas/uso/comando-26.txt",
+          "linha": 7,
           "linha_fim": null,
-          "trecho": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/nao-existe/inventory.json'",
-          "link": "capturas/uso/comando-27.txt",
+          "trecho": "FileNotFoundError: [Errno 2] No such file or directory: '/nao/existe/inventory.json'",
+          "link": "capturas/uso/comando-26.txt",
           "conferida": "conferidor"
         }
       ],
-      "obs": "Termina com rastro de pilha do Python e FileNotFoundError."
+      "obs": "O programa termina com rastro de pilha do Python e `FileNotFoundError`."
     },
     {
       "tipo": "item",
       "id": "uso:entrada_inesperada-3",
-      "rotulo": "Entrada inesperada: `noid approve 999 --operator ana` (incidente inexistente)",
+      "rotulo": "Entrada inesperada: `noid approve 999999 --operator ana` (incidente inexistente)",
       "estado": {
         "estado": "verificado"
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-28.txt",
+          "caminho": "capturas/uso/comando-27.txt",
           "linha": 2,
           "linha_fim": null,
-          "trecho": "aprovacao recusada: incidente 999 inexistente",
-          "link": "capturas/uso/comando-28.txt",
+          "trecho": "aprovacao recusada: incidente 999999 inexistente",
+          "link": "capturas/uso/comando-27.txt",
           "conferida": "conferidor"
         }
       ],
-      "obs": "Recusa com a mensagem de incidente inexistente."
-    },
-    {
-      "tipo": "item",
-      "id": "uso:entrada_inesperada-4",
-      "rotulo": "Entrada inesperada: Variável NOID_MODEL_TIMEOUT_S com valor não numérico (valor falso definido pelo ambiente de teste) ao rodar `noid --help`",
-      "estado": {
-        "estado": "falhou",
-        "erro": "A CLI termina com rastro de pilha e ValueError antes de mostrar a ajuda; sem a variável, a ajuda é exibida."
-      },
-      "evidencias": [
-        {
-          "tipo": "log",
-          "caminho": "capturas/uso/comando-04.txt",
-          "linha": 13,
-          "linha_fim": null,
-          "trecho": "ValueError: could not convert string to float: 'chave-falsa-rt'",
-          "link": "capturas/uso/comando-04.txt",
-          "conferida": "conferidor"
-        }
-      ],
-      "obs": "A CLI termina com rastro de pilha e ValueError antes de mostrar a ajuda; sem a variável, a ajuda é exibida."
+      "obs": "A aprovação é recusada com mensagem que informa que o incidente não existe."
     },
     {
       "tipo": "item",
       "id": "uso:bloqueio-1",
-      "rotulo": "Demo hospedada em https://withnoid.com/app",
+      "rotulo": "Demo pública em https://withnoid.com/app",
       "estado": {
         "estado": "nao_testavel",
-        "motivo": "Falha de handshake TLS a partir do container, e não há navegador."
+        "motivo": "Sem navegador, e a conexão HTTPS a partir do container falhou no handshake SSL."
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-11.txt",
-          "linha": 16,
+          "caminho": "capturas/uso/comando-08.txt",
+          "linha": 9,
           "linha_fim": null,
-          "trecho": "ssl/tls alert handshake failure",
-          "link": "capturas/uso/comando-11.txt",
+          "trecho": "ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)",
+          "link": "capturas/uso/comando-08.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1940,19 +2053,19 @@
     {
       "tipo": "item",
       "id": "uso:bloqueio-2",
-      "rotulo": "Parecer por modelo de IA, Jev e Devin",
+      "rotulo": "Modelos de IA (Devin, LLM, modelo local de triagem)",
       "estado": {
         "estado": "nao_testavel",
-        "motivo": "Não há modelo local no container e as chaves de serviços externos do ambiente são falsas."
+        "motivo": "As chaves do ambiente são falsas e não há modelo local em execução; as decisões observadas saíram do modo por regras."
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-06.txt",
-          "linha": 5,
+          "caminho": "capturas/uso/comando-23.txt",
+          "linha": 18,
           "linha_fim": null,
-          "trecho": "FEATHERLESS_API_KEY=chave-falsa-rt",
-          "link": "capturas/uso/comando-06.txt",
+          "trecho": "'devin indisponível, roteiro por regras: ConnectError: [Errno 111] Connection refused'",
+          "link": "capturas/uso/comando-23.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1960,19 +2073,19 @@
     {
       "tipo": "item",
       "id": "uso:bloqueio-3",
-      "rotulo": "Envio de mensagem ao Slack",
+      "rotulo": "Classificador Jev (Featherless)",
       "estado": {
         "estado": "nao_testavel",
-        "motivo": "Exige canal e token reais."
+        "motivo": "Serviço externo com chave falsa no ambiente; no teste, o endereço foi apontado para um local sem serviço e `parecer_jev` saiu vazio."
       },
       "evidencias": [
         {
           "tipo": "log",
-          "caminho": "capturas/uso/comando-06.txt",
-          "linha": 41,
+          "caminho": "capturas/uso/comando-23.txt",
+          "linha": 17,
           "linha_fim": null,
-          "trecho": "NOID_SLACK_BOT_TOKEN=chave-falsa-rt",
-          "link": "capturas/uso/comando-06.txt",
+          "trecho": "\"parecer_jev\": []",
+          "link": "capturas/uso/comando-23.txt",
           "conferida": "conferidor"
         }
       ]
@@ -1980,10 +2093,20 @@
     {
       "tipo": "item",
       "id": "uso:bloqueio-4",
-      "rotulo": "Contenção em controle de rede real (firewall, switch, Wi-Fi ou NAC)",
+      "rotulo": "Envio de mensagem ao Slack",
       "estado": {
         "estado": "nao_testavel",
-        "motivo": "Exige equipamento ou laboratório de rede que o container não tem."
+        "motivo": "Exige workspace, canal e token reais."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-5",
+      "rotulo": "Controle de rede real (firewall, switch, Wi-Fi, NAC)",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Não há esse equipamento no container; os testes usaram o conector simulado."
       },
       "evidencias": []
     }
@@ -3257,17 +3380,17 @@
   "nao_verificado": [
     {
       "rotulo": "Quando um alerta chega, o Noid investiga sozinho: consulta os fluxos e o histórico do dispositivo e pede a classificação do Jev.",
-      "motivo": "O agente processou os incidentes no modo por regras; a classificação do Jev não foi exercitada por falta de credencial real.",
+      "motivo": "O agente registrou consultas ao incidente e aos fluxos, mas a classificação do Jev não pôde ser obtida no ambiente; `parecer_jev` saiu vazio.",
       "causa": "bloqueio_externo"
     },
     {
       "rotulo": "um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC), lê o estado de volta para confirmar o efeito",
-      "motivo": "Não há firewall, switch, Wi-Fi ou NAC no ambiente; só o conector simulado foi exercitado.",
+      "motivo": "Não há firewall, switch, Wi-Fi ou NAC no ambiente; a aplicação e a leitura de estado foram vistas só no conector simulado.",
       "causa": "bloqueio_externo"
     },
     {
       "rotulo": "parecer da IA com evidências clicáveis",
-      "motivo": "Sem modelo local para o parecer e sem navegador para clicar nas evidências.",
+      "motivo": "Sem modelo de IA acessível e sem navegador para clicar nas evidências.",
       "causa": "bloqueio_externo"
     },
     {
@@ -3286,33 +3409,38 @@
       "causa": "bloqueio_externo"
     },
     {
-      "rotulo": "Abra https://withnoid.com/app",
-      "motivo": "Não há navegador no container, e a requisição HTTPS feita a partir dele terminou em falha de handshake TLS. O fluxo abaixo foi executado na instalação local.",
+      "rotulo": "Abra a demo em https://withnoid.com/app.",
+      "motivo": "Não há navegador no ambiente, e a requisição HTTPS feita do container terminou em falha de handshake SSL.",
       "causa": "bloqueio_externo"
     },
     {
-      "rotulo": "Leia o parecer da IA e clique nas evidências",
-      "motivo": "Não há modelo local disponível nem navegador; a triagem respondeu rules_only. `noid investigate 1` e `noid investigate 5` deram saídas diferentes (contain e investigate).",
+      "rotulo": "Leia o parecer da IA e clique nas evidências.",
+      "motivo": "Não há modelo de IA acessível com as credenciais do ambiente nem navegador para clicar nas evidências.",
       "causa": "bloqueio_externo"
     },
     {
-      "rotulo": "Demo hospedada em https://withnoid.com/app",
-      "motivo": "Falha de handshake TLS a partir do container, e não há navegador.",
+      "rotulo": "Demo pública em https://withnoid.com/app",
+      "motivo": "Sem navegador, e a conexão HTTPS a partir do container falhou no handshake SSL.",
       "causa": "bloqueio_externo"
     },
     {
-      "rotulo": "Parecer por modelo de IA, Jev e Devin",
-      "motivo": "Não há modelo local no container e as chaves de serviços externos do ambiente são falsas.",
+      "rotulo": "Modelos de IA (Devin, LLM, modelo local de triagem)",
+      "motivo": "As chaves do ambiente são falsas e não há modelo local em execução; as decisões observadas saíram do modo por regras.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Classificador Jev (Featherless)",
+      "motivo": "Serviço externo com chave falsa no ambiente; no teste, o endereço foi apontado para um local sem serviço e `parecer_jev` saiu vazio.",
       "causa": "bloqueio_externo"
     },
     {
       "rotulo": "Envio de mensagem ao Slack",
-      "motivo": "Exige canal e token reais.",
+      "motivo": "Exige workspace, canal e token reais.",
       "causa": "bloqueio_externo"
     },
     {
-      "rotulo": "Contenção em controle de rede real (firewall, switch, Wi-Fi ou NAC)",
-      "motivo": "Exige equipamento ou laboratório de rede que o container não tem.",
+      "rotulo": "Controle de rede real (firewall, switch, Wi-Fi, NAC)",
+      "motivo": "Não há esse equipamento no container; os testes usaram o conector simulado.",
       "causa": "bloqueio_externo"
     }
   ],
