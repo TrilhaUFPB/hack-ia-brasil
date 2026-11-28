@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { toProjects, videoEmbed } from "../src/jury/submissions.ts";
+import { groupNumber, toProjects, videoEmbed } from "../src/jury/submissions.ts";
 
 const csv = [
   "Carimbo de data/hora,Endereço de e-mail,Imagem de capa do projeto,Nome do projeto,Track escolhida,Link do repositório público,One-line summary (use o Devin para escrever!),Descrição do projeto,Link da demo ao vivo,Vídeo do pitch (3 minutos),Pergunta nova,Relatório técnico",
@@ -27,6 +27,42 @@ test("lê respostas do form pelo título das perguntas", () => {
   assert.equal(b.cover, undefined);
   assert.equal(b.demo, "https://demo.app");
   assert.equal(b.report, undefined);
+});
+
+// The question titles as the form had them on 28/11/2026 at 15:20, line breaks included.
+const liveHeader = [
+  "Carimbo de data/hora",
+  "Endereço de e-mail",
+  "Nome do projeto",
+  "Imagem de capa do projeto (Ela vai aparecer no card do projeto na página do evento.)",
+  "Track escolhida",
+  '"Link do repositório público\nlink do GitHub. O repositório precisa estar público."',
+  "One-line summary (use o Devin para escrever!)",
+  '"Descrição do projeto\n(O que faz, pra quem é e o que vocês construíram durante o hackathon.)"',
+  '"Link da demo ao vivo\nse o projeto estiver no ar, coloque o link aqui. Garanta que ele funcione sem login ou mande credenciais de teste na descrição."',
+  "Final Pitch Slides",
+  '"Vídeo da demo e pitch(3 minutos)\n\nlink do YouTube (não listado), Loom ou Google Drive com acesso liberado pra ""qualquer pessoa com o link.\n\nVocê tem 3 minutos pra nos convencer."',
+  "Número do grupo",
+].join(",");
+
+test("lê o formulário atual: número do grupo e vídeo da demo e pitch", () => {
+  const row = (name, group) =>
+    `28/11/2026 15:40:00,a@b.com,${name},,Saúde,https://github.com/x/y,Resumo,Descrição,https://demo.app,https://drive.google.com/open?id=slides,https://youtu.be/dQw4w9WgXcQ,${group}`;
+  const [a, b, c] = toProjects([liveHeader, row("Laudo", "Grupo 07"), row("Atlas", "12"), row("Puca", "sete")].join("\r\n"));
+
+  assert.equal(a.group, 7);
+  assert.equal(b.group, 12);
+  assert.equal(c.group, undefined);
+  assert.equal(a.video, "https://youtu.be/dQw4w9WgXcQ", "o vídeo não é o upload de slides");
+  assert.equal(a.repo, "https://github.com/x/y");
+  assert.equal(a.description, "Descrição");
+  assert.equal(a.demo, "https://demo.app");
+  assert.equal(a.track, "Saúde");
+});
+
+test("lê o número do grupo como a equipe digitou", () => {
+  for (const [answer, group] of [["7", 7], ["07", 7], [" Grupo 12 ", 12], ["G-3", 3]]) assert.equal(groupNumber(answer), group, answer);
+  for (const answer of ["", "sete", "0", "2026"]) assert.equal(groupNumber(answer), undefined, answer);
 });
 
 test("embute YouTube e Loom, deixa o resto como link", () => {

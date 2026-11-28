@@ -50,6 +50,7 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
               <Cover project={p} index={i} />
               <div className="flex flex-1 flex-col gap-3 p-5">
                 <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/55">
+                  {p.group !== undefined && <span className="text-white/85">{groupLabel(p.group)} · </span>}
                   {p.track || "Sem track"}
                 </p>
                 <h2 className="text-[1.35rem] font-light leading-tight text-white">{p.name}</h2>
@@ -100,7 +101,8 @@ function Cover({ project, index }: { project: Project; index: number }) {
   return (
     <div className="relative flex aspect-video w-full items-end overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_60%)] p-5">
       <span aria-hidden className="absolute left-5 top-4 font-mono text-xs tabular-nums text-white/35">
-        {String(index + 1).padStart(2, "0")}
+        {/* once the form asks for the group, a position in the list would read as one */}
+        {project.group !== undefined ? String(project.group).padStart(2, "0") : String(index + 1).padStart(2, "0")}
       </span>
       <span aria-hidden className="line-clamp-2 text-[2rem] font-extralight leading-none tracking-tight text-white/85">
         {project.name}
@@ -137,6 +139,8 @@ function ProjectDialog({ project, onClose }: { project: Project | null; onClose:
   );
 }
 
+const groupLabel = (group: number) => `Grupo ${String(group).padStart(2, "0")}`;
+
 /** "28/11/2026 15:01:23" (the sheet's timestamp) → "28/11 às 15:01" */
 function submittedLabel(raw: string) {
   const m = raw.match(/(\d{1,2})\/(\d{1,2})\/\d{4}\s+(\d{1,2}):(\d{2})/);
@@ -171,6 +175,11 @@ function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () =
       <div className="px-5 pb-8 pt-8 md:px-10 md:pb-12 md:pt-10">
         <header className="max-w-3xl pr-12 md:pr-0">
           <div className="flex flex-wrap items-center gap-3">
+            {p.group !== undefined && (
+              <span className="rounded-full bg-white px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-[#000928]">
+                {groupLabel(p.group)}
+              </span>
+            )}
             <span className="rounded-full border border-white/25 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-white/80">
               {p.track || "Sem track"}
             </span>
