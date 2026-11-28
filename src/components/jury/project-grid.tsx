@@ -68,11 +68,27 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
   );
 }
 
+/**
+ * A Drive cover that isn't shared ("anyone with the link") answers with a login page,
+ * not an image. Report that so the card falls back to its typographic cover.
+ * The ref catches images that already failed before hydration attached onError.
+ */
+function useCoverFailed() {
+  const [failed, setFailed] = useState(false);
+  const fail = () => setFailed(true);
+  const ref = (img: HTMLImageElement | null) => {
+    if (img?.complete && img.naturalWidth === 0) fail();
+  };
+  return { failed, imgProps: { ref, onError: fail } };
+}
+
 function Cover({ project, index }: { project: Project; index: number }) {
-  if (project.cover) {
+  const { failed, imgProps } = useCoverFailed();
+  if (project.cover && !failed) {
     return (
       // eslint-disable-next-line @next/next/no-img-element -- Drive-hosted covers, no next/image remote config needed
       <img
+        {...imgProps}
         src={project.cover}
         alt=""
         loading="lazy"
@@ -129,6 +145,7 @@ function submittedLabel(raw: string) {
 
 function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () => void }) {
   const embed = videoEmbed(p.video);
+  const cover = useCoverFailed();
   return (
     <motion.article
       initial={{ opacity: 0, scale: 0.96 }}
@@ -145,9 +162,9 @@ function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () =
         ✕
       </button>
 
-      {p.cover && (
+      {p.cover && !cover.failed && (
         // eslint-disable-next-line @next/next/no-img-element -- Drive-hosted cover
-        <img src={p.cover} alt="" referrerPolicy="no-referrer" className="aspect-[21/9] w-full border-b border-white/10 object-cover" />
+        <img {...cover.imgProps} src={p.cover} alt="" referrerPolicy="no-referrer" className="aspect-[21/9] w-full border-b border-white/10 object-cover" />
       )}
 
       <div className="px-5 pb-8 pt-8 md:px-10 md:pb-12 md:pt-10">
