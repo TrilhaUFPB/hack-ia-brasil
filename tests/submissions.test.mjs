@@ -92,8 +92,9 @@ test("a Lookout, que o forms não gravou, entra depois da planilha e recebe o re
   assert.equal(withReport.report, "/jurados/projetos/relatorio/lookout");
 });
 
-test("quando a planilha já traz a Lookout, ela não aparece duas vezes", () => {
-  const row = (name) => `28/11/2026 16:30:00,a@b.com,${name},,Segurança,https://github.com/PMGmenegon/Lookout,Resumo,Descrição,,,https://youtu.be/dQw4w9WgXcQ,9`;
-  const projects = withOutsideTheForm(toProjects([liveHeader, row("LookOut")].join("\r\n")));
-  assert.deepEqual(projects.map((p) => p.id), ["lookout-1"]);
+test("uma linha da planilha com o nome Lookout não substitui a entrada confirmada", () => {
+  const row = (name) => `28/11/2026 16:30:00,a@b.com,${name},,Saúde,https://github.com/outro/repo,Resumo,Descrição,,,https://youtu.be/dQw4w9WgXcQ,9`;
+  const projects = withOutsideTheForm(toProjects([liveHeader, row("Laudo"), row("LookOut")].join("\r\n")));
+  assert.deepEqual(projects.map((p) => p.id), ["laudo-1", "lookout-fora-do-forms"]);
+  assert.equal(projects[1].repo, "https://github.com/PMGmenegon/Lookout");
 });

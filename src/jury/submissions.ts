@@ -136,10 +136,13 @@ const OUTSIDE_THE_FORM: Project[] = [
   },
 ];
 
-/** The sheet's projects, then the ones sent outside the form, unless the sheet already has that name. */
+/**
+ * The sheet's projects, then the ones sent outside the form. The organizers confirmed those by
+ * hand, so a sheet row with the same name, which anyone can type, leaves the panel instead.
+ */
 export function withOutsideTheForm(projects: Project[], outside = OUTSIDE_THE_FORM): Project[] {
-  const names = new Set(projects.map((project) => slug(project.name)));
-  return [...projects, ...outside.filter((project) => !names.has(slug(project.name)))];
+  const names = new Set(outside.map((project) => slug(project.name)));
+  return [...projects.filter((project) => !names.has(slug(project.name))), ...outside];
 }
 
 /** YouTube and Loom links become an embeddable player URL; anything else stays a plain link. */
