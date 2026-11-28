@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>dyssolution · Relatório técnico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Oxanium:wght@200;300;400;500;600&display=swap">
+<style>
+:root {
+  --fundo: #000;
+  --bloco: #101011;
+  --borda: rgb(255 255 255 / 0.15);
+  --borda-fina: rgb(255 255 255 / 0.1);
+  --texto: #fff;
+  --texto-2: rgb(255 255 255 / 0.75);
+  --texto-3: rgb(255 255 255 / 0.6);
+  --raio: 14px;
+  --fonte: "Oxanium", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: var(--fonte); font-size: 16px; line-height: 1.6; overflow-wrap: anywhere; }
+main { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
+a { color: inherit; text-decoration: underline; text-decoration-color: rgb(255 255 255 / 0.35); text-underline-offset: 4px; }
+a:hover { text-decoration-color: #fff; }
+a:focus-visible, summary:focus-visible, input:focus-visible + img { outline: 2px solid #fff; outline-offset: 3px; }
+h1, h2, h3, p, ul, ol, dl, dd, blockquote, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+.mono { font-family: var(--mono); font-size: 0.82em; font-variant-numeric: tabular-nums; }
+.quebra { word-break: break-all; }
+.apagado { color: var(--texto-3); font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; }
+
+.faixa { border-bottom: 1px solid var(--borda); padding: 0.6rem 1.25rem; text-align: center; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.25em; color: var(--texto-2); }
+.cabecalho { padding: 3rem 0 2rem; }
+.cabecalho .apagado { display: block; margin-bottom: 0.75rem; }
+h1 { font-size: clamp(2.2rem, 7vw, 3.75rem); font-weight: 200; line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance; }
+.resumo-linha { margin-top: 1rem; max-width: 60ch; color: var(--texto-2); font-size: 1.05rem; }
+.ligacoes { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.25rem; color: var(--texto-2); }
+.geracao { margin-top: 1.25rem; color: var(--texto-3); font-family: var(--mono); font-size: 0.78rem; }
+
+.quadros { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.75rem; }
+.quadro, .bloco { background: var(--bloco); border: 1px solid var(--borda); border-radius: var(--raio); }
+.quadro { padding: 1rem 1.1rem 1.1rem; min-width: 0; }
+.quadro h3 { font-family: var(--mono); font-size: 0.7rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.2em; color: var(--texto-3); }
+.quadro .estado { display: flex; align-items: baseline; gap: 0.5rem; margin-top: 0.6rem; font-size: 1.2rem; font-weight: 300; line-height: 1.25; white-space: normal; }
+.quadro .detalhe { display: block; margin-top: 0.4rem; color: var(--texto-2); font-size: 0.9rem; line-height: 1.45; }
+
+
+.achados { display: grid; gap: 0.8rem; margin-top: 2rem; padding: 1.25rem 1.3rem 1.1rem; background: var(--bloco); border: 1px solid rgb(255 255 255 / 0.3); border-radius: var(--raio); }
+.achados h2 { font-size: 1.25rem; font-weight: 400; }
+.achados .segundo { margin-top: 0.9rem; }
+.achados .texto { max-width: 78ch; color: var(--texto); font-size: 1rem; line-height: 1.65; }
+.achados dl { display: grid; gap: 0; margin: 0; }
+.achados .linha { display: grid; grid-template-columns: 1fr; gap: 0.1rem 1.25rem; padding: 0.45rem 0; }
+.achados .linha + .linha { border-top: 1px solid var(--borda-fina); }
+.achados dt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.6rem; color: var(--texto-3); font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; }
+.achados dd { color: var(--texto-2); font-size: 0.94rem; line-height: 1.45; }
+.achados .a-conferir dd { color: var(--texto); }
+@media (min-width: 48rem) { .achados .linha { grid-template-columns: 13.5rem minmax(0, 1fr); align-items: baseline; } }
+
+.detalhes-titulo { margin-top: 2.5rem; margin-bottom: 0.6rem; }
+.parte { border-top: 1px solid var(--borda); scroll-margin-top: 1rem; }
+.parte > details > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.9rem; padding: 0.9rem 0; cursor: pointer; list-style: none; }
+.parte > details > summary::-webkit-details-marker { display: none; }
+.parte > details > summary::before { content: "+"; width: 1rem; font-family: var(--mono); color: var(--texto-3); }
+.parte > details[open] > summary::before { content: "−"; }
+.parte > details > .conteudo { padding: 0.4rem 0 2rem; }
+h2 { font-size: 1.25rem; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
+.contagem { color: var(--texto-3); font-family: var(--mono); font-size: 0.78rem; }
+.conteudo { display: grid; gap: 0.75rem; min-width: 0; }
+.vazio { color: var(--texto-3); }
+@media (min-width: 60rem) {
+  main { padding: 0 2.5rem 6rem; }
+}
+
+.bloco { padding: 1rem 1.1rem; display: grid; gap: 0.6rem; min-width: 0; }
+.bloco > header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.75rem; }
+.bloco h3 { font-size: 1.05rem; font-weight: 500; line-height: 1.35; }
+.bloco.passo { grid-template-columns: 2rem minmax(0, 1fr); align-items: baseline; }
+.bloco.passo > div { display: grid; gap: 0.6rem; min-width: 0; }
+.numero { color: var(--texto-3); }
+blockquote { font-size: 1.1rem; font-weight: 300; line-height: 1.45; }
+.estado { font-weight: 500; white-space: nowrap; }
+.marcador { display: inline-block; min-width: 1.1em; margin-right: 0.3em; text-align: center; font-family: var(--mono); }
+.linha-estado .detalhe, .obs, .valor { color: var(--texto-2); }
+.linha-estado .apagado { margin-right: 0.4rem; }
+.sinal { border: 1px solid rgb(255 255 255 / 0.4); border-radius: 999px; padding: 0.05rem 0.6rem; font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--texto-2); white-space: nowrap; }
+.campos { display: grid; gap: 0.45rem; }
+.campos:empty { display: none; }
+.campos dt { font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--texto-3); }
+.campos dd { color: var(--texto-2); }
+.lista { display: grid; gap: 0.25rem; color: var(--texto-2); }
+.lista li { padding-left: 1rem; position: relative; }
+.lista li::before { content: "·"; position: absolute; left: 0.2rem; color: var(--texto-3); }
+
+.evidencias { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem 1.25rem; border-top: 1px solid var(--borda-fina); padding-top: 0.7rem; color: var(--texto-2); }
+.evidencias li { min-width: 0; max-width: 100%; }
+.trecho { margin-top: 0.3rem; }
+.trecho summary { cursor: pointer; font-family: var(--mono); font-size: 0.7rem; color: var(--texto-3); }
+pre { margin: 0.4rem 0 0; padding: 0.7rem 0.8rem; max-width: 100%; overflow-x: auto; background: #000; border: 1px solid var(--borda-fina); border-radius: 8px; font-family: var(--mono); font-size: 0.76rem; line-height: 1.5; color: var(--texto-2); overflow-wrap: normal; }
+
+.captura { display: inline-grid; gap: 0.3rem; cursor: zoom-in; }
+.captura input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.captura img { display: block; width: 11rem; max-width: 100%; height: auto; border: 1px solid var(--borda); border-radius: 8px; background: #000; }
+.captura .mono { color: var(--texto-3); font-size: 0.7rem; }
+.captura input:checked + img { position: fixed; inset: 0; z-index: 10; width: 100vw; height: 100vh; max-width: none; padding: 1rem; object-fit: contain; border: 0; border-radius: 0; background: rgb(0 0 0 / 0.94); cursor: zoom-out; }
+
+.serie { display: grid; gap: 0.3rem; }
+.serie li { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) 3.5rem; align-items: center; gap: 0.6rem; color: var(--texto-2); }
+.serie li > :last-child { text-align: right; }
+.barra { display: block; height: 0.5rem; background: rgb(255 255 255 / 0.07); border-radius: 2px; }
+.barra span { display: block; height: 100%; min-width: 1px; background: rgb(255 255 255 / 0.7); border-radius: 2px; }
+
+.rolagem { max-width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; line-height: 1.55; }
+thead { border-bottom: 1px solid rgb(255 255 255 / 0.2); color: var(--texto-3); }
+th { font-weight: 400; }
+thead th { padding: 0 1rem 0.5rem 0; white-space: nowrap; }
+tbody tr + tr { border-top: 1px solid var(--borda-fina); }
+tbody th, tbody td { padding: 0.7rem 1rem 0.7rem 0; vertical-align: top; color: var(--texto-2); }
+tbody th { font-weight: 500; color: var(--texto); }
+td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
+
+.nao-verificado { display: grid; gap: 0; }
+.nao-verificado li { display: grid; gap: 0.15rem; padding: 0.7rem 0; }
+.nao-verificado li + li { border-top: 1px solid var(--borda-fina); }
+.nao-verificado p { color: var(--texto-2); }
+.rodape p { color: var(--texto-2); }
+.rodape .frase { color: var(--texto); padding: 1rem 0; }
+</style>
+</head>
+<body>
+
+<main>
+<header class="cabecalho">
+<span class="apagado">Relatório técnico · Saúde</span>
+<h1>dyssolution</h1>
+<p class="resumo-linha">&quot;Para que nenhuma criança passe anos achando que o problema é ela, quando só precisava ser vista a tempo.&quot;</p>
+<p class="ligacoes"><a class="" href="https://github.com/lucasrabay/dyssolution" target="_blank" rel="noopener noreferrer">Repositório</a><span>Demo: não informado</span><a class="" href="https://drive.google.com/drive/u/0/folders/1i0eM_zYUZWiYNRIg1mP4gTBoJHKKoNXo" target="_blank" rel="noopener noreferrer">Vídeo do pitch</a></p>
+<p class="geracao">final · gerado em 28/11, 16:38 (Brasília) · commit não identificado</p>
+</header>
+<section class="quadros" aria-label="Resumo"><div class="quadro"><h3>Deploy</h3><span class="estado"><span class="marcador" aria-hidden="true">–</span>não informado</span></div><div class="quadro"><h3>Build</h3><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span><span class="detalhe">a etapa Build não terminou</span></div><div class="quadro"><h3>Fluxo principal</h3><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span><span class="detalhe">a etapa Teste de uso: conferência não terminou</span></div><div class="quadro"><h3>IA no código</h3><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span><span class="detalhe">a etapa Leitura do código: conferência não terminou</span></div></section>
+<section class="achados" aria-label="Resumo do que foi encontrado">
+<h2>Resumo</h2>
+<p class="texto">A equipe não informou um deploy. O teste de uso não foi feito: a etapa Teste de uso: conferência não terminou.</p><p class="texto">A pesquisa na web encontrou 5 projetos parecidos: Lexplore (Lexplore School / Lexplore Home), EyeLearn, DyutiPath, AKSHAR e Aprendizagem Guiada.</p>
+<h2 class="segundo">Pontos de atenção</h2>
+<p class="vazio">Nenhum ponto de atenção.</p>
+</section>
+<p class="apagado detalhes-titulo">Detalhes e evidências · abra a parte que quiser conferir</p>
+<section class="parte" id="parte-roteiro">
+<details><summary><h2>Roteiro de 2 minutos</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-declaracoes">
+<details><summary><h2>Declarações da equipe</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-nao_declarado">
+<details><summary><h2>Usado e não declarado</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-uso">
+<details><summary><h2>Teste de uso</h2><span class="contagem">1 registro</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Deploy responde</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">–</span>não informado</span></p>
+
+
+
+</article></div>
+</details>
+</section><section class="parte" id="parte-ia">
+<details><summary><h2>Uso de IA</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-linha_do_tempo">
+<details><summary><h2>Linha do tempo</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-origem">
+<details><summary><h2>Origem do código</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-parecidos">
+<details><summary><h2>Projetos parecidos no mundo</h2><span class="contagem">5 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Lexplore (Lexplore School / Lexplore Home)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Avaliação de leitura no navegador que usa a webcam do computador para acompanhar os olhos e o microfone para registrar a voz enquanto o aluno lê, e gera um perfil de leitura para escolas ou famílias.</p>
+<p class="obs">Em comum: Usa webcam comum e voz no navegador para medir a leitura de textos curtos, com perguntas sobre o texto, para escolas e famílias. As páginas dizem que o resultado não diagnostica dislexia nem substitui a avaliação de especialista. Diferente: Compara o aluno com normas por idade e indica próximos passos e práticas; a versão para famílias custa €29, mostra inglês e sueco como opções e informa que os dados de olhar e voz são armazenados na UE/EEE.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://lexplore.com/lexplore-assessment" target="_blank" rel="noopener noreferrer">https://lexplore.com/lexplore-assessment</a></li><li><a class="mono quebra" href="https://lexplore.com/flex" target="_blank" rel="noopener noreferrer">https://lexplore.com/flex</a></li><li><a class="mono quebra" href="https://info.lexplore.com/en/support/guide-web-assessment" target="_blank" rel="noopener noreferrer">https://info.lexplore.com/en/support/guide-web-assessment</a></li></ul>
+</article><article class="bloco">
+<header><h3>EyeLearn</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Projeto acadêmico brasileiro que acompanha com a câmera comum o olhar de crianças de 7 a 10 anos durante a leitura e descreve padrões de leitura para o professor, sem fazer diagnóstico.</p>
+<p class="obs">Em comum: Interface em português, rastreamento do olhar com calibração e processamento das imagens no aparelho, medidas como fixações e regressões, relatórios em PDF e uso do conjunto de dados ETDD70. Diferente: A criança lê no celular como tarefa de casa e não vê os resultados, que vão para um painel do professor; a página não menciona análise de voz.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/Tonbarbos/EyeLearn" target="_blank" rel="noopener noreferrer">https://github.com/Tonbarbos/EyeLearn</a></li></ul>
+</article><article class="bloco">
+<header><h3>DyutiPath</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Ferramenta gratuita de triagem para crianças do ensino fundamental que usa minijogos, com webcam e voz, para apontar possíveis sinais de dislexia, disgrafia e outras diferenças do neurodesenvolvimento.</p>
+<p class="obs">Em comum: Usa a webcam no navegador para detectar fixações e retornos do olhar na leitura, processa tudo no aparelho, gera resumos para imprimir e se apresenta como apoio que não substitui avaliação clínica. Diferente: É voltada a tablet, com cerca de 15 minutos de minijogos (pseudopalavras, nomeação rápida, escrita), usa voz em inglês e hindi e gera pontuações de triagem.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://www.producthunt.com/products/dyutipath" target="_blank" rel="noopener noreferrer">https://www.producthunt.com/products/dyutipath</a></li></ul>
+</article><article class="bloco">
+<header><h3>AKSHAR</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Aplicativo web que ajuda pais a perceber possíveis sinais de dislexia em crianças por meio de um questionário de triagem e de um teste de leitura com rastreamento do olhar.</p>
+<p class="obs">Em comum: Rastreamento do olhar pelo navegador (WebGazer.js) durante a leitura e relatório em PDF para levar adiante. Diferente: Voltado a pais de crianças de 5 a 12 anos, com textos e relatórios gerados por IA (Gemini); a página não menciona análise de voz.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/gezzStack/akshar" target="_blank" rel="noopener noreferrer">https://github.com/gezzStack/akshar</a></li></ul>
+</article><article class="bloco">
+<header><h3>Aprendizagem Guiada</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Projeto do programa Centelha em Roraima que usa rastreamento ocular para identificar as palavras em que a pessoa tem dificuldade na leitura e aplica uma intervenção multissensorial.</p>
+<p class="obs">Em comum: Acompanha o movimento dos olhos durante a leitura em português, no Brasil, com foco em dislexia e em estudantes. Diferente: Usa um equipamento de rastreamento ocular importado, ligado a um computador, e inclui terapia além da identificação das dificuldades.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://news.confap.org.br/projeto-utiliza-dispositivo-de-rastreamento-ocular-para-identificar-transtornos-de-aprendizagem/" target="_blank" rel="noopener noreferrer">https://news.confap.org.br/projeto-utiliza-dispositivo-de-rastreamento-ocular-para-identificar-transtornos-de-aprendizagem/</a></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-arquitetura">
+<details><summary><h2>Arquitetura</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-higiene">
+<details><summary><h2>Submissão e segredos</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section>
+<section class="parte" id="parte-nao_verificado">
+<details><summary><h2>Não foi possível verificar</h2><span class="contagem">5 registros</span></summary>
+<div class="conteudo"><ul class="nao-verificado"><li><strong>Commit de corte</strong><p>repositório sem acesso: lucasrabay/dyssolution</p></li><li><strong>Registro do GitHub</strong><p>repositório sem acesso: lucasrabay/dyssolution</p></li><li><strong>Leitura do código</strong><p>a etapa falhou</p></li><li><strong>Promessas da equipe</strong><p>a etapa falhou</p></li><li><strong>Teste de uso</strong><p>a etapa falhou</p></li></ul></div>
+</details>
+</section>
+<footer class="parte rodape" id="como-foi-gerado">
+<details><summary><h2>Como este relatório foi gerado</h2></summary>
+<div class="conteudo">
+<div class="rolagem"><table>
+<thead><tr><th scope="col">Etapa</th><th scope="col">Situação</th><th scope="col">Duração</th><th scope="col">Onde parou</th></tr></thead>
+<tbody><tr><th scope="row">Build</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Composição do repositório</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Cópia entre equipes</th><td>concluída</td><td class="mono">7 s</td><td></td></tr><tr><th scope="row">Commit de corte</th><td>não concluída</td><td class="mono">1 s</td><td>lendo lucasrabay/dyssolution no GitHub<span class="detalhe">repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Deploy</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Sinais de fachada no código</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Registro do GitHub</th><td>não concluída</td><td class="mono">1 s</td><td>lendo lucasrabay/dyssolution no GitHub<span class="detalhe">repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Leitura do código</th><td>não concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Leitura do código: conferência</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência leitor: dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Linha do tempo</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Promessas da equipe</th><td>não concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Promessas da equipe: conferência</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência promessas: dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Segredos versionados</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Projetos parecidos</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Projetos parecidos: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Requisitos de submissão</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr><tr><th scope="row">Teste de uso</th><td>não concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Teste de uso: conferência</th><td>não concluída</td><td class="mono">0 s</td><td><span class="detalhe">dependência uso: dependência promessas.conferido: dependência promessas: dependência corte: repositório sem acesso: lucasrabay/dyssolution</span></td></tr></tbody>
+</table></div>
+<p><span class="mono">0</span> afirmações descartadas por falta de prova.</p>
+</div>
+</details>
+<p class="frase">Este relatório registra fatos e evidências. Não dá nota e não substitui a avaliação dos jurados.</p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,2858 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "repasse",
+    "nome": "Repasse",
+    "numero": 12,
+    "track": "Saúde",
+    "repo": "https://github.com/VitorMendonca62/hack-ia-brasil",
+    "demo": "https://hack-ia-brasil.vercel.app/",
+    "video": "https://youtu.be/RsC5-jFeS9k",
+    "resumo": "Um agente de IA, integrado ao prontuário que o hospital já usa, que escuta o enfermeiro durante a evolução e a passagem de plantão, gera o resumo e, depois que ele confirma, envia para quem assume o turno. Isso reduz as falhas que fazem hospitais privados perderem dinheiro com altas atrasadas e perdas no faturamento."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.488Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "3b397218b425a206b62404f9644a5d4d067d993c",
+    "commit_em": "2026-11-28T18:06:32Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6240,
+          "preparo_ms": 0,
+          "execucao_ms": 734
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5,
+          "preparo_ms": 0,
+          "execucao_ms": 2548
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6075,
+          "preparo_ms": 0,
+          "execucao_ms": 13632
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6185,
+          "preparo_ms": 0,
+          "execucao_ms": 612
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6141,
+          "preparo_ms": 0,
+          "execucao_ms": 1793
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 56
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1844,
+          "preparo_ms": 0,
+          "execucao_ms": 217
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 17
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6566,
+          "preparo_ms": 0,
+          "execucao_ms": 1093
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6488,
+          "preparo_ms": 0,
+          "execucao_ms": 922
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "falhou",
+      "erro": "A tela mostrou \"Paciente leito 3 não encontrado\" e \"Abrindo o prontuário…\"."
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra https://hack-ia-brasil.vercel.app/",
+      "esperado": "A tela inicial mostra \"Boa noite, Paula.\", os leitos 3 e 5 e o rascunho EN-3 do leito 3 em \"Para conferir e assinar\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Em \"Entrar como\", clique em Paula (noite)",
+      "esperado": "A sessão fica como Enf. Paula Martins, turno Noturno 19:00–07:00; o botão já vinha selecionado.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Clique em Agente, digite no campo \"Mensagem para o agente\" \"Evolução do leito 3, às 5h: paciente dormiu após reorientação, PA 130 por 80, FC 88, temperatura 37,8, saturação 93% em ar ambiente. Fica em jejum a partir das 6h para tomografia. Pendente coletar hemocultura.\" e tecle Enter",
+      "esperado": "O agente respondeu \"Registrei EN-4 em rascunho. Confira e assine.\" e listou a ação registrar_evolucao no leito 3. A entrada foi por texto, não por áudio.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Clique em Início, abra o card Leito 3 · José Carlos Ferreira e clique em Assinar no registro EN-3",
+      "esperado": "EN-3, que já estava em rascunho quando o teste começou, passou a mostrar \"Assinado\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Na tela do leito 3, clique em \"Como está o leito 3?\"",
+      "esperado": "Apareceu \"Resumo do leito 3: 4 pontos.\", cada ponto com códigos de registro (EN-1, EN-3, EN-2, EX-2, NU-2, PR-3, EN-4).",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique em Agente e depois em \"Como está o leito 5?\"",
+      "esperado": "Apareceu \"Resumo do leito 5: 2 pontos.\" com fontes EV-2, EN-1 e NU-1. O texto difere do resumo do leito 3.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Clique em Passar plantão, digite \"Vou passar o plantão para o Marcos. Leito 3, seu José: acordou confuso às 3h e tentou levantar sozinho, grades elevadas. Fica em jejum a partir das 6h. Pendente coletar hemocultura.\" e tecle Enter",
+      "esperado": "Apareceu \"Passagem de plantão detectada: Paula → Marcos\" e \"Passagem PS-1 entregue\", com os leitos 3 e 5. A entrega ocorreu sem pedido de confirmação.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-10",
+      "n": 10,
+      "acao": "No menu, clique em Marcos (dia) e depois em Receber",
+      "esperado": "A tela mostra \"Enf. Paula Martins passou 2 pacientes\", o leito 3 como \"Atenção\" e o leito 5 como \"Estável\", ambos aguardando ciente. O leito 5, não citado na fala, não traz a marca \"não mencionado no áudio\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-11",
+      "n": 11,
+      "acao": "Na passagem, clique no ponto \"Jejum a partir das 6h para tomografia.\" para conferir a fonte",
+      "esperado": "Abriu o prontuário do leito 3 com o trecho destacado no registro EN-4, que continuava como \"Rascunho do agente · confira antes\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-12",
+      "n": 12,
+      "acao": "Volte a Receber e clique em \"Ouvir o que Paula falou (transcrição)\"",
+      "esperado": "Abriu o texto da passagem digitada no passo 9. Não apareceu player de áudio, e a entrada foi por texto.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-12.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-12.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-13",
+      "n": 13,
+      "acao": "No campo \"Sua síntese\", digite \"Leito 3 teve confusão noturna: manter grades, jejum a partir das 6h e coletar hemocultura primeiro. Leito 5 estável.\" e clique em Dar ciente",
+      "esperado": "A passagem passou a mostrar \"Ciente às 16:28 · Paula foi avisada\" e \"Ciente: Enf. Marcos Oliveira\" no paciente.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-13.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-13.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/BotaoFalar.tsx",
+          "linha": 95,
+          "linha_fim": null,
+          "trecho": "const rec = new MediaRecorder(stream, tipo ? { mimeType: tipo } : undefined)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/BotaoFalar.tsx#L95",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/Celular.tsx",
+          "linha": 129,
+          "linha_fim": null,
+          "trecho": "enviar(() => falar(audio, dados), true)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/Celular.tsx#L129",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 43,
+          "linha_fim": null,
+          "trecho": "a integração com um número de WhatsApp de verdade fica para depois do hackathon.",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L43",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A aba que representa o canal de mensagens é um componente React que chama a mesma API.",
+      "existe": "Gravação de áudio no app web, enviada para `POST /voz`; a aba Bot (celular) da própria central também grava áudio.",
+      "falta": "Integração com o WhatsApp: não há código que receba mensagens ou áudios de um número de WhatsApp; o README diz que isso fica para depois do hackathon.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Ela grava a evolução do paciente por áudio, no app ou pelo WhatsApp.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Ela grava a evolução do paciente por áudio, no app ou pelo WhatsApp.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "Com entrada por texto, o agente identificou o leito 3 e criou o rascunho EN-4 em parágrafo corrido; não apareceram campos separados de sinais vitais, intercorrências, alertas e pendências. A transcrição de áudio não foi exercitada."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/voz.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "texto = await transcrever(dados, arquivo.filename or \"audio.webm\", vocabulario)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/voz.py#L46",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "def resolver_paciente(referencia: str) -> tuple[str | None, str]:",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L71",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 150,
+          "linha_fim": null,
+          "trecho": "corpo = texto + (f\"\\n\\nDitado: {ditado}\" if ditado else \"\")",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L150",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/prompts/assistente.md",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "Reescreva o ditado em linguagem de enfermagem, em frases curtas",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/prompts/assistente.md#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "O prompt do agente pede para reescrever o ditado em frases curtas, sem categorias.",
+      "existe": "Transcrição pela ElevenLabs, identificação do paciente por leito ou nome, e registro da evolução como texto reescrito pelo modelo seguido do ditado.",
+      "falta": "Organização da fala em campos de sinais vitais, intercorrências, alertas e pendências: o registro tem um campo `texto` único, e a nota de passagem usa gravidade, resumo, pontos, ações e contingências.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O agente transcreve, identifica o leito, organiza a fala em sinais vitais, intercorrências, alertas e pendências",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "O agente transcreve, identifica o leito, organiza a fala em sinais vitais, intercorrências, alertas e pendências",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "contradita",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 151,
+          "linha_fim": null,
+          "trecho": "registro = prontuario.adicionar_registro(",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L151",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 155,
+          "linha_fim": null,
+          "trecho": "\"status\": \"rascunho\",",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L155",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/prontuario.py",
+          "linha": 87,
+          "linha_fim": null,
+          "trecho": "salvar(paciente_id)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/prontuario.py#L87",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/prontuario.py",
+          "linha": 132,
+          "linha_fim": null,
+          "trecho": "registro.status = \"assinado\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/prontuario.py#L132",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "A tela mostra o registro como rascunho até a assinatura.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": "A tool grava a evolução no JSON do prontuário assim que o agente a chama, antes de qualquer confirmação, com status `rascunho`. A assinatura do enfermeiro depois muda o status para `assinado`.",
+      "onde_procurou": [],
+      "citacao": "só registra no prontuário depois que ela confirma.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "só registra no prontuário depois que ela confirma.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "O agente reconheceu a troca Paula → Marcos e entregou a passagem PS-1 sem pedir confirmação."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/prompts/assistente.md",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "É passagem de plantão quando ele diz que está passando ou entregando o plantão",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/prompts/assistente.md#L22",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/prompts/assistente.md",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "Se a preparação der certo, chame `entregar_passagem` com o id da passagem.",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/prompts/assistente.md#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/test_voz.py",
+          "linha": 109,
+          "linha_fim": null,
+          "trecho": "assert dados[\"passagem\"][\"status\"] == \"entregue\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/tests/test_voz.py#L109",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 381,
+          "linha_fim": null,
+          "trecho": "A passagem sempre pede confirmação: o agente só cria rascunhos",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/App.tsx#L381",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "A tela de passagem exibe o texto 'A passagem sempre pede confirmação' e o associa ao ciente de quem assume.",
+      "existe": "O prompt do agente descreve quando a fala é passagem de plantão, e o botão 'Passar plantão' envia `modo: passagem`.",
+      "falta": "Pedido de confirmação a quem sai: o prompt manda chamar `entregar_passagem` logo após a preparação, e o teste do fluxo termina com status `entregue` na mesma requisição. A confirmação encontrada é o ciente de quem recebe.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Quando ela diz que vai passar o plantão, o agente reconhece a troca, pede confirmação",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Quando ela diz que vai passar o plantão, o agente reconhece a troca, pede confirmação",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 127,
+          "linha_fim": null,
+          "trecho": "*[nota_paciente(pid, pid in paciente_ids, transcricao, audio_id) for pid in leitos]",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L127",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/MeuPlantao.tsx",
+          "linha": 81,
+          "linha_fim": null,
+          "trecho": ".sort((a, b) => PESO[a.registro?.nota?.gravidade_geral ?? 'estavel']",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/MeuPlantao.tsx#L81",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/Celular.tsx",
+          "linha": 389,
+          "linha_fim": null,
+          "trecho": "{passagem.pacientes.map((p) => {",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/Celular.tsx#L389",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Uma nota por leito da escala de quem sai; a tela Receber ordena por três níveis (instável, atenção, estável), e a aba Bot lista na ordem da passagem, sem ordenar.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "monta um resumo por paciente, do mais instável ao mais estável.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "monta um resumo por paciente, do mais instável ao mais estável.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A passagem chegou a Marcos com botão Dar ciente, mas o trecho de áudio por paciente não pôde ser testado porque a entrada foi por texto."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/NotaPassagem.tsx",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "Na passagem falada: “<mark>{f.trecho}</mark>”",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/NotaPassagem.tsx#L59",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/MeuPlantao.tsx",
+          "linha": 117,
+          "linha_fim": null,
+          "trecho": "<summary>Ouvir o que {primeiroNome(nome(ps.de))} falou (transcrição)</summary>",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/MeuPlantao.tsx#L117",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/MeuPlantao.tsx",
+          "linha": 162,
+          "linha_fim": null,
+          "trecho": "Dar ciente",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/MeuPlantao.tsx#L162",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/voz.py",
+          "linha": 38,
+          "linha_fim": null,
+          "trecho": "dados = await arquivo.read()",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/voz.py#L38",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "O bloco 'Ouvir o que ... falou (transcrição)' mostra texto.",
+      "existe": "A passagem vai para a caixa de quem assume, com botão de ciente e, nos pontos que têm fonte de áudio, o trecho em texto da transcrição.",
+      "falta": "Trecho de áudio de cada paciente: a rota lê o arquivo para transcrever e não o guarda, e não há player de áudio na tela.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Esse resumo vai para a enfermeira que assume, com o trecho de áudio de cada paciente e um botão para confirmar o recebimento.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Esse resumo vai para a enfermeira que assume, com o trecho de áudio de cada paciente e um botão para confirmar o recebimento.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_encontrada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 211,
+          "linha_fim": null,
+          "trecho": "Login de verdade e integração com o prontuário do hospital (HL7 FHIR, MV, Tasy).",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L211",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/prontuario.py",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "PASTA_DADOS = Path(__file__).resolve().parents[2] / \"data\" / \"pacientes\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/prontuario.py#L10",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "O prontuário usado é um conjunto de arquivos JSON em `data/pacientes/`; o README lista a integração com o prontuário do hospital como fora do protótipo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [
+        "backend/app/ (prontuario.py, main.py, config.py)",
+        "frontend/src/api.ts",
+        "backend/pyproject.toml",
+        "busca no repositório por: FHIR, HL7, Tasy, MV, webhook"
+      ],
+      "citacao": "funciona integrado ao prontuário que o hospital já usa.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "funciona integrado ao prontuário que o hospital já usa.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "O resumo trouxe pontos com códigos de registro, mas tocar num ponto mostrou \"Paciente leito 3 não encontrado\" em vez do trecho de origem."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 175,
+          "linha_fim": null,
+          "trecho": "bruto = await gerar_json_async(prompt, SaidaResumo)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L175",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 178,
+          "linha_fim": null,
+          "trecho": "fontes = prontuario.fontes_validas(paciente_id, ponto.get(\"fontes\", []))",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L178",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/RespostaVoz.tsx",
+          "linha": 76,
+          "linha_fim": null,
+          "trecho": "onClick={() => onSelecionarFonte(ponto.fontes, r.pacienteId)}",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/RespostaVoz.tsx#L76",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "`resumir_paciente` pede ao modelo pontos com fontes e mantém só os pontos cujo trecho existe no registro citado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "\"Como está o leito 3?\" devolve um resumo curto, em que cada ponto cita o trecho do prontuário de onde saiu.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "\"Como está o leito 3?\" devolve um resumo curto, em que cada ponto cita o trecho do prontuário de onde saiu.",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L10",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 98,
+          "linha_fim": null,
+          "trecho": "bruto = await llm.gerar_json_async(montar_prompt(paciente_id, fala, audio_id), NotaModelo)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L98",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 171,
+          "linha_fim": null,
+          "trecho": "passagem.status = \"entregue\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L171",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 197,
+          "linha_fim": null,
+          "trecho": "passagem.status = \"ciente\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L197",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "O prompt de cada nota junta os registros do paciente e a fala; a passagem tem estados rascunho, entregue e ciente.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O sistema escreve uma nota I-PASS por paciente, juntando o áudio com o prontuário, e entrega para quem assume, que dá ciente.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "O sistema escreve uma nota I-PASS por paciente, juntando o áudio com o prontuário, e entrega para quem assume, que dá ciente.",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L11",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "A fala citou só o leito 3, e a nota do leito 5 não trouxe a marca \"não mencionado no áudio\"."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 99,
+          "linha_fim": null,
+          "trecho": "resumo = bruto[\"resumo\"] if mencionado else f\"Não mencionado no áudio. {bruto['resumo']}\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L99",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/NotaPassagem.tsx",
+          "linha": 82,
+          "linha_fim": null,
+          "trecho": "{mencionado === false && <span className=\"chip\">Não mencionado no áudio</span>}",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/NotaPassagem.tsx#L82",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "O código prefixa o resumo e a tela mostra o selo; quais leitos foram citados vem do argumento `paciente_ids` preenchido pelo modelo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Os pacientes que não foram citados na fala aparecem marcados como \"não mencionado no áudio\".",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "Os pacientes que não foram citados na fala aparecem marcados como \"não mencionado no áudio\".",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L11",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/prontuario.py",
+          "linha": 110,
+          "linha_fim": null,
+          "trecho": "ok = bool(fonte.trecho.strip()) and normalizar(fonte.trecho) in normalizar(transcricao)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/prontuario.py#L110",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/prontuario.py",
+          "linha": 112,
+          "linha_fim": null,
+          "trecho": "ok = trecho_existe(paciente_id, fonte.registro_id, fonte.trecho)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/prontuario.py#L112",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "if fontes:",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "contingencias=bruto[\"contingencias\"],",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L105",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "A checagem vale para `pontos` e `acoes`; os campos `resumo` e `contingencias` da nota de passagem são texto do modelo sem fontes.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O código confere cada trecho: no texto do registro ou, quando a fonte é o áudio (`AUDIO-PS-n`), na transcrição. Ponto sem fonte válida não aparece.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 47,
+        "linha_fim": null,
+        "trecho": "O código confere cada trecho: no texto do registro ou, quando a fonte é o áudio (`AUDIO-PS-n`), na transcrição. Ponto sem fonte válida não aparece.",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L47",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "contradita",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 194,
+          "linha_fim": null,
+          "trecho": "async def preparar_passagem(para: str, paciente_ids: list[str], config: RunnableConfig):",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L194",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/prompts/assistente.md",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "Descubra o id de quem assume com `listar_enfermeiros`",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/prompts/assistente.md#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 114,
+          "linha_fim": null,
+          "trecho": "if para not in escala:",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L114",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 146,
+          "linha_fim": null,
+          "trecho": "autor = enfermeiros.enfermeiro(sessao.get(\"enfermeiro_id\", \"\")).nome",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L146",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "O prompt manda o modelo descobrir o id de quem assume e escolher o nome mais parecido.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": "O autor do registro e quem passa o plantão vêm da sessão. Quem recebe é o argumento `para` da tool `preparar_passagem`, preenchido pelo modelo; o código confere se o id está na escala e é diferente de quem passa.",
+      "onde_procurou": [],
+      "citacao": "O autor do registro, quem passa e quem recebe o plantão vêm da sessão, nunca do modelo.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 49,
+        "linha_fim": null,
+        "trecho": "O autor do registro, quem passa e quem recebe o plantão vêm da sessão, nunca do modelo.",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L49",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/Mensagens.tsx",
+          "linha": 41,
+          "linha_fim": null,
+          "trecho": "onAtualizar={() => setVersao((v) => v + 1)}",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/Mensagens.tsx#L41",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/Celular.tsx",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "const timer = setInterval(olhar, 3000)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/Celular.tsx#L70",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 177,
+          "linha_fim": null,
+          "trecho": "lista = [p for p in _passagens.values() if p.para == enfermeiro_id and p.status != \"rascunho\"]",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L177",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/MeuPlantao.tsx",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "Ciente às {ps.ciente_em} · {primeiroNome(nome(ps.de))} foi avisada",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/MeuPlantao.tsx#L96",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "A tela Receber mostra o texto 'foi avisada' após o ciente; não há código de notificação para quem passou.",
+      "existe": "Na aba Bot, a central recarrega o prontuário após uma resposta, assinatura ou ciente, e cada celular consulta a cada 3 s as passagens destinadas a ele.",
+      "falta": "Atualização no celular do outro para evoluções, assinaturas e ciente: o celular só busca passagens em que o seu usuário é o destinatário.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O que um faz pelo celular aparece na hora no prontuário e no celular do outro.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 43,
+        "linha_fim": null,
+        "trecho": "O que um faz pelo celular aparece na hora no prontuário e no celular do outro.",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L43",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "return create_react_agent(llm or get_llm(), FERRAMENTAS, prompt=PROMPT_ASSISTENTE)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 51,
+          "linha_fim": null,
+          "trecho": "estado = await (agente or montar()).ainvoke({\"messages\": [(\"user\", fala)]}, config)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L51",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "O agente é montado com sete tools e invocado nas rotas `/voz` e `/voz/texto`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "agente LangGraph (create_react_agent) que decide quais tools chamar",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 188,
+        "linha_fim": null,
+        "trecho": "agente LangGraph (create_react_agent) que decide quais tools chamar",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L188",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "api_key=s.openai_api_key,",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L27",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "return create_react_agent(llm or get_llm(), FERRAMENTAS, prompt=PROMPT_ASSISTENTE)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "A chave é passada ao `ChatOpenAI`, usado pelo agente e também nas saídas estruturadas de resumo e passagem.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Chave da OpenAI, usada pelo agente",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 82,
+        "linha_fim": null,
+        "trecho": "Chave da OpenAI, usada pelo agente",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L82",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "headers={\"xi-api-key\": s.elevenlabs_api_key.get_secret_value()},",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/voz.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "texto = await transcrever(dados, arquivo.filename or \"audio.webm\", vocabulario)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/voz.py#L46",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "Requisição HTTP para a API speech-to-text da ElevenLabs, chamada por `POST /voz`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Chave da ElevenLabs, usada para transcrever o áudio (`POST /voz`)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 84,
+        "linha_fim": null,
+        "trecho": "Chave da ElevenLabs, usada para transcrever o áudio (`POST /voz`)",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L84",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 86,
+          "linha_fim": null,
+          "trecho": "if saida is None or saida.status == \"error\":",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L86",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "AcaoVoz(tool=chamada[\"name\"], argumentos=chamada[\"args\"], resultado=resultado)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L91",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "`acoes` é montado a partir das chamadas de tool nas mensagens do agente; chamadas sem saída ou com erro ficam de fora.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O campo `acoes` lista as tools que o agente chamou de verdade.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 175,
+        "linha_fim": null,
+        "trecho": "O campo `acoes` lista as tools que o agente chamou de verdade.",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L175",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/prontuario.py",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "_arquivos[paciente_id].write_text(texto, encoding=\"utf-8\")",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/prontuario.py#L52",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "_passagens: dict[str, Passagem] = {}",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L26",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/enfermeiros.py",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "ARQUIVO = Path(__file__).resolve().parents[2] / \"data\" / \"enfermeiros.json\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/enfermeiros.py#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "Pacientes e escala são lidos de arquivos JSON, os registros são regravados no arquivo do paciente e as passagens ficam em um dicionário.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Sem banco: os pacientes e a escala vêm de `data/`. Os registros novos são gravados de volta no JSON do paciente; as passagens ficam em memória.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 198,
+        "linha_fim": null,
+        "trecho": "Sem banco: os pacientes e a escala vêm de `data/`. Os registros novos são gravados de volta no JSON do paciente; as passagens ficam em memória.",
+        "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L198",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://hack-ia-brasil.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://hack-ia-brasil.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 294 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra https://hack-ia-brasil.vercel.app/",
+      "observado": "A tela inicial mostra \"Boa noite, Paula.\", os leitos 3 e 5 e o rascunho EN-3 do leito 3 em \"Para conferir e assinar\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Em \"Entrar como\", clique em Paula (noite)",
+      "observado": "A sessão fica como Enf. Paula Martins, turno Noturno 19:00–07:00; o botão já vinha selecionado.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Clique em Agente, digite no campo \"Mensagem para o agente\" \"Evolução do leito 3, às 5h: paciente dormiu após reorientação, PA 130 por 80, FC 88, temperatura 37,8, saturação 93% em ar ambiente. Fica em jejum a partir das 6h para tomografia. Pendente coletar hemocultura.\" e tecle Enter",
+      "observado": "O agente respondeu \"Registrei EN-4 em rascunho. Confira e assine.\" e listou a ação registrar_evolucao no leito 3. A entrada foi por texto, não por áudio.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em Início, abra o card Leito 3 · José Carlos Ferreira e clique em Assinar no registro EN-3",
+      "observado": "EN-3, que já estava em rascunho quando o teste começou, passou a mostrar \"Assinado\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Na tela do leito 3, clique em \"Como está o leito 3?\"",
+      "observado": "Apareceu \"Resumo do leito 3: 4 pontos.\", cada ponto com códigos de registro (EN-1, EN-3, EN-2, EX-2, NU-2, PR-3, EN-4).",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique no ponto do resumo que começa com \"Diurese reduzida\" para abrir a fonte",
+      "observado": "O endereço passou a #paciente-leito%203 e o prontuário não abriu.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "A tela mostrou \"Paciente leito 3 não encontrado\" e \"Abrindo o prontuário…\"."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em Agente e depois em \"Como está o leito 5?\"",
+      "observado": "Apareceu \"Resumo do leito 5: 2 pontos.\" com fontes EV-2, EN-1 e NU-1. O texto difere do resumo do leito 3.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Clique no ponto do resumo do leito 5 que começa com \"Dieta geral\"",
+      "observado": "O endereço passou a #paciente-leito%205 e o prontuário não abriu.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "A tela mostrou \"Paciente leito 5 não encontrado\" e \"Abrindo o prontuário…\"."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Clique em Passar plantão, digite \"Vou passar o plantão para o Marcos. Leito 3, seu José: acordou confuso às 3h e tentou levantar sozinho, grades elevadas. Fica em jejum a partir das 6h. Pendente coletar hemocultura.\" e tecle Enter",
+      "observado": "Apareceu \"Passagem de plantão detectada: Paula → Marcos\" e \"Passagem PS-1 entregue\", com os leitos 3 e 5. A entrega ocorreu sem pedido de confirmação.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "No menu, clique em Marcos (dia) e depois em Receber",
+      "observado": "A tela mostra \"Enf. Paula Martins passou 2 pacientes\", o leito 3 como \"Atenção\" e o leito 5 como \"Estável\", ambos aguardando ciente. O leito 5, não citado na fala, não traz a marca \"não mencionado no áudio\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "Na passagem, clique no ponto \"Jejum a partir das 6h para tomografia.\" para conferir a fonte",
+      "observado": "Abriu o prontuário do leito 3 com o trecho destacado no registro EN-4, que continuava como \"Rascunho do agente · confira antes\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-12",
+      "n": 12,
+      "acao": "Volte a Receber e clique em \"Ouvir o que Paula falou (transcrição)\"",
+      "observado": "Abriu o texto da passagem digitada no passo 9. Não apareceu player de áudio, e a entrada foi por texto.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-12.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-12.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-13",
+      "n": 13,
+      "acao": "No campo \"Sua síntese\", digite \"Leito 3 teve confusão noturna: manter grades, jejum a partir das 6h e coletar hemocultura primeiro. Leito 5 estável.\" e clique em Dar ciente",
+      "observado": "A passagem passou a mostrar \"Ciente às 16:28 · Paula foi avisada\" e \"Ciente: Enf. Marcos Oliveira\" no paciente.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-13.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-13.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Mensagem só com espaços no campo do agente, seguida de Enter",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela não mudou e nenhuma requisição POST foi enviada; não apareceu mensagem de validação."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: \"Como está o leito 99?\" (leito que não está na lista)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O agente respondeu que não encontrou o leito 99 e citou os leitos 3 e 5 como existentes."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Texto de 21.000 caracteres (\"Como está o leito 3?\" repetido 1.000 vezes)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O texto foi aceito sem aviso de limite e o agente devolveu um resumo do leito 3 com 5 pontos, sem erro na tela."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Gravação de evolução e de passagem por áudio",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O ambiente de teste não tem microfone com fala nem arquivo de áudio; as entradas foram digitadas."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-2",
+      "rotulo": "Canal WhatsApp",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende de número de telefone real; não foi exercitado."
+      },
+      "evidencias": []
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "OpenAI",
+              "backend/app/assistente.py",
+              5
+            ],
+            [
+              "LangChain",
+              "backend/app/assistente.py",
+              6
+            ],
+            [
+              "LangChain",
+              "backend/app/assistente.py",
+              7
+            ],
+            [
+              "LangChain",
+              "backend/app/assistente.py",
+              8
+            ],
+            [
+              "LangChain",
+              "backend/app/ferramentas.py",
+              9
+            ],
+            [
+              "LangChain",
+              "backend/app/ferramentas.py",
+              10
+            ],
+            [
+              "OpenAI",
+              "backend/app/llm.py",
+              4
+            ],
+            [
+              "LangChain",
+              "backend/app/llm.py",
+              5
+            ],
+            [
+              "ElevenLabs",
+              "backend/app/llm.py",
+              10
+            ],
+            [
+              "LangChain",
+              "backend/app/graph/state.py",
+              3
+            ],
+            [
+              "OpenAI",
+              "backend/app/graph/workflow.py",
+              3
+            ],
+            [
+              "LangChain",
+              "backend/app/graph/workflow.py",
+              4
+            ],
+            [
+              "LangChain",
+              "backend/app/graph/workflow.py",
+              5
+            ],
+            [
+              "LangChain",
+              "backend/app/graph/workflow.py",
+              6
+            ],
+            [
+              "LangChain",
+              "backend/tests/conftest.py",
+              5
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "import openai",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L5",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "from langchain_core.messages import AIMessage, ToolMessage",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L6",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "from langgraph.errors import GraphRecursionError",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L7",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "from langgraph.prebuilt import create_react_agent",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L8",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "from langchain_core.runnables import RunnableConfig",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L9",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "from langchain_core.tools import ToolException, tool",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L10",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "import openai",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L4",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "from langchain_openai import ChatOpenAI",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L5",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "URL_ELEVENLABS = \"https://api.elevenlabs.io/v1/speech-to-text\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L10",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/graph/state.py",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "from langgraph.graph.message import add_messages",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/graph/state.py#L3",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/graph/workflow.py",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "import openai",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/graph/workflow.py#L3",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/graph/workflow.py",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "from langchain_core.language_models import BaseChatModel",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/graph/workflow.py#L4",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/graph/workflow.py",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "from langchain_core.messages import SystemMessage",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/graph/workflow.py#L5",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/graph/workflow.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "from langgraph.graph import END, START, StateGraph",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/graph/workflow.py#L6",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/conftest.py",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "from langchain_core.language_models import FakeListChatModel",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/tests/conftest.py#L5",
+          "conferida": "script"
+        }
+      ],
+      "obs": "Mostrando 15 de 24 linhas encontradas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a OpenAI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 51,
+          "linha_fim": null,
+          "trecho": "estado = await (agente or montar()).ainvoke({\"messages\": [(\"user\", fala)]}, config)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L51",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "return ChatOpenAI(",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L25",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Agente ReAct (LangGraph) que interpreta a fala e escolhe as tools; o modelo vem de `OPENAI_MODEL`."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a OpenAI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 175,
+          "linha_fim": null,
+          "trecho": "bruto = await gerar_json_async(prompt, SaidaResumo)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L175",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Resumo de um paciente em pontos com fontes, em saída estruturada."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a OpenAI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 98,
+          "linha_fim": null,
+          "trecho": "bruto = await llm.gerar_json_async(montar_prompt(paciente_id, fala, audio_id), NotaModelo)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L98",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Nota I-PASS por paciente na passagem de plantão, uma chamada por leito da escala."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a ElevenLabs",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "r = await cliente.post(",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L59",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/config.py",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "elevenlabs_transcribe_model: str = \"scribe_v1\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/config.py#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "scribe_v1",
+      "obs": "Transcrição do áudio enviado a `POST /voz`; o modelo é o padrão da configuração."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a OpenAI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/graph/workflow.py",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "resposta = await llm.ainvoke(mensagens)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/graph/workflow.py#L17",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "result = await graph.ainvoke({\"messages\": [(\"user\", req.message)]})",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/main.py#L46",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Rota `/chat`, um grafo de um nó; o README a descreve como teste fora da demo."
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "27/11 21:01",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/VitorMendonca62/hack-ia-brasil",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "github:push-forcado",
+      "rotulo": "Push forçado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Horário",
+            "Branch",
+            "Commit"
+          ],
+          "linhas": [
+            [
+              "28/11 10:49",
+              "claude/trusting-edison-r9d4bg",
+              "571b69f"
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/VitorMendonca62/hack-ia-brasil",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:depois",
+      "rotulo": "Commits depois do fim da janela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/VitorMendonca62/hack-ia-brasil/commit/542aac8f08ce26af53c5eaf134f5d54cd84b9e7c",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/commit/542aac8f08ce26af53c5eaf134f5d54cd84b9e7c",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1 de 80 commits, o mais recente em 28/11 16:13",
+      "obs": null,
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:depois-do-corte",
+      "rotulo": "Commits depois do commit analisado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/VitorMendonca62/hack-ia-brasil/commit/542aac8f08ce26af53c5eaf134f5d54cd84b9e7c",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/commit/542aac8f08ce26af53c5eaf134f5d54cd84b9e7c",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1 commit, o mais recente em 28/11 16:13",
+      "obs": "não entram na análise do código",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Ambience Healthcare – Nursing Suite",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://hitconsultant.net/2026/06/23/ambience-healthcare-launches-inpatient-nursing-suite/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://hitconsultant.net/2026/06/23/ambience-healthcare-launches-inpatient-nursing-suite/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Gera, antes do turno, um resumo e um relatório de passagem de plantão a partir do prontuário, transforma a fala do enfermeiro em registros de flowsheet que ele confirma antes da gravação e responde perguntas sobre o prontuário com citação das fontes.",
+      "obs": "Em comum: É voltado à enfermagem hospitalar e reúne registro por voz com confirmação, resumo de passagem de plantão, perguntas ao prontuário com fontes e escrita no prontuário eletrônico. Diferente: Na página, o relatório de passagem sai do prontuário, sem ditado do enfermeiro. Ela não menciona WhatsApp, envio do resumo com áudio a quem assume nem confirmação de recebimento."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Voice Shift Handoff (phantomas34)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/phantomas34/voice-shift-handoff",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/phantomas34/voice-shift-handoff",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "O enfermeiro que sai liga e fala sobre cada paciente; o sistema cruza a fala com dados do prontuário, ordena por urgência, escreve uma passagem SBAR e a lê por telefone para quem assume.",
+      "obs": "Em comum: É voltado a enfermeiros de hospital: passagem de plantão ditada por voz, pacientes ordenados por urgência e resumo entregue a quem assume o turno. Diferente: O canal é a ligação telefônica, com dados sintéticos e sem integração com prontuário eletrônico. A confirmação por quem recebe aparece no README como próximo passo."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "evalmind (Eval)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://medicinasa.com.br/?p=162811",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://medicinasa.com.br/?p=162811",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Solução de IA integrada ao prontuário eletrônico para transcrição clínica, passagem de plantão e relatório de alta, com revisão do profissional antes da finalização.",
+      "obs": "Em comum: Funciona integrada ao prontuário, transcreve voz, gera resumos de passagem de plantão por paciente com pendências e prioridades e exige validação humana. Atua no mercado brasileiro. Diferente: Segundo o artigo, o resumo de plantão é derivado da base documental do prontuário, não da fala de quem sai. O texto não cita a enfermagem como público específico nem WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Oracle Health – Clinical AI Agent para enfermagem",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://hitconsultant.net/2026/09/14/oracle-health-launches-clinical-ai-agent-for-nurses-inpatient-ehr-documentation/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://hitconsultant.net/2026/09/14/oracle-health-launches-clinical-ai-agent-for-nurses-inpatient-ehr-documentation/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Converte o ditado do enfermeiro em campos estruturados do prontuário, produz resumos do turno para a passagem de plantão e permite consultar o prontuário por voz.",
+      "obs": "Em comum: É voltado à enfermagem de internação e junta registro por voz, resumo para a troca de turno e perguntas ao prontuário. Diferente: É um agente da Oracle Health para o prontuário eletrônico. O artigo não menciona etapa de confirmação pelo enfermeiro, WhatsApp, envio de áudio a quem assume nem ciente."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "ShiftWhisper",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://shiftwhisper.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://shiftwhisper.com/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "O enfermeiro dita atualizações ao longo do turno, o app as separa por quarto e gera passagens SBAR por paciente, que podem ser transferidas a quem assume por QR code.",
+      "obs": "Em comum: É voltado a enfermeiros: captura por voz, organização por paciente, resumo para a passagem de plantão e transferência para quem assume. Diferente: A página não menciona integração com prontuário eletrônico, confirmação de recebimento nem WhatsApp."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Markdown",
+              31,
+              2615
+            ],
+            [
+              "TypeScript",
+              18,
+              2227
+            ],
+            [
+              "Python",
+              26,
+              2141
+            ],
+            [
+              "CSS",
+              8,
+              1484
+            ],
+            [
+              "JSON",
+              9,
+              320
+            ],
+            [
+              "TOML",
+              1,
+              29
+            ],
+            [
+              "HTML",
+              1,
+              17
+            ]
+          ]
+        }
+      },
+      "obs": "104 arquivos de texto e 9377 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Central web (React)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 65,
+          "linha_fim": null,
+          "trecho": "export default function App() {",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/App.tsx#L65",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/App.tsx",
+          "frontend/src/BotaoFalar.tsx",
+          "frontend/src/MeuPlantao.tsx",
+          "frontend/src/api.ts"
+        ]
+      },
+      "obs": "Telas de início, paciente, agente, passagem, recebimento e escala, com gravação de áudio no navegador."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Aba Bot (celular)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/Mensagens.tsx",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "export default function Mensagens() {",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/frontend/src/Mensagens.tsx#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/Mensagens.tsx",
+          "frontend/src/Celular.tsx",
+          "frontend/src/Central.tsx"
+        ]
+      },
+      "obs": "Dois celulares desenhados na própria central, com a linha do tempo do prontuário no meio, usando a mesma API."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "API de voz (FastAPI)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/voz.py",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/voz\")",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/voz.py#L31",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=settings.app_name)",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/main.py#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/main.py",
+          "backend/app/voz.py"
+        ]
+      },
+      "obs": "Recebe áudio ou texto, transcreve quando há áudio e entrega a fala ao agente."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Agente e tools",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/assistente.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "async def responder(",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/assistente.py#L26",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ferramentas.py",
+          "linha": 232,
+          "linha_fim": null,
+          "trecho": "FERRAMENTAS = [",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/ferramentas.py#L232",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/assistente.py",
+          "backend/app/ferramentas.py",
+          "backend/prompts/assistente.md"
+        ]
+      },
+      "obs": "Agente LangGraph que chama tools para listar, ler, registrar, resumir e passar o plantão."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Passagem de plantão",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/passagem.py",
+          "linha": 110,
+          "linha_fim": null,
+          "trecho": "async def preparar(de: str, para: str, paciente_ids: list[str], transcricao: str) -> Passagem:",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/passagem.py#L110",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/passagem.py",
+          "backend/prompts/passagem.md"
+        ]
+      },
+      "obs": "Gera a nota I-PASS por leito, filtra pontos sem fonte, entrega e registra o ciente."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Prontuário em arquivos JSON",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/prontuario.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "def carregar():",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/prontuario.py#L26",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/prontuario.py",
+          "backend/app/enfermeiros.py",
+          "data/pacientes/leito3.json",
+          "data/enfermeiros.json"
+        ]
+      },
+      "obs": "Carrega e grava os registros dos pacientes, valida fontes e assina rascunhos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Acesso aos modelos",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "def get_llm() -> ChatOpenAI:",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L21",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/llm.py",
+          "backend/app/config.py"
+        ]
+      },
+      "obs": "Cria o cliente da OpenAI, pede saídas estruturadas e chama a transcrição da ElevenLabs."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "a tela de quem recebe e o canal WhatsApp",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 212,
+          "linha_fim": null,
+          "trecho": "O bot num número de WhatsApp de verdade: no protótipo ele é a aba Bot (celular).",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L212",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário lista o canal WhatsApp entre os itens do protótipo construído no hackathon.",
+              "O canal é a aba Bot (celular) da central web; o README diz que a integração com um número de WhatsApp fica para depois."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/05-relatorio-tecnico-voz-enfermagem.md",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "transcricao.py OpenAI audio.transcriptions (language=\"pt\")",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/docs/05-relatorio-tecnico-voz-enfermagem.md#L72",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "URL_ELEVENLABS = \"https://api.elevenlabs.io/v1/speech-to-text\"",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L10",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O relatório técnico em docs/ descreve a transcrição pela OpenAI (`audio.transcriptions`, em `transcricao.py`).",
+              "A transcrição é uma requisição à ElevenLabs em `llm.py`, como diz o README."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/05-relatorio-tecnico-voz-enfermagem.md",
+          "linha": 304,
+          "linha_fim": null,
+          "trecho": "`prompt` da transcrição com o vocabulário do prontuário",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/docs/05-relatorio-tecnico-voz-enfermagem.md#L304",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/llm.py",
+          "linha": 62,
+          "linha_fim": null,
+          "trecho": "data={\"model_id\": s.elevenlabs_transcribe_model, \"language_code\": \"por\"},",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/backend/app/llm.py#L62",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O relatório técnico em docs/ diz que o vocabulário do prontuário vai no `prompt` da transcrição.",
+              "`voz.py` monta o vocabulário e o passa a `transcrever`, mas a requisição à ElevenLabs envia só o modelo, o idioma e o arquivo."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Repasse — assistente de voz da enfermagem",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 220 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "## Como rodar",
+          "link": "https://github.com/VitorMendonca62/hack-ia-brasil/blob/3b397218b425a206b62404f9644a5d4d067d993c/README.md#L52",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Esse resumo vai para a enfermeira que assume, com o trecho de áudio de cada paciente e um botão para confirmar o recebimento.",
+      "motivo": "A passagem chegou a Marcos com botão Dar ciente, mas o trecho de áudio por paciente não pôde ser testado porque a entrada foi por texto.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Gravação de evolução e de passagem por áudio",
+      "motivo": "O ambiente de teste não tem microfone com fala nem arquivo de áudio; as entradas foram digitadas.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Canal WhatsApp",
+      "motivo": "Depende de número de telefone real; não foi exercitado.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

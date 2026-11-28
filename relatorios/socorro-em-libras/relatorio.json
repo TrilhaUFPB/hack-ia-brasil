@@ -1,0 +1,2599 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "socorro-em-libras",
+    "nome": "Socorro em Libras",
+    "numero": 7,
+    "track": "Saúde",
+    "repo": "https://github.com/hackaton-ia-brasil/hackatoooooooon",
+    "demo": null,
+    "video": "https://drive.google.com/drive/folders/1YBcZqKyGqyJdd7c9kfmtlCT7Xs8vWAJs",
+    "resumo": "App que permite a pessoas surdas pedir socorro ao 190, 192 e 193 sem ouvir nem falar: a pessoa toca em ícones e uma IA liga para a central e conversa por voz com o atendente em nome dela."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.491Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "e807aaa6057624234b1bcd31b42dcd571ca417e0",
+    "commit_em": "2026-11-28T18:31:28Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 43359,
+          "preparo_ms": 0,
+          "execucao_ms": 18619
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11992,
+          "preparo_ms": 0,
+          "execucao_ms": 579
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2158,
+          "preparo_ms": 0,
+          "execucao_ms": 2572
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 7098,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12178,
+          "preparo_ms": 0,
+          "execucao_ms": 507
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 7106,
+          "preparo_ms": 0,
+          "execucao_ms": 1979
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 68
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 918,
+          "preparo_ms": 0,
+          "execucao_ms": 234
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 128
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12456,
+          "preparo_ms": 0,
+          "execucao_ms": 434
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12598,
+          "preparo_ms": 0,
+          "execucao_ms": 293
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "nao_informado"
+    },
+    "build": {
+      "estado": "verificado"
+    },
+    "fluxo": {
+      "estado": "verificado",
+      "alcance": {
+        "ate": 3,
+        "de": 10
+      }
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-0",
+      "n": 0,
+      "acao": "No repositório, suba o projeto: cd frontend && npm ci --loglevel=http || npm install --loglevel=http && npm run build && npm run preview -- --host 0.0.0.0",
+      "esperado": "O projeto responde em http://localhost:4173",
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra a página inicial.",
+      "esperado": "Aparece a pergunta \"Quem você precisa?\" com os botões Polícia 190, Bombeiros 193 e SAMU 192.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Toque em SAMU 192.",
+      "esperado": "Abre a tela \"Não achamos sua localização\", com o campo \"Rua, número, bairro, cidade\", o botão Confirmar e um mapa.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Toque em um ponto do mapa.",
+      "esperado": "O botão \"Estou aqui\" aparece na tela de localização.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api.ts",
+          "linha": 126,
+          "linha_fim": null,
+          "trecho": "fetch(`${BASE}/casos/${casoId}/ligar`, { method: \"POST\" })",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/api.ts#L126",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "URL_OUTBOUND = \"https://api.elevenlabs.io/v1/convai/twilio/outbound-call\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L40",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "return {\"stub\": True, \"faltando_no_env\": faltando, \"seria_enviado\": corpo}",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L84",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "O app chama /casos/{id}/ligar e o backend pede à ElevenLabs a ligação de saída; sem as três variáveis ELEVENLABS_* a rota fica em modo stub e não disca. O agente é configurado no painel da ElevenLabs com o texto de agente/prompt.md.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a pessoa toca em ícones e uma IA liga para a central e conversa por voz com o atendente em nome dela.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "resumo.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "a pessoa toca em ícones e uma IA liga para a central e conversa por voz com o atendente em nome dela.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A escolha do serviço e a marcação no mapa responderam na interface. A pré-triagem não apareceu porque o backend não está acessível no ambiente de teste."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/TelaServico.tsx",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "<button key={s} className=\"card card-servico\" onClick={() => aoEscolher(s)}>",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/telas/TelaServico.tsx#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/TelaEndereco.tsx",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "<Mapa pos={{ lat: local.lat, lon: local.lon }} altura={230}>",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/telas/TelaEndereco.tsx#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/TelaChamada.tsx",
+          "linha": 106,
+          "linha_fim": null,
+          "trecho": "aoPreResposta({",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/telas/TelaChamada.tsx#L106",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "Há telas de serviço e de endereço com mapa; as perguntas de pré-triagem (lista fixa em preTriagem.ts) aparecem enquanto a ligação chama, depois da confirmação do endereço.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a pessoa surda toca no serviço (Polícia, Bombeiros ou SAMU), confirma a localização no mapa e responde a uma pré-triagem rápida.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "a pessoa surda toca no serviço (Polícia, Bombeiros ou SAMU), confirma a localização no mapa e responde a uma pré-triagem rápida.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 78,
+          "linha_fim": null,
+          "trecho": "\"dynamic_variables\": variaveis_dinamicas(caso),",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L78",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "\"endereco\": caso.endereco,",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "agente/prompt.md",
+          "linha": 39,
+          "linha_fim": null,
+          "trecho": "1. Depois que o atendente aceitar, passe os dados nesta ordem: serviço, endereço, complemento, referência, número de pessoas.",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/agente/prompt.md#L39",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "Endereço, complemento, referência e serviço vão como variáveis dinâmicas na ligação; o prompt do agente manda falá-los. O nome \"Lia\" aparece na página /central, não no texto de agente/prompt.md.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A Lia, nossa agente de voz, liga para a central e passa o endereço e a situação.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "A Lia, nossa agente de voz, liga para a central e passa o endereço e a situação.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 363,
+          "linha_fim": null,
+          "trecho": "futuro = _executor.submit(_gemini, _SYSTEM, pergunta, _Classificacao)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L363",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/TelaChamada.tsx",
+          "linha": 202,
+          "linha_fim": null,
+          "trecho": "texto={librasAtivo?.texto ?? pergunta.pergunta_simples}",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/telas/TelaChamada.tsx#L202",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/GradeOpcoes.tsx",
+          "linha": 34,
+          "linha_fim": null,
+          "trecho": "<span className=\"emoji-opcao\">{o.icone}</span>",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/components/GradeOpcoes.tsx#L34",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/GradeOpcoes.tsx",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "src={pictogramaDaOpcao(o)}",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/components/GradeOpcoes.tsx#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "O Gemini classifica a pergunta e o app mostra texto, avatar VLibras e opções com pictograma ARASAAC (para ids mapeados) ou emoji (demais). Se o Gemini falhar ou demorar, há fallback por palavra-chave.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a IA transforma a frase numa pergunta simples com opções, mostrada em três camadas: pictograma, avatar do VLibras em Libras e texto.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "a IA transforma a frase numa pergunta simples com opções, mostrada em três camadas: pictograma, avatar do VLibras em Libras e texto.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/TelaChamada.tsx",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "aoResponder({ tipo: \"opcao\", pergunta_id: p.pergunta_id, id: o.id });",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/telas/TelaChamada.tsx#L92",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/ws.py",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "espera.resolver(caso_id, msg)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/ws.py#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/tools.py",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "return {\"resposta\": escolhida[\"rotulo\"]}",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/tools.py#L92",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "A opção tocada vai pelo WebSocket, resolve a espera da tool perguntar_pessoa e o rótulo volta ao agente de voz como resposta.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A pessoa toca na resposta e a Lia responde por voz, na mesma ligação.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "A pessoa toca na resposta e a Lia responde por voz, na mesma ligação.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/TelaChamada.tsx",
+          "linha": 158,
+          "linha_fim": null,
+          "trecho": "{status.confirmado && !status.caiu && (",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/telas/TelaChamada.tsx#L158",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "agente/prompt.md",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "- estado = \"socorro_confirmado\": quando o atendente confirmar que o socorro foi enviado.",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/agente/prompt.md#L70",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/caso.py",
+          "linha": 125,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/casos/{caso_id}/estado/{estado}\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/caso.py#L125",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "O aviso depende do estado socorro_confirmado, enviado pelo agente de voz conforme o prompt; a rota POST /casos/{id}/estado/{estado} também aceita esse estado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O app só mostra \"socorro a caminho\" quando a central confirma",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "O app só mostra \"socorro a caminho\" quando a central confirma",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "const [vibracao, setVibracao] = useState(false);",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/App.tsx#L70",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "A vibração começa desligada; a busca por reprodução de áudio em frontend/src não encontrou ocorrências.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "é silencioso por padrão",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "é silencioso por padrão",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 32,
+          "linha_fim": null,
+          "trecho": "const [tela, setTela] = useState<Tela>(CONFIGURAR ? \"configurar\" : SERVICO_INICIAL ? \"endereco\" : \"servico\");",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/App.tsx#L32",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/models/caso.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "class CasoEntrada(BaseModel):",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/models/caso.py#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "O app abre direto na escolha do serviço (ou endereço/configuração pela URL) e o modelo de entrada do caso não tem campos de identificação da pessoa.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "não exige cadastro.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "não exige cadastro.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/public/manifest.webmanifest",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"display\": \"standalone\",",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/public/manifest.webmanifest#L8",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/index.html",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "<link rel=\"manifest\" href=\"/manifest.webmanifest\" />",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/index.html#L8",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/instalar.ts",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "window.addEventListener(\"beforeinstallprompt\", (e) => {",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/instalar.ts#L9",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "Há manifesto com display standalone, ligado no index.html, e tratamento do evento de instalação; não foi encontrado service worker.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "app web instalável no celular",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "app web instalável no celular",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Socorro Surdos\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/main.py#L17",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/ws.py",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "@router.websocket(\"/ws/{caso_id}\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/ws.py#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "Aplicação FastAPI com rota WebSocket /ws/{caso_id}.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "backend em FastAPI com WebSocket em tempo real",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "backend em FastAPI com WebSocket em tempo real",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "URL_OUTBOUND = \"https://api.elevenlabs.io/v1/convai/twilio/outbound-call\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L40",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/twilio.py",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "URL_CHAMADA = \"https://api.twilio.com/2010-04-01/Accounts/{}/Calls/{}.json\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/twilio.py#L15",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "A ligação é pedida ao endpoint Twilio da ElevenLabs; a API da Twilio é chamada direto para desligar.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "agente de voz com ElevenLabs e Twilio",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "agente de voz com ElevenLabs e Twilio",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 318,
+          "linha_fim": null,
+          "trecho": "resp = cliente.models.generate_content(model=GEMINI_MODEL, contents=conteudo, config=config)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L318",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 354,
+          "linha_fim": null,
+          "trecho": "return _mensagem(pergunta, simples, [*opcoes[:3], NAO_SEI])",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L354",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 336,
+          "linha_fim": null,
+          "trecho": "return _do_catalogo(c.catalogo_id, pergunta) if c.catalogo_id in CATALOGO else None",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L336",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "O Gemini classifica a fala e escreve a pergunta simples; as opções geradas por ele são usadas no tipo \"nova\", e os tipos catálogo, instrução e aberta usam listas fixas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Gemini para simplificar as perguntas do atendente e gerar as opções",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Gemini para simplificar as perguntas do atendente e gerar as opções",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/vlibras.ts",
+          "linha": 36,
+          "linha_fim": null,
+          "trecho": "new window.VLibras!.Widget({ rootPath: RAIZ, avatar: \"hosana\" });",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/vlibras.ts#L36",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/IconeOpcao.tsx",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "const picto = (nome: string) => `/pictogramas/${nome}.png`;",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/components/IconeOpcao.tsx#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/scripts/baixar-pictogramas.mjs",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "const API = \"https://api.arasaac.org/v1/pictograms\";",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/scripts/baixar-pictogramas.mjs#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "O widget VLibras é carregado de vlibras.gov.br; os pictogramas ARASAAC são arquivos locais em public/pictogramas, baixados por script.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "VLibras e pictogramas do ARASAAC",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "VLibras e pictogramas do ARASAAC",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "numero = validar_numero_para_ligar(config.NUMERO_CENTRAL_TESTE)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L70",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/seguranca.py",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "raise NumeroProibido(\"Só é permitido ligar para NUMERO_CENTRAL_TESTE.\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/seguranca.py#L33",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "No modo telefone, o número discado é o de NUMERO_CENTRAL_TESTE, definido no .env e validado antes da ligação.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Por segurança, o protótipo só liga para uma central de teste.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Por segurança, o protótipo só liga para uma central de teste.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/seguranca.py",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "NUMEROS_EMERGENCIA = {\"190\", \"192\", \"193\", \"199\", \"112\", \"911\"}",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/seguranca.py#L10",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/seguranca.py",
+          "linha": 32,
+          "linha_fim": null,
+          "trecho": "if not teste or d != teste:",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/seguranca.py#L32",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "numero = validar_numero_para_ligar(config.NUMERO_CENTRAL_TESTE)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L70",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "A validação bloqueia os seis números listados, números com menos de 8 dígitos e qualquer número diferente de NUMERO_CENTRAL_TESTE.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O backend só disca `NUMERO_CENTRAL_TESTE` e bloqueia 190/192/193/199/112/911",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "O backend só disca `NUMERO_CENTRAL_TESTE` e bloqueia 190/192/193/199/112/911",
+        "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/README.md#L5",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/caso.py",
+          "linha": 112,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/casos/{caso_id}/cancelar\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/caso.py#L112",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/twilio.py",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "data={\"Status\": \"completed\"},",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/twilio.py#L31",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "A rota encerra o caso e envia Status=completed à Twilio; sem call_sid ou credenciais Twilio, devolve desligou=false.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "`POST /casos/{id}/cancelar` desliga a ligação pela API da Twilio",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 31,
+        "linha_fim": null,
+        "trecho": "`POST /casos/{id}/cancelar` desliga a ligação pela API da Twilio",
+        "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/README.md#L31",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "agente/prompt.md",
+          "linha": 45,
+          "linha_fim": null,
+          "trecho": "Se a resposta já está no caso, responda na hora: NÃO chame perguntar_pessoa.",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/agente/prompt.md#L45",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/tools.py",
+          "linha": 111,
+          "linha_fim": null,
+          "trecho": "resposta[\"triagem_durante_chamada\"] = triagem.texto_pre_triagem(store.casos[req.caso_id].pre_triagem)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/tools.py#L111",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api.ts",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "triagem: [],",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/api.ts#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "O comportamento está como instrução no prompt do agente, colado manualmente no painel da ElevenLabs; o backend envia a triagem. O app atual manda triagem: [] e usa a triagem feita durante a chamada.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "se o atendente perguntar de novo, o próprio agente responde pelo que está na triagem.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 34,
+        "linha_fim": null,
+        "trecho": "se o atendente perguntar de novo, o próprio agente responde pelo que está na triagem.",
+        "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/README.md#L34",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 431,
+          "linha_fim": null,
+          "trecho": "futuro = _executor.submit(_gemini, _SYSTEM_FRASE, conteudo, _Frase)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L431",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/tools.py",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "frase = await ia.texto_para_frase(texto, caso, pergunta.get(\"pergunta_original\", req.pergunta))",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/tools.py#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 439,
+          "linha_fim": null,
+          "trecho": "return _frase_literal(texto)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L439",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "O texto digitado é enviado ao Gemini para virar frase; se falhar, volta o texto quase literal.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Texto livre → frase para o atendente** (`texto_para_frase`): interpretar esse português e devolver uma frase completa.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "contrato/escrita_libras.md",
+        "linha": 6,
+        "linha_fim": null,
+        "trecho": "**Texto livre → frase para o atendente** (`texto_para_frase`): interpretar esse português e devolver uma frase completa.",
+        "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/contrato/escrita_libras.md#L6",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api.ts",
+          "linha": 166,
+          "linha_fim": null,
+          "trecho": "timer = window.setTimeout(abrir, 1000 * 2 ** (tentativas - 1));",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/api.ts#L166",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api.ts",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "const MAX_TENTATIVAS = 5;",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/api.ts#L96",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/TelaChamada.tsx",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "<span>Reconectando…</span>",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/telas/TelaChamada.tsx#L133",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "Até 5 tentativas com espera de 1000 * 2^(n-1) ms, no mesmo caso, com o texto \"Reconectando…\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se o WebSocket cair, o app reconecta ao mesmo `/ws/{id}` com espera crescente (1 s, 2 s, 4 s, 8 s, 16 s) e mostra \"Reconectando…\".",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "frontend/README.md",
+        "linha": 137,
+        "linha_fim": null,
+        "trecho": "Se o WebSocket cair, o app reconecta ao mesmo `/ws/{id}` com espera crescente (1 s, 2 s, 4 s, 8 s, 16 s) e mostra \"Reconectando…\".",
+        "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/README.md#L137",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/caso.py",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "@router.get(\"/casos/{caso_id}/tempos\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/caso.py#L52",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/tempos.py",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "\"ate_atender_s\": \"atendeu\",",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/tempos.py#L12",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/tools.py",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "caso.perguntas.append(PerguntaMedida(",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/tools.py#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "A rota calcula os tempos por etapa e a duração de cada pergunta, com dados mantidos em memória.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "`GET /casos/{id}/tempos` mostra quanto levou até atender, até repassar os dados, até confirmar o socorro e quanto tempo a ligação ficou parada em cada pergunta",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 36,
+        "linha_fim": null,
+        "trecho": "`GET /casos/{id}/tempos` mostra quanto levou até atender, até repassar os dados, até confirmar o socorro e quanto tempo a ligação ficou parada em cada pergunta",
+        "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/README.md#L36",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "5 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:compilacao",
+      "rotulo": "Compilação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "1 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "4 s",
+      "evidencias": [],
+      "obs": "porta 4173, comando: npm run preview -- --host 0.0.0.0"
+    },
+    {
+      "tipo": "item",
+      "id": "build:chaves-falsas",
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o teste local roda sem as chaves reais da equipe"
+      },
+      "valor": {
+        "lista": [
+          "VITE_MOCK",
+          "VITE_MOCK_ATENDE_EM",
+          "VITE_BACKEND",
+          "VITE_API_URL"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "build:outras-pastas",
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o build automático executa uma pasta por projeto; a executada foi frontend"
+      },
+      "valor": {
+        "lista": [
+          "backend"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra a página inicial.",
+      "observado": "Aparece a pergunta \"Quem você precisa?\" com os botões Polícia 190, Bombeiros 193 e SAMU 192.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Toque em SAMU 192.",
+      "observado": "Abre a tela \"Não achamos sua localização\", com o campo \"Rua, número, bairro, cidade\", o botão Confirmar e um mapa.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Toque em um ponto do mapa.",
+      "observado": "O botão \"Estou aqui\" aparece na tela de localização.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Toque em \"Estou aqui\" para confirmar a localização e iniciar o pedido.",
+      "observado": "A tela mostra \"Ligação encerrada\" e \"A ligação caiu. Toque para tentar de novo.\" A requisição POST http://localhost:9/casos falhou com net::ERR_UNSAFE_PORT.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O backend não está acessível no ambiente de teste, e a ligação não foi iniciada."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Toque no botão \"Tentar de novo\".",
+      "observado": "A tela de ligação caída permanece, e uma nova requisição POST http://localhost:9/casos falhou.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O backend não está acessível no ambiente de teste."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Responda à pré-triagem enquanto a ligação chama.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A pré-triagem não apareceu, porque o pedido ao backend falhou."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Atenda o telefone de teste no papel do atendente e faça uma pergunta.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige backend acessível e telefone de teste, não disponíveis no ambiente de teste."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Toque na resposta à pergunta mostrada no app.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da ligação, que não foi iniciada por falta de backend."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Ouça a agente repassar a resposta por voz na ligação.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige ligação telefônica ativa, não disponível no ambiente de teste."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Confirme o envio do socorro como atendente e veja \"socorro a caminho\" no app.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige ligação telefônica ativa, não disponível no ambiente de teste."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Botão Confirmar com o campo de endereço vazio.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O app permaneceu na tela de localização e não avançou para a ligação. Nenhuma mensagem nova de validação foi observada."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Cinco espaços no campo de endereço, seguidos de Confirmar.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O app permaneceu na tela de localização e não avançou para a ligação."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Texto de 4800 caracteres no campo de endereço, seguido de Confirmar.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O campo aceitou o texto e o app passou à tela \"A ligação caiu\", a mesma obtida sem backend. O tratamento do texto pelo servidor não pôde ser testado."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O campo aceitou o texto e o app passou à tela \"A ligação caiu\", a mesma obtida sem backend. O tratamento do texto pelo servidor não pôde ser testado."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Backend do aplicativo",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A interface envia o pedido para http://localhost:9/casos, que falha com net::ERR_UNSAFE_PORT no ambiente de teste. Pré-triagem, ligação e perguntas não puderam ser testadas."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-2",
+      "rotulo": "Telefone de teste da central",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Os passos de atender, perguntar, ouvir a agente e confirmar o socorro exigem um telefone real, não disponível no teste."
+      },
+      "evidencias": []
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "google-genai (Google), em backend/requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/requirements.txt",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "google-genai>=1.0",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/requirements.txt#L6",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Google",
+              "backend/traducao.py",
+              295
+            ],
+            [
+              "Google",
+              "backend/traducao.py",
+              307
+            ],
+            [
+              "ElevenLabs",
+              "backend/app/services/acompanhar.py",
+              21
+            ],
+            [
+              "ElevenLabs",
+              "backend/app/services/elevenlabs.py",
+              40
+            ],
+            [
+              "ElevenLabs",
+              "backend/tests/test_acompanhar.py",
+              78
+            ],
+            [
+              "ElevenLabs",
+              "backend/tests/test_fluxo.py",
+              274
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 295,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L295",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 307,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L307",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/acompanhar.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "URL_CONVERSA = \"https://api.elevenlabs.io/v1/convai/conversations/{}\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/acompanhar.py#L21",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "URL_OUTBOUND = \"https://api.elevenlabs.io/v1/convai/twilio/outbound-call\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L40",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/test_acompanhar.py",
+          "linha": 78,
+          "linha_fim": null,
+          "trecho": "    assert str(pedido.url) == \"https://api.elevenlabs.io/v1/convai/conversations/conv_1\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/tests/test_acompanhar.py#L78",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/test_fluxo.py",
+          "linha": 274,
+          "linha_fim": null,
+          "trecho": "    assert str(pedido.url) == \"https://api.elevenlabs.io/v1/convai/twilio/outbound-call\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/tests/test_fluxo.py#L274",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Google (Gemini)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 363,
+          "linha_fim": null,
+          "trecho": "futuro = _executor.submit(_gemini, _SYSTEM, pergunta, _Classificacao)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L363",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 318,
+          "linha_fim": null,
+          "trecho": "resp = cliente.models.generate_content(model=GEMINI_MODEL, contents=conteudo, config=config)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L318",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 38,
+          "linha_fim": null,
+          "trecho": "GEMINI_MODEL = os.getenv(\"GEMINI_MODEL\", \"gemini-3.5-flash-lite\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L38",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Classificar a fala do atendente e gerar a pergunta simples e as opções; o modelo pode ser trocado pela variável GEMINI_MODEL."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Google (Gemini)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 431,
+          "linha_fim": null,
+          "trecho": "futuro = _executor.submit(_gemini, _SYSTEM_FRASE, conteudo, _Frase)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L431",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Reescrever o texto digitado pela pessoa como frase a ser falada ao atendente."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a ElevenLabs",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 88,
+          "linha_fim": null,
+          "trecho": "r = await cliente.post(",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L88",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "URL_OUTBOUND = \"https://api.elevenlabs.io/v1/convai/twilio/outbound-call\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L40",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Iniciar a ligação de saída em que o agente de voz conversa com a central."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a ElevenLabs",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/central.py",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "<script src=\"https://unpkg.com/@elevenlabs/convai-widget-embed\" async type=\"text/javascript\"></script>",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/central.py#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/central.py",
+          "linha": 77,
+          "linha_fim": null,
+          "trecho": "const w = document.createElement(\"elevenlabs-convai\");",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/central.py#L77",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Widget de conversa por voz no navegador, na página /central (modo sem telefone)."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a ElevenLabs",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/acompanhar.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "URL_CONVERSA = \"https://api.elevenlabs.io/v1/convai/conversations/{}\"",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/acompanhar.py#L21",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Consultar o status da conversa do agente para detectar o fim da ligação."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "CATALOGO = {",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L60",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 139,
+          "linha_fim": null,
+          "trecho": "return _mensagem(pergunta, item[\"pergunta\"], [*item[\"opcoes\"], NAO_SEI])",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L139",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Para perguntas classificadas como de catálogo (pelo Gemini ou pelo fallback), a pergunta simples e as opções vêm de um dicionário escrito no código.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-2",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 370,
+          "linha_fim": null,
+          "trecho": "return _fallback(pergunta)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L370",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Se o Gemini falhar, passar do tempo limite ou devolver classificação inválida, a pergunta e as opções são montadas por regras de palavra-chave, sem modelo.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-3",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 107,
+          "linha_fim": null,
+          "trecho": "return placeholder_pergunta(pergunta)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/ia.py#L107",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "CACHE = [",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/ia.py#L29",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A ponte do backend tem um segundo fallback, com cache de perguntas e opções escritas no código (ou Sim/Não/Não sei), usado se a função de tradução der erro ou passar de 3 s.",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 09:27",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/hackaton-ia-brasil/hackatoooooooon",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon",
+          "conferida": "script"
+        }
+      ],
+      "sinal": false
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "accesSOS",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.accessos.io/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.accessos.io/",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://goodgoodgood.co/articles/accesssos-text-911",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://goodgoodgood.co/articles/accesssos-text-911",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://digitalcommons.dartmouth.edu/engs89_90/43/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://digitalcommons.dartmouth.edu/engs89_90/43/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App gratuito de uma organização sem fins lucrativos (EUA): a pessoa confirma a localização no mapa, toca em ícones sobre o que está acontecendo e o app envia os dados ao 911; reportagem sobre o app diz que o envio é por texto, depois convertido em chamada de voz.",
+      "obs": "Em comum: Pedido de socorro sem falar, por toques em ícones, com localização confirmada no mapa, voltado entre outros a pessoas surdas. Diferente: A página do app diz que os dados são adicionados com antecedência; as páginas abertas não descrevem conversa de ida e volta por IA com o atendente nem Libras ou língua de sinais."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Mini-programa do WeChat para o 120 (China)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://disabilityinsider.com/2021/12/09/disaster/chinese-app-can-help-those-with-hearing-disabilities-call-for-emergency-services/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://disabilityinsider.com/2021/12/09/disaster/chinese-app-can-help-those-with-hearing-disabilities-call-for-emergency-services/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Usa IA para transformar o texto digitado em fala para o atendente da central médica 120 e converte a fala do atendente em texto para quem chamou.",
+      "obs": "Em comum: Permite que uma pessoa com deficiência auditiva peça socorro sem ouvir nem falar, com a IA fazendo a ponte por voz com a central nos dois sentidos, além de envio de localização. Diferente: A página descreve o serviço para a emergência médica (120), com sintomas digitados e respostas do atendente em texto; não descreve opções em pictogramas nem avatar de língua de sinais."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "Socorro com as Mãos",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.almg.gov.br/comunicacao/noticias/arquivos/Aplicativo-pode-ajudar-acesso-de-pessoas-surdas-a-Samu/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.almg.gov.br/comunicacao/noticias/arquivos/Aplicativo-pode-ajudar-acesso-de-pessoas-surdas-a-Samu/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Aplicativo para pessoas com deficiência auditiva pedirem socorro ao SAMU por meio de ícones, com conteúdo em Libras; foi criado em um mestrado e apresentado em audiência na ALMG em junho de 2025.",
+      "obs": "Em comum: Público surdo no Brasil, pedido de socorro por ícones e uso de Libras. Diferente: A página o apresenta como proposta voltada ao SAMU, com cadastro e histórico de saúde; não descreve agente de voz que liga para a central."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "S.O.S Surdos (Corpo de Bombeiros de Rondônia)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://rondonia.ro.gov.br/deficientes-auditivos-podem-acionar-equipes-de-emergencia-por-meio-do-aplicativo-s-o-s-surdos/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://rondonia.ro.gov.br/deficientes-auditivos-podem-acionar-equipes-de-emergencia-por-meio-do-aplicativo-s-o-s-surdos/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Aplicativo lançado em 2020 que permite acionar com um toque as equipes de plantão do Corpo de Bombeiros e da Polícia Militar de Rondônia, usando a localização do celular.",
+      "obs": "Em comum: Pedido de socorro sem ligação falada, por toque, pensado principalmente para pessoas surdas no Brasil. Diferente: Exige cadastro com dados pessoais e endereço no primeiro acesso e é de um estado; a página não descreve agente de voz nem envio ao SAMU."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Botões de emergência do app Telefone do Google (Android/Pixel)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://blog.google/products/android/tap-your-phone-get-help-emergency/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://blog.google/products/android/tap-your-phone-get-help-emergency/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Durante uma chamada de emergência, a pessoa toca em \"Medical\", \"Fire\" ou \"Police\" e um serviço de voz automatizado informa ao atendente o tipo de ajuda e a localização.",
+      "obs": "Em comum: Um toque na tela gera fala automática para o atendente em nome de quem não consegue falar, com escolha entre médico, bombeiros e polícia. Diferente: É um recurso do discador, anunciado para os EUA, para quem não pode falar; a página não descreve como a pessoa surda recebe as perguntas do atendente nem língua de sinais."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Python",
+              35,
+              2792
+            ],
+            [
+              "TypeScript",
+              31,
+              2449
+            ],
+            [
+              "CSS",
+              1,
+              862
+            ],
+            [
+              "Markdown",
+              7,
+              535
+            ],
+            [
+              "JSON",
+              13,
+              409
+            ],
+            [
+              "JavaScript",
+              2,
+              105
+            ],
+            [
+              "HTML",
+              1,
+              24
+            ],
+            [
+              "Shell",
+              1,
+              11
+            ]
+          ]
+        }
+      },
+      "obs": "99 arquivos de texto e 7302 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "App web da pessoa (React + Vite)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "export default function App() {",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/App.tsx#L31",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api.ts",
+          "linha": 98,
+          "linha_fim": null,
+          "trecho": "export function conectar(",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/frontend/src/api.ts#L98",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/App.tsx",
+          "frontend/src/api.ts",
+          "frontend/src/telas/TelaChamada.tsx",
+          "frontend/src/vlibras.ts"
+        ]
+      },
+      "obs": "Telas de serviço, endereço no mapa e chamada, com pré-triagem, opções, painel VLibras e conexão por WebSocket."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Backend FastAPI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Socorro Surdos\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/main.py#L17",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/ws.py",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "@router.websocket(\"/ws/{caso_id}\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/ws.py#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/main.py",
+          "backend/app/routes/caso.py",
+          "backend/app/routes/ws.py",
+          "backend/app/store.py"
+        ]
+      },
+      "obs": "Cria e acompanha casos em memória, expõe rotas HTTP e o WebSocket com o app e serve o app compilado."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Webhook tools do agente",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/tools.py",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/tools/perguntar_pessoa\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/tools.py#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/tools.py",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/tools/atualizar_estado\")",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/tools.py#L102",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/routes/tools.py",
+          "backend/app/services/espera.py",
+          "backend/app/services/estados.py"
+        ]
+      },
+      "obs": "Recebem do agente de voz as perguntas para a pessoa e as mudanças de estado da ligação."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Tradução com Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/traducao.py",
+          "linha": 360,
+          "linha_fim": null,
+          "trecho": "def pergunta_para_icones(pergunta: str, caso: dict) -> dict:",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/traducao.py#L360",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 95,
+          "linha_fim": null,
+          "trecho": "async def pergunta_para_icones(pergunta: str, caso: dict) -> dict:",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/ia.py#L95",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/traducao.py",
+          "backend/app/services/ia.py",
+          "contrato/exemplos_libras.json"
+        ]
+      },
+      "obs": "Converte a fala do atendente em pergunta com opções e o texto da pessoa em frase, com fallbacks sem modelo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Ligação de voz (ElevenLabs e Twilio)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "async def iniciar_ligacao(caso: Caso) -> dict:",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L58",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/twilio.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "async def desligar(call_sid: Optional[str]) -> bool:",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/twilio.py#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/services/elevenlabs.py",
+          "backend/app/services/acompanhar.py",
+          "backend/app/services/twilio.py",
+          "backend/app/services/seguranca.py",
+          "agente/prompt.md"
+        ]
+      },
+      "obs": "Inicia a ligação do agente para o número de teste, acompanha o fim dela e a desliga no cancelamento."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Central de teste no navegador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routes/central.py",
+          "linha": 90,
+          "linha_fim": null,
+          "trecho": "@router.get(\"/central\", response_class=HTMLResponse)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/routes/central.py#L90",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/routes/central.py"
+        ]
+      },
+      "obs": "Página /central em que quem faz a central conversa com o agente pelo widget da ElevenLabs, sem telefone."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "um agente de voz (ElevenLabs + Twilio) liga para a central de **teste** e conversa com o atendente.",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/README.md#L3",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/elevenlabs.py",
+          "linha": 66,
+          "linha_fim": null,
+          "trecho": "if config.MODO_LIGACAO == \"navegador\":",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/backend/app/services/elevenlabs.py#L66",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".env.example",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "# \"telefone\" (Twilio) ou \"navegador\" (plano B: a central atende em https://<NGROK_DOMAIN>/central, sem Twilio)",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/.env.example#L22",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README e formulário descrevem o agente de voz ligando para a central de teste com ElevenLabs e Twilio.",
+              "Além do modo telefone (padrão), há o modo MODO_LIGACAO=navegador, citado em .env.example, em que não há ligação via Twilio e a central conversa com o agente pela página /central."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Socorro para pessoas surdas — hackathon",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 54 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "## Setup",
+          "link": "https://github.com/hackaton-ia-brasil/hackatoooooooon/blob/e807aaa6057624234b1bcd31b42dcd571ca417e0/README.md#L7",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "a pessoa surda toca no serviço (Polícia, Bombeiros ou SAMU), confirma a localização no mapa e responde a uma pré-triagem rápida.",
+      "motivo": "A escolha do serviço e a marcação no mapa responderam na interface. A pré-triagem não apareceu porque o backend não está acessível no ambiente de teste.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "motivo": "o teste local roda sem as chaves reais da equipe",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "motivo": "o build automático executa uma pasta por projeto; a executada foi frontend",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Toque em \"Estou aqui\" para confirmar a localização e iniciar o pedido.",
+      "motivo": "O backend não está acessível no ambiente de teste, e a ligação não foi iniciada.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Toque no botão \"Tentar de novo\".",
+      "motivo": "O backend não está acessível no ambiente de teste.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Responda à pré-triagem enquanto a ligação chama.",
+      "motivo": "A pré-triagem não apareceu, porque o pedido ao backend falhou.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Atenda o telefone de teste no papel do atendente e faça uma pergunta.",
+      "motivo": "Exige backend acessível e telefone de teste, não disponíveis no ambiente de teste.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Toque na resposta à pergunta mostrada no app.",
+      "motivo": "Depende da ligação, que não foi iniciada por falta de backend.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Ouça a agente repassar a resposta por voz na ligação.",
+      "motivo": "Exige ligação telefônica ativa, não disponível no ambiente de teste.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Confirme o envio do socorro como atendente e veja \"socorro a caminho\" no app.",
+      "motivo": "Exige ligação telefônica ativa, não disponível no ambiente de teste.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Entrada inesperada: Texto de 4800 caracteres no campo de endereço, seguido de Confirmar.",
+      "motivo": "O campo aceitou o texto e o app passou à tela \"A ligação caiu\", a mesma obtida sem backend. O tratamento do texto pelo servidor não pôde ser testado.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Backend do aplicativo",
+      "motivo": "A interface envia o pedido para http://localhost:9/casos, que falha com net::ERR_UNSAFE_PORT no ambiente de teste. Pré-triagem, ligação e perguntas não puderam ser testadas.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Telefone de teste da central",
+      "motivo": "Os passos de atender, perguntar, ouvir a agente e confirmar o socorro exigem um telefone real, não disponível no teste.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Rastro · Relatório técnico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Oxanium:wght@200;300;400;500;600&display=swap">
+<style>
+:root {
+  --fundo: #000;
+  --bloco: #101011;
+  --borda: rgb(255 255 255 / 0.15);
+  --borda-fina: rgb(255 255 255 / 0.1);
+  --texto: #fff;
+  --texto-2: rgb(255 255 255 / 0.75);
+  --texto-3: rgb(255 255 255 / 0.6);
+  --raio: 14px;
+  --fonte: "Oxanium", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: var(--fonte); font-size: 16px; line-height: 1.6; overflow-wrap: anywhere; }
+main { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
+a { color: inherit; text-decoration: underline; text-decoration-color: rgb(255 255 255 / 0.35); text-underline-offset: 4px; }
+a:hover { text-decoration-color: #fff; }
+a:focus-visible, summary:focus-visible, input:focus-visible + img { outline: 2px solid #fff; outline-offset: 3px; }
+h1, h2, h3, p, ul, ol, dl, dd, blockquote, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+.mono { font-family: var(--mono); font-size: 0.82em; font-variant-numeric: tabular-nums; }
+.quebra { word-break: break-all; }
+.apagado { color: var(--texto-3); font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; }
+
+.faixa { border-bottom: 1px solid var(--borda); padding: 0.6rem 1.25rem; text-align: center; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.25em; color: var(--texto-2); }
+.cabecalho { padding: 3rem 0 2rem; }
+.cabecalho .apagado { display: block; margin-bottom: 0.75rem; }
+h1 { font-size: clamp(2.2rem, 7vw, 3.75rem); font-weight: 200; line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance; }
+.resumo-linha { margin-top: 1rem; max-width: 60ch; color: var(--texto-2); font-size: 1.05rem; }
+.ligacoes { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.25rem; color: var(--texto-2); }
+.geracao { margin-top: 1.25rem; color: var(--texto-3); font-family: var(--mono); font-size: 0.78rem; }
+
+.quadros { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.75rem; }
+.quadro, .bloco { background: var(--bloco); border: 1px solid var(--borda); border-radius: var(--raio); }
+.quadro { padding: 1rem 1.1rem 1.1rem; min-width: 0; }
+.quadro h3 { font-family: var(--mono); font-size: 0.7rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.2em; color: var(--texto-3); }
+.quadro .estado { display: flex; align-items: baseline; gap: 0.5rem; margin-top: 0.6rem; font-size: 1.2rem; font-weight: 300; line-height: 1.25; white-space: normal; }
+.quadro .detalhe { display: block; margin-top: 0.4rem; color: var(--texto-2); font-size: 0.9rem; line-height: 1.45; }
+
+
+.achados { display: grid; gap: 0.8rem; margin-top: 2rem; padding: 1.25rem 1.3rem 1.1rem; background: var(--bloco); border: 1px solid rgb(255 255 255 / 0.3); border-radius: var(--raio); }
+.achados h2 { font-size: 1.25rem; font-weight: 400; }
+.achados .segundo { margin-top: 0.9rem; }
+.achados .texto { max-width: 78ch; color: var(--texto); font-size: 1rem; line-height: 1.65; }
+.achados dl { display: grid; gap: 0; margin: 0; }
+.achados .linha { display: grid; grid-template-columns: 1fr; gap: 0.1rem 1.25rem; padding: 0.45rem 0; }
+.achados .linha + .linha { border-top: 1px solid var(--borda-fina); }
+.achados dt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.6rem; color: var(--texto-3); font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; }
+.achados dd { color: var(--texto-2); font-size: 0.94rem; line-height: 1.45; }
+.achados .a-conferir dd { color: var(--texto); }
+@media (min-width: 48rem) { .achados .linha { grid-template-columns: 13.5rem minmax(0, 1fr); align-items: baseline; } }
+
+.detalhes-titulo { margin-top: 2.5rem; margin-bottom: 0.6rem; }
+.parte { border-top: 1px solid var(--borda); scroll-margin-top: 1rem; }
+.parte > details > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.9rem; padding: 0.9rem 0; cursor: pointer; list-style: none; }
+.parte > details > summary::-webkit-details-marker { display: none; }
+.parte > details > summary::before { content: "+"; width: 1rem; font-family: var(--mono); color: var(--texto-3); }
+.parte > details[open] > summary::before { content: "−"; }
+.parte > details > .conteudo { padding: 0.4rem 0 2rem; }
+h2 { font-size: 1.25rem; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
+.contagem { color: var(--texto-3); font-family: var(--mono); font-size: 0.78rem; }
+.conteudo { display: grid; gap: 0.75rem; min-width: 0; }
+.vazio { color: var(--texto-3); }
+@media (min-width: 60rem) {
+  main { padding: 0 2.5rem 6rem; }
+}
+
+.bloco { padding: 1rem 1.1rem; display: grid; gap: 0.6rem; min-width: 0; }
+.bloco > header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.75rem; }
+.bloco h3 { font-size: 1.05rem; font-weight: 500; line-height: 1.35; }
+.bloco.passo { grid-template-columns: 2rem minmax(0, 1fr); align-items: baseline; }
+.bloco.passo > div { display: grid; gap: 0.6rem; min-width: 0; }
+.numero { color: var(--texto-3); }
+blockquote { font-size: 1.1rem; font-weight: 300; line-height: 1.45; }
+.estado { font-weight: 500; white-space: nowrap; }
+.marcador { display: inline-block; min-width: 1.1em; margin-right: 0.3em; text-align: center; font-family: var(--mono); }
+.linha-estado .detalhe, .obs, .valor { color: var(--texto-2); }
+.linha-estado .apagado { margin-right: 0.4rem; }
+.sinal { border: 1px solid rgb(255 255 255 / 0.4); border-radius: 999px; padding: 0.05rem 0.6rem; font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--texto-2); white-space: nowrap; }
+.campos { display: grid; gap: 0.45rem; }
+.campos:empty { display: none; }
+.campos dt { font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--texto-3); }
+.campos dd { color: var(--texto-2); }
+.lista { display: grid; gap: 0.25rem; color: var(--texto-2); }
+.lista li { padding-left: 1rem; position: relative; }
+.lista li::before { content: "·"; position: absolute; left: 0.2rem; color: var(--texto-3); }
+
+.evidencias { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem 1.25rem; border-top: 1px solid var(--borda-fina); padding-top: 0.7rem; color: var(--texto-2); }
+.evidencias li { min-width: 0; max-width: 100%; }
+.trecho { margin-top: 0.3rem; }
+.trecho summary { cursor: pointer; font-family: var(--mono); font-size: 0.7rem; color: var(--texto-3); }
+pre { margin: 0.4rem 0 0; padding: 0.7rem 0.8rem; max-width: 100%; overflow-x: auto; background: #000; border: 1px solid var(--borda-fina); border-radius: 8px; font-family: var(--mono); font-size: 0.76rem; line-height: 1.5; color: var(--texto-2); overflow-wrap: normal; }
+
+.captura { display: inline-grid; gap: 0.3rem; cursor: zoom-in; }
+.captura input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.captura img { display: block; width: 11rem; max-width: 100%; height: auto; border: 1px solid var(--borda); border-radius: 8px; background: #000; }
+.captura .mono { color: var(--texto-3); font-size: 0.7rem; }
+.captura input:checked + img { position: fixed; inset: 0; z-index: 10; width: 100vw; height: 100vh; max-width: none; padding: 1rem; object-fit: contain; border: 0; border-radius: 0; background: rgb(0 0 0 / 0.94); cursor: zoom-out; }
+
+.serie { display: grid; gap: 0.3rem; }
+.serie li { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) 3.5rem; align-items: center; gap: 0.6rem; color: var(--texto-2); }
+.serie li > :last-child { text-align: right; }
+.barra { display: block; height: 0.5rem; background: rgb(255 255 255 / 0.07); border-radius: 2px; }
+.barra span { display: block; height: 100%; min-width: 1px; background: rgb(255 255 255 / 0.7); border-radius: 2px; }
+
+.rolagem { max-width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; line-height: 1.55; }
+thead { border-bottom: 1px solid rgb(255 255 255 / 0.2); color: var(--texto-3); }
+th { font-weight: 400; }
+thead th { padding: 0 1rem 0.5rem 0; white-space: nowrap; }
+tbody tr + tr { border-top: 1px solid var(--borda-fina); }
+tbody th, tbody td { padding: 0.7rem 1rem 0.7rem 0; vertical-align: top; color: var(--texto-2); }
+tbody th { font-weight: 500; color: var(--texto); }
+td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
+
+.nao-verificado { display: grid; gap: 0; }
+.nao-verificado li { display: grid; gap: 0.15rem; padding: 0.7rem 0; }
+.nao-verificado li + li { border-top: 1px solid var(--borda-fina); }
+.nao-verificado p { color: var(--texto-2); }
+.rodape p { color: var(--texto-2); }
+.rodape .frase { color: var(--texto); padding: 1rem 0; }
+</style>
+</head>
+<body>
+
+<main>
+<header class="cabecalho">
+<span class="apagado">Relatório técnico · Segurança</span>
+<h1>Rastro</h1>
+<p class="resumo-linha">Ferramenta de investigação de redes de fraudes.</p>
+<p class="ligacoes"><a class="" href="https://github.com/Marcus-Vin/rastro" target="_blank" rel="noopener noreferrer">Repositório</a><a class="" href="https://rastro-hackia.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo</a><a class="" href="https://drive.google.com/drive/u/0/folders/1w3JkKLfeI7SiUh1TM3Y7YlRQC9__RLtr" target="_blank" rel="noopener noreferrer">Vídeo do pitch</a></p>
+<p class="geracao">final · gerado em 28/11, 16:38 (Brasília) · <a class="" href="https://github.com/Marcus-Vin/rastro/commit/a583c49640b56f89e441a07379ff40aa75f0dd6f" target="_blank" rel="noopener noreferrer">commit a583c49640</a> · enviado em 28/11, 15:54</p>
+</header>
+<section class="quadros" aria-label="Resumo"><div class="quadro"><h3>Deploy</h3><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span><span class="detalhe">mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/</span></div><div class="quadro"><h3>Build</h3><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span><span class="detalhe">parou em instalar: ERROR: No matching distribution found for networkx==3.7</span></div><div class="quadro"><h3>Fluxo principal</h3><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span><span class="detalhe">o deploy informado não respondeu; o projeto não subiu em container</span></div><div class="quadro"><h3>IA no código</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></div></section>
+<section class="achados" aria-label="Resumo do que foi encontrado">
+<h2>Resumo</h2>
+<p class="texto">O link de deploy informado pela equipe não respondeu (mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/); a instalação do projeto em container falhou (parou em instalar: ERROR: No matching distribution found for networkx==3.7). O teste de uso não foi feito: o deploy informado não respondeu; o projeto não subiu em container. Das 18 declarações que a equipe faz sobre o projeto, o código confirma 12 e confirma em parte 6. O código chama modelos de Anthropic (claude-haiku-5-5), Anthropic (claude-sonnet-5-5), Anthropic (claude-opus-5-5) e fastembed (modelo local) (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2).</p><p class="texto">Há commits antes do início da janela (3 de 461 commits, o mais antigo em 28/11 08:46). A pesquisa na web encontrou 5 projetos parecidos: Sistema de IA do DERCC (Polícia Civil do Rio Grande do Sul), TRM Ardence (TRM Labs), MuleTrace, complaint-analyser e Plataforma Tentáculos (Polícia Federal).</p>
+<h2 class="segundo">Pontos de atenção</h2>
+<dl><div class="linha a-conferir"><dt>Deploy</dt><dd>falhou: mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/</dd></div><div class="linha a-conferir"><dt>Build</dt><dd>instalação: falhou: ERROR: No matching distribution found for networkx==3.7 · subida local: não foi possível testar: o build parou em instalar, antes desta fase</dd></div><div class="linha a-conferir"><dt>Commits antes do início da janela</dt><dd>3 de 461 commits, o mais antigo em 28/11 08:46</dd></div></dl>
+</section>
+<p class="apagado detalhes-titulo">Detalhes e evidências · abra a parte que quiser conferir</p>
+<section class="parte" id="parte-roteiro">
+<details><summary><h2>Roteiro de 2 minutos</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-declaracoes">
+<details><summary><h2>Declarações da equipe</h2><span class="contagem">18 registros</span></summary>
+<div class="conteudo"><p class="contagem">12 confirmadas · 6 parciais</p><article class="bloco">
+<blockquote>“Lê os BOs de golpe em texto livre e liga as vítimas que pagaram para os mesmos destinos.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L3" target="_blank" rel="noopener noreferrer">README.md:3</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">Cada BO é lido por chamada à IA (ou pela resposta gravada), e &#96;_ligar_certas&#96; e &#96;_ligar_provaveis&#96; ligam BOs por chave Pix, telefone, e-mail, conta ou E2E do golpista.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L209" target="_blank" rel="noopener noreferrer">rastro/policia/leitura.py:209</a><details class="trecho"><summary>trecho</summary><pre>resposta = ia.chamar(&quot;ler_bo&quot;, entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L287" target="_blank" rel="noopener noreferrer">rastro/policia/redes.py:287</a><details class="trecho"><summary>trecho</summary><pre>c.ligar(a, b, &quot;certa&quot;, motivo, c.bos[a].trecho(campo_de[a], valor), c.bos[b].trecho(campo_de[b], valor),</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L406" target="_blank" rel="noopener noreferrer">rastro/policia/redes.py:406</a><details class="trecho"><summary>trecho</summary><pre>return [sorted(comp) for comp in nx.connected_components(grafo)]</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Com a rede montada, a polícia pede o RIF ao COAF (simulado), que devolve o que os bancos já tinham comunicado e aponta a conta central que nenhum BO cita.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L3" target="_blank" rel="noopener noreferrer">README.md:3</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">O COAF simulado seleciona RIFs pré-calculados e comunicações recebidas pelos alvos; a tela marca como pista nova a contraparte que não está nas contas da rede. Um teste verifica que o RIF da chave do BO-0001 traz a conta central do gabarito.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/coaf/simulado.py#L244" target="_blank" rel="noopener noreferrer">rastro/coaf/simulado.py:244</a><details class="trecho"><summary>trecho</summary><pre>prontos = _selecionar_prontos(alvos, base_pronta)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L296" target="_blank" rel="noopener noreferrer">tela/policia.py:296</a><details class="trecho"><summary>trecho</summary><pre>for cp in rif[&quot;contrapartes_principais&quot;] if cp[&quot;conta_id&quot;] not in g.get(&quot;contas&quot;, [])]</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tests/test_rifs.py#L157" target="_blank" rel="noopener noreferrer">tests/test_rifs.py:157</a><details class="trecho"><summary>trecho</summary><pre>def test_a_chave_do_bo_da_ana_tem_rif_que_aponta_a_conta_central(pasta):</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“O extrato só sai do cofre com a assinatura do juiz.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L3" target="_blank" rel="noopener noreferrer">README.md:3</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+
+<p class="obs">&#96;python rodar.py&#96; executa a etapa &#96;rastro.policia&#96;, que grava &#96;saidas/policia_extracao.json&#96;.</p>
+<dl class="campos"><div><dt>Existe</dt><dd>Em &#96;tela/motor.py&#96;, no modo exemplo, o extrato só é devolvido depois de verificar a assinatura Ed25519 do pedido.</dd></div><div><dt>Falta</dt><dd>O módulo &#96;rastro.hub.cofre&#96; não está no repositório (&#96;rastro/hub/&#96; só tem um &#96;__init__.py&#96; vazio). No modo real, escolhido quando existe &#96;saidas/policia_extracao.json&#96;, a abertura é sempre recusada, mesmo com assinatura.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L323" target="_blank" rel="noopener noreferrer">tela/motor.py:323</a><details class="trecho"><summary>trecho</summary><pre>_chave_juiz().public_key().verify(bytes.fromhex(pedido_assinado.get(&quot;assinatura&quot;, &quot;&quot;)),</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L318" target="_blank" rel="noopener noreferrer">tela/motor.py:318</a><details class="trecho"><summary>trecho</summary><pre>raise Indisponivel(&quot;no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)&quot;)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/dados.py#L23" target="_blank" rel="noopener noreferrer">tela/dados.py:23</a><details class="trecho"><summary>trecho</summary><pre>return &quot;real&quot; if (SAIDAS / &quot;policia_extracao.json&quot;).exists() else &quot;exemplo&quot;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“a IA lê cada BO, e o código confere os trechos.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L42" target="_blank" rel="noopener noreferrer">README.md:42</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">A resposta da IA passa por &#96;citacao.conferir&#96;, que exige o trecho na fonte e o valor dentro do trecho. No replay, a resposta vem do cache.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L209" target="_blank" rel="noopener noreferrer">rastro/policia/leitura.py:209</a><details class="trecho"><summary>trecho</summary><pre>resposta = ia.chamar(&quot;ler_bo&quot;, entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L69" target="_blank" rel="noopener noreferrer">rastro/policia/leitura.py:69</a><details class="trecho"><summary>trecho</summary><pre>certo, motivo = citacao.conferir(dado.trecho, dado.valor_original, parte, dado.campo)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/citacao.py#L79" target="_blank" rel="noopener noreferrer">rastro/comum/citacao.py:79</a><details class="trecho"><summary>trecho</summary><pre>if trecho not in fonte:</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Cada ligação tem o motivo e os trechos”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L43" target="_blank" rel="noopener noreferrer">README.md:43</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">Cada ligação é gravada com &#96;motivo&#96; e dois &#96;trechos&#96;, e a tela mostra os dois.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L191" target="_blank" rel="noopener noreferrer">rastro/policia/redes.py:191</a><details class="trecho"><summary>trecho</summary><pre>self.ligacoes[(a, b)] = {&quot;a&quot;: a, &quot;b&quot;: b, &quot;tipo&quot;: tipo, &quot;motivo&quot;: motivo,</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L268" target="_blank" rel="noopener noreferrer">tela/policia.py:268</a><details class="trecho"><summary>trecho</summary><pre>_par_de_trechos(lig[&quot;a&quot;], lig[&quot;b&quot;], lig.get(&quot;trechos&quot;))</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“as travas ficam à mostra (homônimo e CPF diferente barrados; chave genérica não liga)”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L43" target="_blank" rel="noopener noreferrer">README.md:43</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+
+
+<dl class="campos"><div><dt>Existe</dt><dd>A tela lista as travas; a trava de homônimo (CPF do meio diferente) barra a ligação provável, e telefone ou e-mail genérico não liga.</dd></div><div><dt>Falta</dt><dd>Com chave Pix, conta ou E2E idênticos e CPF diferente, o motor liga os BOs e só registra o aviso &#96;cpf_divergente&#96;, que o grafo rotula &quot;CPF diferente: barrado&quot;. A regra de dado genérico não se aplica a chave Pix nem a conta.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L44" target="_blank" rel="noopener noreferrer">rastro/policia/redes.py:44</a><details class="trecho"><summary>trecho</summary><pre>AVISO_CPF_DIVERGENTE = &quot;provável erro de escrita no BO; a ligação se mantém&quot;</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/grafo_vivo.py#L22" target="_blank" rel="noopener noreferrer">tela/grafo_vivo.py:22</a><details class="trecho"><summary>trecho</summary><pre>&quot;homonimo&quot;: &quot;homônimo: barrado&quot;, &quot;cpf_divergente&quot;: &quot;CPF diferente: barrado&quot;, &quot;vizinho&quot;: &quot;vizinho: barrado&quot;,</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L321" target="_blank" rel="noopener noreferrer">rastro/policia/redes.py:321</a><details class="trecho"><summary>trecho</summary><pre>c.travar_homonimo(a, b, perto)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/genericos.py#L12" target="_blank" rel="noopener noreferrer">rastro/comum/genericos.py:12</a><details class="trecho"><summary>trecho</summary><pre>CAMPOS_COM_GENERICO = frozenset({&quot;telefone&quot;, &quot;email&quot;})</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“o BO da Ana, de R$ 800, entra numa rede de 7 vítimas (exemplo).”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L43" target="_blank" rel="noopener noreferrer">README.md:43</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">Nos dados de exemplo, a rede G-1 tem 7 BOs, incluindo o BO-0001. No corpus de &#96;dados/&#96;, o &#96;ESCOPO.md&#96; registra 30 BOs na rede da Ana.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/saidas/exemplo/grupos_policia.json#L7" target="_blank" rel="noopener noreferrer">saidas/exemplo/grupos_policia.json:7</a><details class="trecho"><summary>trecho</summary><pre>&quot;BO-0001&quot;,</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/gerar_exemplo.py#L3" target="_blank" rel="noopener noreferrer">tela/gerar_exemplo.py:3</a><details class="trecho"><summary>trecho</summary><pre>Tudo aqui é inventado e pequeno (7 BOs na rede da Ana). Os números da tela</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/ESCOPO.md#L372" target="_blank" rel="noopener noreferrer">ESCOPO.md:372</a><details class="trecho"><summary>trecho</summary><pre>| R-1 (a da Ana, falso anúncio) | 30 | 40 | 9 |</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Cada abertura do RIF fica na auditoria.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L44" target="_blank" rel="noopener noreferrer">README.md:44</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">O botão de abrir o RIF registra &#96;rif_aberto&#96;. Sem &#96;rastro.hub.log&#96;, o registro feito pela tela fica na lista da sessão.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L400" target="_blank" rel="noopener noreferrer">tela/policia.py:400</a><details class="trecho"><summary>trecho</summary><pre>motor.registrar(&quot;policia&quot;, &quot;rif_aberto&quot;, f&quot;{rif_id} aberto pelo(a) investigador(a) da rede {gid}&quot;)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L369" target="_blank" rel="noopener noreferrer">tela/motor.py:369</a><details class="trecho"><summary>trecho</summary><pre>eventos.append(ev)</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“a assinatura é simulada, mas a Ed25519 é de verdade.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L46" target="_blank" rel="noopener noreferrer">README.md:46</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">O pedido é assinado com &#96;Ed25519PrivateKey&#96; da biblioteca &#96;cryptography&#96;, com chave gerada na sessão da tela. A verificação só é alcançada no modo exemplo.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L286" target="_blank" rel="noopener noreferrer">tela/motor.py:286</a><details class="trecho"><summary>trecho</summary><pre>st.session_state[&quot;_juiz&quot;] = Ed25519PrivateKey.generate()</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L303" target="_blank" rel="noopener noreferrer">tela/motor.py:303</a><details class="trecho"><summary>trecho</summary><pre>assinado[&quot;assinatura&quot;] = chave.sign(_bytes_pedido(pedido)).hex()</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“só as contas autorizadas saem, e o grafo desenha o caminho do dinheiro até a conta central.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L47" target="_blank" rel="noopener noreferrer">README.md:47</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+
+
+<dl class="campos"><div><dt>Existe</dt><dd>No modo exemplo, o código recusa conta fora da rede e do RIF, devolve extratos e desenha o grafo do dinheiro.</dd></div><div><dt>Falta</dt><dd>Além das contas do pedido assinado, o retorno inclui os extratos das contas de destino delas, estejam ou não no pedido. No modo real não sai extrato, porque &#96;rastro.hub.cofre&#96; não está no repositório.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L330" target="_blank" rel="noopener noreferrer">tela/motor.py:330</a><details class="trecho"><summary>trecho</summary><pre>return [e for e in todos if e[&quot;conta_id&quot;] in pedidas or e[&quot;conta_id&quot;] in destinos]</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L593" target="_blank" rel="noopener noreferrer">tela/policia.py:593</a><details class="trecho"><summary>trecho</summary><pre>st.graphviz_chart(grafo_dinheiro(extratos, pedidas), width=&quot;stretch&quot;)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L317" target="_blank" rel="noopener noreferrer">tela/motor.py:317</a><details class="trecho"><summary>trecho</summary><pre>if dados.modo() == &quot;real&quot;:</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Se o pedido for alterado depois da assinatura, o cofre recusa.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L47" target="_blank" rel="noopener noreferrer">README.md:47</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+
+
+<dl class="campos"><div><dt>Existe</dt><dd>No modo exemplo, a assinatura é verificada sobre o pedido inteiro e a alteração gera &#96;CofreRecusado&#96;; conta fora das permitidas é recusada antes da verificação.</dd></div><div><dt>Falta</dt><dd>No modo real a verificação não é executada: todo pedido, alterado ou não, é recusado por falta de &#96;rastro.hub.cofre&#96;.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L326" target="_blank" rel="noopener noreferrer">tela/motor.py:326</a><details class="trecho"><summary>trecho</summary><pre>raise CofreRecusado(&quot;assinatura do juiz inválida ou pedido alterado depois de assinado&quot;) from e</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L318" target="_blank" rel="noopener noreferrer">tela/motor.py:318</a><details class="trecho"><summary>trecho</summary><pre>raise Indisponivel(&quot;no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)&quot;)</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“**Auditoria** (a cadeia de registros por hash)”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L49" target="_blank" rel="noopener noreferrer">README.md:49</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">Cada evento leva &#96;hash_anterior&#96; e um SHA-256, e a página Auditoria verifica a cadeia.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L367" target="_blank" rel="noopener noreferrer">tela/motor.py:367</a><details class="trecho"><summary>trecho</summary><pre>&quot;hash_anterior&quot;: eventos[-1][&quot;hash&quot;] if eventos else &quot;0&quot; * 64}</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/outros.py#L18" target="_blank" rel="noopener noreferrer">tela/outros.py:18</a><details class="trecho"><summary>trecho</summary><pre>r = motor.verificar_cadeia(eventos)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/coaf/log.py#L27" target="_blank" rel="noopener noreferrer">rastro/coaf/log.py:27</a><details class="trecho"><summary>trecho</summary><pre>evento[&quot;hash&quot;] = hashlib.sha256(canonico.encode(&quot;utf-8&quot;)).hexdigest()</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“**Como medimos** (o placar contra o gabarito)”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L49" target="_blank" rel="noopener noreferrer">README.md:49</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">A página lê &#96;placar.json&#96;, e &#96;placar/placar.py&#96; o calcula contra &#96;gabarito.json&#96;.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/outros.py#L37" target="_blank" rel="noopener noreferrer">tela/outros.py:37</a><details class="trecho"><summary>trecho</summary><pre>p = dados.placar()</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/placar.py#L437" target="_blank" rel="noopener noreferrer">placar/placar.py:437</a><details class="trecho"><summary>trecho</summary><pre>gabarito = ler_json(dados / &quot;gabarito.json&quot;)</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Com a &#96;ANTHROPIC_API_KEY&#96; no &#96;.env&#96;, a IA lê esse BO na hora (uma chamada à API) e a tela mostra se ele entra numa rede.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L51" target="_blank" rel="noopener noreferrer">README.md:51</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">No modo real, a chamada ao vivo depende também de ligar a chave &quot;IA ao vivo&quot; na tela (ou de &#96;RASTRO_MODO=ao_vivo&#96;); a tela informa em que rede o BO entrou ou que ficou fora.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L67" target="_blank" rel="noopener noreferrer">tela/motor.py:67</a><details class="trecho"><summary>trecho</summary><pre>return f(bo, forcar_ao_vivo=ao_vivo)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L58" target="_blank" rel="noopener noreferrer">tela/policia.py:58</a><details class="trecho"><summary>trecho</summary><pre>onde.toggle(&quot;IA ao vivo&quot;, key=&quot;ao_vivo&quot;, disabled=not tem_chave,</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L126" target="_blank" rel="noopener noreferrer">tela/policia.py:126</a><details class="trecho"><summary>trecho</summary><pre>st.markdown(f&quot;**{bid} entrou na Rede {g[&#39;grupo_id&#39;]}**, que agora tem **{r[&#39;vitimas&#39;]} vítimas** &quot;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“O projeto roda no modo replay: as respostas da IA já estão gravadas em &#96;cache/ia/&#96;.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L21" target="_blank" rel="noopener noreferrer">README.md:21</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">&#96;rodar.py&#96; usa replay por padrão, e &#96;ia.chamar&#96; lê a resposta de &#96;cache/ia/&lt;tarefa&gt;/&lt;hash&gt;.json&#96;.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rodar.py#L56" target="_blank" rel="noopener noreferrer">rodar.py:56</a><details class="trecho"><summary>trecho</summary><pre>ambiente[&quot;RASTRO_MODO&quot;] = &quot;ao_vivo&quot; if argumentos.ao_vivo else &quot;replay&quot;</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L200" target="_blank" rel="noopener noreferrer">rastro/comum/ia.py:200</a><details class="trecho"><summary>trecho</summary><pre>return _ler_cache(arquivo, tarefa, id_entrada)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/cache/ia/ler_bo/002b8eea0b9e5f533ef653ea01b39bec5a9d46f98e1175dd443fb74a17a200f0.json#L3" target="_blank" rel="noopener noreferrer">cache/ia/ler_bo/002b8eea0b9e5f533ef653ea01b39bec5a9d46f98e1175dd443fb74a17a200f0.json:3</a><details class="trecho"><summary>trecho</summary><pre>&quot;modelo&quot;: &quot;claude-haiku-5-5&quot;,</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“**Dados:** todos sintéticos, inclusive BOs, contestações, comunicações ao COAF, contas e extratos. Bancos fictícios.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L77" target="_blank" rel="noopener noreferrer">README.md:77</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">&#96;gerador/mundo.py&#96; gera redes, contas, vítimas, pagamentos, extratos e comunicações com semente fixa; os bancos são Aurora, Litoral e Serra.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/gerador/mundo.py#L25" target="_blank" rel="noopener noreferrer">gerador/mundo.py:25</a><details class="trecho"><summary>trecho</summary><pre>SEMENTE = 20261128</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/gerador/mundo.py#L9" target="_blank" rel="noopener noreferrer">gerador/mundo.py:9</a><details class="trecho"><summary>trecho</summary><pre>- dados/contas.jsonl, dados/extratos.jsonl, dados/gabarito.json, dados/lote_novo.json e dados/coaf_comunicacoes.jsonl.</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/bancos.py#L1" target="_blank" rel="noopener noreferrer">rastro/comum/bancos.py:1</a><details class="trecho"><summary>trecho</summary><pre>&quot;&quot;&quot;Bancos fictícios da demo. Nunca usar nome ou marca de banco real.</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Quem escreveu o gabarito não escreveu o motor, e o motor nunca lê o gabarito.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/README.md#L3" target="_blank" rel="noopener noreferrer">placar/README.md:3</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+
+
+<dl class="campos"><div><dt>Existe</dt><dd>A busca por &quot;gabarito&quot; em &#96;rastro/&#96; acha só um comentário em &#96;modelos.py&#96;; a leitura do arquivo está em &#96;placar/&#96;.</dd></div><div><dt>Falta</dt><dd>A autoria separada do gabarito e do motor não é verificável pelo código (a pasta analisada não traz histórico git); há só a divisão de papéis escrita nos documentos da equipe.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/modelos.py#L77" target="_blank" rel="noopener noreferrer">rastro/comum/modelos.py:77</a><details class="trecho"><summary>trecho</summary><pre># ---------- Gabarito: dados/gabarito.json (SÓ o placar lê) ----------</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/placar.py#L437" target="_blank" rel="noopener noreferrer">placar/placar.py:437</a><details class="trecho"><summary>trecho</summary><pre>gabarito = ler_json(dados / &quot;gabarito.json&quot;)</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“O placar compara o pipeline com a busca exata e com um prompt único no modelo mais forte.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/README.md#L77" target="_blank" rel="noopener noreferrer">placar/README.md:77</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+
+
+<dl class="campos"><div><dt>Existe</dt><dd>Há a busca exata por regex, o script do prompt único com &#96;claude-opus-5-5&#96; e o placar que lê a saída dele se existir.</dd></div><div><dt>Falta</dt><dd>&#96;cache/ia/prompt_unico/&#96; não tem resposta gravada, e &#96;python -m placar&#96; roda só a busca exata e o placar. O &#96;ESCOPO.md&#96; registra que essa linha não aparece no placar sem uma rodada ao vivo.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L24" target="_blank" rel="noopener noreferrer">placar/prompt_unico.py:24</a><details class="trecho"><summary>trecho</summary><pre>MODELO = &quot;claude-opus-5-5&quot;</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/__main__.py#L5" target="_blank" rel="noopener noreferrer">placar/__main__.py:5</a><details class="trecho"><summary>trecho</summary><pre>busca_exata.main()</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/ESCOPO.md#L399" target="_blank" rel="noopener noreferrer">ESCOPO.md:399</a><details class="trecho"><summary>trecho</summary><pre>&#96;cache/ia/prompt_unico/&#96; está vazio.</pre></details></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-nao_declarado">
+<details><summary><h2>Usado e não declarado</h2><span class="contagem">1 registro</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (via fastembed)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">modelo</p>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L50" target="_blank" rel="noopener noreferrer">rastro/policia/embeddings.py:50</a><details class="trecho"><summary>trecho</summary><pre>from fastembed import TextEmbedding</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L24" target="_blank" rel="noopener noreferrer">rastro/policia/embeddings.py:24</a><details class="trecho"><summary>trecho</summary><pre>MODELO = &quot;sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2&quot;</pre></details></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-uso">
+<details><summary><h2>Teste de uso</h2><span class="contagem">4 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Instalação</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span> <span class="detalhe">ERROR: No matching distribution found for networkx==3.7</span></p>
+<p class="valor">7 s</p>
+
+
+</article><article class="bloco">
+<header><h3>Subida local</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">o build parou em instalar, antes desta fase</span></p>
+
+
+
+</article><article class="bloco">
+<header><h3>Variáveis preenchidas com valor falso</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">o teste local roda sem as chaves reais da equipe</span></p>
+<ul class="lista"><li>ANTHROPIC_API_KEY</li><li>RASTRO_MODO</li><li>NEO4J_USER</li><li>NEO4J_PASSWORD</li></ul>
+
+
+</article><article class="bloco">
+<header><h3>Deploy responde</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span> <span class="detalhe">mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/</span></p>
+
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://rastro-hackia.streamlit.app/" target="_blank" rel="noopener noreferrer">https://rastro-hackia.streamlit.app/</a></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-ia">
+<details><summary><h2>Uso de IA</h2><span class="contagem">7 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Bibliotecas de IA nas dependências</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>anthropic (Anthropic), em requirements.txt</li></ul>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/requirements.txt#L1" target="_blank" rel="noopener noreferrer">requirements.txt:1</a><details class="trecho"><summary>trecho</summary><pre>anthropic==2.8.0</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Pontos do código que citam provedores de IA</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<div class="rolagem"><table><thead><tr><th scope="col">Provedor</th><th scope="col">Caminho</th><th scope="col">Linha</th></tr></thead><tbody><tr><td class="">Anthropic</td><td class="">placar/prompt_unico.py</td><td class="mono">17</td></tr><tr><td class="">Anthropic</td><td class="">placar/prompt_unico.py</td><td class="mono">108</td></tr><tr><td class="">Anthropic</td><td class="">rastro/comum/ia.py</td><td class="mono">102</td></tr><tr><td class="">Anthropic</td><td class="">rastro/comum/ia.py</td><td class="mono">133</td></tr><tr><td class="">Anthropic</td><td class="">tests/test_prompt_unico.py</td><td class="mono">6</td></tr></tbody></table></div>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L17" target="_blank" rel="noopener noreferrer">placar/prompt_unico.py:17</a><details class="trecho"><summary>trecho</summary><pre>import anthropic</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L108" target="_blank" rel="noopener noreferrer">placar/prompt_unico.py:108</a><details class="trecho"><summary>trecho</summary><pre>    from anthropic import Anthropic</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L102" target="_blank" rel="noopener noreferrer">rastro/comum/ia.py:102</a><details class="trecho"><summary>trecho</summary><pre>    from anthropic import Anthropic</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L133" target="_blank" rel="noopener noreferrer">rastro/comum/ia.py:133</a><details class="trecho"><summary>trecho</summary><pre>    from anthropic import transform_schema</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tests/test_prompt_unico.py#L6" target="_blank" rel="noopener noreferrer">tests/test_prompt_unico.py:6</a><details class="trecho"><summary>trecho</summary><pre>import anthropic</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Chamada a Anthropic</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">claude-haiku-5-5</p>
+<p class="obs">Extrair de cada BO os dados com papel e trecho, em JSON com schema.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L135" target="_blank" rel="noopener noreferrer">rastro/comum/ia.py:135</a><details class="trecho"><summary>trecho</summary><pre>resposta = criar_cliente().beta.messages.create(</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L209" target="_blank" rel="noopener noreferrer">rastro/policia/leitura.py:209</a><details class="trecho"><summary>trecho</summary><pre>resposta = ia.chamar(&quot;ler_bo&quot;, entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Chamada a Anthropic</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">claude-haiku-5-5</p>
+<p class="obs">Ler as contestações do MED no lado do banco.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/banco/leitura.py#L113" target="_blank" rel="noopener noreferrer">rastro/banco/leitura.py:113</a><details class="trecho"><summary>trecho</summary><pre>resposta = ia.chamar(TAREFA, entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L24" target="_blank" rel="noopener noreferrer">rastro/comum/ia.py:24</a><details class="trecho"><summary>trecho</summary><pre>MODELO = &quot;claude-haiku-5-5&quot;</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Chamada a Anthropic</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">claude-sonnet-5-5</p>
+<p class="obs">Agente com ferramentas que consulta o grafo sobre um BO, CPF, chave ou conta.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia_conversa.py#L42" target="_blank" rel="noopener noreferrer">rastro/comum/ia_conversa.py:42</a><details class="trecho"><summary>trecho</summary><pre>resposta = ia.criar_cliente().messages.create(</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/agente.py#L34" target="_blank" rel="noopener noreferrer">rastro/policia/agente.py:34</a><details class="trecho"><summary>trecho</summary><pre>MODELO = &quot;claude-sonnet-5-5&quot;</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/agente.py#L644" target="_blank" rel="noopener noreferrer">rastro/policia/agente.py:644</a><details class="trecho"><summary>trecho</summary><pre>resposta = ia_conversa.conversar_turno(TAREFA, sistema, FERRAMENTAS, mensagens,</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Chamada a Anthropic</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">claude-opus-5-5</p>
+<p class="obs">Concorrente &quot;prompt único&quot; do placar: agrupar todos os BOs num prompt só.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L120" target="_blank" rel="noopener noreferrer">placar/prompt_unico.py:120</a><details class="trecho"><summary>trecho</summary><pre>resposta = cliente.beta.messages.parse(</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L24" target="_blank" rel="noopener noreferrer">placar/prompt_unico.py:24</a><details class="trecho"><summary>trecho</summary><pre>MODELO = &quot;claude-opus-5-5&quot;</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Chamada a fastembed (modelo local)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2</p>
+<p class="obs">Gerar vetores dos relatos para o agente achar BOs de roteiro parecido.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L56" target="_blank" rel="noopener noreferrer">rastro/policia/embeddings.py:56</a><details class="trecho"><summary>trecho</summary><pre>return [np.asarray(v, dtype=np.float64) for v in TextEmbedding(MODELO).embed(textos)]</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L24" target="_blank" rel="noopener noreferrer">rastro/policia/embeddings.py:24</a><details class="trecho"><summary>trecho</summary><pre>MODELO = &quot;sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2&quot;</pre></details></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-linha_do_tempo">
+<details><summary><h2>Linha do tempo</h2><span class="contagem">3 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Repositório criado</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">28/11 08:21</p>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/Marcus-Vin/rastro" target="_blank" rel="noopener noreferrer">https://github.com/Marcus-Vin/rastro</a></li></ul>
+</article><article class="bloco">
+<header><h3>Commits antes do início da janela</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">3 de 461 commits, o mais antigo em 28/11 08:46</p>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/Marcus-Vin/rastro/commit/943d7c5a88da44d1f2973a9a060156ae9e8722ae" target="_blank" rel="noopener noreferrer">https://github.com/Marcus-Vin/rastro/commit/943d7c5a88da44d1f2973a9a060156ae9e8722ae</a></li></ul>
+</article><article class="bloco">
+<header><h3>Commit muito grande</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">b0362f5, 22748 linhas adicionadas em 375 arquivos, de 119552 no histórico</p>
+<p class="obs">22748 linhas fora de arquivos de trava e gerados</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/Marcus-Vin/rastro/commit/b0362f507ba9e7ce7151293a27ed0847f219eaf5" target="_blank" rel="noopener noreferrer">https://github.com/Marcus-Vin/rastro/commit/b0362f507ba9e7ce7151293a27ed0847f219eaf5</a></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-origem">
+<details><summary><h2>Origem do código</h2><span class="contagem">1 registro</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Nenhum arquivo igual ao de outra equipe nesta rodada</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+<p class="obs">18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços</p>
+
+</article></div>
+</details>
+</section><section class="parte" id="parte-parecidos">
+<details><summary><h2>Projetos parecidos no mundo</h2><span class="contagem">5 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Sistema de IA do DERCC (Polícia Civil do Rio Grande do Sul)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Reportagem do Jornal Semanário descreve um sistema de IA do departamento de crimes cibernéticos que cruza dados de milhares de ocorrências, mapeia chaves Pix repetidas, faz triagem de telefones e acompanha a rota do dinheiro desviado.</p>
+<p class="obs">Em comum: Uso pela Polícia Civil para ligar ocorrências de golpe por destinos de pagamento repetidos. Diferente: A fonte é uma reportagem, não uma página do sistema; nela não aparecem pedido de RIF, assinatura judicial para extrato nem trilha de auditoria.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://jornalsemanario.com.br/estelionato-digital-delegada-raquel-peixoto-pede-por-delegacia-especializada-em-bento-goncalves/" target="_blank" rel="noopener noreferrer">https://jornalsemanario.com.br/estelionato-digital-delegada-raquel-peixoto-pede-por-delegacia-especializada-em-bento-goncalves/</a></li></ul>
+</article><article class="bloco">
+<header><h3>TRM Ardence (TRM Labs)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Plataforma de investigação com IA para casos de golpe que extrai identificadores dos relatos e liga denúncias separadas por destinos de pagamento, domínios e contas em comum.</p>
+<p class="obs">Em comum: Extrai dados de relatos de vítimas e os agrupa por destinos de pagamento compartilhados para apoiar investigadores, inclusive policiais. Diferente: A página trata de endereços de carteiras de criptoativos e rastreamento de depósitos; não descreve BOs, COAF nem contas bancárias liberadas por ordem judicial.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://www.trmlabs.com/missions/fraud-and-scams" target="_blank" rel="noopener noreferrer">https://www.trmlabs.com/missions/fraud-and-scams</a></li></ul>
+</article><article class="bloco">
+<header><h3>MuleTrace</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Protótipo de hackathon para investigadores de crimes cibernéticos financeiros que rastreia o dinheiro entre contas e aponta contas de destino que recebem de denúncias independentes.</p>
+<p class="obs">Em comum: Liga denúncias de vítimas por contas de destino em comum, mostra a rede de contas, usa dados sintéticos e guarda hash SHA-256 das evidências. Diferente: A detecção descrita é por regras, sem modelo de linguagem para ler o texto das denúncias; a página descreve bloqueio de contas e dossiês em PDF no contexto legal da Índia.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/mvelprasad45/MuleTrace" target="_blank" rel="noopener noreferrer">https://github.com/mvelprasad45/MuleTrace</a></li></ul>
+</article><article class="bloco">
+<header><h3>complaint-analyser</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Protótipo em Python que extrai de denúncias de golpe online telefones, IDs UPI, links, e-mails e carteiras cripto, agrupa as denúncias que compartilham um dado e mostra as ligações em um painel.</p>
+<p class="obs">Em comum: Lê o texto das denúncias e liga as que citam o mesmo destino ou identificador, em um grafo, com dados sintéticos. Diferente: O repositório se descreve como projeto de aprendizado e classifica o tipo de golpe por palavras-chave; não descreve pedido de informações a órgãos, ordem judicial ou extratos.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/madeeha-28/complaint-analyser" target="_blank" rel="noopener noreferrer">https://github.com/madeeha-28/complaint-analyser</a></li></ul>
+</article><article class="bloco">
+<header><h3>Plataforma Tentáculos (Polícia Federal)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Base única da Polícia Federal alimentada por instituições financeiras com dados de golpes bancários eletrônicos, usada também por polícias civis que aderiram, para mapear organizações criminosas.</p>
+<p class="obs">Em comum: Ponte de informações entre instituições bancárias e polícias, incluindo Polícias Civis, para investigar golpes financeiros. Diferente: Os dados vêm das instituições financeiras; a reportagem não descreve leitura de BOs em texto livre por IA nem fluxo de RIF ou de assinatura judicial.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://finsidersbrasil.com.br/eventos/plataforma-tentaculos-expande-atuacao-com-integracao-de-policias-civis" target="_blank" rel="noopener noreferrer">https://finsidersbrasil.com.br/eventos/plataforma-tentaculos-expande-atuacao-com-integracao-de-policias-civis</a></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-arquitetura">
+<details><summary><h2>Arquitetura</h2><span class="contagem">9 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Linguagens e tamanho</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<div class="rolagem"><table><thead><tr><th scope="col">Linguagem</th><th scope="col">Arquivos</th><th scope="col">Linhas</th></tr></thead><tbody><tr><td class="">JSON</td><td class="mono">1154</td><td class="mono">80816</td></tr><tr><td class="">Python</td><td class="mono">83</td><td class="mono">18169</td></tr><tr><td class="">Markdown</td><td class="mono">13</td><td class="mono">1828</td></tr><tr><td class="">HTML</td><td class="mono">2</td><td class="mono">1703</td></tr><tr><td class="">TOML</td><td class="mono">1</td><td class="mono">36</td></tr><tr><td class="">YAML</td><td class="mono">1</td><td class="mono">24</td></tr></tbody></table></div>
+<p class="obs">1704 arquivos de texto e 104599 linhas no total, sem contar dependências instaladas, arquivos de trava e binários.</p>
+
+</article><article class="bloco">
+<header><h3>Leitura com IA e conferência</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>rastro/comum/ia.py</li><li>rastro/policia/leitura.py</li><li>rastro/banco/leitura.py</li><li>rastro/comum/citacao.py</li></ul>
+<p class="obs">Chama o modelo (ou lê o cache) para BOs e contestações e confere cada dado contra o texto da fonte.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L191" target="_blank" rel="noopener noreferrer">rastro/policia/leitura.py:191</a><details class="trecho"><summary>trecho</summary><pre>def ler_bo(bo: dict, forcar_ao_vivo: bool = False) -&gt; dict:</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L179" target="_blank" rel="noopener noreferrer">rastro/comum/ia.py:179</a><details class="trecho"><summary>trecho</summary><pre>def chamar(tarefa: str, entrada: dict, schema: type[BaseModel], forcar_ao_vivo: bool = False) -&gt; dict:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Motor de ligações e redes</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>rastro/policia/redes.py</li><li>rastro/policia/__main__.py</li><li>rastro/policia/grafo.py</li></ul>
+<p class="obs">Liga os BOs por regras em Python, registra travas e monta redes com networkx, com gravação opcional no Neo4j.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L439" target="_blank" rel="noopener noreferrer">rastro/policia/redes.py:439</a><details class="trecho"><summary>trecho</summary><pre>def montar_redes(itens: list[dict]) -&gt; dict:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Agente de análise do grafo</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>rastro/policia/agente.py</li><li>rastro/policia/agente_conferencia.py</li><li>rastro/policia/embeddings.py</li><li>tela/analise.py</li></ul>
+<p class="obs">Consulta o grafo por ferramentas fixas e tem cada achado conferido pelo código.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/agente.py#L617" target="_blank" rel="noopener noreferrer">rastro/policia/agente.py:617</a><details class="trecho"><summary>trecho</summary><pre>def analisar(entrada: dict, forcar_ao_vivo: bool = False, memoria: GrafoMemoria | None = None,</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>COAF simulado</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>rastro/coaf/simulado.py</li><li>rastro/coaf/log.py</li><li>gerador/rifs.py</li></ul>
+<p class="obs">Valida o pedido de RIF e monta a resposta com RIFs pré-calculados e comunicações recebidas.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/coaf/simulado.py#L234" target="_blank" rel="noopener noreferrer">rastro/coaf/simulado.py:234</a><details class="trecho"><summary>trecho</summary><pre>def pedir_rif(pedido: dict) -&gt; dict:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Plataforma do investigador</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>app.py</li><li>tela/investigacao.py</li><li>tela/policia.py</li><li>web/index.html</li></ul>
+<p class="obs">Interface Streamlit com o fluxo do lote de BOs ao pedido de extrato, além das páginas de consulta.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/app.py#L39" target="_blank" rel="noopener noreferrer">app.py:39</a><details class="trecho"><summary>trecho</summary><pre>navegacao = st.navigation(paginas, position=&quot;hidden&quot;)</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Cofre e auditoria na tela</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>tela/motor.py</li><li>tela/outros.py</li></ul>
+<p class="obs">Assina o pedido com Ed25519, abre extratos de exemplo e mantém o log encadeado por hash.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L307" target="_blank" rel="noopener noreferrer">tela/motor.py:307</a><details class="trecho"><summary>trecho</summary><pre>def abrir(pedido_assinado: dict, contas_permitidas: list[str]) -&gt; list[dict]:</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L361" target="_blank" rel="noopener noreferrer">tela/motor.py:361</a><details class="trecho"><summary>trecho</summary><pre>def registrar(ator: str, acao: str, detalhe: str) -&gt; dict:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Corpus sintético e placar</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>gerador/mundo.py</li><li>gerador/montar.py</li><li>placar/placar.py</li><li>placar/busca_exata.py</li><li>placar/prompt_unico.py</li></ul>
+<p class="obs">Gera os dados sintéticos e mede os agrupamentos contra o gabarito.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/placar.py#L355" target="_blank" rel="noopener noreferrer">placar/placar.py:355</a><details class="trecho"><summary>trecho</summary><pre>def calcular(gabarito: dict, saidas: Path, dados: Path) -&gt; dict:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Diferença entre a arquitetura descrita e a encontrada</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<div class="rolagem"><table><thead><tr><th scope="col">descrito</th><th scope="col">encontrado</th></tr></thead><tbody><tr><td class="">O &#96;ESCOPO.md&#96; descreve o cofre em &#96;rastro/hub/cofre.py&#96;, com &#96;criar_pedido&#96;, &#96;assinar&#96; e &#96;abrir&#96;.</td><td class="">&#96;rastro/hub/&#96; só tem um &#96;__init__.py&#96; vazio; assinatura e abertura estão em &#96;tela/motor.py&#96;, como alternativa quando o módulo não existe, e a abertura só funciona no modo exemplo.</td></tr></tbody></table></div>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/ESCOPO.md#L473" target="_blank" rel="noopener noreferrer">ESCOPO.md:473</a><details class="trecho"><summary>trecho</summary><pre>**Cofre (zona vermelha), em &#96;rastro/hub/cofre.py&#96;.**</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L309" target="_blank" rel="noopener noreferrer">tela/motor.py:309</a><details class="trecho"><summary>trecho</summary><pre>f = _funcao(&quot;rastro.hub.cofre&quot;, &quot;abrir&quot;)</pre></details></li><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L318" target="_blank" rel="noopener noreferrer">tela/motor.py:318</a><details class="trecho"><summary>trecho</summary><pre>raise Indisponivel(&quot;no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)&quot;)</pre></details></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-higiene">
+<details><summary><h2>Submissão e segredos</h2><span class="contagem">6 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Nenhum segredo encontrado pelos padrões da varredura</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article><article class="bloco">
+<header><h3>README</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">README.md, 80 linhas</p>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L1" target="_blank" rel="noopener noreferrer">README.md:1</a><details class="trecho"><summary>trecho</summary><pre># Rastro</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Instruções de execução no README</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L9" target="_blank" rel="noopener noreferrer">README.md:9</a><details class="trecho"><summary>trecho</summary><pre>## Como rodar (sem chave de API)</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Descrição do projeto no formulário</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article><article class="bloco">
+<header><h3>Vídeo no formulário</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article><article class="bloco">
+<header><h3>Link da demo no formulário</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article></div>
+</details>
+</section>
+<section class="parte" id="parte-nao_verificado">
+<details><summary><h2>Não foi possível verificar</h2><span class="contagem">2 registros</span></summary>
+<div class="conteudo"><ul class="nao-verificado"><li><strong>Subida local</strong><p>o build parou em instalar, antes desta fase</p></li><li><strong>Variáveis preenchidas com valor falso</strong><p>o teste local roda sem as chaves reais da equipe</p></li></ul></div>
+</details>
+</section>
+<footer class="parte rodape" id="como-foi-gerado">
+<details><summary><h2>Como este relatório foi gerado</h2></summary>
+<div class="conteudo">
+<div class="rolagem"><table>
+<thead><tr><th scope="col">Etapa</th><th scope="col">Situação</th><th scope="col">Duração</th><th scope="col">Onde parou</th></tr></thead>
+<tbody><tr><th scope="row">Build</th><td>concluída</td><td class="mono">20 s</td><td></td></tr><tr><th scope="row">Composição do repositório</th><td>concluída</td><td class="mono">6 s</td><td></td></tr><tr><th scope="row">Cópia entre equipes</th><td>concluída</td><td class="mono">7 s</td><td></td></tr><tr><th scope="row">Commit de corte</th><td>concluída</td><td class="mono">4 s</td><td></td></tr><tr><th scope="row">Deploy</th><td>concluída</td><td class="mono">3 s</td><td></td></tr><tr><th scope="row">Sinais de fachada no código</th><td>concluída</td><td class="mono">6 s</td><td></td></tr><tr><th scope="row">Registro do GitHub</th><td>concluída</td><td class="mono">4 s</td><td></td></tr><tr><th scope="row">Leitura do código</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Leitura do código: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Linha do tempo</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Promessas da equipe</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Promessas da equipe: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Segredos versionados</th><td>concluída</td><td class="mono">5 s</td><td></td></tr><tr><th scope="row">Projetos parecidos</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Projetos parecidos: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Requisitos de submissão</th><td>concluída</td><td class="mono">5 s</td><td></td></tr><tr><th scope="row">Teste de uso</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Teste de uso: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr></tbody>
+</table></div>
+<p><span class="mono">1</span> afirmação descartada por falta de prova: sem_prova (1).</p>
+</div>
+</details>
+<p class="frase">Este relatório registra fatos e evidências. Não dá nota e não substitui a avaliação dos jurados.</p>
+</footer>
+</main>
+</body>
+</html>

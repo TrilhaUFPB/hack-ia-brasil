@@ -1,0 +1,2448 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "fatto",
+    "nome": "Fatto",
+    "numero": 18,
+    "track": "Educação",
+    "repo": "https://github.com/ltodarosouza/hackAI",
+    "demo": "https://hack-ai-ivory.vercel.app/",
+    "video": "https://youtu.be/Wo-HMsVoOu8?is=1kxhPq4zvZ84DWk8",
+    "resumo": "Fatto é um agente para professores de matemática que lê a resolução de cada aluno na prova, encontra a habilidade-raiz por trás de cada erro e transforma isso em aulas planejadas para a turma real."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.482Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "e32e50f7e1309360b3c69b8d433825b90613e5a3",
+    "commit_em": "2026-11-28T19:04:43Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5537,
+          "preparo_ms": 0,
+          "execucao_ms": 885
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4,
+          "preparo_ms": 0,
+          "execucao_ms": 3230
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3535,
+          "preparo_ms": 0,
+          "execucao_ms": 16315
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5529,
+          "preparo_ms": 0,
+          "execucao_ms": 887
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3551,
+          "preparo_ms": 0,
+          "execucao_ms": 2883
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 276
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2968,
+          "preparo_ms": 0,
+          "execucao_ms": 152
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 39
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5664,
+          "preparo_ms": 0,
+          "execucao_ms": 767
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 7
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5678,
+          "preparo_ms": 0,
+          "execucao_ms": 756
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "tempo_esgotado",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência uso: tempo esgotado"
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "nao_testavel",
+      "motivo": "a etapa Teste de uso: conferência não terminou"
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/(app)/t/[turma]/provas/[id]/captura/page.tsx",
+          "linha": 424,
+          "linha_fim": null,
+          "trecho": "capture=\"environment\"",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/(app)/t/%5Bturma%5D/provas/%5Bid%5D/captura/page.tsx#L424",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/ler.ts",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "const bruto = await pedirJson(\"ler\", () => conversar(modelo, PROMPT, [",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/ler.ts#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/pipeline.ts",
+          "linha": 163,
+          "linha_fim": null,
+          "trecho": "const lida = await ler(p.caminho, p.imagem.largura, p.imagem.altura);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/pipeline.ts#L163",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A tela de captura abre a câmera; a foto é enviada à API e um modelo de visão transcreve cada linha com a posição na folha. As provas de \"Provas de exemplo\" seguem um roteiro fixo, sem modelo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O professor fotografa as provas dos alunos e a IA lê a resolução linha por linha",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "O professor fotografa as provas dos alunos e a IA lê a resolução linha por linha",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/pipeline.ts",
+          "linha": 175,
+          "linha_fim": null,
+          "trecho": "await publicar(agora(`Questão ${q.n} conferida`));",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/pipeline.ts#L175",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/adaptar.ts",
+          "linha": 53,
+          "linha_fim": null,
+          "trecho": "tipo: raiz ? \"lacuna\" : respostas.some((r) => r.status === \"errada\") ? \"lapso\" : \"domina\",",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/adaptar.ts#L53",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/adaptar.ts",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "funcoes: null,",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/adaptar.ts#L9",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/diagnostico.tsx",
+          "linha": 32,
+          "linha_fim": null,
+          "trecho": "{ nome: \"Erraram por descuido\", n: lapso, cor: COR.lapso },",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/diagnostico.tsx#L32",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": null,
+      "existe": "A correção publica cada avanço enquanto roda. O front classifica a prova como \"lacuna\" quando há degrau mapeado e como \"lapso\" quando há erro sem degrau (o degrau \"funcoes\" é mapeado para nulo).",
+      "falta": "Não há campo do modelo ou do verificador que diga se um erro é de distração ou de conceito. O rótulo \"Erraram por descuido\" está em PainelDiagnostico, que nenhuma tela importa.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "corrige em tempo real separando erro de distração de erro de conceito",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "corrige em tempo real separando erro de distração de erro de conceito",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/cadastro.ts",
+          "linha": 132,
+          "linha_fim": null,
+          "trecho": "if (nome) aluno = await garantirAluno(turmaId, nome);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/cadastro.ts#L132",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/data.ts",
+          "linha": 260,
+          "linha_fim": null,
+          "trecho": "const ALUNOS_DA_TURMA = [\"Henrique Alves\", \"João Pedro\", \"Lucas Ferreira\", \"Mateus Ribeiro\", \"Sofia Andrade\"];",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/data.ts#L260",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/demo-store.tsx",
+          "linha": 280,
+          "linha_fim": null,
+          "trecho": "?? TURMA_ROSTER.find((a) => livre(a.id) && !DEMO_IDS.has(a.id))?.id;",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/demo-store.tsx#L280",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/demo-store.tsx",
+          "linha": 249,
+          "linha_fim": null,
+          "trecho": "const aluno = paraAluno({ ...c, leitura: { ...c.leitura, aluno: envio.aluno.nome } }, envio.aluno);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/demo-store.tsx#L249",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": null,
+      "existe": "O backend cria o aluno a partir do nome lido na folha quando a prova chega sem aluno.",
+      "falta": "O front usa uma lista fixa de 5 nomes; sem aluno escolhido nem nome já lido, atribui a foto ao próximo da lista e mantém esse nome nas atualizações da correção.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Os alunos nascem das fotos.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 39,
+        "linha_fim": null,
+        "trecho": "Os alunos nascem das fotos.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L39",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/prompts/leitura.md",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "Transcreva EXATAMENTE o que o aluno escreveu, inclusive os erros.",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/prompts/leitura.md#L6",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/ler.ts",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "texto: String(l.texto ?? \"\").trim(),",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/ler.ts#L42",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "A transcrição literal é uma instrução no prompt do modelo de visão; o código guarda o texto devolvido, apenas sem espaços nas pontas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Cada linha escrita pelo aluno é transcrita exatamente como está, inclusive os erros.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 40,
+        "linha_fim": null,
+        "trecho": "Cada linha escrita pelo aluno é transcrita exatamente como está, inclusive os erros.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L40",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/conferirConta.ts",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "import { compile } from \"mathjs\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/conferirConta.ts#L10",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/conferirConta.ts",
+          "linha": 76,
+          "linha_fim": null,
+          "trecho": "return { n, status: \"erro\", erroLinha: i, motivo: `a solução mudou de ${mostrar(anterior)} para ${mostrar(atual)}` };",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/conferirConta.ts#L76",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/conferirConta.ts",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "const avaliar = (expr: string, x = 0): number => Number(compile(normalizar(expr)).evaluate({ x }));",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/conferirConta.ts#L27",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/diagnosticar.ts",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "if (conf.status === \"erro\") Object.assign(d, { resultado: \"errada\", erroLinha: conf.erroLinha });",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/diagnosticar.ts#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Cobre equações do 1º grau em x e expressões (nestas, x é avaliado como 0); o que não é interpretado volta como \"indeterminado\" e o modelo decide.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Um verificador (mathjs) acha a primeira linha em que a conta deixa de bater.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 41,
+        "linha_fim": null,
+        "trecho": "Um verificador (mathjs) acha a primeira linha em que a conta deixa de bater.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L41",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/escada.ts",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "{ id: \"funcoes\", ano: \"1º ano\", titulo: \"Funções\", detalhe: \"conteúdo da prova de hoje\", atual: true },",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/escada.ts#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/escada.ts",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "{ id: \"fracoes\", ano: \"6º ano\", titulo: \"Frações\", detalhe: \"somar, comparar e simplificar\" },",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/escada.ts#L16",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/diagnosticar.ts",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "degrau: ehDegrau(b.degrau) ? b.degrau : null,",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/diagnosticar.ts#L44",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": null,
+      "existe": "O modelo devolve a explicação e escolhe um de 5 degraus fixos: frações (6º ano), sinais e distributiva (7º), equações (8º) e funções (1º ano).",
+      "falta": "A escada usada pelo modelo termina no 1º ano; não há degraus de 2º ou 3º ano do Ensino Médio.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O modelo explica o que o aluno pensou e aponta o degrau quebrado na escada da BNCC, do 6º ano ao 3º ano do Ensino Médio",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 42,
+        "linha_fim": null,
+        "trecho": "O modelo explica o que o aluno pensou e aponta o degrau quebrado na escada da BNCC, do 6º ano ao 3º ano do Ensino Médio",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L42",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/data.ts",
+          "linha": 422,
+          "linha_fim": null,
+          "trecho": "if (st.raiz) raiz[st.raiz] = (raiz[st.raiz] ?? 0) + 1;",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/data.ts#L422",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/tela-mapa.tsx",
+          "linha": 396,
+          "linha_fim": null,
+          "trecho": "Erro típico",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/tela-mapa.tsx#L396",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/cascata.tsx",
+          "linha": 170,
+          "linha_fim": null,
+          "trecho": "{p.desbloqueia.length > 0 && <LockOpen size={15} className=\"mt-0.5 shrink-0\" />}",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/cascata.tsx#L170",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/diagnostico.tsx",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "export function PainelDiagnostico({",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/diagnostico.tsx#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": null,
+      "existe": "O mapa mostra a contagem de alunos por habilidade-raiz e um \"Erro típico\" por habilidade; a cascata do plano mostra o que cada aula desbloqueia.",
+      "falta": "Não há tela em uso que liste quais erros se repetem e quantas vezes; o painel de padrões de erro (PainelDiagnostico) não é importado por nenhuma tela.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O professor vê quantos alunos travaram em cada habilidade, quais erros se repetem e quais lacunas destravam o resto.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 43,
+        "linha_fim": null,
+        "trecho": "O professor vê quantos alunos travaram em cada habilidade, quais erros se repetem e quais lacunas destravam o resto.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L43",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano.ts",
+          "linha": 227,
+          "linha_fim": null,
+          "trecho": "const passos: PassoCascata[] = aulas.map((aula, i) => {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano.ts#L227",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/plano.ts",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "const bruto = await pedirJson(\"plano\", () => chamar(PROMPT, usuario), 1);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/plano.ts#L102",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/prompts/plano.md",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "4. Use os erros reais da turma como exemplo no quadro, SEMPRE sem nome de aluno",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/prompts/plano.md#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano-exemplo.ts",
+          "linha": 139,
+          "linha_fim": null,
+          "trecho": "cascata: montarCascata(students, PROVA.questoes),",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano-exemplo.ts#L139",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "A ordem é calculada no front e o roteiro é pedido ao modelo; o uso dos erros sem nome é instrução do prompt. As aulas saem das 5 questões fixas de PROVA, e um roteiro escrito à mão aparece até a resposta do modelo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O Fatto sugere a ordem das aulas e o roteiro de cada uma, retomando cada lacuna **dentro** do conteúdo atual, com os erros reais da turma como exemplo no quadro (sempre sem nome de aluno).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 44,
+        "linha_fim": null,
+        "trecho": "O Fatto sugere a ordem das aulas e o roteiro de cada uma, retomando cada lacuna **dentro** do conteúdo atual, com os erros reais da turma como exemplo no quadro (sempre sem nome de aluno).",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L44",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/prompts/plano.md",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "10. Recursos de escola pública: quadro, giz e caderno. Nada de projetor, celular ou internet.",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/prompts/plano.md#L19",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "A restrição é uma instrução no prompt do plano; não há verificação em código sobre o texto devolvido.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o plano usa só **quadro, giz e caderno**: sem projetor, sem celular, sem internet em sala.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 50,
+        "linha_fim": null,
+        "trecho": "o plano usa só **quadro, giz e caderno**: sem projetor, sem celular, sem internet em sala.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L50",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/config.ts",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "export const MODELO_VISAO = process.env.DEGRAU_MODELO_VISAO ?? \"moonshotai/kimi-k3.1-pro\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/config.ts#L26",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/config.ts",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "export const OPENROUTER_BASE_URL = process.env.OPENROUTER_BASE_URL ?? \"https://openrouter.ai/api/v1\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/config.ts#L16",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/featherless.ts",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "_cliente = new OpenAI({ baseURL: OPENROUTER_BASE_URL, apiKey: OPENROUTER_API_KEY });",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/featherless.ts#L12",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": null,
+      "existe": "O modelo de visão padrão é moonshotai/kimi-k3.1-pro, usado na leitura da prova.",
+      "falta": "A chamada não vai para a Featherless: o cliente aponta por padrão para o OpenRouter (openrouter.ai).",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Modelo:** `moonshotai/Kimi-K3.1-Pro` (Featherless).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "degrau/docs/fluxo.md",
+        "linha": 30,
+        "linha_fim": null,
+        "trecho": "**Modelo:** `moonshotai/Kimi-K3.1-Pro` (Featherless).",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/fluxo.md#L30",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/config.ts",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "export const MODELO_RACIOCINIO = process.env.DEGRAU_MODELO_RACIOCINIO ?? \"qwen/qwen3.8-2.4t-a95b\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/config.ts#L29",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/config.ts",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "export const OPENROUTER_BASE_URL = process.env.OPENROUTER_BASE_URL ?? \"https://openrouter.ai/api/v1\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/config.ts#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": null,
+      "existe": "O modelo de raciocínio padrão é qwen/qwen3.8-2.4t-a95b, usado no diagnóstico por questão, no diagnóstico da turma e no plano.",
+      "falta": "A chamada não vai para a Featherless: o cliente aponta por padrão para o OpenRouter (openrouter.ai).",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Modelo:** `Qwen/Qwen3.8-2.4T-A95B` (Featherless).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "degrau/docs/fluxo.md",
+        "linha": 86,
+        "linha_fim": null,
+        "trecho": "**Modelo:** `Qwen/Qwen3.8-2.4T-A95B` (Featherless).",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/fluxo.md#L86",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/package.json",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "\"next\": \"^15.5.29\",",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/package.json#L21",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/(app)/t/[turma]/diagnostico/page.tsx",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "<TelaMapa modo=\"diagnostico\" />",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/(app)/t/%5Bturma%5D/diagnostico/page.tsx#L60",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/(app)/t/[turma]/plano/page.tsx",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "<TelaMapa modo=\"plano\" />",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/(app)/t/%5Bturma%5D/plano/page.tsx#L60",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/(app)/t/[turma]/provas/[id]/layout.tsx",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "<div className=\"flex min-h-screen flex-col\">",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/(app)/t/%5Bturma%5D/provas/%5Bid%5D/layout.tsx#L42",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/rotas.ts",
+          "linha": 45,
+          "linha_fim": null,
+          "trecho": "export const temProvaDemo = (turma: string) => turma === TURMA_DA_PROVA;",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/rotas.ts#L45",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "Há telas de turma, captura, correção, mapa, diagnóstico e plano em Next.js com classes Tailwind; a única prova com dados é a fixa da turma 2º B.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O app do professor (Next.js, React, Tailwind): turmas, captura das provas, correção, mapa de habilidades, diagnóstico e plano de aulas",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 92,
+        "linha_fim": null,
+        "trecho": "O app do professor (Next.js, React, Tailwind): turmas, captura das provas, correção, mapa de habilidades, diagnóstico e plano de aulas",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L92",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "const app = new Hono();",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L33",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/pipeline.ts",
+          "linha": 143,
+          "linha_fim": null,
+          "trecho": "export async function corrigirAoVivo(",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/pipeline.ts#L143",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/escada.ts",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "export const DEGRAUS: Degrau[] = [",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/escada.ts#L15",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 411,
+          "linha_fim": null,
+          "trecho": "\"/api/plano\",",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L411",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "API em Hono e TypeScript com pipeline de correção, escada fixa de degraus e rota do plano.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O backend (Hono + TypeScript): pipeline de correção, escada de habilidades e geração do plano.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 93,
+        "linha_fim": null,
+        "trecho": "O backend (Hono + TypeScript): pipeline de correção, escada de habilidades e geração do plano.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L93",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano.ts",
+          "linha": 161,
+          "linha_fim": null,
+          "trecho": "return ordenarPorPrereqs([...new Set(questoes.map((q) => q.skill))], porId);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano.ts#L161",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/tela-mapa.tsx",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "const base = pedidoDoPlano(exemplo.cascata, done, PROVA, total);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/tela-mapa.tsx#L59",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/plano.ts",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "for (const a of pedido.aulas) {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/plano.ts#L35",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "O front monta a cascata pelos pré-requisitos e envia as aulas ordenadas; o prompt manda o modelo não mudar a ordem e o backend percorre as aulas do pedido.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**A ordem não é decidida aqui**: o front calcula a cascata pelo mapa de pré-requisitos (`web/src/lib/plano.ts`) e manda pronta",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "degrau/docs/api.md",
+        "linha": 121,
+        "linha_fim": null,
+        "trecho": "**A ordem não é decidida aqui**: o front calcula a cascata pelo mapa de pré-requisitos (`web/src/lib/plano.ts`) e manda pronta",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L121",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano.ts",
+          "linha": 307,
+          "linha_fim": null,
+          "trecho": "alunos: r.alunos.length,",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano.ts#L307",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano.ts",
+          "linha": 309,
+          "linha_fim": null,
+          "trecho": "erros: unicos(respostas.map((x) => x.citacao), 3),",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano.ts#L309",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "O pedido do plano leva nome da turma, da prova, contagens, enunciados, trechos e concepções de erro; não há campo de nome de aluno.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Nada de nome de aluno no pedido: só contagens e trechos escritos na prova.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "degrau/docs/api.md",
+        "linha": 121,
+        "linha_fim": null,
+        "trecho": "Nada de nome de aluno no pedido: só contagens e trechos escritos na prova.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L121",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 264,
+          "linha_fim": null,
+          "trecho": "const fotos = form.getAll(\"foto\").filter((f): f is File => f instanceof File);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L264",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 173,
+          "linha_fim": null,
+          "trecho": "const MAX_PAGINAS = 8;",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L173",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 268,
+          "linha_fim": null,
+          "trecho": "if (fotos.reduce((t, f) => t + f.size, 0) > TAMANHO_MAX_FOTO) {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L268",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "A rota lê todos os campos 'foto' e limita a 8 arquivos e 4 MB somados.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**repita o campo** para mandar várias páginas da mesma prova, na ordem, até 8 e 4 MB no total",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "degrau/docs/api.md",
+        "linha": 54,
+        "linha_fim": null,
+        "trecho": "**repita o campo** para mandar várias páginas da mesma prova, na ordem, até 8 e 4 MB no total",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L54",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/api.ts",
+          "linha": 225,
+          "linha_fim": null,
+          "trecho": "return novaCorrecaoMocada(exemplo);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/api.ts#L225",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/provas-exemplo.tsx",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "marcarProvaExemplo(foto, id); // corrige pelo roteiro pronto, sem chamar o agente",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/provas-exemplo.tsx#L29",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/provas-exemplo.tsx",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "Escolha uma. A foto vai para o aluno e o agente corrige ao vivo.",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/provas-exemplo.tsx#L69",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "A foto de exemplo é marcada no navegador e o envio devolve uma correção montada de um roteiro fixo, sem chamar a API. O texto do modal diz \"o agente corrige ao vivo\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Ao escolher uma dessas 5 provas em \"Provas de exemplo\", a correção NÃO chama o agente: roda o roteiro pronto",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "web/demo-prova/PROVAS.md",
+        "linha": 20,
+        "linha_fim": null,
+        "trecho": "Ao escolher uma dessas 5 provas em \"Provas de exemplo\", a correção NÃO chama o agente: roda o roteiro pronto",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/demo-prova/PROVAS.md#L20",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/api.ts",
+          "linha": 242,
+          "linha_fim": null,
+          "trecho": "res = await fetch(\"/api/provas\", { method: \"POST\", body: form });",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/api.ts#L242",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 291,
+          "linha_fim": null,
+          "trecho": "emSegundoPlano(rodarCorrecao(prova, paginas));",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L291",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "Fotos sem a marca de exemplo são enviadas para POST /api/provas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Foto enviada de verdade (câmera, upload, celular) continua indo para o agente.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "web/demo-prova/PROVAS.md",
+        "linha": 22,
+        "linha_fim": null,
+        "trecho": "Foto enviada de verdade (câmera, upload, celular) continua indo para o agente.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/demo-prova/PROVAS.md#L22",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/docs/api.md",
+          "linha": 155,
+          "linha_fim": null,
+          "trecho": "Leva ~25–45 s.",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L155",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/plano.ts",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "usa ~6 mil e sai em ~27 s",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/plano.ts#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "A frase se refere à rota de diagnóstico da turma; não há teste ou medição dessa rota no repositório. Um comentário em etapas/plano.ts cita ~27 s para o plano, medido na Featherless.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Leva ~25–45 s.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "degrau/docs/api.md",
+        "linha": 155,
+        "linha_fim": null,
+        "trecho": "Leva ~25–45 s.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L155",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/armazem.ts",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "export const usaNuvem = () => Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/armazem.ts#L15",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/armazem.ts",
+          "linha": 39,
+          "linha_fim": null,
+          "trecho": "const criado = await sb.storage.createBucket(BUCKET(), { public: false });",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/armazem.ts#L39",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/config.ts",
+          "linha": 66,
+          "linha_fim": null,
+          "trecho": "?? (process.env.VERCEL ? path.join(os.tmpdir(), \"degrau-dados\") : path.join(RAIZ, \"data\"));",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/config.ts#L66",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "Com as duas variáveis, os caminhos vão para um bucket privado (padrão \"degrau\") criado no primeiro uso; sem elas, o código grava em arquivo local (na Vercel, em /tmp) em vez de recusar.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Supabase (com `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`, obrigatório na Vercel): os mesmos caminhos no bucket privado `degrau` do Storage, criado sozinho.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "degrau/docs/api.md",
+        "linha": 205,
+        "linha_fim": null,
+        "trecho": "Supabase (com `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`, obrigatório na Vercel): os mesmos caminhos no bucket privado `degrau` do Storage, criado sozinho.",
+        "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L205",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://hack-ai-ivory.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://hack-ai-ivory.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 464 ms"
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "openai (OpenAI), em degrau/package.json",
+          "openai (OpenAI), em web/package.json"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/package.json",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "    \"openai\": \"^7.65.0\",",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/package.json#L22",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/package.json",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "    \"openai\": \"^7.65.0\",",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/package.json#L22",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "OpenRouter",
+              "degrau/src/config.ts",
+              16
+            ],
+            [
+              "OpenAI",
+              "degrau/src/featherless.ts",
+              3
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/config.ts",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "export const OPENROUTER_BASE_URL = process.env.OPENROUTER_BASE_URL ?? \"https://openrouter.ai/api/v1\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/config.ts#L16",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/featherless.ts",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "import OpenAI from \"openai\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/featherless.ts#L3",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a OpenRouter (SDK openai)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/ler.ts",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "const bruto = await pedirJson(\"ler\", () => conversar(modelo, PROMPT, [",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/ler.ts#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/featherless.ts",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "const resp = await cliente().chat.completions.create({",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/featherless.ts#L56",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "moonshotai/kimi-k3.1-pro",
+      "obs": "Ler a foto da prova: transcrição linha a linha e posição de cada linha."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a OpenRouter (SDK openai)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/diagnosticar.ts",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "return conversar(modelo, PROMPT, usuario, limite);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/diagnosticar.ts#L31",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "qwen/qwen3.8-2.4t-a95b",
+      "obs": "Explicar o erro de cada questão e escolher o degrau."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a OpenRouter (SDK openai)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/diagnosticoTurma.ts",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "const chamarModelo: Chamar = (sistema, usuario) => conversar(MODELO_DIAGNOSTICO, sistema, usuario, 10000, { raciocinio: RACIOCINIO_TEXTO });",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/diagnosticoTurma.ts#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "qwen/qwen3.8-2.4t-a95b",
+      "obs": "Escrever o diagnóstico da turma a partir de contagens e trechos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a OpenRouter (SDK openai)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/plano.ts",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "conversar(MODELO_PLANO, sistema, usuario, MAX_TOKENS_PLANO, { raciocinio: RACIOCINIO_TEXTO });",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/plano.ts#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "qwen/qwen3.8-2.4t-a95b",
+      "obs": "Escrever o roteiro de cada aula do plano."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/correcao-mocada.ts",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "const roteiro = ROTEIROS[alunoId];",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/correcao-mocada.ts#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/api.ts",
+          "linha": 225,
+          "linha_fim": null,
+          "trecho": "return novaCorrecaoMocada(exemplo);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/api.ts#L225",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/provas-exemplo.tsx",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "Escolha uma. A foto vai para o aluno e o agente corrige ao vivo.",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/provas-exemplo.tsx#L69",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Nas 5 provas de exemplo, transcrição, erros, bilhetes e nota vêm de um roteiro fixo animado no tempo, sem modelo. O modal dessas provas diz \"o agente corrige ao vivo\".",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-2",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/(app)/t/[turma]/provas/[id]/relatorio/page.tsx",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "const total = STUDENTS.length;",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/(app)/t/%5Bturma%5D/provas/%5Bid%5D/relatorio/page.tsx#L16",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/data.ts",
+          "linha": 173,
+          "linha_fim": null,
+          "trecho": "const ROSTER: [string, Record<number, string>][] = [",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/data.ts#L173",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/rotas.ts",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "{ etapa: \"relatorio\", label: \"Diagnóstico\" },",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/rotas.ts#L28",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela de relatório (aba \"Diagnóstico\" do resultado da prova) calcula causa principal, média e contagens sobre a lista fixa STUDENTS de data.ts, não sobre as provas enviadas.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-3",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/(app)/t/[turma]/provas/[id]/grupos/page.tsx",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "const alunosDe = (gid: string) => STUDENTS.filter((s) => grupoDe(s) === gid);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/(app)/t/%5Bturma%5D/provas/%5Bid%5D/grupos/page.tsx#L28",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/data.ts",
+          "linha": 288,
+          "linha_fim": null,
+          "trecho": "export const GROUPS: Group[] = [",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/data.ts#L288",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/(app)/t/[turma]/grupos/page.tsx",
+          "linha": 62,
+          "linha_fim": null,
+          "trecho": "<GruposDaProva />",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/(app)/t/%5Bturma%5D/grupos/page.tsx#L62",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela de grupos usa grupos, atividades e alunos fixos (GROUPS e STUDENTS), independentemente das provas enviadas.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-4",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano-exemplo.ts",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "export const AULAS_EXEMPLO: Record<string, ConteudoAula> = {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano-exemplo.ts#L10",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/tela-mapa.tsx",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": ": exemplo,",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/tela-mapa.tsx#L71",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/tela-mapa.tsx",
+          "linha": 252,
+          "linha_fim": null,
+          "trecho": "{agente.estado === \"falhou\" && \"Não consegui escrever os roteiros agora. Mostrando um roteiro de exemplo.\"}",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/tela-mapa.tsx#L252",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O plano de aulas mostra roteiros escritos à mão (AULAS_EXEMPLO) enquanto o modelo não responde ou se falhar; o aviso de \"roteiro de exemplo\" aparece no caso de falha.",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:38",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/ltodarosouza/hackAI",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/ltodarosouza/hackAI",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "github:push-forcado",
+      "rotulo": "Push forçado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Horário",
+            "Branch",
+            "Commit"
+          ],
+          "linhas": [
+            [
+              "28/11 15:41",
+              "chore/renomeia-fatto",
+              "b413bda"
+            ],
+            [
+              "28/11 11:53",
+              "feat/sidebar-navegacao",
+              "5949534"
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/ltodarosouza/hackAI",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/ltodarosouza/hackAI",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/ltodarosouza/hackAI/commit/30ae0c0b4ff7e74ac19b53c98dbbe47488db185b",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/ltodarosouza/hackAI/commit/30ae0c0b4ff7e74ac19b53c98dbbe47488db185b",
+          "conferida": "script"
+        }
+      ],
+      "valor": "30ae0c0, 9741 linhas adicionadas em 32 arquivos, de 35130 no histórico",
+      "obs": "3317 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:marca-readme-padra-o-do-create-next-app",
+      "rotulo": "Marca de projeto gerado ou modelo pronto: README padrão do create-next-app",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "web/README.md, linha 1",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/README.md#L1",
+          "conferida": "script"
+        }
+      ]
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Frizzle",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.frizzle.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.frizzle.com/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Lê fotos ou digitalizações do trabalho em papel dos alunos, avalia cada passo, nomeia equívocos ligados a padrões curriculares e mostra em painéis o que retomar com a turma.",
+      "obs": "Em comum: Voltado a professores: leitura de resolução manuscrita passo a passo, identificação de lacunas de anos anteriores por trás de erros atuais e visão da turma. Diferente: Atende várias disciplinas e cita padrões dos EUA (CCSS, NGSS, TEKS); a página não menciona BNCC, plano de aulas nem a separação entre distração e conceito."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "EdLight",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.edlight.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.edlight.com/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Analisa o trabalho manuscrito de matemática dos alunos, identifica equívocos, agrupa a turma por nível de domínio e recomenda próximos passos de ensino.",
+      "obs": "Em comum: Parte da resolução escrita à mão para dar ao professor de matemática um diagnóstico dos alunos e da turma e uma indicação do que ensinar em seguida. Diferente: Traz relatórios por escola e distrito e acompanhamento de planos de educação individualizada (IEP); a página não menciona plano de aulas nem BNCC."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "Notie AI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.notieai.com/ai-for-math-teachers/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.notieai.com/ai-for-math-teachers/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma para professores de matemática que corrige provas manuscritas fotografadas, distingue erros conceituais de erros de cálculo, aponta padrões de erro da turma e gera planos de aula.",
+      "obs": "Em comum: Reúne correção por foto, separação entre tipos de erro, padrões de erro da turma e geração de plano de aula para professores de matemática. Diferente: A página não menciona rastrear o erro até uma habilidade de anos anteriores, nem BNCC, nem que o plano de aula seja gerado a partir dos erros corrigidos."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Ed.ai (AI Grading)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://ed.ai/en/product/ai-grading",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://ed.ai/en/product/ai-grading",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Corrige trabalhos manuscritos de matemática do ensino médio a partir de fotos, aponta o equívoco em que o raciocínio falha e cria atividades de reforço a partir dos erros.",
+      "obs": "Em comum: Mesmo público (matemática do ensino médio), leitura do raciocínio manuscrito, identificação do equívoco e material de retomada a partir dos erros. Diferente: Gera rubricas, nota parcial e atividades de prática; a página não menciona plano de aulas, rastreio de pré-requisitos nem BNCC."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Graidable (AI Math Grader)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://graidable.com/en/ai-math-grader",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://graidable.com/en/ai-math-grader",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Lê matemática manuscrita ou digitada em fotos, digitalizações e PDFs, acompanha cada passo e propõe nota e comentários para o professor revisar e aprovar.",
+      "obs": "Em comum: Leitura passo a passo da resolução do aluno e separação entre erros conceituais e deslizes de cálculo. Diferente: Também se destina a universidades; a página não menciona mapa de habilidades, diagnóstico da turma nem plano de aulas."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "TypeScript",
+              91,
+              13937
+            ],
+            [
+              "JSON",
+              11,
+              1669
+            ],
+            [
+              "Markdown",
+              11,
+              1066
+            ],
+            [
+              "JavaScript",
+              5,
+              358
+            ],
+            [
+              "CSS",
+              1,
+              162
+            ],
+            [
+              "HTML",
+              1,
+              153
+            ]
+          ]
+        }
+      },
+      "obs": "134 arquivos de texto e 17446 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "App do professor (Next.js)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/demo-store.tsx",
+          "linha": 157,
+          "linha_fim": null,
+          "trecho": "export function DemoProvider({ children }: { children: React.ReactNode }) {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/demo-store.tsx#L157",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/tela-mapa.tsx",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "export function TelaMapa({ modo = \"diagnostico\" }: { modo?: Modo }) {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/tela-mapa.tsx#L27",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "web/src/lib/demo-store.tsx",
+          "web/src/lib/api.ts",
+          "web/src/components/tela-mapa.tsx"
+        ]
+      },
+      "obs": "Telas de turma, captura, correção, mapa e plano, com o estado das provas enviadas mantido no navegador."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "API Degrau (Hono)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/app/api/[...rota]/route.ts",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "import app from \"../../../../../degrau/src/app.ts\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/app/api/%5B...rota%5D/route.ts#L2",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 261,
+          "linha_fim": null,
+          "trecho": "app.post(\"/api/provas\", async (c) => {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L261",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "degrau/src/app.ts",
+          "web/src/app/api/[...rota]/route.ts"
+        ]
+      },
+      "obs": "Rotas de turmas, avaliações, provas, diagnóstico e plano, executadas dentro do Next por uma rota curinga."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Pipeline de correção",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/pipeline.ts",
+          "linha": 143,
+          "linha_fim": null,
+          "trecho": "export async function corrigirAoVivo(",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/pipeline.ts#L143",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "degrau/src/pipeline.ts",
+          "degrau/src/etapas/preparar.ts",
+          "degrau/src/etapas/ler.ts",
+          "degrau/src/etapas/conferirConta.ts",
+          "degrau/src/etapas/diagnosticar.ts"
+        ]
+      },
+      "obs": "Prepara a imagem, lê com modelo de visão, confere com mathjs e pede ao modelo o diagnóstico de cada questão."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Cascata e agentes da turma",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano.ts",
+          "linha": 177,
+          "linha_fim": null,
+          "trecho": "export function montarCascata(",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano.ts#L177",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/diagnosticoTurma.ts",
+          "linha": 79,
+          "linha_fim": null,
+          "trecho": "export async function montarDiagnostico(",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/diagnosticoTurma.ts#L79",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/etapas/plano.ts",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "export async function montarPlano(",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/etapas/plano.ts#L91",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "web/src/lib/plano.ts",
+          "web/src/lib/diagnostico.ts",
+          "degrau/src/etapas/diagnosticoTurma.ts",
+          "degrau/src/etapas/plano.ts"
+        ]
+      },
+      "obs": "O front ordena as aulas por um mapa de 14 habilidades; o backend pede ao modelo o diagnóstico da turma e os roteiros."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Armazenamento",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/armazem.ts",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "export async function salvar(chave: string, conteudo: string | Buffer, contentType: string) {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/armazem.ts#L61",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "degrau/src/armazem.ts",
+          "degrau/src/cadastro.ts"
+        ]
+      },
+      "obs": "Guarda JSON e imagens no Supabase Storage ou em arquivos locais."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Correção pronta das provas de exemplo",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/correcao-mocada.ts",
+          "linha": 54,
+          "linha_fim": null,
+          "trecho": "export function correcaoMocada(id: string, agora = Date.now()): CorrecaoProva {",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/correcao-mocada.ts#L54",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "web/src/lib/correcao-mocada.ts",
+          "web/src/lib/provas-roteiros.ts",
+          "web/src/components/provas-exemplo.tsx"
+        ]
+      },
+      "obs": "Reproduz no navegador um roteiro fixo para as 5 provas de exemplo, sem backend nem modelo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 104,
+          "linha_fim": null,
+          "trecho": "cp .env.example .env        # defina FEATHERLESS_API_KEY",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L104",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/config.ts",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "export const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY ?? \"\";",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/config.ts#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README pede uma chave da Featherless e a variável FEATHERLESS_API_KEY.",
+              "O código lê OPENROUTER_API_KEY e chama o OpenRouter; degrau/README.md cita OPENROUTER_API_KEY."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 86,
+          "linha_fim": null,
+          "trecho": "Tudo é processado antes, sem pressa. A tela só reproduz o resultado",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L86",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/src/app.ts",
+          "linha": 291,
+          "linha_fim": null,
+          "trecho": "emSegundoPlano(rodarCorrecao(prova, paginas));",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/src/app.ts#L291",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/demo-store.tsx",
+          "linha": 483,
+          "linha_fim": null,
+          "trecho": "if (!parar) espera = setTimeout(acompanhar, emCorrecao.length ? 1000 : 1500);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/demo-store.tsx#L483",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README: \"Tudo é processado antes, sem pressa. A tela só reproduz o resultado\".",
+              "Para fotos enviadas, a correção roda em segundo plano após o envio e a tela consulta os avanços cerca de uma vez por segundo."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/docs/api.md",
+          "linha": 192,
+          "linha_fim": null,
+          "trecho": "o front mostra o diagnóstico só com as contagens",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L192",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/tela-mapa.tsx",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "const d = agenteDiagnostico.estado === \"pronto\" ? diagnosticoParaPlano(agenteDiagnostico.resposta.diagnostico, base) : null;",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/tela-mapa.tsx#L60",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/diagnostico.tsx",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "export function PainelDiagnostico({",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/diagnostico.tsx#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "docs/api.md descreve o diagnóstico da turma escrito pelo modelo e, em caso de falha, o front mostrando o diagnóstico só com as contagens.",
+              "A resposta do diagnóstico é usada em tela-mapa.tsx para compor o pedido do plano; o painel que a exibiria (PainelDiagnostico) não é importado por nenhuma tela."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-4",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "degrau/docs/api.md",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "**O que o mapa da turma usa** (abaixo)",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/degrau/docs/api.md#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/tela-mapa.tsx",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "const { raiz } = useMemo(() => heatOf(done), [done]);",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/components/tela-mapa.tsx#L40",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "docs/api.md: GET /api/avaliacoes/:id/mapa é o que o mapa da turma usa.",
+              "Não foi encontrada chamada a essa rota em web/src; o mapa é calculado no navegador a partir das provas enviadas."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-5",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "recebe um plano de aulas adaptado feito para a turma real dele",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/data.ts",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "questoes: [",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/data.ts#L73",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/lib/plano-exemplo.ts",
+          "linha": 139,
+          "linha_fim": null,
+          "trecho": "cascata: montarCascata(students, PROVA.questoes),",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/web/src/lib/plano-exemplo.ts#L139",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário descreve um plano de aulas adaptado feito para a turma real do professor, a partir das provas fotografadas.",
+              "As lacunas vêm das correções, mas as aulas do plano saem das 5 questões e habilidades fixas da constante PROVA, não das questões lidas na foto."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Fatto",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 129 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "npm install",
+          "link": "https://github.com/ltodarosouza/hackAI/blob/e32e50f7e1309360b3c69b8d433825b90613e5a3/README.md#L103",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Teste de uso",
+      "motivo": "tempo esgotado",
+      "causa": "tempo_esgotado"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

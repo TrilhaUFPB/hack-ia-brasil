@@ -1,0 +1,3323 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "noid",
+    "nome": "noid",
+    "numero": 4,
+    "track": "Segurança",
+    "repo": "https://github.com/miguelmochizuki/noid",
+    "demo": "withnoid.com",
+    "video": "https://youtu.be/CMlXpSbL7bg",
+    "resumo": "O Noid é o segurança que investiga o alerta, acha o aparelho suspeito e isola ele da rede assim que você autoriza."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.489Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "8bd1a36a9d84f32482f3cf900ea617a44c18e50a",
+    "commit_em": "2026-11-28T18:55:56Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 44303
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11420,
+          "preparo_ms": 0,
+          "execucao_ms": 719
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5,
+          "preparo_ms": 0,
+          "execucao_ms": 3710
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6346,
+          "preparo_ms": 0,
+          "execucao_ms": 374
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11498,
+          "preparo_ms": 0,
+          "execucao_ms": 640
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6459,
+          "preparo_ms": 0,
+          "execucao_ms": 3175
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 140
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 713,
+          "preparo_ms": 0,
+          "execucao_ms": 182
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 57
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11500,
+          "preparo_ms": 0,
+          "execucao_ms": 638
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11519,
+          "preparo_ms": 0,
+          "execucao_ms": 620
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 20
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "falhou",
+      "erro": "unable to get local issuer certificate"
+    },
+    "build": {
+      "estado": "verificado"
+    },
+    "fluxo": {
+      "estado": "verificado",
+      "alcance": {
+        "ate": 6,
+        "de": 8
+      }
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-0",
+      "n": 0,
+      "acao": "No repositório, instale o projeto: docker build .",
+      "esperado": "Os comandos dos passos seguintes rodam no terminal, na pasta do projeto",
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Rode `noid replay --triage` para ingerir os alertas sintéticos de `fixtures/`",
+      "esperado": "Foram ingeridas 9 observações e abertos 8 incidentes; a triagem saiu como rules_only. Os comandos rodaram com `env -i PATH=\"$PATH\" HOME=/tmp`, porque o ambiente de teste definia as variáveis NOID_* com valores falsos.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "eve: 9 observacoes · 1 duplicadas · 1 ignoradas",
+          "link": "capturas/uso/comando-12.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "triagem incidente #1: rules_only",
+          "link": "capturas/uso/comando-12.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Rode `noid investigate 1` e confira o dispositivo identificado",
+      "esperado": "O incidente 1 (10.20.30.41) aparece com o ativo cam-01, tipo camera. No replay, o IP 10.20.30.42 resolveu para ativos diferentes (5 e 2) em incidentes distintos.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "\"name\": \"cam-01\",",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon",
+          "link": "capturas/uso/comando-12.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Rode `noid approve 1 --operator ana`",
+      "esperado": "A ação 1 terminou com status verified no conector simulado.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-15.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "acao 1: verified",
+          "link": "capturas/uso/comando-15.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Rode `noid simctl state` e confira que só o IP 10.20.30.41 tem regra de contenção",
+      "esperado": "O estado simulado lista uma única regra, para 10.20.30.41. A saída não traz uma verificação própria da câmera vizinha, e não há tráfego real.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-15.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "\"segment\": \"iot-cam\", \"ip\": \"10.20.30.41\", \"action\": \"contain\"",
+          "link": "capturas/uso/comando-15.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Rode `noid revert 1 --operator ana` e depois `noid simctl state`",
+      "esperado": "A reversão terminou como reverted e o estado simulado ficou vazio.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "reversao 2: reverted",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "estado simulado vazio",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Rode `noid serve --port 8080 &` e depois `python -c \"import urllib.request as u; print(u.urlopen('http://127.0.0.1:8080/api/incidents/1/timeline').read().decode())\"`",
+      "esperado": "A linha do tempo traz abertura do incidente, evidência, triagem, aprovação por ana, aplicação, verificação, reversão e reabertura, com horários.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-19.txt",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "\"actor\": \"ana\", \"event\": \"approved\"",
+          "link": "capturas/uso/comando-19.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-19.txt",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "\"event\": \"incident_reopened\", \"entity\": \"incident\", \"entity_id\": \"1\", \"detail\": \"contencao revertida\"",
+          "link": "capturas/uso/comando-19.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "O agente processou os incidentes no modo por regras; a classificação do Jev não foi exercitada por falta de credencial real."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/api.py",
+          "linha": 246,
+          "linha_fim": null,
+          "trecho": "agent_thread = Thread(target=run_agent, daemon=True,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/api.py#L246",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 909,
+          "linha_fim": null,
+          "trecho": "fluxos = run.call(\"consultar_fluxos\", {\"limite\": 10})",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L909",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 916,
+          "linha_fim": null,
+          "trecho": "run.call(\"classificar_com_jev\", {\"fluxo_id\": sample[\"id\"]})",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L916",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 917,
+          "linha_fim": null,
+          "trecho": "run.call(\"investigar\", {})",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L917",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".env.example",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "NOID_AGENT=0",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/.env.example#L35",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A thread do agente processa incidentes abertos e o roteiro por regras chama fluxos, Jev e investigação. A thread depende de NOID_AGENT=1 e o Jev de NOID_AGENT_JEV=1 (ambos 0 no .env.example).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Quando um alerta chega, o Noid investiga sozinho: consulta os fluxos e o histórico do dispositivo e pede a classificação do Jev.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "Quando um alerta chega, o Noid investiga sozinho: consulta os fluxos e o histórico do dispositivo e pede a classificação do Jev.",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 537,
+          "linha_fim": null,
+          "trecho": "act.execute_contain(conn, action_id, SimConnector(conn))",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L537",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 1068,
+          "linha_fim": null,
+          "trecho": "bo_json=json.dumps(bo, ensure_ascii=False, default=str),",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L1068",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 594,
+          "linha_fim": null,
+          "trecho": "\"proximos_passos\": [t[:400] for t in steps[:10]],",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L594",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "O agente chama a contenção, que no conector simulado é executada na hora, e grava o BO em agent_runs.bo_json.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Depois decide, contém o dispositivo e registra um BO com evidências, recomendações e próximos passos.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "Depois decide, contém o dispositivo e registra um BO com evidências, recomendações e próximos passos.",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/api.py",
+          "linha": 834,
+          "linha_fim": null,
+          "trecho": "@app.post(\"/api/incidents/{incident_id}/revert\")",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/api.py#L834",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 383,
+          "linha_fim": null,
+          "trecho": "connector.remove(contain.connector_rule_id)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L383",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 580,
+          "linha_fim": null,
+          "trecho": "out = revert(conn, act.incident_id, \"noid:expiry\", connector)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L580",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "Há reversão por API, que remove a regra e consulta o estado, e reversão automática de contenções expiradas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "toda contenção pode ser desfeita",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "toda contenção pode ser desfeita",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "if asset.protected:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L96",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 210,
+          "linha_fim": null,
+          "trecho": "if asset.protected:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L210",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 925,
+          "linha_fim": null,
+          "trecho": "decisao, why = \"sinalizado\", \"ativo crítico/clínico: contenção automática não permitida\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L925",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/lab_dataset.py",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "PROTECTED_TYPES = {",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/lab_dataset.py#L19",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "A aprovação e a execução recusam ativos com a marca `protected`; no seed do laboratório, a marca vem de uma lista de tipos que inclui equipamentos clínicos.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Equipamentos críticos, como os clínicos, nunca são contidos: o agente só sinaliza.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "Equipamentos críticos, como os clínicos, nunca são contidos: o agente só sinaliza.",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/correlate.py",
+          "linha": 107,
+          "linha_fim": null,
+          "trecho": "res = resolve_asset(conn, obs.src_ip, obs.segment, obs.observed_at)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/correlate.py#L107",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/correlate.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "bindings.c.valid_from <= at,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/correlate.py#L55",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/dhcp_api.py",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "inserted = insert_dhcp_observation(",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/dhcp_api.py#L71",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/lab_dataset.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "_insert_binding(conn, asset_id, f\"vlan-{dev['vlan']}\", dev[\"ip\"],",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/lab_dataset.py#L55",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "resolve_asset busca vínculos por IP, segmento e instante; os vínculos entram por observações DHCP e pelo inventário.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "correlaciona IP, timestamp e segmento com o DHCP e o inventário para resolver qual dispositivo é.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 6,
+        "linha_fim": null,
+        "trecho": "correlaciona IP, timestamp e segmento com o DHCP e o inventário para resolver qual dispositivo é.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/correlate.py",
+          "linha": 67,
+          "linha_fim": null,
+          "trecho": "if len(by_asset) > 1:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/correlate.py#L67",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/correlate.py",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "needs_review = True",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/correlate.py#L115",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 90,
+          "linha_fim": null,
+          "trecho": "if inc.needs_review:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L90",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "Mais de um ativo para o mesmo IP, segmento e instante marca o incidente para revisão, e a aprovação de contenção é recusada nesse estado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se o IP for reutilizado ou ambíguo, deixa o caso pendente de revisão em vez de chutar.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 6,
+        "linha_fim": null,
+        "trecho": "Se o IP for reutilizado ou ambíguo, deixa o caso pendente de revisão em vez de chutar.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 140,
+          "linha_fim": null,
+          "trecho": "resp = httpx.post(f\"{url.rstrip('/')}/api/generate\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L140",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "\"Voce e um analista de SOC. Analise o incidente abaixo e responda \"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L133",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/investigate.py",
+          "linha": 306,
+          "linha_fim": null,
+          "trecho": "\"prior_incidents\": inv.facts.get(\"asset\", {}).get(\"prior_count\"),",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/investigate.py#L306",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 185,
+          "linha_fim": null,
+          "trecho": "result = run_model_triage(prompt, url) if url else rules_triage(prompt, inv)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L185",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "A triagem é acionada por endpoint ou botão; sem NOID_MODEL_URL, responde por regras.",
+      "existe": "Há chamada a um modelo via Ollama (quando NOID_MODEL_URL está definido) com as evidências e um dossiê de investigação, com saída que inclui evidence_refs.",
+      "falta": "Não foi encontrada comparação do tráfego atual com um perfil histórico do dispositivo, nem pedido no prompt para explicar um desvio; do histórico do ativo, o contexto leva a contagem de incidentes anteriores.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um modelo local compara o comportamento atual com o histórico do dispositivo e explica o desvio, citando as evidências que sustentam a recomendação.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "um modelo local compara o comportamento atual com o histórico do dispositivo e explica o desvio, citando as evidências que sustentam a recomendação.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/api.py",
+          "linha": 638,
+          "linha_fim": null,
+          "trecho": "approval_id = act.approve(",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/api.py#L638",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/app/incident.js",
+          "linha": 95,
+          "linha_fim": null,
+          "trecho": "<button class=\"button button-danger\" data-act=\"approve\" type=\"button\">Aprovar contenção</button>",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/app/incident.js#L95",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 527,
+          "linha_fim": null,
+          "trecho": "approval_id = act.approve(conn, self.incident_id, ACTOR, ttl,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L527",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/remediation.py",
+          "linha": 62,
+          "linha_fim": null,
+          "trecho": "approval_id = act.approve(",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/remediation.py#L62",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": null,
+      "existe": "A política é checada em act.approve, e há aprovação pelo operador na API e na interface.",
+      "falta": "A aprovação do operador não é exigida em todos os caminhos: o agente (NOID_AGENT=1) e a remediação automática (NOID_AUTO_REMEDIATE=1) registram a própria aprovação e contêm.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "checa a ação proposta contra a política e exige a aprovação explícita do operador.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 8,
+        "linha_fim": null,
+        "trecho": "checa a ação proposta contra a política e exige a aprovação explícita do operador.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Não há firewall, switch, Wi-Fi ou NAC no ambiente; só o conector simulado foi exercitado."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/nft_connector.py",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "\"\"\"Local IPv4 nftables adapter for a dedicated inbound lab service.\"\"\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/nft_connector.py#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/nft_connector.py",
+          "linha": 129,
+          "linha_fim": null,
+          "trecho": "self._run(\"create\", \"element\", \"inet\", TABLE, SET, \"{\", target, \"timeout\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/nft_connector.py#L129",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 282,
+          "linha_fim": null,
+          "trecho": "rules = connector.query(approval.target_ip, approval.scope_segment)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L282",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/connector.py",
+          "linha": 131,
+          "linha_fim": null,
+          "trecho": "mode = getenv(\"NOID_CONNECTOR\", \"sim\")",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/connector.py#L131",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": null,
+      "existe": "Há um conector simulado e um conector nftables local (uma porta TCP de um serviço de laboratório), com leitura do estado após aplicar.",
+      "falta": "Não foram encontrados conectores para switch, Wi-Fi, NAC ou firewall externo.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC), lê o estado de volta para confirmar o efeito",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 9,
+        "linha_fim": null,
+        "trecho": "um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC), lê o estado de volta para confirmar o efeito",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/api.py",
+          "linha": 571,
+          "linha_fim": null,
+          "trecho": "@app.get(\"/api/incidents/{incident_id}/timeline\")",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/api.py#L571",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/db.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "return os.environ.get(\"NOID_DATABASE_URL\", DEFAULT_URL)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/db.py#L40",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".env.example",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "NOID_DATABASE_URL=postgresql+psycopg://noid:noid@db:5432/noid",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/.env.example#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/db.py",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "DEFAULT_URL = \"sqlite:///./noid-lab.db\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/db.py#L31",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "A linha do tempo é montada de action_events e audit_log; PostgreSQL é usado via NOID_DATABASE_URL, e sem a variável o banco é SQLite.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "alerta, evidência, aprovação, resultado e reversão ficam numa linha do tempo persistida em PostgreSQL.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "alerta, evidência, aprovação, resultado e reversão ficam numa linha do tempo persistida em PostgreSQL.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Sem modelo local para o parecer e sem navegador para clicar nas evidências."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/app/incident.js",
+          "linha": 111,
+          "linha_fim": null,
+          "trecho": "const rows = evidence.map((item) => `<li>",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/app/incident.js#L111",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/app/incident.js",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "<h3>Triagem do modelo <span class=\"tag tag-neutral\">",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/app/incident.js#L72",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/dossier.py",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "f'<a href=\"#{prefix}-{row[\"id\"]}\">{prefix.upper()}-{row[\"id\"]}</a>'",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/dossier.py#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": null,
+      "existe": "A interface mostra recomendação, triagem e lista de evidências; o dossiê HTML tem links âncora para os registros de evidência.",
+      "falta": "Na tela do incidente em /app, a lista de evidências é texto sem link, e o parecer não referencia evidências clicáveis.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "parecer da IA com evidências clicáveis",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 15,
+        "linha_fim": null,
+        "trecho": "parecer da IA com evidências clicáveis",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/connector.py",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "class SimConnector:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/connector.py#L33",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/post_incident_demo.py",
+          "linha": 244,
+          "linha_fim": null,
+          "trecho": "if connector.query(NEIGHBOR, SEGMENT):",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/post_incident_demo.py#L244",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "scripts/test-nft-lab.sh",
+          "linha": 794,
+          "linha_fim": null,
+          "trecho": "Containment: target blocked by nftables; neighbor still reachable.",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/scripts/test-nft-lab.sh#L794",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 284,
+          "linha_fim": null,
+          "trecho": "if any(r[\"rule_id\"] == action.connector_rule_id for r in rules):",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L284",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": null,
+      "existe": "Há conector de laboratório; a demo pós-incidente confere que o IP vizinho não consta no filtro simulado, e um script de teste nftables sonda o vizinho com tráfego.",
+      "falta": "A verificação de contenção do produto (verify) confere a presença da regra do alvo e não testa o vizinho; a demo pós-incidente usa um gateway sintético, não uma câmera.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "contenção por um conector de laboratório (com verificação de que a câmera vizinha continua normal)",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 15,
+        "linha_fim": null,
+        "trecho": "contenção por um conector de laboratório (com verificação de que a câmera vizinha continua normal)",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/ablate.py",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "operador e nao e medida aqui; o relatorio registra a latencia do modelo.",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/ablate.py#L7",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Não foi encontrado cálculo nem registro do tempo entre alerta, decisão e contenção; ablate.py mede a latência da chamada ao modelo e declara não medir o tempo até a decisão.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [
+        "src/noid",
+        "scripts",
+        "tests",
+        "docs",
+        "termos: tempo, elapsed, duration, latenc, total_seconds, mttr"
+      ],
+      "citacao": "A métrica medida é o tempo entre o alerta, a decisão e a contenção.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 15,
+        "linha_fim": null,
+        "trecho": "A métrica medida é o tempo entre o alerta, a decisão e a contenção.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 799,
+          "linha_fim": null,
+          "trecho": "api = os.getenv(\"DEVIN_API_URL\", DEVIN_API).rstrip(\"/\") + f\"/organizations/{org}/sessions\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L799",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 818,
+          "linha_fim": null,
+          "trecho": "resp = client.post(api, json={",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L818",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 765,
+          "linha_fim": null,
+          "trecho": "DEVIN_API = \"https://api.devin.ai/v3\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L765",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".env.example",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "DEVIN_API_URL=https://api.devin.ai",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/.env.example#L57",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "run_devin faz POST em /organizations/{org}/sessions com base padrão /v3; o .env.example define DEVIN_API_URL sem /v3, e o código usa esse valor como base quando presente.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Com o cérebro `devin`, o Noid cria uma sessão na API v3 (`POST /v3/organizations/{org}/sessions`).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/agente-noid.md",
+        "linha": 50,
+        "linha_fim": null,
+        "trecho": "Com o cérebro `devin`, o Noid cria uma sessão na API v3 (`POST /v3/organizations/{org}/sessions`).",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/agente-noid.md#L50",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 1051,
+          "linha_fim": null,
+          "trecho": "error = f\"{chosen} indisponível, roteiro por regras: {type(exc).__name__}: {exc}\"[:500]",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L1051",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 1054,
+          "linha_fim": null,
+          "trecho": "run_rules(run)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L1054",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 1069,
+          "linha_fim": null,
+          "trecho": "error=error, updated_at=utcnow()))",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L1069",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "Exceções do cérebro são capturadas, run_rules roda se não houver BO e o motivo é gravado em `error`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se a sessão terminar sem BO, ou se a API falhar, o roteiro por regras conclui o trabalho, e o motivo fica em `error`.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/agente-noid.md",
+        "linha": 50,
+        "linha_fim": null,
+        "trecho": "Se a sessão terminar sem BO, ou se a API falhar, o roteiro por regras conclui o trabalho, e o motivo fica em `error`.",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/agente-noid.md#L50",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 336,
+          "linha_fim": null,
+          "trecho": "resp = httpx.post(url, json=body, headers=headers, timeout=15)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L336",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 343,
+          "linha_fim": null,
+          "trecho": "return {\"fonte\": \"jev\", \"p_attack\": round(score, 3), \"ataque\": score >= 0.5,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L343",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 50,
+          "linha_fim": null,
+          "trecho": "JEV_BUDGET = max(0, int(os.getenv(\"NOID_AGENT_JEV_BUDGET\") or 3))",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L50",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "classify_with_jev envia um fluxo por chamada ao classificador e devolve p_attack e categoria; requer NOID_AGENT_JEV=1 e há limite padrão de 3 consultas por incidente.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Para cada fluxo ele devolve `p_attack` (probabilidade de ataque) e uma categoria. Aqui o Jev faz a classificação dos fluxos do Noid.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "integrations/jev/README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "Para cada fluxo ele devolve `p_attack` (probabilidade de ataque) e uma categoria. Aqui o Jev faz a classificação dos fluxos do Noid.",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/integrations/jev/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Exige canal e token reais do Slack."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 1074,
+          "linha_fim": null,
+          "trecho": "notify_human(engine, lock, bo)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L1074",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 1143,
+          "linha_fim": null,
+          "trecho": "sent = send_card(notifier, client, card)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L1143",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "Após gravar o BO, notify_human é chamado quando há mensagem_slack (decisões sinalizado e revisao_humana) e envia se o Slack estiver configurado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o Noid envia a mensagem ao canal assim que o BO é gravado",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/agente-noid.md",
+        "linha": 64,
+        "linha_fim": null,
+        "trecho": "o Noid envia a mensagem ao canal assim que o BO é gravado",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/agente-noid.md#L64",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 403,
+          "linha_fim": null,
+          "trecho": "\"untrusted_evidence\": [_clean(e) for e in evidence[:30]],",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L403",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 440,
+          "linha_fim": null,
+          "trecho": "\"untrusted_evidence\": [_clean(r) for r in rows[-limite:]],",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L440",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 482,
+          "linha_fim": null,
+          "trecho": "\"achados\": inv.findings[:10]}",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L482",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 136,
+          "linha_fim": null,
+          "trecho": "+ json.dumps(prompt, ensure_ascii=False)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L136",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": null,
+      "existe": "Alertas e fluxos são devolvidos ao modelo do agente sob a chave untrusted_evidence.",
+      "falta": "Outros dados derivados da telemetria, como os achados de `investigar` e a assinatura do incidente, voltam fora desse rótulo; a triagem via Ollama envia o contexto sem o rótulo.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Toda telemetria devolvida ao modelo vem rotulada como `untrusted_evidence`.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/agente-noid.md",
+        "linha": 56,
+        "linha_fim": null,
+        "trecho": "Toda telemetria devolvida ao modelo vem rotulada como `untrusted_evidence`.",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/agente-noid.md#L56",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/cli.py",
+          "linha": 595,
+          "linha_fim": null,
+          "trecho": "p = sub.add_parser(\"eval-flows\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/cli.py#L595",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/floweval.py",
+          "linha": 67,
+          "linha_fim": null,
+          "trecho": "return self.detection_tp / self.detections_total",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/floweval.py#L67",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_flows.py",
+          "linha": 143,
+          "linha_fim": null,
+          "trecho": "assert rep.precision == 0.5",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/tests/test_flows.py#L143",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "O assert de precisão 0.5 em tests/test_flows.py usa dois alertas montados no próprio teste.",
+      "existe": "Há o comando `noid eval-flows`, que calcula a precisão dos detectores contra o gabarito do dataset.",
+      "falta": "Não foi encontrado resultado gravado com o valor de 50% para o dataset; o comando não foi executado nesta leitura.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Os detectores ainda erram o tipo em parte das detecções (`noid eval-flows`: precisão de 50%)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/agente-noid.md",
+        "linha": 78,
+        "linha_fim": null,
+        "trecho": "Os detectores ainda erram o tipo em parte das detecções (`noid eval-flows`: precisão de 50%)",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/agente-noid.md#L78",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/dossier.py",
+          "linha": 53,
+          "linha_fim": null,
+          "trecho": "(\"A.8.16\", \"Monitoramento\", references(\"obs\", observations)),",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/dossier.py#L53",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/dossier.py",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "O mapeamento indica evidências de apoio para a ISO/IEC 27001:2022.",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/dossier.py#L105",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "O dossiê HTML tem uma tabela de controles do Anexo A (A.8.16, A.5.25, A.5.26, A.8.15, A.5.28) com links para os registros.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Os dossiês ligam registros a controles da ISO 27001.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/roteiro-demo-banco-hospital.md",
+        "linha": 37,
+        "linha_fim": null,
+        "trecho": "Os dossiês ligam registros a controles da ISO 27001.",
+        "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/roteiro-demo-banco-hospital.md#L37",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "43 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o projeto não abre página web"
+      },
+      "valor": "1 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:chaves-falsas",
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o teste local roda sem as chaves reais da equipe"
+      },
+      "valor": {
+        "lista": [
+          "NOID_HOST",
+          "NOID_PORT",
+          "NOID_DATABASE_URL",
+          "NOID_FEED_TOKEN",
+          "NOID_CONNECTOR",
+          "NOID_NFT_PORT",
+          "NOID_NFT_SEGMENT",
+          "NOID_PAUSE_CONTAINMENT",
+          "NOID_AUTO_REMEDIATE",
+          "NOID_AUTO_REMEDIATE_DEVICE",
+          "NOID_AUTO_REMEDIATE_SIGNATURE",
+          "NOID_AGENT",
+          "NOID_AGENT_BRAIN",
+          "NOID_AGENT_URL",
+          "NOID_AGENT_TTL",
+          "NOID_AGENT_MAX_TURNS",
+          "NOID_AGENT_JEV_BUDGET",
+          "NOID_AGENT_LLM_URL",
+          "NOID_AGENT_MODEL",
+          "NOID_AGENT_LLM_KEY",
+          "NOID_AGENT_MAX_TOKENS",
+          "NOID_AGENT_TIMEOUT_S",
+          "DEVIN_API_KEY",
+          "DEVIN_ORG_ID",
+          "DEVIN_API_URL",
+          "NOID_AGENT_DEVIN_MAX_ACU",
+          "NOID_AGENT_DEVIN_TIMEOUT",
+          "NOID_AGENT_DEVIN_POLL_S",
+          "NOID_DEVIN_BIN",
+          "NOID_AGENT_DEVIN_PERMISSION",
+          "NOID_AGENT_JEV",
+          "FEATHERLESS_API_KEY",
+          "SIMPLE_JEV_URL",
+          "SIMPLE_JEV_MODEL",
+          "NOID_MODEL_URL",
+          "NOID_MODEL_NAME",
+          "NOID_MODEL_TIMEOUT_S",
+          "NOID_SLACK_ENABLED",
+          "NOID_SLACK_CHANNEL",
+          "NOID_SLACK_BOT_TOKEN",
+          "NOID_SLACK_DETAIL_URL",
+          "NOID_OPERATIONS_LIMIT",
+          "NOID_POST_INCIDENT_DEMO",
+          "NOID_DEMO_REHEARSAL",
+          "NOID_JEV_REPLAY"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "falhou",
+        "erro": "unable to get local issuer certificate"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://withnoid.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://withnoid.com/",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra https://withnoid.com/app",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Não há navegador no container, e a requisição HTTPS feita a partir dele terminou em falha de handshake TLS. O fluxo abaixo foi executado na instalação local."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-11.txt",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "urllib.error.URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)>",
+          "link": "capturas/uso/comando-11.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Rode `noid replay --triage` para ingerir os alertas sintéticos de `fixtures/`",
+      "observado": "Foram ingeridas 9 observações e abertos 8 incidentes; a triagem saiu como rules_only. Os comandos rodaram com `env -i PATH=\"$PATH\" HOME=/tmp`, porque o ambiente de teste definia as variáveis NOID_* com valores falsos.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "eve: 9 observacoes · 1 duplicadas · 1 ignoradas",
+          "link": "capturas/uso/comando-12.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "triagem incidente #1: rules_only",
+          "link": "capturas/uso/comando-12.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Rode `noid investigate 1` e confira o dispositivo identificado",
+      "observado": "O incidente 1 (10.20.30.41) aparece com o ativo cam-01, tipo camera. No replay, o IP 10.20.30.42 resolveu para ativos diferentes (5 e 2) em incidentes distintos.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "\"name\": \"cam-01\",",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "incidente #1 [high] 10.20.30.41/iot-cam ativo=1 ET MALWARE Possible IoT C2 Beacon",
+          "link": "capturas/uso/comando-12.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Leia o parecer da IA e clique nas evidências",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Não há modelo local disponível nem navegador; a triagem respondeu rules_only. `noid investigate 1` e `noid investigate 5` deram saídas diferentes (contain e investigate)."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-12.txt",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "triagem incidente #1: rules_only",
+          "link": "capturas/uso/comando-12.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-14.txt",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "**Recomendacao:** `investigate` — identidade ambigua na janela — nao agir",
+          "link": "capturas/uso/comando-14.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Rode `noid approve 1 --operator ana`",
+      "observado": "A ação 1 terminou com status verified no conector simulado.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-15.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "acao 1: verified",
+          "link": "capturas/uso/comando-15.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Rode `noid simctl state` e confira que só o IP 10.20.30.41 tem regra de contenção",
+      "observado": "O estado simulado lista uma única regra, para 10.20.30.41. A saída não traz uma verificação própria da câmera vizinha, e não há tráfego real.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-15.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "\"segment\": \"iot-cam\", \"ip\": \"10.20.30.41\", \"action\": \"contain\"",
+          "link": "capturas/uso/comando-15.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Rode `noid revert 1 --operator ana` e depois `noid simctl state`",
+      "observado": "A reversão terminou como reverted e o estado simulado ficou vazio.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "reversao 2: reverted",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "estado simulado vazio",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Rode `noid serve --port 8080 &` e depois `python -c \"import urllib.request as u; print(u.urlopen('http://127.0.0.1:8080/api/incidents/1/timeline').read().decode())\"`",
+      "observado": "A linha do tempo traz abertura do incidente, evidência, triagem, aprovação por ana, aplicação, verificação, reversão e reabertura, com horários.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-19.txt",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "\"actor\": \"ana\", \"event\": \"approved\"",
+          "link": "capturas/uso/comando-19.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-19.txt",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "\"event\": \"incident_reopened\", \"entity\": \"incident\", \"entity_id\": \"1\", \"detail\": \"contencao revertida\"",
+          "link": "capturas/uso/comando-19.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: `noid` sem argumento",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-26.txt",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "noid: error: the following arguments are required: cmd",
+          "link": "capturas/uso/comando-26.txt",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Mostra a mensagem de uso e informa que o argumento cmd é obrigatório, com código 2."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: `noid replay --dir /tmp/nao-existe` (diretório inexistente)",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Termina com rastro de pilha do Python e FileNotFoundError."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-27.txt",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/nao-existe/inventory.json'",
+          "link": "capturas/uso/comando-27.txt",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Termina com rastro de pilha do Python e FileNotFoundError."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: `noid approve 999 --operator ana` (incidente inexistente)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-28.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "aprovacao recusada: incidente 999 inexistente",
+          "link": "capturas/uso/comando-28.txt",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Recusa com a mensagem de incidente inexistente."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-4",
+      "rotulo": "Entrada inesperada: Variável NOID_MODEL_TIMEOUT_S com valor não numérico (valor falso definido pelo ambiente de teste) ao rodar `noid --help`",
+      "estado": {
+        "estado": "falhou",
+        "erro": "A CLI termina com rastro de pilha e ValueError antes de mostrar a ajuda; sem a variável, a ajuda é exibida."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-04.txt",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "ValueError: could not convert string to float: 'chave-falsa-rt'",
+          "link": "capturas/uso/comando-04.txt",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A CLI termina com rastro de pilha e ValueError antes de mostrar a ajuda; sem a variável, a ajuda é exibida."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Demo hospedada em https://withnoid.com/app",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Falha de handshake TLS a partir do container, e não há navegador."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-11.txt",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "ssl/tls alert handshake failure",
+          "link": "capturas/uso/comando-11.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-2",
+      "rotulo": "Parecer por modelo de IA, Jev e Devin",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Não há modelo local no container e as chaves de serviços externos do ambiente são falsas."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-06.txt",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "FEATHERLESS_API_KEY=chave-falsa-rt",
+          "link": "capturas/uso/comando-06.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-3",
+      "rotulo": "Envio de mensagem ao Slack",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige canal e token reais."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-06.txt",
+          "linha": 41,
+          "linha_fim": null,
+          "trecho": "NOID_SLACK_BOT_TOKEN=chave-falsa-rt",
+          "link": "capturas/uso/comando-06.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-4",
+      "rotulo": "Contenção em controle de rede real (firewall, switch, Wi-Fi ou NAC)",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige equipamento ou laboratório de rede que o container não tem."
+      },
+      "evidencias": []
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Ollama",
+              "src/noid/triage.py",
+              22
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "MODEL_URL = os.environ.get(\"NOID_MODEL_URL\", \"\")  # ex.: http://localhost:11434",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L22",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Featherless (Simple Jev)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 336,
+          "linha_fim": null,
+          "trecho": "resp = httpx.post(url, json=body, headers=headers, timeout=15)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L336",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 54,
+          "linha_fim": null,
+          "trecho": "JEV_DEMO_MODEL = \"featherless-ai/gemma-4-26B-A4B-classifier\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L54",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "featherless-ai/gemma-4-26B-A4B-classifier",
+      "obs": "Classificar um fluxo do dispositivo para o agente (p_attack e categoria)."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a API compatível com OpenAI (configurável; ex.: Featherless ou Ollama)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 666,
+          "linha_fim": null,
+          "trecho": "resp = httpx.post(cfg[\"url\"], headers=headers, timeout=cfg[\"timeout\"], json={",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L666",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 643,
+          "linha_fim": null,
+          "trecho": "\"model\": os.getenv(\"NOID_AGENT_MODEL\") or os.getenv(\"NOID_MODEL_NAME\", \"qwen2.5:7b\"),",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L643",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".env.example",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "NOID_AGENT_MODEL=Qwen/Qwen3.8-27B",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/.env.example#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "qwen2.5:7b (padrão no código); Qwen/Qwen3.8-27B no .env.example",
+      "obs": "Loop de tool calling do agente que investiga, decide, contém e registra o BO."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Devin (Cognition), API v3",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 818,
+          "linha_fim": null,
+          "trecho": "resp = client.post(api, json={",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L818",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Criar uma sessão que atua como cérebro do agente, chamando as ferramentas do Noid por HTTP."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Devin CLI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 750,
+          "linha_fim": null,
+          "trecho": "[os.getenv(\"NOID_DEVIN_BIN\", \"devin\"), \"--process-model\", \"in-process\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L750",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Cérebro alternativo do agente, com as ferramentas expostas por MCP."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a Ollama",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 140,
+          "linha_fim": null,
+          "trecho": "resp = httpx.post(f\"{url.rstrip('/')}/api/generate\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L140",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "MODEL_NAME = os.environ.get(\"NOID_MODEL_NAME\", \"qwen2.5:3b\")",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "qwen2.5:3b",
+      "obs": "Triagem do incidente com resumo, motivo, evidências citadas e recomendação."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-6",
+      "rotulo": "Chamada a Featherless (Simple Jev)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/post_incident_demo.py",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "response = httpx.post(url, json=body, headers=headers, timeout=8)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/post_incident_demo.py#L59",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Classificar um fluxo sintético fixo na demo pós-incidente."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-7",
+      "rotulo": "Chamada a Devin CLI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/post_incident_demo.py",
+          "linha": 123,
+          "linha_fim": null,
+          "trecho": "[devin, \"--process-model\", \"in-process\", \"--permission-mode\", \"accept-edits\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/post_incident_demo.py#L123",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Corrigir o arquivo gateway.json na demo pós-incidente."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-8",
+      "rotulo": "Chamada a Featherless (Simple Jev)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "integrations/jev/simple_jev_classify.py",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "with urllib.request.urlopen(req, timeout=60) as resp:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/integrations/jev/simple_jev_classify.py#L91",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "integrations/jev/simple_jev_classify.py",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "DEMO_MODEL = \"featherless-ai/gemma-4-26B-A4B-classifier\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/integrations/jev/simple_jev_classify.py#L30",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "featherless-ai/gemma-4-26B-A4B-classifier",
+      "obs": "Classificação em lote de fluxos do dataset (script de integração)."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/investigate.py",
+          "linha": 219,
+          "linha_fim": null,
+          "trecho": "\"\"\"Regras deterministicas sobre o dossie — a 'inteligencia' do agente.\"\"\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/investigate.py#L219",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/investigate.py",
+          "linha": 287,
+          "linha_fim": null,
+          "trecho": "inv.justification = \"prioridade baixa — monitorar sem acao\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/investigate.py#L287",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/app/incident.js",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "<h3>Recomendação do agente <span class=\"tag ${toneClass}\">",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/app/incident.js#L60",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A \"Recomendação do agente\" exibida na interface vem de regras determinísticas em investigate.py, com justificativas em frases predefinidas.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-2",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "suspicion_reason=getattr(inv, \"justification\", \"\") or \"triagem por regras, sem modelo\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L96",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 100,
+          "linha_fim": null,
+          "trecho": "return TriageResult(status=\"rules_only\", output=output)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L100",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Sem NOID_MODEL_URL, a triagem monta resumo e motivo por template a partir da investigação, com status rules_only.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-3",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 944,
+          "linha_fim": null,
+          "trecho": "\"recomendacoes\": book[\"recomendacoes\"], \"proximos_passos\": NEXT_STEPS[decisao],",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L944",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "PLAYBOOK = {",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L57",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 112,
+          "linha_fim": null,
+          "trecho": "NEXT_STEPS = {",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L112",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Sem LLM ou após falha dele, o BO usa recomendações e próximos passos escritos no código (PLAYBOOK e NEXT_STEPS).",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:36",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/miguelmochizuki/noid",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "github:push-forcado",
+      "rotulo": "Push forçado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Horário",
+            "Branch",
+            "Commit"
+          ],
+          "linhas": [
+            [
+              "28/11 12:08",
+              "docs/frontend-integration",
+              "c7fa4e3"
+            ],
+            [
+              "28/11 12:04",
+              "docs/frontend-integration",
+              "725125d"
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/miguelmochizuki/noid",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:antes",
+      "rotulo": "Commits antes do início da janela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/miguelmochizuki/noid/commit/d6d7252d3f8f38987ba794001ca70eeccc99e1ff",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid/commit/d6d7252d3f8f38987ba794001ca70eeccc99e1ff",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1 de 200 commits, o mais antigo em 28/11 08:38",
+      "obs": null,
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/miguelmochizuki/noid/commit/9f4d309439b2b0f4a6e904d3d2ace0029df62d9c",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid/commit/9f4d309439b2b0f4a6e904d3d2ace0029df62d9c",
+          "conferida": "script"
+        }
+      ],
+      "valor": "9f4d309, 21803 linhas adicionadas em 6 arquivos, de 54835 no histórico",
+      "obs": "21803 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "ORDR IQ (Ordr)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://ordr.net/ordr-iq",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://ordr.net/ordr-iq",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://ordr.net/blog/proactive-ai-in-action",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://ordr.net/blog/proactive-ai-in-action",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma comercial em que agentes de IA fazem a triagem de alertas de dispositivos conectados, preparam políticas de segmentação e isolamento e as aplicam em firewalls e NAC existentes após aprovação humana.",
+      "obs": "Em comum: Atende, entre outros, o setor de saúde, com IA que analisa o alerta, aprovação humana antes da contenção, uso dos controles de rede já instalados e trilha de auditoria. Diferente: É uma plataforma comercial que também cobre inventário de ativos IT, IoT, OT e nuvem e geração de políticas de segmentação; a página do ORDR IQ não menciona reversão."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "autonomous_llm_multiagent_iot_ids_ips_repository",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/DheerajPaniharam/autonomous_llm_multiagent_iot_ids_ips_repository",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/DheerajPaniharam/autonomous_llm_multiagent_iot_ids_ips_repository",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Repositório de um IDS/IPS multiagente para redes IoT que recebe telemetria do Suricata e do Zeek, usa um modelo Qwen local para analisar ameaças e aplica regras nftables, incluindo isolamento de dispositivos.",
+      "obs": "Em comum: Usa modelo local para explicar a ameaça em redes IoT, isola o dispositivo e permite liberá-lo, com registros em PostgreSQL. Diferente: O README descreve mitigação automática e não descreve uma etapa de aprovação humana antes dela."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "Forescout VistaroAI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.forescout.com/press-releases/the-future-of-proactive-cyber-defense-forescout-vistaroai/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.forescout.com/press-releases/the-future-of-proactive-cyber-defense-forescout-vistaroai/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Conjunto de IA agêntica da Forescout para investigar causas e priorizar riscos em ativos IT, OT, IoT e IoMT, em que as equipes revisam e aprovam as ações.",
+      "obs": "Em comum: Combina classificação de dispositivos IoT e médicos, investigação assistida por IA e aprovação humana; a página descreve a plataforma Forescout como capaz de isolar sistemas comprometidos. Diferente: É uma plataforma comercial voltada também a priorização de riscos e vulnerabilidades; a página não menciona reversão de contenção."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Darktrace Autonomous Response",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.darktrace.com/darktrace-autonomous-response",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.darktrace.com/darktrace-autonomous-response",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Produto comercial que escolhe ações de contenção a partir do alerta, como bloquear conexões ou colocar um dispositivo em quarentena, com modo de confirmação humana.",
+      "obs": "Em comum: Contém dispositivos na rede, pode exigir confirmação de uma pessoa e integra com firewall de terceiros para bloqueio. Diferente: A página também descreve operação totalmente autônoma e não menciona reversão nem dispositivos sem agente em hospitais."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Vigil (Vigil-SOC)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Vigil-SOC/vigil",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Vigil-SOC/vigil",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "SOC agêntico de código aberto em que agentes fazem triagem e investigação, ações de resposta esperam um analista e cada execução grava um registro apenas de acréscimo.",
+      "obs": "Em comum: Agente investiga o alerta, pede aprovação humana antes de agir e mantém registro do que foi feito. Diferente: A página não menciona IoT; informa que o fluxo de aprovação registra a ação `isolate_host` sem executá-la."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Python",
+              72,
+              14096
+            ],
+            [
+              "JavaScript",
+              13,
+              2479
+            ],
+            [
+              "Shell",
+              6,
+              1827
+            ],
+            [
+              "Markdown",
+              19,
+              1682
+            ],
+            [
+              "HTML",
+              6,
+              1597
+            ],
+            [
+              "CSS",
+              6,
+              809
+            ],
+            [
+              "JSON",
+              8,
+              468
+            ],
+            [
+              "SQL",
+              1,
+              279
+            ],
+            [
+              "YAML",
+              2,
+              66
+            ],
+            [
+              "TOML",
+              1,
+              31
+            ]
+          ]
+        }
+      },
+      "obs": "148 arquivos de texto e 31684 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "API e ingestão",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/api.py",
+          "linha": 195,
+          "linha_fim": null,
+          "trecho": "def create_app(engine: Engine) -> FastAPI:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/api.py#L195",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/api.py",
+          "src/noid/dhcp_api.py",
+          "src/noid/worker.py"
+        ]
+      },
+      "obs": "Aplicação FastAPI que recebe alertas Suricata, fluxos e observações DHCP, expõe incidentes e ações e sobe as threads de worker, agente e Slack."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Detecção e correlação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/detect.py",
+          "linha": 203,
+          "linha_fim": null,
+          "trecho": "def detect_flows(conn: Connection, *, since: datetime | None = None,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/detect.py#L203",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/correlate.py",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "def attach_observation(conn: Connection, obs, notifier: SlackNotifier | None = None) -> int:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/correlate.py#L105",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/detect.py",
+          "src/noid/correlate.py"
+        ]
+      },
+      "obs": "Detectores por regras sobre fluxos geram alertas, que são ligados a um ativo por IP, segmento e instante."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Agente de resposta",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 1016,
+          "linha_fim": null,
+          "trecho": "def process_one(engine: Engine, lock: Lock, connector=SimConnector) -> int | None:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L1016",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/agent.py"
+        ]
+      },
+      "obs": "Para cada incidente novo, usa Devin, um LLM ou regras com as mesmas ferramentas para investigar, conter e registrar o BO."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Investigação e triagem",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/investigate.py",
+          "linha": 197,
+          "linha_fim": null,
+          "trecho": "def investigate(conn: Connection, incident_id: int) -> Investigation:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/investigate.py#L197",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 152,
+          "linha_fim": null,
+          "trecho": "def triage_incident(conn: Connection, incident_id: int,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L152",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/investigate.py",
+          "src/noid/triage.py"
+        ]
+      },
+      "obs": "Monta um dossiê por consultas ao banco e regras, e faz triagem opcional com modelo via Ollama."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Ações e conectores",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/actions.py",
+          "linha": 166,
+          "linha_fim": null,
+          "trecho": "def execute_contain(conn: Connection, action_id: int,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/actions.py#L166",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/nft_connector.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "class NftConnector:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/nft_connector.py#L21",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/actions.py",
+          "src/noid/connector.py",
+          "src/noid/nft_connector.py"
+        ]
+      },
+      "obs": "Aprovação com política, execução, verificação e reversão da contenção no conector simulado ou nftables."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Persistência",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/db.py",
+          "linha": 43,
+          "linha_fim": null,
+          "trecho": "def make_engine(url: str | None = None) -> Engine:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/db.py#L43",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/db.py"
+        ]
+      },
+      "obs": "Tabelas SQLAlchemy em SQLite por padrão ou PostgreSQL via NOID_DATABASE_URL."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Interfaces do operador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/operator_app.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "@app.get(\"/app\", response_class=HTMLResponse)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/operator_app.py#L21",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/operations.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "@app.get(\"/operacao\", response_class=HTMLResponse)",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/operations.py#L21",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/operator_app.py",
+          "src/noid/app/incident.js",
+          "src/noid/operations.py"
+        ]
+      },
+      "obs": "Aplicação web em /app, fila de operação em /operacao e painel HTML na raiz."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-8",
+      "rotulo": "Notificações Slack",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/slack.py",
+          "linha": 288,
+          "linha_fim": null,
+          "trecho": "def run_slack_sender(engine: Engine, notifier: SlackNotifier, stop: Event,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/slack.py#L288",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/noid/slack.py"
+        ]
+      },
+      "obs": "Envia ao canal configurado cartões de incidente e pedidos de decisão do agente."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "exige a aprovação explícita do operador.",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 527,
+          "linha_fim": null,
+          "trecho": "approval_id = act.approve(conn, self.incident_id, ACTOR, ttl,",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L527",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/agente-noid.md",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "O agente atua em cada incidente novo, sem esperar aprovação.",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/agente-noid.md#L3",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário diz que o operador aprova explicitamente antes da contenção.",
+              "Com o agente ligado, ele registra a própria aprovação e contém sem esperar o operador; o README e docs/agente-noid.md descrevem esse comportamento."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "um modelo local compara o comportamento atual com o histórico do dispositivo",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/agent.py",
+          "linha": 719,
+          "linha_fim": null,
+          "trecho": "return \"devin\"",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/agent.py#L719",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/triage.py",
+          "linha": 140,
+          "linha_fim": null,
+          "trecho": "resp = httpx.post(f\"{url.rstrip('/')}/api/generate\",",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/triage.py#L140",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário diz que um modelo local faz a investigação.",
+              "O agente escolhe a API do Devin quando há chave, senão um LLM por URL configurável, senão regras; a chamada ao Ollama está na triagem separada."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC)",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/connector.py",
+          "linha": 134,
+          "linha_fim": null,
+          "trecho": "if mode != \"nftables\" or not authenticated:",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/connector.py#L134",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário diz que o executor aplica a restrição no controle de rede existente (firewall, switch, Wi-Fi ou NAC).",
+              "Os conectores no código são o simulado (padrão) e um nftables local para um serviço de laboratório."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-4",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/rfc-noid.md",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "OPNsense real em rede isolada como caminho principal do piloto",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/docs/rfc-noid.md#L52",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/noid/connector.py",
+          "linha": 136,
+          "linha_fim": null,
+          "trecho": "from .nft_connector import NftConnector",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/src/noid/connector.py#L136",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "A RFC descreve um conector OPNsense real em rede isolada como caminho principal do piloto.",
+              "Não há conector OPNsense em src/; há o conector simulado e o nftables."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:achado-1",
+      "rotulo": "Padrão de segredo: token do Slack (xox)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "tests/test_agent.py, linha 196",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_agent.py",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/tests/test_agent.py#L196",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "segredos:achado-2",
+      "rotulo": "Padrão de segredo: token do Slack (xox)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "tests/test_agent.py, linha 222",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_agent.py",
+          "linha": 222,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/tests/test_agent.py#L222",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "segredos:achado-3",
+      "rotulo": "Padrão de segredo: token do Slack (xox)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "tests/test_agent.py, linha 237",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_agent.py",
+          "linha": 237,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/tests/test_agent.py#L237",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "segredos:achado-4",
+      "rotulo": "Padrão de segredo: token do Slack (xox)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "tests/test_slack_notifications.py, linha 52",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_slack_notifications.py",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/tests/test_slack_notifications.py#L52",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "segredos:achado-5",
+      "rotulo": "Padrão de segredo: token do Slack (xox)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "tests/test_slack_notifications.py, linha 471",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_slack_notifications.py",
+          "linha": 471,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/tests/test_slack_notifications.py#L471",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Noid",
+          "link": "https://github.com/miguelmochizuki/noid/blob/8bd1a36a9d84f32482f3cf900ea617a44c18e50a/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 8 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Quando um alerta chega, o Noid investiga sozinho: consulta os fluxos e o histórico do dispositivo e pede a classificação do Jev.",
+      "motivo": "O agente processou os incidentes no modo por regras; a classificação do Jev não foi exercitada por falta de credencial real.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "um executor aplica a restrição no controle de rede que já existe (firewall, switch, Wi-Fi ou NAC), lê o estado de volta para confirmar o efeito",
+      "motivo": "Não há firewall, switch, Wi-Fi ou NAC no ambiente; só o conector simulado foi exercitado.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "parecer da IA com evidências clicáveis",
+      "motivo": "Sem modelo local para o parecer e sem navegador para clicar nas evidências.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "o Noid envia a mensagem ao canal assim que o BO é gravado",
+      "motivo": "Exige canal e token reais do Slack.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Subida local",
+      "motivo": "o projeto não abre página web",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "motivo": "o teste local roda sem as chaves reais da equipe",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Abra https://withnoid.com/app",
+      "motivo": "Não há navegador no container, e a requisição HTTPS feita a partir dele terminou em falha de handshake TLS. O fluxo abaixo foi executado na instalação local.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Leia o parecer da IA e clique nas evidências",
+      "motivo": "Não há modelo local disponível nem navegador; a triagem respondeu rules_only. `noid investigate 1` e `noid investigate 5` deram saídas diferentes (contain e investigate).",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Demo hospedada em https://withnoid.com/app",
+      "motivo": "Falha de handshake TLS a partir do container, e não há navegador.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Parecer por modelo de IA, Jev e Devin",
+      "motivo": "Não há modelo local no container e as chaves de serviços externos do ambiente são falsas.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Envio de mensagem ao Slack",
+      "motivo": "Exige canal e token reais.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Contenção em controle de rede real (firewall, switch, Wi-Fi ou NAC)",
+      "motivo": "Exige equipamento ou laboratório de rede que o container não tem.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

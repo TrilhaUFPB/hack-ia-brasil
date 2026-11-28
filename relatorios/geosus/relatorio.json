@@ -1,0 +1,2647 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "geosus",
+    "nome": "GeoSUS",
+    "numero": 15,
+    "track": "Saúde",
+    "repo": "https://github.com/YanFabber/geosus",
+    "demo": "https://geosus.vercel.app",
+    "video": "https://youtube.com/shorts/CjEf_WJ6CFA",
+    "resumo": "GeoSUS é um assistente com IA que, a partir do relato de sintomas por texto ou voz, indica a porta certa do SUS em João Pessoa (posto, UPA, hospital ou 192) e a unidade aberta mais próxima, para reduzir a lotação das UPAs."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.482Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "b517956ac726828ae043bfad009f355c92792a22",
+    "commit_em": "2026-11-28T18:58:07Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10662,
+          "preparo_ms": 0,
+          "execucao_ms": 306
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3,
+          "preparo_ms": 0,
+          "execucao_ms": 3126
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3324,
+          "preparo_ms": 0,
+          "execucao_ms": 14464
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10674,
+          "preparo_ms": 0,
+          "execucao_ms": 295
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3325,
+          "preparo_ms": 0,
+          "execucao_ms": 2957
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 72
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2964,
+          "preparo_ms": 0,
+          "execucao_ms": 129
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 34
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10742,
+          "preparo_ms": 0,
+          "execucao_ms": 272
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10971,
+          "preparo_ms": 0,
+          "execucao_ms": 370
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "verificado"
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra https://geosus.vercel.app na aba Chat",
+      "esperado": "A tela mostra a saudação do GeoSUS, os exemplos \"Febre\", \"Tosse ou gripe\", \"Dor de barriga\" e \"Criança doente\" e o campo de texto.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Digite \"Febre de 39 há 3 dias, dor no corpo e atrás dos olhos\" no campo \"Escreva o que está sentindo\"",
+      "esperado": "O texto foi inserido no campo.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Clique em \"Enviar\"",
+      "esperado": "Apareceu \"Pergunta 1 de até 10\" sobre dor de cabeça, confusão ou manchas, com botões. Outra entrada (tosse leve e nariz escorrendo) recebeu pergunta diferente, sobre falta de ar.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/comparacao-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/comparacao-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Responda pelos botões: \"Não\", \"Na mesma\", \"Não\", \"4-6\", \"Não\" e \"Não\"",
+      "esperado": "A conversa fez 6 perguntas, uma por vez, com botões de resposta, e depois exibiu a orientação. A captura mostra a pergunta 5.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Leia a orientação \"Vá a uma UPA hoje\" e a justificativa",
+      "esperado": "A tela mostrou \"Vá a uma UPA hoje\" com o texto \"Não foi possível avaliar com segurança; procure uma UPA.\" e a pergunta \"Onde você está?\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em \"Escolher bairro manualmente\" e selecione \"Mangabeira\" em \"Seu bairro em João Pessoa\"",
+      "esperado": "A lista de bairros abriu e Mangabeira foi selecionado. O botão \"Usar minha localização\" não foi testado.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique em \"Ver unidade e mapa\"",
+      "esperado": "Abriu a página /resultado com \"Encontramos 2 opções de atendimento\" e a orientação para UPA.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Confira as unidades, a distância, o mapa e o botão \"Abrir rota\"",
+      "esperado": "Sugerida: UPA Valentina, 3,2 km; outra: UPA Bancários, 2,8 km, \"Lotada\"; a rota aparece como \"Abrir rota\" (link do Google Maps, não aberto), não como \"Como chegar\". O console registrou erro 503 em /api/queue para as duas unidades.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Clique em \"Resumo para a recepção\" e leia o texto",
+      "esperado": "Abriu \"Mostre este resumo na recepção\" com queixa principal, informações relatadas, classificação \"urgente (não é diagnóstico)\" e o botão \"Copiar\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "const { output } = await generateText({",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "if (!pergunta || turnosFeitos >= MAX_PERGUNTAS) return { ...FALHA, demo };",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L55",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/flow/MicButton.tsx",
+          "linha": 68,
+          "linha_fim": null,
+          "trecho": "sessionRef.current = startListening(Ctor, {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/flow/MicButton.tsx#L68",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A conversa aceita texto e voz; o modelo devolve pergunta ou resultado com urgência, e o código limita a 10 perguntas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A pessoa conta o que está sentindo, por texto ou voz, e a IA investiga a gravidade com perguntas curtas, até 10, e classifica a urgência.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 2,
+        "linha_fim": null,
+        "trecho": "A pessoa conta o que está sentindo, por texto ou voz, e a IA investiga a gravidade com perguntas curtas, até 10, e classifica a urgência.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/schema.ts",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "export const SERVICOS = [\"usf\", \"upa\", \"hospital\", \"pediatria\", \"maternidade\", \"samu\"] as const;",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/schema.ts#L4",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "if (ai.urgencia === \"emergencia\" || ai.servico === \"samu\") {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/result-copy.ts",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "titulo: \"Procure um posto de saúde (USF)\",",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/result-copy.ts#L21",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "A saída do modelo traz o campo servico (inclui usf, upa, hospital e samu), e a tela tem um título por serviço; emergência ou samu vira alarme.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O app indica se o caso é para o posto de saúde (USF/UBS), a UPA, o hospital ou o SAMU 192.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 2,
+        "linha_fim": null,
+        "trecho": "O app indica se o caso é para o posto de saúde (USF/UBS), a UPA, o hospital ou o SAMU 192.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/units/select.ts",
+          "linha": 41,
+          "linha_fim": null,
+          "trecho": "&& offer.verificadaEm !== null",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/units/select.ts#L41",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/data/units.json",
+          "linha": 346,
+          "linha_fim": null,
+          "trecho": "\"verificadaEm\": null",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/data/units.json#L346",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/data/units.json",
+          "linha": 194,
+          "linha_fim": null,
+          "trecho": "\"verificadaEm\": null",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/data/units.json#L194",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/api-client.ts",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "return { value: await upaFallback(ctx, place.bairroId, fetchImpl), source: \"api\" };",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/api-client.ts#L196",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/backend-adapter.ts",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "\"Não temos atendimento confirmado para este serviço agora. Mostramos a UPA aberta 24 horas mais perto.\";",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/backend-adapter.ts#L40",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "O filtro exige offer.verificadaEm !== null.",
+      "existe": "Busca por serviço, horário e distância, com mapa, rota e lotação marcada como simulação. Há ofertas elegíveis para UPA (4) e uma de serviço \"trauma\".",
+      "falta": "As ofertas de usf, hospital, pediatria e maternidade têm verificadaEm nulo e são excluídas da busca; para esses serviços o app mostra a UPA 24h no lugar de unidades do tipo indicado.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Em seguida mostra as unidades daquele tipo abertas e mais perto, com distância, mapa, rota e a lotação informada pela unidade (simulação).",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 2,
+        "linha_fim": null,
+        "trecho": "Em seguida mostra as unidades daquele tipo abertas e mais perto, com distância, mapa, rota e a lotação informada pela unidade (simulação).",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/result/SummarySheet.tsx",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "postSummary(request).then(({ value, source }) => {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/result/SummarySheet.tsx#L42",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/summary/route.ts",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "return NextResponse.json(await runSummary(parsed.data, { demo: isDemoMode(), ai: groqSummary }));",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/summary/route.ts#L10",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "A folha de resumo chama POST /api/summary, que usa o modelo da Groq ou um template quando em modo demonstração ou em falha.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Também entrega um resumo para mostrar na recepção.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 2,
+        "linha_fim": null,
+        "trecho": "Também entrega um resumo para mostrar na recepção.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "if (flag) return alarme(flag.sinal, flag.motivo, flag.cvv);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L91",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/triage-flow.ts",
+          "linha": 54,
+          "linha_fim": null,
+          "trecho": "return { patch, route: \"/alarme\" };",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/triage-flow.ts#L54",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/redflags.ts",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "sinal: \"Dor no peito\",",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/redflags.ts#L17",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/redflags-client.ts",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "sinal: \"Convulsão\",",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/redflags-client.ts#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Regras por expressão regular rodam no cliente e no servidor antes do modelo, em duas listas separadas (redflags-client.ts e redflags.ts).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Sinais de alarme, como dor no peito, AVC e convulsão, são checados por regras antes da IA e levam direto à tela \"Ligar 192\".",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 2,
+        "linha_fim": null,
+        "trecho": "Sinais de alarme, como dor no peito, AVC e convulsão, são checados por regras antes da IA e levam direto à tela \"Ligar 192\".",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/manifest.ts",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "display: \"standalone\",",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/manifest.ts#L10",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/speech.ts",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "recognition.lang = \"pt-BR\";",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/speech.ts#L71",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "Há manifest com display standalone e reconhecimento de voz do navegador em pt-BR; não há rota de login.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "App instalável no celular (PWA), sem login, com conversa por texto e voz em português.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 9,
+        "linha_fim": null,
+        "trecho": "App instalável no celular (PWA), sem login, com conversa por texto e voz em português.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "function modelo(id = process.env.GROQ_MODEL || \"openai/gpt-oss-120b\") {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L11",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "export const groqTriage: TriageAi = (req) => triagem(req).catch(() => triagem(req, RESERVA));",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L17",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "providerOptions: { groq: { structuredOutputs: true, strictJsonSchema: true, reasoningEffort: \"low\" } },",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L28",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 49,
+          "linha_fim": null,
+          "trecho": "const parsed = TriageAiOutput.safeParse(bruto);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L49",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "openai/gpt-oss-120b por padrão (configurável por GROQ_MODEL), reserva openai/gpt-oss-20b na triagem, JSON Schema strict e validação com Zod.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Triagem com IA (Groq, openai/gpt-oss-120b, com modelo reserva) e saída estruturada validada.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "Triagem com IA (Groq, openai/gpt-oss-120b, com modelo reserva) e saída estruturada validada.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 101,
+          "linha_fim": null,
+          "trecho": "return FALHA;",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L101",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 50,
+          "linha_fim": null,
+          "trecho": "if (!parsed.success) return { ...FALHA, demo };",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L50",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/api-client.ts",
+          "linha": 111,
+          "linha_fim": null,
+          "trecho": "return { value: SAFE_TRIAGE_FALLBACK, source: \"fallback_seguro\" };",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/api-client.ts#L111",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "Erro ou saída inválida do modelo devolve \"urgente → UPA\" no servidor, e o cliente tem o mesmo padrão para falha de rede.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se a IA falhar ou houver dúvida, o app recomenda a opção mais segura.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "Se a IA falhar ou houver dúvida, o app recomenda a opção mais segura.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/units/select.ts",
+          "linha": 41,
+          "linha_fim": null,
+          "trecho": "&& offer.verificadaEm !== null",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/units/select.ts#L41",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/units/select.ts",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "&& isOpen(offer.horario, local);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/units/select.ts#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/data/units.json",
+          "linha": 157,
+          "linha_fim": null,
+          "trecho": "\"servico\": \"trauma\",",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/data/units.json#L157",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/data/units.json",
+          "linha": 346,
+          "linha_fim": null,
+          "trecho": "\"verificadaEm\": null",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/data/units.json#L346",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "As 13 ofertas de USF têm verificadaEm nulo.",
+      "existe": "A escolha é feita por código, com horário e distância; os dados têm 24 unidades e 33 bairros.",
+      "falta": "A busca só considera ofertas com verificadaEm preenchido: 5 das 24 unidades (4 UPAs e 1 oferta de serviço \"trauma\", valor que não está entre os serviços da saída da IA).",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Escolha da unidade pelo código, nunca pela IA, entre 24 unidades reais e 33 bairros de João Pessoa, considerando horário de funcionamento e distância.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 12,
+        "linha_fim": null,
+        "trecho": "Escolha da unidade pelo código, nunca pela IA, entre 24 unidades reais e 33 bairros de João Pessoa, considerando horário de funcionamento e distância.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/lotacao-fontes.ts",
+          "linha": 68,
+          "linha_fim": null,
+          "trecho": "simulatedOfficialReading(unitId, agora),",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/lotacao-fontes.ts#L68",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/occupancy/StaffCheckin.tsx",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "onClick={() => report(unitId, o.id)}",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/occupancy/StaffCheckin.tsx#L58",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/occupancy/PresenceCheckin.tsx",
+          "linha": 128,
+          "linha_fim": null,
+          "trecho": "<ConsentRequest onAccept={() => savePresence({ ...record, consent: true })} />",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/occupancy/PresenceCheckin.tsx#L128",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/occupancy/StaffCheckin.tsx",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "Protótipo: a resposta fica só neste aparelho. Nenhum dado de paciente é pedido.",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/occupancy/StaffCheckin.tsx#L84",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "As leituras da secretaria e de presença exibidas são simuladas; a resposta dada em /unidade fica só no aparelho (localStorage).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Lotação com três fontes (secretaria, equipe da unidade e presença com consentimento) e tela para a equipe da unidade informar a lotação, com dados simulados.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 14,
+        "linha_fim": null,
+        "trecho": "Lotação com três fontes (secretaria, equipe da unidade e presença com consentimento) e tela para a equipe da unidade informar a lotação, com dados simulados.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/map/MapaView.tsx",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "lookupCatalog(origem)",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/map/MapaView.tsx#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/map/MapaView.tsx",
+          "linha": 100,
+          "linha_fim": null,
+          "trecho": "{MAP_FILTERS.map((f) => (",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/map/MapaView.tsx#L100",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/units/route.ts",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "return Response.json({ unidades: matching.map(unitCard) } satisfies CatalogoResponse);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/units/route.ts#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "A aba Mapa carrega o catálogo de GET /api/units e tem filtros por tipo e por bairro.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Mapa da cidade com todas as unidades e filtros.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 15,
+        "linha_fim": null,
+        "trecho": "Mapa da cidade com todas as unidades e filtros.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "return env.DEMO_MODE === \"true\" || !env.GROQ_API_KEY;",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L19",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "- run: pnpm test",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/.github/workflows/ci.yml#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "vitest.config.mts",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "test: { include: [\"tests/**/*.test.ts\"], environment: \"node\" },",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/vitest.config.mts#L6",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "Sem GROQ_API_KEY o app usa roteiros prontos; há testes em tests/ e workflow com lint, test e build.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Modo demonstração sem chave de API, testes automatizados e CI no GitHub.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 16,
+        "linha_fim": null,
+        "trecho": "Modo demonstração sem chave de API, testes automatizados e CI no GitHub.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/prompt.ts",
+          "linha": 76,
+          "linha_fim": null,
+          "trecho": "linhas.push(`Perguntas feitas: ${req.turnos.length} (mínimo antes de concluir sem emergência: ${MIN_PERGUNTAS})`);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/prompt.ts#L76",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "if (!ai.urgencia || !ai.servico) return { ...FALHA, demo };",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L60",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/flow/Chat.tsx",
+          "linha": 118,
+          "linha_fim": null,
+          "trecho": "{withUnsureOption(pergunta.opcoes).map((label) => (",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/flow/Chat.tsx#L118",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/demo.ts",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "passos: [{ pergunta: \"Você está sentindo algum mal-estar agora?\", opcoes: SIM_NAO }],",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/demo.ts#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Os roteiros do modo demonstração concluem com 1 a 3 perguntas.",
+      "existe": "Limite de 10 perguntas no código, botões de resposta rápida e o mínimo de 4 informado no prompt do modelo.",
+      "falta": "Não há verificação em código que recuse um resultado sem emergência antes de 4 perguntas; MIN_PERGUNTAS é usado só no prompt.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Triagem** com até 10 perguntas curtas (no mínimo 4 antes de concluir que não é emergência) e respostas rápidas em botões.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 69,
+        "linha_fim": null,
+        "trecho": "**Triagem** com até 10 perguntas curtas (no mínimo 4 antes de concluir que não é emergência) e respostas rápidas em botões.",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L69",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "evals/triage.eval.ts",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "const ms = Date.now() - t0;",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/evals/triage.eval.ts#L55",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "evals/triage.eval.ts imprime o tempo por caso, com pausa padrão de 15 s por chamada; não foi encontrado resultado de medição salvo no repositório.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O GeoSUS responde a essa pergunta em menos de um minuto",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 49,
+        "linha_fim": null,
+        "trecho": "O GeoSUS responde a essa pergunta em menos de um minuto",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L49",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/redflags.test.ts",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "it.each(alarmes)(\"%s → %s\", (texto, sinal) => {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/tests/redflags.test.ts#L24",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "vitest.config.mts",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "test: { include: [\"tests/**/*.test.ts\"], environment: \"node\" },",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/vitest.config.mts#L6",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": null,
+      "existe": "Testes em tests/ cobrem sinais de alarme, triagem, unidades, lotação e interface.",
+      "falta": "O número 279 não foi reproduzido: a busca estática achou 292 linhas de declaração it/test em 34 arquivos, antes da expansão de it.each. Os testes não foram executados.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "pnpm test     # 279 testes: sinais de alarme, triagem (modo demonstração), escolha de unidade, lotação e interface",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 272,
+        "linha_fim": null,
+        "trecho": "pnpm test     # 279 testes: sinais de alarme, triagem (modo demonstração), escolha de unidade, lotação e interface",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L272",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/text.ts",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "export function removerDadosPessoais(texto: string): string {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/text.ts#L14",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 99,
+          "linha_fim": null,
+          "trecho": "return posChecagem(await opts.ai(limpar(req)), req.turnos.length, false, req.relato);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L99",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 117,
+          "linha_fim": null,
+          "trecho": "relato: removerDadosPessoais(req.relato),",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L117",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "Expressões regulares removem e-mail, CPF e telefone do relato e das respostas antes das chamadas de triagem e resumo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Dados pessoais removidos:** CPF, telefone e e-mail são retirados do texto antes de ir para a IA.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 287,
+        "linha_fim": null,
+        "trecho": "**Dados pessoais removidos:** CPF, telefone e e-mail são retirados do texto antes de ir para a IA.",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L287",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/triage/route.ts",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "return NextResponse.json(await runTriage(parsed.data, { demo: isDemoMode(), ai: groqTriage }));",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/triage/route.ts#L10",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/queue/store.ts",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "p_oferta_id: input.ofertaId,",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/queue/store.ts#L96",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "A rota de triagem não grava nem registra o relato, e a gravação no Supabase é de relatos de lotação, sem o texto da conversa; não foi achada dependência de analytics.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Sem login e sem guardar a conversa:** o relato não vai para banco, log ou analytics.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 286,
+        "linha_fim": null,
+        "trecho": "**Sem login e sem guardar a conversa:** o relato não vai para banco, log ou analytics.",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L286",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/api-client.ts",
+          "linha": 279,
+          "linha_fim": null,
+          "trecho": "const deviceHash = await sha256Hex(r.deviceId, subtle);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/api-client.ts#L279",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "supabase/migrations/20261128000000_queue_reports.sql",
+          "linha": 63,
+          "linha_fim": null,
+          "trecho": "and criado_em > instante - interval '30 minutes'",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/supabase/migrations/20261128000000_queue_reports.sql#L63",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/occupancy/PresenceCheckin.tsx",
+          "linha": 75,
+          "linha_fim": null,
+          "trecho": "const deviceId = getDeviceId(presenceStorage(), () => makeRandomId(crypto));",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/occupancy/PresenceCheckin.tsx#L75",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "Id aleatório no aparelho, enviado como SHA-256; a função SQL (e a fila em memória) limita por 30 minutos.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Lotação anônima:** um identificador aleatório do aparelho, enviado só como hash, com limite de 1 relato por unidade a cada 30 minutos.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 288,
+        "linha_fim": null,
+        "trecho": "**Lotação anônima:** um identificador aleatório do aparelho, enviado só como hash, com limite de 1 relato por unidade a cada 30 minutos.",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L288",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/supabase/server.ts",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "? createClient(url, key, { auth: { autoRefreshToken: false, persistSession: false } })",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/supabase/server.ts#L8",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/queue/store.ts",
+          "linha": 93,
+          "linha_fim": null,
+          "trecho": "if (!supabase) return memoryQueue.create(input, now);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/queue/store.ts#L93",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "O cliente Supabase é criado quando há URL e chave; sem eles, a fila usa memória.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Supabase** (Postgres) | Relatos de lotação (opcional; sem ele, os dados ficam em memória)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 120,
+        "linha_fim": null,
+        "trecho": "**Supabase** (Postgres) | Relatos de lotação (opcional; sem ele, os dados ficam em memória)",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L120",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/geo/driving-routes.ts",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "const response = await fetch(url, {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/geo/driving-routes.ts#L48",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/routes/route.ts",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "const baseUrl = process.env.OSRM_BASE_URL;",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/routes/route.ts#L30",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "POST /api/routes consulta o serviço table do OSRM quando OSRM_BASE_URL está definida.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**OSRM** (opcional) | Distância e tempo de carro pelas ruas",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 119,
+        "linha_fim": null,
+        "trecho": "**OSRM** (opcional) | Distância e tempo de carro pelas ruas",
+        "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L119",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://geosus.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://geosus.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 290 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra https://geosus.vercel.app na aba Chat",
+      "observado": "A tela mostra a saudação do GeoSUS, os exemplos \"Febre\", \"Tosse ou gripe\", \"Dor de barriga\" e \"Criança doente\" e o campo de texto.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Digite \"Febre de 39 há 3 dias, dor no corpo e atrás dos olhos\" no campo \"Escreva o que está sentindo\"",
+      "observado": "O texto foi inserido no campo.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Clique em \"Enviar\"",
+      "observado": "Apareceu \"Pergunta 1 de até 10\" sobre dor de cabeça, confusão ou manchas, com botões. Outra entrada (tosse leve e nariz escorrendo) recebeu pergunta diferente, sobre falta de ar.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/comparacao-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/comparacao-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Responda pelos botões: \"Não\", \"Na mesma\", \"Não\", \"4-6\", \"Não\" e \"Não\"",
+      "observado": "A conversa fez 6 perguntas, uma por vez, com botões de resposta, e depois exibiu a orientação. A captura mostra a pergunta 5.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Leia a orientação \"Vá a uma UPA hoje\" e a justificativa",
+      "observado": "A tela mostrou \"Vá a uma UPA hoje\" com o texto \"Não foi possível avaliar com segurança; procure uma UPA.\" e a pergunta \"Onde você está?\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em \"Escolher bairro manualmente\" e selecione \"Mangabeira\" em \"Seu bairro em João Pessoa\"",
+      "observado": "A lista de bairros abriu e Mangabeira foi selecionado. O botão \"Usar minha localização\" não foi testado.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em \"Ver unidade e mapa\"",
+      "observado": "Abriu a página /resultado com \"Encontramos 2 opções de atendimento\" e a orientação para UPA.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Confira as unidades, a distância, o mapa e o botão \"Abrir rota\"",
+      "observado": "Sugerida: UPA Valentina, 3,2 km; outra: UPA Bancários, 2,8 km, \"Lotada\"; a rota aparece como \"Abrir rota\" (link do Google Maps, não aberto), não como \"Como chegar\". O console registrou erro 503 em /api/queue para as duas unidades.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Clique em \"Resumo para a recepção\" e leia o texto",
+      "observado": "Abriu \"Mostre este resumo na recepção\" com queixa principal, informações relatadas, classificação \"urgente (não é diagnóstico)\" e o botão \"Copiar\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Campo de relato só com espaços, seguido da tecla Enter",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O botão \"Enviar\" ficou desabilitado e, após Enter, apareceu \"Escreva um pouco mais sobre o que está sentindo.\""
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Texto de 11.750 caracteres (frase repetida) no campo de relato",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O campo reteve 1.000 caracteres (maxlength 1000); o texto cortado foi enviado e a triagem respondeu com a pergunta 1."
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "@ai-sdk/groq (Groq), em package.json",
+          "ai (Vercel AI SDK), em package.json"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "package.json",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "    \"@ai-sdk/groq\": \"^4.0.88\",",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/package.json#L14",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "package.json",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "    \"@ai-sdk/groq\": \"^4.0.88\",",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/package.json#L14",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Groq",
+              "src/lib/triage/groq.ts",
+              1
+            ],
+            [
+              "Vercel AI SDK",
+              "src/lib/triage/groq.ts",
+              2
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "import { createGroq } from \"@ai-sdk/groq\";",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L1",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "import { generateText, Output } from \"ai\";",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L2",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Groq (Vercel AI SDK)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "const { output } = await generateText({",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "function modelo(id = process.env.GROQ_MODEL || \"openai/gpt-oss-120b\") {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L11",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "openai/gpt-oss-120b",
+      "obs": "Triagem: gera a próxima pergunta ou a classificação de urgência e serviço em saída estruturada."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Groq (Vercel AI SDK)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "const RESERVA = \"openai/gpt-oss-20b\";",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L9",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "export const groqTriage: TriageAi = (req) => triagem(req).catch(() => triagem(req, RESERVA));",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "openai/gpt-oss-20b",
+      "obs": "Reserva da triagem quando a chamada ao modelo principal falha."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Groq (Vercel AI SDK)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/groq.ts",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "const { text } = await generateText({",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/groq.ts#L35",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "openai/gpt-oss-120b",
+      "obs": "Resumo para mostrar na recepção."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Web Speech API (navegador)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/speech.ts",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "const recognition = new Ctor();",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/speech.ts#L70",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Reconhecimento de voz em pt-BR para o relato e as respostas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 121,
+          "linha_fim": null,
+          "trecho": "let corpo = demoSummary(limpo.relato, limpo.turnos);",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L121",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 131,
+          "linha_fim": null,
+          "trecho": "// mantém o template determinístico",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L131",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/result/SummarySheet.tsx",
+          "linha": 47,
+          "linha_fim": null,
+          "trecho": "setSummary({ text, local: source === \"fallback_seguro\" });",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/result/SummarySheet.tsx#L47",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Quando a chamada de resumo ao modelo falha, o servidor devolve um template montado com o relato e as respostas; a folha só exibe a nota de resumo local quando a própria API não responde.",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 09:41",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/YanFabber/geosus",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/YanFabber/geosus",
+          "conferida": "script"
+        }
+      ],
+      "sinal": false
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Arquivos iguais aos de outra equipe",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Arquivo",
+            "Outra equipe",
+            "Arquivo dela"
+          ],
+          "linhas": [
+            [
+              "eslint.config.mjs",
+              "Sapio",
+              "web/eslint.config.mjs"
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "eslint.config.mjs",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/eslint.config.mjs#L1",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Movimenta Saúde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Maiconjss/movimenta-saude",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Maiconjss/movimenta-saude",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "A partir do sintoma e do local, indica UBS, UPA ou 192/SAMU e mostra uma unidade pública próxima, que abre no Google Maps; um modelo de linguagem extrai os campos do relato e um motor de regras decide o destino.",
+      "obs": "Em comum: Orientação no SUS sobre qual porta procurar a partir do relato em texto, com IA, sinais de alerta, unidade próxima e decisão de destino que não fica com a IA no caso das regras. Diferente: A página descreve um piloto em 5 municípios da região metropolitana do Rio de Janeiro, com tradução para inglês e código-fonte fechado; não menciona voz nem lotação das unidades."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "healthdirect (app, Austrália)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://about.healthdirect.gov.au/resources/news/health-app-gives-peace-of-mind-this-holiday-season",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://about.healthdirect.gov.au/resources/news/health-app-gives-peace-of-mind-this-holiday-season",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App financiado pelo governo com verificador de sintomas que faz perguntas e orienta entre autocuidado, consulta com profissional ou emergência, além de um localizador de serviços próximos com horários de funcionamento.",
+      "obs": "Em comum: Perguntas sobre sintomas para indicar o nível de atendimento, busca de serviços próximos com horário e acesso ao telefone de emergência. Diferente: É voltado à Austrália; a página não menciona conversa por voz com IA nem lotação das unidades."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "NHS 111 online (Inglaterra)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/how-nhs-111-online-works",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/how-nhs-111-online-works",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Serviço digital gratuito de triagem que faz perguntas sobre o sintoma principal e indica o tipo de ajuda necessária, usando a localização para achar serviços próximos.",
+      "obs": "Em comum: Perguntas sobre sintomas, sem diagnóstico, que levam a um tipo de serviço do sistema público de saúde próximo da pessoa. Diferente: Atende só a Inglaterra, a partir de 5 anos, e pode resultar em retorno de ligação de enfermagem ou encaminhamento; a página não menciona voz nem lotação das unidades."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "AILA - Assistente de Saúde IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/us/app/aila-assistente-de-sa%C3%BAde-ia/id6770600730",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/us/app/aila-assistente-de-sa%C3%BAde-ia/id6770600730",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App com IA que ajuda a pessoa a entender os sintomas e se precisa de atendimento urgente, e localiza farmácias, UPAs e postos de saúde próximos.",
+      "obs": "Em comum: Assistente em português com IA para sintomas, indicação de urgência e localização de UPAs e postos próximos. Diferente: A página também descreve lembretes de remédios, guarda de exames e receitas e assinatura para interagir com a IA; não menciona voz nem lotação das unidades."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "saude-chatbot-triagem (jhondados)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/jhondados/saude-chatbot-triagem",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/jhondados/saude-chatbot-triagem",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Repositório que descreve um assistente de triagem com IA generativa que sugere o nível de cuidado e direciona a UBS, UPA ou pronto-socorro.",
+      "obs": "Em comum: Triagem de sintomas com IA para indicar a porta de atendimento no Brasil, com o objetivo declarado de reduzir a superlotação. Diferente: A página cita o Protocolo de Manchester e um painel com indicadores; não menciona voz, mapa nem busca da unidade mais próxima."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "TypeScript",
+              160,
+              12265
+            ],
+            [
+              "Markdown",
+              20,
+              1899
+            ],
+            [
+              "JSON",
+              6,
+              1212
+            ],
+            [
+              "CSS",
+              1,
+              231
+            ],
+            [
+              "SQL",
+              1,
+              84
+            ],
+            [
+              "YAML",
+              2,
+              31
+            ],
+            [
+              "JavaScript",
+              1,
+              19
+            ]
+          ]
+        }
+      },
+      "obs": "197 arquivos de texto e 15883 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Interface web (PWA)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/flow/Chat.tsx",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "export function Chat() {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/flow/Chat.tsx#L27",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/result/ResultView.tsx",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "export function ResultView() {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/result/ResultView.tsx#L30",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/components/flow/Chat.tsx",
+          "src/components/result/ResultView.tsx",
+          "src/app/manifest.ts"
+        ]
+      },
+      "obs": "Conversa por texto e voz, telas de alarme, resultado, mapa e equipe da unidade."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Regras de sinais de alarme",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/redflags.ts",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "export function checkRedFlags(texto: string): RedFlag | null {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/redflags.ts#L196",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/redflags-client.ts",
+          "linha": 104,
+          "linha_fim": null,
+          "trecho": "export function detectAlarm(text: string): AlarmSignal | null {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/redflags-client.ts#L104",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/lib/redflags.ts",
+          "src/lib/ui/redflags-client.ts"
+        ]
+      },
+      "obs": "Checam o relato e as respostas por expressões regulares, no cliente e no servidor, antes do modelo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Triagem e resumo com IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/triage/route.ts",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "export async function POST(request: Request) {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/triage/route.ts#L6",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/engine.ts",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "export async function runTriage(",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/engine.ts#L85",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/app/api/triage/route.ts",
+          "src/app/api/summary/route.ts",
+          "src/lib/triage/engine.ts",
+          "src/lib/triage/groq.ts",
+          "src/lib/triage/prompt.ts"
+        ]
+      },
+      "obs": "Rotas /api/triage e /api/summary chamam a Groq, validam a saída e aplicam os padrões de segurança."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Seleção de unidades",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/units/recommendations/route.ts",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "export async function GET(request: Request) {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/units/recommendations/route.ts#L17",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/units/select.ts",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "export function eligibleOffers(",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/units/select.ts#L28",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/app/api/units/recommendations/route.ts",
+          "src/lib/units/select.ts",
+          "src/lib/units/rank.ts",
+          "src/lib/data/units.json"
+        ]
+      },
+      "obs": "Filtra o catálogo em JSON por serviço, acesso, verificação e horário, e ordena por movimento e distância."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Fila de relatos de lotação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/queue/route.ts",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "export async function POST(request: Request) {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/queue/route.ts#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/queue/store.ts",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "export async function recordQueueReport(input: ReportInput, now: Date): Promise<WriteResult> {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/queue/store.ts#L92",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/app/api/queue/route.ts",
+          "src/lib/queue/store.ts",
+          "supabase/migrations/20261128000000_queue_reports.sql"
+        ]
+      },
+      "obs": "API que grava e agrega relatos anônimos no Supabase ou em memória."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Lotação exibida na tela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/lotacao-fontes.ts",
+          "linha": 66,
+          "linha_fim": null,
+          "trecho": "export function sourcedOccupancyOf(unitId: string, store: OccupancyStore | null, agora: number): SourcedOccupancy | null {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/lotacao-fontes.ts#L66",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/lib/ui/lotacao-fontes.ts",
+          "src/lib/ui/occupancy.ts",
+          "src/components/occupancy/useOccupancy.ts"
+        ]
+      },
+      "obs": "Escolhe no navegador entre a leitura simulada da secretaria, a resposta local da equipe e a presença simulada."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Mapa e rotas",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/result/UnitMap.tsx",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "const TILE_URL = \"https://tile.openstreetmap.org/{z}/{x}/{y}.png\";",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/result/UnitMap.tsx#L37",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/routes/route.ts",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "export async function POST(request: Request) {",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/routes/route.ts#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/components/result/UnitMap.tsx",
+          "src/app/api/routes/route.ts",
+          "src/lib/geo/driving-routes.ts"
+        ]
+      },
+      "obs": "Mapa Leaflet com tiles do OpenStreetMap e consulta opcional de tempo de carro ao OSRM."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/architecture.md",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "(até 3; o código força o fim na 3ª resposta)",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/docs/architecture.md#L12",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/triage/schema.ts",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "export const MAX_PERGUNTAS = 10;",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/triage/schema.ts#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "docs/architecture.md descreve até 3 perguntas, com o código forçando o fim na 3ª resposta.",
+              "O código usa limite de 10 perguntas (o README e o formulário também dizem 10)."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 120,
+          "linha_fim": null,
+          "trecho": "| **Supabase** (Postgres) | Relatos de lotação (opcional; sem ele, os dados ficam em memória) |",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L120",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/result/useResultData.ts",
+          "linha": 82,
+          "linha_fim": null,
+          "trecho": "prev?.key === key && prev.status === \"ok\" ? { ...prev, queues, queuesLoaded: true } : prev,",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/result/useResultData.ts#L82",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/lotacao-fontes.ts",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "simulatedPresenceReading(unitId, agora),",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/lotacao-fontes.ts#L70",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/app/api/units/recommendations/route.ts",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "const movements = await readRecentMovements(offerIds, now).catch(() => new Map());",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/app/api/units/recommendations/route.ts#L35",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README descreve o Supabase como armazenamento dos relatos de lotação.",
+              "A linha de lotação exibida vem de fontes calculadas no navegador (simulações e localStorage); o resultado de GET /api/queue é guardado em queues, campo que nenhum componente lê. Os relatos entram na ordenação das recomendações."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "considerando horário de funcionamento e distância.",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/components/result/UnitsSection.tsx",
+          "linha": 53,
+          "linha_fim": null,
+          "trecho": "? preferLessCrowded(data.cards, (id) => occupancy.get(id)?.nivel ?? null)",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/components/result/UnitsSection.tsx#L53",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/lib/ui/occupancy.ts",
+          "linha": 129,
+          "linha_fim": null,
+          "trecho": "export const MAX_DETOUR_KM = 5;",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/src/lib/ui/occupancy.ts#L129",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário descreve a escolha da unidade considerando horário de funcionamento e distância.",
+              "Em casos sem emergência, o cliente também põe na frente uma alternativa com menos lotação (dado que pode ser simulado) até 5 km mais distante."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# GeoSUS",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 351 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "6. [Como rodar do zero](#6-como-rodar-do-zero)",
+          "link": "https://github.com/YanFabber/geosus/blob/b517956ac726828ae043bfad009f355c92792a22/README.md#L25",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

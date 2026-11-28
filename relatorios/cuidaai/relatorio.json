@@ -1,0 +1,3190 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "cuidaai",
+    "nome": "cuidaAI",
+    "numero": 13,
+    "track": "Saúde",
+    "repo": "https://github.com/tonioduarte/hackia",
+    "demo": "https://hackai-iota.vercel.app/",
+    "video": "https://youtu.be/gWglhXSRcE4",
+    "resumo": "cuidAI, um app em Streamlit com IA (Gemini) feito para o Hack IA Brasil (eixo Saúde): mostra a carga semanal de quem cuida de filhos e pais idosos, transforma isso em pedidos de ajuda concretos e testa o guia de passagem com um \"substituto simulado\" antes de entregar a tarefa a outra pessoa."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.479Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "39548fa04e69dc9706ec12c95ef064f668ebd564",
+    "commit_em": "2026-11-28T17:26:04Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12188,
+          "preparo_ms": 0,
+          "execucao_ms": 272
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3,
+          "preparo_ms": 0,
+          "execucao_ms": 2626
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2508,
+          "preparo_ms": 0,
+          "execucao_ms": 16199
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12079,
+          "preparo_ms": 0,
+          "execucao_ms": 167
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2625,
+          "preparo_ms": 0,
+          "execucao_ms": 1883
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 57
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4583,
+          "preparo_ms": 0,
+          "execucao_ms": 86
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 39
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12198,
+          "preparo_ms": 0,
+          "execucao_ms": 270
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12201,
+          "preparo_ms": 0,
+          "execucao_ms": 264
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 2
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "falhou",
+      "erro": "Nenhuma lista dos choques apareceu ao rolar a página até o fim nem ao clicar no cartão."
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra a página inicial e clique em \"Ver demonstração\".",
+      "esperado": "A aba Início abriu com \"Olá, Marina\", as três pessoas cuidadas e a rotina do dia.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Na aba Início, leia o cartão \"O PESO DA SUA SEMANA\".",
+      "esperado": "O cartão mostrou \"23 h de cuidado · 9 tarefas só suas · 2 choques de horário\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Na aba Substituição, clique em \"Combinar substituição\", escolha \"João Souza\", desmarque \"Sáb\", marque \"Qui\" e clique em \"Gerar guia\".",
+      "esperado": "O teste do guia rodou sem botão \"Testar o guia\": apareceu a prévia com perguntas de João, \"Enviar pelo WhatsApp\" desativado e o aviso de que João não tem autorização para buscar o Léo.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/log-testar-guia.json",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/log-testar-guia.json",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Responda a cada pergunta no campo \"Responda a João\", mantendo o Léo no guia.",
+      "esperado": "Com as quatro perguntas respondidas, o envio continuou travado pelo item \"Buscar o Léo na escola\": \"não tem autorização (criança)\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-13.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-13.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Volte, gere o guia de novo com o Léo desmarcado e responda às perguntas de João.",
+      "esperado": "\"Enviar pelo WhatsApp\" foi liberado após a última resposta. As três perguntas foram idênticas às três primeiras do guia anterior; a pergunta sobre a escola não apareceu.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-14.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-14.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-15.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-15.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-10",
+      "n": 10,
+      "acao": "Clique em \"Enviar pelo WhatsApp\".",
+      "esperado": "Abriu uma aba em api.whatsapp.com com o telefone fictício e a mensagem preenchida com agenda, alergias e as respostas dadas.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-16.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-16.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-11",
+      "n": 11,
+      "acao": "Volte à aba Início e leia de novo o cartão \"O PESO DA SUA SEMANA\".",
+      "esperado": "Depois de combinar a substituição, o cartão passou a \"23 h de cuidado · 7 tarefas só suas · 0 choques de horário\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-17.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-17.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-12",
+      "n": 12,
+      "acao": "Clique em \"Abrir o WhatsApp do João\", toque em \"Oi! Pode deixar comigo\", depois em \"Sim, fiz\" e em \"O que a Marina vê\".",
+      "esperado": "A simulação mostrou escala, ficha em PDF e lembretes com pedido de confirmação. A visão da Marina passou a \"1 de 5 tarefas feitas\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-18.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-18.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-19.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-19.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-20.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-20.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-13",
+      "n": 13,
+      "acao": "Na aba Rotina, clique em \"Contar a rotina\", digite \"O Léo tem natação na terça às cinco da tarde.\" no campo Relato e clique em \"Organizar com IA\".",
+      "esperado": "Apareceu \"O Léo tem natação\", terça 17:00–18:00, com a frase de origem; outro relato gerou resultado diferente. A API informou \"fonte\":\"leitor\" e a tela avisou, no primeiro envio, \"IA indisponível agora: usei o leitor simples\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-23.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-23.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-16",
+      "n": 16,
+      "acao": "Na aba Início, clique em \"Perfil\" e em \"Exportar rotina (.ics)\".",
+      "esperado": "O navegador baixou o arquivo cuidai.ics, do tipo text/calendar.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-30.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-30.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/log-rotina.ics",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/log-rotina.ics",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/rotina.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "audio = st.audio_input(\"Gravar áudio\", key=\"gravacao\", label_visibility=\"collapsed\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/rotina.py#L64",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/rotina.py",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "texto = ia.transcrever(audio.getvalue(), audio.type or \"audio/wav\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/rotina.py#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 360,
+          "linha_fim": null,
+          "trecho": "return provedor_gemini.chamar(prompts.TRANSCREVER, conteudo, schemas.TranscricaoIA).texto.strip()",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L360",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A tela Rotina grava áudio com st.audio_input e envia a ia.transcrever; o texto vai para a caixa para conferência.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A cuidadora conta a rotina por voz, do jeito que fala",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "A cuidadora conta a rotina por voz, do jeito que fala",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A IA não respondeu no ambiente publicado; o \"leitor simples\" gerou o item e mostrou a frase de origem."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 169,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.EXTRAIR, f\"{_contexto_familia()}\\n\\nRelato de hoje:\\n{relato}\", schemas.ExtracaoIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L169",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/rotina.py",
+          "linha": 94,
+          "linha_fim": null,
+          "trecho": "st.caption(f\"Origem: “{t.origem}”\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/rotina.py#L94",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/prompts.py",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "- `origem`: copie o trecho EXATO do relato que gerou a tarefa.",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/prompts.py#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "extrair_tarefas chama o modelo e a tela mostra o campo `origem` de cada tarefa; o prompt pede o trecho exato do relato.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A IA transforma o relato em tarefas e mostra de qual frase saiu cada uma.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "A IA transforma o relato em tarefas e mostra de qual frase saiu cada uma.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/perfil.py",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "carga, choques = ponte.carga(dados)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/perfil.py#L37",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/perfil.py",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "_termometro(dados)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/perfil.py#L71",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/carga.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "def calcular_carga(tarefas: list[Tarefa], cuidadora: str = CUIDADORA) -> Carga:",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/carga.py#L58",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "A página Início mostra horas de cuidado, tarefas só da cuidadora e choques, calculados em logica/carga.py.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A tela inicial mostra as horas de cuidado da semana, as tarefas que só ela faz e os choques de horário",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "A tela inicial mostra as horas de cuidado da semana, as tarefas que só ela faz e os choques de horário",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "\"Pedir ajuda\" abriu a aba Substituição; não apareceu check-in nem escolha de uma tarefa."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/pedir.py",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "tid = ia.conduzir_checkin(CheckIn(respostas=[RespostaCheckIn(PERGUNTA, resposta)]), candidatas)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/pedir.py#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 235,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.CHECKIN, entrada, schemas.EscolhaIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L235",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/pedir.py",
+          "linha": 36,
+          "linha_fim": null,
+          "trecho": "pontos = [len(palavras & set(f\"{t.titulo} {t.pessoa_cuidada}\".lower().split())) for t in candidatas]",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/pedir.py#L36",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "O check-in é uma pergunta aberta; a IA devolve um id de tarefa, que a cuidadora pode trocar na caixa de seleção. Sem id válido, o código escolhe por palavras em comum.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um check-in curto leva a IA a escolher uma única tarefa para delegar",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "um check-in curto leva a IA a escolher uma única tarefa para delegar",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/pessoas.py",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "return [p for p in candidatas if disponivel(p, tarefa)]",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/pessoas.py#L59",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/pedir.py",
+          "linha": 43,
+          "linha_fim": null,
+          "trecho": "return ia.escrever_pedido(tarefa, pessoa).mensagem",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/pedir.py#L43",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 248,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.PEDIDO, entrada, schemas.MensagemIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L248",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "pessoas_aptas filtra por janela livre e autorização; escrever_pedido gera a mensagem. Em modo falso, a tela monta o texto por modelo fixo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "As regras indicam quem pode assumir, e a IA escreve um pedido concreto.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "As regras indicam quem pode assumir, e a IA escreve um pedido concreto.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "As perguntas apareceram, mas a resposta da API informa que não há chave de IA e que foi usado o \"modo falso\"."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 299,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.SUBSTITUTO, _json(visivel), schemas.DuvidasIA,",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L299",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/substituicao.py",
+          "linha": 94,
+          "linha_fim": null,
+          "trecho": "novas = [{\"pergunta\": lac.pergunta, \"resposta\": \"\"} for lac in ia.substituto_simulado(guia)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/substituicao.py#L94",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/substituicao.py",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "guia = ponte.guia_da_substituicao(sub, texto_guia(dados, sub))",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/substituicao.py#L92",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "substituto_simulado envia só o guia ao modelo e recebe perguntas. No site, esse guia é montado por modelo de texto a partir do cadastro (app/guia.py), não por ia.montar_guia.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um substituto simulado, que é outra IA, lê o guia como se fosse cobrir a tarefa e pergunta o que travaria.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "um substituto simulado, que é outra IA, lê o guia como se fosse cobrir a tarefa e pergunta o que travaria.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/substituicao.py",
+          "linha": 111,
+          "linha_fim": null,
+          "trecho": "if guia_pronto(guia):",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/substituicao.py#L111",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/substituicao.py",
+          "linha": 166,
+          "linha_fim": null,
+          "trecho": "c1.button(\"Enviar pelo WhatsApp\", disabled=True, width=\"stretch\", icon=\":material/lock:\",",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/substituicao.py#L166",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/guia.py",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "return not any(lacuna.aberta for lacuna in guia.lacunas)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/guia.py#L11",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/substituicao.py",
+          "linha": 168,
+          "linha_fim": null,
+          "trecho": "c2.download_button(\"Baixar guia (.txt)\", texto_guia(dados, sub), file_name=f\"guia_{sub['id']}.txt\",",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/substituicao.py#L168",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "O botão de WhatsApp do guia fica desabilitado até o teste rodar e não restar pergunta aberta. O botão \"Baixar guia (.txt)\" fica disponível nos dois casos.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O guia só vai pelo WhatsApp quando todas essas perguntas estão respondidas.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "O guia só vai pelo WhatsApp quando todas essas perguntas estão respondidas.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "streamlit_app.py",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "pg = st.navigation([",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/streamlit_app.py#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "streamlit_app.py",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "st.Page(integracoes.pagina, title=\"Integrações\", icon=\":material/link:\", url_path=\"integracoes\"),",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/streamlit_app.py#L52",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "A navegação após o login registra oito páginas; há também a página pública de apresentação e acesso.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "construímos um site em Streamlit com o fluxo completo em oito telas.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "construímos um site em Streamlit com o fluxo completo em oito telas.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/cuidador.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "ESCALA = [",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/cuidador.py#L26",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/cuidador.py",
+          "linha": 171,
+          "linha_fim": null,
+          "trecho": "if c1.button(\"⏰ Próximo horário\", type=\"primary\", width=\"stretch\", disabled=fim):",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/cuidador.py#L171",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/cuidador.py",
+          "linha": 107,
+          "linha_fim": null,
+          "trecho": "e[\"status\"][i], e[\"aguardando\"] = \"feito\", None",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/cuidador.py#L107",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/cuidador.py",
+          "linha": 166,
+          "linha_fim": null,
+          "trecho": "ui.rotulo(\"02\", \"Marina acompanhando de longe\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/cuidador.py#L166",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "A tela é identificada como simulação; a escala é uma lista fixa no código, os lembretes avançam pelo botão \"Próximo horário\" e o painel de acompanhamento fica na mesma tela.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Ele inclui uma simulação do WhatsApp de quem cobre, com escala, lembretes e confirmação de cada tarefa acompanhada de longe pela cuidadora.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "Ele inclui uma simulação do WhatsApp de quem cobre, com escala, lembretes e confirmação de cada tarefa acompanhada de longe pela cuidadora.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_encontrada",
+      "no_uso": null,
+      "evidencias": [],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "O repositório neste commit contém o app em Streamlit, as pastas ia/, logica/, bot/ e dados/; não há código Dart nem API em FastAPI.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [
+        "Glob **/* em toda a raiz (sem arquivos .dart, pubspec.yaml, vercel.json ou pasta de API)",
+        "Grep sem distinção de maiúsculas: flutter, fastapi, vercel, hackai, uvicorn, pubspec, .dart",
+        "requirements.txt"
+      ],
+      "citacao": "Também construímos um app em Flutter e uma API em FastAPI, publicados na Vercel em hackai-iota.vercel.app.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "Também construímos um app em Flutter e uma API em FastAPI, publicados na Vercel em hackai-iota.vercel.app.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/config.py",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "MODELO_GEMINI = os.getenv(\"IA_MODELO_GEMINI\", \"gemini-3.5-flash-lite\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/config.py#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/config.py",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "MODELO_GEMINI_SUBSTITUTO = os.getenv(\"IA_MODELO_GEMINI_SUBSTITUTO\", \"gemini-3.5-flash\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/config.py#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/config.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "MODELO = os.getenv(\"IA_MODELO\", \"claude-opus-5-5\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/config.py#L6",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/provedor_gemini.py",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "r = _cliente_api().models.generate_content(",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/provedor_gemini.py#L73",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "r = _cliente_api().messages.parse(",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L57",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "Os padrões são gemini-3.5-flash-lite, gemini-3.5-flash (substituto) e claude-opus-5-5, com IA_PROVEDOR=gemini por padrão.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A IA usa o Gemini 3.5 Flash-Lite e o Flash pela API do Google AI Studio, com o Claude Opus 5.5 como alternativa",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "A IA usa o Gemini 3.5 Flash-Lite e o Flash pela API do Google AI Studio, com o Claude Opus 5.5 como alternativa",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 360,
+          "linha_fim": null,
+          "trecho": "return provedor_gemini.chamar(prompts.TRANSCREVER, conteudo, schemas.TranscricaoIA).texto.strip()",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L360",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 336,
+          "linha_fim": null,
+          "trecho": "Sempre usa o Gemini, porque a API do Claude não recebe áudio.",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L336",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "ia.transcrever chama apenas provedor_gemini.chamar.",
+      "existe": "Transcrição pelo Gemini, usada mesmo quando o provedor configurado é o Claude.",
+      "falta": "Whisper local: não há importação, dependência nem menção a Whisper no repositório.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a transcrição de voz usa o Whisper local ou o Gemini.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "a transcrição de voz usa o Whisper local ou o Gemini.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/carga.py",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "def detectar_choques(",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/carga.py#L35",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/pessoas.py",
+          "linha": 41,
+          "linha_fim": null,
+          "trecho": "def pessoas_aptas(",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/pessoas.py#L41",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/crise.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "def sinal_de_crise(texto: str) -> bool:",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/crise.py#L58",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/tests/test_demo.py",
+          "linha": 45,
+          "linha_fim": null,
+          "trecho": "def test_termometro_depois_do_relato():",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/tests/test_demo.py#L45",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/tests/test_regras.py",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "def test_vizinho_sem_autorizacao_nao_busca_o_leo(tarefas_quinta, pessoas):",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/tests/test_regras.py#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Termômetro, choques, quem pode, autorização de criança e crise são funções sem IA em logica/, com testes em logica/tests/.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O que precisa ser garantido não fica com a IA, e sim com regras testadas: o termômetro da semana, os choques de horário, quem pode assumir, a autorização para buscar criança e os sinais de crise",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "O que precisa ser garantido não fica com a IA, e sim com regras testadas: o termômetro da semana, os choques de horário, quem pode assumir, a autorização para buscar criança e os sinais de crise",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/pedir.py",
+          "linha": 65,
+          "linha_fim": null,
+          "trecho": "if sinal_de_crise(resposta):",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/pedir.py#L65",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/crise.py",
+          "linha": 39,
+          "linha_fim": null,
+          "trecho": "\"Você não está sozinha. Se estiver em sofrimento, ligue para o CVV no 188 (24 horas, gratuito). \"",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/crise.py#L39",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/crise.py",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "FRASES_DE_CRISE: list[str] = [",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/crise.py#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "A detecção usa lista fixa de frases; no check-in, a tela mostra a mensagem com CVV 188 e SAMU 192 e interrompe o fluxo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "frases de risco claro param o check-in e mostram o CVV (188) e o SAMU (192).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 215,
+        "linha_fim": null,
+        "trecho": "frases de risco claro param o check-in e mostram o CVV (188) e o SAMU (192).",
+        "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/README.md#L215",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A tela de sugestão de quem assume não foi encontrada; na substituição, o envio ficou travado com \"não tem autorização (criança)\"."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/pessoas.py",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "candidatas = autorizadas",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/pessoas.py#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/pessoas.py",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "CRIANCAS = frozenset({\"leo\"})",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/pessoas.py#L9",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/pedir.py",
+          "linha": 88,
+          "linha_fim": null,
+          "trecho": "st.warning(f\"Ninguém apto. {motivo}\", icon=\":material/block:\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/pedir.py#L88",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "Tarefa com criança é identificada pelo nome \"leo\" ou por palavras como escola e filho; sem autorizado, a tela Pedir ajuda mostra \"Ninguém apto\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "tarefa com criança só é sugerida a quem tem autorização. Sem autorizado, a tela mostra \"ninguém apto\".",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 216,
+        "linha_fim": null,
+        "trecho": "tarefa com criança só é sugerida a quem tem autorização. Sem autorizado, a tela mostra \"ninguém apto\".",
+        "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/README.md#L216",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/substituicao.py",
+          "linha": 163,
+          "linha_fim": null,
+          "trecho": "c1.link_button(\"Enviar pelo WhatsApp\", link_whatsapp(sub[\"telefone\"], mensagem_convite(dados, sub)),",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/substituicao.py#L163",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/guia.py",
+          "linha": 75,
+          "linha_fim": null,
+          "trecho": "return f\"https://wa.me/{numero}?text={quote(texto)}\"",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/guia.py#L75",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/guia.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "return texto_guia(dados, sub) if len(texto_guia(dados, sub)) < 1800 else (",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/guia.py#L55",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "O link wa.me leva o texto do guia quando ele tem menos de 1800 caracteres; acima disso, leva uma mensagem curta sem o conteúdo do guia.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O guia é enviado por link do WhatsApp com a mensagem pronta",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "O guia é enviado por link do WhatsApp com a mensagem pronta",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/agenda.py",
+          "linha": 117,
+          "linha_fim": null,
+          "trecho": "def exportar_ics(dados: dict, avisar_remedio_min: int = 10, avisar_compromisso_min: int = 60) -> str:",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/agenda.py#L117",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/integracoes.py",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "st.download_button(\"Baixar agenda (.ics)\", exportar_ics(dados, 10 if n[\"remedios\"] else 0,",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/integracoes.py#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/integracoes.py",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "st.button(\"Conectar conta Google\", disabled=True, width=\"stretch\", help=\"Em breve: OAuth + Calendar API\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/integracoes.py#L25",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "A exportação é um arquivo .ics para importação manual; o botão \"Conectar conta Google\" está desabilitado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a rotina pode ser exportada para o Google Agenda",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "a rotina pode ser exportada para o Google Agenda",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "\"Compartilhar ficha\" acionou um \"mailto:\" e nenhum arquivo Word foi baixado no navegador de teste."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/perfil.py",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "c1.download_button(\"Baixar em Word (.docx)\", ficha.docx(dados, p), file_name=f\"ficha_{p['id']}.docx\",",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/perfil.py#L19",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/ficha.py",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "def docx(dados: dict, p: dict) -> bytes:",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/ficha.py#L60",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "A ficha completa tem botão de download em .docx, gerado com python-docx.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a ficha de cada pessoa cuidada sai em Word.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "a ficha de cada pessoa cuidada sai em Word.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/tests/test_transcrever.py",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "def test_modo_falso_devolve_o_relato_da_marina(monkeypatch):",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/tests/test_transcrever.py#L15",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/tests/test_demo.py",
+          "linha": 45,
+          "linha_fim": null,
+          "trecho": "def test_termometro_depois_do_relato():",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/tests/test_demo.py#L45",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/tests/test_regras.py",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "def test_guia_com_lacuna_aberta_nao_sai():",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/tests/test_regras.py#L12",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "logica/tests/test_seguranca.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "def test_tarefa_nova_com_o_leo_sem_autorizado_nao_sugere_ninguem():",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/logica/tests/test_seguranca.py#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "Contagem de funções test_: 6 em ia/tests, 9 em test_demo, 9 em test_regras e 6 em test_seguranca, total 30. Os testes não foram executados nesta leitura.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O projeto tem 30 testes automatizados",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "O projeto tem 30 testes automatizados",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/avaliacao/avaliar.py",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "saida = PASTA / \"resultados.md\"",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/dados/avaliacao/avaliar.py#L147",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/relatos/relatos.json",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "\"id\": \"r10_crise\"",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/dados/relatos/relatos.json#L40",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/avaliacao/guias.json",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "{\"id\": \"g05_consulta_pedido\",",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/dados/avaliacao/guias.json#L24",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "Há 10 relatos, 5 guias com lacuna e o script que grava resultados.md; o arquivo resultados.md não está no repositório neste commit.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "10 relatos e 5 guias com uma lacuna conhecida. Gera `dados/avaliacao/resultados.md`, de onde saem os números do pitch.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 180,
+        "linha_fim": null,
+        "trecho": "10 relatos e 5 guias com uma lacuna conhecida. Gera `dados/avaliacao/resultados.md`, de onde saem os números do pitch.",
+        "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/README.md#L180",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [
+    {
+      "tipo": "item",
+      "id": "leitor:nao_declarado-1",
+      "rotulo": "Twilio (API de WhatsApp, Sandbox)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "bot/whatsapp.py",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "self.base = f\"https://api.twilio.com/2010-04-01/Accounts/{self.sid}/Messages.json\"",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/bot/whatsapp.py#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot/whatsapp.py",
+          "linha": 68,
+          "linha_fim": null,
+          "trecho": "with urllib.request.urlopen(req, timeout=20) as r:",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/bot/whatsapp.py#L68",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "servico"
+    }
+  ],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://hackai-iota.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://hackai-iota.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 315 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra a página inicial e clique em \"Ver demonstração\".",
+      "observado": "A aba Início abriu com \"Olá, Marina\", as três pessoas cuidadas e a rotina do dia.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Na aba Início, leia o cartão \"O PESO DA SUA SEMANA\".",
+      "observado": "O cartão mostrou \"23 h de cuidado · 9 tarefas só suas · 2 choques de horário\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Na aba Início, procure a lista de choques de horário.",
+      "observado": "A tela mostrou o número de choques no cartão.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Nenhuma lista dos choques apareceu ao rolar a página até o fim nem ao clicar no cartão."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em \"Pedir ajuda\" e responda \"o exame do meu pai na quinta\".",
+      "observado": "O botão abriu a aba Substituição, com \"Combinar substituição\" e a lista de contatos.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Não apareceu pergunta nem campo para escrever a resposta."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Confira a tarefa escolhida pela IA, quem pode assumir e o pedido escrito.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende do check-in do passo 4, que não apareceu na interface."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em \"Assumiu\" e veja o termômetro.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O botão \"Assumiu\" não apareceu nas telas percorridas; o pedido de ajuda do passo 4 não foi gerado."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Na aba Substituição, clique em \"Combinar substituição\", escolha \"João Souza\", desmarque \"Sáb\", marque \"Qui\" e clique em \"Gerar guia\".",
+      "observado": "O teste do guia rodou sem botão \"Testar o guia\": apareceu a prévia com perguntas de João, \"Enviar pelo WhatsApp\" desativado e o aviso de que João não tem autorização para buscar o Léo.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/log-testar-guia.json",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/log-testar-guia.json",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Responda a cada pergunta no campo \"Responda a João\", mantendo o Léo no guia.",
+      "observado": "Com as quatro perguntas respondidas, o envio continuou travado pelo item \"Buscar o Léo na escola\": \"não tem autorização (criança)\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-13.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-13.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Volte, gere o guia de novo com o Léo desmarcado e responda às perguntas de João.",
+      "observado": "\"Enviar pelo WhatsApp\" foi liberado após a última resposta. As três perguntas foram idênticas às três primeiras do guia anterior; a pergunta sobre a escola não apareceu.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-14.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-14.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-15.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-15.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Clique em \"Enviar pelo WhatsApp\".",
+      "observado": "Abriu uma aba em api.whatsapp.com com o telefone fictício e a mensagem preenchida com agenda, alergias e as respostas dadas.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-16.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-16.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "Volte à aba Início e leia de novo o cartão \"O PESO DA SUA SEMANA\".",
+      "observado": "Depois de combinar a substituição, o cartão passou a \"23 h de cuidado · 7 tarefas só suas · 0 choques de horário\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-17.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-17.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-12",
+      "n": 12,
+      "acao": "Clique em \"Abrir o WhatsApp do João\", toque em \"Oi! Pode deixar comigo\", depois em \"Sim, fiz\" e em \"O que a Marina vê\".",
+      "observado": "A simulação mostrou escala, ficha em PDF e lembretes com pedido de confirmação. A visão da Marina passou a \"1 de 5 tarefas feitas\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-18.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-18.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-19.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-19.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-20.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-20.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-13",
+      "n": 13,
+      "acao": "Na aba Rotina, clique em \"Contar a rotina\", digite \"O Léo tem natação na terça às cinco da tarde.\" no campo Relato e clique em \"Organizar com IA\".",
+      "observado": "Apareceu \"O Léo tem natação\", terça 17:00–18:00, com a frase de origem; outro relato gerou resultado diferente. A API informou \"fonte\":\"leitor\" e a tela avisou, no primeiro envio, \"IA indisponível agora: usei o leitor simples\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-23.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-23.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-14",
+      "n": 14,
+      "acao": "No check-in, escreva \"não aguento mais\".",
+      "observado": "O texto foi digitado no campo Relato de \"Contar a rotina\" e enviado com \"Organizar com IA\"; a API devolveu lista de itens e de perguntas vazias.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Nenhum check-in foi encontrado na interface, e no campo Relato não apareceu mensagem de apoio após o envio."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-24.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-24.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-15",
+      "n": 15,
+      "acao": "Peça ajuda com um compromisso do Léo e veja quem é sugerido.",
+      "observado": "\"Pedir ajuda\" abre a aba Substituição. Tocar em um compromisso do Léo na Rotina abre \"Editar compromisso\".",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Não apareceu tela de pedido de ajuda por tarefa nem sugestão de quem pode assumir."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-31.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-31.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-16",
+      "n": 16,
+      "acao": "Na aba Início, clique em \"Perfil\" e em \"Exportar rotina (.ics)\".",
+      "observado": "O navegador baixou o arquivo cuidai.ics, do tipo text/calendar.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-30.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-30.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/log-rotina.ics",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/log-rotina.ics",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-17",
+      "n": 17,
+      "acao": "Na aba Pessoas, abra José e clique em \"Compartilhar ficha\".",
+      "observado": "O console registrou a abertura de um endereço \"mailto:\".",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Nenhum arquivo Word foi baixado no navegador de teste."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-26.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-26.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/log-console.txt",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/log-console.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Clique em \"Organizar com IA\" sem digitar nada no campo Relato.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Não apareceu mensagem de campo vazio; um relato de exemplo foi processado e a tela mostrou perguntas sobre ele, com o aviso \"IA indisponível agora: usei o leitor simples\"."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Relato com a frase \"Meu pai tem exame na quinta.\" repetida 300 vezes.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela continuou respondendo e listou a pergunta \"Que horas é ...?\" repetida várias vezes."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Respostas geradas por IA no ambiente publicado",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A resposta de /api/testar_guia informa \"No API key was provided\" e uso do \"modo falso\"."
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/log-testar-guia.json",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/log-testar-guia.json",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "anthropic (Anthropic), em requirements.txt",
+          "google-genai (Google), em requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "anthropic>=2.14,<3",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/requirements.txt#L1",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "google-genai>=3.6,<4  # IA padrão: Gemini (ia/provedor_gemini.py)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/requirements.txt#L5",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Anthropic",
+              "ia/funcoes.py",
+              40
+            ],
+            [
+              "Google",
+              "ia/provedor_gemini.py",
+              36
+            ],
+            [
+              "Google",
+              "ia/provedor_gemini.py",
+              52
+            ],
+            [
+              "Google",
+              "ia/provedor_gemini.py",
+              71
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "        import anthropic",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L40",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/provedor_gemini.py",
+          "linha": 36,
+          "linha_fim": null,
+          "trecho": "        from google.genai import types",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/provedor_gemini.py#L36",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/provedor_gemini.py",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/provedor_gemini.py#L52",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/provedor_gemini.py",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/provedor_gemini.py#L71",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Google (Gemini, SDK google-genai)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/provedor_gemini.py",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "r = _cliente_api().models.generate_content(",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/provedor_gemini.py#L73",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Ponto comum de chamada generate_content com resposta em JSON no formato pedido."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "r = _cliente_api().messages.parse(",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L57",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/config.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "MODELO = os.getenv(\"IA_MODELO\", \"claude-opus-5-5\")",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/config.py#L6",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "claude-opus-5-5",
+      "obs": "Alternativa ao Gemini quando IA_PROVEDOR não é gemini."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Google (Gemini)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 360,
+          "linha_fim": null,
+          "trecho": "return provedor_gemini.chamar(prompts.TRANSCREVER, conteudo, schemas.TranscricaoIA).texto.strip()",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L360",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Transcrever o áudio da cuidadora."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Google (Gemini) ou Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 169,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.EXTRAIR, f\"{_contexto_familia()}\\n\\nRelato de hoje:\\n{relato}\", schemas.ExtracaoIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L169",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão)",
+      "obs": "Extrair tarefas, pessoas e perguntas do relato."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a Google (Gemini) ou Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 235,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.CHECKIN, entrada, schemas.EscolhaIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L235",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão)",
+      "obs": "Escolher uma tarefa para delegar a partir do check-in."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-6",
+      "rotulo": "Chamada a Google (Gemini) ou Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 248,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.PEDIDO, entrada, schemas.MensagemIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L248",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão)",
+      "obs": "Escrever o pedido de ajuda."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-7",
+      "rotulo": "Chamada a Google (Gemini) ou Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 299,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.SUBSTITUTO, _json(visivel), schemas.DuvidasIA,",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L299",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 306,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.SUBSTITUTO, _json(visivel), schemas.DuvidasIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L306",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash (padrão), com gemini-3.5-flash-lite se falhar",
+      "obs": "Substituto simulado: apontar perguntas que o guia não responde."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-8",
+      "rotulo": "Chamada a Google (Gemini) ou Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 270,
+          "linha_fim": null,
+          "trecho": "r = _chamar(prompts.GUIA, entrada, schemas.GuiaIA)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L270",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot/fluxo.py",
+          "linha": 214,
+          "linha_fim": null,
+          "trecho": "c.guia = ia.montar_guia(c.tarefa, c.pessoa)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/bot/fluxo.py#L214",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão)",
+      "obs": "Montar o guia de passagem; usado pelo bot e pela avaliação, não pelas telas do Streamlit."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-9",
+      "rotulo": "Chamada a Google (Gemini) ou Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 322,
+          "linha_fim": null,
+          "trecho": "return {\"informacoes\": _chamar(prompts.FOTO, conteudo, schemas.FotoIA).informacoes}",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L322",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão)",
+      "obs": "Extrair instruções de foto de documento; nenhuma tela chama a função."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 77,
+          "linha_fim": null,
+          "trecho": "return carregar_falso(nome)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L77",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/rotina.py",
+          "linha": 49,
+          "linha_fim": null,
+          "trecho": "motivo = ia.avisos[-1] if len(ia.avisos) > n else \"Não deu para entender o áudio.\"",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/rotina.py#L49",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Em modo falso ou quando a chamada falha, extração, check-in, pedido, guia, substituto e leitura de foto devolvem o JSON fixo de dados/falso/. O motivo vai para `ia.avisos`, que nas telas só é lido na transcrição.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-2",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/falso/substituto_simulado.json",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "{\"pergunta\": \"Jejum de quantas horas?\", \"resposta\": \"\", \"fonte\": \"cuidadora\"},",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/dados/falso/substituto_simulado.json#L2",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 309,
+          "linha_fim": null,
+          "trecho": "return [Lacuna(**lac) for lac in _responder(\"substituto_simulado\", real)[\"lacunas\"]]",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L309",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O substituto simulado, nesse modo, devolve três perguntas fixas sobre o exame (jejum, laboratório, pedido médico), qualquer que seja o guia.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-3",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/pedir.py",
+          "linha": 47,
+          "linha_fim": null,
+          "trecho": "return (f\"Oi, {pessoa.nome.split()[0]}! O plano de cuidado da família tem uma tarefa para \"",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/pedir.py#L47",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Em modo falso, a tela Pedir ajuda monta o pedido com um texto fixo preenchido com nome, dia, tarefa e hora.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-4",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/falso/escrever_pedido.json",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "\"mensagem\": \"Oi, João! O plano de cuidado da família tem uma tarefa para quinta: levar o pai ao exame de sangue às 8h e trazer de volta por volta das 9h30. Você consegue? É só responder sim ou não.\",",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/dados/falso/escrever_pedido.json#L2",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 255,
+          "linha_fim": null,
+          "trecho": "return Pedido.de_dict(_responder(\"escrever_pedido\", real))",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L255",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Se a chamada real de escrever_pedido falhar, a função devolve uma mensagem fixa dirigida a João sobre o exame, qualquer que seja a tarefa ou a pessoa escolhida.",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:29",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/tonioduarte/hackia",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/tonioduarte/hackia",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Family Tend",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.producthunt.com/products/family-tend",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.producthunt.com/products/family-tend",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App de coordenação do cuidado de filhos e pais idosos, com calendários compartilhados, cofre de documentos, delegação de tarefas entre irmãos, assistente de IA e um \"Burnout Shield\" voltado ao bem-estar de quem cuida.",
+      "obs": "Em comum: Mesmo público (geração sanduíche), com delegação de tarefas, IA e atenção à sobrecarga de quem cuida. Diferente: A página não menciona relato por voz, substituto simulado que testa o guia nem envio por WhatsApp; a publicação de quem criou o produto fala em fase de lista de espera."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "ianacare",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/us/app/ianacare-caregiving-support/id1441737626",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/us/app/ianacare-caregiving-support/id1441737626",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://news.mit.edu/2025/ianacare-builds-lifeline-for-family-caregivers-across-us-0811",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://news.mit.edu/2025/ianacare-builds-lifeline-for-family-caregivers-across-us-0811",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma para cuidadores familiares montarem uma equipe de amigos e parentes e pedirem ajuda específica (refeições, caronas, turnos de cuidado), com um companheiro de IA que cria um plano de próximos passos.",
+      "obs": "Em comum: Ajuda quem cuida a transformar a carga em pedidos de ajuda a pessoas próximas, com uso de IA. Diferente: As páginas descrevem foco em quem cuida de pessoa com doença crônica ou grave e não mencionam relato por voz nem um teste do guia por IA antes da passagem."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "Quemcuida",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.quemcuida.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.quemcuida.app/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Assistente que entra no grupo de WhatsApp da família para organizar remédios, consultas, recados e tarefas com responsável, usando IA para ler receitas, exames e mensagens de voz.",
+      "obs": "Em comum: Produto em português para famílias dividirem o cuidado, com IA, voz, tarefas atribuídas e WhatsApp. Diferente: Funciona dentro do grupo de WhatsApp e responde quando marcado; a página não menciona cuidado de filhos, escolha de uma tarefa para delegar nem teste de guia por um substituto simulado."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Elderella",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/us/app/-/id6753773809",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/us/app/-/id6753773809",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App com a assistente de IA Ella, que reúne informações de cuidado de conversas, ligações, consultas e documentos, responde à equipe de cuidado e adiciona tarefas de acompanhamento a partir de orientações de alta.",
+      "obs": "Em comum: Usa IA e notas de voz para organizar o cuidado e permite convidar família e amigos, com controle do que cada pessoa vê. Diferente: A descrição trata do cuidado de um parente idoso ou dependente, sem mencionar filhos, pedido de ajuda escrito pela IA nem teste de guia antes da passagem."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Caring Village",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://caringvillage.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://caringvillage.com/",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://caringvillage.com/blog/caregiver-tech/apps-for-sandwich-generation-caregivers/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://caringvillage.com/blog/caregiver-tech/apps-for-sandwich-generation-caregivers/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App para famílias coordenarem o cuidado, com calendário, tarefas, medicamentos, mensagens, documentos e a assistente de IA Julia.",
+      "obs": "Em comum: Organiza tarefas de cuidado e permite que familiares e vizinhos convidados assumam tarefas, com lembretes. Diferente: As páginas descrevem tarefas publicadas para voluntários assumirem e não mencionam relato por voz, termômetro de horas da semana nem teste de guia por IA."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Python",
+              48,
+              4233
+            ],
+            [
+              "Markdown",
+              4,
+              308
+            ],
+            [
+              "CSS",
+              1,
+              300
+            ],
+            [
+              "JSON",
+              10,
+              212
+            ],
+            [
+              "Shell",
+              1,
+              51
+            ],
+            [
+              "TOML",
+              1,
+              20
+            ]
+          ]
+        }
+      },
+      "obs": "71 arquivos de texto e 5152 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Interface Streamlit",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "streamlit_app.py",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "pg = st.navigation([",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/streamlit_app.py#L44",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "streamlit_app.py",
+          "app/paginas/",
+          "app/ponte.py",
+          "app/guia.py"
+        ]
+      },
+      "obs": "Telas da cuidadora, navegação e simulação do WhatsApp de quem cobre."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Camada de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "def _chamar(sistema: str, conteudo, formato: type[M], modelo_gemini: str | None = None,",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L46",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "ia/funcoes.py",
+          "ia/provedor_gemini.py",
+          "ia/prompts.py",
+          "ia/schemas.py",
+          "ia/config.py"
+        ]
+      },
+      "obs": "Funções de transcrição, extração, check-in, pedido, guia e substituto simulado, com Gemini ou Claude e modo falso."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Regras sem IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/ponte.py",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "from logica import calcular_carga, detectar_choques, pessoas_aptas, registrar_resposta",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/ponte.py#L9",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "logica/carga.py",
+          "logica/pessoas.py",
+          "logica/crise.py",
+          "logica/guia.py",
+          "logica/pedidos.py"
+        ]
+      },
+      "obs": "Calculam carga e choques, quem pode assumir, estado do guia e sinais de crise."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Chatbot de WhatsApp",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "bot/whatsapp.py",
+          "linha": 124,
+          "linha_fim": null,
+          "trecho": "rodar_console() if \"--console\" in sys.argv else rodar_twilio()",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/bot/whatsapp.py#L124",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "bot/fluxo.py",
+          "bot/whatsapp.py"
+        ]
+      },
+      "obs": "Executa o fluxo de pedido, guia e lacunas por mensagens, via Twilio ou console."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Contas e dados locais",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/auth.py",
+          "linha": 18,
+          "linha_fim": null,
+          "trecho": "ARQUIVO = Path(os.getenv(\"QA_USUARIOS\", Path(__file__).resolve().parent.parent / \".usuarios.json\"))",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/auth.py#L18",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/auth.py",
+          "app/estado.py"
+        ]
+      },
+      "obs": "Cadastro e login da cuidadora, com contas e dados gravados em um JSON local."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Dados fictícios e avaliação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/avaliacao/avaliar.py",
+          "linha": 118,
+          "linha_fim": null,
+          "trecho": "def main() -> None:",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/dados/avaliacao/avaliar.py#L118",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "dados/cenario_marina.json",
+          "dados/falso/",
+          "dados/relatos/relatos.json",
+          "dados/avaliacao/avaliar.py"
+        ]
+      },
+      "obs": "Cenário da demo, respostas do modo falso, relatos e guias com gabarito e script de avaliação."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "Também construímos um app em Flutter e uma API em FastAPI, publicados na Vercel em hackai-iota.vercel.app.",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "streamlit_app.py",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "import streamlit as st",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/streamlit_app.py#L4",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário descreve, além do site, um app em Flutter e uma API em FastAPI publicados na Vercel.",
+              "O repositório neste commit não tem código Flutter, FastAPI nem configuração da Vercel; a aplicação web presente é a de Streamlit."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "a transcrição de voz usa o Whisper local ou o Gemini.",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ia/funcoes.py",
+          "linha": 353,
+          "linha_fim": null,
+          "trecho": "from ia import provedor_gemini",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/ia/funcoes.py#L353",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O formulário diz que a transcrição de voz usa o Whisper local ou o Gemini.",
+              "A transcrição chama somente o Gemini; não há Whisper no código nem nas dependências."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 195,
+          "linha_fim": null,
+          "trecho": "├── ia/                   # chamadas ao Gemini e ao Claude, prompts e schemas",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/README.md#L195",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot/whatsapp.py",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "\"\"\"Liga o chatbot (bot/fluxo.py) ao WhatsApp pelo Twilio Sandbox, ou ao console.",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/bot/whatsapp.py#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/paginas/integracoes.py",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "f'{ui.chips([\"Assistente respondendo no WhatsApp: em construção\"])}')",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/app/paginas/integracoes.py#L29",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "A estrutura do projeto no README lista app/, ia/, logica/, dados/ e scripts/.",
+              "Há também a pasta bot/, com um chatbot de WhatsApp via Twilio; a tela Integrações indica o assistente no WhatsApp como \"em construção\"."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "<div align=\"center\">",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 234 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "- [Instalação](#instalação)",
+          "link": "https://github.com/tonioduarte/hackia/blob/39548fa04e69dc9706ec12c95ef064f668ebd564/README.md#L21",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "A IA transforma o relato em tarefas e mostra de qual frase saiu cada uma.",
+      "motivo": "A IA não respondeu no ambiente publicado; o \"leitor simples\" gerou o item e mostrou a frase de origem.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "um substituto simulado, que é outra IA, lê o guia como se fosse cobrir a tarefa e pergunta o que travaria.",
+      "motivo": "As perguntas apareceram, mas a resposta da API informa que não há chave de IA e que foi usado o \"modo falso\".",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "tarefa com criança só é sugerida a quem tem autorização. Sem autorizado, a tela mostra \"ninguém apto\".",
+      "motivo": "A tela de sugestão de quem assume não foi encontrada; na substituição, o envio ficou travado com \"não tem autorização (criança)\".",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Confira a tarefa escolhida pela IA, quem pode assumir e o pedido escrito.",
+      "motivo": "Depende do check-in do passo 4, que não apareceu na interface.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Clique em \"Assumiu\" e veja o termômetro.",
+      "motivo": "O botão \"Assumiu\" não apareceu nas telas percorridas; o pedido de ajuda do passo 4 não foi gerado.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Respostas geradas por IA no ambiente publicado",
+      "motivo": "A resposta de /api/testar_guia informa \"No API key was provided\" e uso do \"modo falso\".",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

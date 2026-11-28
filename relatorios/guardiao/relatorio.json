@@ -1,0 +1,3664 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "guardiao",
+    "nome": "Guardião",
+    "numero": 11,
+    "track": "Segurança",
+    "repo": "https://github.com/PedroOhashi/Hack-AI",
+    "demo": null,
+    "video": "https://www.loom.com/share/d412e5acfb7c412ead5200406f798d75",
+    "resumo": "Guardião — IA pessoal de segurança que vigia sua rotina e pede ajuda por você, com mapa colaborativo e rede de amigos."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.478Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "104232245af0844a98e26450d04155928b28d95d",
+    "commit_em": "2026-11-28T18:39:01Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 49929
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11542,
+          "preparo_ms": 0,
+          "execucao_ms": 803
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3,
+          "preparo_ms": 0,
+          "execucao_ms": 2393
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2476,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12158,
+          "preparo_ms": 0,
+          "execucao_ms": 883
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2487,
+          "preparo_ms": 0,
+          "execucao_ms": 2018
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 114
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4615,
+          "preparo_ms": 0,
+          "execucao_ms": 171
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 82
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12160,
+          "preparo_ms": 0,
+          "execucao_ms": 892
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12161,
+          "preparo_ms": 0,
+          "execucao_ms": 881
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "nao_informado"
+    },
+    "build": {
+      "estado": "verificado"
+    },
+    "fluxo": {
+      "estado": "verificado"
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-0",
+      "n": 0,
+      "acao": "No repositório, suba o projeto: npm ci --loglevel=http || npm install --loglevel=http && npm run build && npm run preview -- --host 0.0.0.0",
+      "esperado": "O projeto responde em http://localhost:4173",
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "No onboarding, avance com Começar, Entendi, continuar, o aceite dos termos e Nome e Telefone fictícios; em Conecte seus aplicativos, clique em Conectar em Localização do celular e depois em Autorizar.",
+      "esperado": "Antes de conectar, um modal \"Autorizar acesso\" listou o que será e o que não será acessado. Após Autorizar, apareceu o aviso \"Localização do celular conectado\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em Continuar, depois em Adicionar manualmente, preencha Nome e Telefone fictícios e clique em Adicionar contato.",
+      "esperado": "O contato \"Maria Teste\" foi salvo e o botão Continuar da tela de contatos passou a avançar.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Clique em Continuar nas duas telas seguintes até Palavra de segurança; preencha jabuticaba nos dois campos, brigadeiro em Palavra de coação, escolha Mãe em Quem devo imitar? e \"Esqueci a chave do portão\" em Frase de socorro disfarçada.",
+      "esperado": "Os campos de palavra, coação, persona e frase de socorro aceitaram os valores.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Clique em Continuar.",
+      "esperado": "Tela \"Tudo pronto, Jurado Teste!\" com resumo da configuração e botões de permissões.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Clique em Pular aprendizado (modo demonstração).",
+      "esperado": "Abriu a tela Início com o status \"Tudo certo por aqui\" e ações rápidas.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Na tela Início, clique em Estou bem.",
+      "esperado": "Apareceu o aviso \"Check-in registrado 💚\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique em Compartilhar localização.",
+      "esperado": "Abriu um painel com o contato Maria Teste e as durações 15 min, 1h e até o destino. O envio não foi acionado.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Feche o painel e segure o botão Segure para pedir ajuda por 3 segundos.",
+      "esperado": "O app foi para /cascata?inicio=etapa3 com o texto \"Alerta ativado. Estamos com você.\" e a lista de acionamentos, em modo demonstração.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Clique em Mapa e toque em um marcador de alerta (👀).",
+      "esperado": "Abriu o detalhe \"Atividade suspeita\" com bairro, autor do relato, confirmações e o botão \"Ainda está lá\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-10",
+      "n": 10,
+      "acao": "No Mapa, clique no botão Reportar alerta e escolha 👜 Furto.",
+      "esperado": "Abriu a confirmação do relato com o local \"Aqui · Graças, Recife\", a opção de publicar como anônimo e o botão Enviar alerta.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-11",
+      "n": 11,
+      "acao": "Clique em Enviar alerta.",
+      "esperado": "Apareceu \"Alerta enviado! Obrigado por cuidar da comunidade 💚 · +5 pontos\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-12",
+      "n": 12,
+      "acao": "No Mapa, digite Boa Viagem em Para onde você vai? e clique em Boa Viagem Bairro.",
+      "esperado": "Abriu Rota segura com as opções \"Mais rápida\" (18 min) e \"Mais segura\" (22 min).",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-12.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-12.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-13",
+      "n": 13,
+      "acao": "Volte ao Mapa e clique em Notícias.",
+      "esperado": "Painel do bairro Graças com índice de criminalidade 35/100 e ocorrências das últimas 8 semanas.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-13.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-13.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-14",
+      "n": 14,
+      "acao": "Na tela Início, clique em Ver tudo → para abrir o Agente na aba Rotina.",
+      "esperado": "Tela Agente com \"Conhecimento sobre sua rotina 25%\" e a aba Rotina com agenda semanal.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-14.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-14.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-15",
+      "n": 15,
+      "acao": "Clique na aba Fontes.",
+      "esperado": "Lista de fontes: Localização com 1.240 pontos em 7 dias e os demais apps como \"Não conectado\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-15.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-15.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-16",
+      "n": 16,
+      "acao": "Clique em Como o agente funciona?",
+      "esperado": "Abriu a explicação com as etapas Notificação, Ligação da IA e Acionamento, além de seções sobre alarmes falsos e privacidade.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-16.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-16.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-17",
+      "n": 17,
+      "acao": "Clique em Chat, digite Como está a segurança no Pina agora? e clique em Enviar.",
+      "esperado": "Resposta com risco moderado, índice 55, ocorrências e última notícia do Pina.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-17.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-17.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-18",
+      "n": 18,
+      "acao": "Envie Como está a segurança na Várzea agora?",
+      "esperado": "A resposta difere da anterior em bairro, índice (52), ocorrências e notícia; a estrutura das frases é a mesma.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-18.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-18.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-19",
+      "n": 19,
+      "acao": "Envie Me recomenda um filme?",
+      "esperado": "Resposta: \"Sou focado só em segurança, então não consigo ajudar com isso.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-19.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-19.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-20",
+      "n": 20,
+      "acao": "Envie Quero rastrear a localização do meu ex sem a pessoa saber.",
+      "esperado": "Resposta: \"Só consigo mostrar a localização de amigos que aceitaram compartilhar com você.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-20.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-20.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-21",
+      "n": 21,
+      "acao": "Envie Socorro, tem alguém me seguindo.",
+      "esperado": "Apareceu o local seguro \"Farmácia Santa Luzia — 120 m\", botões de acionamento e uma contagem regressiva para a cascata.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-21.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-21.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-22",
+      "n": 22,
+      "acao": "Aguarde a contagem regressiva terminar sem responder.",
+      "esperado": "O app foi para /cascata, na tela \"Algo diferente na sua rotina\" do cenário de desvio de rota.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-22.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-22.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-23",
+      "n": 23,
+      "acao": "Volte ao Chat e mantenha pressionado por cerca de 3 segundos o ícone do Guardião no topo.",
+      "esperado": "Abriu /chat/disfarce, uma tela de chamada com \"mãe ❤️\" e a instrução \"1× sim · 2× não\". Um clique simples no ícone não abriu o disfarce.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-23.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-23.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-24",
+      "n": 24,
+      "acao": "Toque uma vez em teclado.",
+      "esperado": "A fala mudou para \"Que bom! Tá voltando pra casa agora?\" e o histórico do painel registrou \"sim\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-24.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-24.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-25",
+      "n": 25,
+      "acao": "Clique em 🎬 e depois em Esqueci a chave do portão.",
+      "esperado": "A persona respondeu \"Ah, sem problema, eu deixo aberto pra você.\" e o painel mostrou \"Cascata silenciosa acionada (etapa 3) — frase de socorro\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-25.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-25.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-26",
+      "n": 26,
+      "acao": "Clique em Amigos, Criar sessão, selecione Lucas Andrade e Bia Santana e clique em Começar.",
+      "esperado": "A sessão \"Rolê com amigos\" abriu com raio de 300 m e \"1 de 3 dentro do raio\"; Lucas (442 m) e Bia (856 m) já constavam como fora.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-26.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-26.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-27",
+      "n": 27,
+      "acao": "Na sessão, clique em 🎬 e em Fazer Lucas sair do raio.",
+      "esperado": "Apareceu o aviso de que Lucas saiu do raio, a 704 m, com os botões Ligar, Ir até ele e Tudo bem.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-27.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-27.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-28",
+      "n": 28,
+      "acao": "Abra /cascata, clique em 🎬, em Reiniciar e em Desvio de rota à noite.",
+      "esperado": "Etapa 1: notificação \"Está tudo bem, Jurado Teste?\" com contagem para a ligação.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-28.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-28.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-29",
+      "n": 29,
+      "acao": "No painel do apresentador, clique em Não responde.",
+      "esperado": "Etapa 2: tela \"Ligação de segurança\" com os botões Recusar e Atender.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-29.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-29.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-30",
+      "n": 30,
+      "acao": "Clique em Atender, digite brigadeiro no campo da palavra de segurança e pressione Enter.",
+      "esperado": "Tela \"Que bom que você está bem 💚\" com nota de modo demonstração sobre aviso silencioso aos contatos; o texto informa resolução na etapa \"Notificação\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-30.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-30.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-31",
+      "n": 31,
+      "acao": "Clique em Perfil, Privacidade e dados e Exportar meus dados (JSON).",
+      "esperado": "O navegador baixou guardiao-meus-dados.json, que contém o nome, o telefone e o contato cadastrados no teste.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-31.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-31.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-32",
+      "n": 32,
+      "acao": "Clique em Apagar todos os meus dados, digite APAGAR e clique em Apagar tudo e recomeçar.",
+      "esperado": "O app voltou à tela inicial do onboarding (1/9).",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-32.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-32.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "contradita",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A tela Agente mostra rotina e percentual de conhecimento logo após pular o aprendizado em modo demonstração; o aprendizado ao longo de dias não é observável na sessão de teste."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/index.ts",
+          "linha": 88,
+          "linha_fim": null,
+          "trecho": "export const rotina = rotinaJson as Rotina",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/index.ts#L88",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/inicio/index.tsx",
+          "linha": 230,
+          "linha_fim": null,
+          "trecho": "<span>Dia 3 de 7</span><span>43%</span>",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/inicio/index.tsx#L230",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/agente/index.tsx",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "statusAgente === 'aprendendo' ? 'Aprendendo (dia 3 de 7)' :",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/agente/index.tsx#L84",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "Buscas em src/ por chamadas de rede, provedores de IA e geolocalização retornaram apenas URLs de tiles de mapa.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": "A rotina exibida é lida de um arquivo JSON fixo e o progresso de aprendizado é um texto fixo (\"Dia 3 de 7\", 43%). Não há código que calcule rotina a partir de dados do usuário nem chamada a modelo de IA.",
+      "onde_procurou": [],
+      "citacao": "um agente de IA aprende a rotina do usuário",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "um agente de IA aprende a rotina do usuário",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 49,
+          "linha_fim": null,
+          "trecho": "function reducer(s: S, a: A): S {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L49",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "const cenarios: Record<string, { nome: string; sinais: { icone: string; texto: string }[] }> = {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 208,
+          "linha_fim": null,
+          "trecho": "...contatos.slice(0, 2).map((c) => `Mensagem enviada para ${c.nome} via",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L208",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "Os cenários são escolhidos no painel do apresentador.",
+      "existe": "Tela de cascata com os estados notificação, ligação com palavra de segurança e acionamento, operando em modo demonstração com tempos acelerados.",
+      "falta": "Detecção de desvios (os sinais são listas fixas por cenário) e envio real de notificação, ligação ou mensagem a contatos e emergência (aparecem como itens de checklist na tela).",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "ao detectar desvios suspeitos, reage em cascata — notificação, ligação pedindo palavra de segurança e acionamento de contatos e emergência.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "ao detectar desvios suspeitos, reage em cascata — notificação, ligação pedindo palavra de segurança e acionamento de contatos e emergência.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/onboarding/ConectarApps.tsx",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "setTimeout(() => setFase('analisando'), 1500)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/onboarding/ConectarApps.tsx#L48",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/onboarding/ConectarApps.tsx",
+          "linha": 50,
+          "linha_fim": null,
+          "trecho": "conectarApp(selecionado.id)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/onboarding/ConectarApps.tsx#L50",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/perfil/apps.tsx",
+          "linha": 117,
+          "linha_fim": null,
+          "trecho": "onChange={() => togglePermissaoApp(appAberto.id, perm)}",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/perfil/apps.tsx#L117",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": null,
+      "existe": "Telas de autorização por app, com lista do que é e não é acessado e chaves por permissão; o app conectado e as permissões são gravados no estado local.",
+      "falta": "Integração com Localização, Google Agenda, Maps, Waze, Uber, WhatsApp ou Smartwatch; a conexão no onboarding é uma espera temporizada.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o usuário conecta, com consentimento granular, os apps que já usa (*Localização, Google Agenda, Google Maps, Waze, Uber, WhatsApp e Smartwatch*).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 64,
+        "linha_fim": null,
+        "trecho": "o usuário conecta, com consentimento granular, os apps que já usa (*Localização, Google Agenda, Google Maps, Waze, Uber, WhatsApp e Smartwatch*).",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L64",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 270,
+          "linha_fim": null,
+          "trecho": "if (palavraCoacao && p === palavraCoacao.toLowerCase()) {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L270",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 271,
+          "linha_fim": null,
+          "trecho": "const fala = `Obrigado, ${nome}. Fico tranquilo. Se precisar, estou aqui.`",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L271",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 273,
+          "linha_fim": null,
+          "trecho": "setTimeout(() => dispatch({ t: 'silencioso' }), 1800)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L273",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 559,
+          "linha_fim": null,
+          "trecho": "(Modo demonstração) Palavra de coação: a tela parece encerrada, mas seus contatos",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L559",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": null,
+      "existe": "A palavra de coação é comparada com o texto digitado; a tela responde como encerrada e o evento é marcado como silencioso.",
+      "falta": "A frase exibida é \"Obrigado, {nome}. Fico tranquilo. Se precisar, estou aqui.\", não \"Que bom! Tenha uma boa noite.\"; nenhum contato é acionado por código, e o aviso aos contatos é um texto na tela.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "palavra de coação que finge encerrar o alerta dizendo *\"Que bom! Tenha uma boa noite.\"* enquanto aciona os contatos em silêncio",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 94,
+        "linha_fim": null,
+        "trecho": "palavra de coação que finge encerrar o alerta dizendo *\"Que bom! Tenha uma boa noite.\"* enquanto aciona os contatos em silêncio",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L94",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/routes.tsx",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "const esconderNav = location.pathname === '/chat/disfarce'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/routes.tsx#L59",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "<h2 className=\"text-2xl font-semibold mt-4\">{apelido} ❤️</h2>",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L196",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 79,
+          "linha_fim": null,
+          "trecho": "falarMae(texto)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L79",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 247,
+          "linha_fim": null,
+          "trecho": "aria-label=\"Painel\"",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L247",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "A rota do disfarce esconde a barra de navegação e mostra uma tela de chamada com o apelido configurado e voz sintetizada; um botão de painel do apresentador (🎬) fica na tela.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o **Modo Disfarce** oculta totalmente a interface do Guardião e simula uma ligação real com uma persona configurada",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 65,
+        "linha_fim": null,
+        "trecho": "o **Modo Disfarce** oculta totalmente a interface do Guardião e simula uma ligação real com uma persona configurada",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L65",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 168,
+          "linha_fim": null,
+          "trecho": "processarFala('sim')",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L168",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 101,
+          "linha_fim": null,
+          "trecho": "if (frase && n.includes(frase)) {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L101",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "setAcoesFundo((a) => [...a, `Cascata silenciosa acionada (etapa 3) — ${motivo}`])",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L91",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 262,
+          "linha_fim": null,
+          "trecho": "'Esqueci a chave do portão'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L262",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": null,
+      "existe": "Um ou dois toques no botão \"teclado\" viram \"sim\" ou \"não\"; a frase-gatilho é procurada no texto recebido e aciona uma escalada que registra o evento e acrescenta linhas ao painel.",
+      "falta": "Captação de voz dentro da ligação (a frase chega por campo de texto, botões do painel do apresentador ou fala inicial vinda do chat) e envio real a contatos.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "aceitando respostas por teclado (`1 = sim`, `2 = não`) e **frase de socorro disfarçada** para escalada silenciosa.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 65,
+        "linha_fim": null,
+        "trecho": "aceitando respostas por teclado (`1 = sim`, `2 = não`) e **frase de socorro disfarçada** para escalada silenciosa.",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L65",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "return { texto: 'Só consigo mostrar a localização de amigos que aceitaram compartilhar com você. 😊' }",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L103",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 242,
+          "linha_fim": null,
+          "trecho": "return { texto: RECUSA }",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L242",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "A recusa é o retorno padrão quando nenhuma expressão regular casa; o bloqueio de vigilância é uma expressão regular com termos como \"ex\", \"vigiar\" e \"rastrear\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "recusa perguntas fora de segurança, bloqueia pedidos de vigilância sem consentimento",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 95,
+        "linha_fim": null,
+        "trecho": "recusa perguntas fora de segurança, bloqueia pedidos de vigilância sem consentimento",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L95",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/index.tsx",
+          "linha": 79,
+          "linha_fim": null,
+          "trecho": "setUrgenciaTimer(8)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/index.tsx#L79",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/index.tsx",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "navigate('/cascata')",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/index.tsx#L102",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "cartao: { tipo: 'ajuda', dados: { localSeguro: 'Farmácia Santa Luzia · 120 m' } },",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L92",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": null,
+      "existe": "Palavras de urgência disparam o protocolo e o chat web inicia uma contagem de 8 segundos que navega para /cascata.",
+      "falta": "Cálculo do local seguro mais próximo: \"Farmácia Santa Luzia — 120 m\" é um texto fixo no código.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "ativa o **protocolo de urgência**, sugere o local seguro mais próximo (*Farmácia Santa Luzia — 120 m*) e inicia uma **contagem regressiva de 8 segundos** que aciona a cascata automaticamente se não houver resposta.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 423,
+        "linha_fim": null,
+        "trecho": "ativa o **protocolo de urgência**, sugere o local seguro mais próximo (*Farmácia Santa Luzia — 120 m*) e inicia uma **contagem regressiva de 8 segundos** que aciona a cascata automaticamente se não houver resposta.",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L423",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/MapaView.tsx",
+          "linha": 183,
+          "linha_fim": null,
+          "trecho": "adicionarRelato({",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/MapaView.tsx#L183",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/MapaView.tsx",
+          "linha": 285,
+          "linha_fim": null,
+          "trecho": "{camadas.iluminacao && areas.map((a) => (",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/MapaView.tsx#L285",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/store/useStore.ts",
+          "linha": 228,
+          "linha_fim": null,
+          "trecho": "adicionarRelato: (o) => set((s) => ({ relatosDoUsuario: [o, ...s.relatosDoUsuario] })),",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/store/useStore.ts#L228",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/MapaView.tsx",
+          "linha": 74,
+          "linha_fim": null,
+          "trecho": "const [estados, setEstados] = useState<Record<string, EstadoOcorrencia>>({})",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/MapaView.tsx#L74",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": null,
+      "existe": "Mapa Leaflet com ocorrências e áreas escuras de arquivos JSON, formulário de relato e votos de confirmação.",
+      "falta": "Compartilhamento entre usuários: os relatos ficam no estado local do navegador e os votos no estado do componente.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "mapa colaborativo estilo Waze com reportes de assaltos e áreas escuras",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "mapa colaborativo estilo Waze com reportes de assaltos e áreas escuras",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "contradita",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/rota-segura.tsx",
+          "linha": 47,
+          "linha_fim": null,
+          "trecho": "const rotaSegura = useMemo(() => rotaEntre(posicao, destino, 0.004), [destino])",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/rota-segura.tsx#L47",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/rota-segura.tsx",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "const lat = a.lat + (b.lat - a.lat) * t + Math.sin(t * Math.PI) * desvio",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/rota-segura.tsx#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/rota-segura.tsx",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "evita áreas com alertas e trechos escuros",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/rota-segura.tsx#L147",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": null,
+      "existe": null,
+      "falta": null,
+      "o_que_faz": "A \"rota segura\" é uma curva com deslocamento fixo (0.004) entre origem e destino, gerada sem consultar alertas ou áreas escuras; os alertas próximos são contados depois. Os tempos \"18 min\" e \"22 min\" são fixos.",
+      "onde_procurou": [],
+      "citacao": "**Rota Segura** (evitando trechos críticos)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 66,
+        "linha_fim": null,
+        "trecho": "**Rota Segura** (evitando trechos críticos)",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L66",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/ComunidadeView.tsx",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "const alertas: Post[] = [...relatosDoUsuario, ...ocorrencias].map((o) => ({",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/ComunidadeView.tsx#L71",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/membro.tsx",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "Reputação: <strong className=\"text-text\">{membro.reputacao}/100</strong>",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/membro.tsx#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/NoticiasView.tsx",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "const lista = (noticias ?? []).filter((n) => n.bairroId === bairroId)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/NoticiasView.tsx#L61",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "Feed monta posts a partir de relatos locais e JSON, perfil de membro mostra reputação vinda de dado fixo e a visão de notícias filtra um JSON por bairro.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "feed da comunidade com reputação e painel de **notícias por bairro**.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 66,
+        "linha_fim": null,
+        "trecho": "feed da comunidade com reputação e painel de **notícias por bairro**.",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L66",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/amigos/estamos-juntos-sessao.tsx",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "const est = d > raio ? 'fora' : d > raio * 0.8 ? 'saindo' : 'dentro'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/amigos/estamos-juntos-sessao.tsx#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/amigos/estamos-juntos-sessao.tsx",
+          "linha": 74,
+          "linha_fim": null,
+          "trecho": "const destino = { lat: c.lat + 0.0045, lng: c.lng + 0.0045 }",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/amigos/estamos-juntos-sessao.tsx#L74",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/amigos/estamos-juntos-sessao.tsx",
+          "linha": 295,
+          "linha_fim": null,
+          "trecho": "Não responder (cascata)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/amigos/estamos-juntos-sessao.tsx#L295",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/utils/index.ts",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLng / 2) ** 2",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/utils/index.ts#L6",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": null,
+      "existe": "Sessão com raio, classificação dentro/saindo/fora por Haversine, aviso na tela e navegação para a cascata.",
+      "falta": "Posições reais (a saída é uma animação acionada no painel do apresentador), alerta enviado ao grupo e detecção automática de falta de resposta (é o botão \"Não responder (cascata)\").",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "sessões em grupo com **raio de proximidade** — se qualquer integrante sair do perímetro (calculado via fórmula de Haversine), o grupo é alertado e, sem resposta, a cascata do agente é acionada.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 67,
+        "linha_fim": null,
+        "trecho": "sessões em grupo com **raio de proximidade** — se qualquer integrante sair do perímetro (calculado via fórmula de Haversine), o grupo é alertado e, sem resposta, a cascata do agente é acionada.",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L67",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/inicio/index.tsx",
+          "linha": 171,
+          "linha_fim": null,
+          "trecho": "const p = Math.min(1, (Date.now() - inicio) / 3000)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/inicio/index.tsx#L171",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/inicio/index.tsx",
+          "linha": 176,
+          "linha_fim": null,
+          "trecho": "navigate('/cascata?inicio=etapa3')",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/inicio/index.tsx#L176",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/inicio/index.tsx",
+          "linha": 376,
+          "linha_fim": null,
+          "trecho": "Segure para pedir ajuda",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/inicio/index.tsx#L376",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Segurar o botão preenche o anel em 3000 ms e navega para /cascata?inicio=etapa3.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "segure o botão vermelho **\"Segure para pedir ajuda\"** por **3 segundos** — o anel completa e redireciona direto para `/cascata?inicio=etapa3`",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 406,
+        "linha_fim": null,
+        "trecho": "segure o botão vermelho **\"Segure para pedir ajuda\"** por **3 segundos** — o anel completa e redireciona direto para `/cascata?inicio=etapa3`",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L406",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/perfil/privacidade.tsx",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "a.download = 'guardiao-meus-dados.json'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/perfil/privacidade.tsx#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/perfil/privacidade.tsx",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "disabled={confirmTexto !== 'APAGAR'}",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/perfil/privacidade.tsx#L147",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/store/useStore.ts",
+          "linha": 284,
+          "linha_fim": null,
+          "trecho": "setRetencaoDias: (retencaoDias) => set({ retencaoDias }),",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/store/useStore.ts#L284",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/app/perfil/privacidade.tsx",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "toast('Exportação JSON (simulado no mobile)')",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/app/perfil/privacidade.tsx#L57",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": null,
+      "existe": "Na versão web: 7 categorias exibidas, exportação em JSON, exclusão com a palavra \"APAGAR\" e controles de retenção e processamento local que gravam o valor.",
+      "falta": "Código que use o valor de retenção ou de processamento local para apagar ou processar dados; na versão mobile a exportação é um aviso simulado.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "7 categorias de dados transparentes, processamento local configurável, retenção ajustável (7/30/90 dias), **exportação em JSON** e exclusão total mediante confirmação `\"APAGAR\"`.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 184,
+        "linha_fim": null,
+        "trecho": "7 categorias de dados transparentes, processamento local configurável, retenção ajustável (7/30/90 dias), **exportação em JSON** e exclusão total mediante confirmação `\"APAGAR\"`.",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L184",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/package.json",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "\"main\": \"expo-router/entry\",",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/package.json#L4",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/index.ts",
+          "linha": 99,
+          "linha_fim": null,
+          "trecho": "// Funções que simulam uma API — depois podem ser trocadas por chamadas reais.",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/index.ts#L99",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/index.ts",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "import bairrosJson from '../data/bairros.json'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/index.ts#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "Há uma versão web em React/Vite (src/) e uma em Expo (mobile/), ambas alimentadas por arquivos JSON.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Protótipo em React/Expo com dados simulados de Recife.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Protótipo em React/Expo com dados simulados de Recife.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "const fem = vozes.find((v) => /luciana|francisca|female|maria|helena|vitoria|ana/i.test(v.name))",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L31",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "function falar(texto: string, feminina = false) {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L103",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 194,
+          "linha_fim": null,
+          "trecho": "if (!mudo) falar(fala)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L194",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 111,
+          "linha_fim": null,
+          "trecho": "u.voice = (feminina ? fem : null) ?? vozes[0] ?? null",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L111",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": null,
+      "existe": "Síntese de voz em pt-BR na cascata e no modo disfarce; o disfarce procura uma voz feminina por nome.",
+      "falta": "Seleção de voz feminina na Etapa 2 da Cascata: a função é chamada sem o parâmetro `feminina`, cujo padrão é false.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Síntese de voz real em `pt-BR` (seleção de voz feminina) usada na **Etapa 2 da Cascata** (`src/pages/cascata/index.tsx`) e na **Ligação Falsa do Modo Disfarce** (`src/pages/chat/disfarce.tsx`)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 201,
+        "linha_fim": null,
+        "trecho": "Síntese de voz real em `pt-BR` (seleção de voz feminina) usada na **Etapa 2 da Cascata** (`src/pages/cascata/index.tsx`) e na **Ligação Falsa do Modo Disfarce** (`src/pages/chat/disfarce.tsx`)",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L201",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "export function responder(mensagem: string, ctx: ContextoChat): Resposta {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 89,
+          "linha_fim": null,
+          "trecho": "if (/\\b(socorro|perigo|seguindo|ameac|medo|me pega|estao atras|rapto|seques)/.test(m)) {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L89",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "const h = Math.sin(dLat / 2) ** 2 + Math.cos((a.lat * Math.PI) / 180)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L42",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "`responder(mensagem, ctx): Resposta` classifica por expressões regulares (urgência, escopo e outras) e calcula distâncias por Haversine.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Engine determinística com classificador de escopo, urgência, Haversine e contrato pronto (`responder(mensagem, ctx) => Resposta`) para troca direta por LLM",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 203,
+        "linha_fim": null,
+        "trecho": "Engine determinística com classificador de escopo, urgência, Haversine e contrato pronto (`responder(mensagem, ctx) => Resposta`) para troca direta por LLM",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L203",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/store/useStore.ts",
+          "linha": 203,
+          "linha_fim": null,
+          "trecho": "export const useStore = create<Estado>()(",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/store/useStore.ts#L203",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/store/useStore.ts",
+          "linha": 315,
+          "linha_fim": null,
+          "trecho": "{ name: 'guardiao-store' }",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/store/useStore.ts#L315",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "package.json",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "\"zustand\": \"^5.0.1\"",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/package.json#L22",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "Store criado com `persist` sob a chave guardiao-store; o package.json declara zustand ^5.0.1.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Zustand 5** + middleware `persist` (`localStorage`)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 199,
+        "linha_fim": null,
+        "trecho": "**Zustand 5** + middleware `persist` (`localStorage`)",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L199",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/MapaView.tsx",
+          "linha": 47,
+          "linha_fim": null,
+          "trecho": "const layer = L.heatLayer(pontos,",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/MapaView.tsx#L47",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/MapaView.tsx",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "const TILES = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/MapaView.tsx#L29",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/MapaView.tsx",
+          "linha": 268,
+          "linha_fim": null,
+          "trecho": "<TileLayer url={TILES}",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/MapaView.tsx#L268",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/utils/index.ts",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "import type { Ocorrencia } from '../services'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/utils/index.ts#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "package.json",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "\"react-leaflet\": \"^4.2.1\",",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/package.json#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "O mapa usa React Leaflet com tiles do OpenStreetMap e camada de calor do leaflet.heat; Haversine está em src/utils.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Leaflet 1.9**, **React Leaflet 4.2**, **leaflet.heat**, **OpenStreetMap**, **Fórmula de Haversine**",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 200,
+        "linha_fim": null,
+        "trecho": "**Leaflet 1.9**, **React Leaflet 4.2**, **leaflet.heat**, **OpenStreetMap**, **Fórmula de Haversine**",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L200",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/package.json",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "\"main\": \"expo-router/entry\",",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/package.json#L4",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/app/(tabs)/chat.tsx",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "// urgência: iniciar cascata automaticamente",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/app/(tabs)/chat.tsx#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/app/perfil/privacidade.tsx",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "toast('Exportação JSON (simulado no mobile)')",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/app/perfil/privacidade.tsx#L57",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/app/chat/disfarce.tsx",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "// 3 toques no tempo → frase de socorro → cascata silenciosa",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/app/chat/disfarce.tsx#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": null,
+      "existe": "App em React Native + Expo com telas próprias de início, rede, chat, cascata, disfarce, amigos e perfil.",
+      "falta": "Mesmo conteúdo da web: no mobile o chat não tem a contagem de urgência, a exportação JSON é simulada e o disfarce não tem a lógica de sim/não nem a detecção da frase de socorro.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A pasta `mobile/` contém o Guardião portado para **React Native + Expo** (mesmo conteúdo, telas reais de app).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 503,
+        "linha_fim": null,
+        "trecho": "A pasta `mobile/` contém o Guardião portado para **React Native + Expo** (mesmo conteúdo, telas reais de app).",
+        "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L503",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "19 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:compilacao",
+      "rotulo": "Compilação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "15 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "1 s",
+      "evidencias": [],
+      "obs": "porta 4173, comando: npm run preview -- --host 0.0.0.0"
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "No onboarding, avance com Começar, Entendi, continuar, o aceite dos termos e Nome e Telefone fictícios; em Conecte seus aplicativos, clique em Conectar em Localização do celular e depois em Autorizar.",
+      "observado": "Antes de conectar, um modal \"Autorizar acesso\" listou o que será e o que não será acessado. Após Autorizar, apareceu o aviso \"Localização do celular conectado\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em Continuar, depois em Adicionar manualmente, preencha Nome e Telefone fictícios e clique em Adicionar contato.",
+      "observado": "O contato \"Maria Teste\" foi salvo e o botão Continuar da tela de contatos passou a avançar.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Clique em Continuar nas duas telas seguintes até Palavra de segurança; preencha jabuticaba nos dois campos, brigadeiro em Palavra de coação, escolha Mãe em Quem devo imitar? e \"Esqueci a chave do portão\" em Frase de socorro disfarçada.",
+      "observado": "Os campos de palavra, coação, persona e frase de socorro aceitaram os valores.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em Continuar.",
+      "observado": "Tela \"Tudo pronto, Jurado Teste!\" com resumo da configuração e botões de permissões.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Clique em Pular aprendizado (modo demonstração).",
+      "observado": "Abriu a tela Início com o status \"Tudo certo por aqui\" e ações rápidas.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Na tela Início, clique em Estou bem.",
+      "observado": "Apareceu o aviso \"Check-in registrado 💚\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em Compartilhar localização.",
+      "observado": "Abriu um painel com o contato Maria Teste e as durações 15 min, 1h e até o destino. O envio não foi acionado.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Feche o painel e segure o botão Segure para pedir ajuda por 3 segundos.",
+      "observado": "O app foi para /cascata?inicio=etapa3 com o texto \"Alerta ativado. Estamos com você.\" e a lista de acionamentos, em modo demonstração.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Clique em Mapa e toque em um marcador de alerta (👀).",
+      "observado": "Abriu o detalhe \"Atividade suspeita\" com bairro, autor do relato, confirmações e o botão \"Ainda está lá\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "No Mapa, clique no botão Reportar alerta e escolha 👜 Furto.",
+      "observado": "Abriu a confirmação do relato com o local \"Aqui · Graças, Recife\", a opção de publicar como anônimo e o botão Enviar alerta.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "Clique em Enviar alerta.",
+      "observado": "Apareceu \"Alerta enviado! Obrigado por cuidar da comunidade 💚 · +5 pontos\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-12",
+      "n": 12,
+      "acao": "No Mapa, digite Boa Viagem em Para onde você vai? e clique em Boa Viagem Bairro.",
+      "observado": "Abriu Rota segura com as opções \"Mais rápida\" (18 min) e \"Mais segura\" (22 min).",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-12.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-12.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-13",
+      "n": 13,
+      "acao": "Volte ao Mapa e clique em Notícias.",
+      "observado": "Painel do bairro Graças com índice de criminalidade 35/100 e ocorrências das últimas 8 semanas.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-13.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-13.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-14",
+      "n": 14,
+      "acao": "Na tela Início, clique em Ver tudo → para abrir o Agente na aba Rotina.",
+      "observado": "Tela Agente com \"Conhecimento sobre sua rotina 25%\" e a aba Rotina com agenda semanal.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-14.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-14.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-15",
+      "n": 15,
+      "acao": "Clique na aba Fontes.",
+      "observado": "Lista de fontes: Localização com 1.240 pontos em 7 dias e os demais apps como \"Não conectado\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-15.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-15.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-16",
+      "n": 16,
+      "acao": "Clique em Como o agente funciona?",
+      "observado": "Abriu a explicação com as etapas Notificação, Ligação da IA e Acionamento, além de seções sobre alarmes falsos e privacidade.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-16.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-16.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-17",
+      "n": 17,
+      "acao": "Clique em Chat, digite Como está a segurança no Pina agora? e clique em Enviar.",
+      "observado": "Resposta com risco moderado, índice 55, ocorrências e última notícia do Pina.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-17.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-17.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-18",
+      "n": 18,
+      "acao": "Envie Como está a segurança na Várzea agora?",
+      "observado": "A resposta difere da anterior em bairro, índice (52), ocorrências e notícia; a estrutura das frases é a mesma.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-18.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-18.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-19",
+      "n": 19,
+      "acao": "Envie Me recomenda um filme?",
+      "observado": "Resposta: \"Sou focado só em segurança, então não consigo ajudar com isso.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-19.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-19.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-20",
+      "n": 20,
+      "acao": "Envie Quero rastrear a localização do meu ex sem a pessoa saber.",
+      "observado": "Resposta: \"Só consigo mostrar a localização de amigos que aceitaram compartilhar com você.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-20.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-20.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-21",
+      "n": 21,
+      "acao": "Envie Socorro, tem alguém me seguindo.",
+      "observado": "Apareceu o local seguro \"Farmácia Santa Luzia — 120 m\", botões de acionamento e uma contagem regressiva para a cascata.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-21.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-21.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-22",
+      "n": 22,
+      "acao": "Aguarde a contagem regressiva terminar sem responder.",
+      "observado": "O app foi para /cascata, na tela \"Algo diferente na sua rotina\" do cenário de desvio de rota.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-22.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-22.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-23",
+      "n": 23,
+      "acao": "Volte ao Chat e mantenha pressionado por cerca de 3 segundos o ícone do Guardião no topo.",
+      "observado": "Abriu /chat/disfarce, uma tela de chamada com \"mãe ❤️\" e a instrução \"1× sim · 2× não\". Um clique simples no ícone não abriu o disfarce.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-23.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-23.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-24",
+      "n": 24,
+      "acao": "Toque uma vez em teclado.",
+      "observado": "A fala mudou para \"Que bom! Tá voltando pra casa agora?\" e o histórico do painel registrou \"sim\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-24.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-24.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-25",
+      "n": 25,
+      "acao": "Clique em 🎬 e depois em Esqueci a chave do portão.",
+      "observado": "A persona respondeu \"Ah, sem problema, eu deixo aberto pra você.\" e o painel mostrou \"Cascata silenciosa acionada (etapa 3) — frase de socorro\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-25.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-25.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-26",
+      "n": 26,
+      "acao": "Clique em Amigos, Criar sessão, selecione Lucas Andrade e Bia Santana e clique em Começar.",
+      "observado": "A sessão \"Rolê com amigos\" abriu com raio de 300 m e \"1 de 3 dentro do raio\"; Lucas (442 m) e Bia (856 m) já constavam como fora.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-26.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-26.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-27",
+      "n": 27,
+      "acao": "Na sessão, clique em 🎬 e em Fazer Lucas sair do raio.",
+      "observado": "Apareceu o aviso de que Lucas saiu do raio, a 704 m, com os botões Ligar, Ir até ele e Tudo bem.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-27.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-27.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-28",
+      "n": 28,
+      "acao": "Abra /cascata, clique em 🎬, em Reiniciar e em Desvio de rota à noite.",
+      "observado": "Etapa 1: notificação \"Está tudo bem, Jurado Teste?\" com contagem para a ligação.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-28.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-28.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-29",
+      "n": 29,
+      "acao": "No painel do apresentador, clique em Não responde.",
+      "observado": "Etapa 2: tela \"Ligação de segurança\" com os botões Recusar e Atender.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-29.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-29.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-30",
+      "n": 30,
+      "acao": "Clique em Atender, digite brigadeiro no campo da palavra de segurança e pressione Enter.",
+      "observado": "Tela \"Que bom que você está bem 💚\" com nota de modo demonstração sobre aviso silencioso aos contatos; o texto informa resolução na etapa \"Notificação\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-30.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-30.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-31",
+      "n": 31,
+      "acao": "Clique em Perfil, Privacidade e dados e Exportar meus dados (JSON).",
+      "observado": "O navegador baixou guardiao-meus-dados.json, que contém o nome, o telefone e o contato cadastrados no teste.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-31.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-31.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-32",
+      "n": 32,
+      "acao": "Clique em Apagar todos os meus dados, digite APAGAR e clique em Apagar tudo e recomeçar.",
+      "observado": "O app voltou à tela inicial do onboarding (1/9).",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-32.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-32.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Somente espaços no campo do Chat, seguidos de Enter.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Nenhuma mensagem foi adicionada e a tela seguiu em funcionamento; não apareceu mensagem de validação."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Texto longo no Chat: \"segurança no Pina \" repetido 300 vezes.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A mensagem foi enviada e o chat respondeu com os dados do Pina, sem erro na tela."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Texto \"apagar tudo agora\" no campo de confirmação da exclusão total.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O botão Apagar tudo e recomeçar permaneceu desabilitado."
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:sem-ia",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "rotulo": "Nenhuma biblioteca de IA nas dependências e nenhuma linha de código que cite provedores de IA"
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Web Speech API do navegador (SpeechRecognition)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/index.tsx",
+          "linha": 174,
+          "linha_fim": null,
+          "trecho": "rec.start()",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/index.tsx#L174",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/index.tsx",
+          "linha": 152,
+          "linha_fim": null,
+          "trecho": "const SR = (window as unknown as { SpeechRecognition?: new () => unknown; webkitSpeechRecognition?: new () => unknown }).SpeechRecognition",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/index.tsx#L152",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Reconhecimento de fala em pt-BR no modo voz do chat, quando o navegador oferece suporte."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Web Speech API do navegador (SpeechRecognition)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 260,
+          "linha_fim": null,
+          "trecho": "rec.start()",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L260",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 256,
+          "linha_fim": null,
+          "trecho": "rec.lang = 'pt-BR'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L256",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Transcrever a palavra de segurança dita na etapa de ligação da cascata."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "a Farmácia Santa Luzia fica a 120 m.",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L91",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/index.tsx",
+          "linha": 420,
+          "linha_fim": null,
+          "trecho": "Farmácia Santa Luzia — 120 m</p>",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/index.tsx#L420",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "No protocolo de urgência do chat, o local seguro e a distância (Farmácia Santa Luzia, 120 m) estão escritos no código.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-2",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 170,
+          "linha_fim": null,
+          "trecho": "agora evita 2 trechos com pouca iluminação e uma área com relatos de furto.",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L170",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A resposta de rota do chat afirma que evita 2 trechos escuros e uma área com furtos em texto fixo, qualquer que seja a rota escolhida.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-3",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 236,
+          "linha_fim": null,
+          "trecho": "O horário mais arriscado costuma ser entre 19h e 23h.",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L236",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A resposta sobre um bairro inclui um horário de maior risco (19h–23h) igual para todos os bairros.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-4",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "const roteiroInicial: FalaRoteiro[] = [",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "As falas da persona na ligação do modo disfarce vêm de um roteiro fixo de perguntas e respostas.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-5",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/rota-segura.tsx",
+          "linha": 135,
+          "linha_fim": null,
+          "trecho": "<p className=\"font-title font-bold text-lg text-text mt-1\">18 min</p>",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/rota-segura.tsx#L135",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/rota-segura.tsx",
+          "linha": 146,
+          "linha_fim": null,
+          "trecho": "<p className=\"font-title font-bold text-lg text-text mt-1\">22 min</p>",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/rota-segura.tsx#L146",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela de rota segura mostra tempos fixos de 18 min (mais rápida) e 22 min (mais segura) para qualquer destino.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-6",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/agente/index.tsx",
+          "linha": 88,
+          "linha_fim": null,
+          "trecho": "dados: '1.240 pontos de localização nos últimos 7 dias'",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/agente/index.tsx#L88",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Os dados que o agente diz ter coletado de cada fonte (pontos de localização, compromissos, viagens, rotas) são textos fixos.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-7",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/inicio/index.tsx",
+          "linha": 467,
+          "linha_fim": null,
+          "trecho": "'08:12 · Rota casa → trabalho dentro do padrão',",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/inicio/index.tsx#L467",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O card \"Atividade do agente\" da tela Início é uma lista fixa de três eventos.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-8",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/NoticiasView.tsx",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "const pctTendencia = tendencia === 'caindo' ? -12 : tendencia === 'subindo' ? 9 : 0",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/NoticiasView.tsx#L72",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A variação percentual de ocorrências do bairro na visão de notícias é um número fixo escolhido pela tendência (-12, 9 ou 0).",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:16",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/PedroOhashi/Hack-AI",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/PedroOhashi/Hack-AI",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:antes",
+      "rotulo": "Commits antes do início da janela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/PedroOhashi/Hack-AI/commit/cd6d8151910c90e0d7702e87cbd4ed218243f60d",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/PedroOhashi/Hack-AI/commit/cd6d8151910c90e0d7702e87cbd4ed218243f60d",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1 de 6 commits, o mais antigo em 28/11 08:16",
+      "obs": null,
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/PedroOhashi/Hack-AI/commit/1058fe584f3b361002853edbbcf4792bd31961a1",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/PedroOhashi/Hack-AI/commit/1058fe584f3b361002853edbbcf4792bd31961a1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1058fe5, 18174 linhas adicionadas em 147 arquivos, de 35944 no histórico",
+      "obs": "14905 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Safella",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://safella.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://safella.app/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App de segurança pessoal para mulheres (iOS e Android) com ligação e chat simulados por IA, SOS para contatos de confiança, acompanhamento de trajeto, timer de check-in, relatos da comunidade e mapa de segurança.",
+      "obs": "Em comum: Ligação simulada, alerta a contatos, aviso quando há parada, desvio ou atraso no trajeto, e mapa com relatos da comunidade. Diferente: A página não menciona aprendizado da rotina, palavra de segurança ou de coação, nem monitoramento de grupo por raio de proximidade."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Garly",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.producthunt.com/products/garly",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.producthunt.com/products/garly",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App Android de segurança pessoal com IA que aprende as rotinas do usuário, pergunta se está tudo bem após um período sem movimento e, sem resposta, inicia a contagem de SOS que alerta os contatos de confiança.",
+      "obs": "Em comum: Aprendizado de rotina por IA, verificação com o usuário e escalada automática para contatos quando não há resposta. Diferente: A página não menciona mapa colaborativo, ligação pedindo palavra de segurança, modo disfarce ou sessões em grupo."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "The UrSafe App",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/au/app/the-ursafe-app/id1481482887",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/au/app/the-ursafe-app/id1481482887",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App para iPhone com SOS acionado por voz mediante palavras de segurança, compartilhamento de localização, alertas ao vivo a contatos, grupos (Squads) e chamada ao número de emergência.",
+      "obs": "Em comum: Palavras de segurança, acionamento de contatos e emergência, e grupos de pessoas próximas; notas de versões antigas citam ligação falsa. Diferente: A página não menciona aprendizado de rotina nem mapa colaborativo de ocorrências; descreve também detecção de queda e de colisão."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "WeSafer",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/br/app/id1498257990",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/br/app/id1498257990",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App brasileiro para iPhone em que usuários compartilham ocorrências como assaltos em um mapa, recebem alertas sobre o trajeto, formam círculos com familiares e amigos e, no plano pago, têm um botão de pedido de ajuda atendido por operadores.",
+      "obs": "Em comum: Mapa colaborativo de ocorrências, rede de amigos e familiares e botão de ajuda que aciona contatos e serviço de emergência. Diferente: A página não menciona agente de IA que aprende a rotina, palavra de segurança ou modo disfarce; descreve compartilhamento de câmeras de segurança."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Kai Companion",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/us/app/kai-companion/id6756260239",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/us/app/kai-companion/id6756260239",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App para iOS que envia a localização aos contatos de confiança e liga para eles em sequência, com timer de check-in, detecção de queda, zonas de segurança e mapa de crimes em cidades selecionadas dos EUA.",
+      "obs": "Em comum: Escalada em cadeia para contatos, verificação que age quando não há resposta e mapa de ocorrências. Diferente: A página aberta não menciona palavra de segurança, ligação falsa ou aprendizado de rotina."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "TypeScript",
+              131,
+              15204
+            ],
+            [
+              "JSON",
+              32,
+              5843
+            ],
+            [
+              "Markdown",
+              17,
+              2669
+            ],
+            [
+              "JavaScript",
+              9,
+              375
+            ],
+            [
+              "CSS",
+              2,
+              76
+            ],
+            [
+              "HTML",
+              1,
+              20
+            ]
+          ]
+        }
+      },
+      "obs": "198 arquivos de texto e 24260 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Aplicação web (React + Vite)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/routes.tsx",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "export default function App() {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/routes.tsx#L85",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/routes.tsx",
+          "src/pages"
+        ]
+      },
+      "obs": "Interface em navegador com rotas de onboarding, início, rede, agente, cascata, chat, amigos e perfil."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Motor de chat por regras",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/chatEngine.ts",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "export function responder(mensagem: string, ctx: ContextoChat): Resposta {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/chatEngine.ts#L85",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/services/chatEngine.ts",
+          "src/pages/chat/index.tsx"
+        ]
+      },
+      "obs": "Classifica a mensagem por expressões regulares e monta a resposta com dados dos JSON."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Cascata e modo disfarce",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 116,
+          "linha_fim": null,
+          "trecho": "export default function Cascata() {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L116",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/chat/disfarce.tsx",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "export default function Disfarce() {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/chat/disfarce.tsx#L37",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/pages/cascata/index.tsx",
+          "src/pages/chat/disfarce.tsx"
+        ]
+      },
+      "obs": "Telas que simulam as etapas de alerta e a ligação falsa, com síntese de voz do navegador."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Estado persistente local",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/store/useStore.ts",
+          "linha": 203,
+          "linha_fim": null,
+          "trecho": "export const useStore = create<Estado>()(",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/store/useStore.ts#L203",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/store/useStore.ts"
+        ]
+      },
+      "obs": "Store Zustand gravado em localStorage com perfil, contatos, relatos, chat, sessões e eventos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Dados simulados",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/services/index.ts",
+          "linha": 99,
+          "linha_fim": null,
+          "trecho": "// Funções que simulam uma API — depois podem ser trocadas por chamadas reais.",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/services/index.ts#L99",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/services/index.ts",
+          "src/data"
+        ]
+      },
+      "obs": "Arquivos JSON de Recife servidos por funções assíncronas com atraso artificial."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Mapas",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/rede/MapaView.tsx",
+          "linha": 65,
+          "linha_fim": null,
+          "trecho": "export default function MapaView() {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/rede/MapaView.tsx#L65",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "src/pages/rede/MapaView.tsx",
+          "src/pages/rede/rota-segura.tsx",
+          "src/pages/amigos/estamos-juntos-sessao.tsx"
+        ]
+      },
+      "obs": "Mapas Leaflet com tiles do OpenStreetMap para alertas, áreas escuras, rotas e amigos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Aplicativo mobile (Expo)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/package.json",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "\"main\": \"expo-router/entry\",",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/package.json#L4",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/store/useStore.ts",
+          "linha": 316,
+          "linha_fim": null,
+          "trecho": "{ name: 'guardiao-store', storage: createJSONStorage(() => AsyncStorage) }",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/store/useStore.ts#L316",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "mobile/package.json",
+          "mobile/src/app",
+          "mobile/src/store/useStore.ts"
+        ]
+      },
+      "obs": "Versão React Native separada, com store em AsyncStorage e cópias dos dados e do motor de chat."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 174,
+          "linha_fim": null,
+          "trecho": "Aprende locais frequentes (DBSCAN sobre GPS)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L174",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/utils/index.ts",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "export function posicaoSimulada(casa: { lat: number; lng: number }, trabalho: { lat: number; lng: number }) {",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/utils/index.ts#L73",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README descreve um agente de IA em segundo plano, com monitoramento contínuo que aprende locais frequentes por DBSCAN sobre GPS.",
+              "Não há processo em segundo plano nem leitura de GPS no código; a posição do usuário é escolhida entre casa e trabalho conforme dia e hora."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 93,
+          "linha_fim": null,
+          "trecho": "máquina de estados auditável que cruza múltiplos sinais",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L93",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 166,
+          "linha_fim": null,
+          "trecho": "if (p >= 78) { clearInterval(int); return 78 }",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L166",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "src/pages/cascata/index.tsx",
+          "linha": 371,
+          "linha_fim": null,
+          "trecho": "<span>Limite: 60 · sensibilidade Equilibrada</span>",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/src/pages/cascata/index.tsx#L371",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README descreve uma cascata que cruza múltiplos sinais e escalona com níveis configuráveis de sensibilidade.",
+              "A tela de cascata usa sinais fixos por cenário, anima a pontuação até 78 e exibe o limite 60 como texto, sem ler a sensibilidade configurada."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/services/chatEngine.ts",
+          "linha": 94,
+          "linha_fim": null,
+          "trecho": "{ rotulo: 'Acionar meus contatos', acao: 'acionar_cascata' },",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/services/chatEngine.ts#L94",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/app/(tabs)/chat.tsx",
+          "linha": 68,
+          "linha_fim": null,
+          "trecho": "if (acao === 'cascata') router.push('/cascata')",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/app/(tabs)/chat.tsx#L68",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "mobile/src/app/(tabs)/chat.tsx",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "else enviar(acao)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/mobile/src/app/(tabs)/chat.tsx#L72",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README descreve a pasta mobile/ com o mesmo conteúdo da versão web.",
+              "O motor de chat mobile emite as ações `acionar_cascata` e `ligar_190`, e a tela de chat mobile trata `cascata` e `ligar190`; as demais são reenviadas como mensagem."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Guardião — Segurança Comunitária e Proteção Pessoal com IA",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 512 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "### ⚡ Como Rodar o Projeto (3 comandos — zero `.env`)",
+          "link": "https://github.com/PedroOhashi/Hack-AI/blob/104232245af0844a98e26450d04155928b28d95d/README.md#L19",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "um agente de IA aprende a rotina do usuário",
+      "motivo": "A tela Agente mostra rotina e percentual de conhecimento logo após pular o aprendizado em modo demonstração; o aprendizado ao longo de dias não é observável na sessão de teste.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

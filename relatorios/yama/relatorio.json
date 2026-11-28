@@ -1,0 +1,2526 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "yama",
+    "nome": "Yama",
+    "numero": 10,
+    "track": "Segurança",
+    "repo": "https://github.com/calafite/hackaton-thing",
+    "demo": null,
+    "video": "https://youtu.be/di2Y4Wo1CFE?is=OQSqFCuKGQ68nuu1",
+    "resumo": "Yama, onde posicionar cada viatura, decidido com dados criminais e regras de doutrina policial."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.483Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "5ecbfa78eff3cc0030abd8f51f45a19aa0531772",
+    "commit_em": "2026-11-28T19:04:09Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 62198
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6110,
+          "preparo_ms": 0,
+          "execucao_ms": 563
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4,
+          "preparo_ms": 0,
+          "execucao_ms": 2421
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3979,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6001,
+          "preparo_ms": 0,
+          "execucao_ms": 655
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3982,
+          "preparo_ms": 0,
+          "execucao_ms": 2077
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 177
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3141,
+          "preparo_ms": 0,
+          "execucao_ms": 3572
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 47
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6111,
+          "preparo_ms": 0,
+          "execucao_ms": 566
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6121,
+          "preparo_ms": 0,
+          "execucao_ms": 537
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 25
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "nao_informado"
+    },
+    "build": {
+      "estado": "verificado"
+    },
+    "fluxo": {
+      "estado": "verificado"
+    },
+    "ia": {
+      "estado": "falhou",
+      "erro": "nenhuma chamada a modelo de IA encontrada no código"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-0",
+      "n": 0,
+      "acao": "No repositório, instale o projeto: pip install .",
+      "esperado": "Os comandos dos passos seguintes rodam no terminal, na pasta do projeto",
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Suba o solver (`./target/release/solver --port 8080 --instances-dir ../data/processed`) e a web (`npm run dev`) e rode `curl -sS -i http://localhost:5173/`",
+      "esperado": "A resposta foi HTTP 200 com o título do planejador. O container não tinha `cargo` nem `web/node_modules`; Rust e `npm ci` foram instalados em uma cópia em /tmp antes do teste.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "<title>Yama — Planejador de Cobertura de Patrulhamento</title>",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-09.txt",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "➜  Local:   http://localhost:5173/",
+          "link": "capturas/uso/comando-09.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Carregue a amostra de dia todo com `curl -sS http://localhost:5173/examples/instance.small.json`",
+      "esperado": "O arquivo veio com HTTP 200 e contém 200 áreas, 80 pontos de patrulhamento e 24 setores.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "areas 200 pontos 80 setores 24",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Confira a conexão com `curl -sS http://localhost:5173/api/healthz` e mantenha o perfil `balanced` e a frota 14/4/2 da amostra",
+      "esperado": "O proxy da web respondeu `{\"status\":\"ok\"}` e a amostra declara 14 viaturas, 4 motos e 2 equipes táticas. O indicador na tela não foi visto.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "{\"status\":\"ok\"}",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "{'StandardPatrol': 14, 'MotoPatrol': 4, 'TacticalUnit': 2} time_windows False",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Gere o plano com `curl -sS -X POST http://localhost:5173/api/plan -H 'content-type: application/json' -d '{\"schema\":1,\"instance_ref\":\"instance.small\",\"p_max\":20,\"preset\":\"balanced\",\"fleet_pool\":{\"StandardPatrol\":14,\"MotoPatrol\":4,\"TacticalUnit\":2}}'`",
+      "esperado": "HTTP 200 em cerca de 0,06 s, com 20 unidades alocadas; o envio da amostra dentro da requisição, como a web faz, também devolveu HTTP 200. O teste incluiu `solver` com seed 1 e budget_ms 80.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-14.txt",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "plano 1 HTTP 200 em 0.062155s",
+          "link": "capturas/uso/comando-14.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-34.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "amostra enviada inline: HTTP 200",
+          "link": "capturas/uso/comando-34.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Leia na resposta de `POST /api/plan` os campos `summary_banner`, `sizing_curve` e `recommended_allocation.per_region`",
+      "esperado": "Cobertura de 84,2%, tempo médio de 2,6 min, cotovelo em 15 unidades e 5 de 24 setores abaixo da meta, três deles com 0%. O mapa e o painel na tela não foram vistos, e o `summary_banner` da API vem em inglês.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-34.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "covers 84.2% of weighted risk at 2.6 min mean response. SLA not met (5 region(s) below floor",
+          "link": "capturas/uso/comando-34.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "setores 24 abaixo do piso 5",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Repita o `POST /api/plan` trocando `preset` para `max_response` ou `stable_low_move`, ou `StandardPatrol` para 10",
+      "esperado": "Os três perfis devolveram posições diferentes, com cobertura de 84,19% (balanced), 82,68% (max_response) e 84,92% (stable_low_move). Com 10 viaturas (16 unidades) a cobertura foi 82,62%.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-17.txt",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "max_response unidades 20 cobertura 82.6835 tempo_medio_min 2.6389 hash_posicoes 3e61be18",
+          "link": "capturas/uso/comando-17.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-15.txt",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "balanced viaturas=10 -> unidades 16 cobertura 82.622 tempo_medio_min 2.7154",
+          "link": "capturas/uso/comando-15.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Gere o plano da cidade com `curl -sS -X POST http://localhost:5173/api/plan -H 'content-type: application/json' -d '{\"schema\":1,\"instance_ref\":\"instance\",\"p_max\":120,\"preset\":\"balanced\",\"fleet_pool\":{\"StandardPatrol\":84,\"MotoPatrol\":24,\"TacticalUnit\":12}}'`",
+      "esperado": "Instância com 8.896 áreas resolvida em cerca de 1,1 s: 120 unidades, 71,72% de cobertura e 2,77 min de tempo médio.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "plan HTTP 200 em 1.082068s",
+          "link": "capturas/uso/comando-16.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "unidades 120 cobertura 71.7225 tempo_medio_min 2.7681",
+          "link": "capturas/uso/comando-16.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "No painel Assistente, peça \"explique a solução\" e \"piores setores\"; no teste, a função de `ChatPanel.tsx` foi empacotada em uma cópia e rodada com `node harness.mjs`",
+      "esperado": "As duas entradas devolveram textos diferentes: o resumo do plano e a lista de três setores com 0%. O código do assistente se descreve como baseado em regras, sem modelo de linguagem; o painel na tela não foi aberto.",
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-28.txt",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "Frota completa alocada para este turno: 20 unidades. Cobertura de risco modelada: 84.2%; tempo médio de resposta: 2.6 min.",
+          "link": "capturas/uso/comando-28.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-28.txt",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "• dp_011: 0.0% (mínimo 60% ✗)",
+          "link": "capturas/uso/comando-28.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/plan.rs",
+          "linha": 558,
+          "linha_fim": null,
+          "trecho": "recommended_p,",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L558",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/LeftPanel.tsx",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "p_max: Math.max(1, fleetTotal(form, inst)),",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/LeftPanel.tsx#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/pipeline.py",
+          "linha": 112,
+          "linha_fim": null,
+          "trecho": "ap.add_argument(\"--routing\", choices=[\"haversine\", \"osm\"], default=\"haversine\")",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/pipeline.py#L112",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "data/processed/instance.small.json",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "\"external_id\": \"grid_287",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/instance.small.json#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "`recommended_p` é limitado pelo `p_max` informado; na aplicação web, `p_max` é o total de veículos digitado.",
+      "existe": "O solver devolve frota recomendada, cotovelo da curva, posição de cada unidade, cobertura e tempo médio de resposta, a partir de crimes ponderados e de tempos de deslocamento da instância.",
+      "falta": "Nas instâncias versionadas os pontos-base vêm de grade (`grid_`) e os tempos do cálculo haversine com fator de circuidade, não da malha viária.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A partir das estatísticas históricas de crimes e da malha viária da cidade, ele responde a três perguntas: quantas equipes são necessárias, onde posicionar cada uma e qual a cobertura de risco e o tempo de resposta resultantes.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "A partir das estatísticas históricas de crimes e da malha viária da cidade, ele responde a três perguntas: quantas equipes são necessárias, onde posicionar cada uma e qual a cobertura de risco e o tempo de resposta resultantes.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/build.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "h3.latlng_to_cell(lat, lon, config.H3_RESOLUTION)",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/build.py#L64",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/sources/osm.py",
+          "linha": 171,
+          "linha_fim": null,
+          "trecho": "lengths = nx.single_source_dijkstra_path_length(",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L171",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/pipeline.py",
+          "linha": 94,
+          "linha_fim": null,
+          "trecho": "pb_to_cell, pb_to_pb = osm.travel_times_haversine(pbs, cells)",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/pipeline.py#L94",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "data/processed/instance.small.json",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "\"external_id\": \"grid_287",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/instance.small.json#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "A matriz OSM em H3 resolução 8 (`travel_osm_r8.npz`) está em `data/processed/hex_r8`; não há `instance.hex_r8.json` versionada.",
+      "existe": "Agregação dos crimes em hexágonos H3 (resolução 9) e código de tempos por Dijkstra na malha OSM, ativado com `--routing osm` ou via `etl/hex_travel.py`.",
+      "falta": "O padrão do pipeline é `haversine`, e as quatro instâncias `instance*.json` versionadas têm pontos-base de grade (`grid_`), gerados sem o grafo OSM.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "uma Pipeline de dados que agrega os crimes de São Paulo em hexágonos H3 e estima os tempos de deslocamento pela malha do OpenStreetMap",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "uma Pipeline de dados que agrega os crimes de São Paulo em hexágonos H3 e estima os tempos de deslocamento pela malha do OpenStreetMap",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/plan.rs",
+          "linha": 311,
+          "linha_fim": null,
+          "trecho": "let result = sweep(",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L311",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/solvers/mod.rs",
+          "linha": 300,
+          "linha_fim": null,
+          "trecho": "pub fn sweep<'a>(",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L300",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "Solver em Rust que varre os tamanhos de frota e atribui unidades a pontos-base, com orçamento de trabalho derivado de `budget_ms`; não há tempo de execução registrado no repositório.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um solver de otimização em Rust que dimensiona a frota e posiciona as equipes em poucos segundos",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "um solver de otimização em Rust que dimensiona a frota e posiciona as equipes em poucos segundos",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Sem navegador no ambiente: o servidor Vite respondeu, mas o mapa, os agrupamentos e as cores não foram vistos."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/MapView.tsx",
+          "linha": 202,
+          "linha_fim": null,
+          "trecho": "\"fill-color\": [\"case\", keepsTier, tierColor, covColor],",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/MapView.tsx#L202",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/MapView.tsx",
+          "linha": 171,
+          "linha_fim": null,
+          "trecho": "cluster: true,",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/MapView.tsx#L171",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/LeftPanel.tsx",
+          "linha": 135,
+          "linha_fim": null,
+          "trecho": "<option value=\"stable_low_move\">Cobertura estável</option>",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/LeftPanel.tsx#L135",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "Mapa MapLibre com hexágonos coloridos por classificação de zona e demanda antes do plano e por cobertura depois, agrupamento de equipes e três perfis.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "uma Interface Web em React + MapLibre contendo um mapa com os hexágonos coloridos por risco e por cobertura, equipes próximas agrupadas e perfis de planejamento.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "uma Interface Web em React + MapLibre contendo um mapa com os hexágonos coloridos por risco e por cobertura, equipes próximas agrupadas e perfis de planejamento.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "| **284.941** | boletins de ocorrência de São Paulo alimentam o mapa de risco |",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L28",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "data/processed/hex_r8/relatorio.json",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "\"bos_na_malha\": 285539,",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/hex_r8/relatorio.json#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "O número 284.941 está no README; não foi achado log ou relatório do pipeline que o registre. `hex_r8/relatorio.json`, de outro conjunto (H3 r8), registra 285539 boletins na malha.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**284.941** | boletins de ocorrência de São Paulo alimentam o mapa de risco",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 28,
+        "linha_fim": null,
+        "trecho": "**284.941** | boletins de ocorrência de São Paulo alimentam o mapa de risco",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L28",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/tests/plan.rs",
+          "linha": 1106,
+          "linha_fim": null,
+          "trecho": "fn report_numbers() {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/tests/plan.rs#L1106",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "Há um teste marcado `#[ignore]` que imprime o tempo para `instance.json` e `instance.small.json` com `p_max` 20 e 30; não há saída registrada nem medição com 120 veículos.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**~1 segundo** | para planejar a cidade inteira; 0,1 segundo nas instâncias pequenas",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 30,
+        "linha_fim": null,
+        "trecho": "**~1 segundo** | para planejar a cidade inteira; 0,1 segundo nas instâncias pequenas",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L30",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/config.py",
+          "linha": 122,
+          "linha_fim": null,
+          "trecho": "FLEET_COUNTS: dict[str, int] = {\"StandardPatrol\": 84, \"MotoPatrol\": 24, \"TacticalUnit\": 12}",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/config.py#L122",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/plan.rs",
+          "linha": 360,
+          "linha_fim": null,
+          "trecho": "let pct = 100.0 * m.coverage;",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L360",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "O solver calcula a métrica e a frota padrão do ETL soma 120 (84+24+12), mas não foi achado teste ou arquivo de saída que registre 71,7%.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**71,7%** | de cobertura de risco modelada com 120 veículos, 4% da frota de referência",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 31,
+        "linha_fim": null,
+        "trecho": "**71,7%** | de cobertura de risco modelada com 120 veículos, 4% da frota de referência",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L31",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/eval/mod.rs",
+          "linha": 184,
+          "linha_fim": null,
+          "trecho": "mean_response_min: resp_sum / problem.total_demand,",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L184",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/problem.rs",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "pub const T_PEN: f64 = 15.0;",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L11",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "O tempo médio é calculado pelo modelo, com penalidade de 15 min para áreas não alcançadas; não foi achado teste ou arquivo de saída que registre 2,8 minutos.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**2,8 minutos** | de tempo médio de resposta modelado nesse mesmo plano",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 32,
+        "linha_fim": null,
+        "trecho": "**2,8 minutos** | de tempo médio de resposta modelado nesse mesmo plano",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L32",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/plan.rs",
+          "linha": 364,
+          "linha_fim": null,
+          "trecho": "curve.push(SizingPoint {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L364",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/plan.rs",
+          "linha": 384,
+          "linha_fim": null,
+          "trecho": "let min_p_meeting_sla = curve.iter().find(|pt| pt.sla_met).map(|pt| pt.p);",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L384",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/App.tsx",
+          "linha": 139,
+          "linha_fim": null,
+          "trecho": "<CurveChart curve={plan.sizing_curve} recommended={plan.recommended_p} elbow={plan.elbow_p} />",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L139",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "O solver monta a curva, o cotovelo e `min_p_meeting_sla`; o gráfico web marca o cotovelo e a frota recomendada e destaca os pontos que atendem às metas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Uma curva de dimensionamento mostra a cobertura para cada tamanho de frota, onde os ganhos começam a diminuir e a menor frota que atende às metas de serviço.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 60,
+        "linha_fim": 62,
+        "trecho": "Uma curva de dimensionamento mostra a cobertura para cada tamanho de frota, onde os ganhos começam a diminuir e a menor frota que atende às metas de serviço.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L60-L62",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-api/src/server.rs",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": ".route(\"/rebalance\", post(rebalance))",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-api/src/server.rs#L52",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/rebalance.rs",
+          "linha": 593,
+          "linha_fim": null,
+          "trecho": "let Some(c) = search.best(&cands, |c| c.d_unc < -tol && c.d_j < -tol) else {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/rebalance.rs#L593",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "A rota `/rebalance` existe no solver, com limite de realocações e de ganho mínimo; em `web/src` não há chamada a ela.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O `/rebalance` propõe um pequeno número de realocações para cobrir a lacuna deixada por unidades empenhadas em ocorrências.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 63,
+        "linha_fim": 65,
+        "trecho": "O `/rebalance` propõe um pequeno número de realocações para cobrir a lacuna deixada por unidades empenhadas em ocorrências.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L63-L65",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/eval/mod.rs",
+          "linha": 235,
+          "linha_fim": null,
+          "trecho": "if pl.count > 0 && !problem.is_allowed(pb, t) {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L235",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/sources/osm.py",
+          "linha": 79,
+          "linha_fim": null,
+          "trecho": "[\"TacticalUnit\"] if interior.iloc[k] else all_types for k in range(len(pbs))",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L79",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/sources/osm.py",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "near = near | (pts_m.distance(poly_m.boundary) <= config.ENCLAVE_PERIMETER_M)",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L69",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/problem.rs",
+          "linha": 639,
+          "linha_fim": null,
+          "trecho": "if !(u.allows_tier(tier) || gamma < 1.0) {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L639",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "O solver impõe tipos permitidos e pareamento; nos pontos-base, o ETL deriva a zona de três retângulos fixos e libera os três tipos na faixa de 300 m dos dois lados da borda.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Zonas proibidas: um tipo de veículo nunca é colocado onde não é permitido (por exemplo, só equipes táticas entram em áreas de alto risco armado, e apenas em duplas; os demais veículos cobrem essas áreas a partir do perímetro).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 69,
+        "linha_fim": 72,
+        "trecho": "Zonas proibidas: um tipo de veículo nunca é colocado onde não é permitido (por exemplo, só equipes táticas entram em áreas de alto risco armado, e apenas em duplas; os demais veículos cobrem essas áreas a partir do perímetro).",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L69-L72",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "Planos são devolvidos com setores abaixo da meta: 16 de 94 na cidade com 120 veículos, e 5 de 24 na amostra com 20, três deles com 0% e sem ponto-base no próprio setor."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/eval/mod.rs",
+          "linha": 119,
+          "linha_fim": null,
+          "trecho": "- obj.lambda2 * deficit",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L119",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/config.py",
+          "linha": 152,
+          "linha_fim": null,
+          "trecho": "REGION_COVERAGE_FLOOR = 0.60",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/config.py#L152",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/eval/mod.rs",
+          "linha": 217,
+          "linha_fim": null,
+          "trecho": "/// Checks every hard constraint of the positioning model.",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L217",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": null,
+      "existe": "Cada distrito tem piso de cobertura (0,60 no ETL), que entra como penalidade na função objetivo e é informado como atingido ou não.",
+      "falta": "Não há restrição rígida: a validação do posicionamento não verifica os pisos, e um plano pode deixar distritos abaixo da meta.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Equidade entre distritos: cada distrito tem uma meta mínima de cobertura, de modo que o plano não pode simplesmente concentrar todos os veículos no centro da cidade.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 75,
+        "linha_fim": 77,
+        "trecho": "Equidade entre distritos: cada distrito tem uma meta mínima de cobertura, de modo que o plano não pode simplesmente concentrar todos os veículos no centro da cidade.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L75-L77",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/eval/mod.rs",
+          "linha": 120,
+          "linha_fim": null,
+          "trecho": "- obj.pmedian_weight * (resp_sum / total / T_PEN)",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L120",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/eval/mod.rs",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "pub const PMEDIAN_WEIGHT: f64 = 0.15;",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "A função objetivo soma a cobertura ponderada pela demanda e subtrai o tempo médio de resposta normalizado (peso 0,15).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Máxima cobertura (cobrir o máximo possível de demanda) mais um termo de p-mediana (manter baixo o tempo de resposta ponderado pela demanda), em vez de apenas um deles.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 102,
+        "linha_fim": 105,
+        "trecho": "Máxima cobertura (cobrir o máximo possível de demanda) mais um termo de p-mediana (manter baixo o tempo de resposta ponderado pela demanda), em vez de apenas um deles.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L102-L105",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/reach.rs",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": ".sqrt()",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/reach.rs#L42",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/reach.rs",
+          "linha": 43,
+          "linha_fim": null,
+          "trecho": ".clamp(params.reach_scale_min, params.reach_scale_max),",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/reach.rs#L43",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/model/preset.rs",
+          "linha": 63,
+          "linha_fim": null,
+          "trecho": "pub const DEFAULT_REACH_SCALE_MAX: f64 = 2.0;",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/model/preset.rs#L63",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "Raiz de referência/frota com limites padrão 0,5 e 2,0, ajustáveis por `overrides`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O alcance é escalado por `raiz(frota de referência / frota informada)`, limitado entre 0,5× e 2×.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 118,
+        "linha_fim": 119,
+        "trecho": "O alcance é escalado por `raiz(frota de referência / frota informada)`, limitado entre 0,5× e 2×.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L118-L119",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/problem.rs",
+          "linha": 437,
+          "linha_fim": null,
+          "trecho": "let tier = active.and_then(|o| o.zone_tier).unwrap_or(cell.zone_tier);",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L437",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/problem.rs",
+          "linha": 277,
+          "linha_fim": null,
+          "trecho": "let (mu_car, mu_moto) = window.map_or((1.0, 1.0), |w| {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L277",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/plan.rs",
+          "linha": 171,
+          "linha_fim": null,
+          "trecho": "instance.resolve_time_window(request.time_window.as_deref(), request.hour_of_day)?;",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L171",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "O solver aplica janelas a demanda, zona e deslocamento; as instâncias `instance*.json` versionadas não têm `time_windows` e a aplicação web não tem seletor de turno.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Janelas de horário opcionais alteram demanda, níveis de zona e tempos de deslocamento por turno.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 129,
+        "linha_fim": 130,
+        "trecho": "Janelas de horário opcionais alteram demanda, níveis de zona e tempos de deslocamento por turno.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L129-L130",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/solvers/mod.rs",
+          "linha": 309,
+          "linha_fim": null,
+          "trecho": "let mut rng = ChaCha8Rng::seed_from_u64(seed);",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L309",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/tests/plan.rs",
+          "linha": 354,
+          "linha_fim": null,
+          "trecho": "fn same_seed_gives_identical_response() {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/tests/plan.rs#L354",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/solvers/mod.rs",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "let safety = Duration::from_millis(budget_ms.saturating_mul(10).max(3000));",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L71",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "Gerador ChaCha8 com semente e teste de igualdade que ignora `elapsed_ms`; há também um corte de segurança por relógio, sinalizado em `wall_clock_cutoff`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A mesma semente sempre produz a mesma resposta.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 133,
+        "linha_fim": null,
+        "trecho": "A mesma semente sempre produz a mesma resposta.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L133",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/solvers/mod.rs",
+          "linha": 161,
+          "linha_fim": null,
+          "trecho": "pub fn greedy_fill(st: &mut State, limits: &Limits) {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L161",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/solvers/mod.rs",
+          "linha": 179,
+          "linha_fim": null,
+          "trecho": "pub fn local_search(st: &mut State, limits: &Limits, budget: &mut Budget) -> bool {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L179",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/solvers/mod.rs",
+          "linha": 239,
+          "linha_fim": null,
+          "trecho": "pub fn ils(st: &mut State, limits: &Limits, rng: &mut ChaCha8Rng, budget: &mut Budget) -> usize {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L239",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/rebalance.rs",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "const ALGO: &str = \"greedy_best_improvement\";",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/rebalance.rs#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "Há construção gulosa, trocas no estilo Teitz–Bart, ILS com semente e melhor melhoria gulosa no rebalanceamento.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Busca: construção gulosa, busca local por trocas de Teitz–Bart e busca local iterada com semente; melhor melhoria gulosa para o rebalanceamento.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 172,
+        "linha_fim": 173,
+        "trecho": "Busca: construção gulosa, busca local por trocas de Teitz–Bart e busca local iterada com semente; melhor melhoria gulosa para o rebalanceamento.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L172-L173",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/ChatPanel.tsx",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "function answer(q: string, inst: Instance | null, plan: PlanResponse | null): string {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/ChatPanel.tsx#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/ChatPanel.tsx",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "if (/(coverage|cobertura)/.test(s) && !/(floor|piso|mínim)/.test(s)) return",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/ChatPanel.tsx#L26",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "O assistente responde por expressões regulares com textos escritos no código; não foi achada biblioteca ou chamada de modelo na aplicação.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A aplicação em si não usa nenhum modelo de aprendizado de máquina nem de linguagem. O assistente dentro da aplicação é baseado em regras.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 177,
+        "linha_fim": 179,
+        "trecho": "A aplicação em si não usa nenhum modelo de aprendizado de máquina nem de linguagem. O assistente dentro da aplicação é baseado em regras.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L177-L179",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A troca automática e o aviso na tela exigem navegador. Chamada por script, a função `solveLocal` devolveu um plano identificado como demonstração local."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/App.tsx",
+          "linha": 94,
+          "linha_fim": null,
+          "trecho": "if (form.useLocal || backendUp === false) {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L94",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/App.tsx",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "const p = solveLocal(instance, req);",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L103",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/components/LeftPanel.tsx",
+          "linha": 181,
+          "linha_fim": null,
+          "trecho": "Resultado da demonstração no navegador — útil para explorar a interface, mas não é uma recomendação operacional do solucionador Rust.",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/LeftPanel.tsx#L181",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "A aplicação usa `solveLocal` quando o serviço está indisponível ou a chamada falha, e mostra um aviso de demonstração no resultado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se o solver não estiver acessível, a aplicação web recorre a um pequeno solver de demonstração no navegador e identifica os resultados como demonstração.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 267,
+        "linha_fim": 268,
+        "trecho": "Se o solver não estiver acessível, a aplicação web recorre a um pequeno solver de demonstração no navegador e identifica os resultados como demonstração.",
+        "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L267-L268",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "20 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o projeto não abre página web"
+      },
+      "valor": "0 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:outras-pastas",
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o build automático executa uma pasta por projeto; a executada foi a raiz"
+      },
+      "valor": {
+        "lista": [
+          "web"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Suba o solver (`./target/release/solver --port 8080 --instances-dir ../data/processed`) e a web (`npm run dev`) e rode `curl -sS -i http://localhost:5173/`",
+      "observado": "A resposta foi HTTP 200 com o título do planejador. O container não tinha `cargo` nem `web/node_modules`; Rust e `npm ci` foram instalados em uma cópia em /tmp antes do teste.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "<title>Yama — Planejador de Cobertura de Patrulhamento</title>",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-09.txt",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "➜  Local:   http://localhost:5173/",
+          "link": "capturas/uso/comando-09.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Carregue a amostra de dia todo com `curl -sS http://localhost:5173/examples/instance.small.json`",
+      "observado": "O arquivo veio com HTTP 200 e contém 200 áreas, 80 pontos de patrulhamento e 24 setores.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "areas 200 pontos 80 setores 24",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Confira a conexão com `curl -sS http://localhost:5173/api/healthz` e mantenha o perfil `balanced` e a frota 14/4/2 da amostra",
+      "observado": "O proxy da web respondeu `{\"status\":\"ok\"}` e a amostra declara 14 viaturas, 4 motos e 2 equipes táticas. O indicador na tela não foi visto.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "{\"status\":\"ok\"}",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-13.txt",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "{'StandardPatrol': 14, 'MotoPatrol': 4, 'TacticalUnit': 2} time_windows False",
+          "link": "capturas/uso/comando-13.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Gere o plano com `curl -sS -X POST http://localhost:5173/api/plan -H 'content-type: application/json' -d '{\"schema\":1,\"instance_ref\":\"instance.small\",\"p_max\":20,\"preset\":\"balanced\",\"fleet_pool\":{\"StandardPatrol\":14,\"MotoPatrol\":4,\"TacticalUnit\":2}}'`",
+      "observado": "HTTP 200 em cerca de 0,06 s, com 20 unidades alocadas; o envio da amostra dentro da requisição, como a web faz, também devolveu HTTP 200. O teste incluiu `solver` com seed 1 e budget_ms 80.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-14.txt",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "plano 1 HTTP 200 em 0.062155s",
+          "link": "capturas/uso/comando-14.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-34.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "amostra enviada inline: HTTP 200",
+          "link": "capturas/uso/comando-34.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Leia na resposta de `POST /api/plan` os campos `summary_banner`, `sizing_curve` e `recommended_allocation.per_region`",
+      "observado": "Cobertura de 84,2%, tempo médio de 2,6 min, cotovelo em 15 unidades e 5 de 24 setores abaixo da meta, três deles com 0%. O mapa e o painel na tela não foram vistos, e o `summary_banner` da API vem em inglês.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-34.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "covers 84.2% of weighted risk at 2.6 min mean response. SLA not met (5 region(s) below floor",
+          "link": "capturas/uso/comando-34.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-18.txt",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "setores 24 abaixo do piso 5",
+          "link": "capturas/uso/comando-18.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Repita o `POST /api/plan` trocando `preset` para `max_response` ou `stable_low_move`, ou `StandardPatrol` para 10",
+      "observado": "Os três perfis devolveram posições diferentes, com cobertura de 84,19% (balanced), 82,68% (max_response) e 84,92% (stable_low_move). Com 10 viaturas (16 unidades) a cobertura foi 82,62%.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-17.txt",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "max_response unidades 20 cobertura 82.6835 tempo_medio_min 2.6389 hash_posicoes 3e61be18",
+          "link": "capturas/uso/comando-17.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-15.txt",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "balanced viaturas=10 -> unidades 16 cobertura 82.622 tempo_medio_min 2.7154",
+          "link": "capturas/uso/comando-15.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Gere o plano da cidade com `curl -sS -X POST http://localhost:5173/api/plan -H 'content-type: application/json' -d '{\"schema\":1,\"instance_ref\":\"instance\",\"p_max\":120,\"preset\":\"balanced\",\"fleet_pool\":{\"StandardPatrol\":84,\"MotoPatrol\":24,\"TacticalUnit\":12}}'`",
+      "observado": "Instância com 8.896 áreas resolvida em cerca de 1,1 s: 120 unidades, 71,72% de cobertura e 2,77 min de tempo médio.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "plan HTTP 200 em 1.082068s",
+          "link": "capturas/uso/comando-16.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-16.txt",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "unidades 120 cobertura 71.7225 tempo_medio_min 2.7681",
+          "link": "capturas/uso/comando-16.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "No painel Assistente, peça \"explique a solução\" e \"piores setores\"; no teste, a função de `ChatPanel.tsx` foi empacotada em uma cópia e rodada com `node harness.mjs`",
+      "observado": "As duas entradas devolveram textos diferentes: o resumo do plano e a lista de três setores com 0%. O código do assistente se descreve como baseado em regras, sem modelo de linguagem; o painel na tela não foi aberto.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-28.txt",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "Frota completa alocada para este turno: 20 unidades. Cobertura de risco modelada: 84.2%; tempo médio de resposta: 2.6 min.",
+          "link": "capturas/uso/comando-28.txt",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-28.txt",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "• dp_011: 0.0% (mínimo 60% ✗)",
+          "link": "capturas/uso/comando-28.txt",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: `solver plan` sem argumentos",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-31.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "error: the following required arguments were not provided:",
+          "link": "capturas/uso/comando-31.txt",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Mensagem com os argumentos obrigatórios e o modo de uso, código de saída 2."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: `solver plan --instance nao_existe.json --p-max 20`",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-31.txt",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "\"message\": \"instance file nao_existe.json not found\"",
+          "link": "capturas/uso/comando-31.txt",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Erro em JSON com o código `instance_not_found`, código de saída 1."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: `POST /plan` com `instance_ref` de 100.000 caracteres",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "capturas/uso/comando-32.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "instance_ref com 100000 caracteres: HTTP 404, 100106 bytes",
+          "link": "capturas/uso/comando-32.txt",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "HTTP 404 com `instance_not_found`; a resposta repete o texto enviado (100.106 bytes) e o `/healthz` seguiu respondendo."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Interface web no navegador (mapa, painéis, painel Assistente, indicador de modo de demonstração)",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O ambiente de teste não tem navegador; os passos foram exercitados por HTTP, pela CLI e por scripts que chamam funções do código."
+      },
+      "evidencias": []
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:sem-ia",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "rotulo": "Nenhuma biblioteca de IA nas dependências e nenhuma linha de código que cite provedores de IA"
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:28",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/calafite/hackaton-thing",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/calafite/hackaton-thing",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:antes",
+      "rotulo": "Commits antes do início da janela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/calafite/hackaton-thing/commit/2d2a517b51f47d67f9b99892b232e84c3c70d96f",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/calafite/hackaton-thing/commit/2d2a517b51f47d67f9b99892b232e84c3c70d96f",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1 de 65 commits, o mais antigo em 28/11 08:44",
+      "obs": null,
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/calafite/hackaton-thing/commit/8e2c998e3bc56f7a911919cdd790e4da843888f5",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/calafite/hackaton-thing/commit/8e2c998e3bc56f7a911919cdd790e4da843888f5",
+          "conferida": "script"
+        }
+      ],
+      "valor": "8e2c998, 110716 linhas adicionadas em 23 arquivos, de 144026 no histórico",
+      "obs": "110716 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Abordagem para otimização da alocação de viaturas policiais (Gláucio Bezerra Rocha, UFPB, 2022)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://repositorio.ufpb.br/jspui/handle/123456789/26689",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://repositorio.ufpb.br/jspui/handle/123456789/26689",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Dissertação que agrupa áreas a partir de registros de ocorrências policiais, prevê o volume de crimes em cada uma e recomenda locais para viaturas com um modelo de máxima cobertura capacitada.",
+      "obs": "Em comum: Usa dados criminais e um modelo de cobertura para decidir onde posicionar viaturas, como apoio à decisão de gestores de segurança pública. Diferente: O resumo descreve uma etapa de previsão de crimes e não descreve o cálculo do tamanho da frota nem uma interface web."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Problema de alocação de viaturas policiais em João Pessoa-PB (Valtania Ferreira da Silva, UFPB)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://repositorio.ufpb.br/jspui/handle/tede/5264",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://repositorio.ufpb.br/jspui/handle/tede/5264",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Trabalho que trata o posicionamento de viaturas como problema de localização de facilidades, mapeia ocorrências em SIG e entrega uma ferramenta web de apoio à decisão espacial com modelo de cobertura e cobertura de retaguarda.",
+      "obs": "Em comum: Combina dados de crimes, mapa, otimização e uma ferramenta web para decidir onde colocar viaturas. Diferente: Compara três formas de escolher locais candidatos (gestor, p-medianas e k-means) e usa meta-heurísticas com GRASP; o resumo não descreve o cálculo do tamanho da frota."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "Q-Patrol",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Nyx0004/Q-Patrol",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Nyx0004/Q-Patrol",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Protótipo de código aberto, baseado em SIG, para planejamento de patrulhamento e despacho de emergências, que explora como distribuir um número limitado de unidades policiais pela cidade.",
+      "obs": "Em comum: Posiciona unidades de patrulha a partir de risco espacial, usa rotas pela malha viária e mostra o resultado em um mapa web. Diferente: Usa QUBO e QAOA simulado, com um MILP como referência, e interface em Streamlit com Folium; inclui despacho de chamados SOS, e o README não define uma métrica de cobertura."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Determining optimal police patrol deployments (tese de doutorado, University of Leeds)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://etheses.whiterose.ac.uk/id/eprint/32838/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://etheses.whiterose.ac.uk/id/eprint/32838/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Propõe uma ferramenta de apoio à decisão para planejar a distribuição de patrulhas, com um modelo baseado em agentes que avalia cada distribuição e um algoritmo genético que busca outras melhores, com estudo de caso em Detroit.",
+      "obs": "Em comum: Apoia o planejamento do posicionamento de patrulhas policiais com otimização, considerando o tempo de resposta a ocorrências. Diferente: Avalia as distribuições por simulação baseada em agentes e também considera a dissuasão de crimes em áreas-chave."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Patrol Car Allocation Model (PCAM85)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/patrol-car-allocation-model-executive-summary-1985",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/patrol-car-allocation-model-executive-summary-1985",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Programa de computador de 1985 que ajuda agências policiais a decidir quantas viaturas manter em serviço em cada comando geográfico e a alocá-las segundo padrões de desempenho definidos pelo usuário.",
+      "obs": "Em comum: Responde quantas viaturas são necessárias e como distribuí-las para atender a metas de desempenho, para planejadores policiais. Diferente: Distribui viaturas por comando e turno a partir do número e da duração esperados de chamados; o resumo não descreve mapa nem posicionamento de cada equipe."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Rust",
+              25,
+              9478
+            ],
+            [
+              "Python",
+              22,
+              3591
+            ],
+            [
+              "Markdown",
+              10,
+              2109
+            ],
+            [
+              "TypeScript",
+              14,
+              1764
+            ],
+            [
+              "JSON",
+              12,
+              721
+            ],
+            [
+              "CSS",
+              1,
+              128
+            ],
+            [
+              "TOML",
+              4,
+              104
+            ],
+            [
+              "HTML",
+              1,
+              13
+            ]
+          ]
+        }
+      },
+      "obs": "105 arquivos de texto e 59023 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Pipeline de instâncias (Python)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/pipeline.py",
+          "linha": 106,
+          "linha_fim": null,
+          "trecho": "def main() -> int:",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/pipeline.py#L106",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "etl/pipeline.py",
+          "etl/build.py",
+          "etl/sources/ssp_sp.py",
+          "etl/sources/osm.py",
+          "etl/config.py"
+        ]
+      },
+      "obs": "Lê os boletins da SSP-SP, agrega em hexágonos H3, gera pontos-base e tempos de deslocamento e grava a instância JSON."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Dataset H3 r8 e matriz OSM",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/hex_dataset.py",
+          "linha": 302,
+          "linha_fim": null,
+          "trecho": "def main(argv: list[str] | None = None) -> None:",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/hex_dataset.py#L302",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/hex_travel.py",
+          "linha": 109,
+          "linha_fim": null,
+          "trecho": "def main(argv: list[str] | None = None) -> None:",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/hex_travel.py#L109",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/hex_instance.py",
+          "linha": 187,
+          "linha_fim": null,
+          "trecho": "def main(argv: list[str] | None = None) -> None:",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/hex_instance.py#L187",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "etl/hex_dataset.py",
+          "etl/hex_travel.py",
+          "etl/hex_instance.py"
+        ]
+      },
+      "obs": "Caminho separado que monta um conjunto em H3 resolução 8, calcula tempos pela malha OSM e converte em instância."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "solver-core (Rust)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/plan.rs",
+          "linha": 149,
+          "linha_fim": null,
+          "trecho": "pub fn plan(instance: &Instance, request: &PlanRequest) -> Result<PlanResponse, SolveError> {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L149",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-core/src/rebalance.rs",
+          "linha": 377,
+          "linha_fim": null,
+          "trecho": "pub fn rebalance(",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/rebalance.rs#L377",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "solver/solver-core/src/plan.rs",
+          "solver/solver-core/src/problem.rs",
+          "solver/solver-core/src/solvers/mod.rs",
+          "solver/solver-core/src/eval/mod.rs",
+          "solver/solver-core/src/rebalance.rs"
+        ]
+      },
+      "obs": "Valida a instância, aplica as regras de doutrina e calcula posicionamento, curva de frota e rebalanceamento."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "solver-api (HTTP e linha de comando)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-api/src/main.rs",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "fn main() -> ExitCode {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-api/src/main.rs#L6",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "solver/solver-api/src/server.rs",
+          "linha": 51,
+          "linha_fim": null,
+          "trecho": ".route(\"/plan\", post(plan))",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-api/src/server.rs#L51",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "solver/solver-api/src/main.rs",
+          "solver/solver-api/src/server.rs",
+          "solver/solver-api/src/cli.rs",
+          "solver/solver-api/src/store.rs"
+        ]
+      },
+      "obs": "Expõe o solver por rotas HTTP e subcomandos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Aplicação web (React + MapLibre)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/App.tsx",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "export default function App() {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L12",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/api.ts",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "export async function postPlan(req: PlanRequest, base = API_BASE): Promise<PlanResponse> {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/api.ts#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "web/src/App.tsx",
+          "web/src/components/MapView.tsx",
+          "web/src/components/LeftPanel.tsx",
+          "web/src/components/ChatPanel.tsx",
+          "web/src/api.ts"
+        ]
+      },
+      "obs": "Carrega a instância, envia o pedido de plano e mostra mapa, resultados, curva e assistente por regras."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Solver de demonstração no navegador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/localSolver.ts",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "export function solveLocal(inst: Instance, req: PlanRequest): PlanResponse {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/localSolver.ts#L19",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "web/src/localSolver.ts"
+        ]
+      },
+      "obs": "Implementação gulosa em TypeScript usada quando o serviço Rust está indisponível ou o usuário a seleciona."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Análise ISP-RJ",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/isp_map.py",
+          "linha": 434,
+          "linha_fim": null,
+          "trecho": "def main() -> int:",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/isp_map.py#L434",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "etl/isp_map.py",
+          "maps/isp-crime-police.html"
+        ]
+      },
+      "obs": "Script separado que gera o mapa de crime e atividade policial do Rio de Janeiro."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ARCHITECTURE.md",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "travel times via OSRM / OSM routing graphs (replacing straight-line distance),",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L72",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/sources/osm.py",
+          "linha": 210,
+          "linha_fim": null,
+          "trecho": "* config.CIRCULARITY",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L210",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "data/processed/instance.small.json",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "\"external_id\": \"grid_287",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/instance.small.json#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "ARCHITECTURE.md descreve tempos de deslocamento por rotas OSRM/OSM, substituindo a distância em linha reta.",
+              "As instâncias `instance*.json` versionadas têm pontos-base de grade, caminho em que o pipeline calcula os tempos por haversine com fator de circuidade; não foi achado uso de OSRM no código."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ARCHITECTURE.md",
+          "linha": 193,
+          "linha_fim": null,
+          "trecho": "| GeoSampa | District/sector boundaries, slope/viela & social vulnerability layers |",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L193",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/sources/geosampa.py",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "\"\"\"GeoSampa / IPVS socio-territorial vulnerability layer — NOT yet wired.",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/geosampa.py#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/config.py",
+          "linha": 75,
+          "linha_fim": null,
+          "trecho": "ENCLAVE_BOXES: list[dict] = [",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/config.py#L75",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "etl/build.py",
+          "linha": 114,
+          "linha_fim": null,
+          "trecho": "cells[\"vulnerability_norm\"] = 0.0",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/build.py#L114",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "ARCHITECTURE.md descreve camadas do GeoSampa (declividade, vielas, vulnerabilidade social) alimentando o fator de vulnerabilidade e as classificações de zona.",
+              "No pipeline principal a camada de vulnerabilidade não está ligada (`vulnerability_norm` = 0) e as zonas de alto risco vêm de três retângulos escritos em `config.py` e, nas células, também da parcela de boletins em favela."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ARCHITECTURE.md",
+          "linha": 282,
+          "linha_fim": null,
+          "trecho": "1. **Interactive Time-of-Day / Shift Selector**: Judge-facing shift toggle",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L282",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ARCHITECTURE.md",
+          "linha": 294,
+          "linha_fim": null,
+          "trecho": "3. **Live Mid-Shift Dispatch & Rebalance View**: Click a microzone to trigger",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L294",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "web/src/api.ts",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "const res = await fetch(`${base}/plan`, {",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/api.ts#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "ARCHITECTURE.md descreve na aplicação web um seletor de turno e uma visão de despacho e rebalanceamento ao vivo.",
+              "A aplicação web chama as rotas de saúde, instâncias e `/plan`; não foi achado seletor de turno nem chamada a `/rebalance` em `web/src`."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# YAMA",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 494 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 208,
+          "linha_fim": null,
+          "trecho": "## Como rodar tudo do zero",
+          "link": "https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L208",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "uma Interface Web em React + MapLibre contendo um mapa com os hexágonos coloridos por risco e por cobertura, equipes próximas agrupadas e perfis de planejamento.",
+      "motivo": "Sem navegador no ambiente: o servidor Vite respondeu, mas o mapa, os agrupamentos e as cores não foram vistos.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Se o solver não estiver acessível, a aplicação web recorre a um pequeno solver de demonstração no navegador e identifica os resultados como demonstração.",
+      "motivo": "A troca automática e o aviso na tela exigem navegador. Chamada por script, a função `solveLocal` devolveu um plano identificado como demonstração local.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Subida local",
+      "motivo": "o projeto não abre página web",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "motivo": "o build automático executa uma pasta por projeto; a executada foi a raiz",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Interface web no navegador (mapa, painéis, painel Assistente, indicador de modo de demonstração)",
+      "motivo": "O ambiente de teste não tem navegador; os passos foram exercitados por HTTP, pela CLI e por scripts que chamam funções do código.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

@@ -1,0 +1,2612 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "cooper",
+    "nome": "Cooper",
+    "numero": 3,
+    "track": "Segurança",
+    "repo": "https://github.com/yanlassis/cooper",
+    "demo": "https://cooper-five-pi.vercel.app/",
+    "video": "https://youtu.be/g2s7TtNUroc, slides:https://canva.link/1xmojsmpfbktmw3",
+    "resumo": "Cooper: lê os relatos de golpe no Pix e liga os casos da mesma quadrilha, mesmo quando ela troca de conta laranja, pelo telefone, link e perfil que ela repete, sempre com a prova de cada ligação para o analista do MED 2.0 e para a polícia."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.492Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "9da7f5c0751fff187f9ec7a714fc1effc85a708e",
+    "commit_em": "2026-11-28T18:35:16Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11833,
+          "preparo_ms": 0,
+          "execucao_ms": 4154
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2382,
+          "preparo_ms": 0,
+          "execucao_ms": 3187
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 7769,
+          "preparo_ms": 0,
+          "execucao_ms": 12058
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12108,
+          "preparo_ms": 0,
+          "execucao_ms": 3842
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 7965,
+          "preparo_ms": 0,
+          "execucao_ms": 2872
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 49
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 114
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 66
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12204,
+          "preparo_ms": 0,
+          "execucao_ms": 3790
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 12204,
+          "preparo_ms": 0,
+          "execucao_ms": 3766
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 2
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "verificado"
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra a página inicial https://cooper-five-pi.vercel.app/",
+      "esperado": "A página mostra o título \"Relatos soltos. Uma quadrilha.\", o botão \"Testar um relato\" e o link \"Abrir o painel\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em \"Abrir o painel\", depois em \"Hoje, só a chave Pix\" e em seguida em \"Com o Cooper\"",
+      "esperado": "Só pela chave, o título informa 11 grupos soltos e nenhuma quadrilha inteira. Com o Cooper, informa 60 relatos, 3 quadrilhas inteiras e R$ 93.080 de prejuízo somado.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02b.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02b.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "No grafo do Painel, clique no grupo \"Falsa central — Ricardo Menezes\"",
+      "esperado": "Abriu a página do grupo com 11 relatos, R$ 32.820 somados, período de 01/10/2026 a 15/11/2026 e 4 chaves Pix.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Role a página do grupo até \"Relatos das vítimas (11)\"",
+      "esperado": "Os relatos aparecem com trechos marcados, como nome do atendente, protocolo, telefone, valor e banco.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Volte até \"Linha do tempo da quadrilha\" e veja as chaves Pix",
+      "esperado": "A linha do tempo mostra relatos e valor por semana, com marcas \"Trocou de laranja\". A chave ana.ferreira53@yahoo.com.br tem o chip \"Laranja provável\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em \"Gerar dossiê da quadrilha\"",
+      "esperado": "Apareceu o dossiê com resumo (11 vítimas, R$ 32.820,13, 54% com 60 anos ou mais), modus operandi, chaves e contas e próximos passos, com códigos de relatos após as frases.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique em \"Relato novo\", cole \"Ontem à tarde uma moça me ligou dizendo ser do setor antifraude do banco. Disse que havia uma compra suspeita de R$ 2.000 no meu cartão e passou o número (11) 90533-0697 para eu retornar. Retornei e me convenceram a fazer um Pix de R$ 1.870,00 para a chave paula.teste.exemplo@example.com, em nome de Paula Nunes, no Inter.\" e clique em \"Analisar relato\"",
+      "esperado": "Resposta: \"Pertence à quadrilha Falsa central — Ricardo Menezes\", selo \"Em análise\", motivo \"mesmo telefone de contato\" e a linha \"Chaves Pix encontradas: 1 · Telefones do golpista: 0\". A resposta difere da obtida com a entrada do passo 8.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "No mesmo campo, cole \"Recebi uma ligação e o número que apareceu no visor do meu celular era (11) 90533-0697. A pessoa disse que era do banco e que eu precisava confirmar meus dados. Depois fiz um Pix de R$ 500,00 para a chave bruno.teste.visor@example.com, em nome de Bruno Lima. Não me passaram nenhum outro número, link ou protocolo.\" e clique em \"Analisar relato\"",
+      "esperado": "Resposta: \"Caso novo: nenhuma quadrilha conhecida\", selo \"Sugestão\". A resposta difere da obtida no passo 7.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Clique em \"Resultados\" e compare as colunas \"Hoje: só pela chave Pix\" e \"Com o Cooper\"",
+      "esperado": "Só pela chave: 35% de ligações encontradas, ARI 0,48, 0 de 4 quadrilhas inteiras. Com o Cooper: 86%, ARI 0,91, 3 de 4; as duas colunas mostram 0 ligações erradas.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "1. Cada campo traz `valor` e `evidencia`. `evidencia` é o trecho LITERAL do relato de onde o valor saiu",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L48",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "resp = chamar_llm(prompt)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L133",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 141,
+          "linha_fim": null,
+          "trecho": "out[rid] = Extracao.model_validate({**bruto, \"relato_id\": rid, \"revisar\": False})",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L141",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "O prompt pede valor e trecho literal por campo, e a saída é validada pelo esquema; no ponto citado não há conferência de que o trecho existe no relato.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A IA lê o relato da vítima, extrai as pistas com o trecho que as prova (telefone, link, perfil)",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "A IA lê o relato da vítima, extrai as pistas com o trecho que as prova (telefone, link, perfil)",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ligar.py",
+          "linha": 274,
+          "linha_fim": null,
+          "trecho": "uf.unir(rs[0], r)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/ligar.py#L274",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ligar.py",
+          "linha": 41,
+          "linha_fim": null,
+          "trecho": "INFRA = {\"telefone_contato\", \"link_perfil\"}",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/ligar.py#L41",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "Agrupamento por union-find em código: chave ou telefone em comum, depois telefone de contato e link/perfil.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o código agrupa os casos pela infraestrutura que a quadrilha repete",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "o código agrupa os casos pela infraestrutura que a quadrilha repete",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/screens/Grupo.jsx",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "{g.n_relatos} relatos de vítimas · {brl(g.prejuizo)} somados ·{' '}",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/screens/Grupo.jsx#L57",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/servico.py",
+          "linha": 111,
+          "linha_fim": null,
+          "trecho": "return round(sum(rel[m].valor or 0 for m in ms), 2)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/servico.py#L111",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "resumo = [FraseDossie(texto=f\"{n['vitimas']} vítimas e {_brl(n['prejuizo'])} de prejuízo{per}.\", citacoes=ms)]",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/dossie.py#L70",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "A tela do grupo mostra relatos, soma e dossiê; a frase de resumo do dossiê cita todos os relatos do grupo. A soma usa o campo `valor` do registro de cada relato.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O analista de fraude do banco vê a quadrilha inteira, o prejuízo somado e um dossiê com a citação de cada relato.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "O analista de fraude do banco vê a quadrilha inteira, o prejuízo somado e um dossiê com a citação de cada relato.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ligar.py",
+          "linha": 127,
+          "linha_fim": null,
+          "trecho": "p.nucleo.add(\"telefone:\" + n)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/ligar.py#L127",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ligar.py",
+          "linha": 275,
+          "linha_fim": null,
+          "trecho": "ligacoes.append(LigacaoInterna(rs[0], r, [v], \"alta\", _motivo([v.split(\":\")[0]])))",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/ligar.py#L275",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "Chaves Pix e telefones do golpista formam o núcleo, com confiança \"alta\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Núcleo:** relatos com a mesma chave Pix ou o mesmo telefone do golpista (confiança alta).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 68,
+        "linha_fim": null,
+        "trecho": "**Núcleo:** relatos com a mesma chave Pix ou o mesmo telefone do golpista (confiança alta).",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L68",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ligar.py",
+          "linha": 222,
+          "linha_fim": null,
+          "trecho": "une = infra or (bool(kit) and score >= params[\"limiar\"])",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/ligar.py#L222",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ligar.py",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "\"nome_completo\": 0.5,",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/ligar.py#L35",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Pesos 1,0, 0,5 e 0,2 definidos no código; a união exige telefone de contato ou link, ou nome completo junto com formato de protocolo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**União de núcleos:** telefone de contato e link/perfil (peso 1,0) unem sozinhos. Nome completo do atendente e formato do protocolo (0,5 cada) só unem juntos. Primeiro nome, começo do protocolo e frase típica (0,2) nunca unem.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 69,
+        "linha_fim": null,
+        "trecho": "**União de núcleos:** telefone de contato e link/perfil (peso 1,0) unem sozinhos. Nome completo do atendente e formato do protocolo (0,5 cada) só unem juntos. Primeiro nome, começo do protocolo e frase típica (0,2) nunca unem.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L69",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 53,
+          "linha_fim": null,
+          "trecho": "O número que APARECEU NO VISOR/na tela da ligação NÃO entra (pode ser falsificado): ignore-o.",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L53",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/regex_base.py",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "# sem saber o papel: todo telefone vira \"telefone do golpista\" (inclui o do visor e o de contato)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/regex_base.py#L42",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "extracao = extrair(relato_id, r.texto)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/main.py#L69",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "A exclusão do número do visor depende da extração pelo LLM.",
+      "existe": "O prompt do LLM manda ignorar o número que apareceu no visor, e a extração não tem campo para ele.",
+      "falta": "Na extração por regex (usada sem chave de API ou quando o LLM falha), todo telefone do texto, inclusive o do visor, vira telefone do golpista e entra no núcleo de ligação.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O número que aparece no visor da ligação não liga relatos, porque pode ser falsificado.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 70,
+        "linha_fim": null,
+        "trecho": "O número que aparece no visor da ligação não liga relatos, porque pode ser falsificado.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L70",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/servico.py",
+          "linha": 271,
+          "linha_fim": null,
+          "trecho": "def numeros_dossie(gid: str) -> Optional[dict]:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/servico.py#L271",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "cit = [c for c in dict.fromkeys(f.get(\"citacoes\") or []) if c in membros]",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/dossie.py#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "resp = chamar_llm_esquema(prompt, ESQUEMA)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/dossie.py#L96",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "Números calculados em `numeros_dossie`; o LLM gera modus operandi e próximos passos, e frases sem citação de membro do grupo são descartadas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "os números (vítimas, prejuízo, período, chaves por volume, % de vítimas com 60 anos ou mais) são calculados por código. O LLM escreve só o modus operandi e os próximos passos, e toda frase cita os relatos de origem.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 74,
+        "linha_fim": null,
+        "trecho": "os números (vítimas, prejuízo, período, chaves por volume, % de vítimas com 60 anos ou mais) são calculados por código. O LLM escreve só o modus operandi e os próximos passos, e toda frase cita os relatos de origem.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L74",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "Com o exemplo \"Falsa central (D) · link token + WhatsApp\", a resposta de /api/relatos trouxe o campo \"kits\" (KIT-02, trecho \"gerar um token\"), mas a tela de Relato novo não mostrou kit nem trecho."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/kits.py",
+          "linha": 61,
+          "linha_fim": null,
+          "trecho": "s = fuzz.partial_ratio(frase.lower(), fonte.lower())",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/kits.py#L61",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "kits=buscar_kits(r.texto, extracao), **servico.ligar_novo(extracao))",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/main.py#L71",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/relatoNovo.js",
+          "linha": 236,
+          "linha_fim": null,
+          "trecho": "<span class=\"cooper-label-muted\">Kit de golpe conhecido: ${escapeHtml(k.nome)}</span>",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/telas/relatoNovo.js#L236",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "Busca fuzzy com rapidfuzz, exibida na tela de relato novo em `/`; a tela `/painel/relato-novo` (RelatoNovo.jsx) não mostra o kit.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "no relato novo, o Cooper procura (busca aproximada, sem LLM) frases e protocolos de um catálogo de kits em `dados/kits_conhecidos.json`, e mostra o kit e o trecho que bateu.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 75,
+        "linha_fim": null,
+        "trecho": "no relato novo, o Cooper procura (busca aproximada, sem LLM) frases e protocolos de um catálogo de kits em `dados/kits_conhecidos.json`, e mostra o kit e o trecho que bateu.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L75",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/screens/Grupo.jsx",
+          "linha": 244,
+          "linha_fim": null,
+          "trecho": "<TextoComEvidencia texto={x.texto} evidencias={x.evidencias} />",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/screens/Grupo.jsx#L244",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/screens/Grupo.jsx",
+          "linha": 81,
+          "linha_fim": null,
+          "trecho": "<TimelineSemanal pontos={d.linha_do_tempo} />",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/screens/Grupo.jsx#L81",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/screens/Grupo.jsx",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "<ChipLaranja />",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/screens/Grupo.jsx#L102",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/alertas.py",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "MIN_VITIMAS = 3",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/alertas.py#L12",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "A tela do grupo tem linha do tempo semanal, texto com trechos marcados e chip para chave com 3 ou mais vítimas em 7 dias.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "relatos com evidência grifada, linha do tempo das contas laranja e o chip \"laranja provável\".",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 15,
+        "linha_fim": null,
+        "trecho": "relatos com evidência grifada, linha do tempo das contas laranja e o chip \"laranja provável\".",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L15",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 66,
+          "linha_fim": null,
+          "trecho": "extracao = extrair_um(relato_id, r.texto)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/main.py#L66",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/telas/relatoNovo.js",
+          "linha": 206,
+          "linha_fim": null,
+          "trecho": "${tagConfianca(res.confianca, res.grupo_id)}",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/telas/relatoNovo.js#L206",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api.js",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "// POST /relatos e o dossiê esperam o LLM (5-6 s a frio na Vercel, que corta em 30 s)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/api.js#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": null,
+      "existe": "POST /relatos chama o Gemini quando há chave configurada, e a tela mostra grupo, motivo e confiança.",
+      "falta": "Não há medição do tempo de cerca de 3 s no que foi lido; um comentário no front registra \"5-6 s a frio na Vercel\".",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A extração usa o Gemini ao vivo, em cerca de 3 s, e mostra o grupo, o motivo e a confiança.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 16,
+        "linha_fim": null,
+        "trecho": "A extração usa o Gemini ao vivo, em cerca de 3 s, e mostra o grupo, o motivo e a confiança.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L16",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 67,
+          "linha_fim": null,
+          "trecho": "por_regras = extracao.revisar          # LLM falhou: usa a regex abaixo",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/main.py#L67",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/servico.py",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "out[r] = Extracao(**json.loads(p.read_text(encoding=\"utf-8\")))",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/servico.py#L71",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 129,
+          "linha_fim": null,
+          "trecho": "if usar_cache and (d := ler_cache(gid, set(n[\"relatos\"]))):",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/dossie.py#L129",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "Falha do LLM leva à regex; o painel lê cache/extracao e o dossiê usa cache/dossie se os relatos do grupo coincidirem. Sem cache válido e sem LLM, o dossiê sai só com a parte calculada.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se o LLM falhar ou a cota acabar, o relato novo cai na extração por regex, e o painel e os dossiês vêm do cache.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 19,
+        "linha_fim": null,
+        "trecho": "Se o LLM falhar ou a cota acabar, o relato novo cai na extração por regex, e o painel e os dossiês vêm do cache.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L19",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/screens/Painel.jsx",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "<button type=\"button\" className={!completo ? 'on' : ''} aria-pressed={!completo} onClick={() => setModo('chave')}>",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/screens/Painel.jsx#L57",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/test_api_qa.py",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "assert m.completo.quadrilhas_recuperadas >= m.chave.quadrilhas_recuperadas",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/tests/test_api_qa.py#L115",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/pitch.md",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "viram **11 grupos pequenos**",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/docs/pitch.md#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": null,
+      "existe": "O painel alterna entre os modos `chave` e `completo`, e as contagens são calculadas pela API a partir do cache. Os botões têm os rótulos \"Hoje, só a chave Pix\" e \"Com o Cooper\".",
+      "falta": "Não há saída gravada nem teste que fixe \"11 grupos\" e \"3 quadrilhas\"; o teste só compara um modo com o outro. Os números não foram executados nesta leitura.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "No **Painel**, alterne **\"só chave\" × \"chave + traços\"**: 11 grupos pequenos viram 3 quadrilhas inteiras.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 14,
+        "linha_fim": null,
+        "trecho": "No **Painel**, alterne **\"só chave\" × \"chave + traços\"**: 11 grupos pequenos viram 3 quadrilhas inteiras.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L14",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 78,
+          "linha_fim": null,
+          "trecho": "modelo = os.environ.get(\"GEMINI_MODEL\", \"gemini-3.5-flash-lite\")",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L78",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/reescrever.py",
+          "linha": 141,
+          "linha_fim": null,
+          "trecho": "modelo = os.environ.get(\"GEMINI_MODEL\", \"gemini-3.5-flash-lite\")",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/reescrever.py#L141",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "resp = chamar_llm_esquema(prompt, ESQUEMA)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/dossie.py#L96",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "`gemini-3.5-flash-lite` é o padrão (substituível por GEMINI_MODEL) na reescrita, na extração e, pela mesma função, no dossiê.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Gemini 3.5 Flash-Lite** (`gemini-3.5-flash-lite`, Google AI Studio): reescrita dos relatos, extração e dossiê.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 174,
+        "linha_fim": null,
+        "trecho": "**Gemini 3.5 Flash-Lite** (`gemini-3.5-flash-lite`, Google AI Studio): reescrita dos relatos, extração e dossiê.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L174",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "r = cli.messages.create(model=\"claude-haiku-5-5\", max_tokens=16000,",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L103",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 113,
+          "linha_fim": null,
+          "trecho": "if os.environ.get(\"S1_LLM\", \"gemini\") == \"anthropic\":",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L113",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "Usado com `S1_LLM=anthropic` ou quando o Gemini falha e há ANTHROPIC_API_KEY; api/requirements.txt não lista o pacote anthropic.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Claude Haiku 5.5** (`claude-haiku-5-5`, API da Anthropic): reserva, com a mesma interface (`S1_LLM=anthropic`).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 175,
+        "linha_fim": null,
+        "trecho": "**Claude Haiku 5.5** (`claude-haiku-5-5`, API da Anthropic): reserva, com a mesma interface (`S1_LLM=anthropic`).",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L175",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/calibrar.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "m = calcular(\"treino\", fonte, params).completo",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/calibrar.py#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/calibrar.py",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "ARQ_CALIBRACAO.write_text(json.dumps({\"params\": params, \"fonte\": fonte, \"conjunto\": \"treino\",",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/calibrar.py#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/calibracao.json",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"conjunto\": \"treino\",",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/calibracao.json#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "A grade calibra `limiar` e `frase_similaridade` no conjunto de treino; os pesos dos traços são fixos em ligar.py.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Os parâmetros da ligação são calibrados **só nos 80% de treino** (`backend/app/calibrar.py`) e salvos em `dados/calibracao.json`.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 78,
+        "linha_fim": null,
+        "trecho": "Os parâmetros da ligação são calibrados **só nos 80% de treino** (`backend/app/calibrar.py`) e salvos em `dados/calibracao.json`.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L78",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/gerar_gabarito.py",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "SEED = 2811",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/gerar_gabarito.py#L16",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/gerar_gabarito.py",
+          "linha": 18,
+          "linha_fim": null,
+          "trecho": "N_POR_QUADRILHA = 60",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/gerar_gabarito.py#L18",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/gerar_gabarito.py",
+          "linha": 199,
+          "linha_fim": null,
+          "trecho": "rng = random.Random(SEED)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/gerar_gabarito.py#L199",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "Seed 2811, 4 quadrilhas com 60 relatos cada e 60 isolados.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "`dados/gerar_gabarito.py` sorteia por código (seed fixa 2811) os fatos de 300 relatos: 4 quadrilhas com 60 relatos cada, e 60 isolados.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 84,
+        "linha_fim": null,
+        "trecho": "`dados/gerar_gabarito.py` sorteia por código (seed fixa 2811) os fatos de 300 relatos: 4 quadrilhas com 60 relatos cada, e 60 isolados.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L84",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/kit_dia/resultado_oficial.json",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "\"Cooper (LLM + ligação)\": {",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/kit_dia/resultado_oficial.json#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/kit_dia/resultado_oficial.json",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "\"certas\": 4,",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/kit_dia/resultado_oficial.json#L21",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/kit_dia/avaliar_kit.py",
+          "linha": 113,
+          "linha_fim": null,
+          "trecho": "m = medir(pred, verdade)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/kit_dia/avaliar_kit.py#L113",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "resultado_oficial.json registra 4 de 12 certas, 0 erradas, 2 de 2 isolados e 1 de 3 quadrilhas; a busca sem IA com traços registra os mesmos valores.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| **Cooper (oficial)** | **4 de 12** | **0** | **2 de 2** | **1 de 3** |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 120,
+        "linha_fim": null,
+        "trecho": "| **Cooper (oficial)** | **4 de 12** | **0** | **2 de 2** | **1 de 3** |",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L120",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/metricas.py",
+          "linha": 38,
+          "linha_fim": null,
+          "trecho": "ari = adjusted_rand_score([verdade[r] for r in ids], [pred[r] for r in ids])",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/metricas.py#L38",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/pitch.md",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "| ARI, 20% de teste | 0,48 | 0,91 |",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/docs/pitch.md#L56",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": null,
+      "existe": "Há código que calcula o ARI dos dois modos no conjunto de teste, e os valores 0,48 e 0,91 estão em docs/pitch.md.",
+      "falta": "Não há saída gravada da medição com esses valores; o cálculo não foi executado nesta leitura.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| ARI, 20% de teste | 0,48 | 0,91 |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/pitch.md",
+        "linha": 56,
+        "linha_fim": null,
+        "trecho": "| ARI, 20% de teste | 0,48 | 0,91 |",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/docs/pitch.md#L56",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/conferir_extracao.py",
+          "linha": 63,
+          "linha_fim": null,
+          "trecho": "arqs = sorted((RAIZ / \"cache\" / \"extracao\").glob(\"R-*.json\"))[: a.n]",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/conferir_extracao.py#L63",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/conferir_extracao.py",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "print(f\"  {k:15s} {ok}/{n} ({pct:.0f}%)  inventados: {sobra}{marca}\")",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/conferir_extracao.py#L84",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "Makefile",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "$(PY) -m dados.conferir_extracao --n 30",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/Makefile#L21",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": null,
+      "existe": "Um script compara 30 extrações em cache com o gabarito e conta acertos e valores a mais.",
+      "falta": "Não há saída gravada com o resultado de 100% e zero valores a mais; o script não foi executado nesta leitura.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Extração (30 relatos conferidos):** 100% das chaves, telefones, nomes e roteiros, sem nenhum valor inventado.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/pitch.md",
+        "linha": 62,
+        "linha_fim": null,
+        "trecho": "**Extração (30 relatos conferidos):** 100% das chaves, telefones, nomes e roteiros, sem nenhum valor inventado.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/docs/pitch.md#L62",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/kit_dia/gerar_kit.py",
+          "linha": 142,
+          "linha_fim": null,
+          "trecho": "(AQUI / \"gabarito.sha256\").write_text(hashlib.sha256(bruto).hexdigest() + \"  dados/kit_dia/gabarito.json\\n\")",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/kit_dia/gerar_kit.py#L142",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/kit_dia/avaliar_kit.py",
+          "linha": 68,
+          "linha_fim": null,
+          "trecho": "if obtido != esperado:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/kit_dia/avaliar_kit.py#L68",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/kit_dia/gabarito.sha256",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "ded37848eb26408e0dda773027ae57d5f11a6893ce789ed1d9ab1b04fb5dc7ba",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/kit_dia/gabarito.sha256#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": null,
+      "existe": "O gerador do kit grava gabarito e sha256, o arquivo de hash está no repositório e o avaliador confere o hash antes de medir.",
+      "falta": "O histórico do git não está disponível nesta cópia, então o commit `cec1c57`, o horário e a ordem em relação aos relatos não foram conferidos; o hash não foi recalculado.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O gabarito (qual relato é de qual quadrilha) foi sorteado por código e lacrado: só o hash sha256 dele entrou no git, no commit `cec1c57` (28/11, 11:43), **antes** de existir qualquer relato escrito à mão.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 139,
+        "linha_fim": null,
+        "trecho": "O gabarito (qual relato é de qual quadrilha) foi sorteado por código e lacrado: só o hash sha256 dele entrou no git, no commit `cec1c57` (28/11, 11:43), **antes** de existir qualquer relato escrito à mão.",
+        "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L139",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://cooper-five-pi.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://cooper-five-pi.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 227 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra a página inicial https://cooper-five-pi.vercel.app/",
+      "observado": "A página mostra o título \"Relatos soltos. Uma quadrilha.\", o botão \"Testar um relato\" e o link \"Abrir o painel\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em \"Abrir o painel\", depois em \"Hoje, só a chave Pix\" e em seguida em \"Com o Cooper\"",
+      "observado": "Só pela chave, o título informa 11 grupos soltos e nenhuma quadrilha inteira. Com o Cooper, informa 60 relatos, 3 quadrilhas inteiras e R$ 93.080 de prejuízo somado.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02b.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02b.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "No grafo do Painel, clique no grupo \"Falsa central — Ricardo Menezes\"",
+      "observado": "Abriu a página do grupo com 11 relatos, R$ 32.820 somados, período de 01/10/2026 a 15/11/2026 e 4 chaves Pix.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Role a página do grupo até \"Relatos das vítimas (11)\"",
+      "observado": "Os relatos aparecem com trechos marcados, como nome do atendente, protocolo, telefone, valor e banco.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Volte até \"Linha do tempo da quadrilha\" e veja as chaves Pix",
+      "observado": "A linha do tempo mostra relatos e valor por semana, com marcas \"Trocou de laranja\". A chave ana.ferreira53@yahoo.com.br tem o chip \"Laranja provável\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em \"Gerar dossiê da quadrilha\"",
+      "observado": "Apareceu o dossiê com resumo (11 vítimas, R$ 32.820,13, 54% com 60 anos ou mais), modus operandi, chaves e contas e próximos passos, com códigos de relatos após as frases.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em \"Relato novo\", cole \"Ontem à tarde uma moça me ligou dizendo ser do setor antifraude do banco. Disse que havia uma compra suspeita de R$ 2.000 no meu cartão e passou o número (11) 90533-0697 para eu retornar. Retornei e me convenceram a fazer um Pix de R$ 1.870,00 para a chave paula.teste.exemplo@example.com, em nome de Paula Nunes, no Inter.\" e clique em \"Analisar relato\"",
+      "observado": "Resposta: \"Pertence à quadrilha Falsa central — Ricardo Menezes\", selo \"Em análise\", motivo \"mesmo telefone de contato\" e a linha \"Chaves Pix encontradas: 1 · Telefones do golpista: 0\". A resposta difere da obtida com a entrada do passo 8.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "No mesmo campo, cole \"Recebi uma ligação e o número que apareceu no visor do meu celular era (11) 90533-0697. A pessoa disse que era do banco e que eu precisava confirmar meus dados. Depois fiz um Pix de R$ 500,00 para a chave bruno.teste.visor@example.com, em nome de Bruno Lima. Não me passaram nenhum outro número, link ou protocolo.\" e clique em \"Analisar relato\"",
+      "observado": "Resposta: \"Caso novo: nenhuma quadrilha conhecida\", selo \"Sugestão\". A resposta difere da obtida no passo 7.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Clique em \"Resultados\" e compare as colunas \"Hoje: só pela chave Pix\" e \"Com o Cooper\"",
+      "observado": "Só pela chave: 35% de ligações encontradas, ARI 0,48, 0 de 4 quadrilhas inteiras. Com o Cooper: 86%, ARI 0,91, 3 de 4; as duas colunas mostram 0 ligações erradas.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Campo de relato preenchido só com espaços e quebras de linha",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O botão \"Analisar relato\" ficou desabilitado."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Texto de cerca de 62 mil caracteres, com a frase \"golpe pix telefone chave banco\" repetida",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O servidor respondeu com status 200 e a tela mostrou \"Caso novo: nenhuma quadrilha conhecida\", com 0 chaves Pix; não apareceu aviso sobre o tamanho."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Texto sem relação com golpe (receita de bolo de cenoura)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostrou \"Caso novo: nenhuma quadrilha conhecida\", com 0 chaves Pix; não apareceu aviso de que o texto não é um relato de golpe."
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "google-genai (Google), em requirements.txt",
+          "anthropic (Anthropic), em requirements.txt",
+          "google-genai (Google), em api/requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "google-genai",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/requirements.txt#L9",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "anthropic",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/requirements.txt#L10",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "api/requirements.txt",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "google-genai    # POST /relatos e dossiê com LLM quando GEMINI_API_KEY está configurada",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/api/requirements.txt#L9",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Google",
+              "backend/app/extracao.py",
+              76
+            ],
+            [
+              "Anthropic",
+              "backend/app/extracao.py",
+              101
+            ],
+            [
+              "Google",
+              "dados/reescrever.py",
+              139
+            ],
+            [
+              "Anthropic",
+              "dados/reescrever.py",
+              160
+            ],
+            [
+              "Google",
+              "dados/teste_mao/rodar_gemini.py",
+              26
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 76,
+          "linha_fim": null,
+          "trecho": "    from google.genai import errors, types",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L76",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 101,
+          "linha_fim": null,
+          "trecho": "    import anthropic",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L101",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/reescrever.py",
+          "linha": 139,
+          "linha_fim": null,
+          "trecho": "    from google.genai import errors, types",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/reescrever.py#L139",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/reescrever.py",
+          "linha": 160,
+          "linha_fim": null,
+          "trecho": "    import anthropic",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/reescrever.py#L160",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/teste_mao/rodar_gemini.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "from google.genai import types",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/teste_mao/rodar_gemini.py#L26",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Google",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "r = cli.models.generate_content(model=modelo, contents=prompt, config=types.GenerateContentConfig(",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L85",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Extração das pistas de cada relato em JSON, no lote e em POST /relatos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "r = cli.messages.create(model=\"claude-haiku-5-5\", max_tokens=16000,",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L103",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "claude-haiku-5-5",
+      "obs": "Reserva para extração e dossiê, com a mesma interface."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Google (reserva: Anthropic)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "resp = chamar_llm_esquema(prompt, ESQUEMA)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/dossie.py#L96",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Modus operandi e próximos passos do dossiê."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Google",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/reescrever.py",
+          "linha": 144,
+          "linha_fim": null,
+          "trecho": "r = cli.models.generate_content(model=modelo, contents=prompt, config=types.GenerateContentConfig(",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/reescrever.py#L144",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Reescrita dos fatos sorteados em relatos sintéticos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/reescrever.py",
+          "linha": 162,
+          "linha_fim": null,
+          "trecho": "r = cli.messages.create(model=\"claude-haiku-5-5\", max_tokens=16000,",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/reescrever.py#L162",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "claude-haiku-5-5",
+      "obs": "Reserva da reescrita dos relatos sintéticos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-6",
+      "rotulo": "Chamada a Google",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/teste_mao/rodar_gemini.py",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "resposta = cliente.models.generate_content(",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/teste_mao/rodar_gemini.py#L73",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Teste em que o modelo agrupa os relatos escritos à mão numa única chamada."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api.js",
+          "linha": 287,
+          "linha_fim": null,
+          "trecho": "kit: m.kit || { relatos: 12, ligacoes_certas: 4, ligacoes_total: 12, so_chave: 2, erradas: 0, iscas: '2 de 2' },",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/api.js#L287",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela de resultados do painel mostra os números do teste com relatos à mão a partir de um objeto fixo no front, usado quando a resposta de /metricas não traz o campo `kit`.",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:45",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/yanlassis/cooper",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/yanlassis/cooper",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "github:push-forcado",
+      "rotulo": "Push forçado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Horário",
+            "Branch",
+            "Commit"
+          ],
+          "linhas": [
+            [
+              "28/11 12:09",
+              "fix/nome-atendente",
+              "f00b968"
+            ],
+            [
+              "28/11 11:56",
+              "front/relato-metricas",
+              "70e4aa6"
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/yanlassis/cooper",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/yanlassis/cooper",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/yanlassis/cooper/commit/cbae369baa934032340eb11e6d3b2b6c2a0b63c4",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/yanlassis/cooper/commit/cbae369baa934032340eb11e6d3b2b6c2a0b63c4",
+          "conferida": "script"
+        }
+      ],
+      "valor": "cbae369, 16962 linhas adicionadas em 302 arquivos, de 58143 no histórico",
+      "obs": "16962 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "CyberMesh",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/vrohit1k9/CyberMesh",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/vrohit1k9/CyberMesh",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma de pesquisa que liga queixas de golpes via UPI (Índia) por conta bancária, identificador UPI, telefone e domínio de phishing em comum, com nota de risco e visão em grafo.",
+      "obs": "Em comum: Agrupa queixas pela infraestrutura repetida (telefone, domínio, conta) para revelar grupos organizados, com perfis de acesso de investigador e analista. Diferente: A página descreve extração por expressões regulares, é voltada ao UPI indiano e se apresenta como projeto acadêmico."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "complaint-analyser",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/madeeha-28/complaint-analyser",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/madeeha-28/complaint-analyser",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Protótipo em Python que extrai telefones, identificadores UPI, links, e-mails, carteiras e valores de queixas de golpes online, agrupa as que compartilham um dado e mostra as ligações em um painel.",
+      "obs": "Em comum: Liga relatos de vítimas por telefone, link e identificador de pagamento repetidos, para o investigador ver quais casos podem estar relacionados. Diferente: Extrai com expressões regulares, une quaisquer queixas com um dado em comum e usa apenas dados sintéticos."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "Chainabuse (TRM Labs)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.trmlabs.com/resources/blog/announcing-the-launch-of-chainabuse-the-multi-chain-scam-reporting-tool-that-empowers-crypto-users-against-fraud",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.trmlabs.com/resources/blog/announcing-the-launch-of-chainabuse-the-multi-chain-scam-reporting-tool-that-empowers-crypto-users-against-fraud",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma de denúncia de golpes com criptoativos que consolida os relatos sobre os mesmos endereços ou entidades em uma base pesquisável.",
+      "obs": "Em comum: Reúne relatos de várias vítimas pelo identificador que se repete e atende empresas e investigações. Diferente: É voltada a criptoativos e a base é aberta a consulta pública; a página não descreve extração de pistas do relato por IA."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "SOS Golpe (Silverguard)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.sosgolpe.com.br/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.sosgolpe.com.br/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Central gratuita em que a vítima denuncia o golpe, com pedido de bloqueio do valor ao banco de destino e serviço para bancos e fintechs bloquearem contas laranja.",
+      "obs": "Em comum: Trata de golpes no Pix no Brasil e leva relatos de vítimas a analistas de bancos, em paralelo ao MED. Diferente: A página não descreve a ligação entre denúncias para formar quadrilhas por telefone, link ou perfil."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "CASE (Google, no Google Pay Índia)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://arxiv.org/html/2508.19932v1",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://arxiv.org/html/2508.19932v1",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Agente conversacional com LLM que entrevista possíveis vítimas e converte a conversa em dados estruturados sobre o golpe, usados por analistas e por modelos de risco de pagamento.",
+      "obs": "Em comum: Usa LLM para transformar o relato da vítima em dados para analistas de um serviço de pagamentos. Diferente: O artigo não descreve a ligação de vários relatos a um mesmo golpista ou grupo."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "JSON",
+              663,
+              38168
+            ],
+            [
+              "CSS",
+              4,
+              5027
+            ],
+            [
+              "JavaScript",
+              23,
+              4600
+            ],
+            [
+              "Python",
+              34,
+              3750
+            ],
+            [
+              "Markdown",
+              14,
+              931
+            ],
+            [
+              "HTML",
+              2,
+              41
+            ]
+          ]
+        }
+      },
+      "obs": "768 arquivos de texto e 52716 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "API FastAPI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Cooper\")",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/main.py#L27",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "api/index.py",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "app.mount(\"/api\", cooper.app)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/api/index.py#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/main.py",
+          "api/index.py",
+          "backend/app/contrato.py"
+        ]
+      },
+      "obs": "Expõe grupos, detalhe, dossiê, relato novo e métricas, publicada em /api na Vercel."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Extração de pistas",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/extracao.py",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "def extrair_um(relato_id: str, texto: str) -> Extracao:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/extracao.py#L147",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/regex_base.py",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "def extrair(relato_id: str, texto: str) -> Extracao:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/regex_base.py#L29",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/extracao.py",
+          "backend/app/regex_base.py"
+        ]
+      },
+      "obs": "Transforma o relato em campos com trecho de prova via LLM, com regex como alternativa."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Ligação e agrupamento",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ligar.py",
+          "linha": 260,
+          "linha_fim": null,
+          "trecho": "def agrupar(extracoes: list[Extracao], modo: str = \"completo\", params: Optional[dict] = None) -> Agrupamento:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/ligar.py#L260",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/ligar.py",
+          "backend/app/normalizar.py",
+          "backend/app/servico.py",
+          "backend/app/alertas.py"
+        ]
+      },
+      "obs": "Normaliza as pistas, forma os grupos por regras em código e monta as respostas do painel."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Dossiê",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 124,
+          "linha_fim": null,
+          "trecho": "def gerar(gid: str, usar_cache: bool = True) -> Optional[Dossie]:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/dossie.py#L124",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/dossie.py"
+        ]
+      },
+      "obs": "Calcula os números do grupo por código e pede ao LLM o texto com citações, com cache em disco."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Catálogo de kits",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/kits.py",
+          "linha": 74,
+          "linha_fim": null,
+          "trecho": "def buscar_kits(texto: str, extracao: Optional[Extracao] = None) -> list[KitEncontrado]:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/kits.py#L74",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/kits.py",
+          "dados/kits_conhecidos.json"
+        ]
+      },
+      "obs": "Procura por similaridade frases de um catálogo no relato novo, sem LLM."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Front-end",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/main.js",
+          "linha": 128,
+          "linha_fim": null,
+          "trecho": "iniciarApp()",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/main.js#L128",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/main.jsx",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "createRoot(document.getElementById('root')).render(<App />)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/main.jsx#L7",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/main.js",
+          "frontend/src/main.jsx",
+          "frontend/src/App.jsx",
+          "frontend/src/components/Graph.jsx"
+        ]
+      },
+      "obs": "Página inicial com relato novo e métricas em JavaScript, e painel em React com grafo e detalhe do grupo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Dados sintéticos e avaliação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/gerar_gabarito.py",
+          "linha": 198,
+          "linha_fim": null,
+          "trecho": "def gerar() -> tuple[list[dict], dict]:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/dados/gerar_gabarito.py#L198",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/metricas.py",
+          "linha": 71,
+          "linha_fim": null,
+          "trecho": "def calcular(conjunto: str = \"teste\", fonte: str = \"oraculo\", params=None) -> Metricas:",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/backend/app/metricas.py#L71",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "dados/gerar_gabarito.py",
+          "dados/reescrever.py",
+          "backend/app/calibrar.py",
+          "backend/app/metricas.py",
+          "dados/kit_dia/avaliar_kit.py"
+        ]
+      },
+      "obs": "Gera o gabarito e os relatos, calibra a ligação e mede os resultados."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/vite.config.js",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "// Duas páginas: / (landing e telas do P4, JS puro) e /painel (painel do P3, React).",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/vite.config.js#L5",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.jsx",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "{rota.tela === 'relato' && <RelatoNovo abrirGrupo={irParaGrupo} />}",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/src/App.jsx#L115",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README descreve o front-end como \"Vite + cytoscape\".",
+              "O build tem duas páginas: / (landing, relato novo e métricas em JavaScript sem React) e /painel (React), cada uma com a sua tela de relato novo e de métricas."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:achado-1",
+      "rotulo": "Padrão de segredo: arquivo .env versionado com valores preenchidos",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "frontend/.env.production, linha 2",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/.env.production",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/frontend/.env.production#L2",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# cooper",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 187 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "## Como rodar (3 comandos, sem chave de API)",
+          "link": "https://github.com/yanlassis/cooper/blob/9da7f5c0751fff187f9ec7a714fc1effc85a708e/README.md#L27",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

@@ -1,0 +1,2086 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "rastro",
+    "nome": "Rastro",
+    "numero": 2,
+    "track": "Segurança",
+    "repo": "https://github.com/Marcus-Vin/rastro",
+    "demo": "https://rastro-hackia.streamlit.app/",
+    "video": "https://drive.google.com/drive/u/0/folders/1w3JkKLfeI7SiUh1TM3Y7YlRQC9__RLtr",
+    "resumo": "Ferramenta de investigação de redes de fraudes."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.480Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "a583c49640b56f89e441a07379ff40aa75f0dd6f",
+    "commit_em": "2026-11-28T18:54:20Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 20305
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11037,
+          "preparo_ms": 0,
+          "execucao_ms": 5979
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3,
+          "preparo_ms": 0,
+          "execucao_ms": 3912
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3193,
+          "preparo_ms": 0,
+          "execucao_ms": 2921
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10918,
+          "preparo_ms": 0,
+          "execucao_ms": 6065
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3195,
+          "preparo_ms": 0,
+          "execucao_ms": 3531
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 198
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2813,
+          "preparo_ms": 0,
+          "execucao_ms": 236
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 15
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11712,
+          "preparo_ms": 0,
+          "execucao_ms": 5493
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11935,
+          "preparo_ms": 0,
+          "execucao_ms": 5272
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "falhou",
+      "erro": "mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/"
+    },
+    "build": {
+      "estado": "falhou",
+      "erro": "parou em instalar: ERROR: No matching distribution found for networkx==3.7"
+    },
+    "fluxo": {
+      "estado": "nao_testavel",
+      "motivo": "o deploy informado não respondeu; o projeto não subiu em container"
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/leitura.py",
+          "linha": 209,
+          "linha_fim": null,
+          "trecho": "resposta = ia.chamar(\"ler_bo\", entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L209",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/redes.py",
+          "linha": 287,
+          "linha_fim": null,
+          "trecho": "c.ligar(a, b, \"certa\", motivo, c.bos[a].trecho(campo_de[a], valor), c.bos[b].trecho(campo_de[b], valor),",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L287",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/redes.py",
+          "linha": 406,
+          "linha_fim": null,
+          "trecho": "return [sorted(comp) for comp in nx.connected_components(grafo)]",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L406",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "Cada BO é lido por chamada à IA (ou pela resposta gravada), e `_ligar_certas` e `_ligar_provaveis` ligam BOs por chave Pix, telefone, e-mail, conta ou E2E do golpista.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Lê os BOs de golpe em texto livre e liga as vítimas que pagaram para os mesmos destinos.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "Lê os BOs de golpe em texto livre e liga as vítimas que pagaram para os mesmos destinos.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/coaf/simulado.py",
+          "linha": 244,
+          "linha_fim": null,
+          "trecho": "prontos = _selecionar_prontos(alvos, base_pronta)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/coaf/simulado.py#L244",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/policia.py",
+          "linha": 296,
+          "linha_fim": null,
+          "trecho": "for cp in rif[\"contrapartes_principais\"] if cp[\"conta_id\"] not in g.get(\"contas\", [])]",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L296",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_rifs.py",
+          "linha": 157,
+          "linha_fim": null,
+          "trecho": "def test_a_chave_do_bo_da_ana_tem_rif_que_aponta_a_conta_central(pasta):",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tests/test_rifs.py#L157",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "O COAF simulado seleciona RIFs pré-calculados e comunicações recebidas pelos alvos; a tela marca como pista nova a contraparte que não está nas contas da rede. Um teste verifica que o RIF da chave do BO-0001 traz a conta central do gabarito.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Com a rede montada, a polícia pede o RIF ao COAF (simulado), que devolve o que os bancos já tinham comunicado e aponta a conta central que nenhum BO cita.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "Com a rede montada, a polícia pede o RIF ao COAF (simulado), que devolve o que os bancos já tinham comunicado e aponta a conta central que nenhum BO cita.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 323,
+          "linha_fim": null,
+          "trecho": "_chave_juiz().public_key().verify(bytes.fromhex(pedido_assinado.get(\"assinatura\", \"\")),",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L323",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 318,
+          "linha_fim": null,
+          "trecho": "raise Indisponivel(\"no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L318",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/dados.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "return \"real\" if (SAIDAS / \"policia_extracao.json\").exists() else \"exemplo\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/dados.py#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "`python rodar.py` executa a etapa `rastro.policia`, que grava `saidas/policia_extracao.json`.",
+      "existe": "Em `tela/motor.py`, no modo exemplo, o extrato só é devolvido depois de verificar a assinatura Ed25519 do pedido.",
+      "falta": "O módulo `rastro.hub.cofre` não está no repositório (`rastro/hub/` só tem um `__init__.py` vazio). No modo real, escolhido quando existe `saidas/policia_extracao.json`, a abertura é sempre recusada, mesmo com assinatura.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O extrato só sai do cofre com a assinatura do juiz.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "O extrato só sai do cofre com a assinatura do juiz.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/leitura.py",
+          "linha": 209,
+          "linha_fim": null,
+          "trecho": "resposta = ia.chamar(\"ler_bo\", entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L209",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/leitura.py",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "certo, motivo = citacao.conferir(dado.trecho, dado.valor_original, parte, dado.campo)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L69",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/citacao.py",
+          "linha": 79,
+          "linha_fim": null,
+          "trecho": "if trecho not in fonte:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/citacao.py#L79",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "A resposta da IA passa por `citacao.conferir`, que exige o trecho na fonte e o valor dentro do trecho. No replay, a resposta vem do cache.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a IA lê cada BO, e o código confere os trechos.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 42,
+        "linha_fim": null,
+        "trecho": "a IA lê cada BO, e o código confere os trechos.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L42",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/redes.py",
+          "linha": 191,
+          "linha_fim": null,
+          "trecho": "self.ligacoes[(a, b)] = {\"a\": a, \"b\": b, \"tipo\": tipo, \"motivo\": motivo,",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L191",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/policia.py",
+          "linha": 268,
+          "linha_fim": null,
+          "trecho": "_par_de_trechos(lig[\"a\"], lig[\"b\"], lig.get(\"trechos\"))",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L268",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Cada ligação é gravada com `motivo` e dois `trechos`, e a tela mostra os dois.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Cada ligação tem o motivo e os trechos",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 43,
+        "linha_fim": null,
+        "trecho": "Cada ligação tem o motivo e os trechos",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L43",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/redes.py",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "AVISO_CPF_DIVERGENTE = \"provável erro de escrita no BO; a ligação se mantém\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/grafo_vivo.py",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "\"homonimo\": \"homônimo: barrado\", \"cpf_divergente\": \"CPF diferente: barrado\", \"vizinho\": \"vizinho: barrado\",",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/grafo_vivo.py#L22",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/redes.py",
+          "linha": 321,
+          "linha_fim": null,
+          "trecho": "c.travar_homonimo(a, b, perto)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L321",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/genericos.py",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "CAMPOS_COM_GENERICO = frozenset({\"telefone\", \"email\"})",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/genericos.py#L12",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": null,
+      "existe": "A tela lista as travas; a trava de homônimo (CPF do meio diferente) barra a ligação provável, e telefone ou e-mail genérico não liga.",
+      "falta": "Com chave Pix, conta ou E2E idênticos e CPF diferente, o motor liga os BOs e só registra o aviso `cpf_divergente`, que o grafo rotula \"CPF diferente: barrado\". A regra de dado genérico não se aplica a chave Pix nem a conta.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "as travas ficam à mostra (homônimo e CPF diferente barrados; chave genérica não liga)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 43,
+        "linha_fim": null,
+        "trecho": "as travas ficam à mostra (homônimo e CPF diferente barrados; chave genérica não liga)",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L43",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "saidas/exemplo/grupos_policia.json",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "\"BO-0001\",",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/saidas/exemplo/grupos_policia.json#L7",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/gerar_exemplo.py",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "Tudo aqui é inventado e pequeno (7 BOs na rede da Ana). Os números da tela",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/gerar_exemplo.py#L3",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ESCOPO.md",
+          "linha": 372,
+          "linha_fim": null,
+          "trecho": "| R-1 (a da Ana, falso anúncio) | 30 | 40 | 9 |",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/ESCOPO.md#L372",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "Nos dados de exemplo, a rede G-1 tem 7 BOs, incluindo o BO-0001. No corpus de `dados/`, o `ESCOPO.md` registra 30 BOs na rede da Ana.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o BO da Ana, de R$ 800, entra numa rede de 7 vítimas (exemplo).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 43,
+        "linha_fim": null,
+        "trecho": "o BO da Ana, de R$ 800, entra numa rede de 7 vítimas (exemplo).",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L43",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/policia.py",
+          "linha": 400,
+          "linha_fim": null,
+          "trecho": "motor.registrar(\"policia\", \"rif_aberto\", f\"{rif_id} aberto pelo(a) investigador(a) da rede {gid}\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L400",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 369,
+          "linha_fim": null,
+          "trecho": "eventos.append(ev)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L369",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "O botão de abrir o RIF registra `rif_aberto`. Sem `rastro.hub.log`, o registro feito pela tela fica na lista da sessão.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Cada abertura do RIF fica na auditoria.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 44,
+        "linha_fim": null,
+        "trecho": "Cada abertura do RIF fica na auditoria.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L44",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 286,
+          "linha_fim": null,
+          "trecho": "st.session_state[\"_juiz\"] = Ed25519PrivateKey.generate()",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L286",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 303,
+          "linha_fim": null,
+          "trecho": "assinado[\"assinatura\"] = chave.sign(_bytes_pedido(pedido)).hex()",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L303",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "O pedido é assinado com `Ed25519PrivateKey` da biblioteca `cryptography`, com chave gerada na sessão da tela. A verificação só é alcançada no modo exemplo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a assinatura é simulada, mas a Ed25519 é de verdade.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 46,
+        "linha_fim": null,
+        "trecho": "a assinatura é simulada, mas a Ed25519 é de verdade.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L46",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 330,
+          "linha_fim": null,
+          "trecho": "return [e for e in todos if e[\"conta_id\"] in pedidas or e[\"conta_id\"] in destinos]",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L330",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/policia.py",
+          "linha": 593,
+          "linha_fim": null,
+          "trecho": "st.graphviz_chart(grafo_dinheiro(extratos, pedidas), width=\"stretch\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L593",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 317,
+          "linha_fim": null,
+          "trecho": "if dados.modo() == \"real\":",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L317",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": null,
+      "existe": "No modo exemplo, o código recusa conta fora da rede e do RIF, devolve extratos e desenha o grafo do dinheiro.",
+      "falta": "Além das contas do pedido assinado, o retorno inclui os extratos das contas de destino delas, estejam ou não no pedido. No modo real não sai extrato, porque `rastro.hub.cofre` não está no repositório.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "só as contas autorizadas saem, e o grafo desenha o caminho do dinheiro até a conta central.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 47,
+        "linha_fim": null,
+        "trecho": "só as contas autorizadas saem, e o grafo desenha o caminho do dinheiro até a conta central.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L47",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 326,
+          "linha_fim": null,
+          "trecho": "raise CofreRecusado(\"assinatura do juiz inválida ou pedido alterado depois de assinado\") from e",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L326",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 318,
+          "linha_fim": null,
+          "trecho": "raise Indisponivel(\"no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L318",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": null,
+      "existe": "No modo exemplo, a assinatura é verificada sobre o pedido inteiro e a alteração gera `CofreRecusado`; conta fora das permitidas é recusada antes da verificação.",
+      "falta": "No modo real a verificação não é executada: todo pedido, alterado ou não, é recusado por falta de `rastro.hub.cofre`.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se o pedido for alterado depois da assinatura, o cofre recusa.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 47,
+        "linha_fim": null,
+        "trecho": "Se o pedido for alterado depois da assinatura, o cofre recusa.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L47",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 367,
+          "linha_fim": null,
+          "trecho": "\"hash_anterior\": eventos[-1][\"hash\"] if eventos else \"0\" * 64}",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L367",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/outros.py",
+          "linha": 18,
+          "linha_fim": null,
+          "trecho": "r = motor.verificar_cadeia(eventos)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/outros.py#L18",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/coaf/log.py",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "evento[\"hash\"] = hashlib.sha256(canonico.encode(\"utf-8\")).hexdigest()",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/coaf/log.py#L27",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Cada evento leva `hash_anterior` e um SHA-256, e a página Auditoria verifica a cadeia.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Auditoria** (a cadeia de registros por hash)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 49,
+        "linha_fim": null,
+        "trecho": "**Auditoria** (a cadeia de registros por hash)",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L49",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/outros.py",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "p = dados.placar()",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/outros.py#L37",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/placar.py",
+          "linha": 437,
+          "linha_fim": null,
+          "trecho": "gabarito = ler_json(dados / \"gabarito.json\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/placar.py#L437",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "A página lê `placar.json`, e `placar/placar.py` o calcula contra `gabarito.json`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Como medimos** (o placar contra o gabarito)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 49,
+        "linha_fim": null,
+        "trecho": "**Como medimos** (o placar contra o gabarito)",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L49",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 67,
+          "linha_fim": null,
+          "trecho": "return f(bo, forcar_ao_vivo=ao_vivo)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L67",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/policia.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "onde.toggle(\"IA ao vivo\", key=\"ao_vivo\", disabled=not tem_chave,",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L58",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/policia.py",
+          "linha": 126,
+          "linha_fim": null,
+          "trecho": "st.markdown(f\"**{bid} entrou na Rede {g['grupo_id']}**, que agora tem **{r['vitimas']} vítimas** \"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/policia.py#L126",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "No modo real, a chamada ao vivo depende também de ligar a chave \"IA ao vivo\" na tela (ou de `RASTRO_MODO=ao_vivo`); a tela informa em que rede o BO entrou ou que ficou fora.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Com a `ANTHROPIC_API_KEY` no `.env`, a IA lê esse BO na hora (uma chamada à API) e a tela mostra se ele entra numa rede.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 51,
+        "linha_fim": null,
+        "trecho": "Com a `ANTHROPIC_API_KEY` no `.env`, a IA lê esse BO na hora (uma chamada à API) e a tela mostra se ele entra numa rede.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L51",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rodar.py",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "ambiente[\"RASTRO_MODO\"] = \"ao_vivo\" if argumentos.ao_vivo else \"replay\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rodar.py#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/ia.py",
+          "linha": 200,
+          "linha_fim": null,
+          "trecho": "return _ler_cache(arquivo, tarefa, id_entrada)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L200",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "cache/ia/ler_bo/002b8eea0b9e5f533ef653ea01b39bec5a9d46f98e1175dd443fb74a17a200f0.json",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "\"modelo\": \"claude-haiku-5-5\",",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/cache/ia/ler_bo/002b8eea0b9e5f533ef653ea01b39bec5a9d46f98e1175dd443fb74a17a200f0.json#L3",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "`rodar.py` usa replay por padrão, e `ia.chamar` lê a resposta de `cache/ia/<tarefa>/<hash>.json`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O projeto roda no modo replay: as respostas da IA já estão gravadas em `cache/ia/`.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 21,
+        "linha_fim": null,
+        "trecho": "O projeto roda no modo replay: as respostas da IA já estão gravadas em `cache/ia/`.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L21",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "gerador/mundo.py",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "SEMENTE = 20261128",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/gerador/mundo.py#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "gerador/mundo.py",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "- dados/contas.jsonl, dados/extratos.jsonl, dados/gabarito.json, dados/lote_novo.json e dados/coaf_comunicacoes.jsonl.",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/gerador/mundo.py#L9",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/bancos.py",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "\"\"\"Bancos fictícios da demo. Nunca usar nome ou marca de banco real.",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/bancos.py#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "`gerador/mundo.py` gera redes, contas, vítimas, pagamentos, extratos e comunicações com semente fixa; os bancos são Aurora, Litoral e Serra.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Dados:** todos sintéticos, inclusive BOs, contestações, comunicações ao COAF, contas e extratos. Bancos fictícios.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 77,
+        "linha_fim": null,
+        "trecho": "**Dados:** todos sintéticos, inclusive BOs, contestações, comunicações ao COAF, contas e extratos. Bancos fictícios.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L77",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/modelos.py",
+          "linha": 77,
+          "linha_fim": null,
+          "trecho": "# ---------- Gabarito: dados/gabarito.json (SÓ o placar lê) ----------",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/modelos.py#L77",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/placar.py",
+          "linha": 437,
+          "linha_fim": null,
+          "trecho": "gabarito = ler_json(dados / \"gabarito.json\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/placar.py#L437",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": null,
+      "existe": "A busca por \"gabarito\" em `rastro/` acha só um comentário em `modelos.py`; a leitura do arquivo está em `placar/`.",
+      "falta": "A autoria separada do gabarito e do motor não é verificável pelo código (a pasta analisada não traz histórico git); há só a divisão de papéis escrita nos documentos da equipe.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Quem escreveu o gabarito não escreveu o motor, e o motor nunca lê o gabarito.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "placar/README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "Quem escreveu o gabarito não escreveu o motor, e o motor nunca lê o gabarito.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/prompt_unico.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "MODELO = \"claude-opus-5-5\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L24",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/__main__.py",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "busca_exata.main()",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/__main__.py#L5",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ESCOPO.md",
+          "linha": 399,
+          "linha_fim": null,
+          "trecho": "`cache/ia/prompt_unico/` está vazio.",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/ESCOPO.md#L399",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": null,
+      "existe": "Há a busca exata por regex, o script do prompt único com `claude-opus-5-5` e o placar que lê a saída dele se existir.",
+      "falta": "`cache/ia/prompt_unico/` não tem resposta gravada, e `python -m placar` roda só a busca exata e o placar. O `ESCOPO.md` registra que essa linha não aparece no placar sem uma rodada ao vivo.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O placar compara o pipeline com a busca exata e com um prompt único no modelo mais forte.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "placar/README.md",
+        "linha": 77,
+        "linha_fim": null,
+        "trecho": "O placar compara o pipeline com a busca exata e com um prompt único no modelo mais forte.",
+        "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/README.md#L77",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    }
+  ],
+  "nao_declarado": [
+    {
+      "tipo": "item",
+      "id": "leitor:nao_declarado-1",
+      "rotulo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (via fastembed)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/embeddings.py",
+          "linha": 50,
+          "linha_fim": null,
+          "trecho": "from fastembed import TextEmbedding",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L50",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/embeddings.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "MODELO = \"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L24",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "modelo"
+    }
+  ],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "falhou",
+        "erro": "ERROR: No matching distribution found for networkx==3.7"
+      },
+      "valor": "7 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o build parou em instalar, antes desta fase"
+      },
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:chaves-falsas",
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o teste local roda sem as chaves reais da equipe"
+      },
+      "valor": {
+        "lista": [
+          "ANTHROPIC_API_KEY",
+          "RASTRO_MODO",
+          "NEO4J_USER",
+          "NEO4J_PASSWORD"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "falhou",
+        "erro": "mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://rastro-hackia.streamlit.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://rastro-hackia.streamlit.app/",
+          "conferida": "script"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "anthropic (Anthropic), em requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "anthropic==2.8.0",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/requirements.txt#L1",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Anthropic",
+              "placar/prompt_unico.py",
+              17
+            ],
+            [
+              "Anthropic",
+              "placar/prompt_unico.py",
+              108
+            ],
+            [
+              "Anthropic",
+              "rastro/comum/ia.py",
+              102
+            ],
+            [
+              "Anthropic",
+              "rastro/comum/ia.py",
+              133
+            ],
+            [
+              "Anthropic",
+              "tests/test_prompt_unico.py",
+              6
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/prompt_unico.py",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "import anthropic",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L17",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/prompt_unico.py",
+          "linha": 108,
+          "linha_fim": null,
+          "trecho": "    from anthropic import Anthropic",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L108",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/ia.py",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "    from anthropic import Anthropic",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L102",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/ia.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "    from anthropic import transform_schema",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L133",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_prompt_unico.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "import anthropic",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tests/test_prompt_unico.py#L6",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/ia.py",
+          "linha": 135,
+          "linha_fim": null,
+          "trecho": "resposta = criar_cliente().beta.messages.create(",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L135",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/leitura.py",
+          "linha": 209,
+          "linha_fim": null,
+          "trecho": "resposta = ia.chamar(\"ler_bo\", entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L209",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "claude-haiku-5-5",
+      "obs": "Extrair de cada BO os dados com papel e trecho, em JSON com schema."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/banco/leitura.py",
+          "linha": 113,
+          "linha_fim": null,
+          "trecho": "resposta = ia.chamar(TAREFA, entrada, Leitura, forcar_ao_vivo=forcar_ao_vivo)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/banco/leitura.py#L113",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/ia.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "MODELO = \"claude-haiku-5-5\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L24",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "claude-haiku-5-5",
+      "obs": "Ler as contestações do MED no lado do banco."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/ia_conversa.py",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "resposta = ia.criar_cliente().messages.create(",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia_conversa.py#L42",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/agente.py",
+          "linha": 34,
+          "linha_fim": null,
+          "trecho": "MODELO = \"claude-sonnet-5-5\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/agente.py#L34",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/agente.py",
+          "linha": 644,
+          "linha_fim": null,
+          "trecho": "resposta = ia_conversa.conversar_turno(TAREFA, sistema, FERRAMENTAS, mensagens,",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/agente.py#L644",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "claude-sonnet-5-5",
+      "obs": "Agente com ferramentas que consulta o grafo sobre um BO, CPF, chave ou conta."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Anthropic",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/prompt_unico.py",
+          "linha": 120,
+          "linha_fim": null,
+          "trecho": "resposta = cliente.beta.messages.parse(",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L120",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/prompt_unico.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "MODELO = \"claude-opus-5-5\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/prompt_unico.py#L24",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "claude-opus-5-5",
+      "obs": "Concorrente \"prompt único\" do placar: agrupar todos os BOs num prompt só."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a fastembed (modelo local)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/embeddings.py",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "return [np.asarray(v, dtype=np.float64) for v in TextEmbedding(MODELO).embed(textos)]",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/embeddings.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "MODELO = \"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2\"",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/embeddings.py#L24",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "obs": "Gerar vetores dos relatos para o agente achar BOs de roteiro parecido."
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:21",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Marcus-Vin/rastro",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Marcus-Vin/rastro",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:antes",
+      "rotulo": "Commits antes do início da janela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Marcus-Vin/rastro/commit/943d7c5a88da44d1f2973a9a060156ae9e8722ae",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Marcus-Vin/rastro/commit/943d7c5a88da44d1f2973a9a060156ae9e8722ae",
+          "conferida": "script"
+        }
+      ],
+      "valor": "3 de 461 commits, o mais antigo em 28/11 08:46",
+      "obs": null,
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Marcus-Vin/rastro/commit/b0362f507ba9e7ce7151293a27ed0847f219eaf5",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Marcus-Vin/rastro/commit/b0362f507ba9e7ce7151293a27ed0847f219eaf5",
+          "conferida": "script"
+        }
+      ],
+      "valor": "b0362f5, 22748 linhas adicionadas em 375 arquivos, de 119552 no histórico",
+      "obs": "22748 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Sistema de IA do DERCC (Polícia Civil do Rio Grande do Sul)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://jornalsemanario.com.br/estelionato-digital-delegada-raquel-peixoto-pede-por-delegacia-especializada-em-bento-goncalves/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://jornalsemanario.com.br/estelionato-digital-delegada-raquel-peixoto-pede-por-delegacia-especializada-em-bento-goncalves/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Reportagem do Jornal Semanário descreve um sistema de IA do departamento de crimes cibernéticos que cruza dados de milhares de ocorrências, mapeia chaves Pix repetidas, faz triagem de telefones e acompanha a rota do dinheiro desviado.",
+      "obs": "Em comum: Uso pela Polícia Civil para ligar ocorrências de golpe por destinos de pagamento repetidos. Diferente: A fonte é uma reportagem, não uma página do sistema; nela não aparecem pedido de RIF, assinatura judicial para extrato nem trilha de auditoria."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "TRM Ardence (TRM Labs)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.trmlabs.com/missions/fraud-and-scams",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.trmlabs.com/missions/fraud-and-scams",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma de investigação com IA para casos de golpe que extrai identificadores dos relatos e liga denúncias separadas por destinos de pagamento, domínios e contas em comum.",
+      "obs": "Em comum: Extrai dados de relatos de vítimas e os agrupa por destinos de pagamento compartilhados para apoiar investigadores, inclusive policiais. Diferente: A página trata de endereços de carteiras de criptoativos e rastreamento de depósitos; não descreve BOs, COAF nem contas bancárias liberadas por ordem judicial."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "MuleTrace",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/mvelprasad45/MuleTrace",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/mvelprasad45/MuleTrace",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Protótipo de hackathon para investigadores de crimes cibernéticos financeiros que rastreia o dinheiro entre contas e aponta contas de destino que recebem de denúncias independentes.",
+      "obs": "Em comum: Liga denúncias de vítimas por contas de destino em comum, mostra a rede de contas, usa dados sintéticos e guarda hash SHA-256 das evidências. Diferente: A detecção descrita é por regras, sem modelo de linguagem para ler o texto das denúncias; a página descreve bloqueio de contas e dossiês em PDF no contexto legal da Índia."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "complaint-analyser",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/madeeha-28/complaint-analyser",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/madeeha-28/complaint-analyser",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Protótipo em Python que extrai de denúncias de golpe online telefones, IDs UPI, links, e-mails e carteiras cripto, agrupa as denúncias que compartilham um dado e mostra as ligações em um painel.",
+      "obs": "Em comum: Lê o texto das denúncias e liga as que citam o mesmo destino ou identificador, em um grafo, com dados sintéticos. Diferente: O repositório se descreve como projeto de aprendizado e classifica o tipo de golpe por palavras-chave; não descreve pedido de informações a órgãos, ordem judicial ou extratos."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Plataforma Tentáculos (Polícia Federal)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://finsidersbrasil.com.br/eventos/plataforma-tentaculos-expande-atuacao-com-integracao-de-policias-civis",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://finsidersbrasil.com.br/eventos/plataforma-tentaculos-expande-atuacao-com-integracao-de-policias-civis",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Base única da Polícia Federal alimentada por instituições financeiras com dados de golpes bancários eletrônicos, usada também por polícias civis que aderiram, para mapear organizações criminosas.",
+      "obs": "Em comum: Ponte de informações entre instituições bancárias e polícias, incluindo Polícias Civis, para investigar golpes financeiros. Diferente: Os dados vêm das instituições financeiras; a reportagem não descreve leitura de BOs em texto livre por IA nem fluxo de RIF ou de assinatura judicial."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "JSON",
+              1154,
+              80816
+            ],
+            [
+              "Python",
+              83,
+              18169
+            ],
+            [
+              "Markdown",
+              13,
+              1828
+            ],
+            [
+              "HTML",
+              2,
+              1703
+            ],
+            [
+              "TOML",
+              1,
+              36
+            ],
+            [
+              "YAML",
+              1,
+              24
+            ]
+          ]
+        }
+      },
+      "obs": "1704 arquivos de texto e 104599 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Leitura com IA e conferência",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/leitura.py",
+          "linha": 191,
+          "linha_fim": null,
+          "trecho": "def ler_bo(bo: dict, forcar_ao_vivo: bool = False) -> dict:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/leitura.py#L191",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/comum/ia.py",
+          "linha": 179,
+          "linha_fim": null,
+          "trecho": "def chamar(tarefa: str, entrada: dict, schema: type[BaseModel], forcar_ao_vivo: bool = False) -> dict:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/comum/ia.py#L179",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "rastro/comum/ia.py",
+          "rastro/policia/leitura.py",
+          "rastro/banco/leitura.py",
+          "rastro/comum/citacao.py"
+        ]
+      },
+      "obs": "Chama o modelo (ou lê o cache) para BOs e contestações e confere cada dado contra o texto da fonte."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Motor de ligações e redes",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/redes.py",
+          "linha": 439,
+          "linha_fim": null,
+          "trecho": "def montar_redes(itens: list[dict]) -> dict:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/redes.py#L439",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "rastro/policia/redes.py",
+          "rastro/policia/__main__.py",
+          "rastro/policia/grafo.py"
+        ]
+      },
+      "obs": "Liga os BOs por regras em Python, registra travas e monta redes com networkx, com gravação opcional no Neo4j."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Agente de análise do grafo",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/policia/agente.py",
+          "linha": 617,
+          "linha_fim": null,
+          "trecho": "def analisar(entrada: dict, forcar_ao_vivo: bool = False, memoria: GrafoMemoria | None = None,",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/policia/agente.py#L617",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "rastro/policia/agente.py",
+          "rastro/policia/agente_conferencia.py",
+          "rastro/policia/embeddings.py",
+          "tela/analise.py"
+        ]
+      },
+      "obs": "Consulta o grafo por ferramentas fixas e tem cada achado conferido pelo código."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "COAF simulado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "rastro/coaf/simulado.py",
+          "linha": 234,
+          "linha_fim": null,
+          "trecho": "def pedir_rif(pedido: dict) -> dict:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/rastro/coaf/simulado.py#L234",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "rastro/coaf/simulado.py",
+          "rastro/coaf/log.py",
+          "gerador/rifs.py"
+        ]
+      },
+      "obs": "Valida o pedido de RIF e monta a resposta com RIFs pré-calculados e comunicações recebidas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Plataforma do investigador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app.py",
+          "linha": 39,
+          "linha_fim": null,
+          "trecho": "navegacao = st.navigation(paginas, position=\"hidden\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/app.py#L39",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app.py",
+          "tela/investigacao.py",
+          "tela/policia.py",
+          "web/index.html"
+        ]
+      },
+      "obs": "Interface Streamlit com o fluxo do lote de BOs ao pedido de extrato, além das páginas de consulta."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Cofre e auditoria na tela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 307,
+          "linha_fim": null,
+          "trecho": "def abrir(pedido_assinado: dict, contas_permitidas: list[str]) -> list[dict]:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L307",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 361,
+          "linha_fim": null,
+          "trecho": "def registrar(ator: str, acao: str, detalhe: str) -> dict:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L361",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "tela/motor.py",
+          "tela/outros.py"
+        ]
+      },
+      "obs": "Assina o pedido com Ed25519, abre extratos de exemplo e mantém o log encadeado por hash."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Corpus sintético e placar",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "placar/placar.py",
+          "linha": 355,
+          "linha_fim": null,
+          "trecho": "def calcular(gabarito: dict, saidas: Path, dados: Path) -> dict:",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/placar/placar.py#L355",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "gerador/mundo.py",
+          "gerador/montar.py",
+          "placar/placar.py",
+          "placar/busca_exata.py",
+          "placar/prompt_unico.py"
+        ]
+      },
+      "obs": "Gera os dados sintéticos e mede os agrupamentos contra o gabarito."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ESCOPO.md",
+          "linha": 473,
+          "linha_fim": null,
+          "trecho": "**Cofre (zona vermelha), em `rastro/hub/cofre.py`.**",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/ESCOPO.md#L473",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 309,
+          "linha_fim": null,
+          "trecho": "f = _funcao(\"rastro.hub.cofre\", \"abrir\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L309",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tela/motor.py",
+          "linha": 318,
+          "linha_fim": null,
+          "trecho": "raise Indisponivel(\"no modo real, o extrato só sai do cofre do P3 (rastro.hub.cofre.abrir)\")",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/tela/motor.py#L318",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O `ESCOPO.md` descreve o cofre em `rastro/hub/cofre.py`, com `criar_pedido`, `assinar` e `abrir`.",
+              "`rastro/hub/` só tem um `__init__.py` vazio; assinatura e abertura estão em `tela/motor.py`, como alternativa quando o módulo não existe, e a abertura só funciona no modo exemplo."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Rastro",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 80 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "## Como rodar (sem chave de API)",
+          "link": "https://github.com/Marcus-Vin/rastro/blob/a583c49640b56f89e441a07379ff40aa75f0dd6f/README.md#L9",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Subida local",
+      "motivo": "o build parou em instalar, antes desta fase",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "motivo": "o teste local roda sem as chaves reais da equipe",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 1,
+    "motivos": {
+      "sem_prova": 1
+    }
+  }
+}

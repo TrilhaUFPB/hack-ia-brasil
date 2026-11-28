@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Yama · Relatório técnico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Oxanium:wght@200;300;400;500;600&display=swap">
+<style>
+:root {
+  --fundo: #000;
+  --bloco: #101011;
+  --borda: rgb(255 255 255 / 0.15);
+  --borda-fina: rgb(255 255 255 / 0.1);
+  --texto: #fff;
+  --texto-2: rgb(255 255 255 / 0.75);
+  --texto-3: rgb(255 255 255 / 0.6);
+  --raio: 14px;
+  --fonte: "Oxanium", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: var(--fonte); font-size: 16px; line-height: 1.6; overflow-wrap: anywhere; }
+main { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
+a { color: inherit; text-decoration: underline; text-decoration-color: rgb(255 255 255 / 0.35); text-underline-offset: 4px; }
+a:hover { text-decoration-color: #fff; }
+a:focus-visible, summary:focus-visible, input:focus-visible + img { outline: 2px solid #fff; outline-offset: 3px; }
+h1, h2, h3, p, ul, ol, dl, dd, blockquote, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+.mono { font-family: var(--mono); font-size: 0.82em; font-variant-numeric: tabular-nums; }
+.quebra { word-break: break-all; }
+.apagado { color: var(--texto-3); font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; }
+
+.faixa { border-bottom: 1px solid var(--borda); padding: 0.6rem 1.25rem; text-align: center; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.25em; color: var(--texto-2); }
+.cabecalho { padding: 3rem 0 2rem; }
+.cabecalho .apagado { display: block; margin-bottom: 0.75rem; }
+h1 { font-size: clamp(2.2rem, 7vw, 3.75rem); font-weight: 200; line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance; }
+.resumo-linha { margin-top: 1rem; max-width: 60ch; color: var(--texto-2); font-size: 1.05rem; }
+.ligacoes { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.25rem; color: var(--texto-2); }
+.geracao { margin-top: 1.25rem; color: var(--texto-3); font-family: var(--mono); font-size: 0.78rem; }
+
+.quadros { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.75rem; }
+.quadro, .bloco { background: var(--bloco); border: 1px solid var(--borda); border-radius: var(--raio); }
+.quadro { padding: 1rem 1.1rem 1.1rem; min-width: 0; }
+.quadro h3 { font-family: var(--mono); font-size: 0.7rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.2em; color: var(--texto-3); }
+.quadro .estado { display: flex; align-items: baseline; gap: 0.5rem; margin-top: 0.6rem; font-size: 1.2rem; font-weight: 300; line-height: 1.25; white-space: normal; }
+.quadro .detalhe { display: block; margin-top: 0.4rem; color: var(--texto-2); font-size: 0.9rem; line-height: 1.45; }
+
+
+.achados { display: grid; gap: 0.8rem; margin-top: 2rem; padding: 1.25rem 1.3rem 1.1rem; background: var(--bloco); border: 1px solid rgb(255 255 255 / 0.3); border-radius: var(--raio); }
+.achados h2 { font-size: 1.25rem; font-weight: 400; }
+.achados .segundo { margin-top: 0.9rem; }
+.achados .texto { max-width: 78ch; color: var(--texto); font-size: 1rem; line-height: 1.65; }
+.achados dl { display: grid; gap: 0; margin: 0; }
+.achados .linha { display: grid; grid-template-columns: 1fr; gap: 0.1rem 1.25rem; padding: 0.45rem 0; }
+.achados .linha + .linha { border-top: 1px solid var(--borda-fina); }
+.achados dt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.6rem; color: var(--texto-3); font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; }
+.achados dd { color: var(--texto-2); font-size: 0.94rem; line-height: 1.45; }
+.achados .a-conferir dd { color: var(--texto); }
+@media (min-width: 48rem) { .achados .linha { grid-template-columns: 13.5rem minmax(0, 1fr); align-items: baseline; } }
+
+.detalhes-titulo { margin-top: 2.5rem; margin-bottom: 0.6rem; }
+.parte { border-top: 1px solid var(--borda); scroll-margin-top: 1rem; }
+.parte > details > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.9rem; padding: 0.9rem 0; cursor: pointer; list-style: none; }
+.parte > details > summary::-webkit-details-marker { display: none; }
+.parte > details > summary::before { content: "+"; width: 1rem; font-family: var(--mono); color: var(--texto-3); }
+.parte > details[open] > summary::before { content: "−"; }
+.parte > details > .conteudo { padding: 0.4rem 0 2rem; }
+h2 { font-size: 1.25rem; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
+.contagem { color: var(--texto-3); font-family: var(--mono); font-size: 0.78rem; }
+.conteudo { display: grid; gap: 0.75rem; min-width: 0; }
+.vazio { color: var(--texto-3); }
+@media (min-width: 60rem) {
+  main { padding: 0 2.5rem 6rem; }
+}
+
+.bloco { padding: 1rem 1.1rem; display: grid; gap: 0.6rem; min-width: 0; }
+.bloco > header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.75rem; }
+.bloco h3 { font-size: 1.05rem; font-weight: 500; line-height: 1.35; }
+.bloco.passo { grid-template-columns: 2rem minmax(0, 1fr); align-items: baseline; }
+.bloco.passo > div { display: grid; gap: 0.6rem; min-width: 0; }
+.numero { color: var(--texto-3); }
+blockquote { font-size: 1.1rem; font-weight: 300; line-height: 1.45; }
+.estado { font-weight: 500; white-space: nowrap; }
+.marcador { display: inline-block; min-width: 1.1em; margin-right: 0.3em; text-align: center; font-family: var(--mono); }
+.linha-estado .detalhe, .obs, .valor { color: var(--texto-2); }
+.linha-estado .apagado { margin-right: 0.4rem; }
+.sinal { border: 1px solid rgb(255 255 255 / 0.4); border-radius: 999px; padding: 0.05rem 0.6rem; font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--texto-2); white-space: nowrap; }
+.campos { display: grid; gap: 0.45rem; }
+.campos:empty { display: none; }
+.campos dt { font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--texto-3); }
+.campos dd { color: var(--texto-2); }
+.lista { display: grid; gap: 0.25rem; color: var(--texto-2); }
+.lista li { padding-left: 1rem; position: relative; }
+.lista li::before { content: "·"; position: absolute; left: 0.2rem; color: var(--texto-3); }
+
+.evidencias { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem 1.25rem; border-top: 1px solid var(--borda-fina); padding-top: 0.7rem; color: var(--texto-2); }
+.evidencias li { min-width: 0; max-width: 100%; }
+.trecho { margin-top: 0.3rem; }
+.trecho summary { cursor: pointer; font-family: var(--mono); font-size: 0.7rem; color: var(--texto-3); }
+pre { margin: 0.4rem 0 0; padding: 0.7rem 0.8rem; max-width: 100%; overflow-x: auto; background: #000; border: 1px solid var(--borda-fina); border-radius: 8px; font-family: var(--mono); font-size: 0.76rem; line-height: 1.5; color: var(--texto-2); overflow-wrap: normal; }
+
+.captura { display: inline-grid; gap: 0.3rem; cursor: zoom-in; }
+.captura input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.captura img { display: block; width: 11rem; max-width: 100%; height: auto; border: 1px solid var(--borda); border-radius: 8px; background: #000; }
+.captura .mono { color: var(--texto-3); font-size: 0.7rem; }
+.captura input:checked + img { position: fixed; inset: 0; z-index: 10; width: 100vw; height: 100vh; max-width: none; padding: 1rem; object-fit: contain; border: 0; border-radius: 0; background: rgb(0 0 0 / 0.94); cursor: zoom-out; }
+
+.serie { display: grid; gap: 0.3rem; }
+.serie li { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) 3.5rem; align-items: center; gap: 0.6rem; color: var(--texto-2); }
+.serie li > :last-child { text-align: right; }
+.barra { display: block; height: 0.5rem; background: rgb(255 255 255 / 0.07); border-radius: 2px; }
+.barra span { display: block; height: 100%; min-width: 1px; background: rgb(255 255 255 / 0.7); border-radius: 2px; }
+
+.rolagem { max-width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; line-height: 1.55; }
+thead { border-bottom: 1px solid rgb(255 255 255 / 0.2); color: var(--texto-3); }
+th { font-weight: 400; }
+thead th { padding: 0 1rem 0.5rem 0; white-space: nowrap; }
+tbody tr + tr { border-top: 1px solid var(--borda-fina); }
+tbody th, tbody td { padding: 0.7rem 1rem 0.7rem 0; vertical-align: top; color: var(--texto-2); }
+tbody th { font-weight: 500; color: var(--texto); }
+td .detalhe { display: block; color: var(--texto-3); font-size: 0.85em; }
+
+.nao-verificado { display: grid; gap: 0; }
+.nao-verificado li { display: grid; gap: 0.15rem; padding: 0.7rem 0; }
+.nao-verificado li + li { border-top: 1px solid var(--borda-fina); }
+.nao-verificado p { color: var(--texto-2); }
+.rodape p { color: var(--texto-2); }
+.rodape .frase { color: var(--texto); padding: 1rem 0; }
+</style>
+</head>
+<body>
+
+<main>
+<header class="cabecalho">
+<span class="apagado">Relatório técnico · Segurança</span>
+<h1>Yama</h1>
+<p class="resumo-linha">Yama, onde posicionar cada viatura, decidido com dados criminais e regras de doutrina policial.</p>
+<p class="ligacoes"><a class="" href="https://github.com/calafite/hackaton-thing" target="_blank" rel="noopener noreferrer">Repositório</a><span>Demo: não informado</span><a class="" href="https://youtu.be/di2Y4Wo1CFE?is=OQSqFCuKGQ68nuu1" target="_blank" rel="noopener noreferrer">Vídeo do pitch</a></p>
+<p class="geracao">final · gerado em 28/11, 16:38 (Brasília) · <a class="" href="https://github.com/calafite/hackaton-thing/commit/5ecbfa78eff3cc0030abd8f51f45a19aa0531772" target="_blank" rel="noopener noreferrer">commit 5ecbfa78ef</a> · enviado em 28/11, 16:04</p>
+</header>
+<section class="quadros" aria-label="Resumo"><div class="quadro"><h3>Deploy</h3><span class="estado"><span class="marcador" aria-hidden="true">–</span>não informado</span></div><div class="quadro"><h3>Build</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></div><div class="quadro"><h3>Fluxo principal</h3><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></div><div class="quadro"><h3>IA no código</h3><span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span><span class="detalhe">nenhuma chamada a modelo de IA encontrada no código</span></div></section>
+<section class="achados" aria-label="Resumo do que foi encontrado">
+<h2>Resumo</h2>
+<p class="texto">A equipe não informou um deploy; o projeto foi instalado em container a partir do repositório e não abre página web. No teste de uso, feito pelo terminal, 8 de 8 passos do fluxo principal funcionaram. Das 19 declarações que a equipe faz sobre o projeto, o código confirma 12, confirma em parte 3 e não permite verificar 4. Não foi encontrada chamada a modelo de IA no código.</p><p class="texto">Há commits antes do início da janela (1 de 65 commits, o mais antigo em 28/11 08:44). A pesquisa na web encontrou 5 projetos parecidos: Abordagem para otimização da alocação de viaturas policiais (Gláucio Bezerra Rocha, UFPB, 2022), Problema de alocação de viaturas policiais em João Pessoa-PB (Valtania Ferreira da Silva, UFPB), Q-Patrol, Determining optimal police patrol deployments (tese de doutorado, University of Leeds) e Patrol Car Allocation Model (PCAM85).</p>
+<h2 class="segundo">Pontos de atenção</h2>
+<dl><div class="linha a-conferir"><dt>IA no código</dt><dd>falhou: nenhuma chamada a modelo de IA encontrada no código</dd></div><div class="linha a-conferir"><dt>Commits antes do início da janela</dt><dd>1 de 65 commits, o mais antigo em 28/11 08:44</dd></div></dl>
+</section>
+<p class="apagado detalhes-titulo">Detalhes e evidências · abra a parte que quiser conferir</p>
+<section class="parte" id="parte-roteiro">
+<details><summary><h2>Roteiro de 2 minutos</h2><span class="contagem">9 registros</span></summary>
+<div class="conteudo"><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">00</span>
+<div>
+<h3>No repositório, instale o projeto: pip install .</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>Os comandos dos passos seguintes rodam no terminal, na pasta do projeto</dd></div></dl>
+
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">01</span>
+<div>
+<h3>Suba o solver (&#96;./target/release/solver --port 8080 --instances-dir ../data/processed&#96;) e a web (&#96;npm run dev&#96;) e rode &#96;curl -sS -i http://localhost:5173/&#96;</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>A resposta foi HTTP 200 com o título do planejador. O container não tinha &#96;cargo&#96; nem &#96;web/node_modules&#96;; Rust e &#96;npm ci&#96; foram instalados em uma cópia em /tmp antes do teste.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:6</span><details class="trecho"><summary>trecho</summary><pre>&lt;title&gt;Yama — Planejador de Cobertura de Patrulhamento&lt;/title&gt;</pre></details></li><li><span class="mono">log · capturas/uso/comando-09.txt:40</span><details class="trecho"><summary>trecho</summary><pre>➜  Local:   http://localhost:5173/</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">02</span>
+<div>
+<h3>Carregue a amostra de dia todo com &#96;curl -sS http://localhost:5173/examples/instance.small.json&#96;</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>O arquivo veio com HTTP 200 e contém 200 áreas, 80 pontos de patrulhamento e 24 setores.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:11</span><details class="trecho"><summary>trecho</summary><pre>areas 200 pontos 80 setores 24</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">03</span>
+<div>
+<h3>Confira a conexão com &#96;curl -sS http://localhost:5173/api/healthz&#96; e mantenha o perfil &#96;balanced&#96; e a frota 14/4/2 da amostra</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>O proxy da web respondeu &#96;{&quot;status&quot;:&quot;ok&quot;}&#96; e a amostra declara 14 viaturas, 4 motos e 2 equipes táticas. O indicador na tela não foi visto.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:8</span><details class="trecho"><summary>trecho</summary><pre>{&quot;status&quot;:&quot;ok&quot;}</pre></details></li><li><span class="mono">log · capturas/uso/comando-13.txt:12</span><details class="trecho"><summary>trecho</summary><pre>{&#39;StandardPatrol&#39;: 14, &#39;MotoPatrol&#39;: 4, &#39;TacticalUnit&#39;: 2} time_windows False</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">04</span>
+<div>
+<h3>Gere o plano com &#96;curl -sS -X POST http://localhost:5173/api/plan -H &#39;content-type: application/json&#39; -d &#39;{&quot;schema&quot;:1,&quot;instance_ref&quot;:&quot;instance.small&quot;,&quot;p_max&quot;:20,&quot;preset&quot;:&quot;balanced&quot;,&quot;fleet_pool&quot;:{&quot;StandardPatrol&quot;:14,&quot;MotoPatrol&quot;:4,&quot;TacticalUnit&quot;:2}}&#39;&#96;</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>HTTP 200 em cerca de 0,06 s, com 20 unidades alocadas; o envio da amostra dentro da requisição, como a web faz, também devolveu HTTP 200. O teste incluiu &#96;solver&#96; com seed 1 e budget_ms 80.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-14.txt:12</span><details class="trecho"><summary>trecho</summary><pre>plano 1 HTTP 200 em 0.062155s</pre></details></li><li><span class="mono">log · capturas/uso/comando-34.txt:2</span><details class="trecho"><summary>trecho</summary><pre>amostra enviada inline: HTTP 200</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">05</span>
+<div>
+<h3>Leia na resposta de &#96;POST /api/plan&#96; os campos &#96;summary_banner&#96;, &#96;sizing_curve&#96; e &#96;recommended_allocation.per_region&#96;</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>Cobertura de 84,2%, tempo médio de 2,6 min, cotovelo em 15 unidades e 5 de 24 setores abaixo da meta, três deles com 0%. O mapa e o painel na tela não foram vistos, e o &#96;summary_banner&#96; da API vem em inglês.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-34.txt:3</span><details class="trecho"><summary>trecho</summary><pre>covers 84.2% of weighted risk at 2.6 min mean response. SLA not met (5 region(s) below floor</pre></details></li><li><span class="mono">log · capturas/uso/comando-18.txt:23</span><details class="trecho"><summary>trecho</summary><pre>setores 24 abaixo do piso 5</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">06</span>
+<div>
+<h3>Repita o &#96;POST /api/plan&#96; trocando &#96;preset&#96; para &#96;max_response&#96; ou &#96;stable_low_move&#96;, ou &#96;StandardPatrol&#96; para 10</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>Os três perfis devolveram posições diferentes, com cobertura de 84,19% (balanced), 82,68% (max_response) e 84,92% (stable_low_move). Com 10 viaturas (16 unidades) a cobertura foi 82,62%.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-17.txt:8</span><details class="trecho"><summary>trecho</summary><pre>max_response unidades 20 cobertura 82.6835 tempo_medio_min 2.6389 hash_posicoes 3e61be18</pre></details></li><li><span class="mono">log · capturas/uso/comando-15.txt:8</span><details class="trecho"><summary>trecho</summary><pre>balanced viaturas=10 -&gt; unidades 16 cobertura 82.622 tempo_medio_min 2.7154</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">07</span>
+<div>
+<h3>Gere o plano da cidade com &#96;curl -sS -X POST http://localhost:5173/api/plan -H &#39;content-type: application/json&#39; -d &#39;{&quot;schema&quot;:1,&quot;instance_ref&quot;:&quot;instance&quot;,&quot;p_max&quot;:120,&quot;preset&quot;:&quot;balanced&quot;,&quot;fleet_pool&quot;:{&quot;StandardPatrol&quot;:84,&quot;MotoPatrol&quot;:24,&quot;TacticalUnit&quot;:12}}&#39;&#96;</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>Instância com 8.896 áreas resolvida em cerca de 1,1 s: 120 unidades, 71,72% de cobertura e 2,77 min de tempo médio.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-16.txt:19</span><details class="trecho"><summary>trecho</summary><pre>plan HTTP 200 em 1.082068s</pre></details></li><li><span class="mono">log · capturas/uso/comando-16.txt:20</span><details class="trecho"><summary>trecho</summary><pre>unidades 120 cobertura 71.7225 tempo_medio_min 2.7681</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">08</span>
+<div>
+<h3>No painel Assistente, peça &quot;explique a solução&quot; e &quot;piores setores&quot;; no teste, a função de &#96;ChatPanel.tsx&#96; foi empacotada em uma cópia e rodada com &#96;node harness.mjs&#96;</h3>
+
+<dl class="campos"><div><dt>Esperado</dt><dd>As duas entradas devolveram textos diferentes: o resumo do plano e a lista de três setores com 0%. O código do assistente se descreve como baseado em regras, sem modelo de linguagem; o painel na tela não foi aberto.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-28.txt:10</span><details class="trecho"><summary>trecho</summary><pre>Frota completa alocada para este turno: 20 unidades. Cobertura de risco modelada: 84.2%; tempo médio de resposta: 2.6 min.</pre></details></li><li><span class="mono">log · capturas/uso/comando-28.txt:14</span><details class="trecho"><summary>trecho</summary><pre>• dp_011: 0.0% (mínimo 60% ✗)</pre></details></li></ul>
+</div>
+</article></div>
+</details>
+</section><section class="parte" id="parte-declaracoes">
+<details><summary><h2>Declarações da equipe</h2><span class="contagem">19 registros</span></summary>
+<div class="conteudo"><p class="contagem">3 parciais · 12 confirmadas · 4 não verificáveis pelo código</p><article class="bloco">
+<blockquote>“A partir das estatísticas históricas de crimes e da malha viária da cidade, ele responde a três perguntas: quantas equipes são necessárias, onde posicionar cada uma e qual a cobertura de risco e o tempo de resposta resultantes.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <span class="mono">formulário · descricao.md:1</span></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="obs">&#96;recommended_p&#96; é limitado pelo &#96;p_max&#96; informado; na aplicação web, &#96;p_max&#96; é o total de veículos digitado.</p>
+<dl class="campos"><div><dt>Existe</dt><dd>O solver devolve frota recomendada, cotovelo da curva, posição de cada unidade, cobertura e tempo médio de resposta, a partir de crimes ponderados e de tempos de deslocamento da instância.</dd></div><div><dt>Falta</dt><dd>Nas instâncias versionadas os pontos-base vêm de grade (&#96;grid_&#96;) e os tempos do cálculo haversine com fator de circuidade, não da malha viária.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L558" target="_blank" rel="noopener noreferrer">solver/solver-core/src/plan.rs:558</a><details class="trecho"><summary>trecho</summary><pre>recommended_p,</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/LeftPanel.tsx#L61" target="_blank" rel="noopener noreferrer">web/src/components/LeftPanel.tsx:61</a><details class="trecho"><summary>trecho</summary><pre>p_max: Math.max(1, fleetTotal(form, inst)),</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/pipeline.py#L112" target="_blank" rel="noopener noreferrer">etl/pipeline.py:112</a><details class="trecho"><summary>trecho</summary><pre>ap.add_argument(&quot;--routing&quot;, choices=[&quot;haversine&quot;, &quot;osm&quot;], default=&quot;haversine&quot;)</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/instance.small.json#L1" target="_blank" rel="noopener noreferrer">data/processed/instance.small.json:1</a><details class="trecho"><summary>trecho</summary><pre>&quot;external_id&quot;: &quot;grid_287</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“uma Pipeline de dados que agrega os crimes de São Paulo em hexágonos H3 e estima os tempos de deslocamento pela malha do OpenStreetMap”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <span class="mono">formulário · descricao.md:1</span></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+
+<p class="obs">A matriz OSM em H3 resolução 8 (&#96;travel_osm_r8.npz&#96;) está em &#96;data/processed/hex_r8&#96;; não há &#96;instance.hex_r8.json&#96; versionada.</p>
+<dl class="campos"><div><dt>Existe</dt><dd>Agregação dos crimes em hexágonos H3 (resolução 9) e código de tempos por Dijkstra na malha OSM, ativado com &#96;--routing osm&#96; ou via &#96;etl/hex_travel.py&#96;.</dd></div><div><dt>Falta</dt><dd>O padrão do pipeline é &#96;haversine&#96;, e as quatro instâncias &#96;instance*.json&#96; versionadas têm pontos-base de grade (&#96;grid_&#96;), gerados sem o grafo OSM.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/build.py#L64" target="_blank" rel="noopener noreferrer">etl/build.py:64</a><details class="trecho"><summary>trecho</summary><pre>h3.latlng_to_cell(lat, lon, config.H3_RESOLUTION)</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L171" target="_blank" rel="noopener noreferrer">etl/sources/osm.py:171</a><details class="trecho"><summary>trecho</summary><pre>lengths = nx.single_source_dijkstra_path_length(</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/pipeline.py#L94" target="_blank" rel="noopener noreferrer">etl/pipeline.py:94</a><details class="trecho"><summary>trecho</summary><pre>pb_to_cell, pb_to_pb = osm.travel_times_haversine(pbs, cells)</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/instance.small.json#L1" target="_blank" rel="noopener noreferrer">data/processed/instance.small.json:1</a><details class="trecho"><summary>trecho</summary><pre>&quot;external_id&quot;: &quot;grid_287</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“um solver de otimização em Rust que dimensiona a frota e posiciona as equipes em poucos segundos”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <span class="mono">formulário · descricao.md:1</span></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">Solver em Rust que varre os tamanhos de frota e atribui unidades a pontos-base, com orçamento de trabalho derivado de &#96;budget_ms&#96;; não há tempo de execução registrado no repositório.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L311" target="_blank" rel="noopener noreferrer">solver/solver-core/src/plan.rs:311</a><details class="trecho"><summary>trecho</summary><pre>let result = sweep(</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L300" target="_blank" rel="noopener noreferrer">solver/solver-core/src/solvers/mod.rs:300</a><details class="trecho"><summary>trecho</summary><pre>pub fn sweep&lt;&#39;a&gt;(</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“uma Interface Web em React + MapLibre contendo um mapa com os hexágonos coloridos por risco e por cobertura, equipes próximas agrupadas e perfis de planejamento.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <span class="mono">formulário · descricao.md:1</span></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">Sem navegador no ambiente: o servidor Vite respondeu, mas o mapa, os agrupamentos e as cores não foram vistos.</span></p>
+<p class="obs">Mapa MapLibre com hexágonos coloridos por classificação de zona e demanda antes do plano e por cobertura depois, agrupamento de equipes e três perfis.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/MapView.tsx#L202" target="_blank" rel="noopener noreferrer">web/src/components/MapView.tsx:202</a><details class="trecho"><summary>trecho</summary><pre>&quot;fill-color&quot;: [&quot;case&quot;, keepsTier, tierColor, covColor],</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/MapView.tsx#L171" target="_blank" rel="noopener noreferrer">web/src/components/MapView.tsx:171</a><details class="trecho"><summary>trecho</summary><pre>cluster: true,</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/LeftPanel.tsx#L135" target="_blank" rel="noopener noreferrer">web/src/components/LeftPanel.tsx:135</a><details class="trecho"><summary>trecho</summary><pre>&lt;option value=&quot;stable_low_move&quot;&gt;Cobertura estável&lt;/option&gt;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“**284.941** | boletins de ocorrência de São Paulo alimentam o mapa de risco”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L28" target="_blank" rel="noopener noreferrer">README.md:28</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">?</span>não verificável pelo código</span></p>
+
+<p class="obs">O número 284.941 está no README; não foi achado log ou relatório do pipeline que o registre. &#96;hex_r8/relatorio.json&#96;, de outro conjunto (H3 r8), registra 285539 boletins na malha.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L28" target="_blank" rel="noopener noreferrer">README.md:28</a><details class="trecho"><summary>trecho</summary><pre>| **284.941** | boletins de ocorrência de São Paulo alimentam o mapa de risco |</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/hex_r8/relatorio.json#L20" target="_blank" rel="noopener noreferrer">data/processed/hex_r8/relatorio.json:20</a><details class="trecho"><summary>trecho</summary><pre>&quot;bos_na_malha&quot;: 285539,</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“**~1 segundo** | para planejar a cidade inteira; 0,1 segundo nas instâncias pequenas”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L30" target="_blank" rel="noopener noreferrer">README.md:30</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">?</span>não verificável pelo código</span></p>
+
+<p class="obs">Há um teste marcado &#96;#[ignore]&#96; que imprime o tempo para &#96;instance.json&#96; e &#96;instance.small.json&#96; com &#96;p_max&#96; 20 e 30; não há saída registrada nem medição com 120 veículos.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/tests/plan.rs#L1106" target="_blank" rel="noopener noreferrer">solver/solver-core/tests/plan.rs:1106</a><details class="trecho"><summary>trecho</summary><pre>fn report_numbers() {</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“**71,7%** | de cobertura de risco modelada com 120 veículos, 4% da frota de referência”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L31" target="_blank" rel="noopener noreferrer">README.md:31</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">?</span>não verificável pelo código</span></p>
+
+<p class="obs">O solver calcula a métrica e a frota padrão do ETL soma 120 (84+24+12), mas não foi achado teste ou arquivo de saída que registre 71,7%.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/config.py#L122" target="_blank" rel="noopener noreferrer">etl/config.py:122</a><details class="trecho"><summary>trecho</summary><pre>FLEET_COUNTS: dict[str, int] = {&quot;StandardPatrol&quot;: 84, &quot;MotoPatrol&quot;: 24, &quot;TacticalUnit&quot;: 12}</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L360" target="_blank" rel="noopener noreferrer">solver/solver-core/src/plan.rs:360</a><details class="trecho"><summary>trecho</summary><pre>let pct = 100.0 * m.coverage;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“**2,8 minutos** | de tempo médio de resposta modelado nesse mesmo plano”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L32" target="_blank" rel="noopener noreferrer">README.md:32</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">?</span>não verificável pelo código</span></p>
+
+<p class="obs">O tempo médio é calculado pelo modelo, com penalidade de 15 min para áreas não alcançadas; não foi achado teste ou arquivo de saída que registre 2,8 minutos.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L184" target="_blank" rel="noopener noreferrer">solver/solver-core/src/eval/mod.rs:184</a><details class="trecho"><summary>trecho</summary><pre>mean_response_min: resp_sum / problem.total_demand,</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L11" target="_blank" rel="noopener noreferrer">solver/solver-core/src/problem.rs:11</a><details class="trecho"><summary>trecho</summary><pre>pub const T_PEN: f64 = 15.0;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Uma curva de dimensionamento mostra a cobertura para cada tamanho de frota, onde os ganhos começam a diminuir e a menor frota que atende às metas de serviço.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L60-L62" target="_blank" rel="noopener noreferrer">README.md:60-62</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="obs">O solver monta a curva, o cotovelo e &#96;min_p_meeting_sla&#96;; o gráfico web marca o cotovelo e a frota recomendada e destaca os pontos que atendem às metas.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L364" target="_blank" rel="noopener noreferrer">solver/solver-core/src/plan.rs:364</a><details class="trecho"><summary>trecho</summary><pre>curve.push(SizingPoint {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L384" target="_blank" rel="noopener noreferrer">solver/solver-core/src/plan.rs:384</a><details class="trecho"><summary>trecho</summary><pre>let min_p_meeting_sla = curve.iter().find(|pt| pt.sla_met).map(|pt| pt.p);</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L139" target="_blank" rel="noopener noreferrer">web/src/App.tsx:139</a><details class="trecho"><summary>trecho</summary><pre>&lt;CurveChart curve={plan.sizing_curve} recommended={plan.recommended_p} elbow={plan.elbow_p} /&gt;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“O &#96;/rebalance&#96; propõe um pequeno número de realocações para cobrir a lacuna deixada por unidades empenhadas em ocorrências.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L63-L65" target="_blank" rel="noopener noreferrer">README.md:63-65</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="obs">A rota &#96;/rebalance&#96; existe no solver, com limite de realocações e de ganho mínimo; em &#96;web/src&#96; não há chamada a ela.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-api/src/server.rs#L52" target="_blank" rel="noopener noreferrer">solver/solver-api/src/server.rs:52</a><details class="trecho"><summary>trecho</summary><pre>.route(&quot;/rebalance&quot;, post(rebalance))</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/rebalance.rs#L593" target="_blank" rel="noopener noreferrer">solver/solver-core/src/rebalance.rs:593</a><details class="trecho"><summary>trecho</summary><pre>let Some(c) = search.best(&amp;cands, |c| c.d_unc &lt; -tol &amp;&amp; c.d_j &lt; -tol) else {</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Zonas proibidas: um tipo de veículo nunca é colocado onde não é permitido (por exemplo, só equipes táticas entram em áreas de alto risco armado, e apenas em duplas; os demais veículos cobrem essas áreas a partir do perímetro).”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L69-L72" target="_blank" rel="noopener noreferrer">README.md:69-72</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="obs">O solver impõe tipos permitidos e pareamento; nos pontos-base, o ETL deriva a zona de três retângulos fixos e libera os três tipos na faixa de 300 m dos dois lados da borda.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L235" target="_blank" rel="noopener noreferrer">solver/solver-core/src/eval/mod.rs:235</a><details class="trecho"><summary>trecho</summary><pre>if pl.count &gt; 0 &amp;&amp; !problem.is_allowed(pb, t) {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L79" target="_blank" rel="noopener noreferrer">etl/sources/osm.py:79</a><details class="trecho"><summary>trecho</summary><pre>[&quot;TacticalUnit&quot;] if interior.iloc[k] else all_types for k in range(len(pbs))</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L69" target="_blank" rel="noopener noreferrer">etl/sources/osm.py:69</a><details class="trecho"><summary>trecho</summary><pre>near = near | (pts_m.distance(poly_m.boundary) &lt;= config.ENCLAVE_PERIMETER_M)</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L639" target="_blank" rel="noopener noreferrer">solver/solver-core/src/problem.rs:639</a><details class="trecho"><summary>trecho</summary><pre>if !(u.allows_tier(tier) || gamma &lt; 1.0) {</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Equidade entre distritos: cada distrito tem uma meta mínima de cobertura, de modo que o plano não pode simplesmente concentrar todos os veículos no centro da cidade.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L75-L77" target="_blank" rel="noopener noreferrer">README.md:75-77</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">◐</span>parcial</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">✕</span>falhou</span> <span class="detalhe">Planos são devolvidos com setores abaixo da meta: 16 de 94 na cidade com 120 veículos, e 5 de 24 na amostra com 20, três deles com 0% e sem ponto-base no próprio setor.</span></p>
+
+<dl class="campos"><div><dt>Existe</dt><dd>Cada distrito tem piso de cobertura (0,60 no ETL), que entra como penalidade na função objetivo e é informado como atingido ou não.</dd></div><div><dt>Falta</dt><dd>Não há restrição rígida: a validação do posicionamento não verifica os pisos, e um plano pode deixar distritos abaixo da meta.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L119" target="_blank" rel="noopener noreferrer">solver/solver-core/src/eval/mod.rs:119</a><details class="trecho"><summary>trecho</summary><pre>- obj.lambda2 * deficit</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/config.py#L152" target="_blank" rel="noopener noreferrer">etl/config.py:152</a><details class="trecho"><summary>trecho</summary><pre>REGION_COVERAGE_FLOOR = 0.60</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L217" target="_blank" rel="noopener noreferrer">solver/solver-core/src/eval/mod.rs:217</a><details class="trecho"><summary>trecho</summary><pre>/// Checks every hard constraint of the positioning model.</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Máxima cobertura (cobrir o máximo possível de demanda) mais um termo de p-mediana (manter baixo o tempo de resposta ponderado pela demanda), em vez de apenas um deles.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L102-L105" target="_blank" rel="noopener noreferrer">README.md:102-105</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">A função objetivo soma a cobertura ponderada pela demanda e subtrai o tempo médio de resposta normalizado (peso 0,15).</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L120" target="_blank" rel="noopener noreferrer">solver/solver-core/src/eval/mod.rs:120</a><details class="trecho"><summary>trecho</summary><pre>- obj.pmedian_weight * (resp_sum / total / T_PEN)</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/eval/mod.rs#L17" target="_blank" rel="noopener noreferrer">solver/solver-core/src/eval/mod.rs:17</a><details class="trecho"><summary>trecho</summary><pre>pub const PMEDIAN_WEIGHT: f64 = 0.15;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“O alcance é escalado por &#96;raiz(frota de referência / frota informada)&#96;, limitado entre 0,5× e 2×.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L118-L119" target="_blank" rel="noopener noreferrer">README.md:118-119</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">Raiz de referência/frota com limites padrão 0,5 e 2,0, ajustáveis por &#96;overrides&#96;.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/reach.rs#L42" target="_blank" rel="noopener noreferrer">solver/solver-core/src/reach.rs:42</a><details class="trecho"><summary>trecho</summary><pre>.sqrt()</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/reach.rs#L43" target="_blank" rel="noopener noreferrer">solver/solver-core/src/reach.rs:43</a><details class="trecho"><summary>trecho</summary><pre>.clamp(params.reach_scale_min, params.reach_scale_max),</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/model/preset.rs#L63" target="_blank" rel="noopener noreferrer">solver/solver-core/src/model/preset.rs:63</a><details class="trecho"><summary>trecho</summary><pre>pub const DEFAULT_REACH_SCALE_MAX: f64 = 2.0;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Janelas de horário opcionais alteram demanda, níveis de zona e tempos de deslocamento por turno.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L129-L130" target="_blank" rel="noopener noreferrer">README.md:129-130</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="obs">O solver aplica janelas a demanda, zona e deslocamento; as instâncias &#96;instance*.json&#96; versionadas não têm &#96;time_windows&#96; e a aplicação web não tem seletor de turno.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L437" target="_blank" rel="noopener noreferrer">solver/solver-core/src/problem.rs:437</a><details class="trecho"><summary>trecho</summary><pre>let tier = active.and_then(|o| o.zone_tier).unwrap_or(cell.zone_tier);</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/problem.rs#L277" target="_blank" rel="noopener noreferrer">solver/solver-core/src/problem.rs:277</a><details class="trecho"><summary>trecho</summary><pre>let (mu_car, mu_moto) = window.map_or((1.0, 1.0), |w| {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L171" target="_blank" rel="noopener noreferrer">solver/solver-core/src/plan.rs:171</a><details class="trecho"><summary>trecho</summary><pre>instance.resolve_time_window(request.time_window.as_deref(), request.hour_of_day)?;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“A mesma semente sempre produz a mesma resposta.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L133" target="_blank" rel="noopener noreferrer">README.md:133</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="obs">Gerador ChaCha8 com semente e teste de igualdade que ignora &#96;elapsed_ms&#96;; há também um corte de segurança por relógio, sinalizado em &#96;wall_clock_cutoff&#96;.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L309" target="_blank" rel="noopener noreferrer">solver/solver-core/src/solvers/mod.rs:309</a><details class="trecho"><summary>trecho</summary><pre>let mut rng = ChaCha8Rng::seed_from_u64(seed);</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/tests/plan.rs#L354" target="_blank" rel="noopener noreferrer">solver/solver-core/tests/plan.rs:354</a><details class="trecho"><summary>trecho</summary><pre>fn same_seed_gives_identical_response() {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L71" target="_blank" rel="noopener noreferrer">solver/solver-core/src/solvers/mod.rs:71</a><details class="trecho"><summary>trecho</summary><pre>let safety = Duration::from_millis(budget_ms.saturating_mul(10).max(3000));</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Busca: construção gulosa, busca local por trocas de Teitz–Bart e busca local iterada com semente; melhor melhoria gulosa para o rebalanceamento.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L172-L173" target="_blank" rel="noopener noreferrer">README.md:172-173</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">Há construção gulosa, trocas no estilo Teitz–Bart, ILS com semente e melhor melhoria gulosa no rebalanceamento.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L161" target="_blank" rel="noopener noreferrer">solver/solver-core/src/solvers/mod.rs:161</a><details class="trecho"><summary>trecho</summary><pre>pub fn greedy_fill(st: &amp;mut State, limits: &amp;Limits) {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L179" target="_blank" rel="noopener noreferrer">solver/solver-core/src/solvers/mod.rs:179</a><details class="trecho"><summary>trecho</summary><pre>pub fn local_search(st: &amp;mut State, limits: &amp;Limits, budget: &amp;mut Budget) -&gt; bool {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/solvers/mod.rs#L239" target="_blank" rel="noopener noreferrer">solver/solver-core/src/solvers/mod.rs:239</a><details class="trecho"><summary>trecho</summary><pre>pub fn ils(st: &amp;mut State, limits: &amp;Limits, rng: &amp;mut ChaCha8Rng, budget: &amp;mut Budget) -&gt; usize {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/rebalance.rs#L20" target="_blank" rel="noopener noreferrer">solver/solver-core/src/rebalance.rs:20</a><details class="trecho"><summary>trecho</summary><pre>const ALGO: &amp;str = &quot;greedy_best_improvement&quot;;</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“A aplicação em si não usa nenhum modelo de aprendizado de máquina nem de linguagem. O assistente dentro da aplicação é baseado em regras.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L177-L179" target="_blank" rel="noopener noreferrer">README.md:177-179</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+
+<p class="obs">O assistente responde por expressões regulares com textos escritos no código; não foi achada biblioteca ou chamada de modelo na aplicação.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/ChatPanel.tsx#L23" target="_blank" rel="noopener noreferrer">web/src/components/ChatPanel.tsx:23</a><details class="trecho"><summary>trecho</summary><pre>function answer(q: string, inst: Instance | null, plan: PlanResponse | null): string {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/ChatPanel.tsx#L26" target="_blank" rel="noopener noreferrer">web/src/components/ChatPanel.tsx:26</a><details class="trecho"><summary>trecho</summary><pre>if (/(coverage|cobertura)/.test(s) &amp;&amp; !/(floor|piso|mínim)/.test(s)) return</pre></details></li></ul>
+</article><article class="bloco">
+<blockquote>“Se o solver não estiver acessível, a aplicação web recorre a um pequeno solver de demonstração no navegador e identifica os resultados como demonstração.”</blockquote>
+<p class="fonte"><span class="apagado">Fonte</span> <a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L267-L268" target="_blank" rel="noopener noreferrer">README.md:267-268</a></p>
+<p class="linha-estado"><span class="apagado">No código</span> <span class="estado"><span class="marcador" aria-hidden="true">●</span>confirmada</span></p>
+<p class="linha-estado"><span class="apagado">No uso</span> <span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">A troca automática e o aviso na tela exigem navegador. Chamada por script, a função &#96;solveLocal&#96; devolveu um plano identificado como demonstração local.</span></p>
+<p class="obs">A aplicação usa &#96;solveLocal&#96; quando o serviço está indisponível ou a chamada falha, e mostra um aviso de demonstração no resultado.</p>
+<dl class="campos"></dl>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L94" target="_blank" rel="noopener noreferrer">web/src/App.tsx:94</a><details class="trecho"><summary>trecho</summary><pre>if (form.useLocal || backendUp === false) {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L103" target="_blank" rel="noopener noreferrer">web/src/App.tsx:103</a><details class="trecho"><summary>trecho</summary><pre>const p = solveLocal(instance, req);</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/components/LeftPanel.tsx#L181" target="_blank" rel="noopener noreferrer">web/src/components/LeftPanel.tsx:181</a><details class="trecho"><summary>trecho</summary><pre>Resultado da demonstração no navegador — útil para explorar a interface, mas não é uma recomendação operacional do solucionador Rust.</pre></details></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-nao_declarado">
+<details><summary><h2>Usado e não declarado</h2><span class="contagem">0 registros</span></summary>
+<div class="conteudo"><p class="vazio">Nada registrado nesta parte</p></div>
+</details>
+</section><section class="parte" id="parte-uso">
+<details><summary><h2>Teste de uso</h2><span class="contagem">16 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Instalação</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">20 s</p>
+
+
+</article><article class="bloco">
+<header><h3>Subida local</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">o projeto não abre página web</span></p>
+<p class="valor">0 s</p>
+
+
+</article><article class="bloco">
+<header><h3>Pastas com manifesto que não foram executadas</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">o build automático executa uma pasta por projeto; a executada foi a raiz</span></p>
+<ul class="lista"><li>web</li></ul>
+
+
+</article><article class="bloco">
+<header><h3>Deploy responde</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">–</span>não informado</span></p>
+
+
+
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">01</span>
+<div>
+<h3>Suba o solver (&#96;./target/release/solver --port 8080 --instances-dir ../data/processed&#96;) e a web (&#96;npm run dev&#96;) e rode &#96;curl -sS -i http://localhost:5173/&#96;</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>A resposta foi HTTP 200 com o título do planejador. O container não tinha &#96;cargo&#96; nem &#96;web/node_modules&#96;; Rust e &#96;npm ci&#96; foram instalados em uma cópia em /tmp antes do teste.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:6</span><details class="trecho"><summary>trecho</summary><pre>&lt;title&gt;Yama — Planejador de Cobertura de Patrulhamento&lt;/title&gt;</pre></details></li><li><span class="mono">log · capturas/uso/comando-09.txt:40</span><details class="trecho"><summary>trecho</summary><pre>➜  Local:   http://localhost:5173/</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">02</span>
+<div>
+<h3>Carregue a amostra de dia todo com &#96;curl -sS http://localhost:5173/examples/instance.small.json&#96;</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>O arquivo veio com HTTP 200 e contém 200 áreas, 80 pontos de patrulhamento e 24 setores.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:11</span><details class="trecho"><summary>trecho</summary><pre>areas 200 pontos 80 setores 24</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">03</span>
+<div>
+<h3>Confira a conexão com &#96;curl -sS http://localhost:5173/api/healthz&#96; e mantenha o perfil &#96;balanced&#96; e a frota 14/4/2 da amostra</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>O proxy da web respondeu &#96;{&quot;status&quot;:&quot;ok&quot;}&#96; e a amostra declara 14 viaturas, 4 motos e 2 equipes táticas. O indicador na tela não foi visto.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-13.txt:8</span><details class="trecho"><summary>trecho</summary><pre>{&quot;status&quot;:&quot;ok&quot;}</pre></details></li><li><span class="mono">log · capturas/uso/comando-13.txt:12</span><details class="trecho"><summary>trecho</summary><pre>{&#39;StandardPatrol&#39;: 14, &#39;MotoPatrol&#39;: 4, &#39;TacticalUnit&#39;: 2} time_windows False</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">04</span>
+<div>
+<h3>Gere o plano com &#96;curl -sS -X POST http://localhost:5173/api/plan -H &#39;content-type: application/json&#39; -d &#39;{&quot;schema&quot;:1,&quot;instance_ref&quot;:&quot;instance.small&quot;,&quot;p_max&quot;:20,&quot;preset&quot;:&quot;balanced&quot;,&quot;fleet_pool&quot;:{&quot;StandardPatrol&quot;:14,&quot;MotoPatrol&quot;:4,&quot;TacticalUnit&quot;:2}}&#39;&#96;</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>HTTP 200 em cerca de 0,06 s, com 20 unidades alocadas; o envio da amostra dentro da requisição, como a web faz, também devolveu HTTP 200. O teste incluiu &#96;solver&#96; com seed 1 e budget_ms 80.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-14.txt:12</span><details class="trecho"><summary>trecho</summary><pre>plano 1 HTTP 200 em 0.062155s</pre></details></li><li><span class="mono">log · capturas/uso/comando-34.txt:2</span><details class="trecho"><summary>trecho</summary><pre>amostra enviada inline: HTTP 200</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">05</span>
+<div>
+<h3>Leia na resposta de &#96;POST /api/plan&#96; os campos &#96;summary_banner&#96;, &#96;sizing_curve&#96; e &#96;recommended_allocation.per_region&#96;</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>Cobertura de 84,2%, tempo médio de 2,6 min, cotovelo em 15 unidades e 5 de 24 setores abaixo da meta, três deles com 0%. O mapa e o painel na tela não foram vistos, e o &#96;summary_banner&#96; da API vem em inglês.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-34.txt:3</span><details class="trecho"><summary>trecho</summary><pre>covers 84.2% of weighted risk at 2.6 min mean response. SLA not met (5 region(s) below floor</pre></details></li><li><span class="mono">log · capturas/uso/comando-18.txt:23</span><details class="trecho"><summary>trecho</summary><pre>setores 24 abaixo do piso 5</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">06</span>
+<div>
+<h3>Repita o &#96;POST /api/plan&#96; trocando &#96;preset&#96; para &#96;max_response&#96; ou &#96;stable_low_move&#96;, ou &#96;StandardPatrol&#96; para 10</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>Os três perfis devolveram posições diferentes, com cobertura de 84,19% (balanced), 82,68% (max_response) e 84,92% (stable_low_move). Com 10 viaturas (16 unidades) a cobertura foi 82,62%.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-17.txt:8</span><details class="trecho"><summary>trecho</summary><pre>max_response unidades 20 cobertura 82.6835 tempo_medio_min 2.6389 hash_posicoes 3e61be18</pre></details></li><li><span class="mono">log · capturas/uso/comando-15.txt:8</span><details class="trecho"><summary>trecho</summary><pre>balanced viaturas=10 -&gt; unidades 16 cobertura 82.622 tempo_medio_min 2.7154</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">07</span>
+<div>
+<h3>Gere o plano da cidade com &#96;curl -sS -X POST http://localhost:5173/api/plan -H &#39;content-type: application/json&#39; -d &#39;{&quot;schema&quot;:1,&quot;instance_ref&quot;:&quot;instance&quot;,&quot;p_max&quot;:120,&quot;preset&quot;:&quot;balanced&quot;,&quot;fleet_pool&quot;:{&quot;StandardPatrol&quot;:84,&quot;MotoPatrol&quot;:24,&quot;TacticalUnit&quot;:12}}&#39;&#96;</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>Instância com 8.896 áreas resolvida em cerca de 1,1 s: 120 unidades, 71,72% de cobertura e 2,77 min de tempo médio.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-16.txt:19</span><details class="trecho"><summary>trecho</summary><pre>plan HTTP 200 em 1.082068s</pre></details></li><li><span class="mono">log · capturas/uso/comando-16.txt:20</span><details class="trecho"><summary>trecho</summary><pre>unidades 120 cobertura 71.7225 tempo_medio_min 2.7681</pre></details></li></ul>
+</div>
+</article><article class="bloco passo">
+<span class="mono numero" aria-hidden="true">08</span>
+<div>
+<h3>No painel Assistente, peça &quot;explique a solução&quot; e &quot;piores setores&quot;; no teste, a função de &#96;ChatPanel.tsx&#96; foi empacotada em uma cópia e rodada com &#96;node harness.mjs&#96;</h3>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<dl class="campos"><div><dt>Observado</dt><dd>As duas entradas devolveram textos diferentes: o resumo do plano e a lista de três setores com 0%. O código do assistente se descreve como baseado em regras, sem modelo de linguagem; o painel na tela não foi aberto.</dd></div></dl>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-28.txt:10</span><details class="trecho"><summary>trecho</summary><pre>Frota completa alocada para este turno: 20 unidades. Cobertura de risco modelada: 84.2%; tempo médio de resposta: 2.6 min.</pre></details></li><li><span class="mono">log · capturas/uso/comando-28.txt:14</span><details class="trecho"><summary>trecho</summary><pre>• dp_011: 0.0% (mínimo 60% ✗)</pre></details></li></ul>
+</div>
+</article><article class="bloco">
+<header><h3>Entrada inesperada: &#96;solver plan&#96; sem argumentos</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+<p class="obs">Mensagem com os argumentos obrigatórios e o modo de uso, código de saída 2.</p>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-31.txt:3</span><details class="trecho"><summary>trecho</summary><pre>error: the following required arguments were not provided:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Entrada inesperada: &#96;solver plan --instance nao_existe.json --p-max 20&#96;</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+<p class="obs">Erro em JSON com o código &#96;instance_not_found&#96;, código de saída 1.</p>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-31.txt:15</span><details class="trecho"><summary>trecho</summary><pre>&quot;message&quot;: &quot;instance file nao_existe.json not found&quot;</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Entrada inesperada: &#96;POST /plan&#96; com &#96;instance_ref&#96; de 100.000 caracteres</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+<p class="obs">HTTP 404 com &#96;instance_not_found&#96;; a resposta repete o texto enviado (100.106 bytes) e o &#96;/healthz&#96; seguiu respondendo.</p>
+<ul class="evidencias" aria-label="Evidências"><li><span class="mono">log · capturas/uso/comando-32.txt:2</span><details class="trecho"><summary>trecho</summary><pre>instance_ref com 100000 caracteres: HTTP 404, 100106 bytes</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Interface web no navegador (mapa, painéis, painel Assistente, indicador de modo de demonstração)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">◌</span>não foi possível testar</span> <span class="detalhe">O ambiente de teste não tem navegador; os passos foram exercitados por HTTP, pela CLI e por scripts que chamam funções do código.</span></p>
+
+
+
+</article></div>
+</details>
+</section><section class="parte" id="parte-ia">
+<details><summary><h2>Uso de IA</h2><span class="contagem">1 registro</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Nenhuma biblioteca de IA nas dependências e nenhuma linha de código que cite provedores de IA</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article></div>
+</details>
+</section><section class="parte" id="parte-linha_do_tempo">
+<details><summary><h2>Linha do tempo</h2><span class="contagem">3 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Repositório criado</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">28/11 08:28</p>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/calafite/hackaton-thing" target="_blank" rel="noopener noreferrer">https://github.com/calafite/hackaton-thing</a></li></ul>
+</article><article class="bloco">
+<header><h3>Commits antes do início da janela</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">1 de 65 commits, o mais antigo em 28/11 08:44</p>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/calafite/hackaton-thing/commit/2d2a517b51f47d67f9b99892b232e84c3c70d96f" target="_blank" rel="noopener noreferrer">https://github.com/calafite/hackaton-thing/commit/2d2a517b51f47d67f9b99892b232e84c3c70d96f</a></li></ul>
+</article><article class="bloco">
+<header><h3>Commit muito grande</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">8e2c998, 110716 linhas adicionadas em 23 arquivos, de 144026 no histórico</p>
+<p class="obs">110716 linhas fora de arquivos de trava e gerados</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/calafite/hackaton-thing/commit/8e2c998e3bc56f7a911919cdd790e4da843888f5" target="_blank" rel="noopener noreferrer">https://github.com/calafite/hackaton-thing/commit/8e2c998e3bc56f7a911919cdd790e4da843888f5</a></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-origem">
+<details><summary><h2>Origem do código</h2><span class="contagem">1 registro</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Nenhum arquivo igual ao de outra equipe nesta rodada</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+<p class="obs">18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços</p>
+
+</article></div>
+</details>
+</section><section class="parte" id="parte-parecidos">
+<details><summary><h2>Projetos parecidos no mundo</h2><span class="contagem">5 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Abordagem para otimização da alocação de viaturas policiais (Gláucio Bezerra Rocha, UFPB, 2022)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Dissertação que agrupa áreas a partir de registros de ocorrências policiais, prevê o volume de crimes em cada uma e recomenda locais para viaturas com um modelo de máxima cobertura capacitada.</p>
+<p class="obs">Em comum: Usa dados criminais e um modelo de cobertura para decidir onde posicionar viaturas, como apoio à decisão de gestores de segurança pública. Diferente: O resumo descreve uma etapa de previsão de crimes e não descreve o cálculo do tamanho da frota nem uma interface web.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://repositorio.ufpb.br/jspui/handle/123456789/26689" target="_blank" rel="noopener noreferrer">https://repositorio.ufpb.br/jspui/handle/123456789/26689</a></li></ul>
+</article><article class="bloco">
+<header><h3>Problema de alocação de viaturas policiais em João Pessoa-PB (Valtania Ferreira da Silva, UFPB)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Trabalho que trata o posicionamento de viaturas como problema de localização de facilidades, mapeia ocorrências em SIG e entrega uma ferramenta web de apoio à decisão espacial com modelo de cobertura e cobertura de retaguarda.</p>
+<p class="obs">Em comum: Combina dados de crimes, mapa, otimização e uma ferramenta web para decidir onde colocar viaturas. Diferente: Compara três formas de escolher locais candidatos (gestor, p-medianas e k-means) e usa meta-heurísticas com GRASP; o resumo não descreve o cálculo do tamanho da frota.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://repositorio.ufpb.br/jspui/handle/tede/5264" target="_blank" rel="noopener noreferrer">https://repositorio.ufpb.br/jspui/handle/tede/5264</a></li></ul>
+</article><article class="bloco">
+<header><h3>Q-Patrol</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Protótipo de código aberto, baseado em SIG, para planejamento de patrulhamento e despacho de emergências, que explora como distribuir um número limitado de unidades policiais pela cidade.</p>
+<p class="obs">Em comum: Posiciona unidades de patrulha a partir de risco espacial, usa rotas pela malha viária e mostra o resultado em um mapa web. Diferente: Usa QUBO e QAOA simulado, com um MILP como referência, e interface em Streamlit com Folium; inclui despacho de chamados SOS, e o README não define uma métrica de cobertura.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://github.com/Nyx0004/Q-Patrol" target="_blank" rel="noopener noreferrer">https://github.com/Nyx0004/Q-Patrol</a></li></ul>
+</article><article class="bloco">
+<header><h3>Determining optimal police patrol deployments (tese de doutorado, University of Leeds)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Propõe uma ferramenta de apoio à decisão para planejar a distribuição de patrulhas, com um modelo baseado em agentes que avalia cada distribuição e um algoritmo genético que busca outras melhores, com estudo de caso em Detroit.</p>
+<p class="obs">Em comum: Apoia o planejamento do posicionamento de patrulhas policiais com otimização, considerando o tempo de resposta a ocorrências. Diferente: Avalia as distribuições por simulação baseada em agentes e também considera a dissuasão de crimes em áreas-chave.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://etheses.whiterose.ac.uk/id/eprint/32838/" target="_blank" rel="noopener noreferrer">https://etheses.whiterose.ac.uk/id/eprint/32838/</a></li></ul>
+</article><article class="bloco">
+<header><h3>Patrol Car Allocation Model (PCAM85)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">Programa de computador de 1985 que ajuda agências policiais a decidir quantas viaturas manter em serviço em cada comando geográfico e a alocá-las segundo padrões de desempenho definidos pelo usuário.</p>
+<p class="obs">Em comum: Responde quantas viaturas são necessárias e como distribuí-las para atender a metas de desempenho, para planejadores policiais. Diferente: Distribui viaturas por comando e turno a partir do número e da duração esperados de chamados; o resumo não descreve mapa nem posicionamento de cada equipe.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono quebra" href="https://www.ojp.gov/ncjrs/virtual-library/abstracts/patrol-car-allocation-model-executive-summary-1985" target="_blank" rel="noopener noreferrer">https://www.ojp.gov/ncjrs/virtual-library/abstracts/patrol-car-allocation-model-executive-summary-1985</a></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-arquitetura">
+<details><summary><h2>Arquitetura</h2><span class="contagem">11 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Linguagens e tamanho</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<div class="rolagem"><table><thead><tr><th scope="col">Linguagem</th><th scope="col">Arquivos</th><th scope="col">Linhas</th></tr></thead><tbody><tr><td class="">Rust</td><td class="mono">25</td><td class="mono">9478</td></tr><tr><td class="">Python</td><td class="mono">22</td><td class="mono">3591</td></tr><tr><td class="">Markdown</td><td class="mono">10</td><td class="mono">2109</td></tr><tr><td class="">TypeScript</td><td class="mono">14</td><td class="mono">1764</td></tr><tr><td class="">JSON</td><td class="mono">12</td><td class="mono">721</td></tr><tr><td class="">CSS</td><td class="mono">1</td><td class="mono">128</td></tr><tr><td class="">TOML</td><td class="mono">4</td><td class="mono">104</td></tr><tr><td class="">HTML</td><td class="mono">1</td><td class="mono">13</td></tr></tbody></table></div>
+<p class="obs">105 arquivos de texto e 59023 linhas no total, sem contar dependências instaladas, arquivos de trava e binários.</p>
+
+</article><article class="bloco">
+<header><h3>Pipeline de instâncias (Python)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>etl/pipeline.py</li><li>etl/build.py</li><li>etl/sources/ssp_sp.py</li><li>etl/sources/osm.py</li><li>etl/config.py</li></ul>
+<p class="obs">Lê os boletins da SSP-SP, agrega em hexágonos H3, gera pontos-base e tempos de deslocamento e grava a instância JSON.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/pipeline.py#L106" target="_blank" rel="noopener noreferrer">etl/pipeline.py:106</a><details class="trecho"><summary>trecho</summary><pre>def main() -&gt; int:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Dataset H3 r8 e matriz OSM</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>etl/hex_dataset.py</li><li>etl/hex_travel.py</li><li>etl/hex_instance.py</li></ul>
+<p class="obs">Caminho separado que monta um conjunto em H3 resolução 8, calcula tempos pela malha OSM e converte em instância.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/hex_dataset.py#L302" target="_blank" rel="noopener noreferrer">etl/hex_dataset.py:302</a><details class="trecho"><summary>trecho</summary><pre>def main(argv: list[str] | None = None) -&gt; None:</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/hex_travel.py#L109" target="_blank" rel="noopener noreferrer">etl/hex_travel.py:109</a><details class="trecho"><summary>trecho</summary><pre>def main(argv: list[str] | None = None) -&gt; None:</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/hex_instance.py#L187" target="_blank" rel="noopener noreferrer">etl/hex_instance.py:187</a><details class="trecho"><summary>trecho</summary><pre>def main(argv: list[str] | None = None) -&gt; None:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>solver-core (Rust)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>solver/solver-core/src/plan.rs</li><li>solver/solver-core/src/problem.rs</li><li>solver/solver-core/src/solvers/mod.rs</li><li>solver/solver-core/src/eval/mod.rs</li><li>solver/solver-core/src/rebalance.rs</li></ul>
+<p class="obs">Valida a instância, aplica as regras de doutrina e calcula posicionamento, curva de frota e rebalanceamento.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/plan.rs#L149" target="_blank" rel="noopener noreferrer">solver/solver-core/src/plan.rs:149</a><details class="trecho"><summary>trecho</summary><pre>pub fn plan(instance: &amp;Instance, request: &amp;PlanRequest) -&gt; Result&lt;PlanResponse, SolveError&gt; {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-core/src/rebalance.rs#L377" target="_blank" rel="noopener noreferrer">solver/solver-core/src/rebalance.rs:377</a><details class="trecho"><summary>trecho</summary><pre>pub fn rebalance(</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>solver-api (HTTP e linha de comando)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>solver/solver-api/src/main.rs</li><li>solver/solver-api/src/server.rs</li><li>solver/solver-api/src/cli.rs</li><li>solver/solver-api/src/store.rs</li></ul>
+<p class="obs">Expõe o solver por rotas HTTP e subcomandos.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-api/src/main.rs#L6" target="_blank" rel="noopener noreferrer">solver/solver-api/src/main.rs:6</a><details class="trecho"><summary>trecho</summary><pre>fn main() -&gt; ExitCode {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/solver/solver-api/src/server.rs#L51" target="_blank" rel="noopener noreferrer">solver/solver-api/src/server.rs:51</a><details class="trecho"><summary>trecho</summary><pre>.route(&quot;/plan&quot;, post(plan))</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Aplicação web (React + MapLibre)</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>web/src/App.tsx</li><li>web/src/components/MapView.tsx</li><li>web/src/components/LeftPanel.tsx</li><li>web/src/components/ChatPanel.tsx</li><li>web/src/api.ts</li></ul>
+<p class="obs">Carrega a instância, envia o pedido de plano e mostra mapa, resultados, curva e assistente por regras.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/App.tsx#L12" target="_blank" rel="noopener noreferrer">web/src/App.tsx:12</a><details class="trecho"><summary>trecho</summary><pre>export default function App() {</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/api.ts#L16" target="_blank" rel="noopener noreferrer">web/src/api.ts:16</a><details class="trecho"><summary>trecho</summary><pre>export async function postPlan(req: PlanRequest, base = API_BASE): Promise&lt;PlanResponse&gt; {</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Solver de demonstração no navegador</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>web/src/localSolver.ts</li></ul>
+<p class="obs">Implementação gulosa em TypeScript usada quando o serviço Rust está indisponível ou o usuário a seleciona.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/localSolver.ts#L19" target="_blank" rel="noopener noreferrer">web/src/localSolver.ts:19</a><details class="trecho"><summary>trecho</summary><pre>export function solveLocal(inst: Instance, req: PlanRequest): PlanResponse {</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Análise ISP-RJ</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<ul class="lista"><li>etl/isp_map.py</li><li>maps/isp-crime-police.html</li></ul>
+<p class="obs">Script separado que gera o mapa de crime e atividade policial do Rio de Janeiro.</p>
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/isp_map.py#L434" target="_blank" rel="noopener noreferrer">etl/isp_map.py:434</a><details class="trecho"><summary>trecho</summary><pre>def main() -&gt; int:</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Diferença entre a arquitetura descrita e a encontrada</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<div class="rolagem"><table><thead><tr><th scope="col">descrito</th><th scope="col">encontrado</th></tr></thead><tbody><tr><td class="">ARCHITECTURE.md descreve tempos de deslocamento por rotas OSRM/OSM, substituindo a distância em linha reta.</td><td class="">As instâncias &#96;instance*.json&#96; versionadas têm pontos-base de grade, caminho em que o pipeline calcula os tempos por haversine com fator de circuidade; não foi achado uso de OSRM no código.</td></tr></tbody></table></div>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L72" target="_blank" rel="noopener noreferrer">ARCHITECTURE.md:72</a><details class="trecho"><summary>trecho</summary><pre>travel times via OSRM / OSM routing graphs (replacing straight-line distance),</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/osm.py#L210" target="_blank" rel="noopener noreferrer">etl/sources/osm.py:210</a><details class="trecho"><summary>trecho</summary><pre>* config.CIRCULARITY</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/data/processed/instance.small.json#L1" target="_blank" rel="noopener noreferrer">data/processed/instance.small.json:1</a><details class="trecho"><summary>trecho</summary><pre>&quot;external_id&quot;: &quot;grid_287</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Diferença entre a arquitetura descrita e a encontrada</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<div class="rolagem"><table><thead><tr><th scope="col">descrito</th><th scope="col">encontrado</th></tr></thead><tbody><tr><td class="">ARCHITECTURE.md descreve camadas do GeoSampa (declividade, vielas, vulnerabilidade social) alimentando o fator de vulnerabilidade e as classificações de zona.</td><td class="">No pipeline principal a camada de vulnerabilidade não está ligada (&#96;vulnerability_norm&#96; = 0) e as zonas de alto risco vêm de três retângulos escritos em &#96;config.py&#96; e, nas células, também da parcela de boletins em favela.</td></tr></tbody></table></div>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L193" target="_blank" rel="noopener noreferrer">ARCHITECTURE.md:193</a><details class="trecho"><summary>trecho</summary><pre>| GeoSampa | District/sector boundaries, slope/viela &amp; social vulnerability layers |</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/sources/geosampa.py#L1" target="_blank" rel="noopener noreferrer">etl/sources/geosampa.py:1</a><details class="trecho"><summary>trecho</summary><pre>&quot;&quot;&quot;GeoSampa / IPVS socio-territorial vulnerability layer — NOT yet wired.</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/config.py#L75" target="_blank" rel="noopener noreferrer">etl/config.py:75</a><details class="trecho"><summary>trecho</summary><pre>ENCLAVE_BOXES: list[dict] = [</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/etl/build.py#L114" target="_blank" rel="noopener noreferrer">etl/build.py:114</a><details class="trecho"><summary>trecho</summary><pre>cells[&quot;vulnerability_norm&quot;] = 0.0</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Diferença entre a arquitetura descrita e a encontrada</h3><span class="sinal">sinal a conferir</span></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<div class="rolagem"><table><thead><tr><th scope="col">descrito</th><th scope="col">encontrado</th></tr></thead><tbody><tr><td class="">ARCHITECTURE.md descreve na aplicação web um seletor de turno e uma visão de despacho e rebalanceamento ao vivo.</td><td class="">A aplicação web chama as rotas de saúde, instâncias e &#96;/plan&#96;; não foi achado seletor de turno nem chamada a &#96;/rebalance&#96; em &#96;web/src&#96;.</td></tr></tbody></table></div>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L282" target="_blank" rel="noopener noreferrer">ARCHITECTURE.md:282</a><details class="trecho"><summary>trecho</summary><pre>1. **Interactive Time-of-Day / Shift Selector**: Judge-facing shift toggle</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/ARCHITECTURE.md#L294" target="_blank" rel="noopener noreferrer">ARCHITECTURE.md:294</a><details class="trecho"><summary>trecho</summary><pre>3. **Live Mid-Shift Dispatch &amp; Rebalance View**: Click a microzone to trigger</pre></details></li><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/web/src/api.ts#L17" target="_blank" rel="noopener noreferrer">web/src/api.ts:17</a><details class="trecho"><summary>trecho</summary><pre>const res = await fetch(&#96;${base}/plan&#96;, {</pre></details></li></ul>
+</article></div>
+</details>
+</section><section class="parte" id="parte-higiene">
+<details><summary><h2>Submissão e segredos</h2><span class="contagem">6 registros</span></summary>
+<div class="conteudo"><article class="bloco">
+<header><h3>Nenhum segredo encontrado pelos padrões da varredura</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article><article class="bloco">
+<header><h3>README</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+<p class="valor">README.md, 494 linhas</p>
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L1" target="_blank" rel="noopener noreferrer">README.md:1</a><details class="trecho"><summary>trecho</summary><pre># YAMA</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Instruções de execução no README</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+<ul class="evidencias" aria-label="Evidências"><li><a class="mono" href="https://github.com/calafite/hackaton-thing/blob/5ecbfa78eff3cc0030abd8f51f45a19aa0531772/README.md#L208" target="_blank" rel="noopener noreferrer">README.md:208</a><details class="trecho"><summary>trecho</summary><pre>## Como rodar tudo do zero</pre></details></li></ul>
+</article><article class="bloco">
+<header><h3>Descrição do projeto no formulário</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article><article class="bloco">
+<header><h3>Vídeo no formulário</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">●</span>verificado</span></p>
+
+
+
+</article><article class="bloco">
+<header><h3>Link da demo no formulário</h3></header>
+<p class="linha-estado"><span class="estado"><span class="marcador" aria-hidden="true">–</span>não informado</span></p>
+
+
+
+</article></div>
+</details>
+</section>
+<section class="parte" id="parte-nao_verificado">
+<details><summary><h2>Não foi possível verificar</h2><span class="contagem">5 registros</span></summary>
+<div class="conteudo"><ul class="nao-verificado"><li><strong>uma Interface Web em React + MapLibre contendo um mapa com os hexágonos coloridos por risco e por cobertura, equipes próximas agrupadas e perfis de planejamento.</strong><p>Sem navegador no ambiente: o servidor Vite respondeu, mas o mapa, os agrupamentos e as cores não foram vistos.</p></li><li><strong>Se o solver não estiver acessível, a aplicação web recorre a um pequeno solver de demonstração no navegador e identifica os resultados como demonstração.</strong><p>A troca automática e o aviso na tela exigem navegador. Chamada por script, a função &#96;solveLocal&#96; devolveu um plano identificado como demonstração local.</p></li><li><strong>Subida local</strong><p>o projeto não abre página web</p></li><li><strong>Pastas com manifesto que não foram executadas</strong><p>o build automático executa uma pasta por projeto; a executada foi a raiz</p></li><li><strong>Interface web no navegador (mapa, painéis, painel Assistente, indicador de modo de demonstração)</strong><p>O ambiente de teste não tem navegador; os passos foram exercitados por HTTP, pela CLI e por scripts que chamam funções do código.</p></li></ul></div>
+</details>
+</section>
+<footer class="parte rodape" id="como-foi-gerado">
+<details><summary><h2>Como este relatório foi gerado</h2></summary>
+<div class="conteudo">
+<div class="rolagem"><table>
+<thead><tr><th scope="col">Etapa</th><th scope="col">Situação</th><th scope="col">Duração</th><th scope="col">Onde parou</th></tr></thead>
+<tbody><tr><th scope="row">Build</th><td>concluída</td><td class="mono">1 min 2 s</td><td></td></tr><tr><th scope="row">Composição do repositório</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Cópia entre equipes</th><td>concluída</td><td class="mono">7 s</td><td></td></tr><tr><th scope="row">Commit de corte</th><td>concluída</td><td class="mono">2 s</td><td></td></tr><tr><th scope="row">Deploy</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Sinais de fachada no código</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Registro do GitHub</th><td>concluída</td><td class="mono">2 s</td><td></td></tr><tr><th scope="row">Leitura do código</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Leitura do código: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Linha do tempo</th><td>concluída</td><td class="mono">4 s</td><td></td></tr><tr><th scope="row">Promessas da equipe</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Promessas da equipe: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Segredos versionados</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Projetos parecidos</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Projetos parecidos: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr><tr><th scope="row">Requisitos de submissão</th><td>concluída</td><td class="mono">1 s</td><td></td></tr><tr><th scope="row">Teste de uso</th><td>concluída</td><td class="mono">–</td><td></td></tr><tr><th scope="row">Teste de uso: conferência</th><td>concluída</td><td class="mono">0 s</td><td></td></tr></tbody>
+</table></div>
+<p><span class="mono">0</span> afirmações descartadas por falta de prova.</p>
+</div>
+</details>
+<p class="frase">Este relatório registra fatos e evidências. Não dá nota e não substitui a avaliação dos jurados.</p>
+</footer>
+</main>
+</body>
+</html>

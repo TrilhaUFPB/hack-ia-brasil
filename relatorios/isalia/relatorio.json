@@ -1,0 +1,2962 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "isalia",
+    "nome": "Isalia",
+    "numero": 1,
+    "track": "Educação",
+    "repo": "https://github.com/arthlz/Hacka-UFPB",
+    "demo": "https://isaila.vercel.app/",
+    "video": "https://drive.google.com/drive/folders/1kl1WBUqWF1CWZ9aFCnGjZ02rMuj063Q6?usp=sharing",
+    "resumo": "Isaila é um túnel de vento pedagógico: o professor testa a aula antes de dar a aula, com alunos simulados que mostram onde cada um trava e um plano adaptado que só usa o que a sala realmente tem."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.488Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "11aa217b7cbc3b4a5385e4c6f6d9189de57645f7",
+    "commit_em": "2026-11-28T18:54:06Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11289,
+          "preparo_ms": 0,
+          "execucao_ms": 1759
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4,
+          "preparo_ms": 0,
+          "execucao_ms": 2379
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5181,
+          "preparo_ms": 0,
+          "execucao_ms": 14714
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11612,
+          "preparo_ms": 0,
+          "execucao_ms": 1416
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5572,
+          "preparo_ms": 0,
+          "execucao_ms": 2161
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 100
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1949,
+          "preparo_ms": 0,
+          "execucao_ms": 201
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 114
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11748,
+          "preparo_ms": 0,
+          "execucao_ms": 1352
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11749,
+          "preparo_ms": 0,
+          "execucao_ms": 1271
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 2
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "verificado"
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra a página inicial e clique em \"Entrar sem cadastro\".",
+      "esperado": "Abriu /planejar com as turmas de exemplo, sem pedir login. O topo exibe \"Modo demonstração: respostas de exemplo, sem IA externa.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em \"Escola Estadual — 8º Ano B\" na lista Turmas de exemplo.",
+      "esperado": "A turma abriu com as etapas Contexto da sala, Alunos, Criar plano de aula e Avaliação da aula.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Clique em \"Contexto da sala\", revise os campos e clique em \"Salvar sala\".",
+      "esperado": "A tela mostra 38 alunos, 50 min, barulho alto e material impresso marcado, com projetor e internet desmarcados. Após o clique, exibe \"Sala salva.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Clique em \"Alunos\" na barra lateral.",
+      "esperado": "Aparecem os perfis de demonstração Aluno A, B e C, com barreiras, apoios, gatilhos e posição no mapa da sala.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Clique em \"Criar plano de aula\", digite \"Equações do primeiro grau\" no campo \"Assunto da aula (obrigatório)\", clique em \"Executar orquestração multiagente (DeepSeek)\" e aguarde.",
+      "esperado": "Uma trilha ao vivo mostrou mensagens entre os agentes e o plano ficou pronto com o botão \"Usar este plano na avaliação\". A segunda entrada enviada (texto longo) foi recusada, então não houve duas respostas para comparar.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em \"Usar este plano na avaliação\".",
+      "esperado": "Abriu \"Avaliação da aula\" com o estado \"Pronto para testar\" e 5 páginas geradas a partir do plano.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique em \"Testar aula\" e acompanhe o mapa da sala.",
+      "esperado": "O mapa passou a marcar, na página 1, um aluno que acompanha, um com dúvida e um que travou, com uma linha do tempo por página.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Ao fim do teste, leia a aba \"Plano de aula\".",
+      "esperado": "O roteiro ocupa 50 min em 5 faixas, com adaptações por página. A tela também informa \"Ritmo estimado para a turma: 58 min para 50 min de aula\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Clique na aba \"Parecer da turma\".",
+      "esperado": "Mostra o atrito dos alunos A, B e C por página, frases atribuídas a eles e um bloco \"O que fazer\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-10",
+      "n": 10,
+      "acao": "Clique na aba \"Materiais\".",
+      "esperado": "Lista o arquivo da aula e a evidência usada, e a seção \"Atividades e folhas\" com \"Nenhuma atividade ainda\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-11",
+      "n": 11,
+      "acao": "Clique na aba \"Pós-aula\".",
+      "esperado": "Abre o formulário \"Como foi a aula\", com relato escrito ou falado, registro das adaptações aplicadas e campos por aluno. O formulário não foi preenchido neste teste.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/orquestracao.py",
+          "linha": 565,
+          "linha_fim": null,
+          "trecho": "restricoes = Restricoes(",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/orquestracao.py#L565",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/orquestracao.py",
+          "linha": 571,
+          "linha_fim": null,
+          "trecho": "nivel_ruido_base=turma.turma.nivel_ruido_base,",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/orquestracao.py#L571",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/orquestracao.py",
+          "linha": 307,
+          "linha_fim": null,
+          "trecho": "limpo, aud = _limpar_texto_aluno(item.descricao, idx, agente_id)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/orquestracao.py#L307",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "As restrições da aula são montadas com lotação, duração, recursos e ruído da turma; os alunos descritos pelo professor viram perfis.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Ele descreve a sala (tempo, lotação, barulho, recursos) e os alunos que acompanha de perto.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Ele descreve a sala (tempo, lotação, barulho, recursos) e os alunos que acompanha de perto.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/schemas.py",
+          "linha": 508,
+          "linha_fim": null,
+          "trecho": "camada_1_dua: Camada1DUA",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/schemas.py#L508",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 918,
+          "linha_fim": null,
+          "trecho": "saida = await llm.gerar(",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L918",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "O esquema do plano tem camada_1_dua, camada_2 e camada_3, preenchidas pela chamada do Juiz ao modelo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Agentes de IA criam um plano de aula inclusivo em três camadas",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Agentes de IA criam um plano de aula inclusivo em três camadas",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/mock_agents.py",
+          "linha": 238,
+          "linha_fim": null,
+          "trecho": "point for page in payload[\"pages\"] for _, point in frictions(student, page, ctx)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/mock_agents.py#L238",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/orchestrator.py",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "result = await state.provider.generate(schema, payload, factory)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/orchestrator.py#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "Na Avaliação da aula, cada perfil percorre as páginas e registra pontos de atrito por regras de texto (regex), sem chamada a modelo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "alunos simulados leem o material página a página e mostram onde cada um trava.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "alunos simulados leem o material página a página e mostram onde cada um trava.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/constraints.py",
+          "linha": 99,
+          "linha_fim": null,
+          "trecho": "if not 0 < plan.plan_total_minutes <= ctx.duration_minutes:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/constraints.py#L99",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/constraints.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "rules = dict(",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/constraints.py#L40",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 673,
+          "linha_fim": null,
+          "trecho": "if total > restricoes.duracao_min:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L673",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/validacao.py",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "def violacoes(texto: str, restricoes: Restricoes) -> list[str]:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/validacao.py#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "Regras em Python, por expressões regulares e soma de minutos, rejeitam recursos ausentes e estouro de tempo nos dois motores.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "*hard constraints* em Python (não só prompt) vetam sugestões impraticáveis: sem internet → nada que dependa de internet; sem projetor → nada projetado; 50 min → o plano não estoura o tempo.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 50,
+        "linha_fim": null,
+        "trecho": "*hard constraints* em Python (não só prompt) vetam sugestões impraticáveis: sem internet → nada que dependa de internet; sem projetor → nada projetado; 50 min → o plano não estoura o tempo.",
+        "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/README.md#L50",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Isaila, simulador de sala de aula\", lifespan=lifespan)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/main.py#L46",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db/database.py",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "async with aiosqlite.connect(self.path) as conn:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/db/database.py#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/app/planejar/page.tsx",
+          "linha": 420,
+          "linha_fim": null,
+          "trecho": "export default function PlanejarPage() {",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/app/planejar/page.tsx#L420",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Há API FastAPI, banco SQLite via aiosqlite e páginas Next.js; o endereço publicado não foi acessado nesta leitura.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Aplicação web completa (Next.js + FastAPI + SQLite), publicada em https://isaila.vercel.app/.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "Aplicação web completa (Next.js + FastAPI + SQLite), publicada em https://isaila.vercel.app/.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/config.py",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "fast_model: str = \"deepseek/deepseek-v4.1-flash-1017\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/config.py#L31",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 473,
+          "linha_fim": null,
+          "trecho": "tarefas = [asyncio.create_task(rodar_aluno(p)) for p in alunos] + [",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L473",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 923,
+          "linha_fim": null,
+          "trecho": "modelo=settings.judge_model,",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L923",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/llm.py",
+          "linha": 322,
+          "linha_fim": null,
+          "trecho": "cliente.chat.completions.create(",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/llm.py#L322",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "Agentes-aluno, agente-turma e Juiz chamam o modelo configurado via OpenRouter; o mapa de assentos proposto pelo Juiz passa por validação e pode ser alterado por um otimizador em código.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Orquestração multiagente com DeepSeek V4.1 Flash: agentes-aluno, agente-turma e um Juiz que concilia os pareceres e decide plano, adaptações e mapa de assentos.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 8,
+        "linha_fim": null,
+        "trecho": "Orquestração multiagente com DeepSeek V4.1 Flash: agentes-aluno, agente-turma e um Juiz que concilia os pareceres e decide plano, adaptações e mapa de assentos.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/workspace/SimulateTab.tsx",
+          "linha": 178,
+          "linha_fim": null,
+          "trecho": "const scene = sceneState({",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/components/workspace/SimulateTab.tsx#L178",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/workspace/SimulateTab.tsx",
+          "linha": 240,
+          "linha_fim": null,
+          "trecho": "<RoomScene",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/components/workspace/SimulateTab.tsx#L240",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/lib/useSimulationStream.ts",
+          "linha": 205,
+          "linha_fim": null,
+          "trecho": "const source = new EventSource(",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/lib/useSimulationStream.ts#L205",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "A tela de avaliação desenha o mapa 2D da sala com estado derivado do stream de eventos da simulação.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Avaliação da aula ao vivo no mapa 2D da sala",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 9,
+        "linha_fim": null,
+        "trecho": "Avaliação da aula ao vivo no mapa 2D da sala",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/privacy_gate/anonymizer.py",
+          "linha": 283,
+          "linha_fim": null,
+          "trecho": "def scrub(text, registry, scope=None):",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/privacy_gate/anonymizer.py#L283",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/orquestracao.py",
+          "linha": 307,
+          "linha_fim": null,
+          "trecho": "limpo, aud = _limpar_texto_aluno(item.descricao, idx, agente_id)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/orquestracao.py#L307",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/privacy_gate/anonymizer.py",
+          "linha": 412,
+          "linha_fim": null,
+          "trecho": "notes = [\"Regras locais sem NER. Revise nomes e identificadores indiretos.\"]",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/privacy_gate/anonymizer.py#L412",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "A retirada é feita no servidor por regex e léxico de nomes, sem NER, antes das chamadas; imagens da sala enviadas em /orquestrar seguem ao modelo sem essa etapa de texto.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Privacy Gate para a LGPD: nomes, CPFs e matrículas são retirados antes de qualquer IA ler o texto",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "Privacy Gate para a LGPD: nomes, CPFs e matrículas são retirados antes de qualquer IA ler o texto",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/lib/studentNames.ts",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "window.localStorage.setItem(KEY, JSON.stringify(names));",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/lib/studentNames.ts#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/workspace/StudentForm.tsx",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "studentName: draft.name.trim(),",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/components/workspace/StudentForm.tsx#L70",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/lib/api.ts",
+          "linha": 212,
+          "linha_fim": null,
+          "trecho": "form.set(\"student_name\", input.studentName ?? \"\");",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/lib/api.ts#L212",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/privacy_gate/service.py",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "registry.assign(student_name, \"student\", student_field=True)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/privacy_gate/service.py#L22",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": null,
+      "existe": "Os nomes são guardados no localStorage do navegador e o perfil salvo no servidor usa pseudônimo; em /orquestrar o nome local não vai no envio da turma.",
+      "falta": "No cadastro de aluno de /planejar, o nome digitado é enviado à API no campo student_name, usado pelo servidor para trocá-lo pelo pseudônimo.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o nome do aluno fica só no navegador do professor",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "o nome do aluno fica só no navegador do professor",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db/repositories.py",
+          "linha": 344,
+          "linha_fim": null,
+          "trecho": "if (kind == \"ADAPTED\") != bool(base_sheet_id):",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/db/repositories.py#L344",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/planning.py",
+          "linha": 337,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/sheets/{sheet_id}/approve\")",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/planning.py#L337",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db/repositories.py",
+          "linha": 450,
+          "linha_fim": null,
+          "trecho": "if sheet.status != \"APPROVED\":",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/db/repositories.py#L450",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "Há folha-base e versão personalizada (ADAPTED), rota de aprovação, e a cópia do aluno só sai com status APPROVED.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "folhas de atividade com versão personalizada e aprovação do professor",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "folhas de atividade com versão personalizada e aprovação do professor",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/workspace/PostLessonPanel.tsx",
+          "linha": 208,
+          "linha_fim": null,
+          "trecho": "const next = new MediaRecorder(stream);",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/components/workspace/PostLessonPanel.tsx#L208",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/post_lesson.py",
+          "linha": 128,
+          "linha_fim": null,
+          "trecho": "speech = await run_in_threadpool(request.app.state.transcriber.transcribe, data)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/post_lesson.py#L128",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "O relato aceita texto ou áudio gravado no navegador; a voz depende do extra opcional `audio` instalado no servidor.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "registro pós-aula por texto ou voz",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "registro pós-aula por texto ou voz",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/post_lesson.py",
+          "linha": 217,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/pei-suggestions/{suggestion_id}/decision\")",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/post_lesson.py#L217",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db/repositories.py",
+          "linha": 587,
+          "linha_fim": null,
+          "trecho": "VISIBLE_SUGGESTION + \" AND p.student_id=? AND p.status='APPROVED'\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/db/repositories.py#L587",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "As sugestões vêm de regras fixas, têm rota de decisão do professor e a consulta do PEI retorna as aprovadas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "sugestões de PEI que só valem após a decisão dele.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "sugestões de PEI que só valem após a decisão dele.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/test_privacy_gate.py",
+          "linha": 207,
+          "linha_fim": null,
+          "trecho": "@pytest.mark.parametrize((\"text\", \"forbidden\"), LEAK_CASES)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/tests/test_privacy_gate.py#L207",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/test_gap_extractor.py",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "@pytest.mark.parametrize(",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/tests/test_gap_extractor.py#L25",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "run: python -m pytest -q backend/tests",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/.github/workflows/ci.yml#L33",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Contagem estática, sem execução: cerca de 315 casos, somando parametrizações (262 em backend/tests, 26 em pei-sandbox/tests, 27 em Vitest).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Mais de 300 testes automatizados",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 12,
+        "linha_fim": null,
+        "trecho": "Mais de 300 testes automatizados",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "branches: [main, develop]",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/.github/workflows/ci.yml#L5",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "run: python -m pytest -q backend/tests/test_privacy_gate.py backend/tests/test_prompt_injection.py",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/.github/workflows/ci.yml#L31",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "run: python scripts/eval.py",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/.github/workflows/ci.yml#L40",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "A CI roda em push para main e develop e em pull requests, com testes de privacidade e varredura de canários fictícios via scripts/eval.py.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "CI, com verificação de vazamento de dados pessoais a cada push.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 12,
+        "linha_fim": null,
+        "trecho": "CI, com verificação de vazamento de dados pessoais a cada push.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "app.state.provider = MockProvider(settings.mock_latency_ms)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/main.py#L48",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/config.py",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "llm_provider: Literal[\"mock\"] = \"mock\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/config.py#L15",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 51,
+          "linha_fim": null,
+          "trecho": "app.state.orquestracao_jobs = OrquestracaoJobs(db, settings)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/main.py#L51",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "A Avaliação usa MockProvider com regras em código; as chamadas ao DeepSeek estão no módulo de orquestração.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a avaliação da aula roda hoje em regras determinísticas, não em modelo real; quem usa o DeepSeek é a criação do plano.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 13,
+        "linha_fim": null,
+        "trecho": "a avaliação da aula roda hoje em regras determinísticas, não em modelo real; quem usa o DeepSeek é a criação do plano.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/mock_agents.py",
+          "linha": 831,
+          "linha_fim": null,
+          "trecho": "living_pei_updates=updates,",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/mock_agents.py#L831",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "outputs/eval_report.md",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "| `latency_p95_ms` (roleplay) | 88.9 | ≤ 6.000 | PASS |",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/outputs/eval_report.md#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "O plano por página com micro-adaptações e PEI é montado pelo Juiz determinístico; não há no repositório medição dos cerca de 2 minutos com modelo real (o eval mede o modo mock).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "devolve um **plano página a página com micro-adaptações** — e o PEI de cada aluno acompanhado — em cerca de 2 minutos.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 13,
+        "linha_fim": null,
+        "trecho": "devolve um **plano página a página com micro-adaptações** — e o PEI de cada aluno acompanhado — em cerca de 2 minutos.",
+        "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/README.md#L13",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/llm.py",
+          "linha": 344,
+          "linha_fim": null,
+          "trecho": "custo_usd=float(extra.get(\"cost\") or 0.0),",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/llm.py#L344",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/orchestrator.py",
+          "linha": 124,
+          "linha_fim": null,
+          "trecho": "estimated_cost_usd=0,",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/orchestrator.py#L124",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "O cliente registra o custo informado pela API em cada chamada, mas não há arquivo de medição que sustente o valor; na Avaliação o custo gravado é zero.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Custo:** ~**US$ 0,03** por aula simulada (≈ R$ 0,17)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 42,
+        "linha_fim": null,
+        "trecho": "**Custo:** ~**US$ 0,03** por aula simulada (≈ R$ 0,17)",
+        "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/README.md#L42",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/privacy_gate/audio.py",
+          "linha": 93,
+          "linha_fim": null,
+          "trecho": "self._engine = WhisperModel(self.model, device=\"cpu\", compute_type=\"int8\")",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/privacy_gate/audio.py#L93",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/post_lesson.py",
+          "linha": 128,
+          "linha_fim": null,
+          "trecho": "speech = await run_in_threadpool(request.app.state.transcriber.transcribe, data)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/post_lesson.py#L128",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/Dockerfile",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "RUN pip install --no-cache-dir ./backend \\",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/Dockerfile#L13",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "faster-whisper é carregado em CPU no processo da API; o backend/Dockerfile instala ./backend sem o extra `audio`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Whisper local** (`faster-whisper`) — transcreve o relato pós-aula falado no próprio servidor.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 77,
+        "linha_fim": null,
+        "trecho": "**Whisper local** (`faster-whisper`) — transcreve o relato pós-aula falado no próprio servidor.",
+        "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/README.md#L77",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/classrooms.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "if any(photo.faces_found for photo in form.photos):",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/classrooms.py#L133",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/lib/photo.ts",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "if (!Detector) return { checked: false, found: 0 };",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/lib/photo.ts#L37",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/orquestracao.py",
+          "linha": 205,
+          "linha_fim": null,
+          "trecho": "analise = await analisar_imagens_sala(llm, carregadas, obs_limpa)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/orquestracao.py#L205",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": null,
+      "existe": "Em /planejar, o navegador envia medidas de uma grade 16x12 (luminância, saturação, matiz) e a API recusa foto com rosto contado.",
+      "falta": "Em /orquestrar, a imagem inteira é enviada à API e ao modelo de visão. A detecção de rosto depende do FaceDetector do navegador; sem ele, a contagem é zero.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A foto não sai do navegador: só medidas de claridade e cor são enviadas. Foto com rosto é recusada.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/guia-submissao-aula.md",
+        "linha": 45,
+        "linha_fim": null,
+        "trecho": "A foto não sai do navegador: só medidas de claridade e cor são enviadas. Foto com rosto é recusada.",
+        "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/docs/guia-submissao-aula.md#L45",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/gap_extractor.py",
+          "linha": 112,
+          "linha_fim": null,
+          "trecho": "indicator = re.search(r\"somou\\s+2\\s*\\+\\s*3\", excerpt, re.I)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/gap_extractor.py#L112",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/gap_extractor.py",
+          "linha": 109,
+          "linha_fim": null,
+          "trecho": "indicator = re.search(\"em branco|não entendi\", excerpt, re.I)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/gap_extractor.py#L109",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/workspace/StudentsTab.tsx",
+          "linha": 264,
+          "linha_fim": null,
+          "trecho": "(pattern) => `${pattern.topic} (${BARRIER_LABELS[pattern.barrier_type]})`,",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/components/workspace/StudentsTab.tsx#L264",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components/students/StudentWizardModal.tsx",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "import { GapMapCard } from \"./GapMapCard\";",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/components/students/StudentWizardModal.tsx#L28",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": null,
+      "existe": "O extrator mock gera lacunas com trecho da prova para Q3 (\"em branco\" ou \"não entendi\") e Q4 (\"somou 2+3\"), com tópicos fixos.",
+      "falta": "Não há análise de outras questões erradas. O componente que exibe o trecho ao lado (GapMapCard) só é importado por um modal cujo componente pai não é importado por outra tela; StudentsTab lista o tópico sem o trecho.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Das questões erradas da prova sai um mapa de lacunas com a evidência ao lado.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/guia-submissao-aula.md",
+        "linha": 63,
+        "linha_fim": null,
+        "trecho": "Das questões erradas da prova sai um mapa de lacunas com a evidência ao lado.",
+        "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/docs/guia-submissao-aula.md#L63",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://isaila.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://isaila.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 289 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra a página inicial e clique em \"Entrar sem cadastro\".",
+      "observado": "Abriu /planejar com as turmas de exemplo, sem pedir login. O topo exibe \"Modo demonstração: respostas de exemplo, sem IA externa.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em \"Escola Estadual — 8º Ano B\" na lista Turmas de exemplo.",
+      "observado": "A turma abriu com as etapas Contexto da sala, Alunos, Criar plano de aula e Avaliação da aula.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Clique em \"Contexto da sala\", revise os campos e clique em \"Salvar sala\".",
+      "observado": "A tela mostra 38 alunos, 50 min, barulho alto e material impresso marcado, com projetor e internet desmarcados. Após o clique, exibe \"Sala salva.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em \"Alunos\" na barra lateral.",
+      "observado": "Aparecem os perfis de demonstração Aluno A, B e C, com barreiras, apoios, gatilhos e posição no mapa da sala.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Clique em \"Criar plano de aula\", digite \"Equações do primeiro grau\" no campo \"Assunto da aula (obrigatório)\", clique em \"Executar orquestração multiagente (DeepSeek)\" e aguarde.",
+      "observado": "Uma trilha ao vivo mostrou mensagens entre os agentes e o plano ficou pronto com o botão \"Usar este plano na avaliação\". A segunda entrada enviada (texto longo) foi recusada, então não houve duas respostas para comparar.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em \"Usar este plano na avaliação\".",
+      "observado": "Abriu \"Avaliação da aula\" com o estado \"Pronto para testar\" e 5 páginas geradas a partir do plano.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em \"Testar aula\" e acompanhe o mapa da sala.",
+      "observado": "O mapa passou a marcar, na página 1, um aluno que acompanha, um com dúvida e um que travou, com uma linha do tempo por página.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Ao fim do teste, leia a aba \"Plano de aula\".",
+      "observado": "O roteiro ocupa 50 min em 5 faixas, com adaptações por página. A tela também informa \"Ritmo estimado para a turma: 58 min para 50 min de aula\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Clique na aba \"Parecer da turma\".",
+      "observado": "Mostra o atrito dos alunos A, B e C por página, frases atribuídas a eles e um bloco \"O que fazer\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Clique na aba \"Materiais\".",
+      "observado": "Lista o arquivo da aula e a evidência usada, e a seção \"Atividades e folhas\" com \"Nenhuma atividade ainda\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "Clique na aba \"Pós-aula\".",
+      "observado": "Abre o formulário \"Como foi a aula\", com relato escrito ou falado, registro das adaptações aplicadas e campos por aluno. O formulário não foi preenchido neste teste.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Arquivo .txt enviado no campo de PDF da Avaliação da aula.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela exibiu \"Esse arquivo não é PDF. Exporte os slides ou o documento como PDF e envie de novo.\""
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Texto de 5688 caracteres no campo \"Assunto da aula\", com CPF fictício, e \"Ciências\" no campo Disciplina.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela exibiu \"Confira os campos enviados.\", sem indicar qual campo. O plano anterior, de Matemática, continuou na tela."
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "openai (OpenAI), em backend/pyproject.toml",
+          "openai (OpenAI), em pei-sandbox/pyproject.toml"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/pyproject.toml",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "dependencies = [\"fastapi>=0.115,<0.120\", \"uvicorn>=0.34,<0.39\", \"pydantic>=2.10,<3\", \"pydantic-settings>=2.7,<3\", \"aiosqlite>=0.20,<1\", \"pymupdf>=1.26.5,<1.28\", \"python-multipart>=0.0.22,<0.1\", \"openai>=3.57,<3.58\"]",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/pyproject.toml#L5",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "pei-sandbox/pyproject.toml",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "dependencies = [\"openai>=3.57,<3.58\", \"pydantic>=2.10,<2.15\", \"pydantic-settings>=2.7,<2.17\"]",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/pei-sandbox/pyproject.toml#L6",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "OpenRouter",
+              "backend/app/config.py",
+              29
+            ],
+            [
+              "OpenAI",
+              "backend/app/orquestracao/llm.py",
+              14
+            ],
+            [
+              "OpenRouter",
+              "pei-sandbox/motor/config.py",
+              12
+            ],
+            [
+              "OpenAI",
+              "pei-sandbox/motor/llm.py",
+              21
+            ],
+            [
+              "OpenAI",
+              "pei-sandbox/tests/test_orquestracao.py",
+              13
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/config.py",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "    llm_base_url: str = \"https://openrouter.ai/api/v1\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/config.py#L29",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/llm.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "from openai import APIConnectionError, APIStatusError, APITimeoutError, AsyncOpenAI",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/llm.py#L14",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "pei-sandbox/motor/config.py",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "    llm_base_url: str = \"https://openrouter.ai/api/v1\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/pei-sandbox/motor/config.py#L12",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "pei-sandbox/motor/llm.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "from openai import APIConnectionError, APIStatusError, APITimeoutError, AsyncOpenAI",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/pei-sandbox/motor/llm.py#L21",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "pei-sandbox/tests/test_orquestracao.py",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "from openai import APITimeoutError",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/pei-sandbox/tests/test_orquestracao.py#L13",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 97,
+          "linha_fim": null,
+          "trecho": "modelo=llm.settings.vision_model,",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L97",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Análise das imagens da sala (cadeiras, grade, recursos)."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 138,
+          "linha_fim": null,
+          "trecho": "papel=f\"estruturador:{agente_id}\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L138",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Estruturar a descrição de cada aluno em perfil."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 175,
+          "linha_fim": null,
+          "trecho": "papel=\"estruturador:TURMA\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L175",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Sintetizar o perfil da turma."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 251,
+          "linha_fim": null,
+          "trecho": "papel=\"bncc_aula\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L251",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Escolher habilidades da BNCC quando o professor não as informa."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 325,
+          "linha_fim": null,
+          "trecho": "papel=\"planejador\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L325",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Planejador: rascunho da aula."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-6",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 413,
+          "linha_fim": null,
+          "trecho": "papel=f\"r1:{perfil.agente_id}\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L413",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Agentes-aluno: parecer sobre o rascunho."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-7",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 459,
+          "linha_fim": null,
+          "trecho": "papel=f\"r1:{TURMA}\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L459",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Agente-turma: parecer coletivo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-8",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 599,
+          "linha_fim": null,
+          "trecho": "papel=f\"r2:{agente_id}\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L599",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Réplicas dos agentes no mural."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-9",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 920,
+          "linha_fim": null,
+          "trecho": "papel=\"juiz\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L920",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Juiz: plano final, adaptações, vetos e assentos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-10",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 1033,
+          "linha_fim": null,
+          "trecho": "papel=\"slides_base\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L1033",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Documento base para slides."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-11",
+      "rotulo": "Chamada a faster-whisper (local)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/privacy_gate/audio.py",
+          "linha": 93,
+          "linha_fim": null,
+          "trecho": "self._engine = WhisperModel(self.model, device=\"cpu\", compute_type=\"int8\")",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/privacy_gate/audio.py#L93",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/config.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "transcriber_model: str = \"small\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/config.py#L46",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "small",
+      "obs": "Transcrever o relato pós-aula falado."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-12",
+      "rotulo": "Chamada a OpenRouter (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "pei-sandbox/motor/llm.py",
+          "linha": 233,
+          "linha_fim": null,
+          "trecho": "cliente.chat.completions.create(",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/pei-sandbox/motor/llm.py#L233",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "pei-sandbox/motor/config.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "fast_model: str = \"deepseek/deepseek-v4.1-flash-1017\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/pei-sandbox/motor/config.py#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "deepseek/deepseek-v4.1-flash-1017",
+      "obs": "Cliente do protótipo de terminal pei-sandbox."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/mock_agents.py",
+          "linha": 148,
+          "linha_fim": null,
+          "trecho": "\"São muitas instruções de uma vez e eu não sei qual vem primeiro.\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/mock_agents.py#L148",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Na Avaliação da aula, as falas em primeira pessoa dos alunos simulados são frases escritas no código, escolhidas por sinais detectados no texto.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-2",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/mock_agents.py",
+          "linha": 337,
+          "linha_fim": null,
+          "trecho": "CATALOG = {",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/mock_agents.py#L337",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "As micro-adaptações da Avaliação são escolhidas de um catálogo fixo de ideias, filtrado pelos recursos da sala.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-3",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/mock_agents.py",
+          "linha": 303,
+          "linha_fim": null,
+          "trecho": "\"Álgebra, equações do 1º grau: habilidades de referência EF07MA18 e EF08MA07 \"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/mock_agents.py#L303",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O parecer de alinhamento à BNCC do Agente Turma mock é um texto fixo com EF07MA18 e EF08MA07 quando o material menciona equações.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-4",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/gap_extractor.py",
+          "linha": 110,
+          "linha_fim": null,
+          "trecho": "topic, barrier = \"Leitura de enunciados longos\", \"TEXT_COMPREHENSION\"",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/gap_extractor.py#L110",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/gap_extractor.py",
+          "linha": 131,
+          "linha_fim": null,
+          "trecho": "\"Separar o enunciado em passos.\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/gap_extractor.py#L131",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O mapa de lacunas da prova reconhece respostas específicas e atribui tópicos e apoios recomendados escritos no código.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-5",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/post_lesson.py",
+          "linha": 106,
+          "linha_fim": null,
+          "trecho": "text=f\"O relato cita {pseudonym}. Confira o trecho e registre o que foi observado.\",",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/post_lesson.py#L106",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "As sugestões de PEI do pós-aula são montadas por modelos de frase fixos a partir do que o professor registrou.",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 09:25",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/arthlz/Hacka-UFPB",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/arthlz/Hacka-UFPB",
+          "conferida": "script"
+        }
+      ],
+      "sinal": false
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/arthlz/Hacka-UFPB/commit/51d2186ca11dbfbaa211945ed2ca9bee6646e7ee",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/arthlz/Hacka-UFPB/commit/51d2186ca11dbfbaa211945ed2ca9bee6646e7ee",
+          "conferida": "script"
+        }
+      ],
+      "valor": "51d2186, 8498 linhas adicionadas em 43 arquivos, de 55246 no histórico",
+      "obs": "8498 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "PlanSpark (Lesson Simulator)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://planspark.azurewebsites.net/ClassProfiles",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://planspark.azurewebsites.net/ClassProfiles",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://planspark.net/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://planspark.net/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Assistente de IA para professores do ensino básico (K-12) com um simulador que testa a aula contra um perfil da turma antes de ela ser dada, prevendo engajamento, compreensão, pontos de dificuldade e sugestões de ajuste.",
+      "obs": "Em comum: O professor descreve a turma, incluindo alunos com plano educacional individualizado, e recebe antes da aula uma previsão de onde ela pode travar, com sugestões de melhoria. Diferente: A página descreve previsões por nível (com dificuldade, no nível, avançado) e para a turma, não por aluno; não descreve mapa 2D da sala nem retirada de dados pessoais antes da IA."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Auto Classmate: Lesson & Activity Forecast",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://autoclassmate.io/tools/lesson-plan-activity-forecast-tool/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://autoclassmate.io/tools/lesson-plan-activity-forecast-tool/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Ferramenta que recebe o texto de uma aula ou atividade e prevê, antes da aula, pontos de atrito, reações prováveis dos alunos e correções, com verificação dos tempos do plano.",
+      "obs": "Em comum: Permite ao professor testar a aula antes de dá-la e receber pontos de dificuldade e ajustes; a página cita previsão com perfil da turma no plano pago. Diferente: As entradas descritas são série, disciplina e o texto da aula, e a página recomenda que o professor remova os nomes dos alunos antes de colar; não descreve alunos simulados individuais nem geração de PEI nessa ferramenta."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "InclusivAula",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.inclusivaula.com.br/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.inclusivaula.com.br/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma brasileira em que a IA gera planos de aula alinhados à BNCC com adaptações por aluno, atividades adaptadas, PEI e documentos do AEE, para revisão do professor.",
+      "obs": "Em comum: Atende professores e equipes de AEE com plano de aula e atividades adaptados e PEI, com aprovação humana; a página afirma que nomes de alunos não são enviados ao provedor de IA. Diferente: A página não descreve simulação de alunos antes da aula, nem uso da duração, da lotação ou dos equipamentos da sala como restrição do plano."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Teaching simulation para planos de aula (Hu et al., npj Science of Learning, 2025)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.nature.com/articles/s41539-025-00300-x",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.nature.com/articles/s41539-025-00300-x",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Estudo em que um modelo de linguagem simula a aula com alunos de diferentes níveis, reflete sobre a simulação e revisa o plano de ensino.",
+      "obs": "Em comum: Usa alunos simulados, com erros e concepções equivocadas, para revisar o plano antes de a aula ser dada. Diferente: É um método de pesquisa em matemática do ensino médio, executado pelas interfaces web do GPT-4 e do Claude; o resumo lido não trata de inclusão, recursos da sala ou PEI."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "SimClass (hyejunl33/simclass)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/hyejunl33/simclass/issues/1",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/hyejunl33/simclass/issues/1",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Simulador de ensaio de aula em que professores em formação praticam com três alunos simulados por IA e recebem avaliação por rubrica ao final.",
+      "obs": "Em comum: Parte do plano de aula do professor e usa alunos simulados, com conhecimento prévio e equívocos definidos, antes da aula real. Diferente: É um ensaio falado de 40 minutos voltado à prova de demonstração de aula de futuros professores na Coreia, e avalia o desempenho do professor; a especificação não descreve plano inclusivo nem PEI."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Python",
+              110,
+              20750
+            ],
+            [
+              "TypeScript",
+              92,
+              19899
+            ],
+            [
+              "Markdown",
+              40,
+              4710
+            ],
+            [
+              "JSON",
+              13,
+              890
+            ],
+            [
+              "Shell",
+              1,
+              420
+            ],
+            [
+              "CSS",
+              2,
+              279
+            ],
+            [
+              "YAML",
+              3,
+              139
+            ],
+            [
+              "JavaScript",
+              2,
+              60
+            ],
+            [
+              "TOML",
+              3,
+              56
+            ],
+            [
+              "HTML",
+              1,
+              23
+            ]
+          ]
+        }
+      },
+      "obs": "276 arquivos de texto e 47405 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Frontend Next.js",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/app/planejar/page.tsx",
+          "linha": 420,
+          "linha_fim": null,
+          "trecho": "export default function PlanejarPage() {",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/app/planejar/page.tsx#L420",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/app/orquestrar/page.tsx",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "export default function OrquestrarPage() {",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/frontend/src/app/orquestrar/page.tsx#L24",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/app/planejar/page.tsx",
+          "frontend/src/app/orquestrar/page.tsx"
+        ]
+      },
+      "obs": "Telas de planejamento, orquestração, mapa 2D da sala e armazenamento local dos nomes."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "API FastAPI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "def create_app(settings=None):",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/main.py#L28",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/main.py"
+        ]
+      },
+      "obs": "Expõe as rotas REST e SSE e instancia os motores, o transcritor e o banco."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Orquestração multiagente (DeepSeek)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/servico.py",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "class OrquestracaoJobs:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/servico.py#L42",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/llm.py",
+          "linha": 108,
+          "linha_fim": null,
+          "trecho": "class DeepSeekClient:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/llm.py#L108",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/orquestracao/servico.py",
+          "backend/app/orquestracao/etapas.py",
+          "backend/app/orquestracao/llm.py"
+        ]
+      },
+      "obs": "Cria o plano com planejador, agentes-aluno, agente-turma, réplicas, Juiz e documento de slides."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Avaliação determinística",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/orchestrator.py",
+          "linha": 93,
+          "linha_fim": null,
+          "trecho": "async def pipeline(state, body):",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/orchestrator.py#L93",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agents/router.py",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "class MockProvider:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/agents/router.py#L15",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/agents/orchestrator.py",
+          "backend/app/agents/mock_agents.py",
+          "backend/app/agents/constraints.py"
+        ]
+      },
+      "obs": "Simula a leitura por página e monta o plano com regras fixas e validação de restrições."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Privacy Gate e transcrição",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/privacy_gate/anonymizer.py",
+          "linha": 283,
+          "linha_fim": null,
+          "trecho": "def scrub(text, registry, scope=None):",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/privacy_gate/anonymizer.py#L283",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/privacy_gate/audio.py",
+          "linha": 68,
+          "linha_fim": null,
+          "trecho": "class WhisperTranscriber:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/privacy_gate/audio.py#L68",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/privacy_gate/anonymizer.py",
+          "backend/app/privacy_gate/audio.py"
+        ]
+      },
+      "obs": "Pseudonimiza textos por regras e transcreve áudio localmente."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Persistência SQLite",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db/database.py",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "class Database:",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/db/database.py#L7",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/db/database.py",
+          "backend/app/db/repositories.py"
+        ]
+      },
+      "obs": "Guarda turmas, alunos, simulações, aulas orquestradas, folhas e registros."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Portal de prática do aluno",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/student_portal.py",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "def create_portal(settings=None):",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/student_portal.py#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/student_portal.py"
+        ]
+      },
+      "obs": "Aplicação FastAPI separada para a prática do aluno por link."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "em seguida, alunos simulados leem o material página a página",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/orquestracao.py",
+          "linha": 751,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/aulas/{aula_id}/material-avaliacao\")",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/api/orquestracao.py#L751",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "app.state.provider = MockProvider(settings.mock_latency_ms)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/main.py#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "A descrição apresenta uma sequência: agentes de IA criam o plano e, em seguida, alunos simulados leem o material página a página e o plano volta com microadaptações.",
+              "São dois motores: a orquestração DeepSeek avalia o rascunho por etapas, e a leitura página a página é a Avaliação determinística, que recebe o plano como material e produz o seu próprio plano."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "descricao.md",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "um Juiz que concilia os pareceres e decide plano, adaptações e mapa de assentos.",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/orquestracao/etapas.py",
+          "linha": 771,
+          "linha_fim": null,
+          "trecho": "sala_mod.otimizar(sala, campos, alunos, layout),",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/app/orquestracao/etapas.py#L771",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "Um Juiz concilia os pareceres e decide plano, adaptações e mapa de assentos.",
+              "A proposta de assentos do Juiz é validada em código, e um otimizador determinístico pode substituí-la quando restam alunos em faixa crítica ou o atrito médio não cai."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 77,
+          "linha_fim": null,
+          "trecho": "**Whisper local** (`faster-whisper`)",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/README.md#L77",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/Dockerfile",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "RUN pip install --no-cache-dir ./backend \\",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/backend/Dockerfile#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "render.yaml",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "dockerfilePath: ./backend/Dockerfile",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/render.yaml#L9",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README: Whisper local (faster-whisper) transcreve o relato pós-aula falado no próprio servidor.",
+              "O código usa faster-whisper como extra opcional; o Dockerfile usado no deploy do Render instala o backend sem esse extra."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Isaila",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 234 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 154,
+          "linha_fim": null,
+          "trecho": "NEXT_PUBLIC_API_URL=http://127.0.0.1:8001 npm run dev --prefix frontend -- -H 127.0.0.1 -p 3001",
+          "link": "https://github.com/arthlz/Hacka-UFPB/blob/11aa217b7cbc3b4a5385e4c6f6d9189de57645f7/README.md#L154",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

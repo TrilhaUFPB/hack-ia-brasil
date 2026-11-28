@@ -1,0 +1,2641 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "gabriela-filgueiras",
+    "nome": "Gabriela Filgueiras",
+    "numero": 24,
+    "track": "Educação",
+    "repo": "https://github.com/jobson-menezes/Atena-IA",
+    "demo": null,
+    "video": "https://drive.google.com/file/d/1Pf6OFkEDxTdV1o5NRP3Ffec7gu3QHcge/view?usp=sharing",
+    "resumo": "AtenaIA é uma plataforma de estudo com IA para alunos do ensino médio. Ela faz uma triagem do perfil e do momento do aluno e depois explica o conteúdo numa lousa interativa, onde ele marca o trecho que não entendeu e a IA refaz a explicação só daquele ponto."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.484Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918",
+    "commit_em": "2026-11-28T18:38:43Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 39957
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10237,
+          "preparo_ms": 0,
+          "execucao_ms": 11
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1,
+          "preparo_ms": 0,
+          "execucao_ms": 2151
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10251,
+          "preparo_ms": 0,
+          "execucao_ms": 24
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2419,
+          "preparo_ms": 0,
+          "execucao_ms": 1908
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 83
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4731,
+          "preparo_ms": 0,
+          "execucao_ms": 73
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 37
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10280,
+          "preparo_ms": 0,
+          "execucao_ms": 136
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10423,
+          "preparo_ms": 0,
+          "execucao_ms": 41
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 3
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "nao_informado"
+    },
+    "build": {
+      "estado": "verificado"
+    },
+    "fluxo": {
+      "estado": "falhou",
+      "erro": "Nenhuma nova explicação da parte marcada apareceu; o app estava em modo demonstração."
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-0",
+      "n": 0,
+      "acao": "No repositório, suba o projeto: pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8000",
+      "esperado": "O projeto responde em http://localhost:8000",
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra http://localhost:8000",
+      "esperado": "Aparece a tela \"Atena Teacher\" com os campos Nome, E-mail e Senha, o botão Entrar e o aviso para usar Chrome ou Edge e permitir o microfone.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Preencha Nome com \"Jurado Teste\", E-mail com \"jurado.teste@example.com\" e Senha com \"teste1234\" e clique em Entrar",
+      "esperado": "Abre a \"Pergunta 1 de 5\" sobre familiaridade com o tema, com opções clicáveis e o botão \"Responder por voz\". No navegador de teste aparece \"Não entendi (not-allowed). Tente de novo.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Responda às 5 perguntas clicando em \"Já vi, mas tenho dúvidas\", \"Entender do zero, sem travar\", \"1º ano do Ensino Médio\", \"Teórico\" e \"Perco o foco rápido com textos longos\"",
+      "esperado": "Aparece a tela \"Seu método de estudo\" com \"Scaffolding (andaime)\", um texto que descreve o método e o botão Continuar.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Clique em Continuar",
+      "esperado": "Abre a lousa com as ferramentas de desenho, o terminal de perguntas e as etiquetas \"1º ano\", \"Teórico\" e \"Perco o foco rápido com textos longos\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Digite \"Como resolver uma equação do segundo grau?\" no campo \"Digite ou fale sua dúvida…\" e pressione Enter",
+      "esperado": "O terminal pergunta \"Qual seu nível de familiaridade com esse assunto?\" com quatro opções, de A a D.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em \"Zero — preciso que você explique do começo\", aguarde a escrita na lousa e, se quiser, clique em Pular",
+      "esperado": "A lousa mostra título, fórmulas, passos e lista sobre equação do 2º grau, mais o aviso \"Configure GEMINI_API_KEY\". Com a segunda pergunta \"O que é fotossíntese?\", o conteúdo foi idêntico, mudando só a linha \"Pergunta:\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique no botão Marca-texto e arraste sobre a linha \"Passo 2: aplique a fórmula de Bhaskara\"",
+      "esperado": "O traço do marca-texto é desenhado sobre a lousa.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "texto: \"Em que ano do Ensino Médio você está?\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L33",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "texto: \"Qual é o seu estilo de aprendizagem preferido?\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L42",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "texto: \"Qual dessas situações combina mais com você?\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L52",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 160,
+          "linha_fim": null,
+          "trecho": "estilo=p.estilo or \"não informado\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L160",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "O questionário pergunta ano, estilo de aprendizagem e situação de foco; o backend insere esses campos no prompt.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Primeiro faz uma triagem do aluno, olhando o perfil (ano escolar, estilo de aprendizagem, foco/ritmo)",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Primeiro faz uma triagem do aluno, olhando o perfil (ano escolar, estilo de aprendizagem, foco/ritmo)",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "A triagem perguntou familiaridade e objetivo; nas 5 perguntas não apareceu pergunta sobre tempo disponível."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "texto: \"Qual é o seu objetivo principal nesta sessão?\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 461,
+          "linha_fim": null,
+          "trecho": "const fam = await perguntarFamiliaridade();",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L461",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "class Perfil(BaseModel):",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L44",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": null,
+      "existe": "Há perguntas sobre familiaridade com o tema (no questionário e antes de cada resposta) e sobre o objetivo da sessão.",
+      "falta": "Não há pergunta nem campo sobre o tempo disponível; uma das opções de objetivo cita \"prova amanhã\".",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "e o momento (familiaridade com o tema, objetivo, tempo disponível)",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "e o momento (familiaridade com o tema, objetivo, tempo disponível)",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 646,
+          "linha_fim": null,
+          "trecho": "await escreverItem(el, q, meuId);",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L646",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 702,
+          "linha_fim": null,
+          "trecho": "canvas.addEventListener(\"pointerdown\", (e) => {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L702",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "A resposta é escrita item por item num quadro, com narração, botão de pular e um canvas para desenhar por cima.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Depois explica o conteúdo numa lousa interativa",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Depois explica o conteúdo numa lousa interativa",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "O trecho foi marcado, mas nenhuma parte foi refeita e nenhuma requisição foi enviada após a marcação (modo demonstração)."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 668,
+          "linha_fim": null,
+          "trecho": "marca: { largura: 20, alfa: 0.35, cor: () => \"#facc15\" },",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L668",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 712,
+          "linha_fim": null,
+          "trecho": "if (ferramenta === \"marca\") { ctx.putImageData(fotoAntes, 0, 0); tracar(pontos); } // traço uniforme, sem manchas",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L712",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 210,
+          "linha_fim": null,
+          "trecho": "@app.post(\"/api/explicar\")",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L210",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": null,
+      "existe": "Há uma ferramenta marca-texto que pinta um traço amarelo no canvas sobre o quadro.",
+      "falta": "Não foi encontrado código que identifique o trecho marcado, o envie à IA ou refaça só aquela parte; o backend tem apenas as rotas /api/explicar e /api/falar.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o aluno marca o trecho que não entendeu e a IA refaz só aquela parte",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "o aluno marca o trecho que não entendeu e a IA refaz só aquela parte",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Sem chave de IA, a resposta é fixa e não houve refação de trecho para comparar métodos."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "METODOS = {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L72",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 163,
+          "linha_fim": null,
+          "trecho": "metodo=METODOS.get(p.metodo, METODOS[\"scaffolding\"]),",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L163",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 321,
+          "linha_fim": null,
+          "trecho": "perfilTemp.metodo = calcularMetodo(perfilTemp.pontos);",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L321",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": null,
+      "existe": "Os cinco métodos têm instruções no backend; um deles é escolhido por pontuação ao fim do questionário e enviado no prompt.",
+      "falta": "Não há variação de método ao refazer um trecho: o método fica salvo no perfil até o questionário ser refeito.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "variando o método (analogias, active recall, scaffolding, interleaving, debug)",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "variando o método (analogias, active recall, scaffolding, interleaving, debug)",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 331,
+          "linha_fim": null,
+          "trecho": "$(\"#metodo-descricao\").textContent = info.descricao;",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L331",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/index.html",
+          "linha": 54,
+          "linha_fim": null,
+          "trecho": "<div class=\"etapa\">Seu método de estudo</div>",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/index.html#L54",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "Uma tela após o questionário mostra o nome e a descrição (texto fixo no código) do método escolhido para o aluno, não dos cinco.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um site com interface simples que tem a proposta de explicar os modelos de aprendizados utilizados pela IA",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "um site com interface simples que tem a proposta de explicar os modelos de aprendizados utilizados pela IA",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Atena Teacher\")",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L29",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "uvicorn",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/requirements.txt#L2",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 62,
+          "linha_fim": null,
+          "trecho": "uvicorn main:app --reload",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L62",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "A aplicação é criada com FastAPI; uvicorn está nas dependências e é usado pelo comando de execução do README.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| Backend | **FastAPI** (Python) + uvicorn |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 24,
+        "linha_fim": null,
+        "trecho": "| Backend | **FastAPI** (Python) + uvicorn |",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L24",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "GEMINI_MODEL = os.getenv(\"GEMINI_MODEL\", \"gemini-3.8-flash\")",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 180,
+          "linha_fim": null,
+          "trecho": "resp = cliente().models.generate_content(",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L180",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "gemini-3.8-flash é o modelo padrão (alterável por variável de ambiente), com dois modelos de reserva na mesma lista.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| IA | **Google Gemini** (`gemini-3.8-flash`) |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 25,
+        "linha_fim": null,
+        "trecho": "| IA | **Google Gemini** (`gemini-3.8-flash`) |",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L25",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "GEMINI_TTS_MODEL = os.getenv(\"GEMINI_TTS_MODEL\", \"gemini-3.8-flash-lite-tts\")",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L24",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 242,
+          "linha_fim": null,
+          "trecho": "resp = cliente().models.generate_content(",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L242",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 213,
+          "linha_fim": null,
+          "trecho": "await falarNavegador(texto, meuId);",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L213",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "/api/falar chama o modelo TTS (reserva: gemini-3.8-flash-tts); se falhar, o frontend usa a voz do navegador.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Gemini TTS (`gemini-3.8-flash-lite-tts`) via `/api/falar`, reserva: voz do navegador",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 26,
+        "linha_fim": null,
+        "trecho": "Gemini TTS (`gemini-3.8-flash-lite-tts`) via `/api/falar`, reserva: voz do navegador",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L26",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 226,
+          "linha_fim": null,
+          "trecho": "const Reconhecimento = window.SpeechRecognition || window.webkitSpeechRecognition;",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L226",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 231,
+          "linha_fim": null,
+          "trecho": "const rec = new Reconhecimento();",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L231",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "O reconhecimento de fala do navegador é instanciado em pt-BR na função ouvir.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| Voz (ouvir) | `SpeechRecognition` do navegador |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 27,
+        "linha_fim": null,
+        "trecho": "| Voz (ouvir) | `SpeechRecognition` do navegador |",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L27",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/index.html",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "<script defer src=\"https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js\"></script>",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/index.html#L11",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 545,
+          "linha_fim": null,
+          "trecho": "try { if (window.katex) return katex.render(tex, el, { throwOnError: false, displayMode: display }); } catch {}",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L545",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "KaTeX é carregado via jsDelivr e chamado para renderizar as fórmulas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| Fórmulas no quadro | KaTeX (via CDN) |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 28,
+        "linha_fim": null,
+        "trecho": "| Fórmulas no quadro | KaTeX (via CDN) |",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L28",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/index.html",
+          "linha": 114,
+          "linha_fim": null,
+          "trecho": "<canvas id=\"canvas\"></canvas>",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/index.html#L114",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 709,
+          "linha_fim": null,
+          "trecho": "canvas.addEventListener(\"pointermove\", (e) => {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L709",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 621,
+          "linha_fim": null,
+          "trecho": "limparCanvas();",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L621",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "Há um canvas sobre o quadro com caneta, marca-texto e borracha; o desenho é limpo ao exibir outro item da conversa.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| Desenho livre | `<canvas>` HTML | Aluno pode rabiscar no quadro |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 29,
+        "linha_fim": null,
+        "trecho": "| Desenho livre | `<canvas>` HTML | Aluno pode rabiscar no quadro |",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L29",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "GEMINI_API_KEY = os.getenv(\"GEMINI_API_KEY\", \"\")",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L22",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 157,
+          "linha_fim": null,
+          "trecho": "sistema = PROMPT_SISTEMA.format(",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L157",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 190,
+          "linha_fim": null,
+          "trecho": "return json.loads(resp.text)",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L190",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "A chave é lida do ambiente no servidor, o prompt é montado com o perfil e a resposta JSON do modelo é devolvida.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O backend guarda a chave, monta o prompt com o perfil do aluno e devolve a resposta já estruturada.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 20,
+        "linha_fim": null,
+        "trecho": "O backend guarda a chave, monta o prompt com o perfil do aluno e devolve a resposta já estruturada.",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L20",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "O ambiente de teste não permite ouvir áudio; o texto da pergunta aparece na tela e /api/falar respondeu 501."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 282,
+          "linha_fim": null,
+          "trecho": "$(\"#quiz-pergunta\").textContent = p.texto;",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L282",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 294,
+          "linha_fim": null,
+          "trecho": "await falar(textoLeituraPergunta(p));",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L294",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "O texto da pergunta é exibido e lido, com as alternativas, pela voz do Gemini ou do navegador.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A IA **lê** a pergunta e as alternativas em voz alta; o texto aparece na tela.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 74,
+        "linha_fim": null,
+        "trecho": "A IA **lê** a pergunta e as alternativas em voz alta; o texto aparece na tela.",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L74",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 249,
+          "linha_fim": null,
+          "trecho": "const m = t.match(/(?:letra|alternativa|opcao)\\s+(\\w+)/) || t.match(/^(\\w{1,3})[.!]?$/);",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L249",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 36,
+          "linha_fim": null,
+          "trecho": "{ letra: \"B\", texto: \"2º ano do Ensino Médio\", palavras: [\"segundo\", \"2º\", \"2o\", \"dois\", \"2\"] },",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L36",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "palavras: [\"prova\", \"amanha\", \"memorizar\"]",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L26",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": null,
+      "existe": "Há resposta por clique e por voz, com reconhecimento de \"letra X\", \"alternativa X\" e palavras-chave como \"segundo\" e \"visual\".",
+      "falta": "A palavra-chave \"rápido\", citada como exemplo, não está na lista `palavras` de nenhuma opção.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O aluno responde **clicando** na caixinha ou **falando**: \"letra A\", \"letra B\", \"alternativa C\", ou palavras-chave (\"segundo ano\", \"visual\", \"rápido\"...).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 75,
+        "linha_fim": null,
+        "trecho": "O aluno responde **clicando** na caixinha ou **falando**: \"letra A\", \"letra B\", \"alternativa C\", ou palavras-chave (\"segundo ano\", \"visual\", \"rápido\"...).",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L75",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 323,
+          "linha_fim": null,
+          "trecho": "salvar(\"atena_perfil\", estado.perfil);",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L323",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 741,
+          "linha_fim": null,
+          "trecho": "localStorage.removeItem(\"atena_perfil\"); estado.perfil = null; iniciarQuiz();",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L741",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "O perfil é salvo em localStorage e removido pelo botão rotulado \"Refazer questionário de perfil\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O perfil fica salvo no `localStorage` (botão \"Refazer perfil\" apaga).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 77,
+        "linha_fim": null,
+        "trecho": "O perfil fica salvo no `localStorage` (botão \"Refazer perfil\" apaga).",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L77",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 446,
+          "linha_fim": null,
+          "trecho": "if (fala) perguntar(fala);",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L446",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 500,
+          "linha_fim": null,
+          "trecho": "const r = await fetch(\"/api/explicar\", {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L500",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 504,
+          "linha_fim": null,
+          "trecho": "pergunta: item.pergunta, familiaridade: item.familiaridade, historico,",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L504",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "A pergunta digitada ou falada é enviada a /api/explicar com perfil, histórico e também a familiaridade.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Aluno pergunta por voz ou texto → frontend manda `{perfil, pergunta, historico}` para `/api/explicar`.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 81,
+        "linha_fim": null,
+        "trecho": "Aluno pergunta por voz ou texto → frontend manda `{perfil, pergunta, historico}` para `/api/explicar`.",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L81",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 645,
+          "linha_fim": null,
+          "trecho": "const voz = q.fala ? esperar(250).then(() => (pularEscrita || meuId !== idEscrita ? null : falar(q.fala))) : Promise.resolve();",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L645",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/style.css",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "body { font-family: Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif;",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/style.css#L7",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/index.html",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "family=Inter:wght@400;500;600;700&family=Cinzel:wght@600;700&display=swap",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/index.html#L9",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": null,
+      "existe": "Os itens são escritos um a um no quadro, letra por letra, com a narração de cada item em paralelo.",
+      "falta": "Não foi encontrada fonte de \"giz/caneta\": as fontes carregadas são Inter e Cinzel, e o corpo da página usa Inter.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O frontend escreve os itens **um a um** no quadro (fonte de \"giz/caneta\") enquanto a IA fala.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 95,
+        "linha_fim": null,
+        "trecho": "O frontend escreve os itens **um a um** no quadro (fonte de \"giz/caneta\") enquanto a IA fala.",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L95",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Sem chave de IA, a explicação exibida é a de demonstração."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "- Ano: {ano}",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L96",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 99,
+          "linha_fim": null,
+          "trecho": "- Situação/atenção: {situacao}",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L99",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 165,
+          "linha_fim": null,
+          "trecho": "regras=\"\\n\".join(f\"- {r}\" for r in p.regras) or \"- nenhuma regra especial\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L165",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "O prompt recebe ano, estilo, situação/atenção e as regras associadas à situação escolhida.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O prompt em `main.py` (`PROMPT_SISTEMA`) adapta a explicação ao ano, estilo e ritmo do aluno.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 96,
+        "linha_fim": null,
+        "trecho": "O prompt em `main.py` (`PROMPT_SISTEMA`) adapta a explicação ao ano, estilo e ritmo do aluno.",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L96",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 213,
+          "linha_fim": null,
+          "trecho": "return resposta_demo(pedido.pergunta)",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L213",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 141,
+          "linha_fim": null,
+          "trecho": "\"fala\": \"Estou no modo demonstração. Vamos ver a equação do segundo grau.\"",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L141",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "Sem GEMINI_API_KEY, /api/explicar devolve uma explicação fixa sobre equação do 2º grau, identificada como modo demonstração.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Sem chave, o app roda em **modo demonstração** (resposta fixa), útil para testar a interface.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 66,
+        "linha_fim": null,
+        "trecho": "Sem chave, o app roda em **modo demonstração** (resposta fixa), útil para testar a interface.",
+        "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L66",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    }
+  ],
+  "nao_declarado": [
+    {
+      "tipo": "item",
+      "id": "leitor:nao_declarado-1",
+      "rotulo": "gemini-flash-latest e gemini-3.5-flash-lite (modelos de reserva para o texto)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "MODELOS_TEXTO = [GEMINI_MODEL, \"gemini-flash-latest\", \"gemini-3.5-flash-lite\"]",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L26",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 177,
+          "linha_fim": null,
+          "trecho": "for modelo in MODELOS_TEXTO:",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L177",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "modelo"
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:nao_declarado-2",
+      "rotulo": "gemini-3.8-flash-tts (modelo de reserva para a voz)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "MODELOS_VOZ = [GEMINI_TTS_MODEL, \"gemini-3.8-flash-tts\"]",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L27",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 239,
+          "linha_fim": null,
+          "trecho": "for modelo in MODELOS_VOZ:",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L239",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "modelo"
+    }
+  ],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "25 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "4 s",
+      "evidencias": [],
+      "obs": "porta 8000, comando: uvicorn main:app --host 0.0.0.0 --port 8000"
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra http://localhost:8000",
+      "observado": "Aparece a tela \"Atena Teacher\" com os campos Nome, E-mail e Senha, o botão Entrar e o aviso para usar Chrome ou Edge e permitir o microfone.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Preencha Nome com \"Jurado Teste\", E-mail com \"jurado.teste@example.com\" e Senha com \"teste1234\" e clique em Entrar",
+      "observado": "Abre a \"Pergunta 1 de 5\" sobre familiaridade com o tema, com opções clicáveis e o botão \"Responder por voz\". No navegador de teste aparece \"Não entendi (not-allowed). Tente de novo.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Responda às 5 perguntas clicando em \"Já vi, mas tenho dúvidas\", \"Entender do zero, sem travar\", \"1º ano do Ensino Médio\", \"Teórico\" e \"Perco o foco rápido com textos longos\"",
+      "observado": "Aparece a tela \"Seu método de estudo\" com \"Scaffolding (andaime)\", um texto que descreve o método e o botão Continuar.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em Continuar",
+      "observado": "Abre a lousa com as ferramentas de desenho, o terminal de perguntas e as etiquetas \"1º ano\", \"Teórico\" e \"Perco o foco rápido com textos longos\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Digite \"Como resolver uma equação do segundo grau?\" no campo \"Digite ou fale sua dúvida…\" e pressione Enter",
+      "observado": "O terminal pergunta \"Qual seu nível de familiaridade com esse assunto?\" com quatro opções, de A a D.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em \"Zero — preciso que você explique do começo\", aguarde a escrita na lousa e, se quiser, clique em Pular",
+      "observado": "A lousa mostra título, fórmulas, passos e lista sobre equação do 2º grau, mais o aviso \"Configure GEMINI_API_KEY\". Com a segunda pergunta \"O que é fotossíntese?\", o conteúdo foi idêntico, mudando só a linha \"Pergunta:\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique no botão Marca-texto e arraste sobre a linha \"Passo 2: aplique a fórmula de Bhaskara\"",
+      "observado": "O traço do marca-texto é desenhado sobre a lousa.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Aguarde a nova explicação do trecho marcado",
+      "observado": "Após marcar, não surgiu botão, texto novo nem requisição a /api/explicar. Ao digitar \"Não entendi o trecho marcado, explique de novo\", a lousa repetiu o mesmo conteúdo inteiro e o corpo da requisição não trazia o trecho marcado.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Nenhuma nova explicação da parte marcada apareceu; o app estava em modo demonstração."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-12.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-12.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Campo de pergunta vazio e clique em Enviar",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela não mudou e nenhuma requisição a /api/explicar foi enviada; não apareceu mensagem de validação."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Pergunta com 10.500 caracteres (frase repetida 300 vezes)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O texto foi aceito e repetido na lousa e no terminal, com a resposta de demonstração; a página não ganhou rolagem horizontal."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Texto com HTML e emoji: <img src=x onerror=\"alert(1)\"> 🤖 ???",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O texto apareceu literalmente, sem criar elemento de imagem, seguido da resposta de demonstração."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Chave GEMINI_API_KEY ausente",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A instância está em modo demonstração, com resposta fixa; a explicação gerada por IA e a adaptação ao perfil não puderam ser testadas."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-2",
+      "rotulo": "Microfone",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O navegador de teste retornou not-allowed; respostas e perguntas por voz não foram testadas."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "google-genai (Google), em requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "google-genai",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/requirements.txt#L3",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Google",
+              "main.py",
+              37
+            ],
+            [
+              "Google",
+              "main.py",
+              154
+            ],
+            [
+              "Google",
+              "main.py",
+              236
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 37,
+          "linha_fim": null,
+          "trecho": "        from google.genai import types",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L37",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 154,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L154",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 236,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L236",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Google (Gemini, via google-genai)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 180,
+          "linha_fim": null,
+          "trecho": "resp = cliente().models.generate_content(",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L180",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "MODELOS_TEXTO = [GEMINI_MODEL, \"gemini-flash-latest\", \"gemini-3.5-flash-lite\"]",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L26",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.8-flash (reservas: gemini-flash-latest, gemini-3.5-flash-lite)",
+      "obs": "Gerar a explicação em JSON (itens do quadro e falas) a partir do perfil, da pergunta e do histórico."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Google (Gemini TTS, via google-genai)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 242,
+          "linha_fim": null,
+          "trecho": "resp = cliente().models.generate_content(",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L242",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "MODELOS_VOZ = [GEMINI_TTS_MODEL, \"gemini-3.8-flash-tts\"]",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L27",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.8-flash-lite-tts (reserva: gemini-3.8-flash-tts)",
+      "obs": "Converter texto em áudio para a voz da tutora."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Navegador (SpeechRecognition)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 239,
+          "linha_fim": null,
+          "trecho": "rec.start();",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L239",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Transcrever a fala do aluno no questionário, na escolha de familiaridade e nas perguntas."
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 15:30",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/jobson-menezes/Atena-IA",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/jobson-menezes/Atena-IA",
+          "conferida": "script"
+        }
+      ],
+      "sinal": false
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/jobson-menezes/Atena-IA/commit/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/jobson-menezes/Atena-IA/commit/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918",
+          "conferida": "script"
+        }
+      ],
+      "valor": "233560b, 1532 linhas adicionadas em 10 arquivos, de 1532 no histórico",
+      "obs": "1532 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Drawsplain",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://drawsplain.in/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://drawsplain.in/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Tutor de IA que recebe perguntas por texto, voz ou foto de livro, desenha a resposta numa lousa e a explica em voz alta, passo a passo. A página diz que o usuário pode circular qualquer parte da lousa e perguntar só sobre ela.",
+      "obs": "Em comum: Explicação por IA numa lousa com voz e marcação de um trecho para pedir explicação só daquele ponto. Diferente: A página não menciona triagem de perfil do aluno; o público inclui escola, vestibulares indianos (JEE, NEET), universidade e curiosidade geral."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Solvely Whiteboard Tutor",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://solvely.ai/ai-tutor",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://solvely.ai/ai-tutor",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://www.youtube.com/watch?v=bT1XCUQfh84",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.youtube.com/watch?v=bT1XCUQfh84",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Tutor de IA que explica em voz alta enquanto escreve cada passo numa lousa, aceita interrupções por voz ou texto para simplificar a explicação e faz perguntas de checagem. Um vídeo do produto tem o título \"Don't Get It? Circle It.\".",
+      "obs": "Em comum: Aula por IA em lousa com voz para estudantes, com perguntas sobre o ponto em que o aluno travou. Diferente: Permite partir de arquivos enviados (PDF, slides, imagens) e exportar a aula em PDF; a página do tutor não menciona perguntas iniciais sobre ano escolar ou estilo de aprendizagem."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "whiteboard-tutor (VinayNarne)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/VinayNarne/whiteboard-tutor",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/VinayNarne/whiteboard-tutor",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Projeto de código aberto de um tutor individual que ensina em voz alta enquanto desenha numa lousa, monta um curso a partir do objetivo do usuário e permite circular qualquer coisa para perguntar sobre ela.",
+      "obs": "Em comum: Lousa com explicação falada, marcação de um trecho para perguntar e backend em FastAPI. Diferente: O repositório se descreve como versão inicial para uma pessoa numa máquina, sem login, e usa Azure OpenAI; não descreve perfil de aluno nem público de ensino médio."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "ahaboard",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://ahaboard.ai/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://ahaboard.ai/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Tutor de IA que explica conceitos numa lousa virtual, desenhando cada passo enquanto fala. O usuário pode interromper para receber outra explicação.",
+      "obs": "Em comum: Lousa com voz para estudantes, nova explicação quando há dúvida e modo de revisão para prova. Diferente: Tem modos de tema, preparação para prova e dever de casa; a página não menciona triagem inicial nem marcação de um trecho da lousa."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Thinkverse",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.thinkverse.co/tutorial/students/features",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.thinkverse.co/tutorial/students/features",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Tutor de matemática com IA em que o aluno resolve problemas numa lousa, conversa por voz e o tutor lê o quadro e circula pontos a rever.",
+      "obs": "Em comum: Tutor com lousa e voz para alunos, com escolhas iniciais de personalização e pedidos de explicação de outra forma. Diferente: É voltado a matemática; no cadastro o aluno escolhe idioma, avatar, personalidade do tutor e interesses, e é o tutor que circula os pontos na lousa."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "JavaScript",
+              1,
+              757
+            ],
+            [
+              "Python",
+              1,
+              272
+            ],
+            [
+              "HTML",
+              1,
+              179
+            ],
+            [
+              "CSS",
+              1,
+              166
+            ],
+            [
+              "Markdown",
+              1,
+              125
+            ]
+          ]
+        }
+      },
+      "obs": "8 arquivos de texto e 1539 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Servidor FastAPI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Atena Teacher\")",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L29",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 271,
+          "linha_fim": null,
+          "trecho": "app.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L271",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "main.py"
+        ]
+      },
+      "obs": "Serve o site estático e expõe as rotas /api/explicar e /api/falar."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Geração da explicação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 153,
+          "linha_fim": null,
+          "trecho": "def chamar_gemini(pedido: PedidoExplicacao) -> dict:",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L153",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "PROMPT_SISTEMA = \"\"\"Você é a \"Atena\", uma tutora de IA brasileira para alunos do Ensino Médio.",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L91",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "main.py"
+        ]
+      },
+      "obs": "Monta o prompt com perfil e método de ensino, chama o Gemini e devolve o JSON do quadro."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Questionário de perfil",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "const PERGUNTAS = [",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L11",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 109,
+          "linha_fim": null,
+          "trecho": "function calcularMetodo(pontos) {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L109",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "static/app.js",
+          "static/index.html"
+        ]
+      },
+      "obs": "Faz as perguntas ao aluno, soma pesos fixos para escolher o método de ensino e salva o perfil no navegador."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Quadro e desenho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 616,
+          "linha_fim": null,
+          "trecho": "async function mostrarItem(item, animar) {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L616",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 663,
+          "linha_fim": null,
+          "trecho": "const canvas = $(\"#canvas\");",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L663",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "static/app.js",
+          "static/index.html",
+          "static/style.css"
+        ]
+      },
+      "obs": "Escreve os itens da resposta com narração, renderiza fórmulas e permite desenhar num canvas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Voz (falar e ouvir)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 192,
+          "linha_fim": null,
+          "trecho": "async function falar(texto) {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L192",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 227,
+          "linha_fim": null,
+          "trecho": "function ouvir(botao, status) {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L227",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 230,
+          "linha_fim": null,
+          "trecho": "def falar(pedido: PedidoFala):",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L230",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "static/app.js",
+          "main.py"
+        ]
+      },
+      "obs": "Toca o áudio do Gemini TTS com reserva na voz do navegador e transcreve a fala com SpeechRecognition."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Estado no navegador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 125,
+          "linha_fim": null,
+          "trecho": "const estado = {",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L125",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 123,
+          "linha_fim": null,
+          "trecho": "const salvar = (k, v) => localStorage.setItem(k, JSON.stringify(v));",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L123",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "static/app.js"
+        ]
+      },
+      "obs": "Guarda usuário, perfil, configurações e conversas em localStorage; não há banco de dados no servidor."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "Questionário (3 perguntas)",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "chave: \"familiaridade_geral\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 51,
+          "linha_fim": null,
+          "trecho": "chave: \"situacao\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L51",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O diagrama do README indica um questionário com 3 perguntas.",
+              "O array PERGUNTAS tem 5 perguntas: familiaridade_geral, objetivo, ano, estilo e situacao."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "Voz: fala (speechSynthesis)",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L14",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "static/app.js",
+          "linha": 128,
+          "linha_fim": null,
+          "trecho": "config: Object.assign({ motor: \"ia\", voz: \"Kore\", velocidade: 1.05 }, ler(\"atena_config\", {})),",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/static/app.js#L128",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O diagrama do README mostra a fala feita por speechSynthesis no frontend.",
+              "A configuração padrão usa o Gemini TTS pelo backend; speechSynthesis é a reserva ou uma opção nas configurações."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "\"fala\": \"texto lido em voz alta\",",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "main.py",
+          "linha": 217,
+          "linha_fim": null,
+          "trecho": "dados[\"fala\"] = \" \".join(str(q.get(\"fala\", \"\")) for q in dados[\"quadro\"] if isinstance(q, dict))",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/main.py#L217",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O README mostra o Gemini devolvendo um JSON com um campo \"fala\" único e o quadro.",
+              "O prompt pede uma \"fala\" em cada item do quadro, e o backend concatena essas falas no campo \"fala\"."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-4",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "├── .env.example       # copie para .env e coloque a chave",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L105",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O README lista um arquivo .env.example na estrutura, para ser copiado para .env.",
+              "O arquivo .env.example não foi encontrado no repositório."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Atena Teacher — tutora de IA por voz com quadro branco",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 125 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "## 2. Como rodar no VS Code (passo a passo)",
+          "link": "https://github.com/jobson-menezes/Atena-IA/blob/233560b0c8a9ee7ba6bc56cd68c5b1e93ceb4918/README.md#L35",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "variando o método (analogias, active recall, scaffolding, interleaving, debug)",
+      "motivo": "Sem chave de IA, a resposta é fixa e não houve refação de trecho para comparar métodos.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "A IA **lê** a pergunta e as alternativas em voz alta; o texto aparece na tela.",
+      "motivo": "O ambiente de teste não permite ouvir áudio; o texto da pergunta aparece na tela e /api/falar respondeu 501.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "O prompt em `main.py` (`PROMPT_SISTEMA`) adapta a explicação ao ano, estilo e ritmo do aluno.",
+      "motivo": "Sem chave de IA, a explicação exibida é a de demonstração.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Chave GEMINI_API_KEY ausente",
+      "motivo": "A instância está em modo demonstração, com resposta fixa; a explicação gerada por IA e a adaptação ao perfil não puderam ser testadas.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Microfone",
+      "motivo": "O navegador de teste retornou not-allowed; respostas e perguntas por voz não foram testadas.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

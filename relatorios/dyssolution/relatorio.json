@@ -1,0 +1,417 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "dyssolution",
+    "nome": "dyssolution",
+    "numero": 5,
+    "track": "Saúde",
+    "repo": "https://github.com/lucasrabay/dyssolution",
+    "demo": null,
+    "video": "https://drive.google.com/drive/u/0/folders/1i0eM_zYUZWiYNRIg1mP4gTBoJHKKoNXo",
+    "resumo": "\"Para que nenhuma criança passe anos achando que o problema é ela, quando só precisava ser vista a tempo.\""
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.487Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": null,
+    "commit_em": null,
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 4,
+          "preparo_ms": 0,
+          "execucao_ms": 609
+        },
+        "parou_em": "lendo lucasrabay/dyssolution no GitHub",
+        "erro": "repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4532,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 4534,
+          "preparo_ms": 0,
+          "execucao_ms": 627
+        },
+        "parou_em": "lendo lucasrabay/dyssolution no GitHub",
+        "erro": "repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "falhou",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência leitor: dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "falhou",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência promessas: dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "falhou",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": "dependência uso: dependência promessas.conferido: dependência promessas: dependência corte: repositório sem acesso: lucasrabay/dyssolution"
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "nao_informado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "a etapa Build não terminou"
+    },
+    "fluxo": {
+      "estado": "nao_testavel",
+      "motivo": "a etapa Teste de uso: conferência não terminou"
+    },
+    "ia": {
+      "estado": "nao_testavel",
+      "motivo": "a etapa Leitura do código: conferência não terminou"
+    }
+  },
+  "roteiro": [],
+  "declaracoes": [],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "ia": [],
+  "linha_do_tempo": [],
+  "origem": [],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Lexplore (Lexplore School / Lexplore Home)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://lexplore.com/lexplore-assessment",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://lexplore.com/lexplore-assessment",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://lexplore.com/flex",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://lexplore.com/flex",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://info.lexplore.com/en/support/guide-web-assessment",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://info.lexplore.com/en/support/guide-web-assessment",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Avaliação de leitura no navegador que usa a webcam do computador para acompanhar os olhos e o microfone para registrar a voz enquanto o aluno lê, e gera um perfil de leitura para escolas ou famílias.",
+      "obs": "Em comum: Usa webcam comum e voz no navegador para medir a leitura de textos curtos, com perguntas sobre o texto, para escolas e famílias. As páginas dizem que o resultado não diagnostica dislexia nem substitui a avaliação de especialista. Diferente: Compara o aluno com normas por idade e indica próximos passos e práticas; a versão para famílias custa €29, mostra inglês e sueco como opções e informa que os dados de olhar e voz são armazenados na UE/EEE."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "EyeLearn",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Tonbarbos/EyeLearn",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Tonbarbos/EyeLearn",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Projeto acadêmico brasileiro que acompanha com a câmera comum o olhar de crianças de 7 a 10 anos durante a leitura e descreve padrões de leitura para o professor, sem fazer diagnóstico.",
+      "obs": "Em comum: Interface em português, rastreamento do olhar com calibração e processamento das imagens no aparelho, medidas como fixações e regressões, relatórios em PDF e uso do conjunto de dados ETDD70. Diferente: A criança lê no celular como tarefa de casa e não vê os resultados, que vão para um painel do professor; a página não menciona análise de voz."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "DyutiPath",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.producthunt.com/products/dyutipath",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.producthunt.com/products/dyutipath",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Ferramenta gratuita de triagem para crianças do ensino fundamental que usa minijogos, com webcam e voz, para apontar possíveis sinais de dislexia, disgrafia e outras diferenças do neurodesenvolvimento.",
+      "obs": "Em comum: Usa a webcam no navegador para detectar fixações e retornos do olhar na leitura, processa tudo no aparelho, gera resumos para imprimir e se apresenta como apoio que não substitui avaliação clínica. Diferente: É voltada a tablet, com cerca de 15 minutos de minijogos (pseudopalavras, nomeação rápida, escrita), usa voz em inglês e hindi e gera pontuações de triagem."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "AKSHAR",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/gezzStack/akshar",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/gezzStack/akshar",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Aplicativo web que ajuda pais a perceber possíveis sinais de dislexia em crianças por meio de um questionário de triagem e de um teste de leitura com rastreamento do olhar.",
+      "obs": "Em comum: Rastreamento do olhar pelo navegador (WebGazer.js) durante a leitura e relatório em PDF para levar adiante. Diferente: Voltado a pais de crianças de 5 a 12 anos, com textos e relatórios gerados por IA (Gemini); a página não menciona análise de voz."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Aprendizagem Guiada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://news.confap.org.br/projeto-utiliza-dispositivo-de-rastreamento-ocular-para-identificar-transtornos-de-aprendizagem/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://news.confap.org.br/projeto-utiliza-dispositivo-de-rastreamento-ocular-para-identificar-transtornos-de-aprendizagem/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Projeto do programa Centelha em Roraima que usa rastreamento ocular para identificar as palavras em que a pessoa tem dificuldade na leitura e aplica uma intervenção multissensorial.",
+      "obs": "Em comum: Acompanha o movimento dos olhos durante a leitura em português, no Brasil, com foco em dislexia e em estudantes. Diferente: Usa um equipamento de rastreamento ocular importado, ligado a um computador, e inclui terapia além da identificação das dificuldades."
+    }
+  ],
+  "arquitetura": [],
+  "higiene": [],
+  "nao_verificado": [
+    {
+      "rotulo": "Commit de corte",
+      "motivo": "repositório sem acesso: lucasrabay/dyssolution",
+      "causa": "etapa_falhou"
+    },
+    {
+      "rotulo": "Registro do GitHub",
+      "motivo": "repositório sem acesso: lucasrabay/dyssolution",
+      "causa": "etapa_falhou"
+    },
+    {
+      "rotulo": "Leitura do código",
+      "motivo": "a etapa falhou",
+      "causa": "etapa_falhou"
+    },
+    {
+      "rotulo": "Promessas da equipe",
+      "motivo": "a etapa falhou",
+      "causa": "etapa_falhou"
+    },
+    {
+      "rotulo": "Teste de uso",
+      "motivo": "a etapa falhou",
+      "causa": "etapa_falhou"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

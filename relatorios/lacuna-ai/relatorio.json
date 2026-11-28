@@ -1,0 +1,2488 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "lacuna-ai",
+    "nome": "Lacuna.AI",
+    "numero": 16,
+    "track": "Educação",
+    "repo": "https://github.com/gecbeltrao/hackiabrasil",
+    "demo": null,
+    "video": "https://drive.google.com/drive/u/1/folders/10H-SPWwMpSmcJV9HJuBfld8bCzdQwleQ",
+    "resumo": "Lacuna.AI (HackIA Brasil): plataforma de ensino adaptativo (app Expo/React Native + API FastAPI/Postgres) que usa IA (Devin) para descobrir o pré-requisito que falta ao aluno, revisar a base com questões personalizadas pelos gostos dele e alertar o professor sobre as lacunas da turma."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.490Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "6222bf48a3cbe8327709447367f9e164b2373f6e",
+    "commit_em": "2026-11-28T18:45:36Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 18672,
+          "preparo_ms": 0,
+          "execucao_ms": 71614
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10758,
+          "preparo_ms": 0,
+          "execucao_ms": 635
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 180,
+          "preparo_ms": 0,
+          "execucao_ms": 2997
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6788,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11349,
+          "preparo_ms": 0,
+          "execucao_ms": 383
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6797,
+          "preparo_ms": 0,
+          "execucao_ms": 2471
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1,
+          "preparo_ms": 0,
+          "execucao_ms": 63
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 765,
+          "preparo_ms": 0,
+          "execucao_ms": 290
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 40
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11348,
+          "preparo_ms": 0,
+          "execucao_ms": 388
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11349,
+          "preparo_ms": 0,
+          "execucao_ms": 380
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1,
+          "preparo_ms": 0,
+          "execucao_ms": 2
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "nao_informado"
+    },
+    "build": {
+      "estado": "verificado"
+    },
+    "fluxo": {
+      "estado": "verificado",
+      "alcance": {
+        "ate": 4,
+        "de": 11
+      }
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-0",
+      "n": 0,
+      "acao": "No repositório, suba o projeto: cd app && npm ci --loglevel=http || npm install --loglevel=http && npm run start",
+      "esperado": "O projeto responde em http://localhost:8081",
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra a página inicial e clique em \"Começar agora\".",
+      "esperado": "A tela inicial mostra \"Aprenda no seu ritmo, a partir do que você ama.\" e o botão \"Começar agora\", que leva à escolha de perfil.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Na tela \"Como você vai usar o lacuna.AI?\", com \"Sou estudante\", clique em \"Criar conta\".",
+      "esperado": "A tela oferece \"Sou estudante\" e \"Sou professora / professor\"; \"Criar conta\" abre o formulário \"Quem é você?\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Digite Jurado Teste em \"Seu nome ou apelido\" e jurado.teste@example.com no campo de e-mail, depois clique em \"Continuar\".",
+      "esperado": "O formulário aceita os dois campos e avança para \"O que você curte no seu dia a dia?\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Selecione \"Futebol\" e clique em \"Salvar preferências\".",
+      "esperado": "A lista de temas permite marcar \"Futebol\"; ao salvar, aparece \"Como quer começar hoje?\" com \"Tenho um código\" e \"Escolher um assunto\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A tela de seleção de gostos foi usada, mas a geração de questões não foi alcançada porque a API em http://localhost:9 não respondeu."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/src/telas.tsx",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "setSel((s) => (s.includes(id) ? s.filter((x) => x !== id) : s.length < 3 ? [...s, id] : s));",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/src/telas.tsx#L92",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 125,
+          "linha_fim": null,
+          "trecho": "preparo.agendar_preparo(",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L125",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/preparo.py",
+          "linha": 87,
+          "linha_fim": null,
+          "trecho": "data = await gerar_estruturado(prompt, schema)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/preparo.py#L87",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A tela de interesses coleta até 3 temas, e a rota /questao passa os gostos para o preparo do enunciado pelo Devin; sem texto pronto a tempo, usa um prefixo fixo por tema.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A plataforma coleta o que o aluno gosta, gera questões personalizadas com o seu gosto",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "A plataforma coleta o que o aluno gosta, gera questões personalizadas com o seu gosto",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 90,
+          "linha_fim": null,
+          "trecho": "contexto = f\"{base}: e{pergunta}\" if base else f\"E{pergunta}\"",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L90",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/preparo.py",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "dados = {\"contexto_base\": ia.notacao_exibicao(contexto), \"expressao\": ia.notacao_exibicao(expressao), \"gostos\": gostos_redacao",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/preparo.py#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "if validar_enunciado(texto, contexto_base, expressao) and not sem_cenario:",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ia.py#L73",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "O prompt leva contexto_base (incluindo o da professora) e gostos; o texto devolvido passa por validação de expressão e números, senão entra o texto pronto.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o Devin escreve o enunciado com o gosto do aluno (e o contexto que a professora definiu para a turma).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 124,
+        "linha_fim": null,
+        "trecho": "o Devin escreve o enunciado com o gosto do aluno (e o contexto que a professora definiu para a turma).",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L124",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "lacuna = alternativa[\"lacuna\"]",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L196",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 223,
+          "linha_fim": null,
+          "trecho": "nova_memoria = memoria.remember(",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L223",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "Cada alternativa errada traz uma lacuna definida no modelo; /responder lê essa lacuna e a grava na memória do aluno.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "identifica lacunas no seu aprendizado",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "identifica lacunas no seu aprendizado",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "lacuna = alternativa[\"lacuna\"]",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L196",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 212,
+          "linha_fim": null,
+          "trecho": "proximo = Proximo(tipo=\"questao_base\", habilidade_id=proxima_base, voltar_para=origem or dados.questao_id)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L212",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/questoes/matematica.py",
+          "linha": 609,
+          "linha_fim": null,
+          "trecho": "(\"sinal_menos_b\", \"regra_sinais\", \"Usou b no lugar de −b na fórmula de Bhaskara.\", {\"menos_b\": \"b\"}),",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/questoes/matematica.py#L609",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "O Devin pode redigir o texto da explicação, mas não define a lacuna nesse fluxo.",
+      "existe": "Ao errar, o código lê a lacuna associada à alternativa marcada e propõe uma questão do pré-requisito (ex.: regra_sinais).",
+      "falta": "Em /responder não há análise por IA do erro: a lacuna vem do mapeamento da alternativa. O Devin classifica erros apenas no fluxo da foto, cujo resultado não entra em /responder.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a IA analisa que ele errou a regra de sinal, propõe uma revisão de regra de sinal",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "a IA analisa que ele errou a regra de sinal, propõe uma revisão de regra de sinal",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/App.tsx",
+          "linha": 141,
+          "linha_fim": null,
+          "trecho": "setBase(await api.questao({ aluno_id: alunoId, habilidade_id: habilidade }));",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/App.tsx#L141",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/App.tsx",
+          "linha": 274,
+          "linha_fim": null,
+          "trecho": "onAvancar={() => setEtapa('superada')}",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/App.tsx#L274",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/App.tsx",
+          "linha": 159,
+          "linha_fim": null,
+          "trecho": "setEtapa('questao');",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/App.tsx#L159",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "O app busca a questão da habilidade base, mostra a tela de superação após o acerto e volta à questão original guardada.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Reforço:** uma questão do pré-requisito (regra de sinais). Acertou, **volta para o 2º grau**.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 16,
+        "linha_fim": null,
+        "trecho": "**Reforço:** uma questão do pré-requisito (regra de sinais). Acertou, **volta para o 2º grau**.",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L16",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/resolucao.py",
+          "linha": 114,
+          "linha_fim": null,
+          "trecho": "return ocr.QUESTAO_DEMO",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/resolucao.py#L114",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 94,
+          "linha_fim": null,
+          "trecho": "QUESTAO_DEMO = QuestaoOCR(expressao=\"t² − 5t + 6 = 0\", a=1, b=-5, c=6)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L94",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 162,
+          "linha_fim": null,
+          "trecho": "\"attachment_urls\": [anexo[\"url\"]],",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L162",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/src/foto.tsx",
+          "linha": 79,
+          "linha_fim": null,
+          "trecho": "const a = await apiFoto.enviarFoto({ aluno_id: alunoId, questao_id: questaoId, uri });",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/src/foto.tsx#L79",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": null,
+      "existe": "O app fotografa e envia a imagem; o backend a anexa a uma sessão do Devin, que devolve os passos transcritos e o primeiro passo errado.",
+      "falta": "A conferência não usa a questão que o aluno está resolvendo: toda foto é comparada com a questão fixa da demo (t² − 5t + 6 = 0). Sem chave do Devin, o resultado é fixo.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Fotografa a resolução no caderno.** O Devin lê a foto e aponta o passo onde o raciocínio quebrou",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 13,
+        "linha_fim": null,
+        "trecho": "**Fotografa a resolução no caderno.** O Devin lê a foto e aponta o passo onde o raciocínio quebrou",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L13",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 31,
+          "linha_fim": null,
+          "trecho": "OCR_TIMEOUT = int(os.getenv(\"OCR_TIMEOUT\", \"300\"))  # segundos esperando o Devin",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L31",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 32,
+          "linha_fim": null,
+          "trecho": "OCR_INTERVALO = int(os.getenv(\"OCR_INTERVALO\", \"5\"))  # segundos entre consultas",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L32",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "Não foi encontrada medição do tempo de leitura; o código espera até 300 s e consulta a sessão a cada 5 s por padrão.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [
+        "backend/",
+        "docs/",
+        "README.md",
+        "termos: 10 s, segundos, duração, latência, elapsed, perf_counter"
+      ],
+      "citacao": "O Devin lê o caderno (~10 s)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 127,
+        "linha_fim": null,
+        "trecho": "O Devin lê o caderno (~10 s)",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L127",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/questoes/motor.py",
+          "linha": 487,
+          "linha_fim": null,
+          "trecho": "ambiente, resposta = _calcular(modelo, base, None)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/questoes/motor.py#L487",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 155,
+          "linha_fim": null,
+          "trecho": "\"gabarito\": gerada.gabarito,",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L155",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 98,
+          "linha_fim": null,
+          "trecho": "raizes = \", \".join(str(r) for r in matematica.raizes(q.a, q.b, q.c))",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L98",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "O gabarito é calculado pelo motor SymPy (em modelos sem cálculo, é texto fixo do catálogo) e o prompt do OCR recebe as raízes calculadas por SymPy; o Devin marca cada passo da foto como certo ou errado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O gabarito é sempre do SymPy, nunca da IA.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 128,
+        "linha_fim": null,
+        "trecho": "O gabarito é sempre do SymPy, nunca da IA.",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L128",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/questoes/motor.py",
+          "linha": 501,
+          "linha_fim": null,
+          "trecho": "candidatos.append((erro, _texto_resposta(_calcular(modelo, base, erro)[1], modelo.formato)))",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/questoes/motor.py#L501",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/questoes/motor.py",
+          "linha": 526,
+          "linha_fim": null,
+          "trecho": "lacuna=erro.lacuna if erro else None,",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/questoes/motor.py#L526",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "As alternativas erradas são montadas a partir da lista de erros do modelo, cada uma com uma lacuna.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Cada alternativa errada corresponde a um erro conhecido.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "CONTRATO.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "Cada alternativa errada corresponde a um erro conhecido.",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/CONTRATO.md#L11",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/src/telas.tsx",
+          "linha": 413,
+          "linha_fim": null,
+          "trecho": "const roteiro = res.lacuna ? montarRoteiro(res.lacuna, expressao) : null;",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/src/telas.tsx#L413",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/src/desenhos.tsx",
+          "linha": 257,
+          "linha_fim": null,
+          "trecho": "etapa >= 2 && gerador.line(x0 - 4, 100, x1 + 4, 90, { stroke: cor.erro, strokeWidth: 2.5, roughness: 1, seed: 11 }),",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/src/desenhos.tsx#L257",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/src/desenhos.tsx",
+          "linha": 176,
+          "linha_fim": null,
+          "trecho": "export function montarRoteiro(lacuna: Lacuna, expressao?: string): Roteiro | null {",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/src/desenhos.tsx#L176",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "O quadro em 4 etapas é calculado no app a partir da lacuna e da equação (não da foto) e vale para três lacunas de 2º grau; nos demais casos aparece a fórmula em texto.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Explicação na lousa:** a regra e um **quadro animado** que risca o que ele escreveu e mostra a conta certa.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 15,
+        "linha_fim": null,
+        "trecho": "**Explicação na lousa:** a regra e um **quadro animado** que risca o que ele escreveu e mostra a conta certa.",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L15",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/devin.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "if not config.DEVIN_API_KEY or not config.DEVIN_ORG_ID:",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/devin.py#L23",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 203,
+          "linha_fim": null,
+          "trecho": "return _mock(), None",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L203",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/habilidades.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "raise HTTPException(503, \"Não consegui montar o mapa desse assunto agora. Tente de novo em instantes.\")",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/habilidades.py#L55",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "Sem chave, o cliente devolve None (textos prontos) e o OCR devolve um resultado fixo; /prerequisitos para assunto fora do mapa responde 503.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Sem chave, a API funciona com os textos prontos e o OCR em modo de teste.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 66,
+        "linha_fim": null,
+        "trecho": "Sem chave, a API funciona com os textos prontos e o OCR em modo de teste.",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L66",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/src/telas-professor.tsx",
+          "linha": 512,
+          "linha_fim": null,
+          "trecho": "await api.criarModelo({ habilidade_id: habilidade, ...valores, contexto_base: contexto.trim(), turma_id: p.turma.id });",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/src/telas-professor.tsx#L512",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/habilidades.py",
+          "linha": 100,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/modelos\", response_model=Modelo)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/habilidades.py#L100",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 75,
+          "linha_fim": null,
+          "trecho": "modelo = await run_in_threadpool(repo.modelo_da_habilidade, habilidade, aluno.get(\"turma_id\"))",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L75",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "A professora informa coeficientes a, b, c e um contexto base; o modelo é gravado e usado pelo /questao da turma.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "ele pode dizer os modelos das questões",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "ele pode dizer os modelos das questões",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 125,
+          "linha_fim": null,
+          "trecho": "afetados = sum(1 for m in memorias if m and lacuna in m.lacunas and not m.lacunas[lacuna].resolvida)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L125",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 135,
+          "linha_fim": null,
+          "trecho": "alertas.sort(key=lambda al: -al.afetados)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L135",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/memoria.py",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "BASES = {\"sinal_menos_b\": \"regra_sinais\", \"delta_sinal\": \"regra_sinais\", \"divide_so_raiz\": \"fracoes\"}",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/memoria.py#L19",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "O painel conta o status por pré-requisito e ordena os alertas pelo número de afetados; os alertas cobrem três lacunas de Bhaskara, e a contagem é feita por código.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "analisar as lacunas da turma em geral e identificar qual é a maior dificuldade entre os alunos",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "analisar as lacunas da turma em geral e identificar qual é a maior dificuldade entre os alunos",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 126,
+          "linha_fim": null,
+          "trecho": "if not total or afetados / total < config.ALERTA_LIMIAR:",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L126",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/config.py",
+          "linha": 18,
+          "linha_fim": null,
+          "trecho": "ALERTA_LIMIAR = float(os.getenv(\"ALERTA_LIMIAR\", \"0.3\"))",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/config.py#L18",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 100,
+          "linha_fim": null,
+          "trecho": "_textos_ia[chave] = await ia.escrever_alerta(lacuna, afetados, total, ajudantes)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L100",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "O limiar padrão é 0.3 e a contagem é do código; o Devin gera só o texto em segundo plano (antes disso vai um texto pronto), e os demais campos do alerta são fixos.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O alerta aparece quando a mesma lacuna atinge **≥ 30% da turma**. A contagem é feita pelo código, e o Devin só escreve o `texto`.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "CONTRATO.md",
+        "linha": 135,
+        "linha_fim": null,
+        "trecho": "O alerta aparece quando a mesma lacuna atinge **≥ 30% da turma**. A contagem é feita pelo código, e o Devin só escreve o `texto`.",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/CONTRATO.md#L135",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Ao clicar em \"Escolher um assunto\", a requisição GET http://localhost:9/assuntos falhou com net::ERR_UNSAFE_PORT e a lista de assuntos não foi exibida."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/habilidades.py",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "return _assunto(banco, assunto).prerequisitos",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/habilidades.py#L52",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/habilidades.py",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "id=hid, titulo=linha.get(\"titulo\") or c.titulo, descricao=linha.get(\"descricao\"),",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/habilidades.py#L21",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "Para assunto conhecido, /prerequisitos devolve os pré-requisitos diretos do catálogo com título do banco; para assunto fora do mapa, pede o mapa ao Devin.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**modo livre**. Pré-requisitos diretos do mapa revisado (catálogo BNCC + títulos do banco).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "CONTRATO.md",
+        "linha": 140,
+        "linha_fim": null,
+        "trecho": "**modo livre**. Pré-requisitos diretos do mapa revisado (catálogo BNCC + títulos do banco).",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/CONTRATO.md#L140",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/turmas.py",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "@router.post(\"/turmas\", response_model=TurmaCriada)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/turmas.py#L73",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/turmas.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "codigo = f\"MAT{dados.ano}{secrets.choice('0123456789')}{secrets.choice(_ALFABETO)}\"",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/turmas.py#L64",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/turmas.py",
+          "linha": 70,
+          "linha_fim": null,
+          "trecho": "return TurmaCriada(id=turma_id, nome=dados.nome, codigo=codigo, assunto=dados.assunto)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/turmas.py#L70",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "A rota gera o código no formato MAT + ano + dígito + letra e devolve id, nome, código e assunto.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "`POST /turmas` `{ professor_id, nome, ano, assunto? }` → `{ id, nome, codigo, assunto }` (código gerado, ex.: `MAT14K`).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "CONTRATO.md",
+        "linha": 149,
+        "linha_fim": null,
+        "trecho": "`POST /turmas` `{ professor_id, nome, ano, assunto? }` → `{ id, nome, codigo, assunto }` (código gerado, ex.: `MAT14K`).",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/CONTRATO.md#L149",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/App.tsx",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "import { StatusBar } from 'expo-status-bar';",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/App.tsx#L4",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"hackiabrasil\")",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/main.py#L6",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "conn = psycopg.connect(config.DATABASE_URL, row_factory=dict_row, connect_timeout=3)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/db.py#L24",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "O app usa React Native com Expo; a API é FastAPI e conecta ao Postgres com psycopg.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "app Expo/React Native + API FastAPI/Postgres",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "resumo.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "app Expo/React Native + API FastAPI/Postgres",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "docker-compose.yml",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "- ./db/init:/docker-entrypoint-initdb.d:ro",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/docker-compose.yml#L16",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/scripts/gerar_seed_demo.py",
+          "linha": 36,
+          "linha_fim": null,
+          "trecho": "(\"1º Ano A\", \"MAT10A\", \"funcao_2grau\", 38),",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/scripts/gerar_seed_demo.py#L36",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "db/init/05_seed_demo.sql",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "insert into turmas (nome, codigo, assunto, professor_id) values ('1º Ano A', 'MAT10A', 'funcao_2grau'",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/db/init/05_seed_demo.sql#L29",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "O docker-compose monta db/init na inicialização do Postgres; o gerador do seed define 6 turmas que somam 240 alunos, incluindo MAT10A.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Na 1ª vez ele cria as tabelas e os dados da demo (6 turmas, 240 alunos, turma `MAT10A`).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 49,
+        "linha_fim": null,
+        "trecho": "Na 1ª vez ele cria as tabelas e os dados da demo (6 turmas, 240 alunos, turma `MAT10A`).",
+        "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L49",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "24 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "7 s",
+      "evidencias": [],
+      "obs": "porta 8081, comando: npm run start"
+    },
+    {
+      "tipo": "item",
+      "id": "build:chaves-falsas",
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o teste local roda sem as chaves reais da equipe"
+      },
+      "valor": {
+        "lista": [
+          "EXPO_PUBLIC_API_URL"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "build:outras-pastas",
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o build automático executa uma pasta por projeto; a executada foi app"
+      },
+      "valor": {
+        "lista": [
+          "backend"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra a página inicial e clique em \"Começar agora\".",
+      "observado": "A tela inicial mostra \"Aprenda no seu ritmo, a partir do que você ama.\" e o botão \"Começar agora\", que leva à escolha de perfil.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Na tela \"Como você vai usar o lacuna.AI?\", com \"Sou estudante\", clique em \"Criar conta\".",
+      "observado": "A tela oferece \"Sou estudante\" e \"Sou professora / professor\"; \"Criar conta\" abre o formulário \"Quem é você?\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Digite Jurado Teste em \"Seu nome ou apelido\" e jurado.teste@example.com no campo de e-mail, depois clique em \"Continuar\".",
+      "observado": "O formulário aceita os dois campos e avança para \"O que você curte no seu dia a dia?\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Selecione \"Futebol\" e clique em \"Salvar preferências\".",
+      "observado": "A lista de temas permite marcar \"Futebol\"; ao salvar, aparece \"Como quer começar hoje?\" com \"Tenho um código\" e \"Escolher um assunto\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Clique em \"Tenho um código\", digite MAT10A no campo \"Código\" e clique em \"Entrar na turma\".",
+      "observado": "Aparece \"Ops, algo deu errado\" e \"Não conseguimos falar com o servidor (http://localhost:9).\". A requisição POST http://localhost:9/entrar falhou com net::ERR_UNSAFE_PORT.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Neste ambiente a interface chama a API em http://localhost:9, porta que o navegador recusa; sem acesso ao código, a origem desse endereço não foi verificada."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Leia a questão de equação do 2º grau escrita com o tema escolhido.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A API não foi alcançada (http://localhost:9), e a entrada na turma não se completou."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Envie a foto da resolução no caderno e leia o passo apontado como errado.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A API não foi alcançada (http://localhost:9), e a tela da questão não foi aberta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Veja a explicação com o quadro animado.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A API não foi alcançada (http://localhost:9), e a tela da questão não foi aberta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Responda a questão de reforço do pré-requisito e volte à questão do 2º grau.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A API não foi alcançada (http://localhost:9), e a tela da questão não foi aberta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Em /perfil, selecione \"Sou professora / professor\", clique em \"Entrar como professora\" e em \"Entrar com esta conta\" (mariana@adaptia.demo).",
+      "observado": "A tela de login mostra a conta de demonstração \"Profa. Mariana\" e, após o clique, \"Não conseguimos falar com o servidor (http://localhost:9).\".",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A API não foi alcançada (http://localhost:9), e o login não se completou."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "No painel, veja quantos alunos da turma travaram na mesma lacuna.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O login da professora não se completou porque a API não foi alcançada (http://localhost:9)."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: E-mail vazio no login da professora, com tentativa de clique em \"Entrar\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O botão \"Entrar\" está desabilitado; a tela não muda e nenhuma requisição à API foi registrada."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Texto de 5000 caracteres no campo \"Seu nome ou apelido\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O campo ficou com 40 caracteres e \"Continuar\" avançou para a tela de temas."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Texto \"isto-nao-e-email\" no campo de e-mail do cadastro de aluno, seguido de \"Continuar\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"Confira o e-mail.\" e não avança."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "API do produto inacessível neste ambiente de teste",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A interface em http://localhost:8081 envia as chamadas para http://localhost:9, que o navegador recusa (net::ERR_UNSAFE_PORT). Entrada na turma, questões, foto, reforço, modo livre e painel da professora não puderam ser testados."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:sem-ia",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "rotulo": "Nenhuma biblioteca de IA nas dependências e nenhuma linha de código que cite provedores de IA"
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Devin (API v3)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/preparo.py",
+          "linha": 87,
+          "linha_fim": null,
+          "trecho": "data = await gerar_estruturado(prompt, schema)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/preparo.py#L87",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/devin.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "return await self._request(\"POST\", self._path(), json={",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/devin.py#L46",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Gerar em um pacote o enunciado com o gosto do aluno, as explicações das lacunas e a pergunta de perfil."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Devin (API v3)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 156,
+          "linha_fim": null,
+          "trecho": "anexo = await req(\"POST\", \"/attachments\", files={\"file\": (nome, foto, tipo)})",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L156",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 157,
+          "linha_fim": null,
+          "trecho": "sessao = await req(",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L157",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Ler a foto do caderno, transcrever os passos e apontar o primeiro erro (sessão com anexo, devin_mode padrão \"fast\")."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Devin (API v3)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "data = await gerar_estruturado(_INSTRUCAO + \"Redija um alerta curto para a professora com causa e ação.",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ia.py#L133",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Redigir o texto do alerta da turma para a professora."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Devin (API v3)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 180,
+          "linha_fim": null,
+          "trecho": "data = await gerar_estruturado(_INSTRUCAO + \"Liste o assunto e as habilidades que o aluno precisa dominar antes dele",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ia.py#L180",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Propor o mapa de pré-requisitos de um assunto que não está no catálogo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 203,
+          "linha_fim": null,
+          "trecho": "return _mock(), None",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L203",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 129,
+          "linha_fim": null,
+          "trecho": "\"descricao\": \"Você usou −b = −5. Como b = −5, o oposto é −(−5) = +5.\",",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L129",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Sem chave do Devin, o OCR espera 3 s e devolve uma análise fixa de cinco passos com erro em sinal_menos_b, para qualquer foto. A resposta marca fonte \"mock\".",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-2",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "enunciado = ia.contextualizar_fallback(contexto, expressao, gostos)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L133",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 60,
+          "linha_fim": null,
+          "trecho": "prefixos = {\"futebol\": \"Pense em um lance de futebol. \"",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ia.py#L60",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Quando o texto do Devin não está preparado, o enunciado é um prefixo fixo por tema seguido do contexto base.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-3",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 174,
+          "linha_fim": null,
+          "trecho": "dados = ia.explicar_fallback(lacuna, gostos)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L174",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "\"sinal_menos_b\": {\"diagnostico\": \"Seu caminho está certo até Bhaskara; confira o sinal de −b.\"",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ia.py#L84",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Sem explicação preparada pelo Devin, diagnóstico, teoria, fórmula e exemplo por tema vêm de textos escritos no código.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-4",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/src/telas-professor.tsx",
+          "linha": 317,
+          "linha_fim": null,
+          "trecho": "<Rotulo>Raciocínio que a IA encontrou</Rotulo>",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/src/telas-professor.tsx#L317",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "\"raciocinio\": \"x = (−5 ± 1) / 2\",",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "ajudantes=ajudantes, habilidade_base=base, total=total, **CONTEUDO_ALERTA[lacuna],",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L133",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela de alerta mostra sob o rótulo \"Raciocínio que a IA encontrou\" uma string fixa do dicionário CONTEUDO_ALERTA; evidência, ação e passos também são fixos.",
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-5",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "return ia.escrever_alerta_fallback(lacuna, afetados, total, ajudantes)",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L105",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ia.py",
+          "linha": 127,
+          "linha_fim": null,
+          "trecho": "return f\"{afetados} de {total} alunos {causas.get(lacuna, 'precisam revisar esta etapa')}. Retome a regra com um exemplo antes de continuar.\"",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ia.py#L127",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Enquanto o Devin não gera o texto do alerta, ou sem chave, o painel devolve uma frase montada por molde no código.",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:49",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/gecbeltrao/hackiabrasil",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/gecbeltrao/hackiabrasil",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Eedi",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.eedi.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.eedi.com/",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://www.educatorstechnology.com/2026/10/eedi-review.html",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.educatorstechnology.com/2026/10/eedi-review.html",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma de matemática (cerca de 9 a 16 anos) com questões diagnósticas em que cada alternativa errada se liga a um equívoco conhecido, tutor de IA acionado após o erro, quizzes de pré-requisito e relatórios para o professor.",
+      "obs": "Em comum: Alternativas erradas ligadas a erros conhecidos, apoio com IA depois do erro, verificação de pré-requisitos e visão para o professor dos equívocos mais comuns. Diferente: As páginas abertas não mencionam questões personalizadas pelos gostos do aluno nem envio de foto da resolução."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "SchoolAI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://schoolai.com/blog/ai-for-math-transforming-learning-and-teaching-in-education",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://schoolai.com/blog/ai-for-math-transforming-learning-and-teaching-in-education",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Oferece tutores de IA individuais que adaptam o ensino de matemática aos pontos fortes e interesses do aluno, com painéis em tempo real que mostram lacunas de compreensão.",
+      "obs": "Em comum: Adaptação com IA aos interesses do aluno e painel para o professor com as lacunas de aprendizagem. Diferente: A página aberta não menciona mapa ou sequência de pré-requisitos."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "ALEKS (McGraw Hill)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.mheducation.com/prek-12/program/aleks/MKTSP-GAB02M0.html",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.mheducation.com/prek-12/program/aleks/MKTSP-GAB02M0.html",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Programa de matemática K–12 que diagnostica o que cada aluno sabe, não sabe e está pronto para aprender, inclui tópicos de pré-requisito nos cursos e gera relatórios para o professor.",
+      "obs": "Em comum: Diagnóstico de lacunas, retomada de pré-requisitos e relatórios que indicam ao professor quais alunos precisam de apoio. Diferente: A página aberta não menciona questões personalizadas pelos gostos do aluno."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "RocketTutor",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://rockettutor.com/pt-br",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://rockettutor.com/pt-br",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Tutor de matemática com IA, com página em português do Brasil, que busca as lacunas do estudante, propõe prática sobre elas e confere linha a linha a foto da resolução feita no papel.",
+      "obs": "Em comum: Identificação de lacunas em matemática e leitura por IA da foto da resolução do aluno. Diferente: A página é voltada a estudantes e famílias e não descreve painel do professor nem personalização por interesses."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Requiz",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/ArthurPomini/requiz",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/ArthurPomini/requiz",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma de quizzes para alunos e professores em que as questões erradas voltam com números diferentes, seguidas de reforço personalizado, com questionários gerados por IA e revisados pelo professor.",
+      "obs": "Em comum: Reforço a partir dos erros do aluno, questões geradas com IA e painel agregado da turma para o professor. Diferente: A página do repositório não menciona pré-requisitos nem personalização por interesses do aluno."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Python",
+              46,
+              6966
+            ],
+            [
+              "TypeScript",
+              35,
+              4236
+            ],
+            [
+              "Markdown",
+              6,
+              649
+            ],
+            [
+              "SQL",
+              6,
+              474
+            ],
+            [
+              "JSON",
+              6,
+              142
+            ],
+            [
+              "YAML",
+              1,
+              69
+            ],
+            [
+              "JavaScript",
+              1,
+              11
+            ]
+          ]
+        }
+      },
+      "obs": "113 arquivos de texto e 12792 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "App Expo/React Native",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/App.tsx",
+          "linha": 48,
+          "linha_fim": null,
+          "trecho": "export default function App({ onConcluir, assunto }: { onConcluir?: () => void; assunto?: string } = {}) {",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/App.tsx#L48",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/App.tsx",
+          "app/src/telas.tsx",
+          "app/src/telas-professor.tsx",
+          "app/src/api.ts",
+          "app/src/desenhos.tsx"
+        ]
+      },
+      "obs": "Telas do aluno e da professora, fluxo da questão, envio da foto e quadro animado."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "API FastAPI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "for r in (contas.router, alunos.router, questoes.router, turmas.router, habilidades.router, resolucao.router):",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/main.py#L9",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/main.py",
+          "backend/app/routers/questoes.py",
+          "backend/app/routers/turmas.py",
+          "backend/app/routers/resolucao.py"
+        ]
+      },
+      "obs": "Expõe as rotas de contas, alunos, questões, turmas, habilidades e resolução por foto."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Motor de questões (SymPy)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/questoes/catalogo.py",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "def gerar_para_habilidade(",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/questoes/catalogo.py#L147",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/services/questoes/motor.py",
+          "backend/app/services/questoes/catalogo.py",
+          "backend/app/services/questoes/matematica.py",
+          "backend/app/services/questoes/portugues.py"
+        ]
+      },
+      "obs": "Gera questões, gabarito e alternativas erradas associadas a lacunas a partir de um catálogo de modelos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Integração com Devin",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/devin.py",
+          "linha": 18,
+          "linha_fim": null,
+          "trecho": "class DevinClient:",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/devin.py#L18",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/ocr.py",
+          "linha": 139,
+          "linha_fim": null,
+          "trecho": "async def _devin_com_foto(",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/ocr.py#L139",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/services/devin.py",
+          "backend/app/services/preparo.py",
+          "backend/app/services/ia.py",
+          "backend/app/services/ocr.py"
+        ]
+      },
+      "obs": "Cria sessões do Devin para textos, mapa de pré-requisitos e leitura da foto, com textos prontos como alternativa."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Memória do aluno e painel",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/memoria.py",
+          "linha": 119,
+          "linha_fim": null,
+          "trecho": "def remember(",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/memoria.py#L119",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/services/painel.py",
+          "linha": 108,
+          "linha_fim": null,
+          "trecho": "def montar_painel(turma: dict, alunos: list[dict], titulos: dict[str, str]) -> dict:",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/services/painel.py#L108",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/services/memoria.py",
+          "backend/app/services/painel.py"
+        ]
+      },
+      "obs": "Registra respostas e lacunas por aluno e calcula status e alertas da turma por código."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Banco Postgres",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "db/init/01_schema.sql",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "create table alunos (",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/db/init/01_schema.sql#L28",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docker-compose.yml",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "image: postgres:16",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/docker-compose.yml#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "db/init/01_schema.sql",
+          "db/init/05_seed_demo.sql",
+          "backend/app/db.py",
+          "docker-compose.yml"
+        ]
+      },
+      "obs": "Guarda turmas, alunos, modelos, questões, respostas e análises de foto; o schema e o seed ficam em db/init."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "formulario",
+          "caminho": "resumo.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "usa IA (Devin) para descobrir o pré-requisito que falta ao aluno",
+          "link": null,
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/routers/questoes.py",
+          "linha": 197,
+          "linha_fim": null,
+          "trecho": "base = alternativa[\"habilidade_base\"]",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/routers/questoes.py#L197",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O resumo diz que a plataforma usa IA (Devin) para descobrir o pré-requisito que falta ao aluno.",
+              "Nas respostas de múltipla escolha, o pré-requisito vem do campo habilidade_base da alternativa marcada, definido no catálogo; o Devin classifica erros apenas no fluxo da foto."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "CONTRATO.md",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "O app também manda `analise_id` (opcional) no `/responder`, para ligar a resposta à foto.",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/CONTRATO.md#L115",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/App.tsx",
+          "linha": 126,
+          "linha_fim": null,
+          "trecho": "analise_id: analiseId,",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/app/App.tsx#L126",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/schemas.py",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "class ResponderIn(BaseModel):",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/backend/app/schemas.py#L72",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "CONTRATO.md diz que o app envia analise_id no /responder para ligar a resposta à foto.",
+              "O app envia o campo, mas o modelo ResponderIn do backend não o declara; seus campos são aluno_id, questao_id, alternativa_id e resolucao."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# lacuna.AI — HackIA Brasil",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 197 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "docker compose up -d --build   # banco + API + site",
+          "link": "https://github.com/gecbeltrao/hackiabrasil/blob/6222bf48a3cbe8327709447367f9e164b2373f6e/README.md#L24",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "A plataforma coleta o que o aluno gosta, gera questões personalizadas com o seu gosto",
+      "motivo": "A tela de seleção de gostos foi usada, mas a geração de questões não foi alcançada porque a API em http://localhost:9 não respondeu.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "**modo livre**. Pré-requisitos diretos do mapa revisado (catálogo BNCC + títulos do banco).",
+      "motivo": "Ao clicar em \"Escolher um assunto\", a requisição GET http://localhost:9/assuntos falhou com net::ERR_UNSAFE_PORT e a lista de assuntos não foi exibida.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "motivo": "o teste local roda sem as chaves reais da equipe",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "motivo": "o build automático executa uma pasta por projeto; a executada foi app",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Clique em \"Tenho um código\", digite MAT10A no campo \"Código\" e clique em \"Entrar na turma\".",
+      "motivo": "Neste ambiente a interface chama a API em http://localhost:9, porta que o navegador recusa; sem acesso ao código, a origem desse endereço não foi verificada.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Leia a questão de equação do 2º grau escrita com o tema escolhido.",
+      "motivo": "A API não foi alcançada (http://localhost:9), e a entrada na turma não se completou.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Envie a foto da resolução no caderno e leia o passo apontado como errado.",
+      "motivo": "A API não foi alcançada (http://localhost:9), e a tela da questão não foi aberta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Veja a explicação com o quadro animado.",
+      "motivo": "A API não foi alcançada (http://localhost:9), e a tela da questão não foi aberta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Responda a questão de reforço do pré-requisito e volte à questão do 2º grau.",
+      "motivo": "A API não foi alcançada (http://localhost:9), e a tela da questão não foi aberta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Em /perfil, selecione \"Sou professora / professor\", clique em \"Entrar como professora\" e em \"Entrar com esta conta\" (mariana@adaptia.demo).",
+      "motivo": "A API não foi alcançada (http://localhost:9), e o login não se completou.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "No painel, veja quantos alunos da turma travaram na mesma lacuna.",
+      "motivo": "O login da professora não se completou porque a API não foi alcançada (http://localhost:9).",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "API do produto inacessível neste ambiente de teste",
+      "motivo": "A interface em http://localhost:8081 envia as chamadas para http://localhost:9, que o navegador recusa (net::ERR_UNSAFE_PORT). Entrada na turma, questões, foto, reforço, modo livre e painel da professora não puderam ser testados.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

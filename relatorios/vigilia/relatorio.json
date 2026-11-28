@@ -1,0 +1,2407 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "vigilia",
+    "nome": "Vigília",
+    "numero": 19,
+    "track": "Saúde",
+    "repo": "https://github.com/gustavo-teno/hackiabrasil",
+    "demo": "https://hackiabrasil-coral.vercel.app",
+    "video": "https://www.youtube.com/watch?v=mNqIKYOfmLM",
+    "resumo": "Alerta de crise epilética e noturna que detecta movimento suspeito durante o sono, aciona uma cadeia de contatos e só encerra quando alguém confirma que chegou ao quarto ou o paciente diz \"estou bem\"."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.492Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "2be4a808da97b77c57aca392203e0bb38aa0f830",
+    "commit_em": "2026-11-28T19:03:38Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5290,
+          "preparo_ms": 0,
+          "execucao_ms": 232
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5,
+          "preparo_ms": 0,
+          "execucao_ms": 3153
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6319,
+          "preparo_ms": 0,
+          "execucao_ms": 13394
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5290,
+          "preparo_ms": 0,
+          "execucao_ms": 224
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6344,
+          "preparo_ms": 0,
+          "execucao_ms": 2629
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 36
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 807,
+          "preparo_ms": 0,
+          "execucao_ms": 108
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 31
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5507,
+          "preparo_ms": 0,
+          "execucao_ms": 577
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 5342,
+          "preparo_ms": 0,
+          "execucao_ms": 312
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 4
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "verificado"
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra a página inicial (Painel)",
+      "esperado": "Aparece o \"Painel do sinal\" com os traçados acc_x, acc_y e acc_z marcados como sintéticos e quatro botões de cenário. Na abertura, a tela já trazia o estado \"Confirmado no quarto\" de um aviso anterior.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em \"1 · Episódio suspeito\"",
+      "esperado": "Aparecem \"Padrão suspeito\", \"Aviso pendente · Chamando contatos\" e \"Chamados: Ana\". O indicador da tela mostra \"Tempo acelerado ×1 (demo)\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Clique em \"Cuidador\" no topo e depois em \"Recebi, estou indo\"",
+      "esperado": "Aparece \"Resposta registrada · Indo\" e o estado continua \"Aviso pendente · Chamando contatos\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Clique em \"Cheguei no quarto\"",
+      "esperado": "Aparece \"Chegada ao quarto confirmada\" e o estado passa a \"Confirmado no quarto\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Clique em \"Painel\" e depois em \"2 · Movimento comum\"",
+      "esperado": "Aparecem \"Recebendo dados\" e \"Nenhum aviso neste cenário\", com \"Tempo acelerado ×10 (demo)\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em \"4 · Sem confirmação\" e aguarde cerca de um minuto e meio sem responder",
+      "esperado": "Ana, Bruno e Carla são chamados em sequência e, por volta de 1 min 30 s, aparece \"ACIONAR EMERGÊNCIA (SAMU 192)\". Nesta execução o indicador mostrava \"Tempo acelerado ×1 (demo)\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique em \"3 · Sensor sem contato\"",
+      "esperado": "Aparecem \"Observação limitada\", \"Sensor sem contato\" e \"Nenhum aviso neste cenário\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Clique em \"Histórico\", digite Jurado Teste no campo \"Nome de quem revisou\" do primeiro episódio e clique em \"Salvar revisão\"",
+      "esperado": "Aparece \"Revisão salva\" e o episódio passa a \"Revisão concluída\", com nome, data e hora. A lista também traz episódios com horários anteriores a esta sessão de teste.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "No Histórico, clique em \"Exportar CSV\"",
+      "esperado": "O navegador baixa o arquivo historico.csv, com cabeçalho e a revisão salva na primeira linha de dados; a coluna \"episodio\" traz os dados do episódio em formato JSON.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/simulador.py",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "janelas = detectar_janelas(",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/simulador.py#L91",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 131,
+          "linha_fim": null,
+          "trecho": "amostras, eventos = rodar_cenario(id)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L131",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/estados.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "chamados = [nome for nome, horario in agenda if horario <= segundos]",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/estados.py#L64",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 182,
+          "linha_fim": null,
+          "trecho": "registro, contatos = demo.avisos.reservar(registro, agora)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L182",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A detecção roda sobre cenários sintéticos em JSON, disparados por rota; a cadeia avança quando o estado é consultado, e só o contato de ordem 1 pode receber ligação real (os demais são simulados).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o Vigília detecta um padrão suspeito de movimento durante o sono e chama, em cadeia, os contatos da família.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "o Vigília detecta um padrão suspeito de movimento durante o sono e chama, em cadeia, os contatos da família.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/estados.py",
+          "linha": 140,
+          "linha_fim": null,
+          "trecho": "\"encerrado_em\": agora, \"estado_final\": EstadoAlerta.CONFIRMADO_NO_QUARTO,",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/estados.py#L140",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/estados.py",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "\"encerrado_em\": agora, \"estado_final\": EstadoAlerta.CANCELADO_PELO_PACIENTE,",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/estados.py#L147",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/estados.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "return registro.model_copy(update={\"respostas\": (*registro.respostas, resposta)}, deep=True)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/estados.py#L133",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/index.html",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "<button id=\"cancelar\" type=\"button\">Estou bem</button>",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/index.html#L52",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "Só `confirmar` e `cancelar` gravam o encerramento; `registrar_resposta` apenas anexa a resposta. \"Estou bem\" é um botão na tela.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O aviso só termina quando alguém aperta \"Cheguei no quarto\" ou o paciente diz \"estou bem\"; \"estou indo\" não basta.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "O aviso só termina quando alguém aperta \"Cheguei no quarto\" ou o paciente diz \"estou bem\"; \"estou indo\" não basta.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/estados.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "limite = min(len(registro.contatos) * intervalo, LIMITE_EMERGENCIA)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/estados.py#L58",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/telas.js",
+          "linha": 222,
+          "linha_fim": null,
+          "trecho": "const titulo = elemento(\"h2\", \"ACIONAR EMERGÊNCIA \");",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/telas.js#L222",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 36,
+          "linha_fim": null,
+          "trecho": "PLANO_DEMO = \"Siga o plano de ação do paciente. Uma pessoa deve acionar o SAMU (192).\"",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L36",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "O estado vira `emergencia_exibida` quando a cadeia se esgota ou aos 300 s do relógio do alerta, e a tela mostra o texto do SAMU 192.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Se ninguém confirmar, a tela pede que uma pessoa ligue para o SAMU (192).",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Se ninguém confirmar, a tela pede que uma pessoa ligue para o SAMU (192).",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/detector.py",
+          "linha": 264,
+          "linha_fim": null,
+          "trecho": "p = 1.0 / (1.0 + math.exp(-z))",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/detector.py#L264",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/detector.py",
+          "linha": 270,
+          "linha_fim": null,
+          "trecho": "pesos[j] -= taxa_aprendizado * ((grad_w[j] / n) + regularizacao * pesos[j])",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/detector.py#L270",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/placar_deteccao.py",
+          "linha": 259,
+          "linha_fim": null,
+          "trecho": "classificador.treinar(exemplos_treino)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/placar_deteccao.py#L259",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/simulador.py",
+          "linha": 93,
+          "linha_fim": null,
+          "trecho": "detector=detector or DetectorRegra(),",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/simulador.py#L93",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "Treino e inferência em Python puro; nos cenários da tela quem dispara é a `DetectorRegra`, e o classificador é usado no placar.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "`DetectorClassificador`: regressão logística em Python puro (padronização z, gradiente descendente, regularização L2).",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 68,
+        "linha_fim": null,
+        "trecho": "`DetectorClassificador`: regressão logística em Python puro (padronização z, gradiente descendente, regularização L2).",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L68",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/respostas.py",
+          "linha": 170,
+          "linha_fim": null,
+          "trecho": "return ClasseResposta.SUGERIU_OUTRA_PESSOA, _extrair_trecho(bruto, mapa, m)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/respostas.py#L170",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/respostas.py",
+          "linha": 200,
+          "linha_fim": null,
+          "trecho": "return ClasseResposta.INDO, _extrair_trecho(bruto, mapa, m)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/respostas.py#L200",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 229,
+          "linha_fim": null,
+          "trecho": "classe, trecho = classificar(entrada.texto)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L229",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "A classificação é feita por expressões regulares (`RegraPalavras`) e devolve a classe e o trecho; a rota de respostas a chama.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Texto livre → `indo`, `nao_pode`, `ambigua`, `sugeriu_outra_pessoa` ou `nao_entendi`, com o trecho que justificou.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 73,
+        "linha_fim": null,
+        "trecho": "Texto livre → `indo`, `nao_pode`, `ambigua`, `sugeriu_outra_pessoa` ou `nao_entendi`, com o trecho que justificou.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L73",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 75,
+          "linha_fim": null,
+          "trecho": "conexao = HTTPSConnection(\"api.twilio.com\", timeout=5)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L75",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 109,
+          "linha_fim": null,
+          "trecho": "or contato.ordem != 1 or not codigo or not codigo_demo",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L109",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "destino = os.getenv(\"NUMEROS_PERMITIDOS\", \"\").split(\",\", 1)[0].strip()",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L115",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 315,
+          "linha_fim": null,
+          "trecho": "canal = obter_canal(repositorio if repositorio.tipo == \"postgres\" else None)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L315",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "Há requisição à API da Twilio, só para o contato de ordem 1 e com destino no primeiro número de `NUMEROS_PERMITIDOS`; exige Postgres e variáveis de ambiente, e os outros contatos são simulados.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "cadeia de avisos com ligação telefônica real (Twilio)",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "cadeia de avisos com ligação telefônica real (Twilio)",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/index.html",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "<section id=\"painel\" aria-labelledby=\"titulo-painel\">",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/index.html#L29",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/index.html",
+          "linha": 68,
+          "linha_fim": null,
+          "trecho": "<section id=\"cuidador\" aria-labelledby=\"titulo-cuidador\" hidden>",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/index.html#L68",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "A mesma página tem a seção do painel do sinal (com \"Estou bem\") e a seção do cuidador (respostas e \"Cheguei no quarto\").",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "painéis do paciente e do cuidador",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "painéis do paciente e do cuidador",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 282,
+          "linha_fim": null,
+          "trecho": "@rotas.get(\"/api/historico.csv\")",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L282",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/telas.js",
+          "linha": 482,
+          "linha_fim": null,
+          "trecho": "const csv = await api(\"/api/historico.csv\");",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/telas.js#L482",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "Rota que gera CSV do histórico e botão \"Exportar CSV\" que baixa o arquivo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "histórico exportável",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "histórico exportável",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_online.py",
+          "linha": 53,
+          "linha_fim": null,
+          "trecho": "pytest.skip(\"Defina URL_TESTE para rodar a demo online.\")",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_online.py#L53",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_respostas.py",
+          "linha": 67,
+          "linha_fim": null,
+          "trecho": "def test_nunca_le_como_indo_quando_ha_negacao_duvida_ou_silencio(texto_nao_indo: str) -> None:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_respostas.py#L67",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_estados.py",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "def test_so_acao_explicita_encerra_e_bloqueia_acoes_posteriores(confirmar):",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_estados.py#L115",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "Contagem por leitura, incluindo parametrizações: 164 casos, um deles pulado sem `URL_TESTE` (restam 163). Os testes não foram executados nesta leitura.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "163 testes automáticos",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "163 testes automáticos",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "pyproject.toml",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "[tool.vercel]",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/pyproject.toml#L14",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "pyproject.toml",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "entrypoint = \"app.api:app\"",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/pyproject.toml#L15",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "Há configuração de entrada para a Vercel no `pyproject.toml`; o endereço publicado não foi acessado nesta leitura.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "com deploy na Vercel",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "com deploy na Vercel",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/qualidade.py",
+          "linha": 124,
+          "linha_fim": null,
+          "trecho": "if \"sem_contato\" in tipos or \"bateria_baixa\" in tipos:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/qualidade.py#L124",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/qualidade.py",
+          "linha": 65,
+          "linha_fim": null,
+          "trecho": "if lacuna_s > limiar_lacuna_s:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/qualidade.py#L65",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_invariantes.py",
+          "linha": 111,
+          "linha_fim": null,
+          "trecho": "def test_inv02_falhas_qualidade_nunca_viram_sem_crise() -> None:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_invariantes.py#L111",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "`sem_contato` (inclui lacunas) e `bateria_baixa` resultam em `observacao_limitada`, ou em `evento_suspeito` se houver padrão suspeito.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Sensor sem contato, bateria baixa ou lacuna nunca viram \"sem crise\".",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 90,
+        "linha_fim": null,
+        "trecho": "Sensor sem contato, bateria baixa ou lacuna nunca viram \"sem crise\".",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L90",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/placar_deteccao.py",
+          "linha": 137,
+          "linha_fim": null,
+          "trecho": "tipos_teste = [\"crise\"] * 10 + [\"sono_calmo\"] * 12 + [\"movimento_comum\"] * 12 + [\"agitacao_curta\"] * 6",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/placar_deteccao.py#L137",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/placar_deteccao.py",
+          "linha": 237,
+          "linha_fim": null,
+          "trecho": "\"latencia_media_s\": round(latencia_media, 2) if latencia_media is not None else None,",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/placar_deteccao.py#L237",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_sinal.py",
+          "linha": 175,
+          "linha_fim": null,
+          "trecho": "assert metricas[\"latencia_media_s\"] <= 3.0",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_sinal.py#L175",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": null,
+      "existe": "Script que calcula episódios detectados, falsos alertas por hora e latência em 10 episódios sintéticos de crise no teste, gerados pelo próprio script.",
+      "falta": "Não há saída gravada com 0,11 s; o teste exige sensibilidade ≥ 0,9, zero falso alerta e latência ≤ 3 s. O script não foi executado nesta leitura.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| Detecção — classificador | 10/10 episódios, 0 falso alerta/h, latência média 0,11 s |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 82,
+        "linha_fim": null,
+        "trecho": "| Detecção — classificador | 10/10 episódios, 0 falso alerta/h, latência média 0,11 s |",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L82",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/placar_respostas.py",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "elif prevista == ClasseResposta.INDO and esperada != ClasseResposta.INDO:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/placar_respostas.py#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/respostas.csv",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "\"levantando, chego lá em um minuto\",indo,nao",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/respostas.csv#L4",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/respostas.csv",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"tô no plantão, sem como sair\",nao_pode,nao",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/respostas.csv#L8",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_respostas.py",
+          "linha": 87,
+          "linha_fim": null,
+          "trecho": "assert placar[\"geral\"][\"lido_como_indo_sem_ser\"] == 0",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_respostas.py#L87",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Aplicando as regras por leitura às 20 linhas do CSV, 18 acertam e nenhuma vira `indo` indevidamente; as duas divergentes são as linhas 4 e 8. O teste verifica o zero, não o 18/20.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "| Respostas — `RegraPalavras` | 18/20 (90%); **0 lidas como \"indo\" sem ser** (meta 0) |",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 83,
+        "linha_fim": null,
+        "trecho": "| Respostas — `RegraPalavras` | 18/20 (90%); **0 lidas como \"indo\" sem ser** (meta 0) |",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L83",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "contradita",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "_MAXIMO_DIARIO = 30",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L59",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "if not self._repositorio.reservar_chamada(agora.date().isoformat(), _MAXIMO_DIARIO):",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L133",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_avisos.py",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "repositorio.reservar_chamada.assert_called_with(datetime.now(UTC).date().isoformat(), 30)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_avisos.py#L103",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 108,
+          "linha_fim": null,
+          "trecho": "os.getenv(\"NOTIFICADOR\") != \"twilio\" or os.getenv(\"DESLIGAR_LIGACOES\") == \"1\"",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L108",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "`docs/arquitetura.md` linha 244 registra 30 por dia.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": "O limite diário no código é de 30 chamadas, não 6, e o teste verifica o bloqueio da 31ª. As condições de `NOTIFICADOR=twilio`, código da demo e destino vindo de `NUMEROS_PERMITIDOS` estão no código.",
+      "onde_procurou": [],
+      "citacao": "Ligação real só com `NOTIFICADOR=twilio` **e** código da demo; só para números permitidos; no máximo 6 por dia.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 94,
+        "linha_fim": null,
+        "trecho": "Ligação real só com `NOTIFICADOR=twilio` **e** código da demo; só para números permitidos; no máximo 6 por dia.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L94",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "_NUMERO = re.compile(r\"\\+[1-9][0-9]{7,14}\")",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L56",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 125,
+          "linha_fim": null,
+          "trecho": "not _NUMERO.fullmatch(destino) or not _NUMERO.fullmatch(remetente)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L125",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_avisos.py",
+          "linha": 45,
+          "linha_fim": null,
+          "trecho": "(\"NUMEROS_PERMITIDOS\", \"192,+12025550101\"), (\"NUMEROS_PERMITIDOS\", \"193\"),",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/tests/test_avisos.py#L45",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "O destino precisa ter `+` e de 8 a 15 dígitos, o que recusa 190, 192 e 193; não há lista específica desses números.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o sistema nunca liga para 190, 192 ou 193.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 91,
+        "linha_fim": null,
+        "trecho": "o sistema nunca liga para 190, 192 ou 193.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L91",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 63,
+          "linha_fim": null,
+          "trecho": "ORIENTACAO = (",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L63",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/index.html",
+          "linha": 99,
+          "linha_fim": null,
+          "trecho": "<li>✅ Fique com a pessoa e marque a hora em que começou.</li>",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/index.html#L99",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "A orientação é uma constante na ligação e HTML estático na tela do cuidador.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Primeiros socorros são texto fixo, nunca gerado por modelo.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 95,
+        "linha_fim": null,
+        "trecho": "Primeiros socorros são texto fixo, nunca gerado por modelo.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L95",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/index.html",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "<p class=\"aviso-fixo\">Demo com sinal sintético · Não substitui supervisão nem emergência.</p>",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/index.html#L24",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/telas.js",
+          "linha": 152,
+          "linha_fim": null,
+          "trecho": "figura.append(elemento(\"figcaption\", canal + \" · \" + fonte));",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/telas.js#L152",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/detector.py",
+          "linha": 285,
+          "linha_fim": null,
+          "trecho": "return z >= 0.0",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/detector.py#L285",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "A origem aparece no cabeçalho fixo comum às telas e na legenda dos traçados; o detector devolve booleano e as telas lidas não exibem porcentagem de crise.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Toda tela mostra a origem do dado; nenhuma mostra porcentagem de crise.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 93,
+        "linha_fim": null,
+        "trecho": "Toda tela mostra a origem do dado; nenhuma mostra porcentagem de crise.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L93",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/repositorio/__init__.py",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "return Postgres(url) if url else Memoria()",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/repositorio/__init__.py#L10",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 174,
+          "linha_fim": null,
+          "trecho": "return Simulado()",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L174",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "Sem `DATABASE_URL` usa `Memoria`; sem configuração da Twilio o canal é `Simulado`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Sem chave de API, banco ou conta externa: estado em memória e aviso simulado.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 17,
+        "linha_fim": null,
+        "trecho": "Sem chave de API, banco ou conta externa: estado em memória e aviso simulado.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L17",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": ".python-version",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "3.12",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/.python-version#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 317,
+          "linha_fim": null,
+          "trecho": "nova_app = FastAPI(title=\"Hack IA Brasil — Alpha de epilepsia\")",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L317",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/__main__.py",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "uvicorn.run(app, host=\"127.0.0.1\", port=int(os.getenv(\"PORT\", \"8000\")))",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/__main__.py#L9",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/repositorio/postgres.py",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "conexao = psycopg.connect(self._url, connect_timeout=5)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/repositorio/postgres.py#L92",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 75,
+          "linha_fim": null,
+          "trecho": "conexao = HTTPSConnection(\"api.twilio.com\", timeout=5)",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L75",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "pyproject.toml",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "[tool.vercel]",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/pyproject.toml#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "A Twilio é chamada por `http.client`, sem SDK; o código usa Postgres via `DATABASE_URL` e não identifica o provedor Neon.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Python 3.12, FastAPI, Uvicorn, Pydantic, psycopg, pytest, httpx · Vercel, Neon Postgres, Twilio Voice · telas em HTML, CSS e JavaScript puro.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 117,
+        "linha_fim": null,
+        "trecho": "Python 3.12, FastAPI, Uvicorn, Pydantic, psycopg, pytest, httpx · Vercel, Neon Postgres, Twilio Voice · telas em HTML, CSS e JavaScript puro.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L117",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/respostas.py",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "raise NotImplementedError(",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/respostas.py#L35",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/respostas.py",
+          "linha": 206,
+          "linha_fim": null,
+          "trecho": "_CLASSIFICADOR_PADRAO = RegraPalavras()",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/respostas.py#L206",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "Não há cliente de provedor de IA nas dependências; `ClassificadorLLM` só levanta `NotImplementedError` e o padrão é `RegraPalavras`.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Nenhum LLM em execução.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 117,
+        "linha_fim": null,
+        "trecho": "Nenhum LLM em execução.",
+        "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L117",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://hackiabrasil-coral.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://hackiabrasil-coral.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 373 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra a página inicial (Painel)",
+      "observado": "Aparece o \"Painel do sinal\" com os traçados acc_x, acc_y e acc_z marcados como sintéticos e quatro botões de cenário. Na abertura, a tela já trazia o estado \"Confirmado no quarto\" de um aviso anterior.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em \"1 · Episódio suspeito\"",
+      "observado": "Aparecem \"Padrão suspeito\", \"Aviso pendente · Chamando contatos\" e \"Chamados: Ana\". O indicador da tela mostra \"Tempo acelerado ×1 (demo)\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Clique em \"Cuidador\" no topo e depois em \"Recebi, estou indo\"",
+      "observado": "Aparece \"Resposta registrada · Indo\" e o estado continua \"Aviso pendente · Chamando contatos\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em \"Cheguei no quarto\"",
+      "observado": "Aparece \"Chegada ao quarto confirmada\" e o estado passa a \"Confirmado no quarto\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Clique em \"Painel\" e depois em \"2 · Movimento comum\"",
+      "observado": "Aparecem \"Recebendo dados\" e \"Nenhum aviso neste cenário\", com \"Tempo acelerado ×10 (demo)\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em \"4 · Sem confirmação\" e aguarde cerca de um minuto e meio sem responder",
+      "observado": "Ana, Bruno e Carla são chamados em sequência e, por volta de 1 min 30 s, aparece \"ACIONAR EMERGÊNCIA (SAMU 192)\". Nesta execução o indicador mostrava \"Tempo acelerado ×1 (demo)\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em \"3 · Sensor sem contato\"",
+      "observado": "Aparecem \"Observação limitada\", \"Sensor sem contato\" e \"Nenhum aviso neste cenário\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Clique em \"Histórico\", digite Jurado Teste no campo \"Nome de quem revisou\" do primeiro episódio e clique em \"Salvar revisão\"",
+      "observado": "Aparece \"Revisão salva\" e o episódio passa a \"Revisão concluída\", com nome, data e hora. A lista também traz episódios com horários anteriores a esta sessão de teste.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "No Histórico, clique em \"Exportar CSV\"",
+      "observado": "O navegador baixa o arquivo historico.csv, com cabeçalho e a revisão salva na primeira linha de dados; a coluna \"episodio\" traz os dados do episódio em formato JSON.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Campo \"Resposta do contato\" vazio, seguido de \"Enviar resposta\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O campo é obrigatório e o formulário não é enviado; a mensagem de validação do navegador é \"Please fill out this field.\"."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Texto de 6.000 caracteres sem sentido no campo \"Resposta do contato\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O envio retorna status 200, aparece \"Resposta registrada · Não entendeu\", o campo é limpo e o aviso continua pendente."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Ligação telefônica real (Twilio)",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Segundo a promessa da equipe, exige configuração do notificador, código da demo e número permitido, que não estavam disponíveis; os avisos observados aparecem como \"Simulado\"."
+      },
+      "evidencias": []
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:sem-ia",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "rotulo": "Nenhuma biblioteca de IA nas dependências e nenhuma linha de código que cite provedores de IA"
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a local (Python puro, sem provedor externo)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/placar_deteccao.py",
+          "linha": 258,
+          "linha_fim": null,
+          "trecho": "classificador = DetectorClassificador()",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/placar_deteccao.py#L258",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 300,
+          "linha_fim": null,
+          "trecho": "\"deteccao\": calcular_placar_deteccao(),",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L300",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "DetectorClassificador (regressão logística)",
+      "obs": "Treinado em dados sintéticos em tempo de execução para o placar (`/api/placar` e script); não dispara os alertas dos cenários."
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 08:49",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/gustavo-teno/hackiabrasil",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/gustavo-teno/hackiabrasil",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:antes",
+      "rotulo": "Commits antes do início da janela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/gustavo-teno/hackiabrasil/commit/079264a2e47d5518f4894a7403c00d1fcdb1cec4",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/gustavo-teno/hackiabrasil/commit/079264a2e47d5518f4894a7403c00d1fcdb1cec4",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1 de 48 commits, o mais antigo em 28/11 08:49",
+      "obs": null,
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/gustavo-teno/hackiabrasil/commit/46d888d67f0754c2a4d140c6a589831422349632",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/gustavo-teno/hackiabrasil/commit/46d888d67f0754c2a4d140c6a589831422349632",
+          "conferida": "script"
+        }
+      ],
+      "valor": "46d888d, 11985 linhas adicionadas em 11 arquivos, de 18873 no histórico",
+      "obs": "11985 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "EpiMonitor / Embrace (Empatica)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.empatica.com/en/epimonitor/how-it-works",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.empatica.com/en/epimonitor/how-it-works",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://www.empatica.com/blog/how-the-alert-system-works-all-about-caregivers/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.empatica.com/blog/how-the-alert-system-works-all-about-caregivers/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Um dispositivo de pulso com aplicativo detecta possíveis crises convulsivas e avisa cuidadores por ligação telefônica e SMS; o usuário tem 15 segundos para cancelar um alarme falso.",
+      "obs": "Em comum: Detecção de possível crise, ligação telefônica para cuidadores, cancelamento pelo paciente e diário exportado ou mantido no app; no Embrace, o cuidador confirma a ligação apertando 1. Diferente: Usa sensor de pulso próprio; a página do Embrace diz que os cuidadores são contatados ao mesmo tempo, com até três tentativas, e a confirmação é de ter ouvido o aviso, não de chegada ao quarto."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Seizure Alert: My Medic Watch",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/app/id1392205704",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/app/id1392205704",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Aplicativo para Apple Watch e iPhone que detecta movimentos semelhantes a crise e notifica os cuidadores designados, com a localização do usuário.",
+      "obs": "Em comum: Detecção de crise por movimento e aviso automático a cuidadores; a página menciona fluxos de escalonamento. Diferente: Depende de relógio no pulso; a página não detalha o escalonamento nem descreve uma confirmação de chegada pelo cuidador."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "NightWatch+",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.nightwatchepilepsy.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.nightwatchepilepsy.com/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Sensor sem fio usado durante o sono que acompanha frequência cardíaca e movimento para detectar crises noturnas e aciona uma estação de alarme para o cuidador.",
+      "obs": "Em comum: Foco em crises durante o sono, com detecção por movimento e aviso a quem cuida; há um portal para rever o que aconteceu na noite. Diferente: Usa sensor próprio, também mede frequência cardíaca e dá alarme sonoro e visual em estação ou sistema de chamada de enfermagem; a página não descreve ligações em cadeia nem confirmação."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "OpenSeizureDetector",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/OpenSeizureDetector",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/OpenSeizureDetector",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/OpenSeizureDetector/Android_Pebble_SD",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/OpenSeizureDetector/Android_Pebble_SD",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://www.slideshare.net/slideshow/openseizuredetector-installation-instructions/251602573",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.slideshare.net/slideshow/openseizuredetector-installation-instructions/251602573",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Ferramentas livres e de código aberto que usam relógio inteligente e celular Android para detectar crises e alertar cuidadores, por alarme sonoro ou SMS.",
+      "obs": "Em comum: Projeto de software para detectar crise por movimento (com algoritmos determinísticos ou de aprendizado de máquina) e avisar cuidadores. Diferente: Usa relógio físico e frequência cardíaca opcional; as páginas abertas descrevem alarme local, na rede Wi-Fi e SMS, sem cadeia de ligações nem confirmação do cuidador."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "EpiCentr: Seizure Detection",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/us/app/id1640509073",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/us/app/id1640509073",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Aplicativo para iPhone e Apple Watch que detecta padrões de movimento e frequência cardíaca semelhantes a crise e envia alerta aos contatos de emergência se não for cancelado em 30 segundos.",
+      "obs": "Em comum: Detecção por movimento, aviso a contatos de emergência, cancelamento pelo paciente, diário de crises e relatórios. Diferente: Depende de Apple Watch; ligações e e-mails são da versão paga, e a página não descreve uma exigência de confirmação de chegada para encerrar o alerta."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "JSON",
+              5,
+              11089
+            ],
+            [
+              "Python",
+              31,
+              4445
+            ],
+            [
+              "Markdown",
+              18,
+              1124
+            ],
+            [
+              "JavaScript",
+              2,
+              707
+            ],
+            [
+              "HTML",
+              1,
+              174
+            ],
+            [
+              "Shell",
+              4,
+              132
+            ],
+            [
+              "CSS",
+              1,
+              110
+            ],
+            [
+              "TOML",
+              1,
+              16
+            ]
+          ]
+        }
+      },
+      "obs": "70 arquivos de texto e 17872 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Pipeline de sinal",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/sinal/simulador.py",
+          "linha": 109,
+          "linha_fim": null,
+          "trecho": "def rodar_cenario(",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/sinal/simulador.py#L109",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/sinal/simulador.py",
+          "app/sinal/detector.py",
+          "app/sinal/qualidade.py",
+          "app/sinal/episodios.py"
+        ]
+      },
+      "obs": "Carrega os cenários sintéticos, verifica a qualidade, aplica o detector em janelas e agrupa episódios."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Máquina de alerta",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/estados.py",
+          "linha": 98,
+          "linha_fim": null,
+          "trecho": "class MaquinaAlerta:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/estados.py#L98",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/estados.py"
+        ]
+      },
+      "obs": "Calcula o estado do alerta a partir do registro e do relógio e registra respostas, confirmação e cancelamento."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Leitura de respostas",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/respostas.py",
+          "linha": 152,
+          "linha_fim": null,
+          "trecho": "class RegraPalavras:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/respostas.py#L152",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/respostas.py"
+        ]
+      },
+      "obs": "Classifica o texto do contato em cinco classes por expressões regulares."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Canais de aviso",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 169,
+          "linha_fim": null,
+          "trecho": "def obter_canal(",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L169",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/rotas.py",
+          "linha": 76,
+          "linha_fim": null,
+          "trecho": "def criar_rotas_twilio(",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/rotas.py#L76",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/avisos/__init__.py",
+          "app/avisos/fluxo.py",
+          "app/avisos/rotas.py"
+        ]
+      },
+      "obs": "Reserva e envia avisos (simulados ou ligação Twilio) e recebe os webhooks assinados."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Persistência",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/repositorio/__init__.py",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "def obter_repositorio() -> Repositorio:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/repositorio/__init__.py#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/repositorio/__init__.py",
+          "app/repositorio/memoria.py",
+          "app/repositorio/postgres.py"
+        ]
+      },
+      "obs": "Guarda sessão, alertas, histórico e cota de chamadas em memória ou Postgres."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "API",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/api.py",
+          "linha": 305,
+          "linha_fim": null,
+          "trecho": "def criar_app(",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/api.py#L305",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/api.py",
+          "app/__main__.py"
+        ]
+      },
+      "obs": "Aplicação FastAPI que expõe cenários, estado, ações, histórico e placar e serve as telas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Telas",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app/static/telas.js",
+          "linha": 506,
+          "linha_fim": null,
+          "trecho": "setInterval(consultarPeriodicamente, 1000);",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/static/telas.js#L506",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app/static/index.html",
+          "app/static/telas.js",
+          "app/static/mock.js"
+        ]
+      },
+      "obs": "Página em HTML e JavaScript que consulta o estado a cada segundo e envia as ações."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-8",
+      "rotulo": "Avaliação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "avaliacao/placar_deteccao.py",
+          "linha": 253,
+          "linha_fim": null,
+          "trecho": "def calcular_placar_deteccao() -> dict[str, Any]:",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/avaliacao/placar_deteccao.py#L253",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "avaliacao/placar_deteccao.py",
+          "avaliacao/placar_respostas.py",
+          "avaliacao/respostas.csv"
+        ]
+      },
+      "obs": "Placares do detector e da leitura de respostas sobre dados sintéticos e um CSV de 20 frases."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/arquitetura.md",
+          "linha": 183,
+          "linha_fim": null,
+          "trecho": "| `app/avisos/` | `CanalAviso`: `Simulado`, `TwilioLigacao`, `TwilioWhatsApp` | avisos | **novo** |",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/docs/arquitetura.md#L183",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app/avisos/__init__.py",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "canal: Literal[\"simulado\", \"ligacao\"]",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/app/avisos/__init__.py#L30",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "`docs/arquitetura.md` lista em `app/avisos/` os canais `Simulado`, `TwilioLigacao` e `TwilioWhatsApp`; o mesmo documento diz adiante que nesta demo só há ligação.",
+              "O código tem `Simulado` e `TwilioLigacao`; o canal de aviso admite só `simulado` ou `ligacao`."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Vigília — alerta de crise noturna",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 133 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "## Como rodar",
+          "link": "https://github.com/gustavo-teno/hackiabrasil/blob/2be4a808da97b77c57aca392203e0bb38aa0f830/README.md#L15",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Ligação telefônica real (Twilio)",
+      "motivo": "Segundo a promessa da equipe, exige configuração do notificador, código da demo e número permitido, que não estavam disponíveis; os avisos observados aparecem como \"Simulado\".",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

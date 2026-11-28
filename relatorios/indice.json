@@ -1,0 +1,483 @@
+{
+  "gerado_em": "2026-11-28T19:38:26.492Z",
+  "modo": "final",
+  "equipes": [
+    {
+      "id": "cooper",
+      "nome": "Cooper",
+      "track": "Segurança",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.492Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "verificado"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "cooper/relatorio.html",
+      "dados": "cooper/relatorio.json"
+    },
+    {
+      "id": "cuidaai",
+      "nome": "cuidaAI",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.479Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "falhou",
+          "erro": "Nenhuma lista dos choques apareceu ao rolar a página até o fim nem ao clicar no cartão."
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "cuidaai/relatorio.html",
+      "dados": "cuidaai/relatorio.json"
+    },
+    {
+      "id": "dyssolution",
+      "nome": "dyssolution",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.487Z",
+      "resumo": {
+        "deploy": {
+          "estado": "nao_informado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "a etapa Build não terminou"
+        },
+        "fluxo": {
+          "estado": "nao_testavel",
+          "motivo": "a etapa Teste de uso: conferência não terminou"
+        },
+        "ia": {
+          "estado": "nao_testavel",
+          "motivo": "a etapa Leitura do código: conferência não terminou"
+        }
+      },
+      "relatorio": "dyssolution/relatorio.html",
+      "dados": "dyssolution/relatorio.json"
+    },
+    {
+      "id": "epidemia",
+      "nome": "epidemIA",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.487Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "falhou",
+          "erro": "Erro inesperado."
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "epidemia/relatorio.html",
+      "dados": "epidemia/relatorio.json"
+    },
+    {
+      "id": "fatto",
+      "nome": "Fatto",
+      "track": "Educação",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.482Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "nao_testavel",
+          "motivo": "a etapa Teste de uso: conferência não terminou"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "fatto/relatorio.html",
+      "dados": "fatto/relatorio.json"
+    },
+    {
+      "id": "gabriela-filgueiras",
+      "nome": "Gabriela Filgueiras",
+      "track": "Educação",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.484Z",
+      "resumo": {
+        "deploy": {
+          "estado": "nao_informado"
+        },
+        "build": {
+          "estado": "verificado"
+        },
+        "fluxo": {
+          "estado": "falhou",
+          "erro": "Nenhuma nova explicação da parte marcada apareceu; o app estava em modo demonstração."
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "gabriela-filgueiras/relatorio.html",
+      "dados": "gabriela-filgueiras/relatorio.json"
+    },
+    {
+      "id": "geosus",
+      "nome": "GeoSUS",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.482Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "verificado"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "geosus/relatorio.html",
+      "dados": "geosus/relatorio.json"
+    },
+    {
+      "id": "guardiao",
+      "nome": "Guardião",
+      "track": "Segurança",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.478Z",
+      "resumo": {
+        "deploy": {
+          "estado": "nao_informado"
+        },
+        "build": {
+          "estado": "verificado"
+        },
+        "fluxo": {
+          "estado": "verificado"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "guardiao/relatorio.html",
+      "dados": "guardiao/relatorio.json"
+    },
+    {
+      "id": "isalia",
+      "nome": "Isalia",
+      "track": "Educação",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.488Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "verificado"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "isalia/relatorio.html",
+      "dados": "isalia/relatorio.json"
+    },
+    {
+      "id": "lacuna-ai",
+      "nome": "Lacuna.AI",
+      "track": "Educação",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.490Z",
+      "resumo": {
+        "deploy": {
+          "estado": "nao_informado"
+        },
+        "build": {
+          "estado": "verificado"
+        },
+        "fluxo": {
+          "estado": "verificado",
+          "alcance": {
+            "ate": 4,
+            "de": 11
+          }
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "lacuna-ai/relatorio.html",
+      "dados": "lacuna-ai/relatorio.json"
+    },
+    {
+      "id": "nina",
+      "nome": "Nina",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.488Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "nao_testavel",
+          "motivo": "Exige conta do Telegram (login por QR code ou número de telefone)."
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "nina/relatorio.html",
+      "dados": "nina/relatorio.json"
+    },
+    {
+      "id": "noid",
+      "nome": "noid",
+      "track": "Segurança",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.489Z",
+      "resumo": {
+        "deploy": {
+          "estado": "falhou",
+          "erro": "unable to get local issuer certificate"
+        },
+        "build": {
+          "estado": "verificado"
+        },
+        "fluxo": {
+          "estado": "verificado",
+          "alcance": {
+            "ate": 6,
+            "de": 8
+          }
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "noid/relatorio.html",
+      "dados": "noid/relatorio.json"
+    },
+    {
+      "id": "portaaporta",
+      "nome": "PortaAPorta",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.491Z",
+      "resumo": {
+        "deploy": {
+          "estado": "nao_informado"
+        },
+        "build": {
+          "estado": "verificado"
+        },
+        "fluxo": {
+          "estado": "verificado",
+          "alcance": {
+            "ate": 1,
+            "de": 8
+          }
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "portaaporta/relatorio.html",
+      "dados": "portaaporta/relatorio.json"
+    },
+    {
+      "id": "rastro",
+      "nome": "Rastro",
+      "track": "Segurança",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.480Z",
+      "resumo": {
+        "deploy": {
+          "estado": "falhou",
+          "erro": "mais de 5 redirecionamentos: https://rastro-hackia.streamlit.app/"
+        },
+        "build": {
+          "estado": "falhou",
+          "erro": "parou em instalar: ERROR: No matching distribution found for networkx==3.7"
+        },
+        "fluxo": {
+          "estado": "nao_testavel",
+          "motivo": "o deploy informado não respondeu; o projeto não subiu em container"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "rastro/relatorio.html",
+      "dados": "rastro/relatorio.json"
+    },
+    {
+      "id": "repasse",
+      "nome": "Repasse",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.488Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "falhou",
+          "erro": "A tela mostrou \"Paciente leito 3 não encontrado\" e \"Abrindo o prontuário…\"."
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "repasse/relatorio.html",
+      "dados": "repasse/relatorio.json"
+    },
+    {
+      "id": "sapio",
+      "nome": "Sapio",
+      "track": "Educação",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.480Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "verificado"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "sapio/relatorio.html",
+      "dados": "sapio/relatorio.json"
+    },
+    {
+      "id": "socorro-em-libras",
+      "nome": "Socorro em Libras",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.491Z",
+      "resumo": {
+        "deploy": {
+          "estado": "nao_informado"
+        },
+        "build": {
+          "estado": "verificado"
+        },
+        "fluxo": {
+          "estado": "verificado",
+          "alcance": {
+            "ate": 3,
+            "de": 10
+          }
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "socorro-em-libras/relatorio.html",
+      "dados": "socorro-em-libras/relatorio.json"
+    },
+    {
+      "id": "vigilia",
+      "nome": "Vigília",
+      "track": "Saúde",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.492Z",
+      "resumo": {
+        "deploy": {
+          "estado": "verificado"
+        },
+        "build": {
+          "estado": "nao_testavel",
+          "motivo": "não executado nesta rodada: o deploy da equipe responde"
+        },
+        "fluxo": {
+          "estado": "verificado"
+        },
+        "ia": {
+          "estado": "verificado"
+        }
+      },
+      "relatorio": "vigilia/relatorio.html",
+      "dados": "vigilia/relatorio.json"
+    },
+    {
+      "id": "yama",
+      "nome": "Yama",
+      "track": "Segurança",
+      "modo": "final",
+      "horario": "2026-11-28T19:38:26.483Z",
+      "resumo": {
+        "deploy": {
+          "estado": "nao_informado"
+        },
+        "build": {
+          "estado": "verificado"
+        },
+        "fluxo": {
+          "estado": "verificado"
+        },
+        "ia": {
+          "estado": "falhou",
+          "erro": "nenhuma chamada a modelo de IA encontrada no código"
+        }
+      },
+      "relatorio": "yama/relatorio.html",
+      "dados": "yama/relatorio.json"
+    }
+  ]
+}

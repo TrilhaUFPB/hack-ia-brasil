@@ -1,0 +1,2642 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "portaaporta",
+    "nome": "PortaAPorta",
+    "numero": 21,
+    "track": "Saúde",
+    "repo": "https://github.com/alencarplz/hack-ia-brasil",
+    "demo": null,
+    "video": "https://youtu.be/l6QJq00nNJE",
+    "resumo": "PortaAporta: o ACS fala, a IA organiza e a UBS chega antes da emergência."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.491Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "19871ae3f3f817328fad9e078a31b66b1655a65f",
+    "commit_em": "2026-11-28T18:53:56Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 32160,
+          "preparo_ms": 0,
+          "execucao_ms": 16363
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11409,
+          "preparo_ms": 0,
+          "execucao_ms": 361
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 702,
+          "preparo_ms": 0,
+          "execucao_ms": 2804
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6832,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11736,
+          "preparo_ms": 0,
+          "execucao_ms": 355
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 6891,
+          "preparo_ms": 0,
+          "execucao_ms": 2446
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 89
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 675,
+          "preparo_ms": 0,
+          "execucao_ms": 248
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 31
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11737,
+          "preparo_ms": 0,
+          "execucao_ms": 497
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11743,
+          "preparo_ms": 0,
+          "execucao_ms": 486
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "nao_informado"
+    },
+    "build": {
+      "estado": "verificado"
+    },
+    "fluxo": {
+      "estado": "verificado",
+      "alcance": {
+        "ate": 1,
+        "de": 8
+      }
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-0",
+      "n": 0,
+      "acao": "No repositório, suba o projeto: cd frontend && npm ci --loglevel=http || npm install --loglevel=http && npm run build && npm run preview -- --host 0.0.0.0",
+      "esperado": "O projeto responde em http://localhost:4173",
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra a página inicial.",
+      "esperado": "Aparece a tela \"Entrar no PortaAporta\", com os campos \"Usuário\" e \"Senha\" e o botão \"Entrar\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Registrar.tsx",
+          "linha": 145,
+          "linha_fim": null,
+          "trecho": "const rec = new MediaRecorder(stream)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/Registrar.tsx#L145",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Registrar.tsx",
+          "linha": 436,
+          "linha_fim": null,
+          "trecho": "<textarea",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/Registrar.tsx#L436",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/whatsapp.py",
+          "linha": 282,
+          "linha_fim": null,
+          "trecho": "if tipo == \"audio\":",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/whatsapp.py#L282",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/public/sw.js",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "// Guarda o app (não a API) para abrir sem internet: rede primeiro, cache se falhar.",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/public/sw.js#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "O app grava áudio com MediaRecorder ou aceita texto; o webhook do WhatsApp trata mensagens de áudio e de texto.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O ACS relata a visita falando ou escrevendo, pelo app (que funciona sem internet) ou pelo WhatsApp.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "O ACS relata a visita falando ou escrevendo, pelo app (que funciona sem internet) ou pelo WhatsApp.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/filaOffline.ts",
+          "linha": 127,
+          "linha_fim": null,
+          "trecho": "export function sincronizar(): Promise<void> {",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/filaOffline.ts#L127",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 283,
+          "linha_fim": null,
+          "trecho": "existente = _visita_por_id_local(load_db(), paciente_id, id_local)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/main.py#L283",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/main.tsx",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {})",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/main.tsx#L7",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Registrar.tsx",
+          "linha": 173,
+          "linha_fim": null,
+          "trecho": "if (!navigator.onLine) { setErro('Cadastrar paciente novo precisa de internet.",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/Registrar.tsx#L173",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "A visita fica no IndexedDB com um id_local e a API devolve a visita existente quando o id se repete. O cadastro de paciente novo exige internet.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O app funciona sem internet e reenvia sem duplicar.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 16,
+        "linha_fim": null,
+        "trecho": "O app funciona sem internet e reenvia sem duplicar.",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L16",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 238,
+          "linha_fim": null,
+          "trecho": "response_schema=FichaIA,",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L238",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "11. informacoes_adicionais: lista com o que mais foi dito e não coube nos outros campos: medidas (pressão, glicemia, temperatura, peso)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L35",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 396,
+          "linha_fim": null,
+          "trecho": "def estruturar_local(relato: str) -> FichaIA:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L396",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "Com chave, o Gemini preenche o schema FichaIA (medidas vão em informacoes_adicionais); sem chave, um extrator por regras preenche os mesmos campos.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A IA transforma o relato em ficha estruturada, com sintomas, medicação, medidas e necessidades sociais.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "A IA transforma o relato em ficha estruturada, com sintomas, medicação, medidas e necessidades sociais.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 392,
+          "linha_fim": null,
+          "trecho": "grupos.setdefault(rotulo, []).append(_citar(clausula))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L392",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/schemas.py",
+          "linha": 59,
+          "linha_fim": null,
+          "trecho": "class FichaIA(BaseModel):",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/schemas.py#L59",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 419,
+          "linha_fim": null,
+          "trecho": "mobilidade=_juntar(mobilidade),",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L419",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/components.tsx",
+          "linha": 474,
+          "linha_fim": null,
+          "trecho": "function trechoDe(texto: string, relato: string): { frase: string; parte: string } {",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/components.tsx#L474",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "Os alertas têm um campo trecho próprio, separado da ficha.",
+      "existe": "O extrator local anexa o trecho citado em adesão, necessidades, medidas e outras informações. A tela de sintomas procura, por coincidência de palavras, a frase do relato correspondente.",
+      "falta": "O schema FichaIA não tem campo de trecho e o prompt do Gemini não pede citação por campo; no extrator local, o campo mobilidade traz só o rótulo.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "com o trecho do relato que sustenta cada campo",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 17,
+        "linha_fim": null,
+        "trecho": "com o trecho do relato que sustenta cada campo",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L17",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/sinais.py",
+          "linha": 73,
+          "linha_fim": null,
+          "trecho": "def detectar_sinais(relato: str, ficha: FichaIA, paciente: Paciente) -> list[Alerta]:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/sinais.py#L73",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/sinais.py",
+          "linha": 101,
+          "linha_fim": null,
+          "trecho": "return max(alertas, key=lambda a: ORDEM_PRIORIDADE[a.categoria]).categoria",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/sinais.py#L101",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/comparacao.py",
+          "linha": 29,
+          "linha_fim": null,
+          "trecho": "def comparar_visitas(atual: FichaIA, anterior: Optional[VisitaRegistro]) -> tuple[Optional[Comparacao], list[Alerta]]:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/comparacao.py#L29",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Regras por expressões regulares geram alertas com motivo e trecho, a prioridade é a maior categoria e há comparação com a visita anterior.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Regras explicáveis apontam sinais de atenção, sugerem a prioridade e comparam com a visita anterior.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Regras explicáveis apontam sinais de atenção, sugerem a prioridade e comparam com a visita anterior.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 254,
+          "linha_fim": null,
+          "trecho": "fila.sort(key=lambda v: ORDEM_PRIORIDADE[v.prioridade], reverse=True)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/main.py#L254",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/decisoes.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "def sugerir_decisoes(visita: VisitaRegistro, paciente: Paciente | None) -> list[DecisaoSugerida]:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/decisoes.py#L14",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 454,
+          "linha_fim": null,
+          "trecho": "def validar_visita(visita_id: str, body: ValidacaoInput, usuario: Optional[Usuario] = Depends(exigir(\"ubs\"))):",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/main.py#L454",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "A rota /fila-ubs ordena por prioridade e data; cada visita leva alertas e passos sugeridos por regras, e a decisão é gravada pela rota de validação.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A UBS recebe a fila ordenada, com o motivo de cada alerta e os próximos passos sugeridos, e decide.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "A UBS recebe a fila ordenada, com o motivo de cada alerta e os próximos passos sugeridos, e decide.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 476,
+          "linha_fim": null,
+          "trecho": "db.setdefault(\"tarefas\", []).append(tarefa.model_dump())",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/main.py#L476",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Registrar.tsx",
+          "linha": 370,
+          "linha_fim": null,
+          "trecho": "<h2>Pedidos da UBS para esta visita</h2>",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/Registrar.tsx#L370",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/FichaCaso.tsx",
+          "linha": 81,
+          "linha_fim": null,
+          "trecho": "setVisita(await api.validar(visita.id, { ...form, tarefas_acs }))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/FichaCaso.tsx#L81",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "A validação cria tarefas, que a tela de registro mostra ao ACS para marcar como feitas ou não.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Painel da UBS com validação humana e tarefas de volta para o ACS.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 6,
+        "linha_fim": null,
+        "trecho": "Painel da UBS com validação humana e tarefas de volta para o ACS.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/sinais.py",
+          "linha": 38,
+          "linha_fim": null,
+          "trecho": "NEGACAO = re.compile(",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/sinais.py#L38",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/sinais.py",
+          "linha": 80,
+          "linha_fim": null,
+          "trecho": "alertas.append(Alerta(categoria=regra[\"categoria\"], motivo=regra[\"motivo\"], trecho=trecho, origem=\"regra\"))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/sinais.py#L80",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/comparacao.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "alertas.append(Alerta(categoria=\"revisao_prioritaria\", motivo=\"novo sintoma + mudança relatada na adesão\"",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/comparacao.py#L58",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "Alertas do relato vêm de regras fixas com negação e a frase citada. Os alertas de comparação usam sintomas e adesão da ficha, que o Gemini preenche quando há chave.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "os alertas e a prioridade vêm de regras fixas, com negações tratadas (\"nega febre\", \"nem caiu\") e o trecho citado. A IA generativa só organiza o texto.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 43,
+        "linha_fim": null,
+        "trecho": "os alertas e a prioridade vêm de regras fixas, com negações tratadas (\"nega febre\", \"nem caiu\") e o trecho citado. A IA generativa só organiza o texto.",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L43",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 485,
+          "linha_fim": null,
+          "trecho": "ficha = _sem_marcador_de_nome(estruturar_texto(anonimizar(transcricao, nomes)))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L485",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 219,
+          "linha_fim": null,
+          "trecho": "contents=[PROMPT_TRANSCRICAO, types.Part.from_bytes(data=audio_bytes, mime_type=mime)],",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L219",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "(rf\"\\b(?i:bairro)\\s+(d[aeo]s?\\s+)?{_NOME_VIA}",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L69",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 83,
+          "linha_fim": null,
+          "trecho": "log.warning(\"spaCy/pt_core_news_sm indisponível: nomes de terceiros só são removidos por regex\")",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L83",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": null,
+      "existe": "O texto passa por regex e spaCy antes de ir ao Gemini para estruturação. A regex de bairro age quando a palavra \"bairro\" precede o nome.",
+      "falta": "Com TRANSCRICAO=gemini, o áudio é enviado ao Gemini sem remoção de dados pessoais. Se o spaCy não carregar, o código segue só com regex.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "nomes, CPF, telefone, endereço e bairro são removidos (regex + spaCy) antes de qualquer envio à IA.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 44,
+        "linha_fim": null,
+        "trecho": "nomes, CPF, telefone, endereço e bairro são removidos (regex + spaCy) antes de qualquer envio à IA.",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L44",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 18,
+          "linha_fim": null,
+          "trecho": "MODELO = os.getenv(\"GEMINI_MODEL\", \"gemini-2.5-flash\")",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L18",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 242,
+          "linha_fim": null,
+          "trecho": "return normalizar_ficha(FichaIA.model_validate_json(resp.text))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L242",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 483,
+          "linha_fim": null,
+          "trecho": "return ResultadoRelato(ficha=estruturar_local(texto), estruturado_por=\"regras locais (sem IA generativa)\", **base)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L483",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 489,
+          "linha_fim": null,
+          "trecho": "return ResultadoRelato(ficha=ficha_falha(), estruturado_por=\"falha na IA; preencher manualmente\", **base)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L489",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "A chamada pede JSON no schema FichaIA e valida com Pydantic; sem chave ou com IA_MOCK=1 usa regras locais, e se a chamada falhar grava uma ficha de falha para preenchimento manual.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Google Gemini (`gemini-2.5-flash`, SDK `google-genai`) com saída em JSON validada por Pydantic; extrator local por regras como alternativa",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 63,
+        "linha_fim": null,
+        "trecho": "Google Gemini (`gemini-2.5-flash`, SDK `google-genai`) com saída em JSON validada por Pydantic; extrator local por regras como alternativa",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L63",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 150,
+          "linha_fim": null,
+          "trecho": "return WhisperModel(os.getenv(\"WHISPER_MODEL\", \"base\"), device=\"cpu\", compute_type=\"int8\")",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L150",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "segmentos, _ = _whisper().transcribe(amostras, language=\"pt\", vad_filter=True)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L196",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 210,
+          "linha_fim": null,
+          "trecho": "return transcrever_audio(audio_bytes, mime), None, f\"Gemini ({MODELO})\"",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L210",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "O padrão é faster-whisper em CPU (modelo \"base\"); TRANSCRICAO=gemini usa o Gemini.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Whisper local (`faster-whisper`) ou Gemini",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 62,
+        "linha_fim": null,
+        "trecho": "Whisper local (`faster-whisper`) ou Gemini",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L62",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/whatsapp.py",
+          "linha": 155,
+          "linha_fim": null,
+          "trecho": "return f\"https://graph.facebook.com/{os.getenv('WHATSAPP_API_VERSION', 'v21.0')}/{caminho}\"",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/whatsapp.py#L155",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/whatsapp.py",
+          "linha": 85,
+          "linha_fim": null,
+          "trecho": "esperado = hmac.new(segredo.encode(), corpo, hashlib.sha256).hexdigest()",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/whatsapp.py#L85",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/whatsapp.py",
+          "linha": 383,
+          "linha_fim": null,
+          "trecho": "if not assinatura_valida(corpo, request.headers.get(\"X-Hub-Signature-256\", \"\")):",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/whatsapp.py#L383",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "Chamadas à Graph API com versão padrão v21.0 e webhook que confere X-Hub-Signature-256 com HMAC-SHA256.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Meta WhatsApp Cloud API (Graph API v21.0), webhook com assinatura HMAC",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 66,
+        "linha_fim": null,
+        "trecho": "Meta WhatsApp Cloud API (Graph API v21.0), webhook com assinatura HMAC",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L66",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/whatsapp.py",
+          "linha": 324,
+          "linha_fim": null,
+          "trecho": "paciente, novo = paciente_do_relato(dados, acs.microarea)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/whatsapp.py#L324",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/registro.py",
+          "linha": 89,
+          "linha_fim": null,
+          "trecho": "db[\"pacientes\"].append(novo.model_dump())",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/registro.py#L89",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/whatsapp.py",
+          "linha": 335,
+          "linha_fim": null,
+          "trecho": "enviar_lista_pacientes(acs, pacientes, relato[\"lista\"])",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/whatsapp.py#L335",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "O nome e a idade são extraídos por regex local, buscados na microárea do ACS e, com idade e sem correspondência, geram cadastro novo; caso contrário, o bot envia a lista.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O bot tenta identificar o paciente na microárea do ACS pelo relato; se não houver um cadastro e o relato informar nome e idade, pode cadastrar um novo paciente.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 191,
+        "linha_fim": null,
+        "trecho": "O bot tenta identificar o paciente na microárea do ACS pelo relato; se não houver um cadastro e o relato informar nome e idade, pode cadastrar um novo paciente.",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L191",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/territorio.py",
+          "linha": 38,
+          "linha_fim": null,
+          "trecho": "def radar(pacientes: list[Paciente], visitas: list[VisitaRegistro], hoje: datetime) -> list[MicroareaRadar]:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/territorio.py#L38",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/territorio.py",
+          "linha": 88,
+          "linha_fim": null,
+          "trecho": "def busca_ativa(",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/territorio.py#L88",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/territorio.py",
+          "linha": 203,
+          "linha_fim": null,
+          "trecho": "def mapa_calor(pacientes: list[Paciente], visitas: list[VisitaRegistro]) -> dict:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/territorio.py#L203",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/schemas.py",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "Microarea = Literal[",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/schemas.py#L7",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "Há funções de radar, busca ativa e mapa por bairro, expostas em rotas e telas; o tipo Microarea lista 24 bairros.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Radar da microárea, busca ativa e mapa de calor de 24 bairros de João Pessoa.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 9,
+        "linha_fim": null,
+        "trecho": "Radar da microárea, busca ativa e mapa de calor de 24 bairros de João Pessoa.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/territorio.py",
+          "linha": 168,
+          "linha_fim": null,
+          "trecho": "CATEGORIAS_CALOR = [",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/territorio.py#L168",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/territorio.py",
+          "linha": 241,
+          "linha_fim": null,
+          "trecho": "return {\"categorias\": [{\"id\": c, \"nome\": n} for c, n in CATEGORIAS_CALOR], \"microareas\": list(areas.values())}",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/territorio.py#L241",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "CATEGORIAS_CALOR tem 17 itens; a resposta traz contagens por bairro, sem nomes de pacientes.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o **mapa de calor** (17 tipos de sinal em 24 bairros, só contagens)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 20,
+        "linha_fim": null,
+        "trecho": "o **mapa de calor** (17 tipos de sinal em 24 bairros, só contagens)",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L20",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Territorio.tsx",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "api.observatorio(municipio.ibge)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/Territorio.tsx#L26",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/observatorio.py",
+          "linha": 226,
+          "linha_fim": null,
+          "trecho": "for v in sorted(visitas, key=lambda v: v.data):",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/observatorio.py#L226",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/observatorio.py",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "return SNAPSHOT",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/observatorio.py#L147",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "A aba consulta /observatorio com o código IBGE escolhido e cruza com a última visita de cada paciente; João Pessoa vem de um arquivo salvo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Na aba **Território**, selecione um município para comparar seus indicadores oficiais do Observatório da Saúde Pública com a última visita de cada paciente.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 156,
+        "linha_fim": null,
+        "trecho": "Na aba **Território**, selecione um município para comparar seus indicadores oficiais do Observatório da Saúde Pública com a última visita de cada paciente.",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L156",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/FichaCaso.tsx",
+          "linha": 177,
+          "linha_fim": null,
+          "trecho": "onConduta={(d) => { setForm((f) => ({ ...f, conduta:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/FichaCaso.tsx#L177",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/FichaCaso.tsx",
+          "linha": 268,
+          "linha_fim": null,
+          "trecho": "{salvando ? 'Salvando...' : 'Registrar decisão'}",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/pages/FichaCaso.tsx#L268",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 462,
+          "linha_fim": null,
+          "trecho": "visita.status = body.status",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/main.py#L462",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "Os botões das sugestões só preenchem conduta e pedidos no formulário; a gravação ocorre no botão \"Registrar decisão\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "nada vira diagnóstico, prescrição ou encaminhamento automático. As sugestões só preenchem o formulário até a equipe clicar em \"Registrar decisão\".",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 45,
+        "linha_fim": null,
+        "trecho": "nada vira diagnóstico, prescrição ou encaminhamento automático. As sugestões só preenchem o formulário até a equipe clicar em \"Registrar decisão\".",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L45",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A tela de login aparece, mas o login por perfil (`acs` ou `ubs`) não pôde ser testado sem credenciais e sem conexão com a API."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/seguranca.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "return _parse_contas(os.getenv(\"USUARIOS\", \"\"))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/seguranca.py#L64",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/storage.py",
+          "linha": 88,
+          "linha_fim": null,
+          "trecho": "raw = fernet.encrypt(raw)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/storage.py#L88",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "USUARIOS define contas com papel acs ou ubs; DB_KEY ativa criptografia Fernet no arquivo do banco. Vazias, não há login nem criptografia.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Configuram, respectivamente, o login por perfil (`acs` ou `ubs`) e a criptografia do banco local.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 166,
+        "linha_fim": null,
+        "trecho": "Configuram, respectivamente, o login por perfil (`acs` ou `ubs`) e a criptografia do banco local.",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L166",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/seguranca.py",
+          "linha": 161,
+          "linha_fim": null,
+          "trecho": "return Path(os.getenv(\"AUDITORIA_PATH\", Path(__file__).parent / \"data\" / \"acessos.local.jsonl\"))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/seguranca.py#L161",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/seguranca.py",
+          "linha": 176,
+          "linha_fim": null,
+          "trecho": "os.chmod(caminho, 0o600)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/seguranca.py#L176",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 239,
+          "linha_fim": null,
+          "trecho": "auditar(usuario, \"ver_fila\")",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/main.py#L239",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".gitignore",
+          "linha": 231,
+          "linha_fim": null,
+          "trecho": "backend/data/*.jsonl",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/.gitignore#L231",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "auditar() grava data, usuário, papel, ação e alvo em acessos.local.jsonl, aplica permissão 600 na criação, e o .gitignore exclui backend/data/*.jsonl.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "login, logout, leitura da fila, das fichas e do histórico, registro e validação ficam em `data/acessos.local.jsonl` (fora do git, permissão 600), sem conteúdo clínico.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "backend/LGPD.md",
+        "linha": 9,
+        "linha_fim": null,
+        "trecho": "login, logout, leitura da fila, das fichas e do histórico, registro e validação ficam em `data/acessos.local.jsonl` (fora do git, permissão 600), sem conteúdo clínico.",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/LGPD.md#L9",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/package.json",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"build\": \"tsc -b && vite build\",",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/package.json#L8",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/package.json",
+          "linha": 9,
+          "linha_fim": null,
+          "trecho": "\"lint\": \"oxlint\",",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/package.json#L9",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/tests/test_territorio.py",
+          "linha": 402,
+          "linha_fim": null,
+          "trecho": "def test_gemini_recebe_texto_anonimizado_mas_registro_guarda_o_nome(client, monkeypatch):",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/tests/test_territorio.py#L402",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": null,
+      "existe": "backend/tests tem 148 funções test_ em 7 arquivos; o package.json roda tsc no build e oxlint no lint.",
+      "falta": "A contagem no código (148) difere dos 146 declarados. Os testes não foram executados nesta leitura.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "pytest (146 testes), `tsc`, oxlint",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 70,
+        "linha_fim": null,
+        "trecho": "pytest (146 testes), `tsc`, oxlint",
+        "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L70",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "build:instalacao",
+      "rotulo": "Instalação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "3 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:compilacao",
+      "rotulo": "Compilação",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "1 s",
+      "evidencias": [],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "build:subida",
+      "rotulo": "Subida local",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "2 s",
+      "evidencias": [],
+      "obs": "porta 4173, comando: npm run preview -- --host 0.0.0.0"
+    },
+    {
+      "tipo": "item",
+      "id": "build:chaves-falsas",
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o teste local roda sem as chaves reais da equipe"
+      },
+      "valor": {
+        "lista": [
+          "VITE_API_URL"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "build:outras-pastas",
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "o build automático executa uma pasta por projeto; a executada foi frontend"
+      },
+      "valor": {
+        "lista": [
+          "backend"
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra a página inicial.",
+      "observado": "Aparece a tela \"Entrar no PortaAporta\", com os campos \"Usuário\" e \"Senha\" e o botão \"Entrar\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Preencha os campos \"Usuário\" e \"Senha\" e clique em \"Entrar\".",
+      "observado": "Com dados fictícios, a tela mostra \"Sem conexão com o servidor\". A requisição POST para http://localhost:9/login falhou com ERR_UNSAFE_PORT.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Não há credenciais de teste na descrição, e a interface não alcançou a API no ambiente testado."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Use \"Registrar visita\" para enviar um relato de teste por texto.",
+      "observado": "O endereço /registrar mostra a tela de login.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Abra o \"Painel UBS\" e localize o caso na fila.",
+      "observado": "O endereço /painel, aberto direto, mostra a tela de login.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Abra a ficha e leia o relatório dos sintomas, os alertas e os próximos passos.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Corrija a ficha, se necessário, e clique em \"Registrar decisão\".",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Peça ao ACS o que conferir na próxima visita.",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Abra a aba \"Território\" e selecione um município para ver os indicadores.",
+      "observado": "O endereço /territorio, aberto direto, mostra a tela de login.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Clicar em \"Entrar\" com \"Usuário\" e \"Senha\" vazios.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela continua no login, com o foco em \"Usuário\", e nenhuma requisição de login aparece na rede. Os dois campos são obrigatórios na validação do navegador."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Texto longo com marcação <script> no campo \"Usuário\" e \"x\" no campo \"Senha\".",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A tela mostra \"Sem conexão com o servidor\" e continua no login. O tratamento do texto pelo servidor não pôde ser testado."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"Sem conexão com o servidor\" e continua no login. O tratamento do texto pelo servidor não pôde ser testado."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Login (usuário e senha) e API do produto",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "A descrição não traz credenciais de teste. No ambiente testado, a interface chama http://localhost:9 (/sessao e /login), as requisições falham com ERR_UNSAFE_PORT e a tela mostra \"Sem conexão com o servidor\"."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "google-genai (Google), em backend/requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/requirements.txt",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "google-genai>=1.0",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/requirements.txt#L6",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Google",
+              "backend/ia.py",
+              115
+            ],
+            [
+              "Google",
+              "backend/ia.py",
+              214
+            ],
+            [
+              "Google",
+              "backend/ia.py",
+              229
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L115",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 214,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L214",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 229,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L229",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 232,
+          "linha_fim": null,
+          "trecho": "resp = _com_retry(lambda: client.models.generate_content(",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L232",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 236,
+          "linha_fim": null,
+          "trecho": "system_instruction=PROMPT_SISTEMA,",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L236",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-2.5-flash",
+      "obs": "Estruturar o relato anonimizado na FichaIA em JSON."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 219,
+          "linha_fim": null,
+          "trecho": "contents=[PROMPT_TRANSCRICAO, types.Part.from_bytes(data=audio_bytes, mime_type=mime)],",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L219",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-2.5-flash",
+      "obs": "Transcrever o áudio quando TRANSCRICAO=gemini."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a faster-whisper (local)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "segmentos, _ = _whisper().transcribe(amostras, language=\"pt\", vad_filter=True)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L196",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "base",
+      "obs": "Transcrever o áudio no servidor (padrão)."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a spaCy (local)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 81,
+          "linha_fim": null,
+          "trecho": "return spacy.load(\"pt_core_news_sm\", disable=[\"parser\", \"lemmatizer\", \"attribute_ruler\", \"morphologizer\"])",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L81",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "for ent in reversed(nlp(texto).ents):",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L91",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "pt_core_news_sm",
+      "obs": "Reconhecer nomes de pessoas para removê-los do texto antes do envio ao Gemini."
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "21/11 11:43",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/alencarplz/hack-ia-brasil",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/alencarplz/hack-ia-brasil",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "github:push-forcado",
+      "rotulo": "Push forçado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Horário",
+            "Branch",
+            "Commit"
+          ],
+          "linhas": [
+            [
+              "28/11 10:42",
+              "devin/1795872283-ia-gemini",
+              "914accf"
+            ],
+            [
+              "28/11 10:42",
+              "devin/1795872178-frontend",
+              "3d17e7c"
+            ],
+            [
+              "28/11 10:30",
+              "devin/1795872283-ia-gemini",
+              "438d514"
+            ],
+            [
+              "28/11 10:28",
+              "devin/1795872283-ia-gemini",
+              "b4ac806"
+            ],
+            [
+              "28/11 10:27",
+              "devin/1795872178-frontend",
+              "00c2328"
+            ],
+            [
+              "28/11 10:26",
+              "devin/1795872283-ia-gemini",
+              "f0fc92d"
+            ],
+            [
+              "28/11 10:26",
+              "devin/1795872178-frontend",
+              "09a68ac"
+            ],
+            [
+              "28/11 10:25",
+              "devin/1795872283-ia-gemini",
+              "bfd132c"
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/alencarplz/hack-ia-brasil",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/alencarplz/hack-ia-brasil",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:antes",
+      "rotulo": "Commits antes do início da janela",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/alencarplz/hack-ia-brasil/commit/8dd48b97701ae6c6d339af51ddf5332de4e94a1d",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/alencarplz/hack-ia-brasil/commit/8dd48b97701ae6c6d339af51ddf5332de4e94a1d",
+          "conferida": "script"
+        }
+      ],
+      "valor": "1 de 233 commits, o mais antigo em 21/11 11:43",
+      "obs": null,
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/alencarplz/hack-ia-brasil/commit/b79554e1dfb9228aaa06a359350096f0bc31c13d",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/alencarplz/hack-ia-brasil/commit/b79554e1dfb9228aaa06a359350096f0bc31c13d",
+          "conferida": "script"
+        }
+      ],
+      "valor": "b79554e, 5841 linhas adicionadas em 30 arquivos, de 18180 no histórico",
+      "obs": "5841 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "iACS (MIT Solve)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://solve.mit.edu/solutions/97332",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://solve.mit.edu/solutions/97332",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "A página descreve um agente conversacional para Agentes Comunitários de Saúde, em desenvolvimento para uso no Brasil: o agente fala ou digita um resumo da visita, a ferramenta preenche os formulários e lembra famílias e pacientes prioritários no roteiro.",
+      "obs": "Em comum: Mesmo público (ACS no Brasil), relato da visita por voz ou texto transformado em registro estruturado e apoio à priorização. Diferente: A página descreve integração com o sistema local de informação em saúde e conversão para padrões de interoperabilidade; não menciona WhatsApp, uso sem internet nem alertas automáticos."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "ASHA Saathi (maasenergy)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/maasenergy/asha-saathi",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/maasenergy/asha-saathi",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Protótipo de apoio à decisão no pré-natal rural na Índia: a agente ASHA relata a visita por voz, o Gemini estrutura os campos, regras determinísticas classificam em verde, amarelo ou vermelho e médicos veem um painel com alertas.",
+      "obs": "Em comum: Relato falado de visita domiciliar, estruturação por Gemini com confirmação humana, prioridade por regras fixas, comparação entre visitas e painel para a equipe de saúde. Diferente: É voltado a gestantes, tem perfis de ASHA, médico e mãe, e o README não descreve uso sem internet nem WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "ASHA-Saathi (Mayank-iitj)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Mayank-iitj/Asha-Saathi",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Mayank-iitj/Asha-Saathi",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "PWA para agentes ASHA da Índia que registra visitas por voz, funciona sem internet, extrai sinais vitais e sintomas (regex local ou Gemini) e encaminha registros de risco a um médico.",
+      "obs": "Em comum: Registro de visita por voz, fila local sincronizada quando há conexão, motor de risco e mapa de calor para supervisores. Diferente: A página descreve escalonamento automático ao médico, metas diárias com níveis Gold/Silver e carteira de saúde ABHA; não menciona WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Ripoti",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/fozagtx/Ripoti",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/fozagtx/Ripoti",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Escriba de voz sem internet para promotores comunitários de saúde: transcreve o relato da visita domiciliar em suaíli ou inglês, preenche o formulário, verifica sinais de perigo e sincroniza com o computador do supervisor pela rede local.",
+      "obs": "Em comum: Relato falado de visita transformado em ficha, sinais de atenção acompanhados do trecho do relato, revisão humana e envio dos registros ao supervisor. Diferente: Os modelos rodam no próprio dispositivo, sem chamadas de IA na nuvem; o README não menciona fila priorizada, tarefas de retorno nem WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "ASHA VoiceCare",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/Maheshbabuch1702/ashavoicecare-bolbharat-hackathon",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/Maheshbabuch1702/ashavoicecare-bolbharat-hackathon",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Agente de voz para agentes ASHA que transforma o ditado da visita domiciliar em registro estruturado, lê de volta para confirmação, emite alertas de sinais de perigo e cria tarefas de acompanhamento.",
+      "obs": "Em comum: Voz para ficha estruturada, regras de alerta independentes do modelo de linguagem com tratamento de negações e tarefas de acompanhamento. Diferente: O README informa que não funciona sem internet e não há integração com a unidade de saúde; não descreve painel de supervisor."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Markdown",
+              33,
+              6115
+            ],
+            [
+              "Python",
+              21,
+              4550
+            ],
+            [
+              "TypeScript",
+              14,
+              2763
+            ],
+            [
+              "CSS",
+              1,
+              658
+            ],
+            [
+              "JSON",
+              7,
+              309
+            ],
+            [
+              "JavaScript",
+              1,
+              45
+            ],
+            [
+              "HTML",
+              1,
+              17
+            ]
+          ]
+        }
+      },
+      "obs": "85 arquivos de texto e 14787 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "App web (React)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "export default function App() {",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/App.tsx#L44",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/App.tsx",
+          "frontend/src/pages/Registrar.tsx",
+          "frontend/src/pages/Painel.tsx",
+          "frontend/src/pages/FichaCaso.tsx",
+          "frontend/src/pages/MapaCalor.tsx"
+        ]
+      },
+      "obs": "Telas de painel da UBS, registro do ACS, ficha do caso, território, mapa de calor e WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Fila offline e service worker",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/filaOffline.ts",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "const r = indexedDB.open(BANCO, 1)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/filaOffline.ts#L33",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/public/sw.js",
+          "linha": 25,
+          "linha_fim": null,
+          "trecho": "self.addEventListener('fetch', (e) => {",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/public/sw.js#L25",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/filaOffline.ts",
+          "frontend/public/sw.js"
+        ]
+      },
+      "obs": "Guarda visitas no IndexedDB, reenvia quando há conexão e mantém os arquivos do app em cache."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "API FastAPI e persistência",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/main.py",
+          "linha": 72,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Copiloto de Visita Domiciliar ACS\")",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/main.py#L72",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/main.py",
+          "backend/storage.py",
+          "backend/seguranca.py",
+          "backend/schemas.py"
+        ]
+      },
+      "obs": "Rotas de visitas, fila, validação e tarefas, com login, auditoria e banco em arquivo JSON."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Módulo de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 457,
+          "linha_fim": null,
+          "trecho": "def estruturar_relato(",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L457",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/ia.py"
+        ]
+      },
+      "obs": "Transcreve, anonimiza e estrutura o relato com Gemini ou regras locais."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Regras de sinais, comparação e próximos passos",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/sinais.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "REGRAS: list[dict] = [",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/sinais.py#L6",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/decisoes.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "def sugerir_decisoes(visita: VisitaRegistro, paciente: Paciente | None) -> list[DecisaoSugerida]:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/decisoes.py#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/sinais.py",
+          "backend/comparacao.py",
+          "backend/decisoes.py"
+        ]
+      },
+      "obs": "Gera alertas e prioridade, compara com a visita anterior e sugere ações à UBS por regras fixas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Canal WhatsApp",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/whatsapp.py",
+          "linha": 372,
+          "linha_fim": null,
+          "trecho": "async def receber_webhook(request: Request, tarefas: BackgroundTasks):",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/whatsapp.py#L372",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/registro.py",
+          "linha": 22,
+          "linha_fim": null,
+          "trecho": "def registrar_visita(",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/registro.py#L22",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/whatsapp.py",
+          "backend/registro.py"
+        ]
+      },
+      "obs": "Recebe o webhook da Meta, identifica o paciente, grava a visita e responde ao ACS."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Território e Observatório",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/territorio.py",
+          "linha": 203,
+          "linha_fim": null,
+          "trecho": "def mapa_calor(pacientes: list[Paciente], visitas: list[VisitaRegistro]) -> dict:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/territorio.py#L203",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/observatorio.py",
+          "linha": 145,
+          "linha_fim": null,
+          "trecho": "def dados_municipio(ibge: str | None = None) -> dict:",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/observatorio.py#L145",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/territorio.py",
+          "backend/observatorio.py"
+        ]
+      },
+      "obs": "Calcula radar, busca ativa e mapa de calor e liga os registros a indicadores municipais."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "| Offline | Fila no `localStorage` com chave de idempotência | Visitas sem sinal |",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L69",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/filaOffline.ts",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "const r = indexedDB.open(BANCO, 1)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/frontend/src/filaOffline.ts#L33",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README: a fila offline fica no `localStorage`.",
+              "As visitas pendentes ficam no IndexedDB; o localStorage guarda o cache de pacientes e a lista de visitas recebidas. backend/LGPD.md descreve IndexedDB."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 76,
+          "linha_fim": null,
+          "trecho": "ACS (app / WhatsApp) ──► FastAPI ──► anonimização ──► Whisper/Gemini ──► FichaIA",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L76",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 465,
+          "linha_fim": null,
+          "trecho": "transcrever(audio_bytes, mime or \"audio/webm\") if audio_bytes is not None else (\"\", None, None)",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L465",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/ia.py",
+          "linha": 485,
+          "linha_fim": null,
+          "trecho": "estruturar_texto(anonimizar(transcricao, nomes))",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/ia.py#L485",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "Diagrama do README: anonimização antes de Whisper/Gemini.",
+              "O áudio é transcrito primeiro (Whisper ou Gemini) e a anonimização é aplicada ao texto antes da estruturação."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-3",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 67,
+          "linha_fim": null,
+          "trecho": "| Dados públicos | API do Observatório da Saúde Pública e API de localidades do IBGE | Indicadores do município ligados ao caso |",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L67",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/observatorio.py",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "João Pessoa/PB vem de um retrato salvo; outros municípios são consultados no Observatório e ficam em memória.",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/observatorio.py#L3",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/observatorio.py",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "return SNAPSHOT",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/backend/observatorio.py#L147",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README: indicadores do município pela API do Observatório da Saúde Pública.",
+              "Para João Pessoa, o município padrão, o código devolve o arquivo salvo backend/data/observatorio.json; a API é consultada para outros municípios."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# PortaAporta — Copiloto de Visita Domiciliar do ACS",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 198 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 65,
+          "linha_fim": null,
+          "trecho": "| Sinais e prioridade | Regras determinísticas em Python (`sinais.py`, `comparacao.py`, `decisoes.py`) | Alertas explicáveis, comparação e próximos passos |",
+          "link": "https://github.com/alencarplz/hack-ia-brasil/blob/19871ae3f3f817328fad9e078a31b66b1655a65f/README.md#L65",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Configuram, respectivamente, o login por perfil (`acs` ou `ubs`) e a criptografia do banco local.",
+      "motivo": "A tela de login aparece, mas o login por perfil (`acs` ou `ubs`) não pôde ser testado sem credenciais e sem conexão com a API.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Variáveis preenchidas com valor falso",
+      "motivo": "o teste local roda sem as chaves reais da equipe",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Pastas com manifesto que não foram executadas",
+      "motivo": "o build automático executa uma pasta por projeto; a executada foi frontend",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Preencha os campos \"Usuário\" e \"Senha\" e clique em \"Entrar\".",
+      "motivo": "Não há credenciais de teste na descrição, e a interface não alcançou a API no ambiente testado.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Use \"Registrar visita\" para enviar um relato de teste por texto.",
+      "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Abra o \"Painel UBS\" e localize o caso na fila.",
+      "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Abra a ficha e leia o relatório dos sintomas, os alertas e os próximos passos.",
+      "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Corrija a ficha, se necessário, e clique em \"Registrar decisão\".",
+      "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Peça ao ACS o que conferir na próxima visita.",
+      "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Abra a aba \"Território\" e selecione um município para ver os indicadores.",
+      "motivo": "Depende de login: sem credenciais de teste e sem conexão com a API.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Entrada inesperada: Texto longo com marcação <script> no campo \"Usuário\" e \"x\" no campo \"Senha\".",
+      "motivo": "A tela mostra \"Sem conexão com o servidor\" e continua no login. O tratamento do texto pelo servidor não pôde ser testado.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Login (usuário e senha) e API do produto",
+      "motivo": "A descrição não traz credenciais de teste. No ambiente testado, a interface chama http://localhost:9 (/sessao e /login), as requisições falham com ERR_UNSAFE_PORT e a tela mostra \"Sem conexão com o servidor\".",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}

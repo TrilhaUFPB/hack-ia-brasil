@@ -1,0 +1,2698 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "epidemia",
+    "nome": "epidemIA",
+    "numero": 8,
+    "track": "Saúde",
+    "repo": "https://github.com/epidemologIA/projeto",
+    "demo": "https://epidemia-hackathon.vercel.app/",
+    "video": "https://drive.google.com/file/d/1dfqSNWCiX4PQg0myAfY_JFVa2hW89XP2/view?usp=sharing",
+    "resumo": "epidemIA prevê casos de arboviroses nas próximas semanas para a vigilância e as farmácias agirem antes do pico."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.487Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "22e724202922c4afe321905b5d91ec168036a588",
+    "commit_em": "2026-11-28T18:48:04Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11622,
+          "preparo_ms": 0,
+          "execucao_ms": 1669
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4,
+          "preparo_ms": 0,
+          "execucao_ms": 2543
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4128,
+          "preparo_ms": 0,
+          "execucao_ms": 15082
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11636,
+          "preparo_ms": 0,
+          "execucao_ms": 1639
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4333,
+          "preparo_ms": 0,
+          "execucao_ms": 2001
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 125
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 3030,
+          "preparo_ms": 0,
+          "execucao_ms": 1255
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 27
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11670,
+          "preparo_ms": 0,
+          "execucao_ms": 1618
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 11891,
+          "preparo_ms": 0,
+          "execucao_ms": 1480
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "falhou",
+      "erro": "Erro inesperado."
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra https://epidemia-hackathon.vercel.app/",
+      "esperado": "A página inicial mostra os cartões Dengue, Chikungunya e Zika e os links Mapa, Farmácias, Rede neural, Sobre e Receber alertas.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em Mapa",
+      "esperado": "Abriu /mapa?uf=PB com o painel da Paraíba, situação em SE 42/2026 e contagem de municípios por nível (Surto 1, Alerta 8, Atenção 13, Estável 53, Baixo 148).",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-3",
+      "n": 3,
+      "acao": "Clique na aba Ranking",
+      "esperado": "O painel passou a listar os municípios da Paraíba numerados, cada um com seu nível.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-4",
+      "n": 4,
+      "acao": "Clique no botão Previsão · SE 43",
+      "esperado": "O mapa e o ranking passaram para \"Previsão do modelo\" da SE 43/2026, com \"dados até SE 42/2026\". Municípios com asterisco são marcados como estimados pela vizinhança.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Clique em Campina Grande na lista do Ranking",
+      "esperado": "O título do painel passou a ser Campina Grande.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique na aba Visão geral",
+      "esperado": "Com Campina Grande selecionada, aparece \"Previsão para SE 43/2026\", nível Atenção e o texto \"Casos subindo em direção ao limiar de surto.\"",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique na aba Série",
+      "esperado": "Gráfico de casos por 100 mil habitantes por semana, com Observado, Previsto, Faixa provável e linha de limiar de surto.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Reabra o mapa da PB, clique em Previsão · SE 43, na aba Ranking, em João Pessoa e na aba Série",
+      "esperado": "O gráfico de João Pessoa difere do de Campina Grande: curvas próprias e eixo com marcas 23 e 45, contra 5 e 10 em Campina Grande.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Clique em Farmácias",
+      "esperado": "Aparecem as abas Cadastrar farmácia e Consultar cadastro e um texto sobre o envio de relatório em PDF por e-mail quando houver sinais de surto na região.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 243,
+          "linha_fim": null,
+          "trecho": "previsao.append(dict(semana=s, horizonte=h, incidencia=_f(cas[h][\"y\"] / pop * 1e5),",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L243",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 123,
+          "linha_fim": null,
+          "trecho": "out = dict(mun=mun6, p=float(self.clf.predict_proba(x)[0, 1]),",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L123",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 78,
+          "linha_fim": null,
+          "trecho": "self.ultima_semana = int(epiweek(week_start(last) - timedelta(weeks=1)))",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L78",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A inferência soma dengue, chikungunya e zika (cases_total), prevê h1 a h4 por município e devolve uma única prob_surto, do classificador de t+2. A semana base é a anterior à última com dado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "estima por município a incidência de arboviroses somadas (dengue, chikungunya e zika) nas 4 semanas seguintes à última semana com dados, e a chance de surto.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "estima por município a incidência de arboviroses somadas (dengue, chikungunya e zika) nas 4 semanas seguintes à última semana com dados, e a chance de surto.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/etl_cases.py",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "ETL de casos SINAN (dengue, chikungunya, zika)",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/etl_cases.py#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/models/manifest.json",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "\"precip_mm\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/models/manifest.json#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/02_final_training.ipynb",
+          "linha": 346,
+          "linha_fim": null,
+          "trecho": "XGB = xgb.XGBClassifier if clf else xgb.XGBRegressor",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/02_final_training.ipynb#L346",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "O ETL de casos lê SINAN, as features do modelo incluem casos e variáveis de clima, e o notebook treina XGBoost sobre o painel.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Um modelo de aprendizado de máquina, treinado com casos notificados (SINAN) e clima",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Um modelo de aprendizado de máquina, treinado com casos notificados (SINAN) e clima",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "r = xgb.XGBRegressor()",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L40",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "self.clf.load_model(ml_dir / \"models\" / m[\"files\"][\"clf\"])",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L44",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "A API carrega regressores XGBoost por horizonte e um classificador XGBoost a partir de ml-train/models.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um modelo XGBoost treinado com casos",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "um modelo XGBoost treinado com casos",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/artifacts_final/summary.md",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "| 1 | 0.806 | 0.177 | 0.964 | 10.5% | 0.348 | +0.151 | 80% | 1169/1351 |",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/artifacts_final/summary.md#L102",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/artifacts_final/summary.md",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "| 4 | 0.707 | 0.264 | 0.934 | 10.5% | 0.443 | +0.110 | 80% | 651/874 |",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/artifacts_final/summary.md#L105",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/02_final_training.ipynb",
+          "linha": 781,
+          "linha_fim": null,
+          "trecho": "skill=1 - mae / mean_absolute_error(yh[m_te], PERSIST[m_te]),",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/02_final_training.ipynb#L781",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "O resumo do treino registra skill de +0,151 (h1) a +0,110 (h4) contra persistência, em MAE de log1p da incidência, no teste dos 560 municípios da amostra, seed 0.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Nos testes, o modelo reduz em 11% a 15% o erro de incidência em relação a repetir a semana atual",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Nos testes, o modelo reduz em 11% a 15% o erro de incidência em relação a repetir a semana atual",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/artifacts_final/summary.md",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "| 1 | 0.806 | 0.177 | 0.964 | 10.5% | 0.348 | +0.151 | 80% | 1169/1351 |",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/artifacts_final/summary.md#L102",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/artifacts_final/summary.md",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "| 4 | 0.707 | 0.264 | 0.934 | 10.5% | 0.443 | +0.110 | 80% | 651/874 |",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/artifacts_final/summary.md#L105",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/02_final_training.ipynb",
+          "linha": 756,
+          "linha_fim": null,
+          "trecho": "m_tr, m_va, m_te = m_tr0 & ok, m_va0 & ok, TEST & IN_SAMPLE & ok",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/02_final_training.ipynb#L756",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "PR-AUC de 0,806 a 0,707 (h1 a h4) com taxa-base de 10,5%, no teste dos 560 municípios da amostra, seed 0. A API usa para a prob_surto só o classificador de h2.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "detecta surtos com PR-AUC de 0,71 a 0,81 (o acaso daria 0,10)",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "detecta surtos com PR-AUC de 0,71 a 0,81 (o acaso daria 0,10)",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Mapa.tsx",
+          "linha": 309,
+          "linha_fim": null,
+          "trecho": "<MapContainer",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/pages/Mapa.tsx#L309",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Mapa.tsx",
+          "linha": 840,
+          "linha_fim": null,
+          "trecho": ".sort((a, b) => b.n!.ordem - a.n!.ordem || a.nome.localeCompare(b.nome))",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/pages/Mapa.tsx#L840",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/mapa.py",
+          "linha": 155,
+          "linha_fim": null,
+          "trecho": "casos[mun6] = float(np.expm1(r[1][\"y\"]))  # horizonte 1 = próxima semana",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/mapa.py#L155",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "A página do mapa usa react-leaflet e tem aba de ranking, ordenado pelo nível de risco e depois por nome. Na semana prevista, o nível vem da incidência de h1 sobre o limiar do município.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O dashboard mostra mapa e ranking de risco",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "O dashboard mostra mapa e ranking de risco",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 522,
+          "linha_fim": null,
+          "trecho": "const FLUXOS = {",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L522",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 571,
+          "linha_fim": null,
+          "trecho": "INSERT INTO farmacias (cnpj, nome, email, cidade, estado, macro_regiao, numero)",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L571",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "O workflow tem fluxos de cadastro de pessoa e de farmácia e grava no Postgres do chatbot, separado do banco da API.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "um chatbot de WhatsApp cadastra pessoas e farmácias",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "um chatbot de WhatsApp cadastra pessoas e farmácias",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 1458,
+          "linha_fim": null,
+          "trecho": "\"url\": \"={{ $json.url_previsao }}\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L1458",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 1485,
+          "linha_fim": null,
+          "trecho": "\"name\": \"Resposta Previsão\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L1485",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "O workflow extrai o local com Gemini, busca a previsão na API e redige a resposta com Gemini.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "responde a previsão do local",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "responde a previsão do local",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 1114,
+          "linha_fim": null,
+          "trecho": "\"url\": \"https://nominatim.openstreetmap.org/search\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L1114",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 1185,
+          "linha_fim": null,
+          "trecho": "\"name\": \"Resposta Atendimento\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L1185",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "O workflow busca hospitais no Nominatim (OpenStreetMap) em torno da cidade do cadastro e redige a resposta com Gemini.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "indica onde buscar atendimento",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "indica onde buscar atendimento",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/relatorios.py",
+          "linha": 52,
+          "linha_fim": null,
+          "trecho": "dados = montar_relatorio(farmacia, prever(\"mun\", mun6, args[\"semana\"]))",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/api/relatorios.py#L52",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/relatorios/montagem.py",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "if variacao >= RECOMENDACAO_ALTA:",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/relatorios/montagem.py#L84",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/relatorios/montagem.py",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "\"Paracetamol 500/750 mg\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/relatorios/montagem.py#L28",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "A rota usa a previsão do município da farmácia. A prioridade vem da variação do pico previsto sobre a média histórica, igual para os quatro produtos listados (inclui repelentes).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Para a farmácia, gera um relatório em PDF, a partir da previsão do município dela, com prioridade de estoque de paracetamol, dipirona e soro de reidratação segundo a variação prevista de casos.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 5,
+        "linha_fim": null,
+        "trecho": "Para a farmácia, gera um relatório em PDF, a partir da previsão do município dela, com prioridade de estoque de paracetamol, dipirona e soro de reidratação segundo a variação prevista de casos.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/artifacts_final/summary.md",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "2409 municípios · 1230999 janelas",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/artifacts_final/summary.md#L3",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/previsoes.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "ns.abort(404, f\"Sem modelo para {'o município' if nivel == 'mun' else 'a UF'} {codigo}.\")",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/api/previsoes.py#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "O resumo do treino registra 2409 municípios no painel; a API responde 404 para município fora do modelo.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "para os 2.409 municípios com",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 88,
+        "linha_fim": null,
+        "trecho": "para os 2.409 municípios com",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L88",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/previsoes.py",
+          "linha": 43,
+          "linha_fim": null,
+          "trecho": "_preditores[ml_dir] = importlib.import_module(\"inference\").carregar(ml_dir)",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/previsoes.py#L43",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docker-compose.yml",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "image: postgres:17-alpine",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/docker-compose.yml#L3",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/relatorios.py",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "pdf = compilar_pdf(renderizar_tex(dados))",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/api/relatorios.py#L27",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "A API Flask usa Postgres no compose, carrega o inference.py de ML_DIR e tem rota de relatório com saída em PDF.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "API Flask + PostgreSQL: cadastros, **previsões** (usa o modelo do `ml-train/`) e **relatório PDF** das farmácias",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "API Flask + PostgreSQL: cadastros, **previsões** (usa o modelo do `ml-train/`) e **relatório PDF** das farmácias",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L10",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 18,
+          "linha_fim": null,
+          "trecho": "<Route path=\"/whatsapp/:modo\" element={<WhatsApp />} />",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/App.tsx#L18",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/WhatsApp.tsx",
+          "linha": 136,
+          "linha_fim": null,
+          "trecho": "onEnviar={async (u) => setFeito(await api.usuarios.criar(u))}",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/pages/WhatsApp.tsx#L136",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/package.json",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "\"react-leaflet\": \"^5.0.0\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/package.json#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "O cadastro do site grava o usuário pela API.",
+      "existe": "Site com React, Vite, Tailwind e Leaflet, com mapa, página de farmácias e formulário de cadastro para alertas por WhatsApp.",
+      "falta": "Não foi encontrado código que envie alertas por WhatsApp; os gatilhos dos workflows são um webhook de mensagem recebida e um formulário.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Site React + Vite + Tailwind + Leaflet (mapa, farmácias, alertas pelo WhatsApp)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "Site React + Vite + Tailwind + Leaflet (mapa, farmácias, alertas pelo WhatsApp)",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L11",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/docker-compose.yml",
+          "linha": 94,
+          "linha_fim": null,
+          "trecho": "image: evoapicloud/evolution-api:${EVOLUTION_VERSION:-v2.3.7}",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/docker-compose.yml#L94",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/docker-compose.yml",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "epidemologia-db:",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/docker-compose.yml#L69",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/Enviar-Email.json",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "\"type\": \"n8n-nodes-base.emailSend\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/Enviar-Email.json#L196",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "O compose define n8n, Evolution API e o banco do bot; há os workflows do chatbot e de envio do relatório por e-mail.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Chatbot de WhatsApp** (n8n + Evolution API + workflows + banco do bot): cadastro, previsão por mensagem e relatório por e-mail",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 13,
+        "linha_fim": null,
+        "trecho": "**Chatbot de WhatsApp** (n8n + Evolution API + workflows + banco do bot): cadastro, previsão por mensagem e relatório por e-mail",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L13",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 688,
+          "linha_fim": null,
+          "trecho": "\"type\": \"@typesafe-ai/n8n-nodes-typesafe-ai.typeSafeAi\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L688",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 799,
+          "linha_fim": null,
+          "trecho": "\"leftValue\": \"={{ $json.answers?.intencao?.choice }}\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L799",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "O node TypeSafe usa o modelo jev-latest e o roteador lê answers.intencao.choice.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "**Classificar Intenção** (node TypeSafe, devolve o rótulo em `answers.intencao.choice`",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "chatbot/README.md",
+        "linha": 109,
+        "linha_fim": null,
+        "trecho": "**Classificar Intenção** (node TypeSafe, devolve o rótulo em `answers.intencao.choice`",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/README.md#L109",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 260,
+          "linha_fim": null,
+          "trecho": "\"operation\": \"transcribe\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L260",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 285,
+          "linha_fim": null,
+          "trecho": "\"value\": \"={{ $json.Mensagem ?? $json.text }}\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L285",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "O áudio passa pelo node OpenAI de transcrição, e o node Texto-Final recebe a mensagem digitada ou o texto transcrito.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Texto digitado ou áudio transcrito (node **Texto-Final**)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "chatbot/README.md",
+        "linha": 109,
+        "linha_fim": null,
+        "trecho": "Texto digitado ou áudio transcrito (node **Texto-Final**)",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/README.md#L109",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "O cadastro da farmácia pelo site mostrou \"Erro inesperado.\" (POST /api/farmacias respondeu 405), e nenhum relatório de exemplo foi apresentado."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/farmacias.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "enviar_em_segundo_plano(current_app._get_current_object(), farmacia)",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/api/farmacias.py#L55",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/envio.py",
+          "linha": 77,
+          "linha_fim": null,
+          "trecho": "pdf = compilar_pdf(renderizar_tex(dados_exemplo(farmacia)))",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/envio.py#L77",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "O cadastro pela API envia em segundo plano o PDF de exemplo (por padrão para o Mailpit). O cadastro pelo chatbot grava direto no banco do bot, sem passar por essa rota.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Ao cadastrar uma farmácia, ela \"recebe\" o relatório de exemplo em PDF.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 35,
+        "linha_fim": null,
+        "trecho": "Ao cadastrar uma farmácia, ela \"recebe\" o relatório de exemplo em PDF.",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L35",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "O envio do formulário de farmácia retornou \"Erro inesperado.\""
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/Enviar-Email.json",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"type\": \"n8n-nodes-base.formTrigger\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/Enviar-Email.json#L8",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/Enviar-Email.json",
+          "linha": 127,
+          "linha_fim": null,
+          "trecho": "/api/relatorios/pdf",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/Enviar-Email.json#L127",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/Enviar-Email.json",
+          "linha": 196,
+          "linha_fim": null,
+          "trecho": "\"type\": \"n8n-nodes-base.emailSend\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/Enviar-Email.json#L196",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "O workflow Enviar-Email tem formulário com CNPJ e destinatário, busca o relatório na API, gera o PDF e envia por SMTP.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "formulário que manda por e-mail o relatório PDF de uma farmácia",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "chatbot/README.md",
+        "linha": 24,
+        "linha_fim": null,
+        "trecho": "formulário que manda por e-mail o relatório PDF de uma farmácia",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/README.md#L24",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/models/manifest.json",
+          "linha": 82,
+          "linha_fim": null,
+          "trecho": "\"coverage_test\": 0.8042444364680545",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/models/manifest.json#L82",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/models/manifest.json",
+          "linha": 103,
+          "linha_fim": null,
+          "trecho": "\"coverage_test\": 0.800462291515591",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/models/manifest.json#L103",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/artifacts_final/summary.md",
+          "linha": 158,
+          "linha_fim": null,
+          "trecho": "cobertura no teste: h1 80%, h2 80%, h3 80%, h4 80%.",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/artifacts_final/summary.md#L158",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "Os quantis q10 e q90 vêm dos resíduos na validação; o manifest registra cobertura no teste de cerca de 0,80 em h1 a h4.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "intervalo de 10% a 90% cobrindo ~80%",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "chatbot/README.md",
+        "linha": 115,
+        "linha_fim": null,
+        "trecho": "intervalo de 10% a 90% cobrindo ~80%",
+        "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/README.md#L115",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    }
+  ],
+  "nao_declarado": [
+    {
+      "tipo": "item",
+      "id": "leitor:nao_declarado-1",
+      "rotulo": "ipwho.is (geolocalização do visitante pelo IP)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/lib/localizacao.ts",
+          "linha": 4,
+          "linha_fim": null,
+          "trecho": "const SERVICO = 'https://ipwho.is/?fields=success,country_code,region_code'",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/lib/localizacao.ts#L4",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Mapa.tsx",
+          "linha": 184,
+          "linha_fim": null,
+          "trecho": "ufDoVisitante().then((sigla) => {",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/pages/Mapa.tsx#L184",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "servico"
+    }
+  ],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://epidemia-hackathon.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://epidemia-hackathon.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 312 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra https://epidemia-hackathon.vercel.app/",
+      "observado": "A página inicial mostra os cartões Dengue, Chikungunya e Zika e os links Mapa, Farmácias, Rede neural, Sobre e Receber alertas.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em Mapa",
+      "observado": "Abriu /mapa?uf=PB com o painel da Paraíba, situação em SE 42/2026 e contagem de municípios por nível (Surto 1, Alerta 8, Atenção 13, Estável 53, Baixo 148).",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Clique na aba Ranking",
+      "observado": "O painel passou a listar os municípios da Paraíba numerados, cada um com seu nível.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique no botão Previsão · SE 43",
+      "observado": "O mapa e o ranking passaram para \"Previsão do modelo\" da SE 43/2026, com \"dados até SE 42/2026\". Municípios com asterisco são marcados como estimados pela vizinhança.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-04.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-04.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Clique em Campina Grande na lista do Ranking",
+      "observado": "O título do painel passou a ser Campina Grande.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique na aba Visão geral",
+      "observado": "Com Campina Grande selecionada, aparece \"Previsão para SE 43/2026\", nível Atenção e o texto \"Casos subindo em direção ao limiar de surto.\"",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique na aba Série",
+      "observado": "Gráfico de casos por 100 mil habitantes por semana, com Observado, Previsto, Faixa provável e linha de limiar de surto.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Reabra o mapa da PB, clique em Previsão · SE 43, na aba Ranking, em João Pessoa e na aba Série",
+      "observado": "O gráfico de João Pessoa difere do de Campina Grande: curvas próprias e eixo com marcas 23 e 45, contra 5 e 10 em Campina Grande.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-11.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-11.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Clique em Farmácias",
+      "observado": "Aparecem as abas Cadastrar farmácia e Consultar cadastro e um texto sobre o envio de relatório em PDF por e-mail quando houver sinais de surto na região.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Preencha CNPJ 11.222.333/0001-81, Nome da farmácia, E-mail para relatórios jurado.teste@example.com, Estado PB, Cidade Campina Grande e clique em Cadastrar farmácia",
+      "observado": "O formulário mostrou \"Erro inesperado.\" e a requisição POST /api/farmacias respondeu 405.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Erro inesperado."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-11",
+      "n": 11,
+      "acao": "Clique na aba Consultar cadastro, digite 11.222.333/0001-81 em CNPJ da farmácia e pressione Enter",
+      "observado": "A página ficou em branco; o console registrou \"TypeError: Cannot read properties of undefined (reading 'replace')\".",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Tela em branco após a consulta."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-12",
+      "n": 12,
+      "acao": "Envie uma mensagem de WhatsApp para o número do link Receber alertas (wa.me/5512991123125)",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige telefone real com WhatsApp."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-13",
+      "n": 13,
+      "acao": "Responda às perguntas de cadastro como pessoa ou farmácia no WhatsApp",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige telefone real com WhatsApp."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-14",
+      "n": 14,
+      "acao": "Pergunte no WhatsApp: vai aumentar a dengue na minha cidade?",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige telefone real com WhatsApp."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-15",
+      "n": 15,
+      "acao": "Pergunte no WhatsApp onde buscar atendimento",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige telefone real com WhatsApp."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-16",
+      "n": 16,
+      "acao": "Gere e leia o relatório PDF da farmácia",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O cadastro pelo site retornou erro e nenhum PDF apareceu na interface; o texto da página descreve envio por e-mail, que exige caixa de e-mail real."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Clicar em Cadastrar farmácia com todos os campos vazios",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A validação do navegador marcou os campos obrigatórios (\"Please fill out this field.\") e o formulário permaneceu na tela."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: CNPJ \"abc\" e Nome da farmácia com 3.000 caracteres, demais campos preenchidos",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "O campo CNPJ não aceitou as letras e ficou vazio, o campo de nome aceitou os 3.000 caracteres e nenhum alerta de erro apareceu após o clique."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Clicar em Consultar com o campo CNPJ da farmácia vazio",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A validação do navegador indicou o campo obrigatório (\"Please fill out this field.\") e a página permaneceu na aba de consulta."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Chatbot de WhatsApp (cadastro, previsão do local e indicação de atendimento)",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige telefone real com WhatsApp para enviar mensagens ao número do link Receber alertas."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Google",
+              "chatbot/init.sh",
+              24
+            ],
+            [
+              "OpenAI",
+              "chatbot/init.sh",
+              27
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/init.sh",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "    host: \"https://generativelanguage.googleapis.com\", apiKey: e.GEMINI_API_KEY }),",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/init.sh#L24",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/init.sh",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "    apiKey: e.OPENAI_API_KEY || \"\", url: \"https://api.openai.com/v1\" }),",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/init.sh#L27",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a XGBoost (modelo local treinado no repositório)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 126,
+          "linha_fim": null,
+          "trecho": "y = float(r.predict(x)[0]) + persist",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L126",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 123,
+          "linha_fim": null,
+          "trecho": "out = dict(mun=mun6, p=float(self.clf.predict_proba(x)[0, 1]),",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L123",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "xgb_reg_h1 a h4 e xgb_clf_h2",
+      "obs": "Prever a incidência de arboviroses e a probabilidade de surto na API."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a TypeSafe AI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 702,
+          "linha_fim": null,
+          "trecho": "\"value\": \"jev-latest\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L702",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "jev-latest",
+      "obs": "Classificar a intenção da mensagem de WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 1302,
+          "linha_fim": null,
+          "trecho": "\"value\": \"models/gemini-3.5-flash-lite\"",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L1302",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Extrair da mensagem o local e a data da previsão pedida."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 1498,
+          "linha_fim": null,
+          "trecho": "\"value\": \"models/gemini-3.5-flash-lite\"",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L1498",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Redigir a resposta com a previsão."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 1198,
+          "linha_fim": null,
+          "trecho": "\"value\": \"models/gemini-3-flash-preview\"",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L1198",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3-flash-preview",
+      "obs": "Redigir a orientação de atendimento com os hospitais encontrados."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-6",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 859,
+          "linha_fim": null,
+          "trecho": "\"value\": \"models/gemini-3-flash-preview\"",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L859",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3-flash-preview",
+      "obs": "Atendimento direto: saudação, dúvidas sobre a plataforma e assuntos fora do escopo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-7",
+      "rotulo": "Chamada a OpenAI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 248,
+          "linha_fim": null,
+          "trecho": "\"type\": \"@n8n/n8n-nodes-langchain.openAi\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L248",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "Transcrever mensagens de áudio."
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 09:26",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/epidemologIA/projeto",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/epidemologIA/projeto",
+          "conferida": "script"
+        }
+      ],
+      "sinal": false
+    },
+    {
+      "tipo": "item",
+      "id": "github:push-forcado",
+      "rotulo": "Push forçado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Horário",
+            "Branch",
+            "Commit"
+          ],
+          "linhas": [
+            [
+              "28/11 10:09",
+              "backend",
+              "bbb2348"
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/epidemologIA/projeto",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/epidemologIA/projeto",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/epidemologIA/projeto/commit/cd5726f11e6831b1574a4fc2173f87353ef84eab",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/epidemologIA/projeto/commit/cd5726f11e6831b1574a4fc2173f87353ef84eab",
+          "conferida": "script"
+        }
+      ],
+      "valor": "cd5726f, 14815 linhas adicionadas em 276 arquivos, de 37215 no histórico",
+      "obs": "12903 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:marca-readme-padra-o-do-modelo-do-vite",
+      "rotulo": "Marca de projeto gerado ou modelo pronto: README padrão do modelo do Vite",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "frontend/README.md, linha 1",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# React + TypeScript + Vite",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/README.md#L1",
+          "conferida": "script"
+        }
+      ]
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "DIRE (Disease Incidence and Resource Estimator)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://philab.esa.int/?p=8334",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://philab.esa.int/?p=8334",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Plataforma que prevê dengue e malária no Brasil (por município) e no Peru, do mês corrente até dois meses à frente, estima quantidade e custo de insumos e pessoal e gera relatório em PDF para autoridades locais.",
+      "obs": "Em comum: Previsão de dengue por município no Brasil exibida em mapa, com estimativa de recursos a partir da previsão e relatório em PDF. Diferente: Segundo a página, o público são governos e autoridades de saúde e o horizonte é mensal; a página não cita farmácias nem chatbot de WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Prodigia (repositório Projeto_Clima_X_Dengue)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/ruigabriel1/Projeto_Clima_X_Dengue",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/ruigabriel1/Projeto_Clima_X_Dengue",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Aplicativo web e API que estimam, para 1.190 municípios do Sul do Brasil, o nível de risco, a probabilidade de incidência acima do usual e os casos projetados de dengue e chikungunya de 1 a 3 meses à frente.",
+      "obs": "Em comum: Usa dados públicos para prever casos de arboviroses por município, com ranking de risco e API. Diferente: Cobre a Região Sul, com horizonte em meses e sem previsão para zika; o repositório não descreve relatório para farmácias nem WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "SIPSA (Sistema Inteligente de Previsão de Surtos de Arboviroses)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/isabgmb/prediction_system_arbovirus_outbrake",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/isabgmb/prediction_system_arbovirus_outbrake",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Backend com rede LSTM e API que prevê casos semanais de dengue em Natal (RN) de 1 a 4 semanas à frente, com nível de risco e painel por bairro.",
+      "obs": "Em comum: Previsão de casos para as próximas quatro semanas, com nível de risco e dashboard. Diferente: Abrange uma cidade, com dados de 2016 a 2019 e sem fonte de dados ao vivo; a página não cita farmácias nem WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "InfoDengue",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://info.dengue.mat.br/informacoes/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://info.dengue.mat.br/informacoes/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Sistema de alerta precoce da Fiocruz e da FGV que publica semanalmente o nível de alerta de arboviroses (dengue, chikungunya e zika) em todos os municípios do Brasil, com dados do SINAN e de clima.",
+      "obs": "Em comum: Mesmas doenças, mesmas fontes de dados (SINAN e clima), recorte municipal e uso pela vigilância em saúde. Diferente: O método central descrito é o nowcasting (correção do atraso de notificação), e as previsões de longo prazo citadas são por estado; a página não cita farmácias nem WhatsApp."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "Dengue.IA (Cali, Colômbia)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.rockefellerfoundation.org/news/using-artificial-intelligence-cali-takes-action-against-dengue/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.rockefellerfoundation.org/news/using-artificial-intelligence-cali-takes-action-against-dengue/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Ferramenta da prefeitura de Cali que usa dados de clima para prever com semanas de antecedência possíveis surtos de dengue em áreas da cidade e recomenda ações.",
+      "obs": "Em comum: Modelo preditivo para a vigilância em saúde agir antes do surto de dengue. Diferente: É voltada a uma cidade e à dengue, com recomendações de intervenção e controle de vetor; a página não cita farmácias nem WhatsApp."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "JSON",
+              291,
+              5741
+            ],
+            [
+              "Python",
+              42,
+              4477
+            ],
+            [
+              "TypeScript",
+              20,
+              3025
+            ],
+            [
+              "Jupyter",
+              5,
+              2714
+            ],
+            [
+              "Markdown",
+              10,
+              1076
+            ],
+            [
+              "YAML",
+              2,
+              243
+            ],
+            [
+              "CSS",
+              1,
+              128
+            ],
+            [
+              "SQL",
+              2,
+              84
+            ],
+            [
+              "TOML",
+              2,
+              57
+            ],
+            [
+              "Shell",
+              1,
+              39
+            ],
+            [
+              "HTML",
+              1,
+              19
+            ]
+          ]
+        }
+      },
+      "obs": "405 arquivos de texto e 29009 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Treino do modelo (ml-train)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/etl_cases.py",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "ETL de casos SINAN (dengue, chikungunya, zika)",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/etl_cases.py#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/02_final_training.ipynb",
+          "linha": 346,
+          "linha_fim": null,
+          "trecho": "XGB = xgb.XGBClassifier if clf else xgb.XGBRegressor",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/02_final_training.ipynb#L346",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "ml-train/etl_cases.py",
+          "ml-train/02_final_training.ipynb",
+          "ml-train/models/manifest.json"
+        ]
+      },
+      "obs": "ETL de casos e clima e treino dos modelos XGBoost, com comparação com GRU."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Inferência",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/inference.py",
+          "linha": 317,
+          "linha_fim": null,
+          "trecho": "def carregar(ml_dir):",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/inference.py#L317",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "ml-train/inference.py"
+        ]
+      },
+      "obs": "Carrega os modelos e o painel e calcula a previsão por município ou UF."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "API Flask",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/wsgi.py",
+          "linha": 3,
+          "linha_fim": null,
+          "trecho": "app = create_app()",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/wsgi.py#L3",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/wsgi.py",
+          "backend/app/__init__.py",
+          "backend/app/previsoes.py",
+          "backend/app/mapa.py"
+        ]
+      },
+      "obs": "Serve cadastros, previsões, níveis do mapa e relatórios, com PostgreSQL."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Relatório da farmácia",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/relatorios/montagem.py",
+          "linha": 120,
+          "linha_fim": null,
+          "trecho": "def montar_relatorio(farmacia, previsao: dict, hoje: date | None = None) -> dict:",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/relatorios/montagem.py#L120",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/api/relatorios.py",
+          "backend/app/relatorios/montagem.py",
+          "backend/app/envio.py"
+        ]
+      },
+      "obs": "Monta o relatório a partir da previsão, gera PDF via LaTeX e envia o exemplo por e-mail."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Site React",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/main.tsx",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "createRoot(document.getElementById('root')!).render(",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/main.tsx#L6",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/main.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/pages/Mapa.tsx"
+        ]
+      },
+      "obs": "Mapa, ranking, cadastros de farmácia e de alertas e páginas explicativas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Chatbot de WhatsApp (n8n + Evolution API)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"type\": \"n8n-nodes-base.webhook\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "chatbot/workflows/EpidemologIA.json",
+          "chatbot/docker-compose.yml",
+          "chatbot/epidemologia.sql",
+          "chatbot/init.sh"
+        ]
+      },
+      "obs": "Recebe mensagens, faz o cadastro, classifica a intenção e responde com previsão ou hospitais."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Workflow Enviar-Email",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/Enviar-Email.json",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"type\": \"n8n-nodes-base.formTrigger\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/Enviar-Email.json#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "chatbot/workflows/Enviar-Email.json"
+        ]
+      },
+      "obs": "Formulário que envia por e-mail o relatório PDF de uma farmácia cadastrada na API."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/EpidemologIA.json",
+          "linha": 871,
+          "linha_fim": null,
+          "trecho": "clima (INMET) e vendas de medicamentos (ANVISA, SNGPC)",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/EpidemologIA.json#L871",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "ml-train/02_final_training.ipynb",
+          "linha": 117,
+          "linha_fim": null,
+          "trecho": "panel = panel.drop(columns=[c for c in panel.columns if c.startswith(",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/ml-train/02_final_training.ipynb#L117",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Sobre.tsx",
+          "linha": 49,
+          "linha_fim": null,
+          "trecho": "['Clima', 'NASA POWER · semanal'],",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/pages/Sobre.tsx#L49",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O prompt do Atendimento Direto instrui o bot a informar que o modelo usa casos (SINAN), clima (INMET) e vendas de medicamentos (SNGPC).",
+              "O treino remove as colunas de medicamentos antes de montar as features; o site e o notebook indicam NASA POWER como fonte de clima."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/pages/Sobre.tsx",
+          "linha": 7,
+          "linha_fim": null,
+          "trecho": "disparam avisos por WhatsApp e relatórios para farmácias.",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/frontend/src/pages/Sobre.tsx#L7",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/api/farmacias.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "enviar_em_segundo_plano(current_app._get_current_object(), farmacia)",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/backend/app/api/farmacias.py#L55",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "chatbot/workflows/Enviar-Email.json",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "\"type\": \"n8n-nodes-base.formTrigger\",",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/chatbot/workflows/Enviar-Email.json#L8",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "A página Sobre do site diz que regiões com risco alto disparam avisos por WhatsApp e relatórios para farmácias.",
+              "Não foi encontrado disparo por nível de risco: o relatório de exemplo sai no cadastro ou a pedido, e o relatório com previsão sai por rota da API ou formulário."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# epidemIA · Vigilância antecipada de arboviroses",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 91 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "docker compose up -d --build",
+          "link": "https://github.com/epidemologIA/projeto/blob/22e724202922c4afe321905b5d91ec168036a588/README.md#L28",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Envie uma mensagem de WhatsApp para o número do link Receber alertas (wa.me/5512991123125)",
+      "motivo": "Exige telefone real com WhatsApp.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Responda às perguntas de cadastro como pessoa ou farmácia no WhatsApp",
+      "motivo": "Exige telefone real com WhatsApp.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Pergunte no WhatsApp: vai aumentar a dengue na minha cidade?",
+      "motivo": "Exige telefone real com WhatsApp.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Pergunte no WhatsApp onde buscar atendimento",
+      "motivo": "Exige telefone real com WhatsApp.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Gere e leia o relatório PDF da farmácia",
+      "motivo": "O cadastro pelo site retornou erro e nenhum PDF apareceu na interface; o texto da página descreve envio por e-mail, que exige caixa de e-mail real.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Chatbot de WhatsApp (cadastro, previsão do local e indicação de atendimento)",
+      "motivo": "Exige telefone real com WhatsApp para enviar mensagens ao número do link Receber alertas.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 1,
+    "motivos": {
+      "citacao_nao_literal": 1
+    }
+  }
+}

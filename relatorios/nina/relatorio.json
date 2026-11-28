@@ -1,0 +1,2395 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "nina",
+    "nome": "Nina",
+    "numero": null,
+    "track": "Saúde",
+    "repo": "https://github.com/pedroafmelo/nina",
+    "demo": "https://nina-ai.up.railway.app/",
+    "video": "https://youtu.be/b9fb8m17-TQ",
+    "resumo": "A Nina é uma assistente de IA no Telegram que organiza o cuidado de idosos acamados entre a família e quem cuida: quem cuida manda um áudio, e quem chega já sabe tudo, do jeito de cada um."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:38:26.488Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "ab62b41659488f146c7966f314e0c1d62b29740f",
+    "commit_em": "2026-11-28T18:26:56Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10140,
+          "preparo_ms": 0,
+          "execucao_ms": 418
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4874,
+          "preparo_ms": 0,
+          "execucao_ms": 6571
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4,
+          "preparo_ms": 0,
+          "execucao_ms": 2273
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4630,
+          "preparo_ms": 0,
+          "execucao_ms": 15044
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10722,
+          "preparo_ms": 0,
+          "execucao_ms": 138
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 4810,
+          "preparo_ms": 0,
+          "execucao_ms": 2120
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 55
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 2544,
+          "preparo_ms": 0,
+          "execucao_ms": 69
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 13
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10604,
+          "preparo_ms": 0,
+          "execucao_ms": 129
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 10682,
+          "preparo_ms": 0,
+          "execucao_ms": 122
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "nao_testavel",
+      "motivo": "Exige conta do Telegram (login por QR code ou número de telefone)."
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 319,
+          "linha_fim": null,
+          "trecho": "app.add_handler(MessageHandler(filters.VOICE | filters.AUDIO, voz))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L319",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 165,
+          "linha_fim": null,
+          "trecho": "partes.append(types.Part.from_bytes(data=audio, mime_type=mime))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L165",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 86,
+          "linha_fim": null,
+          "trecho": "feitos = rotina.salvar_relato(conn, reg, eu[\"id\"], agora, origem=\"audio\" if audio else \"texto\",",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L86",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "O bot recebe voz/áudio do Telegram, baixa o arquivo e envia os bytes ao Gemini; o registro extraído é gravado com origem \"audio\".",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "quem cuida conta o turno por áudio no Telegram",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "quem cuida conta o turno por áudio no Telegram",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 320,
+          "linha_fim": null,
+          "trecho": "app.add_handler(MessageHandler(filters.PHOTO | filters.Document.ALL, foto_ou_documento))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L320",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 228,
+          "linha_fim": null,
+          "trecho": "partes.append(types.Part.from_bytes(data=midia, mime_type=mime))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L228",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 263,
+          "linha_fim": null,
+          "trecho": "if not est:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L263",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 168,
+          "linha_fim": null,
+          "trecho": "resp = _cliente().models.generate_content(",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L168",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "Há handlers para áudio, texto, foto e documento, enviados ao Gemini. Foto e documento são lidos só durante o cadastro.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Bot no Telegram (@nina_hack_ai_bot) com o Gemini entendendo áudio, texto, foto da receita e PDF",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 6,
+        "linha_fim": null,
+        "trecho": "Bot no Telegram (@nina_hack_ai_bot) com o Gemini entendendo áudio, texto, foto da receita e PDF",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/config.py",
+          "linha": 19,
+          "linha_fim": null,
+          "trecho": "GEMINI_MODEL = os.getenv(\"GEMINI_MODEL\", \"gemini-3.5-flash-lite\")",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/config.py#L19",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 169,
+          "linha_fim": null,
+          "trecho": "model=GEMINI_MODEL, contents=partes,",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L169",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "É o valor padrão de GEMINI_MODEL, usado nas chamadas generate_content; pode ser trocado por variável de ambiente.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "modelo `gemini-3.5-flash-lite`",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 108,
+        "linha_fim": null,
+        "trecho": "modelo `gemini-3.5-flash-lite`",
+        "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L108",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 108,
+          "linha_fim": null,
+          "trecho": "(cerca de 1 a 3 s por resposta)",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L108",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "O README repete o tempo (\"cerca de 1 a 3 s por resposta\"); não foi encontrada medição de latência, teste ou log no repositório.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "com respostas em 1 a 3 segundos",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 6,
+        "linha_fim": null,
+        "trecho": "com respostas em 1 a 3 segundos",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 130,
+          "linha_fim": null,
+          "trecho": "arquivo = {\"profissional\": \"passagem_profissional\", \"familia\": \"passagem_familia\",",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L130",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 137,
+          "linha_fim": null,
+          "trecho": "return _texto(prompt, estado, f\"passagem-{papel}-{nome_leitor}\")",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L137",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 220,
+          "linha_fim": null,
+          "trecho": "txt = ia.passagem(_estado(conn, agora), prox_c[\"papel\"], prox_c[\"nome\"])",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L220",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "A passagem é gerada pelo Gemini com um prompt escolhido pelo papel de quem lê (profissional, família ou principal). Sem chave, o modo demo devolve texto gravado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "escreve a passagem de turno para quem chega, no tom de cada um: técnica para a cuidadora, carinhosa para o neto.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "escreve a passagem de turno para quem chega, no tom de cada um: técnica para a cuidadora, carinhosa para o neto.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 195,
+          "linha_fim": null,
+          "trecho": "pres, novo = rotina.checkin(conn, eu[\"id\"], agora)",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L195",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 215,
+          "linha_fim": null,
+          "trecho": "prox = rotina.proximo_turno(conn, agora, exceto_id=eu[\"id\"])",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L215",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 221,
+          "linha_fim": null,
+          "trecho": "out.append(envio(prox_c[\"id\"], mensagens.passagem_para_proximo(eu, txt)))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L221",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "Check-in e check-out gravam a presença; ao encerrar o turno, a passagem é gerada e enviada ao próximo da escala.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Check-in e check-out de turno, com a passagem enviada sozinha para o próximo",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 8,
+        "linha_fim": null,
+        "trecho": "Check-in e check-out de turno, com a passagem enviada sozinha para o próximo",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 312,
+          "linha_fim": null,
+          "trecho": "out.append(envio(quem[\"id\"], mensagens.lembrete_posicao(quem, pos, p, vez)))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L312",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 177,
+          "linha_fim": null,
+          "trecho": "if r[\"status\"] == \"atrasado\":",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L177",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 179,
+          "linha_fim": null,
+          "trecho": "\"para\": princ[\"nome\"], \"remedio\": r[\"nome\"], \"hora\": r[\"hora\"],",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L179",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 275,
+          "linha_fim": null,
+          "trecho": "POLITICA = {\"posicao\": (45, 3), \"escala\": (120, 2), \"remedio\": (90, 2), \"agua\": (180, 2), \"consulta\": (24 * 60, 2)}",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L275",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": null,
+      "existe": "Lembrete de posição para quem está cuidando, aviso de água abaixo do esperado e limite de repetições por assunto; os remédios aparecem nas tarefas do check-in.",
+      "falta": "Lembrete de remédio enviado no horário a quem está cuidando: o aviso periódico de remédio é criado quando a dose está atrasada e vai para quem coordena.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A Nina lembra de virar, dar água e remédio, sem repetir mensagens",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "A Nina lembra de virar, dar água e remédio, sem repetir mensagens",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 171,
+          "linha_fim": null,
+          "trecho": "if pos[\"atraso_min\"] >= ESCALONAR_APOS_MIN:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L171",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 173,
+          "linha_fim": null,
+          "trecho": "out.append({\"tipo\": \"escala\", \"id\": f\"escala:{quando}\", \"nivel\": \"urgente\", \"para\": princ[\"nome\"],",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L173",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 322,
+          "linha_fim": null,
+          "trecho": "app.job_queue.run_repeating(verificar, interval=20, first=5)",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L322",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "Posição atrasada além do limite e dose atrasada geram aviso para a pessoa principal; a verificação roda a cada 20 segundos no bot.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "avisa quem coordena quando algo atrasa",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "avisa quem coordena quando algo atrasa",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 204,
+          "linha_fim": null,
+          "trecho": "livres = [c for c in cuidadores(conn) if c[\"tem_carro\"] and c[\"pode_acompanhar\"]",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L204",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 261,
+          "linha_fim": null,
+          "trecho": "envio(cuid_id, mensagens.pergunta_acompanhante(c[\"nome\"], princ[\"nome\"], comp[\"tipo\"], dt, p),",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L261",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 264,
+          "linha_fim": null,
+          "trecho": "calendario.definir_acompanhante(conn, comp_id, cuid_id)",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L264",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "Uma regra sugere quem tem carro; botões enviam a pergunta, gravam o acompanhante e avisam quem coordena.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "combina quem leva na consulta",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "combina quem leva na consulta",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 182,
+          "linha_fim": null,
+          "trecho": "txt = ia.relatorio_medico(rotina.historico(conn, agora))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L182",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 183,
+          "linha_fim": null,
+          "trecho": "pdf = gerar_pdf(f\"Relatório - {p['nome']}\", txt)",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L183",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/relatorio_pdf.py",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "pdf = FPDF()",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/relatorio_pdf.py#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "O texto do relatório é gerado pelo Gemini a partir do histórico (7 dias por padrão) e convertido em PDF com fpdf.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "gera um relatório em PDF para o médico",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "gera um relatório em PDF para o médico",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 248,
+          "linha_fim": null,
+          "trecho": "[[link(\"📅 Adicionar ao Google Agenda\", calendario.link_google(ev))]], eu=True))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L248",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/calendario.py",
+          "linha": 54,
+          "linha_fim": null,
+          "trecho": "def gerar_ics(evs) -> bytes:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/calendario.py#L54",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_cadastro_agenda_ia.py",
+          "linha": 43,
+          "linha_fim": null,
+          "trecho": "ics = calendario.gerar_ics(evs).decode()",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/tests/test_cadastro_agenda_ia.py#L43",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": null,
+      "existe": "Botão \"Adicionar ao Google Agenda\" com link gerado; função gerar_ics que monta o arquivo .ics.",
+      "falta": "Entrega do .ics ao usuário: gerar_ics não é chamada pelo bot, pelo app nem por conversa.py; a única chamada encontrada está em um teste.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Agenda com Google Agenda e .ics",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 11,
+        "linha_fim": null,
+        "trecho": "Agenda com Google Agenda e .ics",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 161,
+          "linha_fim": null,
+          "trecho": "d = ia.extrair_cadastro(etapa, texto=texto, midia=midia, mime=mime,",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L161",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 143,
+          "linha_fim": null,
+          "trecho": "CONFIRMA = InlineKeyboardMarkup([[InlineKeyboardButton(\"✅ Está certo\", callback_data=\"cad:ok\"),",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L143",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/cadastro.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "convites = [(cuidadores[i][\"nome\"], contas.criar_convite(banco, ids[i])) for i in range(len(ids)) if i != criador_idx]",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/cadastro.py#L58",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/mensagens.py",
+          "linha": 315,
+          "linha_fim": null,
+          "trecho": "t += \"\\n\".join(f\"💌 {nome}: https://t.me/{bot_user}?start={cod}\" for nome, cod in convites)",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/mensagens.py#L315",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "Cadastro em etapas com extração pelo Gemini, botões \"Está certo\"/\"Corrigir\", criação de um banco por família e links de convite por cuidador.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Cadastro da família do zero por conversa, com confirmação humana e links de convite para cada cuidador",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "Cadastro da família do zero por conversa, com confirmação humana e links de convite para cada cuidador",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "status = \"atrasada\" if atraso > TOLERANCIA_ATRASO_MIN else (\"agora\" if atraso >= 0 else \"ok\")",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L105",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 258,
+          "linha_fim": null,
+          "trecho": "def dose_anterior(conn, nome, agora):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L258",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/config.py",
+          "linha": 38,
+          "linha_fim": null,
+          "trecho": "PALAVRAS_URGENTES = [r\"\\bca[ií]u\\b\", r\"\\bqueda\\b\", r\"\\btombo\\b\", \"falta de ar\", \"dor no peito\", r\"\\bfebre\",",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/config.py#L38",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "Atrasos, dose repetida e palavras de alerta são calculados em Python sem chamada de IA; horários e doses vêm do cadastro extraído pela IA e confirmado por botão.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O que é crítico (horários, atrasos, doses e palavras de alerta) é regra fixa no código",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "O que é crítico (horários, atrasos, doses e palavras de alerta) é regra fixa no código",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/mensagens.py",
+          "linha": 300,
+          "linha_fim": null,
+          "trecho": "return (\"Encontrei estes remédios. Confere com cuidado, porque é a partir daqui que eu vou lembrar:\\n\"",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/mensagens.py#L300",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 207,
+          "linha_fim": null,
+          "trecho": "elif etapa == \"remedios\":",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L207",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/cadastro.py",
+          "linha": 51,
+          "linha_fim": null,
+          "trecho": "conn.execute(\"INSERT INTO remedio (nome, dose, horarios, instrucao, confirmado) VALUES (?,?,?,?,1)\",",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/cadastro.py#L51",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": null,
+      "existe": "Os remédios extraídos são mostrados para conferência e só são gravados depois do botão \"Está certo\" e do fim do cadastro.",
+      "falta": "Verificação de que quem confere é da família: o fluxo não checa o papel de quem toca no botão.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "o remédio só vale depois que alguém da família confere",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "o remédio só vale depois que alguém da família confere",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 74,
+          "linha_fim": null,
+          "trecho": "urgente = r[\"tipo\"] == \"emergencia\" or rotina.nivel_por_palavra(texto or \"\") or rotina.nivel_por_palavra(fala)",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L74",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 234,
+          "linha_fim": null,
+          "trecho": "if _NEGACAO.search(antes):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L234",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 237,
+          "linha_fim": null,
+          "trecho": "if m.group().startswith(\"ca\") and coisa and coisa.group(2) not in _GENTE:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L237",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/mensagens.py",
+          "linha": 343,
+          "linha_fim": null,
+          "trecho": "EMERGENCIA = (\"🚨 Se for urgente, ligue agora para o 192 (SAMU).\\n\"",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/mensagens.py#L343",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": null,
+      "existe": "Regex de palavras de alerta marca urgência, envia a mensagem com 192 e avisa quem coordena.",
+      "falta": "O \"sempre\": a regra tem exceções (negação, objeto que caiu, expressões como \"caiu no sono\"); no cadastro as mensagens não passam por ela, e em áudio ela é aplicada ao resumo escrito pela IA.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Palavras de alerta (\"caiu\", \"falta de ar\"…) **sempre** viram urgência, com orientação de ligar 192",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 99,
+        "linha_fim": null,
+        "trecho": "Palavras de alerta (\"caiu\", \"falta de ar\"…) **sempre** viram urgência, com orientação de ligar 192",
+        "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L99",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 102,
+          "linha_fim": null,
+          "trecho": "return [envio(eu[\"id\"], mensagens.fora_do_tema(p), eu=True)]",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L102",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 89,
+          "linha_fim": null,
+          "trecho": "out.append(envio(eu[\"id\"], mensagens.EMERGENCIA, eu=True))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L89",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 45,
+          "linha_fim": null,
+          "trecho": "if _DOSE.search(r):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L45",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": null,
+      "existe": "Fora do tema e emergência devolvem texto fixo; há um texto fixo sobre dose que substitui a resposta do modelo quando ela casa com uma expressão regular.",
+      "falta": "Resposta fixa acionada pelo pedido de dose em si: a mensagem recebida vai ao modelo, e o texto dele é enviado se não casar com o filtro.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Conversa livre com proteções: fora do tema, pedido de dose e emergência têm respostas fixas",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 10,
+        "linha_fim": null,
+        "trecho": "Conversa livre com proteções: fora do tema, pedido de dose e emergência têm respostas fixas",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/prompts/conversa.md",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "NUNCA indique, aumente, diminua, suspenda, troque ou dobre remédio ou dose",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/prompts/conversa.md#L14",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 39,
+          "linha_fim": null,
+          "trecho": "_DOSE = re.compile(r\"\\b(aument|diminu|suspend|troqu|troc|dobr|tir[ae]|pare de|parar de)\\w*\\b.{0,60}\\b(dose|mg|rem[eé]dio|comprimido)\",",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L39",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 46,
+          "linha_fim": null,
+          "trecho": "return mensagens.SOBRE_DOSE",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L46",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "O prompt proíbe indicar ou mudar dose; o filtro em código é uma expressão regular aplicada ao texto devolvido pelo modelo na conversa, não à mensagem recebida.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Pedidos de mudar dose são barrados **no prompt e por um filtro no código**.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 101,
+        "linha_fim": null,
+        "trecho": "Pedidos de mudar dose são barrados **no prompt e por um filtro no código**.",
+        "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L101",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/prompts/conversa.md",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "NUNCA diagnostique.",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/prompts/conversa.md#L14",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/prompts/relatorio.md",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "sem diagnóstico e sem recomendação de tratamento.",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/prompts/relatorio.md#L2",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/prompts/relato.md",
+          "linha": 14,
+          "linha_fim": null,
+          "trecho": "Não dê diagnóstico. Não sugira remédio nem dose.",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/prompts/relato.md#L14",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "A restrição está em instruções nos prompts; o filtro em código cobre frases sobre mudança de dose na conversa, e não foi encontrada verificação de saída para diagnóstico.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "A IA não diagnostica nem receita.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "A IA não diagnostica nem receita.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "A página inicial no ar não tem link para um teste no navegador sem Telegram; os endereços tentados, como /demo, /teste, /chat e /web, responderam 404."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app.py",
+          "linha": 168,
+          "linha_fim": null,
+          "trecho": "processar(conversa.entrada(conn, eu, texto=texto))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/app.py#L168",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "app.py",
+          "linha": 106,
+          "linha_fim": null,
+          "trecho": "+ (\"\" if tem_ia else \"<br>⚠️ <b>Sem GEMINI_API_KEY:</b> a Nina usa respostas gravadas do roteiro.\")",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/app.py#L106",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": "app.py é uma interface Streamlit que usa o mesmo núcleo de conversa; sem chave, usa respostas gravadas e avisa na tela.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "teste no navegador sem Telegram",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 12,
+        "linha_fim": null,
+        "trecho": "teste no navegador sem Telegram",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/testes.yml",
+          "linha": 15,
+          "linha_fim": null,
+          "trecho": "- run: python -m pytest -q",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/.github/workflows/testes.yml#L15",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/testes.yml",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "- run: docker run --rm nina python -m pytest -q",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/.github/workflows/testes.yml#L21",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "Dockerfile",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "FROM python:3.12-slim",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/Dockerfile#L1",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "tests/test_correcoes.py",
+          "linha": 10,
+          "linha_fim": null,
+          "trecho": "@pytest.mark.parametrize(\"texto\", [",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/tests/test_correcoes.py#L10",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P20",
+      "obs": "Há Dockerfile e workflow que roda pytest direto e no Docker; a contagem no código dá 37 funções de teste e 53 casos com parametrize. Os testes não foram executados nesta leitura.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Docker e 50 testes automáticos rodando no GitHub Actions",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 12,
+        "linha_fim": null,
+        "trecho": "Docker e 50 testes automáticos rodando no GitHub Actions",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    }
+  ],
+  "nao_declarado": [
+    {
+      "tipo": "item",
+      "id": "leitor:nao_declarado-1",
+      "rotulo": "edge-tts (serviço de voz neural do Microsoft Edge)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/voz.py",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "import edge_tts",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/voz.py#L28",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "fala = await voz.sintetizar(e[\"texto\"])",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L64",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "servico"
+    }
+  ],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://nina-ai.up.railway.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://nina-ai.up.railway.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 862 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra t.me/nina_hack_ai_bot com uma conta do Telegram",
+      "observado": "A página pública mostra \"Nina · cuidando de quem cuida\", \"@nina_hack_ai_bot\" e o botão \"Start Bot\". A conversa com o bot não foi aberta, por falta de conta do Telegram.",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige conta do Telegram (login por QR code ou número de telefone)."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Envie /start ao bot",
+      "observado": "O Telegram Web aberto no endereço do bot mostra a tela \"Log in by QR Code\", com o botão \"Log in by phone number\".",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Exige conta do Telegram (login por QR code ou número de telefone)."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Escolha \"Testar com um exemplo\"",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Escolha o papel de Joana e envie um áudio contando o turno",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Leia a confirmação do registro",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Toque em \"Saindo\", resolva as pendências e veja a passagem enviada ao Pedro",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Como Cláudia, abra a Agenda e peça que a Nina pergunte ao Pedro sobre a consulta",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Como Pedro, toque em \"Posso levar\"",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Converse com a Nina, incluindo um pedido para dobrar a dose",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Toque em \"Relatório\" e abra o PDF",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "Depende da conversa no Telegram, que exige conta."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "uso:bloqueio-1",
+      "rotulo": "Conta do Telegram para usar o bot @nina_hack_ai_bot",
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O Telegram Web pede login por QR code no celular ou por número de telefone, e não há credenciais de teste na descrição. Os passos do fluxo principal dependem dessa conversa."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "google-genai (Google), em requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "requirements.txt",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "google-genai>=1.0",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/requirements.txt#L2",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Google",
+              "nina/ia.py",
+              96
+            ],
+            [
+              "Google",
+              "nina/ia.py",
+              115
+            ],
+            [
+              "Google",
+              "nina/ia.py",
+              157
+            ],
+            [
+              "Google",
+              "nina/ia.py",
+              225
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 96,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L96",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 115,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L115",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 157,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L157",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 225,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L225",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 168,
+          "linha_fim": null,
+          "trecho": "resp = _cliente().models.generate_content(",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L168",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Classificar a mensagem (texto ou áudio) do dia a dia, extrair o registro e redigir a resposta, em JSON estruturado."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 231,
+          "linha_fim": null,
+          "trecho": "resp = _cliente().models.generate_content(",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L231",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Extrair dados do cadastro a partir de texto, áudio, foto de receita ou PDF."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 120,
+          "linha_fim": null,
+          "trecho": "resp = _cliente().models.generate_content(",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L120",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 241,
+          "linha_fim": null,
+          "trecho": "return _texto(_prompt(\"relatorio\"), hist, \"relatorio\")",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L241",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "Escrever a passagem de turno e o relatório médico (função _texto, com cache em disco)."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 105,
+          "linha_fim": null,
+          "trecho": "resp = _cliente().models.generate_content(",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L105",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 252,
+          "linha_fim": null,
+          "trecho": "print(json.dumps(relato_para_json(texto=arg), ensure_ascii=False, indent=2))",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L252",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite",
+      "obs": "relato_para_json: extrair um relato estruturado; a única chamada encontrada é a execução direta de nina/ia.py (teste de conexão)."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-5",
+      "rotulo": "Chamada a Microsoft Edge TTS (biblioteca edge-tts)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/voz.py",
+          "linha": 32,
+          "linha_fim": null,
+          "trecho": "async for parte in edge_tts.Communicate(fala, voz, rate=\"+4%\").stream():",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/voz.py#L32",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/voz.py",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "VOZ = os.getenv(\"NINA_VOZ\", \"pt-BR-ThalitaMultilingualNeural\")",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/voz.py#L6",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "pt-BR-ThalitaMultilingualNeural",
+      "obs": "Sintetizar em áudio a resposta da Nina quando a pessoa fala por áudio."
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11 10:26",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/pedroafmelo/nina",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/pedroafmelo/nina",
+          "conferida": "script"
+        }
+      ],
+      "sinal": false
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "18 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Anido",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://anidoapp.com/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://anidoapp.com/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App para a família cuidar junto de um pai ou mãe idosos: redige a passagem de turno a partir do registro do dia, envia lembretes de dose a quem está no turno e avisa organizador e família se a dose não for marcada.",
+      "obs": "Em comum: Passagem de turno gerada para o próximo cuidador, lembretes de remédio, aviso quando algo atrasa, acompanhamento de consultas e exportação em PDF, para famílias que dividem o cuidado. Diferente: A página não menciona recursos de voz; os lembretes chegam por push, WhatsApp, e-mail ou tela de bloqueio, e os resumos por IA de documentos são em inglês ou espanhol."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "Sanii (assistente Sofiia)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://startups.com.br/negocios/healthtechs/sanii-planeja-mas-para-ampliar-presenca-nacional/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://startups.com.br/negocios/healthtechs/sanii-planeja-mas-para-ampliar-presenca-nacional/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Empresa brasileira de cuidado domiciliar de idosos cuja assistente de IA no WhatsApp acompanha os plantões dos cuidadores, faz check-in e check-out, registra medicação, sinais vitais e higiene e gera relatórios para equipes de saúde e famílias.",
+      "obs": "Em comum: IA em aplicativo de mensagens que registra o turno de quem cuida de idosos em casa, com check-in, check-out e relatórios para a família. Diferente: É a ferramenta de uma empresa de cuidado domiciliar com seleção de profissionais e escalas; a matéria aberta não menciona áudio, passagem de turno nem lembretes."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "Elderella: Family Elder Care",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://apps.apple.com/us/app/-/id6753773809",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://apps.apple.com/us/app/-/id6753773809",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App para iPhone que coordena o cuidado de um parente idoso, com equipe de cuidado, chats, assistente Ella que aceita fala, transcrição de notas de voz, lembretes e relatórios.",
+      "obs": "Em comum: Cuidado de idoso dividido entre família e profissionais, entrada por voz, assistente de IA, lembretes e relatórios em PDF. Diferente: É um app próprio para iPhone, não um bot de mensagens; a página não descreve passagem de turno."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Alio",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/JzZ404/Alio",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/JzZ404/Alio",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "Projeto de código aberto em que a cuidadora dita as notas da visita, a IA (Google Gemma) gera um relatório estruturado e a família o recebe no app.",
+      "obs": "Em comum: Quem cuida registra por voz e a IA transforma a fala em um relato que chega à família de um idoso. Diferente: São apps web separados para cuidadora e família; o README indica autenticação real e múltiplos pacientes como fase futura."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-5",
+      "rotulo": "CareVault",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.carevault.space/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.carevault.space/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "App para iOS e Android que transcreve registros falados em notas de saúde estruturadas por IA, com linha do tempo compartilhada pela família, lembretes de remédio e resumo em PDF para o médico.",
+      "obs": "Em comum: Registro por voz estruturado por IA, compartilhamento entre familiares, lembretes de remédio e PDF para o médico. Diferente: É um app próprio, sem integração com aplicativo de mensagens descrita na página; a página não descreve passagem de turno."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "Python",
+              22,
+              2959
+            ],
+            [
+              "Markdown",
+              19,
+              886
+            ],
+            [
+              "HTML",
+              1,
+              642
+            ],
+            [
+              "YAML",
+              2,
+              43
+            ],
+            [
+              "JSON",
+              1,
+              41
+            ],
+            [
+              "TOML",
+              1,
+              13
+            ]
+          ]
+        }
+      },
+      "obs": "54 arquivos de texto e 4692 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Bot do Telegram",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 305,
+          "linha_fim": null,
+          "trecho": "def main():",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L305",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "bot.py"
+        ]
+      },
+      "obs": "Recebe mensagens, áudios, fotos e botões, conduz o cadastro e entrega os envios a cada cuidador."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Teste no navegador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "app.py",
+          "linha": 16,
+          "linha_fim": null,
+          "trecho": "st.set_page_config(page_title=\"Nina · cuidando de quem cuida\"",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/app.py#L16",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "app.py"
+        ]
+      },
+      "obs": "Interface Streamlit que usa o mesmo núcleo de conversa sem Telegram."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "Núcleo de conversa",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/conversa.py",
+          "linha": 51,
+          "linha_fim": null,
+          "trecho": "def entrada(conn, eu, texto=None, audio=None, mime=\"audio/ogg\"):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/conversa.py#L51",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "nina/conversa.py",
+          "nina/mensagens.py"
+        ]
+      },
+      "obs": "Transforma o que foi dito ou tocado em mensagens para cada cuidador, com proteções, lembretes e avisos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Regras fixas",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/rotina.py",
+          "linha": 159,
+          "linha_fim": null,
+          "trecho": "def avisos(conn, agora):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/rotina.py#L159",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "nina/rotina.py",
+          "nina/config.py"
+        ]
+      },
+      "obs": "Calcula posição, água, remédios, atrasos, palavras de alerta, turnos e agenda sem IA."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Camada de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/ia.py",
+          "linha": 153,
+          "linha_fim": null,
+          "trecho": "def conversar(estado: dict, eu: dict, texto: str = None, audio: bytes = None, mime: str = \"audio/ogg\") -> dict:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/ia.py#L153",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "nina/ia.py",
+          "nina/prompts/conversa.md",
+          "nina/demo/respostas.json"
+        ]
+      },
+      "obs": "Chama o Gemini com os prompts para conversa, cadastro, passagem e relatório; tem modo demo com respostas gravadas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Dados e cadastro",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/cadastro.py",
+          "linha": 12,
+          "linha_fim": null,
+          "trecho": "def criar_familia(dados: dict, criador_idx: int, criador_chat: int, nome_telegram: str = None):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/cadastro.py#L12",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/contas.py",
+          "linha": 32,
+          "linha_fim": null,
+          "trecho": "def conectar_banco(banco: str):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/contas.py#L32",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "nina/db.py",
+          "nina/contas.py",
+          "nina/cadastro.py",
+          "nina/seed.py"
+        ]
+      },
+      "obs": "Um banco SQLite por família, mais um registro central de vínculos, convites e cadastros em andamento."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Saídas: PDF, agenda e voz",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/relatorio_pdf.py",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "def gerar_pdf(titulo: str, texto: str) -> bytes:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/relatorio_pdf.py#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/calendario.py",
+          "linha": 44,
+          "linha_fim": null,
+          "trecho": "def link_google(ev) -> str:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/calendario.py#L44",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/voz.py",
+          "linha": 23,
+          "linha_fim": null,
+          "trecho": "async def sintetizar(texto: str):",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/voz.py#L23",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "nina/relatorio_pdf.py",
+          "nina/calendario.py",
+          "nina/voz.py"
+        ]
+      },
+      "obs": "Gera o PDF do relatório, o link do Google Agenda (e a função de .ics) e o áudio das respostas."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-8",
+      "rotulo": "Landing page",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "landing/index.html",
+          "linha": 6,
+          "linha_fim": null,
+          "trecho": "<title>Nina · cuidando de quem cuida</title>",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/landing/index.html#L6",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "landing/index.html",
+          "landing/Dockerfile"
+        ]
+      },
+      "obs": "Página estática de apresentação com link para o bot."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 132,
+          "linha_fim": null,
+          "trecho": "- A Nina falar por áudio (texto em voz), para quem prefere ouvir.",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L132",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "bot.py",
+          "linha": 66,
+          "linha_fim": null,
+          "trecho": "await ctx.bot.send_voice(cid, voice=fala, filename=\"nina.mp3\")",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/bot.py#L66",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README lista \"A Nina falar por áudio (texto em voz)\" entre limitações e próximos passos.",
+              "O código já sintetiza a resposta em áudio com edge-tts e a envia no Telegram quando a pessoa fala por áudio."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 109,
+          "linha_fim": null,
+          "trecho": "link do **Google Agenda** e arquivo `.ics`.",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L109",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "nina/calendario.py",
+          "linha": 54,
+          "linha_fim": null,
+          "trecho": "def gerar_ics(evs) -> bytes:",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/nina/calendario.py#L54",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "README lista entre as ferramentas o link do Google Agenda e o arquivo .ics.",
+              "O link do Google Agenda é enviado nos botões; a função que gera o .ics não é chamada pelas interfaces."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:nenhum",
+      "rotulo": "Nenhum segredo encontrado pelos padrões da varredura",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# nina: cuidando de quem cuida",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 135 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 40,
+          "linha_fim": null,
+          "trecho": "make setup     # cria .venv, instala as dependências e cria o arquivo .env",
+          "link": "https://github.com/pedroafmelo/nina/blob/ab62b41659488f146c7966f314e0c1d62b29740f/README.md#L40",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "teste no navegador sem Telegram",
+      "motivo": "A página inicial no ar não tem link para um teste no navegador sem Telegram; os endereços tentados, como /demo, /teste, /chat e /web, responderam 404.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Abra t.me/nina_hack_ai_bot com uma conta do Telegram",
+      "motivo": "Exige conta do Telegram (login por QR code ou número de telefone).",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Envie /start ao bot",
+      "motivo": "Exige conta do Telegram (login por QR code ou número de telefone).",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Escolha \"Testar com um exemplo\"",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Escolha o papel de Joana e envie um áudio contando o turno",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Leia a confirmação do registro",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Toque em \"Saindo\", resolva as pendências e veja a passagem enviada ao Pedro",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Como Cláudia, abra a Agenda e peça que a Nina pergunte ao Pedro sobre a consulta",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Como Pedro, toque em \"Posso levar\"",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Converse com a Nina, incluindo um pedido para dobrar a dose",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Toque em \"Relatório\" e abra o PDF",
+      "motivo": "Depende da conversa no Telegram, que exige conta.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Conta do Telegram para usar o bot @nina_hack_ai_bot",
+      "motivo": "O Telegram Web pede login por QR code no celular ou por número de telefone, e não há credenciais de teste na descrição. Os passos do fluxo principal dependem dessa conversa.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}
