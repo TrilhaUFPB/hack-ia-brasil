@@ -1,0 +1,2581 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "lookout",
+    "nome": "Lookout",
+    "numero": 9,
+    "track": "Segurança",
+    "repo": "https://github.com/PMGmenegon/Lookout",
+    "demo": "https://lookout-drab.vercel.app",
+    "video": "https://youtu.be/j8CByk8MYo8",
+    "resumo": "Lookout usa o Gemini para ler relatos de golpe Pix, com texto e prints, confere cada dado no relato e liga os casos do mesmo golpista entre bancos para o analista revisar."
+  },
+  "geracao": {
+    "horario": "2026-11-28T19:25:42.343Z",
+    "modo": "final",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:05:59-03:00"
+    },
+    "commit": "8e507f67deece5ba7c2671ffb485f501e0eb1403",
+    "commit_em": "2026-11-28T18:53:05Z",
+    "etapas": {
+      "build": {
+        "titulo": "Build",
+        "coluna": "build",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 0
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do repositório",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 150
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 117
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 3547
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1,
+          "preparo_ms": 0,
+          "execucao_ms": 4806
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "fachada": {
+        "titulo": "Sinais de fachada no código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 151
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Registro do GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1,
+          "preparo_ms": 0,
+          "execucao_ms": 2388
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor.conferido": {
+        "titulo": "Leitura do código: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 57
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 58
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "promessas.conferido": {
+        "titulo": "Promessas da equipe: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 50
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Segredos versionados",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 155
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "similares": {
+        "titulo": "Projetos parecidos",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "similares.conferido": {
+        "titulo": "Projetos parecidos: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 1
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Requisitos de submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 148
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "pronto",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "uso.conferido": {
+        "titulo": "Teste de uso: conferência",
+        "coluna": "conferidor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 0,
+          "preparo_ms": 0,
+          "execucao_ms": 2
+        },
+        "parou_em": null,
+        "erro": null
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "nao_testavel",
+      "motivo": "não executado nesta rodada: o deploy da equipe responde"
+    },
+    "fluxo": {
+      "estado": "falhou",
+      "erro": "Não há relato de Maria S. na caixa de entrada da conta usada."
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abra https://lookout-drab.vercel.app/",
+      "esperado": "A página inicial abre com o título \"Do relato à quadrilha, numa tela só.\" e os links \"Ver demo\", \"Entrar\" e \"Cadastrar\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Clique em Cadastrar e crie uma conta com dados fictícios; depois, em Entrar, preencha E-mail e Senha e clique em Entrar na plataforma",
+      "esperado": "O login com a conta fictícia abre a Caixa de entrada, identificada como Citibank, com \"Todos · 26\". A tela de sucesso do cadastro não foi vista; um e-mail já registrado recebe \"Não foi possível concluir o cadastro\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-5",
+      "n": 5,
+      "acao": "Na Caixa de entrada, clique no relato Rita M. de 25/11 (Falsa central · R$ 4.700) e leia Ficha estruturada e Casos ligados",
+      "esperado": "A ficha mostra telefone +55 83 99812-0050, chave conta:0001-0074, valor R$ 4.700, tipo Falsa central e data 25/11 · 14:12. Casos ligados mostra 6, todos de outras instituições, por telefone ou chave.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-6",
+      "n": 6,
+      "acao": "Clique em Ver a rede",
+      "esperado": "Abre o mapa da rede LK-07 com 24 vítimas, R$ 17,3 mil perdidos no Citibank, 2 contas laranja e estado \"crescendo\".",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-7",
+      "n": 7,
+      "acao": "Clique em Ações da rede",
+      "esperado": "Abre a tela de ações com \"Bloqueio cautelar de 2 contas laranja na Citibank\", o botão \"Decidir: executar agora\" e o painel Contenção em 0 de 9.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-8",
+      "n": 8,
+      "acao": "Na primeira ação, clique em Decidir: executar agora e aguarde",
+      "esperado": "O botão mostra \"Registrando…\" por mais de 6 segundos; depois a ação aparece com \"✓ 19:23\" e o contador passa a 1 de 9. A decisão ficou gravada na conta de teste usada.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-9",
+      "n": 9,
+      "acao": "Confira o painel Contenção na tela de ações",
+      "esperado": "O painel mostra 1 de 9 e \"Contas laranja bloqueadas 2 de 2\"; os demais itens seguem em zero.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-10",
+      "n": 10,
+      "acao": "Volte à Caixa de entrada, abra o relato Rita M. de 25/11 e clique na aba Registro",
+      "esperado": "A aba Registro mostra o resumo da rede LK-07, a ficha estruturada e os casos ligados. O horário 19:23 da decisão não aparece no texto da aba.",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 306,
+          "linha_fim": null,
+          "trecho": "lambda: cliente.models.generate_content(model=modelo, contents=conteudo, config=config),",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L306",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/imagem.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "resposta = _enviar(orc.cfg[\"modelo\"], [parte], config, orc.cfg)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/imagem.py#L55",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P1",
+      "obs": "A extração chama o Gemini com o relato, e os prints são transcritos pelo Gemini antes da extração.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Lookout usa o Gemini para ler relatos de golpe Pix, com texto e prints",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "resumo.md",
+        "linha": 1,
+        "linha_fim": null,
+        "trecho": "Lookout usa o Gemini para ler relatos de golpe Pix, com texto e prints",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "Nenhum campo de relato ou botão \"Estruturar com IA\" foi encontrado nas telas abertas; a ficha vista era de um relato já presente na caixa de entrada."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 78,
+          "linha_fim": null,
+          "trecho": "class SaidaLLM(_Estrito):",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L78",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 552,
+          "linha_fim": null,
+          "trecho": "return RegistroCaso(",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L552",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P2",
+      "obs": "A saída do modelo segue um schema com esses campos e é convertida em RegistroCaso por normalização em Python.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O Lookout transforma o relato numa ficha estruturada (telefone do golpista, chave Pix, valor, horário, canal, tipo de golpe e roteiro)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "O Lookout transforma o relato numa ficha estruturada (telefone do golpista, chave Pix, valor, horário, canal, tipo de golpe e roteiro)",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 148,
+          "linha_fim": null,
+          "trecho": "novas += [{\"caso_origem\": caso_id, \"caso_destino\": c, \"motivo\": tipo, \"score\": 1.0} for c in outros]",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L148",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 165,
+          "linha_fim": null,
+          "trecho": "parecidos = [p for p in db.repo.roteiros_parecidos(embedding, limiar, caso_id) if p[\"id\"] not in ja_ligados]",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L165",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/embeddings.py",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "if not embeddings_ativos():",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/embeddings.py#L84",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P3",
+      "obs": "Telefone e chave iguais geram ligação com score 1,0; roteiro parecido usa embedding, que vem desligado por padrão (LLM_EMBEDDINGS_ATIVO).",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "liga casos de várias instituições que usam o mesmo telefone, a mesma chave Pix ou um roteiro parecido",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 3,
+        "linha_fim": null,
+        "trecho": "liga casos de várias instituições que usam o mesmo telefone, a mesma chave Pix ou um roteiro parecido",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L3",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 510,
+          "linha_fim": null,
+          "trecho": "if papel != \"outro\":",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L510",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/normalizacao.py",
+          "linha": 431,
+          "linha_fim": null,
+          "trecho": "def papel_do_identificador(valor: str | None, relato: str) -> str | None:",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/normalizacao.py#L431",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agente.py",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "dinheiro=Dinheiro(chave_pix=transacao.chave_destino, tipo_chave=transacao.tipo_chave,",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/agente.py#L92",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P4",
+      "obs": "O valor precisa ocorrer no relato e o papel é decidido por expressões regulares. Casos criados ao confirmar um alerta de Pix usam a chave da transação, sem relato da vítima.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Telefone e chave Pix só viram indicador se estiverem escritos no relato e forem do golpista.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 356,
+        "linha_fim": null,
+        "trecho": "Telefone e chave Pix só viram indicador se estiverem escritos no relato e forem do golpista.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L356",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/normalizacao.py",
+          "linha": 57,
+          "linha_fim": null,
+          "trecho": "return phonenumbers.format_number(num, phonenumbers.PhoneNumberFormat.E164)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/normalizacao.py#L57",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/normalizacao.py",
+          "linha": 84,
+          "linha_fim": null,
+          "trecho": "return _chave(bruto, digitos, TipoChave.cpf) if CPF().validate(digitos) else desconhecida",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/normalizacao.py#L84",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/normalizacao.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "return str(uuid.UUID(hex=bruto.replace(\"-\", \"\")))",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/normalizacao.py#L64",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 528,
+          "linha_fim": null,
+          "trecho": "chave, tipo_chave = nc.valor, nc.tipo",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L528",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P5",
+      "obs": "Há conversão para E.164, validação de CPF e CNPJ e UUID canônico; o tipo gravado vem da normalização do token escrito no relato.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "telefone em E.164, CPF e CNPJ com dígito verificador, UUID canônico. O tipo da chave vem do formato, nunca do palpite do modelo.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/submissao.md",
+        "linha": 24,
+        "linha_fim": null,
+        "trecho": "telefone em E.164, CPF e CNPJ com dígito verificador, UUID canônico. O tipo da chave vem do formato, nunca do palpite do modelo.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L24",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 199,
+          "linha_fim": null,
+          "trecho": "indicador_mascarado=mascarar(l[\"motivo\"], valor_em_comum(registro, do_outro, l[\"motivo\"])),",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L199",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 271,
+          "linha_fim": null,
+          "trecho": "if not casos or casos[0][\"cliente_id\"] != cliente_id:",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L271",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/acoes.py",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "recebido = sum(RegistroCaso.model_validate(l[\"registro\"]).dinheiro.valor or 0 for l in linhas)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/acoes.py#L35",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 101,
+          "linha_fim": null,
+          "trecho": "def obter_caso(caso_id: str, cliente_id: str):",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/main.py#L101",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P6",
+      "obs": "O resumo da ligação omite relato e dados da vítima e inclui também score e código da rede; as ações somam valores de casos de outras instituições pagos a contas do cliente. A API recebe cliente_id como parâmetro, e não foi encontrada verificação de token no backend.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "De um caso de outra instituição, o analista vê só o número do caso, o tipo de golpe, a data, o motivo da ligação e o indicador mascarado",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 357,
+        "linha_fim": null,
+        "trecho": "De um caso de outra instituição, o analista vê só o número do caso, o tipo de golpe, a data, o motivo da ligação e o indicador mascarado",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L357",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/acoes.py",
+          "linha": 232,
+          "linha_fim": null,
+          "trecho": "linha = db.repo.inserir_execucao(",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/acoes.py#L232",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agente.py",
+          "linha": 98,
+          "linha_fim": null,
+          "trecho": "caso = casos.criar_caso_de_registro(cliente_id, relato, registro, transacao.nome_cliente,",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/agente.py#L98",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P7",
+      "obs": "Executar uma ação grava uma linha em execucoes, sem chamada a sistema externo. Confirmar um alerta de Pix grava a decisão e cria um caso.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Nenhuma ação é executada automaticamente: o Lookout só grava o registro das decisões do analista.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 356,
+        "linha_fim": null,
+        "trecho": "Nenhuma ação é executada automaticamente: o Lookout só grava o registro das decisões do analista.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L356",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 158,
+          "linha_fim": null,
+          "trecho": "embedding = _gerar_embedding(_texto_do_roteiro(registro))",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L158",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/fingerprint.py",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "return \" | \".join(partes)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/fingerprint.py#L69",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P8",
+      "obs": "O texto enviado ao embedding é montado por fingerprint(), que emite rótulos de listas fixas.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "O que vai para o embedding é só o fingerprint da ficha, feito de rótulos (canal, tipo de golpe, quem o golpista finge ser e ação pedida), nunca o texto do relato.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 225,
+        "linha_fim": null,
+        "trecho": "O que vai para o embedding é só o fingerprint da ficha, feito de rótulos (canal, tipo de golpe, quem o golpista finge ser e ação pedida), nunca o texto do relato.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L225",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/embeddings.py",
+          "linha": 100,
+          "linha_fim": null,
+          "trecho": "return cliente.models.embed_content(",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/embeddings.py#L100",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db.py",
+          "linha": 24,
+          "linha_fim": null,
+          "trecho": "_cliente = create_client(_url_base(url), chave)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/db.py#L24",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/sql/001_schema.sql",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "roteiro_embedding vector(768),",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/sql/001_schema.sql#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/main.tsx",
+          "linha": 17,
+          "linha_fim": null,
+          "trecho": "? createSupabaseAuthService(createClient(url, key))",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/main.tsx#L17",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P9",
+      "obs": "Gemini é usado na extração e no embedding; Supabase no banco, com coluna vector(768), e no login do frontend.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Google Gemini (extração e embedding) · Supabase (Postgres + pgvector, e login)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "Google Gemini (extração e embedding) · Supabase (Postgres + pgvector, e login)",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L7",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/package.json",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "\"react\": \"^19.1.10\",",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/package.json#L20",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/vite.config.ts",
+          "linha": 2,
+          "linha_fim": null,
+          "trecho": "import { defineConfig } from 'vite';",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/vite.config.ts#L2",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 33,
+          "linha_fim": null,
+          "trecho": "app = FastAPI(title=\"Lookout API\", version=\"0.1.0\")",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/main.py#L33",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/.python-version",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "3.11",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/.python-version#L1",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P10",
+      "obs": "O frontend declara React 19 e Vite; o backend é uma aplicação FastAPI com Python 3.11 fixado.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "React 19 + TypeScript + Vite (frontend) · Python 3.11 + FastAPI (backend)",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 7,
+        "linha_fim": null,
+        "trecho": "React 19 + TypeScript + Vite (frontend) · Python 3.11 + FastAPI (backend)",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L7",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 159,
+          "linha_fim": null,
+          "trecho": "orcamento_ms = float(os.getenv(\"LLM_ORCAMENTO_S\") or \"30\") * 1000",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L159",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 164,
+          "linha_fim": null,
+          "trecho": "max_chamadas = (os.getenv(\"LLM_MAX_CHAMADAS\") or \"3\").strip()",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L164",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 91,
+          "linha_fim": null,
+          "trecho": "raise HTTPException(503, \"A IA demorou para responder. Tente de novo.\") from None",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/main.py#L91",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P11",
+      "obs": "3 chamadas e 30 s são os padrões, configuráveis até 5 e 300 s; a extração ocorre antes da gravação. Com print, erro de validação responde 422.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "a extração faz no máximo 3 chamadas e leva no máximo 30 s. Se a IA falhar, a API responde 503 e nada é gravado.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/submissao.md",
+        "linha": 26,
+        "linha_fim": null,
+        "trecho": "a extração faz no máximo 3 chamadas e leva no máximo 30 s. Se a IA falhar, a API responde 503 e nada é gravado.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L26",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 155,
+          "linha_fim": null,
+          "trecho": "and _numeros(nova) <= _numeros(conclusao)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/dossie.py#L155",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 156,
+          "linha_fim": null,
+          "trecho": "and all(_numeros(n) <= _numeros(o) for n, o in zip(novos, textos))",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/dossie.py#L156",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/integracao.md",
+          "linha": 87,
+          "linha_fim": null,
+          "trecho": "O front ainda não usa o dossiê",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/integracao.md#L87",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P12",
+      "obs": "O dossiê é uma rota do backend; docs/integracao.md registra que o frontend ainda não a usa.",
+      "existe": "Os números são calculados em Python, e o texto do Gemini é recusado se trouxer um número que não estava no original.",
+      "falta": "A verificação é de subconjunto: um texto que omita um número ou troque a posição de números do mesmo item é aceito.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "No dossiê, os números são calculados em Python, e o Gemini só reescreve o texto; se ele mudar algum número, sai o texto fixo.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/submissao.md",
+        "linha": 42,
+        "linha_fim": null,
+        "trecho": "No dossiê, os números são calculados em Python, e o Gemini só reescreve o texto; se ele mudar algum número, sai o texto fixo.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L42",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "contradita",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/features/lookout/components/MapaRede.tsx",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "<svg key={rodada} className={`nn ${foco ? 'foco' : ''}`} viewBox={`0 0 ${layout.w} ${layout.h}`}",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/features/lookout/components/MapaRede.tsx#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/features/lookout/components/redeLayout.ts",
+          "linha": 21,
+          "linha_fim": null,
+          "trecho": "const w = 1000, xs = [120, 400, 680, 900] as const",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/features/lookout/components/redeLayout.ts#L21",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 69,
+          "linha_fim": null,
+          "trecho": "um mapa 2D com símbolos",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L69",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P13",
+      "obs": "O package.json do frontend não lista biblioteca de renderização 3D.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": "O mapa da rede é um SVG em duas dimensões, com quatro colunas em coordenadas x e y. O README o descreve como \"mapa 2D\".",
+      "onde_procurou": [],
+      "citacao": "a rede é montada pelas ligações e mostrada em 3D.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/submissao.md",
+        "linha": 42,
+        "linha_fim": null,
+        "trecho": "a rede é montada pelas ligações e mostrada em 3D.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L42",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/acoes.py",
+          "linha": 63,
+          "linha_fim": null,
+          "trecho": "f = fatos(rede, cliente_id)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/acoes.py#L63",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/acoes.py",
+          "linha": 80,
+          "linha_fim": null,
+          "trecho": "titulo=f\"Bloqueio cautelar de {_n(n_contas, 'conta laranja', 'contas laranja')} na {cli}\",",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/acoes.py#L80",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/acoes.py",
+          "linha": 208,
+          "linha_fim": null,
+          "trecho": "acao[\"titulo\"] = f\"Avisar {publico.get('n', 0):,} clientes no perfil-alvo\".replace(\",\", \".\")",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/acoes.py#L208",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P14",
+      "obs": "Os textos são modelos no código com contagens e valores da rede; no aviso preventivo, o número de clientes e o perfil vêm de metadados gravados da rede.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "As ações são playbooks de modelo fixo, preenchidos com os números da rede",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/submissao.md",
+        "linha": 19,
+        "linha_fim": null,
+        "trecho": "As ações são playbooks de modelo fixo, preenchidos com os números da rede",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L19",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/imagem.py",
+          "linha": 93,
+          "linha_fim": null,
+          "trecho": "partes.append(f\"Print {indice}:\\n{_transcrever(dados, mime)}\")",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/imagem.py#L93",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/imagem.py",
+          "linha": 97,
+          "linha_fim": null,
+          "trecho": "return extrair(relato)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/imagem.py#L97",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 223,
+          "linha_fim": null,
+          "trecho": "registro = _extrair_com_prints(relato, prints) if prints else extrair(relato, datetime.now(FUSO))",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L223",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P15",
+      "obs": "Cada print é transcrito, juntado ao texto do relato e enviado à extração.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "No modo completo, o backend transcreve os prints com o Gemini e junta o texto ao relato.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 84,
+        "linha_fim": null,
+        "trecho": "No modo completo, o backend transcreve os prints com o Gemini e junta o texto ao relato.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L84",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "falhou",
+        "erro": "Após clicar em \"▶ Simular Pix\" e esperar cerca de 28 segundos, o botão não mudou e a tela seguiu com \"Nenhum Pix suspeito agora.\"; o console registrou bloqueio de CORS na chamada /demo/simular."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/features/lookout/pages/CaixaPage.tsx",
+          "linha": 209,
+          "linha_fim": null,
+          "trecho": "{simulando ? '❚❚ Pausar' : '▶ Simular Pix'}",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/features/lookout/pages/CaixaPage.tsx#L209",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/features/lookout/components/Alertas.tsx",
+          "linha": 43,
+          "linha_fim": null,
+          "trecho": "timer.current = setInterval(passo, 6000)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/features/lookout/components/Alertas.tsx#L43",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api/mock.ts",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "const ROTEIRO_PIX: PixDemo[] = [",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/api/mock.ts#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agente.py",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "if score < 0.4:",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/agente.py#L64",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P16",
+      "obs": "O botão envia uma transação fictícia a cada 6 s; 3 das 6 geram alerta, por lista fixa no modo simulado e por pontuação com pesos fixos no backend.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Na **Caixa de entrada**, clique em **▶ Simular Pix**. O botão vira **❚❚ Pausar** e, em cerca de 30 segundos, chegam 3 Pix em **Detectados pelo Lookout**",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 85,
+        "linha_fim": null,
+        "trecho": "Na **Caixa de entrada**, clique em **▶ Simular Pix**. O botão vira **❚❚ Pausar** e, em cerca de 30 segundos, chegam 3 Pix em **Detectados pelo Lookout**",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L85",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "O campo para colar o relato e o botão \"Estruturar com IA\" não foram encontrados nas telas abertas."
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/App.tsx",
+          "linha": 30,
+          "linha_fim": null,
+          "trecho": "<Route path=\"/enviar\" element={<DemoSubmissaoPage />} />",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/App.tsx#L30",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/features/demo/DemoSubmissaoPage.tsx",
+          "linha": 147,
+          "linha_fim": null,
+          "trecho": "setResultado(await api.criarCaso(entrada))",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/features/demo/DemoSubmissaoPage.tsx#L147",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api/index.ts",
+          "linha": 11,
+          "linha_fim": null,
+          "trecho": "const tudoMock = import.meta.env.VITE_USE_MOCK !== 'false'",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/api/index.ts#L11",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P17",
+      "obs": "A rota /enviar não exige login e chama api.criarCaso; o caso só chega ao backend quando o frontend é configurado fora do modo simulado, que é o padrão.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "Cole um relato fictício de vítima de golpe de Pix, preencha os campos opcionais (nome, idade, canal) e clique em \"Estruturar com IA\". O caso vai aparecer na caixa de entrada da demo",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 426,
+        "linha_fim": null,
+        "trecho": "Cole um relato fictício de vítima de golpe de Pix, preencha os campos opcionais (nome, idade, canal) e clique em \"Estruturar com IA\". O caso vai aparecer na caixa de entrada da demo",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L426",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade"
+    },
+    {
+      "estado": "nao_verificavel",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 133,
+          "linha_fim": null,
+          "trecho": "nos testes, ela levou de 5 a 9 segundos por relato.",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L133",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P18",
+      "obs": "O README afirma o tempo; não foi encontrado arquivo de medição nem teste de latência em backend/ ou docs/.",
+      "existe": null,
+      "falta": null,
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "nos testes, ela levou de 5 a 9 segundos por relato.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 133,
+        "linha_fim": null,
+        "trecho": "nos testes, ela levou de 5 a 9 segundos por relato.",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L133",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    },
+    {
+      "estado": "parcial",
+      "no_uso": null,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 76,
+          "linha_fim": null,
+          "trecho": "pytest -q -m \"not integracao\"",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/.github/workflows/ci.yml#L76",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 64,
+          "linha_fim": null,
+          "trecho": "run: ruff check . --select E9,F63,F7,F82",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/.github/workflows/ci.yml#L64",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/submissao.md",
+          "linha": 56,
+          "linha_fim": null,
+          "trecho": "pytest (468 testes sem rede no CI), ruff, GitHub Actions",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L56",
+          "conferida": "conferidor"
+        }
+      ],
+      "tipo": "declaracao",
+      "id": "P19",
+      "obs": null,
+      "existe": "O CI roda pytest sem os testes de integração e ruff (regras E9, F63, F7, F82) no GitHub Actions; há funções de teste em 15 arquivos de backend/tests.",
+      "falta": "O total de 468 testes não foi conferido: depende de executar o pytest, por causa dos casos parametrizados, e não há saída de execução no repositório.",
+      "o_que_faz": null,
+      "onde_procurou": [],
+      "citacao": "pytest (468 testes sem rede no CI), ruff, GitHub Actions",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/submissao.md",
+        "linha": 56,
+        "linha_fim": null,
+        "trecho": "pytest (468 testes sem rede no CI), ruff, GitHub Actions",
+        "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L56",
+        "conferida": "conferidor"
+      },
+      "classe": "resultado"
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "item",
+      "id": "deploy:responde",
+      "rotulo": "Deploy responde",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://lookout-drab.vercel.app/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://lookout-drab.vercel.app/",
+          "conferida": "script"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/deploy/inicial.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/deploy/inicial.png",
+          "conferida": "script"
+        }
+      ],
+      "valor": "HTTP 200 em 516 ms"
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abra https://lookout-drab.vercel.app/",
+      "observado": "A página inicial abre com o título \"Do relato à quadrilha, numa tela só.\" e os links \"Ver demo\", \"Entrar\" e \"Cadastrar\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-01.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Clique em Cadastrar e crie uma conta com dados fictícios; depois, em Entrar, preencha E-mail e Senha e clique em Entrar na plataforma",
+      "observado": "O login com a conta fictícia abre a Caixa de entrada, identificada como Citibank, com \"Todos · 26\". A tela de sucesso do cadastro não foi vista; um e-mail já registrado recebe \"Não foi possível concluir o cadastro\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-02.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Na Caixa de entrada, clique em Maria S.",
+      "observado": "Maria S. não aparece entre os relatos e a aba mostra \"Novos · 0\". O botão \"Reiniciar demo\" não mudou a lista, e o console registrou bloqueio de CORS na chamada /demo/reset.",
+      "estado": {
+        "estado": "falhou",
+        "erro": "Não há relato de Maria S. na caixa de entrada da conta usada."
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-03.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-4",
+      "n": 4,
+      "acao": "Clique em Estruturar com IA",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "O relato de Maria S. não estava na caixa de entrada, e nenhum botão \"Estruturar com IA\" foi encontrado nas telas abertas; nenhuma resposta de IA foi gerada para comparar."
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-5",
+      "n": 5,
+      "acao": "Na Caixa de entrada, clique no relato Rita M. de 25/11 (Falsa central · R$ 4.700) e leia Ficha estruturada e Casos ligados",
+      "observado": "A ficha mostra telefone +55 83 99812-0050, chave conta:0001-0074, valor R$ 4.700, tipo Falsa central e data 25/11 · 14:12. Casos ligados mostra 6, todos de outras instituições, por telefone ou chave.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-05.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-05.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-6",
+      "n": 6,
+      "acao": "Clique em Ver a rede",
+      "observado": "Abre o mapa da rede LK-07 com 24 vítimas, R$ 17,3 mil perdidos no Citibank, 2 contas laranja e estado \"crescendo\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-06.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-06.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-7",
+      "n": 7,
+      "acao": "Clique em Ações da rede",
+      "observado": "Abre a tela de ações com \"Bloqueio cautelar de 2 contas laranja na Citibank\", o botão \"Decidir: executar agora\" e o painel Contenção em 0 de 9.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-07.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-07.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-8",
+      "n": 8,
+      "acao": "Na primeira ação, clique em Decidir: executar agora e aguarde",
+      "observado": "O botão mostra \"Registrando…\" por mais de 6 segundos; depois a ação aparece com \"✓ 19:23\" e o contador passa a 1 de 9. A decisão ficou gravada na conta de teste usada.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-08.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-08.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-9",
+      "n": 9,
+      "acao": "Confira o painel Contenção na tela de ações",
+      "observado": "O painel mostra 1 de 9 e \"Contas laranja bloqueadas 2 de 2\"; os demais itens seguem em zero.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-09.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-09.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-10",
+      "n": 10,
+      "acao": "Volte à Caixa de entrada, abra o relato Rita M. de 25/11 e clique na aba Registro",
+      "observado": "A aba Registro mostra o resumo da rede LK-07, a ficha estruturada e os casos ligados. O horário 19:23 da decisão não aparece no texto da aba.",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-10.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-10.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-1",
+      "rotulo": "Entrada inesperada: Login com E-mail e Senha vazios",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-01.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-01.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"Informe seu e-mail.\" e \"Informe sua senha.\"."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-2",
+      "rotulo": "Entrada inesperada: Login com e-mail de mais de 3.000 caracteres e senha de 3.000 caracteres",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-02.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-02.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela continua no login e mostra \"E-mail ou senha incorretos. Verifique os dados e tente novamente.\"."
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada_inesperada-3",
+      "rotulo": "Entrada inesperada: Login com \"nao-e-um-email\" no campo E-mail",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/inesperada-03.png",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "capturas/uso/inesperada-03.png",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "A tela mostra \"Digite um e-mail válido, como nome@empresa.com.\"."
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "composicao:bibliotecas",
+      "rotulo": "Bibliotecas de IA nas dependências",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "google-genai (Google), em backend/requirements.txt"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/requirements.txt",
+          "linha": 8,
+          "linha_fim": null,
+          "trecho": "google-genai>=3.6,<4",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/requirements.txt#L8",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "composicao:chamadas",
+      "rotulo": "Pontos do código que citam provedores de IA",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Provedor",
+            "Caminho",
+            "Linha"
+          ],
+          "linhas": [
+            [
+              "Google",
+              "backend/app/dossie.py",
+              132
+            ],
+            [
+              "Google",
+              "backend/app/ia/embeddings.py",
+              55
+            ],
+            [
+              "Google",
+              "backend/app/ia/embeddings.py",
+              92
+            ],
+            [
+              "Google",
+              "backend/app/ia/extracao.py",
+              250
+            ],
+            [
+              "Google",
+              "backend/app/ia/extracao.py",
+              278
+            ],
+            [
+              "Google",
+              "backend/app/ia/imagem.py",
+              5
+            ]
+          ]
+        }
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 132,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/dossie.py#L132",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/embeddings.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/embeddings.py#L55",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/embeddings.py",
+          "linha": 92,
+          "linha_fim": null,
+          "trecho": "        from google.genai import types",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/embeddings.py#L92",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 250,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L250",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 278,
+          "linha_fim": null,
+          "trecho": "    from google.genai import types",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L278",
+          "conferida": "script"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/imagem.py",
+          "linha": 5,
+          "linha_fim": null,
+          "trecho": "from google.genai import types",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/imagem.py#L5",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-1",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 306,
+          "linha_fim": null,
+          "trecho": "lambda: cliente.models.generate_content(model=modelo, contents=conteudo, config=config),",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L306",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 173,
+          "linha_fim": null,
+          "trecho": "\"modelo\": os.getenv(\"LLM_MODEL\") or \"gemini-3.5-flash-lite\",",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L173",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão, configurável por LLM_MODEL)",
+      "obs": "Extrair do relato a ficha em JSON com schema fixo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-2",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/imagem.py",
+          "linha": 55,
+          "linha_fim": null,
+          "trecho": "resposta = _enviar(orc.cfg[\"modelo\"], [parte], config, orc.cfg)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/imagem.py#L55",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão, configurável por LLM_MODEL)",
+      "obs": "Transcrever o texto de prints de conversa."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-3",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/embeddings.py",
+          "linha": 100,
+          "linha_fim": null,
+          "trecho": "return cliente.models.embed_content(",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/embeddings.py#L100",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/embeddings.py",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "MODELO_PADRAO = \"gemini-embedding-001\"",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/embeddings.py#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-embedding-001 (padrão)",
+      "obs": "Gerar o embedding do fingerprint da ficha para a ligação por roteiro; desligado por padrão."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada_ia-4",
+      "rotulo": "Chamada a Google Gemini",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 137,
+          "linha_fim": null,
+          "trecho": "resposta = cliente.models.generate_content(",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/dossie.py#L137",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/dossie.py",
+          "linha": 138,
+          "linha_fim": null,
+          "trecho": "model=os.getenv(\"LLM_MODEL\") or \"gemini-3.5-flash-lite\",",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/dossie.py#L138",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "gemini-3.5-flash-lite (padrão, configurável por LLM_MODEL)",
+      "obs": "Reescrever o texto do dossiê da rede."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:resposta_fixa-1",
+      "rotulo": "Resposta fixa no código",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/acoes.py",
+          "linha": 208,
+          "linha_fim": null,
+          "trecho": "acao[\"titulo\"] = f\"Avisar {publico.get('n', 0):,} clientes no perfil-alvo\".replace(\",\", \".\")",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/acoes.py#L208",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "dados/redes.json",
+          "linha": 27,
+          "linha_fim": null,
+          "trecho": "\"n\": 3412,",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/dados/redes.json#L27",
+          "conferida": "conferidor"
+        }
+      ],
+      "obs": "No aviso preventivo, o número de clientes no perfil-alvo e a descrição do perfil são lidos dos metadados da rede, que na base da demo trazem valores fixos (3412 na LK-07).",
+      "sinal": true
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criado",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "27/11 17:56",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/PMGmenegon/Lookout",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/PMGmenegon/Lookout",
+          "conferida": "script"
+        }
+      ],
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "linha-do-tempo:maior",
+      "rotulo": "Commit muito grande",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/PMGmenegon/Lookout/commit/8a3965454e2c8e5eadf4adb38a7ad90c1e9b8ca5",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/PMGmenegon/Lookout/commit/8a3965454e2c8e5eadf4adb38a7ad90c1e9b8ca5",
+          "conferida": "script"
+        }
+      ],
+      "valor": "8a39654, 6548 linhas adicionadas em 28 arquivos, de 38401 no histórico",
+      "obs": "5850 linhas fora de arquivos de trava e gerados",
+      "sinal": true
+    }
+  ],
+  "origem": [
+    {
+      "tipo": "item",
+      "id": "copia:arquivos-iguais",
+      "rotulo": "Nenhum arquivo igual ao de outra equipe nesta rodada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "obs": "1 equipes comparadas; só conteúdo idêntico depois de normalizar espaços"
+    }
+  ],
+  "parecidos": [
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-1",
+      "rotulo": "Silverguard (SOS Golpe, Scam Checker e MED-as-a-Service)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.silverguard.com.br/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.silverguard.com.br/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "A página descreve uma plataforma brasileira de inteligência contra golpes e contas laranja, com o canal de denúncias SOS Golpe, o Scam Checker e um módulo de contestação MED com relato por voz, envio de boletim de ocorrência e agente de IA.",
+      "obs": "Em comum: Trata de golpes no Brasil, recebe relatos de vítimas, usa IA e atende instituições financeiras na identificação de contas usadas por golpistas. Diferente: Inclui um canal de denúncia aberto a vítimas e um autoatendimento de MED. A página não descreve a extração de uma ficha a partir de texto e prints nem como casos de instituições diferentes são ligados."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-2",
+      "rotulo": "TRM Labs (Ardence, página Fraud and Scams)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://www.trmlabs.com/missions/fraud-and-scams",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://www.trmlabs.com/missions/fraud-and-scams",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "A página descreve a extração de endereços de carteira, domínios e dados de contato de denúncias, e o agrupamento de queixas que compartilham endereços de pagamento ou infraestrutura de golpe.",
+      "obs": "Em comum: Extrai identificadores de relatos de vítimas, liga casos que os compartilham e deixa a revisão das ligações com investigadores. Diferente: O foco é em criptoativos (carteiras e rastreio de valores), não em Pix e chaves Pix."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-3",
+      "rotulo": "CASE (Conversational Agent for Scam Elucidation), Google Pay Índia",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://arxiv.org/html/2508.19932v1",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://arxiv.org/html/2508.19932v1",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "O artigo descreve um agente que entrevista possíveis vítimas de golpe e um segundo modelo que converte a conversa em dados estruturados para analistas e modelos de risco.",
+      "obs": "Em comum: Usa Gemini para transformar o relato de uma vítima de golpe em pagamento instantâneo em campos de um esquema definido, para análise humana. Diferente: O relato é colhido por entrevista conversacional em uma única plataforma (UPI). O artigo não descreve ligação de casos por golpista e cita o compartilhamento entre instituições como trabalho futuro."
+    },
+    {
+      "tipo": "item",
+      "id": "similares:projeto_parecido-4",
+      "rotulo": "Salv Bridge",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://salv.com/blog/day-in-life-fraud-investigator/",
+          "linha": null,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://salv.com/blog/day-in-life-fraud-investigator/",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": "A página descreve mensagens estruturadas em tempo real entre equipes de investigação de instituições financeiras, com modelos de envio, responsável por caso e acompanhamento das respostas.",
+      "obs": "Em comum: É voltado a analistas de bancos que tratam casos de golpe que passam por mais de uma instituição, com limite sobre os dados compartilhados. Diferente: O compartilhamento parte de mensagens enviadas pelos investigadores. A página não menciona IA, leitura de relatos de vítimas nem ligação automática de casos."
+    }
+  ],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens e tamanho",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "TypeScript",
+              68,
+              7596
+            ],
+            [
+              "Python",
+              37,
+              7469
+            ],
+            [
+              "CSS",
+              11,
+              5169
+            ],
+            [
+              "JSON",
+              8,
+              4409
+            ],
+            [
+              "Markdown",
+              12,
+              1121
+            ],
+            [
+              "JavaScript",
+              1,
+              182
+            ],
+            [
+              "SQL",
+              5,
+              154
+            ],
+            [
+              "YAML",
+              1,
+              146
+            ],
+            [
+              "HTML",
+              1,
+              35
+            ]
+          ]
+        }
+      },
+      "obs": "154 arquivos de texto e 26388 linhas no total, sem contar dependências instaladas, arquivos de trava e binários."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Frontend web",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/main.tsx",
+          "linha": 20,
+          "linha_fim": null,
+          "trecho": "createRoot(document.getElementById('root')!).render(",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/main.tsx#L20",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/main.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/features/lookout/pages/CaixaPage.tsx"
+        ]
+      },
+      "obs": "Aplicação React com landing, login, caixa de entrada, mapa da rede, ações e a página pública /enviar."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-2",
+      "rotulo": "Backend simulado no navegador",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "frontend/src/api/mock.ts",
+          "linha": 28,
+          "linha_fim": null,
+          "trecho": "export const apiMock: Api = {",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/frontend/src/api/mock.ts#L28",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "frontend/src/api/index.ts",
+          "frontend/src/api/mock.ts",
+          "frontend/src/api/mock/motor.ts"
+        ]
+      },
+      "obs": "Responde às chamadas da API dentro do frontend quando VITE_USE_MOCK não é 'false'."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-3",
+      "rotulo": "API FastAPI",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 74,
+          "linha_fim": null,
+          "trecho": "@app.post(\"/casos\", status_code=201, response_model=CasoDetalhe)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/main.py#L74",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/main.py",
+          "backend/app/schemas.py"
+        ]
+      },
+      "obs": "Expõe as rotas de casos, redes, ações, dossiê, transações, alertas e demo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-4",
+      "rotulo": "Módulo de IA e normalização",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/ia/extracao.py",
+          "linha": 587,
+          "linha_fim": null,
+          "trecho": "def extrair(relato: str | None, hoje: datetime | None = None) -> RegistroCaso:",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/ia/extracao.py#L587",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/ia/extracao.py",
+          "backend/app/ia/imagem.py",
+          "backend/app/ia/embeddings.py",
+          "backend/app/ia/normalizacao.py",
+          "backend/app/ia/fingerprint.py"
+        ]
+      },
+      "obs": "Chama o Gemini para extração, transcrição e embedding e confere os indicadores no texto do relato."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-5",
+      "rotulo": "Ligações e redes",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 220,
+          "linha_fim": null,
+          "trecho": "def criar_caso(cliente_id: str, relato: str, nome_vitima=None, idade_vitima=None, canal_entrada=None,",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L220",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/casos.py",
+          "backend/app/redes.py"
+        ]
+      },
+      "obs": "Cria casos, liga por indicador ou roteiro, aplica o mascaramento e monta a rede e o grafo."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-6",
+      "rotulo": "Ações, dossiê e detecção de Pix",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/acoes.py",
+          "linha": 58,
+          "linha_fim": null,
+          "trecho": "def montar_acoes(codigo: str, cliente_id: str) -> list[Acao]:",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/acoes.py#L58",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/agente.py",
+          "linha": 35,
+          "linha_fim": null,
+          "trecho": "def processar(transacao: TransacaoEntrada) -> Alerta | None:",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/agente.py#L35",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/acoes.py",
+          "backend/app/dossie.py",
+          "backend/app/agente.py"
+        ]
+      },
+      "obs": "Monta playbooks e dossiê a partir da rede e pontua transações com regras de pesos fixos."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-7",
+      "rotulo": "Persistência",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/db.py",
+          "linha": 36,
+          "linha_fim": null,
+          "trecho": "class Repo:",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/db.py#L36",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": "db.repo = RepoMemoria()",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/main.py#L26",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "lista": [
+          "backend/app/db.py",
+          "backend/app/repo_memoria.py",
+          "backend/sql/001_schema.sql",
+          "backend/sql/002_roteiro.sql"
+        ]
+      },
+      "obs": "Grava em Supabase (Postgres e pgvector) ou, com LOOKOUT_BANCO=memoria, em um repositório em memória."
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-1",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/redes.py",
+          "linha": 49,
+          "linha_fim": null,
+          "trecho": "linhas = db.repo.casos_da_rede(codigo)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/redes.py#L49",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/casos.py",
+          "linha": 241,
+          "linha_fim": null,
+          "trecho": "codigo = Counter(distintos.values()).most_common(1)[0][0]",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/casos.py#L241",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/submissao.md",
+          "linha": 42,
+          "linha_fim": null,
+          "trecho": "a rede é montada pelas ligações e mostrada em 3D.",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L42",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "A rede é montada pelas ligações entre os casos.",
+              "A rede é lida pelo código gravado em cada caso; um caso novo recebe o código mais comum entre os casos ligados. Não foi encontrado na API código que crie uma rede nova; as redes vêm da base carregada."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:diferenca_arquitetura-2",
+      "rotulo": "Diferença entre a arquitetura descrita e a encontrada",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/submissao.md",
+          "linha": 13,
+          "linha_fim": null,
+          "trecho": "O analista de fraude vê a rede, o dossiê e os playbooks de contenção",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/submissao.md#L13",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "backend/app/main.py",
+          "linha": 181,
+          "linha_fim": null,
+          "trecho": "@app.get(\"/redes/{codigo}/dossie\", response_model=Dossie)",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/backend/app/main.py#L181",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "arquivo",
+          "caminho": "docs/integracao.md",
+          "linha": 87,
+          "linha_fim": null,
+          "trecho": "O front ainda não usa o dossiê",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/docs/integracao.md#L87",
+          "conferida": "conferidor"
+        }
+      ],
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "descrito",
+            "encontrado"
+          ],
+          "linhas": [
+            [
+              "O analista de fraude vê a rede, o dossiê e os playbooks de contenção.",
+              "O dossiê existe como rota do backend; o frontend ainda não a usa, conforme docs/integracao.md."
+            ]
+          ]
+        }
+      },
+      "sinal": true
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:achado-1",
+      "rotulo": "Padrão de segredo: JWT de serviço do Supabase (service_role)",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": ".github/workflows/ci.yml, linha 26",
+      "sinal": true,
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": ".github/workflows/ci.yml",
+          "linha": 26,
+          "linha_fim": null,
+          "trecho": null,
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/.github/workflows/ci.yml#L26",
+          "conferida": "script"
+        }
+      ],
+      "obs": null
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:readme",
+      "rotulo": "README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 1,
+          "linha_fim": null,
+          "trecho": "# Lookout",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L1",
+          "conferida": "script"
+        }
+      ],
+      "valor": "README.md, 429 linhas"
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:instrucoes",
+      "rotulo": "Instruções de execução no README",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "README.md",
+          "linha": 50,
+          "linha_fim": null,
+          "trecho": "npm run dev",
+          "link": "https://github.com/PMGmenegon/Lookout/blob/8e507f67deece5ba7c2671ffb485f501e0eb1403/README.md#L50",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:descricao",
+      "rotulo": "Descrição do projeto no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:video",
+      "rotulo": "Vídeo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:demo",
+      "rotulo": "Link da demo no formulário",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "O Lookout transforma o relato numa ficha estruturada (telefone do golpista, chave Pix, valor, horário, canal, tipo de golpe e roteiro)",
+      "motivo": "Nenhum campo de relato ou botão \"Estruturar com IA\" foi encontrado nas telas abertas; a ficha vista era de um relato já presente na caixa de entrada.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Cole um relato fictício de vítima de golpe de Pix, preencha os campos opcionais (nome, idade, canal) e clique em \"Estruturar com IA\". O caso vai aparecer na caixa de entrada da demo",
+      "motivo": "O campo para colar o relato e o botão \"Estruturar com IA\" não foram encontrados nas telas abertas.",
+      "causa": "bloqueio_externo"
+    },
+    {
+      "rotulo": "Clique em Estruturar com IA",
+      "motivo": "O relato de Maria S. não estava na caixa de entrada, e nenhum botão \"Estruturar com IA\" foi encontrado nas telas abertas; nenhuma resposta de IA foi gerada para comparar.",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 0,
+    "motivos": {}
+  }
+}
