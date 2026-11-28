@@ -68,19 +68,36 @@ test("sem repositório dos dois lados, casa pelo nome quando ele é único", () 
 test("sem repositório para comparar, o número do grupo identifica a equipe", () => {
   const reports = [
     { id: "triagem", name: "Triagem", group: 7 },
-    { id: "eco", name: "Eco", group: 12, repo: "https://github.com/a/eco" },
+    { id: "eco", name: "Eco", group: 12 },
   ];
-  const [renamed, noLink, other] = attachReports(
+  const [renamed, linkFixed, other] = attachReports(
     [
       project("Triagem Rápida (nome novo)", "https://gitlab.com/t/triagem", undefined, 7),
-      project("Eco", "", undefined, 12),
+      project("Eco", "https://github.com/a/eco", undefined, 12),
       project("Triagem", "", undefined, 9),
     ],
     reports,
   );
   assert.equal(renamed.report, "/jurados/projetos/relatorio/triagem");
-  assert.equal(noLink.report, "/jurados/projetos/relatorio/eco");
+  assert.equal(linkFixed.report, "/jurados/projetos/relatorio/eco", "a equipe corrigiu o link depois da análise");
   assert.equal(other.report, undefined, "mesmo nome com outro número é outra equipe");
+});
+
+test("o número não entrega um relatório que analisou o repositório de outra equipe", () => {
+  const reports = [{ id: "eco", name: "Eco", group: 7, repo: "https://github.com/a/eco" }];
+  const [noLink, gitlab] = attachReports(
+    [project("Sol", "", undefined, 7), project("Lua", "https://gitlab.com/b/lua", undefined, 7)],
+    reports,
+  );
+  assert.equal(noLink.report, undefined);
+  assert.equal(gitlab.report, undefined);
+});
+
+test("número informado por dois projetos não decide entre eles", () => {
+  const reports = [{ id: "luz", name: "Luz", group: 7 }];
+  const [typo, own] = attachReports([project("Sol", "", undefined, 7), project("Luz", "", undefined, 7)], reports);
+  assert.equal(typo.report, undefined, "digitou o número de outro grupo");
+  assert.equal(own.report, "/jurados/projetos/relatorio/luz", "o nome desempata");
 });
 
 test("número digitado errado não entrega o relatório de outro repositório", () => {

@@ -42,8 +42,9 @@ const only = <T>(list: T[]) => (list.length === 1 ? list[0] : undefined);
 
 /**
  * Gives each project the report of its own repository. The group number and the project name are
- * typed by hand, and two teams can type the same one, so they only decide when one side has no
- * repository to compare: the number first, then the name, and never against a number that differs.
+ * typed by hand, and two teams can type the same one. So they only pick among the reports that
+ * analysed no repository, which no repository can claim: the number first, when a single project
+ * gives it, then the name, and never against a number that differs.
  */
 export function attachReports(projects: Project[], reports: Report[]): Project[] {
   const byRepo = new Map<string, Report>();
@@ -53,13 +54,15 @@ export function attachReports(projects: Project[], reports: Report[]): Project[]
     if (key) byRepo.set(key, report);
     else withoutRepo.push(report);
   }
+  const claims = new Map<number, number>();
+  for (const { group } of projects) if (group !== undefined) claims.set(group, (claims.get(group) ?? 0) + 1);
   return projects.map((project) => {
     const key = repoKey(project.repo);
-    // a report of another repository is never an answer for a project that names its own
-    const candidates = key ? withoutRepo : reports;
     const report =
       (key && byRepo.get(key)) ||
-      (project.group !== undefined && only(candidates.filter((r) => r.group === project.group))) ||
+      (project.group !== undefined &&
+        claims.get(project.group) === 1 &&
+        only(withoutRepo.filter((r) => r.group === project.group))) ||
       only(
         withoutRepo.filter(
           (r) =>
