@@ -230,7 +230,15 @@ function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () =
             <div className="mt-4 grid gap-3">
               {p.repo && <Action href={p.repo} primary>Repositório</Action>}
               {p.demo && <Action href={p.demo}>Demo ao vivo</Action>}
-              {p.report && !reportIsHtml && <Action href={p.report}>Relatório técnico</Action>}
+              {/* always listed, so a judge can tell a report that isn't out yet from a panel that has none */}
+              {p.report ? (
+                !reportIsHtml && <Action href={p.report}>Relatório técnico</Action>
+              ) : (
+                <p className="grid gap-1 rounded-lg border border-dashed border-white/15 px-4 py-3">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/45">Relatório técnico</span>
+                  <span className="text-sm text-white/45">Ainda não publicado</span>
+                </p>
+              )}
               {/* an embedded pitch is already on screen; only link it when it can't be embedded */}
               {p.video && !embed && <Action href={p.video}>Vídeo do pitch</Action>}
             </div>
