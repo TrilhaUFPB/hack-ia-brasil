@@ -203,11 +203,12 @@ function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () =
             {p.report && (
               <section>
                 <h3 className="mb-3 text-[1.5rem] font-extralight tracking-tight md:text-[1.75rem]">Relatório técnico</h3>
-                {/* no allow-same-origin: the report's scripts run in an opaque origin, even when hosted here */}
+                {/* no allow-same-origin: the report's scripts run in an opaque origin, even when hosted here.
+                    Its evidence links open GitHub in a new tab, which has to leave the sandbox to work. */}
                 <iframe
                   {...(reportIsHtml ? { srcDoc: p.report } : { src: p.report })}
                   title={`Relatório técnico de ${p.name}`}
-                  sandbox="allow-scripts allow-popups"
+                  sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
                   loading="lazy"
                   className="h-[80vh] w-full rounded-xl border border-white/10 bg-white"
                 />
