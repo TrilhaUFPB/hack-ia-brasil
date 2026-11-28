@@ -11,6 +11,8 @@ export type Report = {
   /** the harness's team id, which is also the folder name */
   id: string;
   name: string;
+  /** the group number the team gave the form */
+  group?: number;
   /** the repository the harness analysed, as https://github.com/owner/name */
   repo?: string;
 };
@@ -36,21 +38,39 @@ export function repoKey(link: string): string | undefined {
 const nameKey = (name: string) =>
   name.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
+const only = <T>(list: T[]) => (list.length === 1 ? list[0] : undefined);
+
 /**
- * Gives each project the report of its own repository. Two teams may pick the same project name,
- * so the name only decides when neither side has a repository to compare, and only when it is unique.
+ * Gives each project the report of its own repository. The group number and the project name are
+ * typed by hand, and two teams can type the same one. So they only pick among the reports that
+ * analysed no repository, which no repository can claim: the number first, when a single project
+ * gives it, then the name, and never against a number that differs.
  */
 export function attachReports(projects: Project[], reports: Report[]): Project[] {
   const byRepo = new Map<string, Report>();
-  const byName = new Map<string, Report | null>();
+  const withoutRepo: Report[] = [];
   for (const report of reports) {
     const key = report.repo && repoKey(report.repo);
     if (key) byRepo.set(key, report);
-    else byName.set(nameKey(report.name), byName.has(nameKey(report.name)) ? null : report);
+    else withoutRepo.push(report);
   }
+  const claims = new Map<number, number>();
+  for (const { group } of projects) if (group !== undefined) claims.set(group, (claims.get(group) ?? 0) + 1);
   return projects.map((project) => {
     const key = repoKey(project.repo);
-    const report = key ? byRepo.get(key) : byName.get(nameKey(project.name));
+    const report =
+      (key && byRepo.get(key)) ||
+      (project.group !== undefined &&
+        claims.get(project.group) === 1 &&
+        only(withoutRepo.filter((r) => r.group === project.group))) ||
+      only(
+        withoutRepo.filter(
+          (r) =>
+            !key &&
+            nameKey(r.name) === nameKey(project.name) &&
+            (r.group === undefined || project.group === undefined || r.group === project.group),
+        ),
+      );
     return report ? { ...project, report: reportHref(report.id) } : project;
   });
 }
@@ -65,7 +85,12 @@ export async function readReports(dir = path.join(process.cwd(), REPORTS_DIR)): 
         const { equipe } = JSON.parse(await readFile(/*turbopackIgnore: true*/ path.join(dir, id, "relatorio.json"), "utf8"));
         await stat(/*turbopackIgnore: true*/ path.join(dir, id, "relatorio.html"));
         if (typeof equipe?.nome !== "string") return undefined;
-        return { id, name: equipe.nome, repo: typeof equipe.repo === "string" ? equipe.repo : undefined };
+        return {
+          id,
+          name: equipe.nome,
+          group: Number.isInteger(equipe.numero) ? equipe.numero : undefined,
+          repo: typeof equipe.repo === "string" ? equipe.repo : undefined,
+        };
       } catch {
         return undefined;
       }

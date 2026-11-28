@@ -5,7 +5,7 @@ import path from "node:path";
 import { test } from "node:test";
 import { attachReports, openReport, readReports, repoKey } from "../src/jury/reports.ts";
 
-const project = (name, repo, report) => ({ id: name, name, track: "", repo, summary: "", description: "", video: "", report });
+const project = (name, repo, report, group) => ({ id: name, name, group, track: "", repo, summary: "", description: "", video: "", report });
 
 async function published(teams) {
   const dir = await mkdtemp(path.join(os.tmpdir(), "relatorios-"));
@@ -65,9 +65,63 @@ test("sem repositório dos dois lados, casa pelo nome quando ele é único", () 
   assert.equal(b.report, undefined, "dois relatórios com o mesmo nome: nenhum é escolhido");
 });
 
+test("sem repositório para comparar, o número do grupo identifica a equipe", () => {
+  const reports = [
+    { id: "triagem", name: "Triagem", group: 7 },
+    { id: "eco", name: "Eco", group: 12 },
+  ];
+  const [renamed, linkFixed, other] = attachReports(
+    [
+      project("Triagem Rápida (nome novo)", "https://gitlab.com/t/triagem", undefined, 7),
+      project("Eco", "https://github.com/a/eco", undefined, 12),
+      project("Triagem", "", undefined, 9),
+    ],
+    reports,
+  );
+  assert.equal(renamed.report, "/jurados/projetos/relatorio/triagem");
+  assert.equal(linkFixed.report, "/jurados/projetos/relatorio/eco", "a equipe corrigiu o link depois da análise");
+  assert.equal(other.report, undefined, "mesmo nome com outro número é outra equipe");
+});
+
+test("o número não entrega um relatório que analisou o repositório de outra equipe", () => {
+  const reports = [{ id: "eco", name: "Eco", group: 7, repo: "https://github.com/a/eco" }];
+  const [noLink, gitlab] = attachReports(
+    [project("Sol", "", undefined, 7), project("Lua", "https://gitlab.com/b/lua", undefined, 7)],
+    reports,
+  );
+  assert.equal(noLink.report, undefined);
+  assert.equal(gitlab.report, undefined);
+});
+
+test("número informado por dois projetos não decide entre eles", () => {
+  const reports = [{ id: "luz", name: "Luz", group: 7 }];
+  const [typo, own] = attachReports([project("Sol", "", undefined, 7), project("Luz", "", undefined, 7)], reports);
+  assert.equal(typo.report, undefined, "digitou o número de outro grupo");
+  assert.equal(own.report, "/jurados/projetos/relatorio/luz", "o nome desempata");
+});
+
+test("número digitado errado não entrega o relatório de outro repositório", () => {
+  const reports = [
+    { id: "eco", name: "Eco", group: 7, repo: "https://github.com/a/eco" },
+    { id: "luz", name: "Luz", group: 7 },
+    { id: "mar", name: "Mar", group: 7 },
+  ];
+  const [typo, own, repeated] = attachReports(
+    [
+      project("Sol", "https://github.com/b/sol", undefined, 7),
+      project("Eco", "https://github.com/a/eco", undefined, 8),
+      project("Luz", "", undefined, 7),
+    ],
+    reports,
+  );
+  assert.equal(typo.report, undefined, "o repositório do projeto é outro");
+  assert.equal(own.report, "/jurados/projetos/relatorio/eco", "o repositório decide, mesmo com o número diferente");
+  assert.equal(repeated.report, "/jurados/projetos/relatorio/luz", "número repetido: o nome desempata");
+});
+
 test("lê a pasta publicada e ignora o que não é relatório inteiro", async () => {
   const dir = await published({
-    "saude-ja": { json: { equipe: { id: "saude-ja", nome: "Saúde Já", repo: "https://github.com/x/y" } }, html: "<!doctype html><p>ok" },
+    "saude-ja": { json: { equipe: { id: "saude-ja", nome: "Saúde Já", numero: 7, repo: "https://github.com/x/y" } }, html: "<!doctype html><p>ok" },
     "sem-repo": { json: { equipe: { id: "sem-repo", nome: "Sem Repo", repo: null } }, html: "<p>" },
     "so-json": { json: { equipe: { id: "so-json", nome: "Só JSON", repo: null } } },
     quebrado: { json: "{", html: "<p>" },
@@ -75,8 +129,8 @@ test("lê a pasta publicada e ignora o que não é relatório inteiro", async ()
   });
   await writeFile(path.join(dir, "indice.json"), "{}");
   assert.deepEqual(await readReports(dir), [
-    { id: "saude-ja", name: "Saúde Já", repo: "https://github.com/x/y" },
-    { id: "sem-repo", name: "Sem Repo", repo: undefined },
+    { id: "saude-ja", name: "Saúde Já", group: 7, repo: "https://github.com/x/y" },
+    { id: "sem-repo", name: "Sem Repo", group: undefined, repo: undefined },
   ]);
   assert.deepEqual(await readReports(path.join(dir, "nao-existe")), []);
 });

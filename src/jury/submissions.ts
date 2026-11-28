@@ -4,6 +4,8 @@
 export type Project = {
   id: string;
   name: string;
+  /** "Número do grupo", as the team typed it; absent when the answer has no number */
+  group?: number;
   track: string;
   repo: string;
   summary: string;
@@ -41,18 +43,27 @@ export function parseCsv(text: string): string[][] {
 }
 
 // Columns are found by question title, so the form can gain questions without breaking this.
+// A pattern stands where the title has already been reworded once.
 const COLUMNS = {
   submittedAt: "carimbo de data/hora",
   cover: "imagem de capa",
   name: "nome do projeto",
+  group: /n[úu]mero d[oa] (?:grupo|equipe|time)/,
   track: "track",
   repo: "repositório",
   summary: "one-line summary",
   description: "descrição do projeto",
   demo: "link da demo",
-  video: "vídeo do pitch",
+  // was "Vídeo do pitch", now "Vídeo da demo e pitch"
+  video: /v[íi]deo d[oa] (?:demo|pitch)/,
   report: "relatório técnico",
 } as const;
+
+/** The form takes free text here: "7", "07" and "Grupo 7" are all group 7. */
+export function groupNumber(answer: string): number | undefined {
+  const n = Number(answer.match(/(?<!\d)\d{1,3}(?!\d)/)?.[0]);
+  return n > 0 ? n : undefined;
+}
 
 /** Form uploads arrive as Drive links; the uploads folder must be shared as "anyone with the link". */
 export function driveImage(url: string): string | undefined {
@@ -68,7 +79,10 @@ export function toProjects(csv: string): Project[] {
   const [header = [], ...rows] = parseCsv(csv);
   const titles = header.map((h) => h.trim().toLowerCase());
   const col = Object.fromEntries(
-    Object.entries(COLUMNS).map(([key, title]) => [key, titles.findIndex((t) => t.includes(title))]),
+    Object.entries(COLUMNS).map(([key, title]) => [
+      key,
+      titles.findIndex((t) => (typeof title === "string" ? t.includes(title) : title.test(t))),
+    ]),
   ) as Record<keyof typeof COLUMNS, number>;
   const get = (row: string[], key: keyof typeof COLUMNS) => (col[key] < 0 ? "" : (row[col[key]] ?? "").trim());
 
@@ -81,6 +95,7 @@ export function toProjects(csv: string): Project[] {
       return {
         id: `${slug(name) || "projeto"}-${i + 1}`,
         name,
+        group: groupNumber(get(row, "group")),
         track: get(row, "track"),
         repo: get(row, "repo"),
         summary: get(row, "summary"),
