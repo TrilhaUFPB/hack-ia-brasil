@@ -1498,7 +1498,7 @@ export const GUIDE: Section[] = [
           ],
           [
             {
-              "t": "Vídeo da demo. Gravem o projeto funcionando do jeito que acharem melhor para mostrar o que construíram e surpreender a gente. Se o projeto tiver link de acesso, mandem também"
+              "t": "Vídeo do projeto, com pitch e demo. Combinem os dois do jeito que acharem melhor, desde que o vídeo mostre tanto a ideia quanto a solução funcionando. Surpreendam a gente. Se o projeto tiver link de acesso, mandem também"
             }
           ],
           [
