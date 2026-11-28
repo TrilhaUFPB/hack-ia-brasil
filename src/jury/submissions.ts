@@ -11,6 +11,8 @@ export type Project = {
   demo?: string;
   video: string;
   cover?: string;
+  /** a URL or raw HTML; rendered sandboxed, so its scripts can't reach the panel */
+  report?: string;
   /** the sheet's own timestamp, as Google writes it */
   submittedAt?: string;
 };
@@ -49,6 +51,7 @@ const COLUMNS = {
   description: "descrição do projeto",
   demo: "link da demo",
   video: "vídeo do pitch",
+  report: "relatório técnico",
 } as const;
 
 /** Form uploads arrive as Drive links; the uploads folder must be shared as "anyone with the link". */
@@ -85,6 +88,7 @@ export function toProjects(csv: string): Project[] {
         demo: get(row, "demo") || undefined,
         video: get(row, "video"),
         cover: coverLink ? driveImage(coverLink) : undefined,
+        report: get(row, "report") || undefined,
         submittedAt: get(row, "submittedAt") || undefined,
       };
     });

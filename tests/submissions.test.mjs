@@ -3,11 +3,11 @@ import { test } from "node:test";
 import { toProjects, videoEmbed } from "../src/jury/submissions.ts";
 
 const csv = [
-  "Carimbo de data/hora,Endereço de e-mail,Imagem de capa do projeto,Nome do projeto,Track escolhida,Link do repositório público,One-line summary (use o Devin para escrever!),Descrição do projeto,Link da demo ao vivo,Vídeo do pitch (3 minutos),Pergunta nova",
+  "Carimbo de data/hora,Endereço de e-mail,Imagem de capa do projeto,Nome do projeto,Track escolhida,Link do repositório público,One-line summary (use o Devin para escrever!),Descrição do projeto,Link da demo ao vivo,Vídeo do pitch (3 minutos),Pergunta nova,Relatório técnico",
   '28/11/2026 15:01,a@b.com,https://drive.google.com/open?id=abc_123-X,Saúde Já,Saúde,https://github.com/x/y,"Triagem, rápida",' +
-    '"Linha 1\r\nLinha 2 com ""aspas""",,https://youtu.be/dQw4w9WgXcQ,extra',
-  "28/11/2026 15:02,c@d.com,,Escola+,Educação,https://github.com/z/w,Resumo,Desc,https://demo.app,https://loom.com/share/abc123,",
-  ",,,,,,,,,,",
+    '"Linha 1\r\nLinha 2 com ""aspas""",,https://youtu.be/dQw4w9WgXcQ,extra,https://r.example/saude.html',
+  "28/11/2026 15:02,c@d.com,,Escola+,Educação,https://github.com/z/w,Resumo,Desc,https://demo.app,https://loom.com/share/abc123,,",
+  ",,,,,,,,,,,",
 ].join("\r\n");
 
 test("lê respostas do form pelo título das perguntas", () => {
@@ -20,11 +20,13 @@ test("lê respostas do form pelo título das perguntas", () => {
   assert.equal(a.cover, "https://lh3.googleusercontent.com/d/abc_123-X=w1200");
   assert.equal(a.demo, undefined);
   assert.equal(a.submittedAt, "28/11/2026 15:01");
+  assert.equal(a.report, "https://r.example/saude.html");
   assert.ok(!JSON.stringify(a).includes("a@b.com"), "e-mail não sai do servidor");
 
   assert.equal(b.track, "Educação");
   assert.equal(b.cover, undefined);
   assert.equal(b.demo, "https://demo.app");
+  assert.equal(b.report, undefined);
 });
 
 test("embute YouTube e Loom, deixa o resto como link", () => {
