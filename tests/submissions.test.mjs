@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { groupNumber, toProjects, videoEmbed } from "../src/jury/submissions.ts";
+import { groupNumber, toProjects, videoEmbed, withOutsideTheForm } from "../src/jury/submissions.ts";
+import { attachReports } from "../src/jury/reports.ts";
 
 const csv = [
   "Carimbo de data/hora,Endereço de e-mail,Imagem de capa do projeto,Nome do projeto,Track escolhida,Link do repositório público,One-line summary (use o Devin para escrever!),Descrição do projeto,Link da demo ao vivo,Vídeo do pitch (3 minutos),Pergunta nova,Relatório técnico",
@@ -76,4 +77,23 @@ test("embute YouTube e Loom, deixa o resto como link", () => {
   assert.equal(videoEmbed("https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1"), "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ");
   assert.equal(videoEmbed("https://www.loom.com/share/abc123"), "https://www.loom.com/embed/abc123");
   assert.equal(videoEmbed("https://drive.google.com/file/d/x/view"), undefined);
+});
+
+test("a Lookout, que o forms não gravou, entra depois da planilha e recebe o relatório do próprio repositório", () => {
+  const row = (name) => `28/11/2026 15:40:00,a@b.com,${name},,Saúde,https://github.com/x/y,Resumo,Descrição,,,https://youtu.be/dQw4w9WgXcQ,1`;
+  const projects = withOutsideTheForm(toProjects([liveHeader, row("Laudo")].join("\r\n")));
+  assert.deepEqual(projects.map((p) => p.name), ["Laudo", "Lookout"]);
+  const lookout = projects[1];
+  assert.equal(lookout.group, 9);
+  assert.equal(lookout.track, "Segurança");
+  assert.equal(videoEmbed(lookout.video), "https://www.youtube-nocookie.com/embed/j8CByk8MYo8");
+
+  const [, withReport] = attachReports(projects, [{ id: "lookout", name: "Lookout", group: 9, repo: "https://github.com/PMGmenegon/Lookout" }]);
+  assert.equal(withReport.report, "/jurados/projetos/relatorio/lookout");
+});
+
+test("quando a planilha já traz a Lookout, ela não aparece duas vezes", () => {
+  const row = (name) => `28/11/2026 16:30:00,a@b.com,${name},,Segurança,https://github.com/PMGmenegon/Lookout,Resumo,Descrição,,,https://youtu.be/dQw4w9WgXcQ,9`;
+  const projects = withOutsideTheForm(toProjects([liveHeader, row("LookOut")].join("\r\n")));
+  assert.deepEqual(projects.map((p) => p.id), ["lookout-1"]);
 });

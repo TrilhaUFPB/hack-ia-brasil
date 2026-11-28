@@ -5,7 +5,7 @@ import { roleGuideMetadata } from "@/components/guide/role-guide";
 import { GuideShell } from "@/components/guide/shell";
 import { ProjectGrid } from "@/components/jury/project-grid";
 import { attachReports, readReports } from "@/jury/reports";
-import { toProjects } from "@/jury/submissions";
+import { toProjects, withOutsideTheForm } from "@/jury/submissions";
 
 export const metadata = {
   ...roleGuideMetadata("Projetos · Jurados · Hack IA Brasil", "Painel das submissões para a banca."),
@@ -13,7 +13,8 @@ export const metadata = {
 };
 
 // the form's responses sheet, published as CSV (Arquivo › Compartilhar › Publicar na web),
-// with each team's technical report from relatorios/ when the harness has published one
+// plus the teams the form failed to record, with each team's technical report from relatorios/
+// when the harness has published one
 async function getProjects() {
   "use cache";
   cacheLife("minutes");
@@ -21,7 +22,7 @@ async function getProjects() {
   if (!url) return [];
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Planilha de submissões respondeu ${res.status}`);
-  return attachReports(toProjects(await res.text()), await readReports());
+  return attachReports(withOutsideTheForm(toProjects(await res.text())), await readReports());
 }
 
 export default async function JuryProjectsPage() {

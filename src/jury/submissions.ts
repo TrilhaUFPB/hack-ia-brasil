@@ -116,6 +116,32 @@ export function toProjects(csv: string): Project[] {
     .filter((project) => !isHidden(project.name));
 }
 
+// Submissions the sheet never got: the form froze at 16:04, when this team sent it, and only
+// reopened at 16:07. The team sent the same answers to the organizers instead.
+const OUTSIDE_THE_FORM: Project[] = [
+  {
+    id: "lookout-fora-do-forms",
+    name: "Lookout",
+    group: 9,
+    track: "Segurança",
+    repo: "https://github.com/PMGmenegon/Lookout",
+    summary:
+      "Lookout usa o Gemini para ler relatos de golpe Pix, com texto e prints, confere cada dado no relato e liga os casos do mesmo golpista entre bancos para o analista revisar.",
+    description:
+      "Lookout: copiloto de IA que transforma o relato de uma vítima de golpe de Pix em ficha estruturada e liga o caso a outros do mesmo golpista, inclusive em outros bancos.",
+    demo: "https://lookout-drab.vercel.app",
+    video: "https://youtu.be/j8CByk8MYo8",
+    cover: "/jurados/lookout.png",
+    submittedAt: "28/11/2026 16:04:00",
+  },
+];
+
+/** The sheet's projects, then the ones sent outside the form, unless the sheet already has that name. */
+export function withOutsideTheForm(projects: Project[], outside = OUTSIDE_THE_FORM): Project[] {
+  const names = new Set(projects.map((project) => slug(project.name)));
+  return [...projects, ...outside.filter((project) => !names.has(slug(project.name)))];
+}
+
 /** YouTube and Loom links become an embeddable player URL; anything else stays a plain link. */
 export function videoEmbed(url: string): string | undefined {
   const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([\w-]{11})/)?.[1];
