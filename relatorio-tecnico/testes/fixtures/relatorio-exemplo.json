@@ -1,0 +1,785 @@
+{
+  "formato": 1,
+  "equipe": {
+    "id": "triagem-clara",
+    "nome": "Triagem Clara",
+    "track": "Saúde",
+    "repo": "https://github.com/exemplo-hack/triagem-clara",
+    "demo": "https://triagem-clara.example.com",
+    "video": "https://www.loom.com/share/0123456789abcdef",
+    "resumo": "Assistente que resume a queixa do paciente e sugere a fila de atendimento para a recepção de uma UPA."
+  },
+  "geracao": {
+    "horario": "2026-11-28T16:21:40-03:00",
+    "modo": "previa",
+    "janela": {
+      "inicio": "2026-11-28T09:20:00-03:00",
+      "fim": "2026-11-28T16:00:00-03:00"
+    },
+    "commit": "9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5",
+    "commit_em": "2026-11-28T15:57:12-03:00",
+    "etapas": {
+      "corte": {
+        "titulo": "Commit de corte",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 120,
+          "preparo_ms": 0,
+          "execucao_ms": 8400
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "composicao": {
+        "titulo": "Composição do código",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 300,
+          "preparo_ms": 0,
+          "execucao_ms": 2100
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "github": {
+        "titulo": "Histórico no GitHub",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 90,
+          "preparo_ms": 0,
+          "execucao_ms": 4300
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "deploy": {
+        "titulo": "Deploy no ar",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 200,
+          "preparo_ms": 0,
+          "execucao_ms": 6200
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "segredos": {
+        "titulo": "Varredura de segredos",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 150,
+          "preparo_ms": 0,
+          "execucao_ms": 1900
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "copia": {
+        "titulo": "Cópia entre equipes",
+        "coluna": "fatos",
+        "situacao": "aguardando",
+        "relogio": null,
+        "parou_em": null,
+        "erro": null
+      },
+      "submissao": {
+        "titulo": "Itens da submissão",
+        "coluna": "fatos",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 80,
+          "preparo_ms": 0,
+          "execucao_ms": 600
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "build": {
+        "titulo": "Build em container",
+        "coluna": "build",
+        "situacao": "rodando",
+        "relogio": null,
+        "parou_em": "npm ci",
+        "erro": null
+      },
+      "promessas": {
+        "titulo": "Promessas da equipe",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 900,
+          "preparo_ms": 0,
+          "execucao_ms": 64000
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "leitor": {
+        "titulo": "Leitura do código",
+        "coluna": "leitor",
+        "situacao": "pronto",
+        "relogio": {
+          "espera_ms": 1500,
+          "preparo_ms": 0,
+          "execucao_ms": 412000
+        },
+        "parou_em": null,
+        "erro": null
+      },
+      "uso": {
+        "titulo": "Teste de uso",
+        "coluna": "uso",
+        "situacao": "tempo_esgotado",
+        "relogio": {
+          "espera_ms": 52000,
+          "preparo_ms": 9000,
+          "execucao_ms": 600000
+        },
+        "parou_em": "passo 3: enviar a queixa pelo formulário",
+        "erro": "tempo esgotado depois de 10 minutos"
+      },
+      "linha-do-tempo": {
+        "titulo": "Linha do tempo",
+        "coluna": "fatos",
+        "situacao": "falhou",
+        "relogio": {
+          "espera_ms": 60,
+          "preparo_ms": 0,
+          "execucao_ms": 900
+        },
+        "parou_em": "git log --numstat",
+        "erro": "saída do git em formato inesperado"
+      }
+    }
+  },
+  "resumo": {
+    "deploy": {
+      "estado": "verificado"
+    },
+    "build": {
+      "estado": "em_andamento",
+      "etapa": "build"
+    },
+    "fluxo": {
+      "estado": "verificado",
+      "alcance": {
+        "ate": 2,
+        "de": 4
+      }
+    },
+    "ia": {
+      "estado": "verificado"
+    }
+  },
+  "roteiro": [
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-1",
+      "n": 1,
+      "acao": "Abrir https://triagem-clara.example.com e clicar em \"Nova triagem\"",
+      "esperado": "Formulário com os campos nome, idade e queixa",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-1.png",
+          "linha": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-1.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:roteiro-2",
+      "n": 2,
+      "acao": "Preencher a queixa com \"dor no peito há 2 horas\" e enviar",
+      "esperado": "Resumo da queixa e fila sugerida em até 10 segundos",
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-2.png",
+          "linha": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-2.png",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "declaracoes": [
+    {
+      "tipo": "declaracao",
+      "id": "P1",
+      "citacao": "O resumo da queixa é gerado pelo Claude a partir do texto livre do paciente.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 12,
+        "trecho": "O resumo da queixa é gerado pelo Claude a partir do texto livre do paciente.",
+        "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/README.md#L12",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia",
+      "estado": "confirmada",
+      "no_uso": {
+        "estado": "verificado"
+      },
+      "obs": "A rota POST /api/triagem envia a queixa para a API da Anthropic e devolve o texto da resposta.",
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/servidor/triagem.ts",
+          "linha": 41,
+          "linha_fim": 47,
+          "trecho": "const resposta = await anthropic.messages.create({\n  model: 'claude-sonnet-4-5',\n  max_tokens: 600,\n  system: PROMPT_TRIAGEM,\n  messages: [{ role: 'user', content: queixa }],\n})",
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/src/servidor/triagem.ts#L41-L47",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-2.png",
+          "linha": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-2.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "declaracao",
+      "id": "P2",
+      "citacao": "A recepção acompanha a fila em tempo real e recebe alerta quando um caso muda de prioridade.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "descricao.md",
+        "linha": 4,
+        "trecho": "A recepção acompanha a fila em tempo real e recebe alerta quando um caso muda de prioridade.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade",
+      "estado": "parcial",
+      "no_uso": {
+        "estado": "nao_testavel",
+        "motivo": "o teste de uso parou no passo 3 por tempo esgotado"
+      },
+      "obs": "A tela da fila consulta o servidor a cada 5 segundos. Não há código de alerta.",
+      "existe": "Tela /fila com consulta periódica a GET /api/fila.",
+      "falta": "Envio de alerta quando a prioridade muda.",
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/telas/Fila.tsx",
+          "linha": 18,
+          "trecho": "useEffect(() => { const t = setInterval(carregar, 5000); return () => clearInterval(t) }, [])",
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/src/telas/Fila.tsx#L18",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "declaracao",
+      "id": "P3",
+      "citacao": "Exportamos o histórico de triagens em PDF para o prontuário.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 19,
+        "trecho": "Exportamos o histórico de triagens em PDF para o prontuário.",
+        "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/README.md#L19",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade",
+      "estado": "nao_encontrada",
+      "obs": null,
+      "onde_procurou": [
+        "src/servidor/",
+        "src/telas/",
+        "package.json",
+        "busca por \"pdf\" em todo o repositório"
+      ],
+      "evidencias": []
+    },
+    {
+      "tipo": "declaracao",
+      "id": "P4",
+      "citacao": "Os dados dos pacientes ficam em um banco PostgreSQL com criptografia.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "docs/arquitetura.md",
+        "linha": 7,
+        "trecho": "Os dados dos pacientes ficam em um banco PostgreSQL com criptografia.",
+        "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/docs/arquitetura.md#L7",
+        "conferida": "conferidor"
+      },
+      "classe": "tecnologia",
+      "estado": "contradita",
+      "o_que_faz": "As triagens são guardadas em um vetor na memória do processo do servidor e somem quando ele reinicia.",
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/servidor/armazenamento.ts",
+          "linha": 3,
+          "trecho": "const triagens: Triagem[] = []",
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/src/servidor/armazenamento.ts#L3",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "declaracao",
+      "id": "P5",
+      "citacao": "Reduz em 40% o tempo de espera na recepção.",
+      "fonte": {
+        "tipo": "formulario",
+        "caminho": "resumo.md",
+        "linha": 1,
+        "trecho": "Reduz em 40% o tempo de espera na recepção.",
+        "link": null,
+        "conferida": "conferidor"
+      },
+      "classe": "resultado",
+      "estado": "nao_verificavel",
+      "obs": "O repositório não traz medição nem dados de uso.",
+      "evidencias": []
+    },
+    {
+      "tipo": "declaracao",
+      "id": "P6",
+      "citacao": "Funciona offline no tablet da recepção.",
+      "fonte": {
+        "tipo": "arquivo",
+        "caminho": "README.md",
+        "linha": 23,
+        "trecho": "Funciona offline no tablet da recepção.",
+        "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/README.md#L23",
+        "conferida": "conferidor"
+      },
+      "classe": "funcionalidade",
+      "estado": null,
+      "evidencias": []
+    }
+  ],
+  "nao_declarado": [],
+  "uso": [
+    {
+      "tipo": "passo",
+      "id": "uso:passo-1",
+      "n": 1,
+      "acao": "Abrir a página inicial do deploy",
+      "esperado": "Tela inicial com o botão \"Nova triagem\"",
+      "observado": "A página carregou em 1,2 s com o título \"Triagem Clara\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-1.png",
+          "linha": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-1.png",
+          "conferida": "conferidor"
+        },
+        {
+          "tipo": "url",
+          "caminho": "https://triagem-clara.example.com/",
+          "linha": null,
+          "trecho": null,
+          "link": "https://triagem-clara.example.com/",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-2",
+      "n": 2,
+      "acao": "Enviar a queixa \"dor no peito há 2 horas\"",
+      "observado": "Apareceu um resumo de três linhas e a fila \"vermelha\".",
+      "estado": {
+        "estado": "verificado"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-2.png",
+          "linha": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-2.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "passo",
+      "id": "uso:passo-3",
+      "n": 3,
+      "acao": "Abrir a tela da fila como recepção",
+      "observado": null,
+      "estado": {
+        "estado": "nao_testavel",
+        "motivo": "a tela pede login com conta Google"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-3-ausente.png",
+          "linha": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-3-ausente.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:entrada-1",
+      "rotulo": "Entrada inesperada: queixa vazia",
+      "estado": {
+        "estado": "falhou",
+        "erro": "o servidor respondeu 500 e a tela ficou em branco"
+      },
+      "evidencias": [
+        {
+          "tipo": "captura",
+          "caminho": "capturas/uso/passo-2.png",
+          "linha": null,
+          "trecho": null,
+          "link": "capturas/uso/passo-2.png",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "uso:console",
+      "rotulo": "Erros no console do navegador durante o teste",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": 2,
+      "evidencias": [
+        {
+          "tipo": "log",
+          "caminho": "logs/uso.log",
+          "linha": 88,
+          "trecho": "POST /api/triagem 500 (Internal Server Error)",
+          "link": "logs/uso.log",
+          "conferida": "script"
+        }
+      ]
+    }
+  ],
+  "ia": [
+    {
+      "tipo": "item",
+      "id": "leitor:chamada-1",
+      "rotulo": "Chamada a modelo: Anthropic, claude-sonnet-4-5",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "Resume a queixa do paciente.",
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/servidor/triagem.ts",
+          "linha": 41,
+          "linha_fim": 47,
+          "trecho": "const resposta = await anthropic.messages.create({\n  model: 'claude-sonnet-4-5',\n  max_tokens: 600,\n  system: PROMPT_TRIAGEM,\n  messages: [{ role: 'user', content: queixa }],\n})",
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/src/servidor/triagem.ts#L41-L47",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:chamada-2",
+      "rotulo": "Chamada a modelo: OpenAI, modelo não identificado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "Nenhum texto da equipe menciona a OpenAI.",
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/servidor/classificar.ts",
+          "linha": 2,
+          "trecho": "import OpenAI from 'openai'",
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/src/servidor/classificar.ts#L2",
+          "conferida": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:fixa-1",
+      "rotulo": "Resposta fixa em src/servidor/classificar.ts",
+      "estado": {
+        "estado": "verificado"
+      },
+      "sinal": true,
+      "obs": "A função devolve a fila \"amarela\" quando a chamada ao modelo lança erro.",
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/servidor/classificar.ts",
+          "linha": 31,
+          "trecho": "return { fila: 'amarela', motivo: 'classificação padrão' }",
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/src/servidor/classificar.ts#L31",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "tipo": "item",
+      "id": "github:criacao",
+      "rotulo": "Repositório criado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": "28/11/2026, 09:31 (Brasília)",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/exemplo-hack/triagem-clara",
+          "linha": null,
+          "trecho": null,
+          "link": "https://github.com/exemplo-hack/triagem-clara",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "github:commits",
+      "rotulo": "Commits na janela do evento",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": 37,
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "github:por-hora",
+      "rotulo": "Commits por hora",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "serie": [
+          [
+            "09h",
+            2
+          ],
+          [
+            "10h",
+            5
+          ],
+          [
+            "11h",
+            7
+          ],
+          [
+            "12h",
+            1
+          ],
+          [
+            "13h",
+            6
+          ],
+          [
+            "14h",
+            9
+          ],
+          [
+            "15h",
+            7
+          ]
+        ]
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "github:fora-da-janela",
+      "rotulo": "Commit com data anterior ao início do evento",
+      "estado": {
+        "estado": "verificado"
+      },
+      "sinal": true,
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Commit",
+            "Data do commit",
+            "Linhas adicionadas",
+            "Mensagem"
+          ],
+          "linhas": [
+            [
+              "3a1b9c0",
+              "27/11, 22:14",
+              1840,
+              "estrutura inicial do projeto"
+            ],
+            [
+              "77de012",
+              "28/11, 08:50",
+              96,
+              "ajusta README"
+            ]
+          ]
+        }
+      },
+      "obs": "A data é a registrada no commit. O push chegou ao GitHub às 09:33 de 28/11.",
+      "evidencias": [
+        {
+          "tipo": "url",
+          "caminho": "https://github.com/exemplo-hack/triagem-clara/commit/3a1b9c0",
+          "linha": null,
+          "trecho": null,
+          "link": "https://github.com/exemplo-hack/triagem-clara/commit/3a1b9c0",
+          "conferida": "script"
+        }
+      ]
+    }
+  ],
+  "origem": [],
+  "arquitetura": [
+    {
+      "tipo": "item",
+      "id": "composicao:linguagens",
+      "rotulo": "Linguagens",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "tabela": {
+          "colunas": [
+            "Linguagem",
+            "Arquivos",
+            "Linhas"
+          ],
+          "linhas": [
+            [
+              "TypeScript",
+              42,
+              3810
+            ],
+            [
+              "CSS",
+              6,
+              512
+            ],
+            [
+              "SQL",
+              1,
+              38
+            ]
+          ]
+        }
+      },
+      "evidencias": []
+    },
+    {
+      "tipo": "item",
+      "id": "leitor:componente-1",
+      "rotulo": "Servidor de triagem",
+      "estado": {
+        "estado": "verificado"
+      },
+      "valor": {
+        "lista": [
+          "Recebe a queixa e chama o modelo",
+          "src/servidor/triagem.ts",
+          "src/servidor/armazenamento.ts"
+        ]
+      },
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": "src/servidor/index.ts",
+          "linha": 1,
+          "trecho": "import Fastify from 'fastify'",
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/src/servidor/index.ts#L1",
+          "conferida": "conferidor"
+        }
+      ]
+    }
+  ],
+  "higiene": [
+    {
+      "tipo": "item",
+      "id": "segredos:1",
+      "rotulo": "Chave com formato de credencial em arquivo versionado",
+      "estado": {
+        "estado": "verificado"
+      },
+      "sinal": true,
+      "obs": "O valor não é reproduzido neste relatório.",
+      "evidencias": [
+        {
+          "tipo": "arquivo",
+          "caminho": ".env.production",
+          "linha": 3,
+          "trecho": null,
+          "link": "https://github.com/exemplo-hack/triagem-clara/blob/9f2c1e7ab04d5566c3f1e0b7a8d9c2e4f6a1b3c5/.env.production#L3",
+          "conferida": "script"
+        }
+      ]
+    },
+    {
+      "tipo": "item",
+      "id": "submissao:licenca",
+      "rotulo": "Licença do repositório",
+      "estado": {
+        "estado": "nao_informado"
+      },
+      "evidencias": []
+    }
+  ],
+  "nao_verificado": [
+    {
+      "rotulo": "Teste de uso",
+      "motivo": "tempo esgotado depois de 10 minutos, no passo 3: enviar a queixa pelo formulário",
+      "causa": "tempo_esgotado"
+    },
+    {
+      "rotulo": "Linha do tempo",
+      "motivo": "a checagem do harness não terminou: saída do git em formato inesperado",
+      "causa": "etapa_falhou"
+    },
+    {
+      "rotulo": "Build em container",
+      "motivo": "a etapa ainda não terminou",
+      "causa": "em_andamento"
+    },
+    {
+      "rotulo": "Cópia entre equipes",
+      "motivo": "a etapa ainda não terminou",
+      "causa": "em_andamento"
+    },
+    {
+      "rotulo": "Abrir a tela da fila como recepção",
+      "motivo": "a tela pede login com conta Google",
+      "causa": "bloqueio_externo"
+    }
+  ],
+  "descartados": {
+    "total": 3,
+    "motivos": {
+      "trecho não encontrado no arquivo": 2,
+      "captura inexistente": 1
+    }
+  }
+}
