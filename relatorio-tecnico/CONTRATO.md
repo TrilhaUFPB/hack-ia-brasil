@@ -130,7 +130,7 @@ impressaoDigital(url, {sinal?, buscar?})             // -> Promise<{hash: string
 
 // ferramentas/url-publica.mjs e ferramentas/isolamento.mjs
 validarUrlPublica(texto)                             // -> Promise<{ok: true, url} | {ok: false, motivo}>
-buscarPublico(url, opcoes?)                          // -> Promise<Response>. Valida o link e cada redirecionamento.
+buscarPublico(url, opcoes?)                          // -> Promise<Response>. Valida o link e cada redirecionamento, e conecta só no endereço que validou.
 garantirRede(nome)                                   // -> Promise<string>. Rede bridge dentro da faixa isolada.
 aplicarIsolamento(imagem)                            // -> Promise<{ativo, detalhe}>. Aplica a regra de firewall e prova com um container.
 

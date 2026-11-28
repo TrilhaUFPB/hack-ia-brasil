@@ -214,3 +214,11 @@ test('conferirCitacao: captura, log, url e formulário', async (t) => {
   assert.equal(await conferirCitacao({ tipo: 'formulario', caminho: 'descricao.md' }, fontes), null)
   assert.equal(await conferirCitacao({ tipo: 'formulario', caminho: 'outro.md', trecho: 'Gera laudos' }, fontes), null)
 })
+
+test('lerEquipes tira caracteres de controle do que vem do formulário', () => {
+  const csv = 'nome,repositorio,descricao\n"Projeto\u001b[2J\u001b[1;31mFalso\u0007","https://github.com/dono/repo","linha um\nlinha\u001b[0m dois"\n'
+  const [equipe] = lerEquipes(csv)
+  assert.equal(/[\u0000-\u001f\u007f-\u009f]/.test(equipe.nome), false, 'o nome não leva caractere de controle para o terminal')
+  assert.match(equipe.nome, /^Projeto.*Falso$/)
+  assert.equal(equipe.descricao, 'linha um\nlinha[0m dois', 'a descrição mantém a quebra de linha e perde o ESC')
+})

@@ -6,6 +6,15 @@ import { analisarCsv } from '../ferramentas/csv.mjs'
 
 /** @typedef {import('./tipos.mjs').Equipe} Equipe */
 
+/**
+ * O nome da equipe vai para o terminal de quem opera. Um caractere de controle
+ * vindo do formulário poderia apagar ou reescrever linhas da tabela.
+ * @param {string} texto
+ * @param {boolean} multilinha mantém quebra de linha e tabulação
+ */
+const semControle = (texto, multilinha) =>
+  String(texto).replace(multilinha ? /[\u0000-\u0008\u000b-\u001f\u007f-\u009f]/g : /[\u0000-\u001f\u007f-\u009f]/g, multilinha ? '' : ' ')
+
 const normalizar = (texto) => String(texto ?? '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/\s+/g, ' ').trim()
 
 /**
@@ -121,7 +130,7 @@ export function lerEquipes(textoCsv) {
   if (!cabecalhos) return []
   const colunas = mapearColunas(cabecalhos)
   const campo = (registro, nome) => {
-    const valor = colunas[nome] === undefined ? '' : (registro[colunas[nome]] ?? '').trim()
+    const valor = colunas[nome] === undefined ? '' : semControle(registro[colunas[nome]] ?? '', nome === 'descricao').trim()
     return valor === '' ? null : valor
   }
 
