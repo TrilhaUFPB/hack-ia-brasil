@@ -4,6 +4,7 @@ import { GuideHero } from "@/components/guide/hero";
 import { roleGuideMetadata } from "@/components/guide/role-guide";
 import { GuideShell } from "@/components/guide/shell";
 import { ProjectGrid } from "@/components/jury/project-grid";
+import { attachReports, readReports } from "@/jury/reports";
 import { toProjects } from "@/jury/submissions";
 
 export const metadata = {
@@ -11,7 +12,8 @@ export const metadata = {
   robots: { index: false, follow: false },
 };
 
-// the form's responses sheet, published as CSV (Arquivo › Compartilhar › Publicar na web)
+// the form's responses sheet, published as CSV (Arquivo › Compartilhar › Publicar na web),
+// with each team's technical report from relatorios/ when the harness has published one
 async function getProjects() {
   "use cache";
   cacheLife("minutes");
@@ -19,7 +21,7 @@ async function getProjects() {
   if (!url) return [];
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Planilha de submissões respondeu ${res.status}`);
-  return toProjects(await res.text());
+  return attachReports(toProjects(await res.text()), await readReports());
 }
 
 export default async function JuryProjectsPage() {
