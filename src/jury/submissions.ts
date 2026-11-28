@@ -75,6 +75,11 @@ function slug(s: string) {
   return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
+// Submissions the jury must not see, by a word of the project name. The row stays in the sheet.
+const HIDDEN = ["orbis"];
+
+const isHidden = (name: string) => slug(name).split("-").some((word) => HIDDEN.includes(word));
+
 export function toProjects(csv: string): Project[] {
   const [header = [], ...rows] = parseCsv(csv);
   const titles = header.map((h) => h.trim().toLowerCase());
@@ -106,7 +111,9 @@ export function toProjects(csv: string): Project[] {
         report: get(row, "report") || undefined,
         submittedAt: get(row, "submittedAt") || undefined,
       };
-    });
+    })
+    // after the ids are numbered, so hiding one project doesn't renumber the others
+    .filter((project) => !isHidden(project.name));
 }
 
 /** YouTube and Loom links become an embeddable player URL; anything else stays a plain link. */
