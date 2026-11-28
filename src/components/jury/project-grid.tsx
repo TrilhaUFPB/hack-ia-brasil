@@ -146,6 +146,7 @@ function submittedLabel(raw: string) {
 function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () => void }) {
   const embed = videoEmbed(p.video);
   const cover = useCoverFailed();
+  const reportIsHtml = p.report?.trimStart().startsWith("<") ?? false;
   return (
     <motion.article
       initial={{ opacity: 0, scale: 0.96 }}
@@ -199,6 +200,19 @@ function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () =
               <h3 className="mb-3 text-[1.5rem] font-extralight tracking-tight md:text-[1.75rem]">Sobre o projeto</h3>
               <p className="max-w-[68ch] whitespace-pre-line text-base leading-[1.75] text-white/75">{p.description}</p>
             </section>
+            {p.report && (
+              <section>
+                <h3 className="mb-3 text-[1.5rem] font-extralight tracking-tight md:text-[1.75rem]">Relatório técnico</h3>
+                {/* no allow-same-origin: the report's scripts run in an opaque origin, even when hosted here */}
+                <iframe
+                  {...(reportIsHtml ? { srcDoc: p.report } : { src: p.report })}
+                  title={`Relatório técnico de ${p.name}`}
+                  sandbox="allow-scripts allow-popups"
+                  loading="lazy"
+                  className="h-[80vh] w-full rounded-xl border border-white/10 bg-white"
+                />
+              </section>
+            )}
           </div>
 
           <aside className="order-first rounded-xl border border-white/15 bg-white/[0.02] p-6 lg:order-none lg:sticky lg:top-6 lg:self-start">
@@ -206,6 +220,7 @@ function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () =
             <div className="mt-4 grid gap-3">
               {p.repo && <Action href={p.repo} primary>Repositório</Action>}
               {p.demo && <Action href={p.demo}>Demo ao vivo</Action>}
+              {p.report && !reportIsHtml && <Action href={p.report}>Relatório técnico</Action>}
               {/* an embedded pitch is already on screen; only link it when it can't be embedded */}
               {p.video && !embed && <Action href={p.video}>Vídeo do pitch</Action>}
             </div>
