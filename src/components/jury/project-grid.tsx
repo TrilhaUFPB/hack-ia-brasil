@@ -183,44 +183,41 @@ function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () =
           <p className="mt-5 max-w-[60ch] text-pretty text-lg leading-relaxed text-white/75 md:text-xl">{p.summary}</p>
         </header>
 
-        <div className="mt-10 grid gap-10 border-t border-white/15 pt-10 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-14">
+        {/* the video and the sidebar start on the same line; no heading over the video */}
+        <div className="mt-10 grid gap-8 border-t border-white/15 pt-10 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-12">
           <div className="grid min-w-0 content-start gap-10">
             {embed && (
-              <section>
-                <h3 className="mb-4 text-[1.5rem] font-extralight tracking-tight md:text-[1.75rem]">Vídeo do pitch</h3>
-                <iframe
-                  src={embed}
-                  title={`Pitch de ${p.name}`}
-                  allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-                  allowFullScreen
-                  className="aspect-video w-full rounded-xl border border-white/10 bg-black"
-                />
-              </section>
+              <iframe
+                src={embed}
+                title={`Pitch de ${p.name}`}
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                allowFullScreen
+                className="aspect-video w-full rounded-xl border border-white/10 bg-black"
+              />
             )}
             <section>
-              <h3 className="mb-4 text-[1.5rem] font-extralight tracking-tight md:text-[1.75rem]">Sobre o projeto</h3>
+              <h3 className="mb-3 text-[1.5rem] font-extralight tracking-tight md:text-[1.75rem]">Sobre o projeto</h3>
               <p className="max-w-[68ch] whitespace-pre-line text-base leading-[1.75] text-white/75">{p.description}</p>
             </section>
           </div>
 
-          <aside className="order-first grid content-start gap-4 lg:order-none lg:sticky lg:top-6 lg:self-start">
-            <div className="rounded-xl border border-white/15 bg-white/[0.02] p-5">
-              <h3 className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-white/60">Links</h3>
-              <div className="grid gap-2.5">
-                {p.repo && <Action href={p.repo} primary>Repositório</Action>}
-                {p.demo && <Action href={p.demo}>Demo ao vivo</Action>}
-                {p.video && <Action href={p.video}>Vídeo do pitch</Action>}
-              </div>
+          <aside className="order-first rounded-xl border border-white/15 bg-white/[0.02] p-6 lg:order-none lg:sticky lg:top-6 lg:self-start">
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.25em] text-white/60">Links</h3>
+            <div className="mt-4 grid gap-3">
+              {p.repo && <Action href={p.repo} primary>Repositório</Action>}
+              {p.demo && <Action href={p.demo}>Demo ao vivo</Action>}
+              {/* an embedded pitch is already on screen; only link it when it can't be embedded */}
+              {p.video && !embed && <Action href={p.video}>Vídeo do pitch</Action>}
             </div>
-            <dl className="grid gap-3 rounded-xl border border-white/15 bg-white/[0.02] p-5 text-sm">
+            <dl className="mt-6 grid gap-4 border-t border-white/10 pt-6 text-sm">
               <div>
                 <dt className="font-mono text-[11px] uppercase tracking-[0.25em] text-white/60">Track</dt>
-                <dd className="mt-1 text-white/85">{p.track || "Sem track"}</dd>
+                <dd className="mt-1.5 text-white/85">{p.track || "Sem track"}</dd>
               </div>
               {!p.demo && (
-                <div className="border-t border-white/10 pt-3">
+                <div>
                   <dt className="font-mono text-[11px] uppercase tracking-[0.25em] text-white/60">Demo</dt>
-                  <dd className="mt-1 text-white/70">Sem link no ar. Rode pelo repositório.</dd>
+                  <dd className="mt-1.5 text-white/70">Sem link no ar. Rode pelo repositório.</dd>
                 </div>
               )}
             </dl>
