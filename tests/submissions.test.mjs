@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { groupNumber, toProjects, videoEmbed, withOutsideTheForm } from "../src/jury/submissions.ts";
-import { attachReports } from "../src/jury/reports.ts";
+import { firstLink, groupNumber, submittedLabel, toProjects, videoEmbed, withOutsideTheForm } from "../src/jury/submissions.ts";
+import { attachReports, repoKey } from "../src/jury/reports.ts";
 
 const csv = [
   "Carimbo de data/hora,Endereço de e-mail,Imagem de capa do projeto,Nome do projeto,Track escolhida,Link do repositório público,One-line summary (use o Devin para escrever!),Descrição do projeto,Link da demo ao vivo,Vídeo do pitch (3 minutos),Pergunta nova,Relatório técnico",
@@ -97,4 +97,24 @@ test("uma linha da planilha com o nome Lookout não substitui a entrada confirma
   const projects = withOutsideTheForm(toProjects([liveHeader, row("Laudo"), row("LookOut")].join("\r\n")));
   assert.deepEqual(projects.map((p) => p.id), ["laudo-1", "lookout-fora-do-forms"]);
   assert.equal(projects[1].repo, "https://github.com/PMGmenegon/Lookout");
+});
+
+test("célula com dois links vale o primeiro, e link sem esquema ganha https", () => {
+  const row = (repo, demo, video) => `2026/11/28 4:42:50 PM GMT-3,a@b.com,Ronda,,Segurança,"${repo}",Resumo,Descrição,${demo},,"${video}",22`;
+  const [ronda] = toProjects([liveHeader, row("https://github.com/Hacka-ai-brasil/Ronda.git // https://github.com/Hacka-ai-brasil/kowalski.git", "varda-aml.fly.dev", "https://youtu.be/g2s7TtNUroc, slides:https://canva.link/x")].join("\r\n"));
+  assert.equal(ronda.repo, "https://github.com/Hacka-ai-brasil/Ronda.git");
+  assert.equal(repoKey(ronda.repo), "hacka-ai-brasil/ronda");
+  assert.equal(ronda.demo, "https://varda-aml.fly.dev");
+  assert.equal(ronda.video, "https://youtu.be/g2s7TtNUroc");
+  assert.equal(firstLink("github.com/h4vismat/varda"), "https://github.com/h4vismat/varda");
+  assert.equal(firstLink("javascript:alert(1)"), "https://javascript:alert(1)", "só http e https saem como estão");
+  assert.equal(firstLink("  "), undefined);
+});
+
+test("lê o carimbo nos dois formatos que o Google grava", () => {
+  assert.equal(submittedLabel("28/11/2026 15:01:23"), "28/11 às 15:01");
+  assert.equal(submittedLabel("2026/11/28 4:42:50 PM GMT-3"), "28/11 às 16:42");
+  assert.equal(submittedLabel("2026/11/28 12:05:00 AM GMT-3"), "28/11 às 00:05");
+  assert.equal(submittedLabel("2026/11/28 12:05:00 PM GMT-3"), "28/11 às 12:05");
+  assert.equal(submittedLabel("ontem"), "ontem");
 });

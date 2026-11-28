@@ -71,6 +71,16 @@ export function driveImage(url: string): string | undefined {
   return id ? `https://lh3.googleusercontent.com/d/${id}=w1200` : undefined;
 }
 
+/**
+ * A link answer as a team typed it: several links in one cell ("repo.git // other.git",
+ * "video, slides: ...") keep the first, and one without a scheme ("app.fly.dev") gets https://.
+ */
+export function firstLink(answer: string): string | undefined {
+  const link = answer.split(/[,\s]+/).find(Boolean);
+  if (!link) return undefined;
+  return /^https?:\/\//i.test(link) ? link : `https://${link}`;
+}
+
 function slug(s: string) {
   return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
@@ -102,11 +112,11 @@ export function toProjects(csv: string): Project[] {
         name,
         group: groupNumber(get(row, "group")),
         track: get(row, "track"),
-        repo: get(row, "repo"),
+        repo: firstLink(get(row, "repo")) ?? "",
         summary: get(row, "summary"),
         description: get(row, "description"),
-        demo: get(row, "demo") || undefined,
-        video: get(row, "video"),
+        demo: firstLink(get(row, "demo")),
+        video: firstLink(get(row, "video")) ?? "",
         cover: coverLink ? driveImage(coverLink) : undefined,
         report: get(row, "report") || undefined,
         submittedAt: get(row, "submittedAt") || undefined,
@@ -143,6 +153,22 @@ const OUTSIDE_THE_FORM: Project[] = [
 export function withOutsideTheForm(projects: Project[], outside = OUTSIDE_THE_FORM): Project[] {
   const names = new Set(outside.map((project) => slug(project.name)));
   return [...projects.filter((project) => !names.has(slug(project.name))), ...outside];
+}
+
+/**
+ * The sheet's timestamp → "28/11 às 16:42". Google writes "28/11/2026 15:01:23" or,
+ * depending on the sheet's locale, "2026/11/28 4:42:50 PM GMT-3".
+ */
+export function submittedLabel(raw: string) {
+  const label = (day: string, month: string, hour: number, minute: string) =>
+    `${day.padStart(2, "0")}/${month.padStart(2, "0")} às ${String(hour).padStart(2, "0")}:${minute}`;
+  const br = raw.match(/^(\d{1,2})\/(\d{1,2})\/\d{4}\s+(\d{1,2}):(\d{2})/);
+  if (br) return label(br[1], br[2], Number(br[3]), br[4]);
+  const us = raw.match(/^\d{4}\/(\d{1,2})\/(\d{1,2})\s+(\d{1,2}):(\d{2})(?::\d{2})?\s*([AP]M)?/i);
+  if (!us) return raw;
+  const hour = Number(us[3]);
+  const meridiem = us[5]?.toUpperCase();
+  return label(us[2], us[1], meridiem ? (hour % 12) + (meridiem === "PM" ? 12 : 0) : hour, us[4]);
 }
 
 /** YouTube and Loom links become an embeddable player URL; anything else stays a plain link. */

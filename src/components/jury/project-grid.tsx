@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { videoEmbed, type Project } from "@/jury/submissions";
+import { submittedLabel, videoEmbed, type Project } from "@/jury/submissions";
 
 // Opening and closing the project: 0.96 → 1 + fade, 220ms. Judges open ~23 of these,
 // so it stays quick. Reduced motion drops the scale (MotionConfig in the shell).
@@ -140,12 +140,6 @@ function ProjectDialog({ project, onClose }: { project: Project | null; onClose:
 }
 
 const groupLabel = (group: number) => `Grupo ${String(group).padStart(2, "0")}`;
-
-/** "28/11/2026 15:01:23" (the sheet's timestamp) → "28/11 às 15:01" */
-function submittedLabel(raw: string) {
-  const m = raw.match(/(\d{1,2})\/(\d{1,2})\/\d{4}\s+(\d{1,2}):(\d{2})/);
-  return m ? `${m[1].padStart(2, "0")}/${m[2].padStart(2, "0")} às ${m[3].padStart(2, "0")}:${m[4]}` : raw;
-}
 
 function ProjectPanel({ project: p, onClose }: { project: Project; onClose: () => void }) {
   const embed = videoEmbed(p.video);
