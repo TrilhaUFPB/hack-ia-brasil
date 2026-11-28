@@ -164,7 +164,8 @@ function Submissao() {
         ))}
       </ol>
       <Rise y={10}>
-        <Note rich={rich(b[3])} className="mt-8" />
+        <P rich={rich(b[4])} className="mt-8" />
+        <Note rich={rich(b[3])} className="mt-4" />
       </Rise>
     </GuideSection>
   );

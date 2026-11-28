@@ -23,7 +23,7 @@ export const GUIDE: Section[] = [
         "kind": "p",
         "rich": [
           {
-            "t": "Última atualização: 25 de novembro de 2026"
+            "t": "Última atualização: 28 de novembro de 2026"
           }
         ]
       },
@@ -1451,7 +1451,14 @@ export const GUIDE: Section[] = [
         "kind": "p",
         "rich": [
           {
-            "t": "O link do formulário de submissão será enviado no grupo de WhatsApp no dia. "
+            "t": "Enviem o projeto pelo "
+          },
+          {
+            "t": "formulário de submissão",
+            "href": "https://forms.gle/DzdZukwN27fQiS4V8"
+          },
+          {
+            "t": ". "
           },
           {
             "t": "Prazo final: sábado, 28/11, às 16h00.",
@@ -1477,22 +1484,31 @@ export const GUIDE: Section[] = [
           ],
           [
             {
-              "t": "Link do repositório no GitHub, com um README explicando o que é o projeto e como rodar. Os jurados vão rodar e testar o código"
+              "t": "Link do repositório no GitHub, com o código bem documentado e um README que explique bem o projeto. "
+            },
+            {
+              "t": "Contem o que ele é, qual o impacto, o que tem de inovador, como seria aplicado na vida real e quais ferramentas, modelos e APIs vocês usaram",
+              "b": true
             }
           ],
           [
             {
-              "t": "Demo funcionando: é ela que vocês mostram no pitch. Se o projeto tiver link de acesso, mandem também"
+              "t": "Passo a passo para testar, no README. Expliquem como rodar tudo do zero, quais variáveis de ambiente configurar e o que mais for preciso. Os jurados vão rodar e testar o projeto seguindo o que estiver escrito ali"
             }
           ],
           [
             {
-              "t": "Documento do projeto: o que é, qual o impacto, o que tem de inovador, como seria aplicado na vida real e quais ferramentas, modelos e APIs vocês usaram"
+              "t": "Vídeo da demo. Gravem o projeto funcionando do jeito que acharem melhor para mostrar o que construíram e surpreender a gente. Se o projeto tiver link de acesso, mandem também"
             }
           ],
           [
             {
-              "t": "Slides (opcional)"
+              "t": "Descrição do projeto. É um resumo, e precisa ter o problema, a dor, o produto que vocês fizeram e como esse produto resolve a dor. Os detalhes ficam no README"
+            }
+          ],
+          [
+            {
+              "t": "Slides (opcional). O que vocês enviarem não é a versão final, dá para alterar e melhorar até a hora do pitch"
             }
           ]
         ]
@@ -1502,6 +1518,18 @@ export const GUIDE: Section[] = [
         "rich": [
           {
             "t": "Submissões fora do prazo ou incompletas podem ser desclassificadas."
+          }
+        ]
+      },
+      {
+        "kind": "p",
+        "rich": [
+          {
+            "t": "Só os 5 times selecionados apresentam o pitch.",
+            "b": true
+          },
+          {
+            "t": " Mesmo assim, todo time precisa montar o seu, para o caso de ser selecionado."
           }
         ]
       }
@@ -1665,7 +1693,7 @@ export const GUIDE: Section[] = [
         "items": [
           [
             {
-              "t": "Cada time tem "
+              "t": "Só os 5 times selecionados apresentam. Cada um tem "
             },
             {
               "t": "3 minutos de pitch e 2 minutos de perguntas",
