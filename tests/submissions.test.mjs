@@ -60,6 +60,12 @@ test("lê o formulário atual: número do grupo e vídeo da demo e pitch", () =>
   assert.equal(a.track, "Saúde");
 });
 
+test("o projeto Orbis não chega ao painel, e os outros mantêm o id", () => {
+  const row = (name) => `28/11/2026 15:40:00,a@b.com,${name},,Saúde,https://github.com/x/y,Resumo,Descrição,,,https://youtu.be/dQw4w9WgXcQ,1`;
+  const projects = toProjects([liveHeader, row("Laudo"), row("Orbis"), row("The ORBIS App"), row("Orbisar"), row("Atlas")].join("\r\n"));
+  assert.deepEqual(projects.map((p) => p.id), ["laudo-1", "orbisar-4", "atlas-5"]);
+});
+
 test("lê o número do grupo como a equipe digitou", () => {
   for (const [answer, group] of [["7", 7], ["07", 7], [" Grupo 12 ", 12], ["G-3", 3]]) assert.equal(groupNumber(answer), group, answer);
   for (const answer of ["", "sete", "0", "2026"]) assert.equal(groupNumber(answer), undefined, answer);
